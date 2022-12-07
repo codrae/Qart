@@ -5,7 +5,6 @@ import "./Banner-Slider.css";
 const Banner = () => {
   const [activeSlide, setActiveSlide] = useState(0); // slide index 따라 내용 변화
   const autoRef = useRef(); // auto-carousel ref
-  console.log(activeSlide);
   /* 배너 셋팅 */
   const settings = {
     arrows: true,
