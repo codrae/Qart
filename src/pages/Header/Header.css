@@ -1,0 +1,92 @@
+header {
+  width: 100%;
+  min-width: 1920px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+
+  border-bottom: 1px solid #bdbdbd;
+}
+.header__logo {
+  display: flex;
+  width: 25%;
+  flex-direction: row;
+  align-items: center;
+}
+.header__logo > a {
+  width: 135px;
+  height: 44px;
+  padding-right: 25px;
+  margin-left: auto;
+  background: url(../../assets/logo.png) no-repeat;
+}
+
+.header__menu {
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: calc(50% - 176px);
+  min-width: 784px;
+  padding: 0 87px;
+  justify-content: space-between;
+}
+.header__menu li {
+  margin-right: 70px;
+}
+.header__menu li:last-child {
+  margin-right: 0;
+}
+.header__menu li a {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #222222;
+}
+.header__padding {
+  width: 25%;
+}
+
+@media (max-width: 380px) {
+  header {
+    height: 63px;
+    justify-content: space-between;
+    min-width: 360px;
+  }
+  .header__logo {
+    width: 73px;
+    height: 24px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .header__logo > a {
+    width: 100%;
+    height: 100%;
+    padding-right: 0;
+    background-size: contain;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__padding {
+    display: flex;
+    flex-direction: row;
+  }
+  .header__padding a {
+    width: 100%;
+    height: 100%;
+  }
+  .header__padding .bar {
+    display: block;
+    float: right;
+    height: 43px;
+    width: 28px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background: url(../../assets/hambar.png) no-repeat;
+  }
+}

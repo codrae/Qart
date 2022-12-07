@@ -1,0 +1,115 @@
+.banner {
+  width: 100%;
+  min-width: 1920px;
+  height: 745px;
+
+  border-bottom: 1px solid #bdbdbd;
+
+  display: flex;
+  flex-direction: row;
+}
+.banner__info {
+  width: 25%;
+  border-right: 1px solid #bdbdbd;
+}
+.banner__art_slide {
+  width: 75%;
+}
+
+.banner__info__title {
+  padding-top: 80px;
+  padding-right: 8.33%;
+  text-align: right;
+}
+.banner__info__title h2 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+.banner__number {
+  display: block;
+  padding-top: 12px;
+  padding-left: 8.33%;
+}
+.banner__number li span {
+  display: block;
+  min-width: 6px;
+  width: 0.166%;
+  height: 84px;
+  margin-bottom: 10px;
+
+  background: #f2f2f2;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+span.choose {
+  background: #000000 !important;
+}
+.banner__info__detail {
+  padding-top: 59px;
+  padding-right: 8.33%;
+  padding-left: 24%;
+
+  text-align: right;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+
+  color: #828282;
+  line-height: 27px;
+}
+.auto-carousel {
+  display: none;
+}
+@media (max-width: 380px) {
+  .banner {
+    min-width: 360px;
+    height: 314px;
+    overflow: hidden;
+  }
+  .banner__info {
+    width: 100%;
+    border-right: none;
+  }
+  .banner__info__title {
+    padding-top: 16px;
+    padding-left: 13.33%;
+    padding-right: 0;
+    text-align: right;
+    float: left;
+  }
+  .banner__info__title h2 {
+    font-size: 20px;
+  }
+  .banner-phone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .banner__number {
+    padding-top: 18px;
+    padding-left: 5.55%;
+  }
+  .banner__number li span {
+    display: inline-block;
+    min-width: 4px;
+    width: 1.11%;
+    height: 32px;
+    margin-bottom: 4px;
+  }
+  .auto-carousel {
+    display: block;
+    margin-left: 24px;
+    max-width: 368px;
+    width: 88.88%;
+    height: 202px;
+  }
+  .banner__info__detail {
+    display: none;
+  }
+  .banner__art_slide {
+    display: none;
+  }
+}

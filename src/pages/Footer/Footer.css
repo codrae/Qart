@@ -1,0 +1,117 @@
+footer {
+  width: 100%;
+  min-width: 1920px;
+  max-height: 540px;
+  background: #fbfbfb;
+  border-top: 1px solid #bdbdbd;
+}
+/* 선 */
+.footer__menu,
+.footer__detail {
+  padding-left: 25%;
+}
+.footer__menu__item,
+.footer__detail__item {
+  height: calc(100% - 40px);
+  padding: 0 33.33%;
+  padding-top: 40px;
+
+  border-left: 1px solid #bdbdbd;
+  min-width: 500px;
+}
+
+.footer__menu {
+  border-bottom: 1px solid #bdbdbd;
+  height: 193px;
+}
+.footer__detail {
+  height: 267px;
+}
+.footer__menu__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__menu__item h3 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #333333;
+  padding-bottom: 22px;
+}
+.footer__menu__item ul li {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #333333;
+  margin-bottom: 16px;
+}
+.footer__menu__item ul li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__detail__item span {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+.detail__name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+.detail__name--co {
+  margin-right: 147px;
+}
+.detail__location {
+  display: block;
+  margin-bottom: 16px;
+}
+@media (max-width: 380px) {
+  footer {
+    min-width: 360px;
+  }
+  .footer__menu,
+  .footer__detail {
+    padding-left: 0;
+  }
+  .footer__menu {
+    height: 127px;
+  }
+  .footer__detail {
+    height: 195px;
+  }
+  .footer__menu__item,
+  .footer__detail__item {
+    height: calc(100% - 22px);
+    padding: 0 12.77%;
+    padding-top: 22px;
+    min-width: 0;
+    border-left: none;
+  }
+  .footer__menu__item h3 {
+    padding-bottom: 12px;
+    font-size: 14px;
+  }
+  .footer__menu__item ul li {
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+  .footer__detail__item span {
+    font-size: 10px;
+  }
+  .detail__name {
+    margin-bottom: 12px;
+  }
+  .detail__name--co {
+    margin-right: 72px;
+  }
+  .detail__location {
+    margin-bottom: 7px;
+  }
+}
