@@ -3,10 +3,9 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Banner from "./Banner/Banner";
 import ArtDB from "./ArtDB/ArtDB";
-
 const Main = () => {
   return (
-    <div>
+    <div className="main">
       <Header />
       <Banner />
       <ArtDB />

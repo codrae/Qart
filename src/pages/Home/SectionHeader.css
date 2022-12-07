@@ -5,17 +5,28 @@
 
   border-top: 1px solid #828282;
   border-bottom: 1px solid #828282;
-
-  display: flex;
-  align-items: center;
 }
-.section-header > h2 {
-  padding-left: 16.66%;
+.section-header h2 {
+  padding-left: 16.66rem; /* main 기준 */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   color: #000000;
+}
+.left-line {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
+}
+.right-line {
+  height: 100%;
+  width: 75%;
+  border-right: 1px solid #bdbdbd;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 380px) {
   .section-header {
@@ -24,8 +35,18 @@
     border-top: 0.5px solid #828282;
     border-bottom: 0.5px solid #828282;
   }
-  .section-header > h2 {
+  .section-header h2 {
     padding-left: 13.33%;
     font-size: 20px;
+  }
+  .left-line {
+    height: 100%;
+    width: 100%;
+    border-right: none;
+  }
+  .right-line {
+    height: 100%;
+    width: 100%;
+    border-right: none;
   }
 }

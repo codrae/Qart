@@ -4,7 +4,9 @@ import "./SectionHeader.css";
 const SectionHeader = (props) => {
   return (
     <header className="section-header">
-      <h2>{props.title}</h2>
+      <div className={props.line}>
+        <h2>{props.title}</h2>
+      </div>
     </header>
   );
 };
