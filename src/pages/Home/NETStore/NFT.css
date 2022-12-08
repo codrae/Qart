@@ -1,0 +1,46 @@
+.nft {
+  width: 100%;
+  min-width: 1920px;
+}
+.nft-carousel {
+  height: 1001px;
+  width: 75%;
+  border-right: 1px solid #bdbdbd;
+}
+.nft-item {
+  width: 35.13% !important;
+  height: 698px !important;
+  padding: 0 auto;
+}
+.nft-item > img {
+  width: 506px;
+  height: 698px;
+}
+.nft-item-title {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #000000;
+
+  margin-top: 40px;
+}
+.nft-item-author {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #bdbdbd;
+
+  margin-top: 12px;
+}
+@media (max-width: 380px) {
+  .nft {
+    min-width: 360px;
+  }
+}

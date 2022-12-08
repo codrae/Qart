@@ -7,10 +7,7 @@ header {
 }
 .header-container {
   display: flex;
-  height: 100%;
   flex-direction: row;
-  margin: 0 auto;
-  max-width: 1920px;
 }
 .header__logo {
   display: flex;
@@ -51,6 +48,9 @@ header {
   line-height: 33px;
 
   color: #222222;
+}
+.header__menu li a.active {
+  color: #2f80ed;
 }
 .header__padding {
   width: 25%;

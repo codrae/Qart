@@ -1,9 +1,9 @@
 import React from "react";
 import "./Header.css";
-const Header = () => {
+const Header = (props) => {
   return (
     <header>
-      <div className="header-container">
+      <div className="container header-container">
         <div className="header__logo">
           <a href="#">
             <span className="none">Qart</span>
@@ -11,23 +11,33 @@ const Header = () => {
         </div>
         <ul className="header__menu">
           <li>
-            <a href="#">Art Database</a>
+            <a className={props.active == "0" ? "active" : ""} href="#">
+              Art Database
+            </a>
           </li>
           <li>
-            <a href="#">Q-CoA</a>
+            <a className={props.active == "1" ? "active" : ""} href="#">
+              Q-CoA
+            </a>
           </li>
           <li>
-            <a href="#">NFT</a>
+            <a className={props.active == "2" ? "active" : ""} href="#">
+              NFT
+            </a>
           </li>
           <li>
-            <a href="#">Marketplace</a>
+            <a className={props.active == "3" ? "active" : ""} href="#">
+              Marketplace
+            </a>
           </li>
           <li>
-            <a href="#">Support</a>
+            <a className={props.active == "4" ? "active" : ""} href="#">
+              Support
+            </a>
           </li>
         </ul>
         <div className="header__padding">
-          <a href="#">
+          <a className={props.active == "0" ? "active" : ""} href="#">
             <span className="bar ir_pm">더보기</span>
           </a>
         </div>

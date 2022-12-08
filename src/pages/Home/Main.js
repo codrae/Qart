@@ -6,7 +6,6 @@ import ArtDB from "./ArtDB/ArtDB";
 import New from "./New/New";
 import NFT from "./NETStore/NFT";
 
-import "./Main.css";
 const Main = () => {
   return (
     <div className="main">
