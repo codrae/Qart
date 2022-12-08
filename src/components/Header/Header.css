@@ -2,10 +2,15 @@ header {
   width: 100%;
   min-width: 1920px;
   height: 100px;
-  display: flex;
-  flex-direction: row;
 
   border-bottom: 1px solid #bdbdbd;
+}
+.header-container {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 .header__logo {
   display: flex;
@@ -54,8 +59,12 @@ header {
 @media (max-width: 380px) {
   header {
     height: 63px;
-    justify-content: space-between;
+
     min-width: 360px;
+  }
+  .header-container {
+    max-width: 360px;
+    justify-content: space-between;
   }
   .header__logo {
     width: 73px;

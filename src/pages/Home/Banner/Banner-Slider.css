@@ -6,7 +6,7 @@
 /* the parent */
 .slick-list {
   margin-left: 0 -80px;
-  padding-left: 0 !important;
+  /* padding-left: 0 !important; */
 }
 .img-box {
   width: 1163px !important;

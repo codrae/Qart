@@ -34,49 +34,85 @@ const Banner = () => {
   ];
 
   return (
-    <section className="banner">
-      <div className="banner__info">
-        <div className="banner__info__title">
-          <h2>{info[activeSlide].name}</h2>
-          <br></br>
-          <h2>- {info[activeSlide].illustrator}</h2>
+    <div className="container">
+      <section className="banner">
+        <div className="banner__info">
+          <div className="banner__info__title">
+            <h2>{info[activeSlide].name}</h2>
+            <br></br>
+            <h2>- {info[activeSlide].illustrator}</h2>
+          </div>
+          <div className="banner-phone">
+            <ul className="banner__number">
+              <li>
+                {activeSlide == 0 ? (
+                  <span className="choose"></span>
+                ) : (
+                  <span></span>
+                )}
+              </li>
+              <li>
+                {activeSlide == 1 ? (
+                  <span className="choose"></span>
+                ) : (
+                  <span></span>
+                )}
+              </li>
+              <li>
+                {activeSlide == 2 ? (
+                  <span className="choose"></span>
+                ) : (
+                  <span></span>
+                )}
+              </li>
+            </ul>
+            <div className="auto-carousel" ref={autoRef}>
+              <Slider
+                {...settings}
+                arrows={false}
+                centerPadding="0"
+                centerMargi="0"
+                autoplay={true}
+                speed="300"
+                beforeChange={(current, next) => {
+                  // auto-carousel 이 block 일 때만 state 변화하도록
+                  if (
+                    window.getComputedStyle(autoRef.current).display == "block"
+                  )
+                    setActiveSlide(next);
+                }}
+              >
+                <div className="img-box">
+                  <img
+                    src={require("../../../assets/banner1.png")}
+                    alt="banner1"
+                  ></img>
+                </div>
+
+                <div className="img-box">
+                  <img
+                    src={require("../../../assets/banner2.png")}
+                    alt="banner2"
+                  ></img>
+                </div>
+
+                <div className="img-box">
+                  <img
+                    src={require("../../../assets/banner3.png")}
+                    alt="banner3"
+                  ></img>
+                </div>
+              </Slider>
+            </div>
+          </div>
+          <div className="banner__info__detail">{info[activeSlide].detail}</div>
         </div>
-        <div className="banner-phone">
-          <ul className="banner__number">
-            <li>
-              {activeSlide == 0 ? (
-                <span className="choose"></span>
-              ) : (
-                <span></span>
-              )}
-            </li>
-            <li>
-              {activeSlide == 1 ? (
-                <span className="choose"></span>
-              ) : (
-                <span></span>
-              )}
-            </li>
-            <li>
-              {activeSlide == 2 ? (
-                <span className="choose"></span>
-              ) : (
-                <span></span>
-              )}
-            </li>
-          </ul>
-          <div className="auto-carousel" ref={autoRef}>
+        <div className="banner__art_slide">
+          <div className="carousel">
             <Slider
               {...settings}
-              arrows={false}
-              centerPadding="0"
-              centerMargi="0"
-              autoplay={true}
-              speed="300"
               beforeChange={(current, next) => {
-                // auto-carousel 이 block 일 때만 state 변화하도록
-                if (window.getComputedStyle(autoRef.current).display == "block")
-                  setActiveSlide(next);
+                setActiveSlide(next);
               }}
             >
               <div className="img-box">
@@ -102,40 +138,8 @@ const Banner = () => {
             </Slider>
           </div>
         </div>
-        <div className="banner__info__detail">{info[activeSlide].detail}</div>
-      </div>
-      <div className="banner__art_slide">
-        <div className="carousel">
-          <Slider
-            {...settings}
-            beforeChange={(current, next) => {
-              setActiveSlide(next);
-            }}
-          >
-            <div className="img-box">
-              <img
-                src={require("../../../assets/banner1.png")}
-                alt="banner1"
-              ></img>
-            </div>
-
-            <div className="img-box">
-              <img
-                src={require("../../../assets/banner2.png")}
-                alt="banner2"
-              ></img>
-            </div>
-
-            <div className="img-box">
-              <img
-                src={require("../../../assets/banner3.png")}
-                alt="banner3"
-              ></img>
-            </div>
-          </Slider>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 export default Banner;

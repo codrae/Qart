@@ -1,23 +1,29 @@
 footer {
   width: 100%;
   min-width: 1920px;
-  max-height: 540px;
+  height: 540px;
   background: #fbfbfb;
   border-top: 1px solid #bdbdbd;
 }
 /* 선 */
-.footer__menu,
-.footer__detail {
-  padding-left: 25%;
+.footer-container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.footer-line {
+  display: block;
+  width: 25%;
 }
 .footer__menu__item,
 .footer__detail__item {
-  height: calc(100% - 40px);
-  padding: 0 33.33%;
+  width: 75%;
+  height: 100%;
   padding-top: 40px;
-
   border-left: 1px solid #bdbdbd;
-  min-width: 500px;
 }
 
 .footer__menu {
@@ -27,10 +33,12 @@ footer {
 .footer__detail {
   height: 267px;
 }
-.footer__menu__item {
+.item-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 30.48%;
+  padding-right: 36.31%;
 }
 .footer__menu__item h3 {
   font-family: "Noto Sans";
@@ -53,17 +61,17 @@ footer {
   margin-bottom: 0;
 }
 
-.footer__detail__item span {
+.detail__name {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #333333;
-}
-.detail__name {
   display: flex;
   flex-direction: row;
   margin-bottom: 22px;
+  padding-left: 30.48%;
+  padding-right: 36.31%;
 }
 .detail__name--co {
   margin-right: 147px;
@@ -71,20 +79,39 @@ footer {
 .detail__location {
   display: block;
   margin-bottom: 16px;
+  padding-left: 30.48%;
+  padding-right: 36.31%;
+}
+.footer__detail__item p {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  padding-left: 30.48%;
+  padding-right: 36.31%;
 }
 @media (max-width: 380px) {
   footer {
     min-width: 360px;
+    height: 322px;
   }
-  .footer__menu,
-  .footer__detail {
-    padding-left: 0;
+  .footer-container {
+    max-width: 360px;
+  }
+  .footer-line {
+    display: block;
+    width: 0%;
   }
   .footer__menu {
     height: 127px;
   }
   .footer__detail {
     height: 195px;
+  }
+  .item-container {
+    padding-left: 0;
+    padding-right: 0;
   }
   .footer__menu__item,
   .footer__detail__item {
@@ -102,16 +129,27 @@ footer {
     margin-bottom: 8px;
     font-size: 10px;
   }
-  .footer__detail__item span {
-    font-size: 10px;
-  }
   .detail__name {
     margin-bottom: 12px;
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .detail__name--co {
     margin-right: 72px;
   }
   .detail__location {
     margin-bottom: 7px;
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer__detail__item p {
+    font-size: 10px;
+    line-height: 14px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
