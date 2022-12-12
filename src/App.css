@@ -51,6 +51,9 @@
   height: 100%;
   overflow: hidden;
 }
+.bottom-border {
+  border-bottom: 1px solid #bdbdbd;
+}
 @media (max-width: 380px) {
   .container {
     max-width: 360px;
