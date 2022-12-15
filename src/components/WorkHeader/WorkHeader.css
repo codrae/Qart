@@ -46,6 +46,28 @@
   height: 100%;
   width: 480px;
   border-left: 1px solid #bdbdbd;
+
+  display: flex;
+  align-items: center;
+}
+.work-header__more button {
+  width: 112px;
+  height: 39px;
+
+  background: #2f80ed;
+  /* Blue 1 */
+
+  border: 1px solid #2f80ed;
+  border-radius: 34px;
+  margin-left: 48px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #ffffff;
 }
 .work-header-detail {
   height: 82px;

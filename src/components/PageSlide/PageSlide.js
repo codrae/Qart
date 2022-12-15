@@ -47,7 +47,6 @@ function PageSlide(props) {
 
         <button
           className="slick-last"
-          style={{ marginTop: "10px" }}
           onClick={() => {
             sliderRef.current.slickGoTo(props.items.length / 6 - 1);
           }}

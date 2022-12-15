@@ -1,0 +1,136 @@
+.author-info {
+  width: 100%;
+  height: 396px;
+  display: flex;
+  flex-direction: row;
+}
+.author-info__image {
+  width: 236px;
+  height: 236px;
+  border-radius: 50%;
+  margin-left: 320px;
+  margin-top: 80px;
+}
+.author-info__profile {
+  display: block;
+  margin-top: 80px;
+  margin-left: 48px;
+}
+.author-info__profile p {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 27px;
+}
+.author-info__profile-name {
+  display: block;
+  width: 90px;
+  padding-right: 38px;
+  text-align-last: left;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #4f4f4f;
+}
+.author-info__profile-item {
+  width: 867px;
+  text-align-last: left;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #000000;
+  /* margin-left: 38px; */
+}
+
+.display-history__header {
+  height: 90px;
+}
+.display-history__header h3 {
+  height: 100%;
+  width: 200px;
+  text-align: left;
+
+  border-right: 1px solid #bdbdbd;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding-left: 320px;
+}
+.display-history__list {
+  padding: 40px 0;
+}
+.display-history__list li {
+  padding-left: 320px;
+  padding-bottom: 24px;
+}
+.display-history__list li:last-child {
+  padding-bottom: 0;
+}
+.display-history__list li span {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #4f4f4f;
+}
+.display-history__item-period {
+  width: 267px;
+  margin-right: 48px;
+}
+.display-history__item-title {
+  font-weight: 400;
+  color: #333333;
+}
+.display-history__item-title b {
+  font-weight: 700;
+  color: #222222;
+  padding-right: 16px;
+}
+.display-history__more {
+  width: 100%;
+  height: 90px;
+  border: none;
+  background: none;
+  border-top: 1px solid #bdbdbd;
+  /* border-bottom: 1px solid #bdbdbd; */
+}
+.display-history__more p {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  color: #4f4f4f;
+}
+.display-history__more p > span {
+  padding-left: 908px;
+}
+.more-arrow {
+  padding-left: 0;
+  display: block;
+  background: url(../../../assets/arrow-more.png) no-repeat;
+  background-size: contain;
+  font-size: 12px;
+  height: 23px;
+  margin-left: 16px;
+}

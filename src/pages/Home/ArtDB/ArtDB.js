@@ -9,7 +9,7 @@ const ArtDB = () => {
         <div className="artbase__item">
           <img src={require("../../../assets/art_01.png")}></img>
           <div className="artbase__item__info">
-            <a href="#" className="artbase__info__deatil">
+            <a href="/artdb" className="artbase__info__deatil">
               <span className="artbase__info-name">Art Database</span>
               <h3>Artist</h3>
               <h5>큐아트 작가 정보 바로가기</h5>
@@ -19,7 +19,7 @@ const ArtDB = () => {
         </div>
         <div className="artbase__item">
           <div className="artbase__item__info">
-            <a href="#" className="artbase__info__deatil right">
+            <a href="/artdb/work" className="artbase__info__deatil right">
               <span className="artbase__info-name">Art Database</span>
               <h3>Work</h3>
               <h5>큐아트 작품 정보 바로가기</h5>

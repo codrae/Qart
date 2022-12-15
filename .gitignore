@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# 작품 파일
+/src/qart_test
 # dependencies
 /node_modules
 /.pnp

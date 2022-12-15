@@ -2,8 +2,6 @@ import React from "react";
 
 import "./ArtDbWork.css";
 import BannerSlide from "../../../components/BannerSlide/BannerSlide";
-import SearchSlide from "../../../components/SearchSlide/SearchSlide";
-import GalleryInfo from "../../../components/GalleryInfo/GalleryInfo";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
 import PageSlide from "../../../components/PageSlide/PageSlide";
 function ArtDbWork() {
@@ -53,32 +51,7 @@ function ArtDbWork() {
       title: "내재울의 외적 파동2, 2019",
     },
   ];
-  const galleryInfo = [
-    {
-      info: "assets/gallery_01.png",
-      size: "contain",
-      title: "Marco Fusinato",
-      order: 0,
-      detail:
-        "You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...",
-    },
-    {
-      info: "qart_test/ȸȭ/KIM TAEHO, Internal Rythem 2005-21, 50x65.1 cm, Acrylic on canvas, 2005.jpg",
-      size: "none",
-      title: "Marco Fusinato",
-      order: -1,
-      detail:
-        "You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...",
-    },
-    {
-      info: "assets/gallery_02.png",
-      size: "contain",
-      title: "Marco Fusinato",
-      order: 0,
-      detail:
-        "You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...",
-    },
-  ];
+
   const moreList = [
     "회화(0000)",
     "판화(0000)",

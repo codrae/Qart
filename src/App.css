@@ -50,6 +50,8 @@
   margin: 0 auto;
   height: 100%;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 .bottom-border {
   border-bottom: 1px solid #bdbdbd;

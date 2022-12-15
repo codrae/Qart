@@ -10,7 +10,9 @@ const WorkHeader = (props) => {
             <h2 className="work-header__info-k">{props.title_k}</h2>
             <h3 className="work-header__info-e">{props.title_e}</h3>
           </p>
-          <p className="work-header__more"></p>
+          <p className="work-header__more">
+            {props.follow ? <button>팔로우</button> : <></>}
+          </p>
         </div>
       </section>
       {props.moreList ? (
