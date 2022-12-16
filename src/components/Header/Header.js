@@ -5,13 +5,13 @@ const Header = (props) => {
     <header>
       <div className="container header-container">
         <div className="header__logo">
-          <a href="#">
+          <a href="/">
             <span className="none">Qart</span>
           </a>
         </div>
         <ul className="header__menu">
           <li>
-            <a className={props.active == "0" ? "active" : ""} href="#">
+            <a className={props.active == "0" ? "active" : ""} href="/artdb">
               Art Database
             </a>
           </li>

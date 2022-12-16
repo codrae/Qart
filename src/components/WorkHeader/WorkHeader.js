@@ -4,9 +4,17 @@ import "./WorkHeader.css";
 const WorkHeader = (props) => {
   return (
     <header className="work-header">
-      <section className="work-header-basic">
+      <section
+        className={
+          props.small ? "work-header-basic small-header" : "work-header-basic"
+        }
+      >
         <div className="container work-header__container">
-          <p className="work-header__info">
+          <p
+            className={
+              props.left ? "work-header__info-left" : "work-header__info"
+            }
+          >
             <h2 className="work-header__info-k">{props.title_k}</h2>
             <h3 className="work-header__info-e">{props.title_e}</h3>
           </p>

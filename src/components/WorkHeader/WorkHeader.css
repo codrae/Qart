@@ -8,6 +8,9 @@
   height: 133px;
   border-bottom: 1px solid #bdbdbd;
 }
+.small-header {
+  height: 109px;
+}
 .work-header__container {
   display: flex;
   flex-direction: row;
@@ -15,6 +18,13 @@
 .work-header__info {
   height: 100%;
   width: 1440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.work-header__info-left {
+  height: 100%;
+  width: 480px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,6 +40,7 @@
 
   padding-left: 320px;
 }
+
 .work-header__info-e {
   font-family: "Noto Sans";
   font-style: normal;
@@ -42,6 +53,7 @@
   color: #4f4f4f;
   padding-left: 12px;
 }
+
 .work-header__more {
   height: 100%;
   width: 480px;

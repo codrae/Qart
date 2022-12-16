@@ -52,6 +52,10 @@
   padding: 0;
   margin-left: 6.04%;
   padding-left: 32px;
+  font-size: 20px;
+}
+.search__block__input:focus {
+  outline: none;
 }
 .search__block__input::-webkit-input-placeholder {
   font-family: "Noto Sans";

@@ -7,6 +7,7 @@ import ArtDatabase from "./pages/ArtDatabase/ArtDatabase";
 import ArtDbArtist from "./pages/ArtDatabase/Artist/ArtDbArtist";
 import ArtDbWork from "./pages/ArtDatabase/Work/ArtDbWork";
 import ArtDbWork2 from "./pages/ArtDatabase/Work/ArtDbWork2";
+import ArtDbWork3 from "./pages/ArtDatabase/Work/ArtDbWork3";
 function App() {
   return (
     <BrowserRouter>
@@ -34,6 +35,14 @@ function App() {
           element={
             <ArtDatabase>
               <ArtDbWork2 />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/work3"
+          element={
+            <ArtDatabase>
+              <ArtDbWork3 />
             </ArtDatabase>
           }
         ></Route>

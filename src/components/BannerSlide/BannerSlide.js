@@ -17,11 +17,13 @@ function BannerSlide(props) {
   const slider_items = (imgList) => {
     return imgList.map((item, i) => {
       return (
-        <div className="slider__item">
-          <img src={require("../../" + item.info)} width={item.size}></img>
-          <h3 className="item-author">{item.author}</h3>
-          <h3 className="item-title">{item.title}</h3>
-        </div>
+        <a href="/artdb/work2">
+          <div className="slider__item">
+            <img src={require("../../" + item.info)} width={item.size}></img>
+            <h3 className="item-author">{item.author}</h3>
+            <h3 className="item-title">{item.title}</h3>
+          </div>
+        </a>
       );
     });
   };

@@ -10,18 +10,28 @@
   position: relative;
   z-index: 0;
 }
-
+.section-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .section-header h2 {
-  padding-left: 16.66rem; /* main 기준 */
+  padding-left: 320px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
   color: #000000;
 }
+.section-header span {
+  display: block;
+  width: 480px;
+  height: 100%;
+  float: right;
+}
 .left-line {
   height: 100%;
-  width: 25%;
+  width: 480px;
   border-right: 1px solid #bdbdbd;
   display: flex;
   align-items: center;

@@ -1,0 +1,126 @@
+.new {
+  width: 100%;
+  height: 1330px;
+}
+.new-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 1330px;
+  overflow: hidden;
+
+  position: relative;
+  z-index: 2;
+  top: -135px;
+}
+.new-slide {
+  position: relative;
+  z-index: 2;
+
+  padding: 0 480px;
+}
+.new-slider__list {
+  width: 100%;
+  height: 100%;
+}
+.new-slider__item {
+  height: 1330px;
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+.new-slider__item-info {
+  height: 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.new-slider__item-info h4 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  /* identical to box height */
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+.new-slider__item-info h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #000000;
+  padding-left: 28px;
+}
+.new-slider__item-container {
+  display: block;
+  height: 1195px;
+  overflow: auto;
+  border: 1px #bdbdbd;
+  border-style: none solid none solid;
+}
+
+.new-slider__item-container .new-slider__item-image {
+  margin: 100px 0;
+  width: 960px;
+  height: 995px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.new-slider__item-image img {
+  width: 960px;
+  height: 651px;
+}
+/* 화살표 */
+.new-slide .slick-prev,
+.new-slide .slick-next {
+  position: absolute;
+  z-index: 2;
+
+  top: 721px;
+
+  display: block;
+
+  width: 40px;
+  height: 40px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  cursor: pointer;
+
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  /* background: #000; */
+}
+
+.new-slide .slick-prev:before,
+.new-slide.slick-next:before {
+  content: "";
+  background: url("../../../assets/slider_prev.png") no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 0;
+  opacity: 1;
+}
+.new-slide .slick-next:before {
+  background: url("../../../assets/slider_next.png") no-repeat;
+  background-size: 40px 40px;
+}
+
+.new-slide .slick-prev {
+  left: -130px;
+}
+.new-slide .slick-next {
+  right: -130px;
+}

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ArtDbWork2.css";
 import BannerSlide from "../../../components/BannerSlide/BannerSlide";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
 import PageSlide from "../../../components/PageSlide/PageSlide";
 function ArtDbWork() {
+  const [isShowMore, setIsShowMore] = useState(false); // 더보기 열고 닫는 스위치
   var pageItem = [];
   for (var i = 0; i < 36; i++) {
     pageItem.push({
@@ -17,7 +18,7 @@ function ArtDbWork() {
 
   return (
     <div>
-      <WorkHeader title_k={"민정기"} follow={true} />
+      <WorkHeader title_k={"민정기"} follow={true} small={true} />
       <section className="bottom-border">
         <div className="container  author-info">
           <img
@@ -101,13 +102,59 @@ function ArtDbWork() {
             </span>
           </li>
         </ul>
-        <button className="display-history__more">
+        <button
+          className="display-history__more"
+          onClick={() => setIsShowMore(!isShowMore)}
+        >
           <p className="container">
             <span>더보기</span>
             <span className="more-arrow ir_pm">더보기버튼</span>
           </p>
         </button>
       </section>
+      {isShowMore ? (
+        <section className="bottom-border">
+          <div className="container">
+            <ul className="display-history__more-info">
+              <li>
+                <a href="#">
+                  <img></img>
+                  <h3>Marco Fusinato</h3>
+                  <p>
+                    You could hear the deep droning hum even before the black
+                    granite block that housed the Australian pavilion came into
+                    view...
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img></img>
+                  <h3>Marco Fusinato</h3>
+                  <p>
+                    You could hear the deep droning hum even before the black
+                    granite block that housed the Australian pavilion came into
+                    view...
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img></img>
+                  <h3>Marco Fusinato</h3>
+                  <p>
+                    You could hear the deep droning hum even before the black
+                    granite block that housed the Australian pavilion came into
+                    view...
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      ) : (
+        <></>
+      )}
       <WorkHeader title_e={"by genre"} title_k={"작품"} moreList={moreList} />
       <PageSlide items={pageItem} />
     </div>
