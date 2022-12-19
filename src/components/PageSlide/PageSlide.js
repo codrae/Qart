@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Slider, { slickGoTo } from "react-slick";
+import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "./PageSlide.css";

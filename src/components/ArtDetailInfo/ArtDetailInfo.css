@@ -1,0 +1,104 @@
+.art-detail-container {
+  padding: 0 320px;
+  padding-top: 100px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+}
+.art-detail__image {
+  width: 100%;
+  height: inherit;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+}
+.art-detail__list {
+  padding-left: 52px;
+}
+.art-detail__list li {
+  padding-bottom: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.art-detail__list li:last-child {
+  padding-bottom: 0;
+}
+.art-detail__list .art-detail__name {
+  display: inline-block;
+  color: #4f4f4f;
+  width: 167px;
+  vertical-align: top;
+}
+.art-detail__list .art-detail__content {
+  display: inline-block;
+  width: calc(100% - 167px);
+}
+.art-detail__profile {
+  display: block;
+  width: 620px;
+  height: 153px;
+
+  border: 1px solid #bdbdbd;
+  border-radius: 2px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.art-detail__profile img {
+  width: 102px;
+  height: 102px;
+  border-radius: 50%;
+  margin-left: 36px;
+}
+.art-detail__profile__info {
+  width: 370px;
+  padding-left: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+
+  color: #000000;
+}
+.art-detail__profile__info h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 4px;
+}
+.art-detail__profile__info h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #828282;
+  padding-bottom: 12px;
+}
+.art-detail__profile__info button {
+  width: 100px;
+  height: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #2f80ed;
+
+  border: 1px solid #2f80ed;
+  border-radius: 34px;
+  background: none;
+}
+.art-detail__profile__info button:active,
+.art-detail__profile__info button:hover {
+  color: #ffffff;
+  background: #2f80ed;
+}
+.art-detail__profile__move {
+  width: 87px;
+  height: 100%;
+
+  background: url("../../assets/page_next.png") no-repeat center;
+  background-size: 32.5px;
+  border: none;
+}

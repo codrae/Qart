@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
 import "./ArtDbWork3.css";
-import BannerSlide from "../../../components/BannerSlide/BannerSlide";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
-import PageSlide from "../../../components/PageSlide/PageSlide";
 import DetailInfo from "../../../components/DetailIfo/DetailInfo";
 import TopArrowSlider from "../../../components/TopArrowSlider/TopArrowSlider";
+import ArtDetailInfo from "../../../components/ArtDetailInfo/ArtDetailInfo";
+import SideArrowSlide from "../../../components/SideArrowSlide/SideArrowSlide";
 function ArtDbWork3() {
   const [isShowMore, setIsShowMore] = useState(false); // 더보기 열고 닫는 스위치
 
@@ -34,10 +34,65 @@ function ArtDbWork3() {
       title: "Flower Rain, 2019",
     });
   }
+  const infoItem = {
+    image: "qart_test/판화/민정기, 묵안리, 2015.jpg",
+    author: {
+      image: "qart_test/고미술/KakaoTalk_Photo_2022-07-13-17-18-21.jpeg",
+      name: "추종완",
+      email: "00000@naver.com",
+    },
+    infos: [
+      {
+        title: "장르",
+        content: "판화",
+      },
+      {
+        title: "에디션",
+        content: "Giclée print on Canvas",
+      },
+      {
+        title: "작품크기",
+        content: "70 X 70",
+      },
+      {
+        title: "재료",
+        content: "Giclée print on Canvas",
+      },
+      {
+        title: "제작년도",
+        content: "2015",
+      },
+      {
+        title: "소장정보",
+        content: "Hand-signed by the artist on the front side",
+      },
+      {
+        title: "Q-CoA 유무",
+        content: "Q-CoA 등록",
+      },
+      {
+        title: "기타",
+        content:
+          "2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 ",
+      },
+    ],
+  };
+
+  var imageItem = [];
+  for (var i = 0; i < 8; i++) {
+    imageItem.push({
+      image: "qart_test/판화/민정기, 묵안리, 2015.jpg",
+    });
+  }
   return (
     <div className="artdb-work3">
       <WorkHeader title_k={"묵안리2"} small={true} />
-
+      <section className="bottom-border">
+        <ArtDetailInfo item={infoItem} />
+      </section>
+      <section className="bottom-border">
+        <SideArrowSlide items={imageItem} />
+      </section>
       <section>
         <div className="bottom-border">
           <div className="container display-history__header">
