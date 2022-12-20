@@ -1,13 +1,12 @@
 .artbase__item {
-  width: 100%;
-  min-width: 1920px;
+  width: 1920px;
   height: 480px;
 
   display: flex;
   flex-direction: row;
 }
 .artbase__item > img {
-  width: 50%;
+  width: calc(50% - 1px); /* border 고려 */
   height: 100%;
 }
 .artbase__item__info {

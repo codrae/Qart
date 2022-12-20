@@ -26,7 +26,7 @@ function TopArrowSlider(props) {
             <img src={require("../../" + item.info)} />
           </p>
           <h4 className="top-arrow-author">{item.author}</h4>
-          <span className="top-arrow-title">{item.title}</span>
+          <p className="top-arrow-title">{item.title}</p>
         </div>
       );
     });

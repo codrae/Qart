@@ -11,12 +11,26 @@
   position: relative;
   z-index: 2;
   top: -135px;
+
+  display: flex;
+  flex-direction: row;
+}
+.new-container .right-border,
+.new-container .left-border {
+  display: block;
+  width: 480px;
+  margin-top: 135px;
+  height: 1193px;
+  border-right: 1px solid #bdbdbd;
+}
+.new-container .left-border {
+  border-left: 1px solid #bdbdbd;
+  border-right: none;
 }
 .new-slide {
   position: relative;
   z-index: 2;
-
-  padding: 0 480px;
+  width: 958px;
 }
 .new-slider__list {
   width: 100%;
@@ -24,7 +38,7 @@
 }
 .new-slider__item {
   height: 1330px;
-  width: 960px;
+  width: 958px;
   display: flex;
   flex-direction: column;
 }
@@ -61,20 +75,18 @@
   display: block;
   height: 1195px;
   overflow: auto;
-  border: 1px #bdbdbd;
-  border-style: none solid none solid;
 }
 
 .new-slider__item-container .new-slider__item-image {
   margin: 100px 0;
-  width: 960px;
+  width: 958px;
   height: 995px;
   background: #f2f2f2;
   display: flex;
   align-items: center;
 }
 .new-slider__item-image img {
-  width: 960px;
+  width: 958px;
   height: 651px;
 }
 /* 화살표 */

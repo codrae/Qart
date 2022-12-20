@@ -23,7 +23,7 @@ function PageSlide(props) {
   const slider_items = (imgList) => {
     return imgList.map((item, i) => {
       return (
-        <div className="page-slider__item">
+        <div key={i} className="page-slider__item">
           <p className="page-item-image">
             <img src={require("../../" + item.info)}></img>
           </p>

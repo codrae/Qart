@@ -43,6 +43,7 @@
 }
 
 .gallery__item {
+  min-width: 1920px;
   height: 400px;
   width: 100%;
   border-bottom: 1px solid #bdbdbd;

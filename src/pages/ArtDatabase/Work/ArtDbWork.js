@@ -1,6 +1,5 @@
 import React from "react";
 
-import "./ArtDbWork.css";
 import BannerSlide from "../../../components/BannerSlide/BannerSlide";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
 import PageSlide from "../../../components/PageSlide/PageSlide";

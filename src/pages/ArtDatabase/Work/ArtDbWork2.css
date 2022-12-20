@@ -71,6 +71,7 @@
 }
 .display-history__list {
   padding: 40px 0;
+  min-width: 1920px;
 }
 .display-history__list li {
   padding-left: 320px;
@@ -103,6 +104,7 @@
 }
 .display-history__more {
   width: 100%;
+  min-width: 1920px;
   height: 90px;
   border: none;
   background: none;

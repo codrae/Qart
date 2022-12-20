@@ -31,7 +31,7 @@ const ArtDB = () => {
         <div className="artbase__item">
           <img src={require("../../../assets/art_03.png")}></img>
           <div className="artbase__item__info">
-            <a href="#" className="artbase__info__deatil">
+            <a href="/artdb/venue" className="artbase__info__deatil">
               <span className="artbase__info-name">Art Database</span>
               <h3>Venue</h3>
               <h5>전시기관 정보 바로가기</h5>

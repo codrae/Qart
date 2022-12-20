@@ -8,6 +8,8 @@ import ArtDbArtist from "./pages/ArtDatabase/Artist/ArtDbArtist";
 import ArtDbWork from "./pages/ArtDatabase/Work/ArtDbWork";
 import ArtDbWork2 from "./pages/ArtDatabase/Work/ArtDbWork2";
 import ArtDbWork3 from "./pages/ArtDatabase/Work/ArtDbWork3";
+import Venue from "./pages/ArtDatabase/Venue/Venue";
+import VenueDetail from "./pages/ArtDatabase/Venue/VenueDetail";
 function App() {
   return (
     <BrowserRouter>
@@ -43,6 +45,22 @@ function App() {
           element={
             <ArtDatabase>
               <ArtDbWork3 />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/venue"
+          element={
+            <ArtDatabase>
+              <Venue />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/venue/1"
+          element={
+            <ArtDatabase>
+              <VenueDetail />
             </ArtDatabase>
           }
         ></Route>

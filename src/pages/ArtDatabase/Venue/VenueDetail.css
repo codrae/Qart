@@ -1,0 +1,44 @@
+.venue-detail .art-detail__image {
+  width: 40%;
+}
+.venue-detail .art-detail__list {
+  width: 60%;
+  /* padding-left: 52px; */
+}
+.venue-detail .art-detail__list .art-detail__name {
+  width: 131px;
+}
+.venue-detail .section-header {
+  border-top: none;
+}
+.venue-detail .top-arrow {
+  border-bottom: 1px solid #bdbdbd;
+  height: calc(770px + 135px);
+}
+
+.venue-detail .top-arrow-container {
+  height: calc(770px + 135px);
+}
+.venue-detail .top-arrow-slider {
+  height: calc(770px + 135px);
+}
+.venue-detail .top-arrow-slider .slick-list {
+  height: 570px;
+}
+.venue-detail .top-arrow-item {
+  height: 570px !important;
+}
+.venue-detail .top-arrow-title {
+  font-weight: 400;
+  font-size: 24px;
+
+  /* 말 줄임 ... */
+  color: #333333;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}

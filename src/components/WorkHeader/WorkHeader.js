@@ -10,14 +10,14 @@ const WorkHeader = (props) => {
         }
       >
         <div className="container work-header__container">
-          <p
+          <div
             className={
               props.left ? "work-header__info-left" : "work-header__info"
             }
           >
             <h2 className="work-header__info-k">{props.title_k}</h2>
             <h3 className="work-header__info-e">{props.title_e}</h3>
-          </p>
+          </div>
           <p className="work-header__more">
             {props.follow ? <button>팔로우</button> : <></>}
           </p>
@@ -29,7 +29,7 @@ const WorkHeader = (props) => {
             <ul>
               {props.moreList.map((item, i) => {
                 return (
-                  <li>
+                  <li key={i}>
                     <button className={i == 0 ? "choice" : ""}>{item}</button>
                   </li>
                 );

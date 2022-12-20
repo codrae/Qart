@@ -53,11 +53,13 @@ const New = () => {
     <div className="new">
       <SectionHeader title={"New"} line="left-line" />
       <section className="new-container">
+        <div className="right-border"></div>
         <div className="new-slide">
           <div className="new-slider__list">
             <Slider {...settings}>{slider_items(newItems)}</Slider>
           </div>
         </div>
+        <div className="left-border"></div>
       </section>
     </div>
   );

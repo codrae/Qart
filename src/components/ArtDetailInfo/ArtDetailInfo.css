@@ -1,19 +1,21 @@
 .art-detail-container {
-  padding: 0 320px;
-  padding-top: 100px;
-  padding-bottom: 64px;
+  padding: 100px 320px;
   display: flex;
   flex-direction: row;
+  min-width: 1280px;
 }
 .art-detail__image {
-  width: 100%;
+  width: 50%;
   height: inherit;
   background: #f2f2f2;
   display: flex;
   align-items: center;
 }
+.art-detail__image img {
+  width: 100%;
+}
 .art-detail__list {
-  padding-left: 52px;
+  width: 50%;
 }
 .art-detail__list li {
   padding-bottom: 32px;
@@ -23,6 +25,7 @@
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  padding-left: 52px;
 }
 .art-detail__list li:last-child {
   padding-bottom: 0;
@@ -39,7 +42,6 @@
 }
 .art-detail__profile {
   display: block;
-  width: 620px;
   height: 153px;
 
   border: 1px solid #bdbdbd;
@@ -56,8 +58,8 @@
   margin-left: 36px;
 }
 .art-detail__profile__info {
-  width: 370px;
   padding-left: 24px;
+  width: 362.5px;
   font-family: "Roboto";
   font-style: normal;
 

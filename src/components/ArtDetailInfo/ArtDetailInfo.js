@@ -6,7 +6,7 @@ function ArtDetailInfo(props) {
   const InfoItem = (items) => {
     return Object.values(items).map((info, i) => {
       return (
-        <li>
+        <li key={i}>
           <span className="art-detail__name">{info.title}</span>
           <span className="art-detail__content">{info.content}</span>
         </li>
@@ -22,19 +22,23 @@ function ArtDetailInfo(props) {
         </p>
         <ul className="art-detail__list">
           {InfoItem(item.infos)}
-          <li>
-            <div className="art-detail__profile">
-              <img src={require("../../" + item.author.image)}></img>
-              <article className="art-detail__profile__info">
-                <h2>{item.author.name}</h2>
-                <h4>{item.author.email}</h4>
-                <button>팔로우</button>
-              </article>
-              <button className="art-detail__profile__move">
-                <span className="ir_pm">이동</span>
-              </button>
-            </div>
-          </li>
+          {item.author ? (
+            <li>
+              <div className="art-detail__profile">
+                <img src={require("../../" + item.author.image)}></img>
+                <article className="art-detail__profile__info">
+                  <h2>{item.author.name}</h2>
+                  <h4>{item.author.email}</h4>
+                  <button>팔로우</button>
+                </article>
+                <button className="art-detail__profile__move">
+                  <span className="ir_pm">이동</span>
+                </button>
+              </div>
+            </li>
+          ) : (
+            <></>
+          )}
         </ul>
       </div>
     </section>

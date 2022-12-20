@@ -15,7 +15,7 @@ const SectionHeader = () => {
             className="search__block__input"
           />
           <button className="search__block__button">
-            <span class="ir_pm">검색</span>
+            <span className="ir_pm">검색</span>
           </button>
         </section>
       </div>
