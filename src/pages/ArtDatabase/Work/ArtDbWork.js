@@ -11,24 +11,28 @@ function ArtDbWork() {
       size: "644px",
       author: "작가미상",
       title: "나전칠연상, 조선시대",
+      link: "/artdb/work3",
     },
     {
       info: "qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg",
       size: "358px",
       author: "작가미상",
       title: "백자 달항아리, 조선시대",
+      link: "/artdb/work3",
     },
     {
       info: "qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg",
       size: "400px",
       author: "작가미상",
       title: "석조나한좌상, 19세기",
+      link: "/artdb/work3",
     },
     {
       info: "qart_test/고미술/KakaoTalk_Photo_2022-07-13-17-18-21.jpeg",
       size: "842px",
       author: "Kim HoDeuk",
       title: "Distant Mountain, 2015",
+      link: "/artdb/work3",
     },
   ];
   const bannerList2 = [
@@ -37,18 +41,21 @@ function ArtDbWork() {
       size: "719px",
       author: "김문정",
       title: "looseroutside_pespective, 2020",
+      link: "/artdb/work3",
     },
     {
       info: "qart_test/미디어/node00, 내재율의 외적 파동, 2019.jpg",
       size: "475px",
       author: "node00",
       title: "내재울의 외적 파동, 2019",
+      link: "/artdb/work3",
     },
     {
       info: "qart_test/미디어/node00, 내재율의 외적 파동2, 2019.jpg",
       size: "430px",
       author: "node00",
       title: "내재울의 외적 파동2, 2019",
+      link: "/artdb/work3",
     },
   ];
 

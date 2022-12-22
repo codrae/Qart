@@ -4,6 +4,9 @@
   height: 480px;
   border-bottom: 1px solid #bdbdbd;
 }
+.gallery-dir__item:last-child {
+  border-bottom: none;
+}
 .gallery-dir__item-container {
   width: 1920px;
   height: 100%;
@@ -92,38 +95,42 @@
   background-size: contain;
 }
 @media (max-width: 380px) {
-  .artbase__item {
-    min-width: 360px;
+  .gallery-dir__item {
+    min-width: 380px;
     height: 180px;
   }
-  .artbase__info__deatil {
+  .gallery-dir__item-container {
+    width: 380px;
+  }
+  .gallery-dir__info__deatil {
     width: 100%;
     border-right: none;
   }
-  .right {
+  .gallery-dir-left {
+    margin-left: 0;
     border-left: none;
   }
-  .artbase__info__deatil > .artbase__info-name {
+  .gallery-dir__info__deatil > .gallery-dir__info-name {
     padding-top: 20px;
     padding-left: 11.11%;
     font-size: 8px;
     line-height: 11px;
   }
-  .artbase__info__deatil > h3 {
+  .gallery-dir__info__deatil > h3 {
     padding-top: 78px;
     padding-left: 11.11%;
 
     font-size: 20px;
     line-height: 23px;
   }
-  .artbase__info__deatil > h5 {
+  .gallery-dir__info__deatil > h5 {
     padding-top: 2px;
     padding-left: 11.11%;
 
     font-size: 10px;
     line-height: 14px;
   }
-  .artbase-link {
+  .gallery-dir-link {
     margin-left: 11.11%;
     margin-top: 12px;
     padding-left: 11.11%;

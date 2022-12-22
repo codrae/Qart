@@ -93,7 +93,7 @@ footer {
 }
 @media (max-width: 380px) {
   footer {
-    min-width: 360px;
+    min-width: 380px;
     height: 322px;
   }
   .footer-container {

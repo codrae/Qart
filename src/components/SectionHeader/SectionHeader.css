@@ -64,17 +64,19 @@
 }
 @media (max-width: 380px) {
   .section-header {
-    min-width: 360px;
+    min-width: 380px;
     height: 59px;
     border-top: 0.5px solid #828282;
     border-bottom: 0.5px solid #828282;
   }
-  .section-heaader-container {
-    max-width: 360px;
+  .section-header-container {
+    display: block;
   }
   .section-header h2 {
-    padding-left: 13.33%;
+    width: calc(100% - 48px);
+    padding-left: 48px;
     font-size: 20px;
+    line-height: 27px;
   }
   .left-line {
     height: 100%;

@@ -58,9 +58,9 @@
   height: 663px;
 }
 
-.market-main .slick-list {
+/* .market-main .slick-list {
   height: 663px;
-}
+} */
 .market-main .slider__item {
   height: 663px;
 }
@@ -101,4 +101,21 @@
 .market-main .gallery-dir-left > .gallery-dir-link {
   margin-left: 0;
   margin-right: 5%;
+}
+@media (max-width: 380px) {
+  .market-main .gallery-dir__item-image img {
+    width: 100%;
+    margin-left: 0;
+  }
+  .market-main .section-header h2 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .market-main .section-header {
+    border-top: 0.5px solid #bdbdbd;
+    border-bottom: 0.5px solid #bdbdbd;
+  }
+  .market-main .section-header .right-line {
+    border-right: none;
+  }
 }

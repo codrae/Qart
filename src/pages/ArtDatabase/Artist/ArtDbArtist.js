@@ -11,24 +11,28 @@ function ArtDbArtist() {
       size: "359px",
       author: "김동선",
       title: "곰순이, 2010년대",
+      link: "/artdb/work2",
     },
     {
       info: "qart_test/판화/민정기, 묵안리, 2015.jpg",
       size: "701px",
       author: "민정기",
       title: "묵안리2, 2015",
+      link: "/artdb/work2",
     },
     {
       info: "qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png",
       size: "327px",
       author: "Chang SangEui",
       title: "Flower Rain, 2019",
+      link: "/artdb/work2",
     },
     {
       info: "qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png",
       size: "329px",
       author: "Kim HoDeuk",
       title: "Distant Mountain, 2015",
+      link: "/artdb/work2",
     },
   ];
   var searchItem = [];

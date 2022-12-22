@@ -18,7 +18,7 @@ function RPaddingSlide(props) {
   const slider_items = (imgList) => {
     return imgList.map((item, i) => {
       return (
-        <a href="/artdb/work2">
+        <a href={item.link}>
           <div className="slider__item">
             <img src={require("../../" + item.info)} width={item.size}></img>
             <h3 className="item-author">{item.author}</h3>
