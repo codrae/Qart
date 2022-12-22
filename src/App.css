@@ -56,6 +56,9 @@
 .bottom-border {
   border-bottom: 1px solid #bdbdbd;
 }
+.top-border {
+  border-top: 1px solid #bdbdbd;
+}
 @media (max-width: 380px) {
   .container {
     max-width: 360px;

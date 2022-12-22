@@ -115,7 +115,7 @@
 }
 
 .new-slide .slick-prev:before,
-.new-slide.slick-next:before {
+.new-slide .slick-next:before {
   content: "";
   background: url("../../../assets/slider_prev.png") no-repeat;
   background-size: 40px 40px;

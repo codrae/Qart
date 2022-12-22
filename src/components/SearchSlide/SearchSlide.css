@@ -75,10 +75,12 @@
   color: #bdbdbd;
   padding: 0;
 }
+.search__header__dic button:active,
 .search__header__dic button.click {
   font-weight: 700;
   color: #333333;
 }
+
 .search-slider {
   width: 100%;
   /* height: 1468px; */
@@ -202,9 +204,9 @@
 }
 
 .search-slider__list .slick-prev {
-  right: 54px;
+  left: 1176px;
 }
 .search-slider__list .slick-next {
-  right: 322px;
+  /* right: 322px; */
   right: 0;
 }

@@ -12,9 +12,7 @@ function DetailInfo(props) {
             width={item.width}
             height={item.height}
           />
-          <p className="detail-info__comment" style={{ width: item.width }}>
-            {item.detail}
-          </p>
+          <p className="detail-info__comment">{item.detail}</p>
         </li>
       );
     });

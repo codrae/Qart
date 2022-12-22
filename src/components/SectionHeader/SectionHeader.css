@@ -4,8 +4,8 @@
   height: 135px;
   background: #fbfbfb;
 
-  border-top: 1px solid #828282;
-  border-bottom: 1px solid #828282;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
 
   position: relative;
   z-index: 0;
@@ -16,12 +16,29 @@
   justify-content: space-between;
 }
 .section-header h2 {
+  display: block;
+  width: calc(100% - 320px);
   padding-left: 320px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
+  line-height: 56px;
   color: #000000;
+}
+.section-header h4 {
+  display: block;
+  width: calc(100% - 320px);
+  padding-left: 320px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  /* Black */
+
+  padding-bottom: 12px;
+  color: #222222;
 }
 .section-header span {
   display: block;
@@ -34,14 +51,16 @@
   width: 480px;
   border-right: 1px solid #bdbdbd;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .right-line {
   height: 100%;
   width: 75%;
   border-right: 1px solid #bdbdbd;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 380px) {
   .section-header {

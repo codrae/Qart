@@ -6,7 +6,8 @@ const SectionHeader = (props) => {
     <header className="section-header">
       <div className="container section-header-container">
         <div className={props.line}>
-          <h2>{props.title}</h2>
+          {props.title_e ? <h4>{props.title_e}</h4> : <></>}
+          <h2>{props.title_k}</h2>
         </div>
         <span></span>
       </div>

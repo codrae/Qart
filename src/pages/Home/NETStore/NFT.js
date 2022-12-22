@@ -40,7 +40,7 @@ const NFT = () => {
 
   return (
     <section className="nft">
-      <SectionHeader title="NFT Store" line="right-line" />
+      <SectionHeader title_k="NFT Store" line="right-line" />
       <div className="nft-container">
         <Slider {...settings} className="nft-slider">
           {slider_items(nftItem)}

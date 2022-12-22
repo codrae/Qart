@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./ArtDbArtist.css";
-import BannerSlide from "../../../components/BannerSlide/BannerSlide";
+import RPaddingSlide from "../../../components/RPaddingSlide/RPaddingSlide";
 import SearchSlide from "../../../components/SearchSlide/SearchSlide";
 import GalleryInfo from "../../../components/GalleryInfo/GalleryInfo";
 function ArtDbArtist() {
@@ -69,7 +69,7 @@ function ArtDbArtist() {
 
   return (
     <div>
-      <BannerSlide
+      <RPaddingSlide
         title_e={"Today’s Artists"}
         title_k={"오늘의 작가"}
         items={bannerList}

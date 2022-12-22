@@ -4,6 +4,10 @@
   z-index: 0;
   height: calc(710px + 135px);
 }
+.top-arrow .section-header h2 {
+  font-size: 42px;
+  line-height: 49px;
+}
 .top-arrow-container {
   max-width: 1920px;
   margin: 0 auto;

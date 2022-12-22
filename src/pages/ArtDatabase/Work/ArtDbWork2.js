@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import "./ArtDbWork2.css";
-import BannerSlide from "../../../components/BannerSlide/BannerSlide";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
 import PageSlide from "../../../components/PageSlide/PageSlide";
 function ArtDbWork() {

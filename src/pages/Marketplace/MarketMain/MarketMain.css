@@ -1,0 +1,104 @@
+.market-main .top-arrow {
+  height: 820px;
+}
+.market-main .top-arrow-container {
+  top: 0;
+  height: 100%;
+}
+.market-main .top-arrow-slider {
+  height: 100%;
+  padding-top: 136px;
+}
+.market-main .top-arrow-slider .slick-prev,
+.market-main .top-arrow-slider .slick-next {
+  top: 86px;
+}
+.market-main .top-arrow-slider .slick-list {
+  height: calc(510px + 74px);
+}
+.market-main .top-arrow-item {
+  text-align: center;
+}
+.market-main .top-arrow-price {
+  padding-top: 36px;
+  display: block;
+  width: 400px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #2f80ed;
+}
+
+.market-main .section-header h2 {
+  font-size: 42px;
+  line-height: 49px;
+}
+.market-main .section-header {
+  padding-top: 0;
+  border-top: none;
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  background: #fbfbfb;
+}
+.market-main .section-header .right-line {
+  border-right: 1px solid #bdbdbd;
+  justify-content: center;
+}
+
+.market-main .banner-slide {
+  height: 996px;
+}
+.market-main .banner-slider {
+  padding-top: calc(135px + 100px);
+}
+.market-main .banner__slider {
+  height: 663px;
+}
+
+.market-main .slick-list {
+  height: 663px;
+}
+.market-main .slider__item {
+  height: 663px;
+}
+.market-main .banner-slide .item-price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #2f80ed;
+
+  padding-top: 32px;
+}
+.market-main .gallery__header {
+  height: 133px;
+}
+.market-main .gallery__header__info-e {
+  display: none;
+}
+.market-main .gallery__header__info-k {
+  padding-top: 42px;
+}
+.market-main .gallery-dir__item-image img {
+  width: 50%;
+  object-fit: cover;
+  margin-left: 50%;
+}
+.market-main .gallery-dir-left {
+  text-align: right;
+}
+.market-main .gallery-dir-left > .gallery-dir__info-name,
+.market-main .gallery-dir-left > h3,
+.market-main .gallery-dir-left > h5 {
+  padding-left: 0;
+  padding-right: 5%;
+}
+.market-main .gallery-dir-left > .gallery-dir-link {
+  margin-left: 0;
+  margin-right: 5%;
+}

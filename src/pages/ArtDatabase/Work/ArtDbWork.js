@@ -1,8 +1,9 @@
 import React from "react";
 
-import BannerSlide from "../../../components/BannerSlide/BannerSlide";
+import RPaddingSlide from "../../../components/RPaddingSlide/RPaddingSlide";
 import WorkHeader from "../../../components/WorkHeader/WorkHeader";
 import PageSlide from "../../../components/PageSlide/PageSlide";
+import "./ArtDbWork.css";
 function ArtDbWork() {
   const bannerList1 = [
     {
@@ -72,22 +73,18 @@ function ArtDbWork() {
     <div>
       <WorkHeader title_e={"by era"} title_k={"시대별"} />
       <div className="bottom-border">
-        <section className="container">
-          <BannerSlide
-            title_e={"Antique Art"}
-            title_k={"고미술(000)"}
-            items={bannerList1}
-          />
-        </section>
+        <RPaddingSlide
+          title_e={"Antique Art"}
+          title_k={"고미술(000)"}
+          items={bannerList1}
+        />
       </div>
       <div className="bottom-border">
-        <section className="container">
-          <BannerSlide
-            title_e={"Modern&Contemporary"}
-            title_k={"근현대"}
-            items={bannerList2}
-          />
-        </section>
+        <RPaddingSlide
+          title_e={"Modern&Contemporary"}
+          title_k={"근현대"}
+          items={bannerList2}
+        />
       </div>
       <WorkHeader title_e={"by genre"} title_k={"유형별"} moreList={moreList} />
       <PageSlide items={pageItem} />

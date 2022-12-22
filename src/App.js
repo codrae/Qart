@@ -10,6 +10,9 @@ import ArtDbWork2 from "./pages/ArtDatabase/Work/ArtDbWork2";
 import ArtDbWork3 from "./pages/ArtDatabase/Work/ArtDbWork3";
 import Venue from "./pages/ArtDatabase/Venue/Venue";
 import VenueDetail from "./pages/ArtDatabase/Venue/VenueDetail";
+import VenueDisplay from "./pages/ArtDatabase/Venue/VenueDisplay";
+import MarketMain from "./pages/Marketplace/MarketMain/MarketMain";
+import Marketplace from "./pages/Marketplace/Marketplace";
 function App() {
   return (
     <BrowserRouter>
@@ -62,6 +65,22 @@ function App() {
             <ArtDatabase>
               <VenueDetail />
             </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/venue/display/1"
+          element={
+            <ArtDatabase>
+              <VenueDisplay />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/market"
+          element={
+            <Marketplace>
+              <MarketMain />
+            </Marketplace>
           }
         ></Route>
       </Routes>

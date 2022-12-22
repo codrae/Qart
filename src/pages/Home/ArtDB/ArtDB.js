@@ -1,45 +1,37 @@
 import React from "react";
+import GalleryDirection from "../../../components/GalleryDirection/GalleryDirection";
 import SectionHeader from "../../../components/SectionHeader/SectionHeader";
 import "./ArtDB.css";
 const ArtDB = () => {
+  const infoItem = [
+    {
+      image: "assets/art_01.png",
+      link: "/artdb",
+      small: "Art Database",
+      section: "Artist",
+      title: "큐아트 작가 정보 바로가기",
+    },
+    {
+      image: "assets/art_02.png",
+      link: "/artdb/work",
+      small: "Art Database",
+      section: "Work",
+      title: "큐아트 작품 정보 바로가기",
+      order: -1,
+    },
+    {
+      image: "assets/art_03.png",
+      link: "/artdb/venue",
+      small: "Art Database",
+      section: "Venue",
+      title: "전시기관 정보 바로가기",
+    },
+  ];
+
   return (
     <section className="artbase">
-      <SectionHeader title="Art Database" line="right-line" />
-      <div className="container">
-        <div className="artbase__item">
-          <img src={require("../../../assets/art_01.png")}></img>
-          <div className="artbase__item__info">
-            <a href="/artdb" className="artbase__info__deatil">
-              <span className="artbase__info-name">Art Database</span>
-              <h3>Artist</h3>
-              <h5>큐아트 작가 정보 바로가기</h5>
-              <span className="artbase-link"></span>
-            </a>
-          </div>
-        </div>
-        <div className="artbase__item">
-          <div className="artbase__item__info">
-            <a href="/artdb/work" className="artbase__info__deatil right">
-              <span className="artbase__info-name">Art Database</span>
-              <h3>Work</h3>
-              <h5>큐아트 작품 정보 바로가기</h5>
-              <span className="artbase-link"></span>
-            </a>
-          </div>
-          <img src={require("../../../assets/art_02.png")}></img>
-        </div>
-        <div className="artbase__item">
-          <img src={require("../../../assets/art_03.png")}></img>
-          <div className="artbase__item__info">
-            <a href="/artdb/venue" className="artbase__info__deatil">
-              <span className="artbase__info-name">Art Database</span>
-              <h3>Venue</h3>
-              <h5>전시기관 정보 바로가기</h5>
-              <span className="artbase-link"></span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <SectionHeader title_k="Art Database" line="right-line" />
+      <GalleryDirection items={infoItem} />
     </section>
   );
 };

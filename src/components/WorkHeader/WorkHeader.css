@@ -52,6 +52,9 @@
 
   color: #4f4f4f;
   padding-left: 12px;
+
+  display: block;
+  margin-top: 16px;
 }
 
 .work-header__more {
@@ -92,7 +95,9 @@
   align-items: center;
 }
 .work-header-detail button {
-  margin-right: 90px;
+  margin: 0;
+  padding: 0;
+  margin-right: 80px;
   border: none;
   background: none;
   font-family: "Noto Sans";

@@ -26,7 +26,8 @@ function TopArrowSlider(props) {
             <img src={require("../../" + item.info)} />
           </p>
           <h4 className="top-arrow-author">{item.author}</h4>
-          <p className="top-arrow-title">{item.title}</p>
+          <span className="top-arrow-title">{item.title}</span>
+          <span className="top-arrow-price">{item.price}</span>
         </div>
       );
     });
@@ -34,7 +35,11 @@ function TopArrowSlider(props) {
 
   return (
     <section className="top-arrow">
-      <SectionHeader title={props.title} line="right-line" />
+      {props.title ? (
+        <SectionHeader title_k={props.title} line="right-line" />
+      ) : (
+        <></>
+      )}
       <div className="top-arrow-container">
         <Slider {...settings} className="top-arrow-slider">
           {slider_items(props.item)}

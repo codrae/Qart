@@ -1,0 +1,14 @@
+.venue-display-detail .work-header {
+  background: none;
+}
+.venue-display-detail .work-header .small-header {
+  height: 90px;
+}
+.venue-display-detail .work-header__info-k {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+.venue-display .top-arrow {
+  height: calc(767px + 135px);
+}

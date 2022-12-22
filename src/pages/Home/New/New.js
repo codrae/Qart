@@ -51,7 +51,7 @@ const New = () => {
   };
   return (
     <div className="new">
-      <SectionHeader title={"New"} line="left-line" />
+      <SectionHeader title_k={"New"} line="left-line" />
       <section className="new-container">
         <div className="right-border"></div>
         <div className="new-slide">
