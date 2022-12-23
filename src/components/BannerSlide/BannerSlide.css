@@ -87,11 +87,11 @@
 .main-item_slider .slick-next {
   position: absolute;
   top: 365px;
-  right: -243px;
+  right: -254px;
   display: block;
 
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -108,9 +108,9 @@
 .main-item_slider .slick-next:before {
   content: "";
   background: url("../../assets/slider_next.png") no-repeat;
-  background-size: 40px 40px;
-  width: 40px;
-  height: 40px;
+  background-size: 52px 52px;
+  width: 52px;
+  height: 52px;
   display: inline-block;
   line-height: 0;
   opacity: 1;

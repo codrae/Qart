@@ -30,7 +30,7 @@
 .new-slide {
   position: relative;
   z-index: 2;
-  width: 958px;
+  width: 960px;
 }
 .new-slider__list {
   width: 100%;
@@ -38,7 +38,7 @@
 }
 .new-slider__item {
   height: 1330px;
-  width: 958px;
+  width: 960px;
   display: flex;
   flex-direction: column;
 }
@@ -79,14 +79,14 @@
 
 .new-slider__item-container .new-slider__item-image {
   margin: 100px 0;
-  width: 958px;
+  width: 960px;
   height: 995px;
   background: #f2f2f2;
   display: flex;
   align-items: center;
 }
 .new-slider__item-image img {
-  width: 958px;
+  width: 960px;
   height: 651px;
 }
 /* 화살표 */
@@ -95,12 +95,12 @@
   position: absolute;
   z-index: 2;
 
-  top: 721px;
+  top: 732px;
 
   display: block;
 
-  width: 40px;
-  height: 40px;
+  width: 52px;
+  height: 52px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -118,21 +118,21 @@
 .new-slide .slick-next:before {
   content: "";
   background: url("../../../assets/slider_prev.png") no-repeat;
-  background-size: 40px 40px;
-  width: 40px;
-  height: 40px;
+  background-size: 52px 52px;
+  width: 52px;
+  height: 52px;
   display: inline-block;
   line-height: 0;
   opacity: 1;
 }
 .new-slide .slick-next:before {
   background: url("../../../assets/slider_next.png") no-repeat;
-  background-size: 40px 40px;
+  background-size: 52px 52px;
 }
 
 .new-slide .slick-prev {
-  left: -130px;
+  left: -160px;
 }
 .new-slide .slick-next {
-  right: -130px;
+  right: -160px;
 }

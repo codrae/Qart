@@ -14,7 +14,7 @@ function TopArrowSlider(props) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: false,
+    variableWidth: true,
     initialSlide: 0,
   };
 
