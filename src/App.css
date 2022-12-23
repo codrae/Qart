@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .App {
   text-align: center;
+  -webkit-text-size-adjust: 100%;
 }
 
 .App-logo {
@@ -68,11 +69,13 @@
 html {
   font-size: 62.5%; /* 1rem = 10px*/
   height: 100vh; /* 500px*/
+  -webkit-text-size-adjust: none;
 }
 
 body {
   min-height: 100vh;
   background: #ffffff;
+  -webkit-text-size-adjust: none;
 }
 
 .none {

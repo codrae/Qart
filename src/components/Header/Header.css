@@ -30,10 +30,12 @@ header {
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: calc(50% - 176px);
+  /* width: calc(50% - 176px); */
+  width: 50%;
   min-width: 784px;
   padding: 0 87px;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 .header__menu li {
   margin-right: 70px;

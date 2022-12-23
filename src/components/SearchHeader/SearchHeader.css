@@ -72,8 +72,10 @@
   width: 6.94%;
   height: 62px;
   border: none;
+  padding: 0;
+  margin: 0;
   background: url(../../assets/ico_search.png) no-repeat 30px/30px #f2f2f2;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-right: 22.22%;
+  margin-right: 320px;
 }

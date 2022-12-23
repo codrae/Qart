@@ -11,12 +11,15 @@
   position: relative;
   z-index: 2;
   top: -135px;
-
+}
+.new-slider-container {
+  width: 1920px;
   display: flex;
   flex-direction: row;
 }
 .new-container .right-border,
 .new-container .left-border {
+  box-sizing: border-box;
   display: block;
   width: 480px;
   margin-top: 135px;

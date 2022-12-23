@@ -45,7 +45,9 @@
   width: 480px;
   height: 100%;
   float: right;
+  box-sizing: border-box;
 }
+
 .left-line {
   height: 100%;
   width: 480px;
@@ -53,14 +55,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 .right-line {
   height: 100%;
-  width: 75%;
+  width: 1440px;
   border-right: 1px solid #bdbdbd;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-sizing: border-box;
 }
 @media (max-width: 380px) {
   .section-header {

@@ -13,6 +13,12 @@
   z-index: 2;
   top: -135px;
 }
+.nft .section-header span {
+  border-left: 1px solid #bdbdbd;
+}
+.nft .right-line {
+  border-right: none;
+}
 .nft-slider {
   height: 1252px;
   width: 1920px;

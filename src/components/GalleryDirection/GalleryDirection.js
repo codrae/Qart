@@ -31,6 +31,7 @@ const GalleryDirection = (props) => {
                 <h5>{item.title}</h5>
                 <span className="gallery-dir-link"></span>
               </a>
+              {/* <span className="gallery-dir__info__box"></span> */}
             </div>
           </div>
         </div>
