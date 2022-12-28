@@ -20,7 +20,7 @@ function RPaddingSlide(props) {
       return (
         <a href={item.link}>
           <div className="slider__item">
-            <img src={require("../../" + item.info)} width={item.size}></img>
+            <img src={require("../../" + item.info)}></img>
             <h3 className="item-author">{item.author}</h3>
             <h3 className="item-title">{item.title}</h3>
             <h3 className="item-price">{item.price}</h3>

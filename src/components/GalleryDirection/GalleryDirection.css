@@ -15,10 +15,8 @@
   flex-direction: row;
 }
 .gallery-dir__item-image {
-  width: 50%; /* border 고려 */
+  width: 50%;
   height: 100%;
-  /* border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd; */
 }
 .gallery-dir__item-image img {
   width: 100%;
@@ -27,13 +25,9 @@
 }
 .gallery-dir__item__info {
   width: 50%;
-
   display: flex;
   flex-direction: row;
 }
-/* .gallery-dir__item__info .gallery-dir__info__box {
-  width: 50%;
-} */
 .gallery-dir__info__deatil {
   display: block;
   width: 50%;
@@ -104,11 +98,12 @@
 }
 @media (max-width: 380px) {
   .gallery-dir__item {
-    min-width: 380px;
+    min-width: 360px;
     height: 180px;
   }
   .gallery-dir__item-container {
-    width: 380px;
+    width: 360px;
+    justify-content: center;
   }
   .gallery-dir__info__deatil {
     width: 100%;

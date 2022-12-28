@@ -38,6 +38,9 @@ const Header = (props) => {
         </ul>
         <div className="header__padding">
           <a className={props.active == "0" ? "active" : ""} href="#">
+            <span className="search-icon ir_pm">검색</span>
+          </a>
+          <a className={props.active == "0" ? "active" : ""} href="#">
             <span className="bar ir_pm">더보기</span>
           </a>
         </div>

@@ -79,3 +79,8 @@
   border-bottom-right-radius: 8px;
   margin-right: 320px;
 }
+@media (max-width: 380px) {
+  .search {
+    display: none;
+  }
+}

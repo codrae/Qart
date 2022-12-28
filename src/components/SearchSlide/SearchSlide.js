@@ -1,8 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import Slider from "react-slick";
 import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "./SearchSlide.css";
+import DicModal from "../Modal/DicModal";
+import ModalPortal from "../Modal/ModalPortal";
+
 function SearchSlide(props) {
   const settings = {
     arrows: true,
@@ -12,6 +16,15 @@ function SearchSlide(props) {
     rows: 3,
     slidesPerRow: 5,
     variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 380,
+        settings: {
+          slidesPerRow: 3,
+          rows: 3,
+        },
+      },
+    ],
   };
 
   const slider_items = (imgList) => {
@@ -30,6 +43,15 @@ function SearchSlide(props) {
         </div>
       );
     });
+  };
+
+  // 모달창 노출 여부 state
+  const [modalOpen, setModalOpen] = useState(false);
+
+  // 모달창 노출
+  const showModal = () => {
+    setModalOpen(true);
+    document.body.style.overflow = "hidden"; // 모달 창 오픈 시 스크롤 불가
   };
   return (
     <section className="search-slide">
@@ -164,6 +186,17 @@ function SearchSlide(props) {
                 <button>Z</button>
               </li>
             </ul>
+          </div>
+          <div className="search-modal">
+            <button onClick={showModal}>
+              <span>카테고리</span>
+              <span className="botton-arrow"></span>
+            </button>
+            {modalOpen && (
+              <ModalPortal>
+                <DicModal setModalOpen={setModalOpen} />
+              </ModalPortal>
+            )}
           </div>
         </div>
       </header>

@@ -68,20 +68,28 @@
 }
 @media (max-width: 380px) {
   .section-header {
-    min-width: 380px;
-    height: 59px;
+    min-width: 360px;
+    height: 43px;
     border-top: 0.5px solid #828282;
     border-bottom: 0.5px solid #828282;
   }
-  .section-header-container {
-    display: block;
-  }
   .section-header h2 {
-    width: calc(100% - 48px);
-    padding-left: 48px;
+    width: calc(100% - 20px);
+    padding-left: 20px;
     font-size: 20px;
-    line-height: 27px;
+    line-height: 23px;
   }
+  .section-header h4 {
+    width: calc(100% - 20px);
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-bottom: 4px;
+  }
+  .section-header span {
+    display: none;
+  }
+
   .left-line {
     height: 100%;
     width: 100%;

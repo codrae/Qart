@@ -30,32 +30,6 @@
   border: none;
   justify-content: flex-start;
 }
-/* .banner-slide__info {
-  padding-top: 100px;
-  padding-bottom: 48px;
-  padding-left: 320px;
-
-  position: relative;
-  z-index: 0;
-}
-.banner-slide__info h4 {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
-
-  color: #222222;
-}
-.banner-slide__info h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 42px;
-
-  color: #000000;
-} */
 .banner-slider {
   padding-left: 320px;
   overflow: hidden;
@@ -71,8 +45,12 @@
   overflow: hidden;
   width: 100%;
   height: 593px;
-  margin-top: 46px;
+  margin-top: 48px;
 }
+.banner-slider .slick-list {
+  height: 593px !important;
+}
+
 .slider__list {
   position: absolute;
   height: 593px;
@@ -101,10 +79,18 @@
   color: #000000;
 }
 .item-title {
-  width: inherit;
+  max-width: 130px;
   text-align-last: left;
   padding-top: 12px;
   color: #bdbdbd;
+
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 
 /* 화살표 */
@@ -147,9 +133,86 @@
   background-size: 52px 52px;
 }
 
-.banner-slide .slick-prev {
-  /* left: 1475px; */
-}
 .banner-slide .slick-next {
   left: calc(1476px + 72px);
+}
+
+@media (max-width: 380px) {
+  .banner-slide {
+    width: 360px;
+    height: 357px;
+  }
+  .banner-slide-container {
+    max-width: 360px;
+    top: -43px;
+  }
+  .banner-slider .slick-list {
+    height: 231px !important;
+  }
+
+  .banner-slide .section-header h2 {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .banner-slide .section-header {
+    padding-top: 28px;
+  }
+  .banner-slider {
+    padding-left: 20px;
+    padding-top: 63px;
+    padding-bottom: 35px;
+    z-index: 2;
+  }
+  .banner__slider {
+    height: 231px;
+    margin-top: 20px;
+  }
+  .slider__list {
+    position: absolute;
+    height: 231px;
+    width: 340px;
+  }
+  .slider__item {
+    margin-right: 11px;
+    height: 231px;
+  }
+  .slider__item img {
+    height: 183px;
+  }
+
+  .slider__item h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .item-author {
+    padding-top: 12px;
+  }
+  .item-title {
+    padding-top: 4px;
+  }
+
+  /* 화살표 */
+  .banner-slider .slick-prev,
+  .banner-slider .slick-next {
+    /* top: 61.5px;
+    left: 1476px; */
+    top: 30.5px;
+    left: 296px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .banner-slider .slick-prev:before,
+  .banner-slider .slick-next:before {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .banner-slider .slick-next:before {
+    background-size: 20px 20px;
+  }
+
+  .banner-slide .slick-next {
+    left: calc(296px + 24px);
+  }
 }
