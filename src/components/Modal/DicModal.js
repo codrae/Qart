@@ -8,8 +8,8 @@ function ModalBasic({ setModalOpen }) {
   };
 
   return (
-    <div className="modal-container">
-      <div className="modal-body">
+    <div className="modal-container" onClick={closeModal}>
+      <div className="modal-body" onClick={(e) => e.stopPropagation()}>
         <div className="modal-item__dic">
           <ul>
             <li>

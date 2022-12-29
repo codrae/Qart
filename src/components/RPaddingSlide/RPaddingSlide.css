@@ -57,8 +57,10 @@
   width: 1600px;
 }
 .slider__item {
+  display: block;
   margin-right: 30px;
   height: 593px;
+  width: 100%;
 }
 .slider__item img {
   height: 475px;
@@ -70,6 +72,16 @@
   font-size: 28px;
   line-height: 33px;
   /* identical to box height */
+
+  max-width: fit-content;
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
 }
 .item-author {
   width: inherit;
@@ -79,18 +91,10 @@
   color: #000000;
 }
 .item-title {
-  max-width: 130px;
+  min-width: 0;
   text-align-last: left;
   padding-top: 12px;
   color: #bdbdbd;
-
-  overflow: hidden;
-  white-space: normal;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  word-break: keep-all;
 }
 
 /* 화살표 */

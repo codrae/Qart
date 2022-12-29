@@ -5,6 +5,7 @@ import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import "./RPaddingSlide.css";
 function RPaddingSlide(props) {
+  const imgWidth = 0;
   const settings = {
     arrows: true,
     dots: false,
