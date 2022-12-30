@@ -61,6 +61,9 @@
   margin-right: 30px;
   height: 593px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: min-content;
 }
 .slider__item img {
   height: 475px;
@@ -71,10 +74,8 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 33px;
-  /* identical to box height */
 
-  max-width: fit-content;
-  display: block;
+  width: 100%;
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
@@ -91,7 +92,6 @@
   color: #000000;
 }
 .item-title {
-  min-width: 0;
   text-align-last: left;
   padding-top: 12px;
   color: #bdbdbd;
