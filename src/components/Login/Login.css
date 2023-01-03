@@ -28,14 +28,17 @@
   flex-direction: column;
 }
 .login-input {
-  width: 572px;
+  width: 574px;
   height: 68px;
   background: #ffffff;
   border: 1px solid #cccccc;
 
+  padding: 0;
   margin-bottom: 16px;
   font-size: 20px;
   padding-left: 24px;
+  border-radius: 0;
+  box-sizing: content-box;
 }
 .login-password {
   width: 600px;
@@ -47,19 +50,21 @@
   margin-bottom: 16px;
 }
 .login-password .login-input {
-  width: calc(572px - 58px);
+  width: calc(600px - 60px);
   height: 100%;
   border-right: none;
+  box-sizing: content-box;
 }
 .password__icon {
   display: block;
   width: 60px;
-  height: 72px;
+  height: 100%;
   background: url('../../assets/password.png') no-repeat center;
   background-size: 28px 28px;
 
   border: 1px solid #cccccc;
   border-left: none;
+  box-sizing: content-box;
 }
 .login-form input:focus {
   outline: none;
@@ -85,9 +90,11 @@
 }
 
 input[type='checkbox'] {
+  display: none;
   position: absolute;
   width: 0;
   height: 0;
+  color: transparent;
 }
 .login-option {
   display: flex;
@@ -211,7 +218,7 @@ input[type='checkbox'] {
     flex-direction: column;
   }
   .login-input {
-    width: 300px;
+    width: 304px;
     height: 48px;
     background: #ffffff;
     border: 1px solid #cccccc;
@@ -222,19 +229,19 @@ input[type='checkbox'] {
   }
 
   .login-password {
-    width: 320px;
+    width: 322px;
     height: 48px;
     margin-bottom: 16px;
   }
   .login-password .login-input {
-    width: calc(320px - 58px);
+    width: calc(320px - 60px);
     height: 100%;
     border-right: none;
   }
   .password__icon {
     display: block;
     width: 60px;
-    height: 52px;
+    height: 48px;
     background: url('../../assets/password.png') no-repeat center;
     background-size: 14.67px 12.77px;
 
