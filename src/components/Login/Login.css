@@ -1,0 +1,331 @@
+.login-main {
+  width: 100%;
+  min-width: 1920px;
+  height: 100%;
+}
+.login-container {
+  width: 1378px;
+  height: calc(100% - 100px);
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  padding-top: 130px;
+  padding-bottom: 45px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-input {
+  width: 572px;
+  height: 68px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+
+  margin-bottom: 16px;
+  font-size: 20px;
+  padding-left: 24px;
+}
+.login-password {
+  width: 600px;
+  height: 68px;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 16px;
+}
+.login-password .login-input {
+  width: calc(572px - 58px);
+  height: 100%;
+  border-right: none;
+}
+.password__icon {
+  display: block;
+  width: 60px;
+  height: 72px;
+  background: url('../../assets/password.png') no-repeat center;
+  background-size: 28px 28px;
+
+  border: 1px solid #cccccc;
+  border-left: none;
+}
+.login-form input:focus {
+  outline: none;
+}
+.login-input:focus {
+  border: 1px solid #222222;
+}
+.login-password .login-input:focus {
+  border-right: none;
+}
+.login-input:focus + .password__icon {
+  border: 1px solid #222222;
+  border-left: none;
+}
+.login-form input::-webkit-input-placeholder {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #bdbdbd;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.login-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #828282;
+}
+.login-option__check {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../../assets/login_check.png') no-repeat center;
+  background-size: contain;
+
+  margin-right: 11px;
+}
+.login-button {
+  margin-top: 40px;
+  width: 596px;
+  height: 80px;
+  background: #bdbdbd;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 80px;
+
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.login-button:active {
+  background: #222222;
+}
+.login-more {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.login-more a {
+  cursor: pointer;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #828282;
+}
+.login-more span {
+  display: block;
+  width: 3px;
+  height: 18px;
+
+  background: #d9d9d9;
+
+  margin: 0 24px;
+  margin-top: 3px;
+}
+.login-link {
+  margin-top: 108px;
+
+  display: flex;
+  flex-direction: row;
+}
+.login-link__icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url('../../assets/login_google.png') no-repeat center;
+  background-size: 100px 100px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.login-link__icon:nth-child(2) {
+  background: url('../../assets/login_kakao.png') no-repeat center #f2c94c;
+  background-size: 57.52px 57.52px;
+}
+.login-link__icon:nth-child(3) {
+  background: url('../../assets/login_facebook.png') no-repeat center #2f80ed;
+  background-size: 24.26px 45.6px;
+}
+.login-link__icon:nth-child(4) {
+  background: url('../../assets/login_apple.png') no-repeat center #d9d9d9;
+  background-size: 39.81px 47.26px;
+  margin-right: 0;
+}
+@media (max-width: 380px) {
+  .login-main {
+    width: 100%;
+    min-width: 360px;
+    height: 100%;
+  }
+  .login-container {
+    width: 360px;
+    height: calc(100% - 100px);
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-container h1 {
+    font-size: 24px;
+    line-height: 28px;
+
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-input {
+    width: 300px;
+    height: 48px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+
+    margin-bottom: 16px;
+    font-size: 14px;
+    padding-left: 16px;
+  }
+
+  .login-password {
+    width: 320px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  .login-password .login-input {
+    width: calc(320px - 58px);
+    height: 100%;
+    border-right: none;
+  }
+  .password__icon {
+    display: block;
+    width: 60px;
+    height: 52px;
+    background: url('../../assets/password.png') no-repeat center;
+    background-size: 14.67px 12.77px;
+
+    border: 1px solid #cccccc;
+    border-left: none;
+  }
+  .login-form input:focus {
+    outline: none;
+  }
+  .login-form input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  input[type='checkbox'] {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  .login-option {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #828282;
+  }
+  .login-option__check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../../assets/login_check.png') no-repeat center;
+    background-size: contain;
+
+    margin-right: 4px;
+  }
+  .login-button {
+    margin-top: 36px;
+    width: 320px;
+    height: 54px;
+
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .login-button:active {
+    background: #222222;
+  }
+  .login-more {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .login-more a {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .login-more span {
+    display: block;
+    width: 1px;
+    height: 13px;
+
+    background: #d9d9d9;
+
+    margin: 0 6px;
+    margin-top: 2px;
+  }
+  .login-link {
+    margin-top: 95px;
+
+    display: flex;
+    flex-direction: row;
+  }
+  .login-link__icon {
+    width: 63px;
+    height: 63px;
+    background: url('../../assets/login_google.png') no-repeat center;
+    background-size: 63px 63px;
+    margin-right: 8px;
+  }
+  .login-link__icon:nth-child(2) {
+    background: url('../../assets/login_kakao.png') no-repeat center #f2c94c;
+    background-size: 36.24px 33.22px;
+  }
+  .login-link__icon:nth-child(3) {
+    background: url('../../assets/login_facebook.png') no-repeat center #2f80ed;
+    background-size: 15.28px 28.73px;
+  }
+  .login-link__icon:nth-child(4) {
+    background: url('../../assets/login_apple.png') no-repeat center #d9d9d9;
+    background-size: 25.08px 29.77px;
+    margin-right: 0;
+  }
+}

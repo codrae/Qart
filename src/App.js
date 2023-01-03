@@ -14,12 +14,14 @@ import VenueDisplay from './pages/ArtDatabase/Venue/VenueDisplay'
 import MarketMain from './pages/Marketplace/MarketMain/MarketMain'
 import Marketplace from './pages/Marketplace/Marketplace'
 import SignUp from './components/SignUp/SignUp'
+import Login from './components/Login/Login'
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route
           path="/artdb"
           element={
