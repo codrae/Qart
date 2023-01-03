@@ -1,0 +1,210 @@
+.sign {
+  width: 100%;
+  min-width: 1920px;
+}
+.sign-container {
+  width: 1378px;
+  height: calc(100% - 100px);
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+}
+.sign-list {
+  padding: 0 49px;
+  padding-top: 180px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-item {
+  display: block;
+  width: 400px;
+  height: 519px;
+  border: 1px solid #e0e0e0;
+
+  box-sizing: border-box;
+  position: relative;
+}
+.sign-item__content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-item img {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  margin-top: 126px;
+  filter: grayscale(100%);
+}
+.sign-active {
+  border: 2px solid #222222;
+}
+.sign-active img {
+  filter: none;
+}
+.sign-item h1 {
+  padding-top: 32px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+
+  color: #222222;
+}
+.sign-item span {
+  padding-top: 7px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #222222;
+}
+
+.sign-item__hover {
+  display: none;
+}
+.sign-active .sign-item__hover {
+  /* 선택 경우 hover 불가 */
+  display: none !important;
+}
+.sign-item:hover .sign-item__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(242, 242, 242, 0.94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.sign-item__hover span {
+  padding-top: 8px;
+}
+.sign-next {
+  width: 100%;
+  padding-top: 107px;
+  padding-bottom: 94px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sign-next button {
+  width: 509px;
+  height: 80px;
+  border: none;
+  background: #bdbdbd;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.sign-next button:active {
+  background: #000000;
+}
+@media (max-width: 380px) {
+  .sign {
+    width: 100%;
+    min-width: 360px;
+  }
+  .sign-container {
+    width: 360px;
+    height: calc(100% - 100px);
+    border: none;
+  }
+  .sign-list {
+    padding: 0 20px;
+    padding-top: 40px;
+
+    flex-direction: column;
+  }
+  .sign-item {
+    width: 320px;
+    height: 120px;
+    justify-content: initial;
+    margin-bottom: 12px;
+  }
+  .sign-item:last-child {
+    margin-bottom: 0;
+  }
+  .sign-item__content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+  }
+  .sign-item img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 33px;
+  }
+  .sign-active {
+    border: 1px solid #222222;
+  }
+  .sign-active img {
+    filter: none;
+  }
+  .sign-item section {
+    padding-left: 16px;
+  }
+  .sign-item h1 {
+    padding-top: 39px;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .sign-item span {
+    padding-top: 4px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .sign-item__hover {
+    display: none;
+  }
+  .sign-active .sign-item__hover {
+    /* 선택 경우 hover 불가 */
+    display: none !important;
+  }
+  .sign-item:hover .sign-item__hover {
+    display: none;
+  }
+  .sign-next {
+    padding-top: 50px;
+    padding-bottom: 24px;
+  }
+  .sign-next button {
+    width: 320px;
+    height: 54px;
+    border: none;
+    background: #bdbdbd;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

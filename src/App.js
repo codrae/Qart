@@ -1,23 +1,25 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./css/reset.css";
-import Main from "./pages/Home/Main";
-import ArtDatabase from "./pages/ArtDatabase/ArtDatabase";
-import ArtDbArtist from "./pages/ArtDatabase/Artist/ArtDbArtist";
-import ArtDbWork from "./pages/ArtDatabase/Work/ArtDbWork";
-import ArtDbWork2 from "./pages/ArtDatabase/Work/ArtDbWork2";
-import ArtDbWork3 from "./pages/ArtDatabase/Work/ArtDbWork3";
-import Venue from "./pages/ArtDatabase/Venue/Venue";
-import VenueDetail from "./pages/ArtDatabase/Venue/VenueDetail";
-import VenueDisplay from "./pages/ArtDatabase/Venue/VenueDisplay";
-import MarketMain from "./pages/Marketplace/MarketMain/MarketMain";
-import Marketplace from "./pages/Marketplace/Marketplace";
+import logo from './logo.svg'
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './css/reset.css'
+import Main from './pages/Home/Main'
+import ArtDatabase from './pages/ArtDatabase/ArtDatabase'
+import ArtDbArtist from './pages/ArtDatabase/Artist/ArtDbArtist'
+import ArtDbWork from './pages/ArtDatabase/Work/ArtDbWork'
+import ArtDbWork2 from './pages/ArtDatabase/Work/ArtDbWork2'
+import ArtDbWork3 from './pages/ArtDatabase/Work/ArtDbWork3'
+import Venue from './pages/ArtDatabase/Venue/Venue'
+import VenueDetail from './pages/ArtDatabase/Venue/VenueDetail'
+import VenueDisplay from './pages/ArtDatabase/Venue/VenueDisplay'
+import MarketMain from './pages/Marketplace/MarketMain/MarketMain'
+import Marketplace from './pages/Marketplace/Marketplace'
+import SignUp from './components/SignUp/SignUp'
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />}></Route>
+        <Route path="/signUp" element={<SignUp />}></Route>
         <Route
           path="/artdb"
           element={
@@ -85,7 +87,7 @@ function App() {
         ></Route>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App

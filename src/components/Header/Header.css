@@ -8,43 +8,41 @@ header {
 .header-container {
   display: flex;
   flex-direction: row;
+  width: 1378px;
+
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
 }
 .header__logo {
   display: flex;
-  width: 25%;
   flex-direction: row;
   align-items: center;
+
+  margin-left: 51px;
 }
 .header__logo > a {
   width: 135px;
   height: 44px;
-  padding-right: 25px;
   margin-left: auto;
   background: url(../../assets/logo.png) no-repeat;
 }
 
 .header__menu {
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
-
   align-items: center;
   display: flex;
   flex-direction: row;
-  /* width: calc(50% - 176px); */
-  width: 50%;
-  min-width: 784px;
-  padding: 0 87px;
+  padding: 0 110px;
   justify-content: space-between;
   box-sizing: border-box;
 }
 .header__menu li {
-  margin-right: 70px;
+  margin-right: 44px;
 }
 .header__menu li:last-child {
   margin-right: 0;
 }
 .header__menu li a {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 33px;
@@ -57,25 +55,34 @@ header {
   color: #2f80ed;
 }
 .header__padding {
-  width: 25%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 60px;
 }
-
+.header__padding .login {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+}
 @media (max-width: 380px) {
   header {
     height: 63px;
     min-width: 360px;
   }
   .header-container {
-    max-width: 360px;
+    width: 360px;
     justify-content: space-between;
+    border: none;
   }
   .header__logo {
     width: 73px;
     height: 24px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 19px;
   }
   .header__logo > a {
     width: 100%;
@@ -90,25 +97,31 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 20px;
   }
-  .header__padding a {
-    width: 100%;
+  .header__padding .login {
+    display: none;
+  }
+  /* .header__padding a {
+    width: 50%;
     height: 100%;
-  }
+  } */
   .header__padding .bar {
     display: block;
     background: url(../../assets/hambar.png) no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 28px;
+    height: 24px;
     background-size: 28px 24px;
     background-position: center center;
   }
   .header__padding .search-icon {
     display: block;
     background: url(../../assets/ico_search.png) no-repeat 50% 50%;
-    width: 100%;
-    height: 100%;
-    background-size: 30px 30px;
+    width: 25.39px;
+    height: 25.39px;
+    background-size: 25.39px 25.39px;
     background-position: center center;
+
+    margin-right: 18.11px;
   }
 }
