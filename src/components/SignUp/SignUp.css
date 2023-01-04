@@ -83,21 +83,21 @@
   width: 100%;
   height: 100%;
 
-  background: rgba(242, 242, 242, 0.94);
+  background: rgba(0, 0, 0, 0.67);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+}
+.sign-item__hover span {
+  padding-top: 8px;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-}
-.sign-item__hover span {
-  padding-top: 8px;
+  color: #ffffff;
 }
 .sign-next {
   width: 100%;

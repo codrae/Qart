@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
 import './SignUp.css'
 
 function SignUp() {
+  const [select, setSelect] = useState(0)
+
   return (
     <div className="sign">
       <Header />
       <div className="container sign-container">
         <div className="sign-list">
-          <a className="sign-item sign-active">
+          <a
+            className={select == 1 ? 'sign-item sign-active' : 'sign-item'}
+            onClick={() => setSelect(1)}
+          >
             <div className="sign-item__content">
               <img
                 src={require('../../' +
@@ -23,7 +29,10 @@ function SignUp() {
               <span>큐아트 웹과 모든 서비스 이용 가능</span>
             </div>
           </a>
-          <a className="sign-item">
+          <a
+            className={select == 2 ? 'sign-item sign-active' : 'sign-item'}
+            onClick={() => setSelect(2)}
+          >
             <div className="sign-item__content">
               <img
                 src={require('../../' +
@@ -38,7 +47,10 @@ function SignUp() {
               <span>큐아트 웹과 모든 서비스 이용 가능</span>
             </div>
           </a>
-          <a className="sign-item">
+          <a
+            className={select == 3 ? 'sign-item sign-active' : 'sign-item'}
+            onClick={() => setSelect(3)}
+          >
             <div className="sign-item__content">
               <img
                 src={require('../../' +
@@ -63,7 +75,9 @@ function SignUp() {
           </a>
         </div>
         <section className="sign-next">
-          <button>다음</button>
+          <Link to="/signUp/auth" state={{ next: select }}>
+            <button>다음</button>
+          </Link>
         </section>
       </div>
     </div>

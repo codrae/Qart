@@ -30,7 +30,7 @@ function Login() {
           <div className="login-more">
             <a href="#">아이디/비밀번호 찾기</a>
             <span></span>
-            <a href="#">회원가입</a>
+            <a href="/signUp">회원가입</a>
           </div>
         </section>
         <section className="login-link">

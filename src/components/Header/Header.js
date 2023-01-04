@@ -37,7 +37,7 @@ const Header = props => {
           </li>
         </ul>
         <div className="header__padding">
-          <a className="login" href="#">
+          <a className="login" href="/login">
             <span>로그인</span>
           </a>
           <a className={props.active == '0' ? 'active' : ''} href="#">
