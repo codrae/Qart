@@ -59,7 +59,7 @@ function SignUpAuth() {
               next == 1
                 ? '/signUp/auth/artist'
                 : next == 2
-                ? '/signup/auth/collector'
+                ? '/signup/auth/agency'
                 : next == 3
                 ? '/signup/auth/general'
                 : ''

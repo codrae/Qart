@@ -1,0 +1,64 @@
+.cert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cert-content {
+  margin-top: 69px;
+  box-sizing: border-box;
+
+  width: 596px;
+  height: 578px;
+
+  border: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cert-content h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+
+  padding-top: 36px;
+  padding-bottom: 34px;
+}
+.cert-content p {
+  margin-left: 44px;
+  margin-right: 31px;
+  margin-bottom: 38px;
+  overflow: auto;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #222222;
+}
+.cert-button {
+  margin-top: 33px;
+  margin-bottom: 34px;
+  width: 596px;
+  height: 80px;
+
+  background: #2f80ed;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+
+  border: none;
+}

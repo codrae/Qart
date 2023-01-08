@@ -17,6 +17,9 @@ import SignUp from './components/SignUp/SignUp'
 import Login from './components/Login/Login'
 import SignUpAuth from './components/SignUp/SignUpAuth'
 import SignUpGeneral from './components/SignUp/General/SignUpGeneral'
+import SignUpArtist from './components/SignUp/Artist/SignUpArtist'
+import SignUpCert from './components/SignUp/SignUpCert'
+import SignUpAgency from './components/SignUp/Agency/SignUpAgency'
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +28,9 @@ function App() {
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="/signUp/auth" element={<SignUpAuth />}></Route>
         <Route path="/signUp/auth/general" element={<SignUpGeneral />}></Route>
+        <Route path="/signUp/auth/artist" element={<SignUpArtist />}></Route>
+        <Route path="/signUp/auth/agency" element={<SignUpAgency />}></Route>
+        <Route path="/signUp/auth/cert" element={<SignUpCert />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route
           path="/artdb"

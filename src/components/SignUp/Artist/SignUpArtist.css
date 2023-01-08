@@ -1,0 +1,67 @@
+.artist-content {
+  padding-top: 89px;
+  width: 1280px;
+
+  text-align-last: left;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.artist-content .mr-88,
+.artist-content .general-item:nth-child(odd) {
+  margin-right: 88px;
+}
+.artist-content .general-input {
+  width: 596px;
+}
+.artist-content .general-input-num {
+  width: 465px;
+}
+.artist-content .general-password-input {
+  width: calc(596px - 60px);
+}
+.nation-select {
+  width: 596px;
+  height: 56px;
+
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+
+  padding-left: 20px;
+
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  background: url('../../../assets/arrow_down.png') calc(100% - 20px) center
+    no-repeat;
+  background-size: 16px 9px;
+}
+.nation-default {
+  color: #bdbdbd !important;
+}
+.artist-option {
+  width: 1280px;
+  padding-top: 79px;
+  padding-bottom: 110px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.artist-option .login-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-bottom: 12px;
+}
