@@ -101,6 +101,8 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
+  border-radius: 0;
+  color: #222222;
 }
 .email-input-email:focus {
   border: 1px solid #222222;
@@ -173,6 +175,7 @@ select::-ms-expand {
 
   padding-left: 20px;
   outline: none;
+  border-radius: 0;
 }
 .email-input-num:focus {
   border: 1px solid #222222;
