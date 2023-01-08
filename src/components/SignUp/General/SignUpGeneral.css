@@ -1,0 +1,350 @@
+.sign-general {
+  width: 100%;
+  min-width: 1920px;
+  /* height: 100%; */
+}
+.sign-general-container {
+  width: 1378px;
+  height: calc(100% - 100px);
+  border-left: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.general-content {
+  padding-top: 89px;
+  width: 596px;
+
+  text-align-last: left;
+}
+.general-title {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #222222;
+
+  padding-bottom: 16px;
+}
+.general-input-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+
+  padding-bottom: 28px;
+}
+.general-input-container button {
+  width: 115px;
+  height: 56px;
+
+  background: #e0e0e0;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #222222;
+
+  text-align: center;
+
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+
+  margin-left: 16px;
+}
+.general-input-container button:active {
+  background: #2f80ed;
+  color: #ffffff;
+}
+.general-input-num {
+  width: 490px;
+  height: 56px;
+
+  background: #ffffff;
+
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+
+  padding-left: 20px;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+}
+.general-input-num:focus {
+  border: 1px solid #222222;
+}
+.general-password {
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 28px;
+}
+.general-password .general-password-input {
+  padding: 0;
+  width: calc(100% - 60px);
+  height: 56px;
+
+  box-sizing: content-box;
+
+  border: 1px solid #cccccc;
+  border-right: none;
+
+  box-sizing: border-box;
+
+  padding-left: 20px;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+}
+.general-password .general-password-input:focus {
+  border: 1px solid #222222;
+  border-right: none;
+}
+.general-password .password__icon {
+  display: block;
+  width: 60px;
+  height: 56px;
+  background: url('../../../assets/password.png') no-repeat center;
+  background-size: 15.33px 15.96px;
+
+  border: 1px solid #cccccc;
+  border-left: none;
+  box-sizing: border-box;
+}
+.general-password .general-password-input:focus + .password__icon {
+  border: 1px solid #222222;
+  border-left: none;
+}
+.general-input {
+  padding: 0;
+  width: 100%;
+  height: 56px;
+
+  background: #ffffff;
+
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+
+  padding-left: 20px;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+
+  margin-bottom: 28px;
+}
+.general-input:focus {
+  border: 1px solid #222222;
+}
+.general-input-num::-webkit-input-placeholder,
+.general-input::-webkit-input-placeholder,
+.general-password-input::-webkit-input-placeholder {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  color: #bdbdbd;
+}
+.general-option {
+  width: 596px;
+  padding-top: 68px;
+  padding-bottom: 36px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.general-option .login-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding-bottom: 12px;
+}
+.general-option .login-option__check {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../../../assets/login_check.png') no-repeat center;
+  background-size: contain;
+
+  margin-right: 11px;
+}
+.option-text {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-decoration-line: underline;
+
+  color: #bdbdbd;
+}
+input[type='checkbox']:checked ~ .option-text {
+  color: #333333;
+}
+.general-next {
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 139px;
+}
+.general-next button {
+  width: 290px;
+  height: 80px;
+  left: 658px;
+  top: 730px;
+
+  border: 1px solid #000000;
+
+  margin-right: 16px;
+
+  background: #ffffff;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  color: #222222;
+}
+.general-next button.general-next-button {
+  margin-right: 0;
+  background: #000000;
+  color: #ffffff;
+}
+@media (max-width: 380px) {
+  .sign-general {
+    width: 100%;
+    min-width: 360px;
+    /* height: 100%; */
+  }
+  .sign-general-container {
+    width: 360px;
+    height: calc(100% - 63px);
+    border: none;
+  }
+  .general-content {
+    padding-top: 24px;
+    width: 319px;
+  }
+  .general-title {
+    font-size: 16px;
+    line-height: 22px;
+
+    padding-bottom: 12px;
+  }
+  .general-input-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+
+    padding-bottom: 28px;
+  }
+  .general-input-container button {
+    width: 79px;
+    height: 42px;
+
+    background: #e0e0e0;
+
+    font-size: 12px;
+    line-height: 17px;
+
+    margin-left: 4px;
+  }
+  .general-input-num {
+    width: 236px;
+    height: 42px;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .general-input-num:focus {
+    border: 1px solid #222222;
+  }
+  .general-password {
+    height: 42px;
+  }
+  .general-password .general-password-input {
+    padding: 0;
+    width: calc(100% - 60px);
+    height: 42px;
+
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .general-password .password__icon {
+    display: block;
+    width: 60px;
+    height: 42px;
+    background: url('../../../assets/password.png') no-repeat center;
+    background-size: 12.83px 11.17px;
+  }
+  .general-input {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 17px;
+
+    margin-bottom: 28px;
+  }
+  .general-option {
+    width: 319px;
+    padding-top: 4px;
+    padding-bottom: 16px;
+  }
+  .general-option .login-option {
+    padding-bottom: 8px;
+  }
+  .general-option .login-option__check {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('../../../assets/login_check.png') no-repeat center;
+    background-size: contain;
+
+    margin-right: 8px;
+  }
+  .option-text {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .general-next {
+    padding-bottom: 24px;
+  }
+  .general-next button {
+    width: 155px;
+    height: 54px;
+
+    margin-right: 9px;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

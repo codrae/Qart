@@ -118,6 +118,10 @@ input[type='checkbox'] {
 
   margin-right: 11px;
 }
+input[type='checkbox']:checked + .login-option__check {
+  background: url('../../assets/login_check_color.png') no-repeat center;
+  background-size: contain;
+}
 .login-button {
   margin-top: 40px;
   width: 596px;

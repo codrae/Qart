@@ -82,13 +82,14 @@
 .email-input-container:last-child {
   padding-bottom: 0;
 }
+
 .email-input-email {
   width: 230px;
   height: 56px;
 
   background: #ffffff;
 
-  border: 1px solid #222222;
+  border: 1px solid #cccccc;
   box-sizing: border-box;
 
   padding-left: 20px;
@@ -100,6 +101,23 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 23px;
+}
+.email-input-email:focus {
+  border: 1px solid #222222;
+}
+select::-ms-expand {
+  display: none;
+}
+.email-input-email ~ .email {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.email-input-email ~ .email {
+  background: url('../../assets/arrow_down.png') calc(100% - 20px) center
+    no-repeat;
+  background-size: 16px 9px;
 }
 .email-input-container span {
   display: block;
@@ -117,7 +135,7 @@
   width: 115px;
   height: 56px;
 
-  background: #2f80ed;
+  background: #e0e0e0;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -125,7 +143,7 @@
   font-size: 16px;
   line-height: 23px;
 
-  color: #ffffff;
+  color: #222222;
 
   text-align: center;
 
@@ -138,6 +156,10 @@
 
   margin-left: 16px;
 }
+.email-input-container button:active {
+  background: #2f80ed;
+  color: #ffffff;
+}
 .email-input-num {
   width: 490px;
   height: 56px;
@@ -145,12 +167,15 @@
   background: #ffffff;
   /* Black */
 
-  border: 1px solid #222222;
+  border: 1px solid #cccccc;
 
   box-sizing: border-box;
 
   padding-left: 20px;
   outline: none;
+}
+.email-input-num:focus {
+  border: 1px solid #222222;
 }
 .auth-next {
   padding-top: 140px;
@@ -180,4 +205,100 @@
   margin-right: 0;
   background: #000000;
   color: #ffffff;
+}
+@media (max-width: 380px) {
+  .sign-auth {
+    min-width: 360px;
+  }
+  .sign-auth-container {
+    width: 360px;
+    height: calc(100% - 63px);
+    border: none;
+  }
+  .auth-list {
+    padding-top: 23px;
+  }
+  .auth-item {
+    width: 160px;
+  }
+  .auth-item h1 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .auth-item span {
+    width: 160px;
+    height: 4px;
+    border-radius: 0;
+    margin-top: 12px;
+  }
+  .auth-content {
+    padding-top: 28px;
+    width: 320px;
+  }
+  .email-title {
+    font-size: 16px;
+    line-height: 22px;
+
+    padding-bottom: 16px;
+  }
+  .email-input-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+
+    padding-bottom: 12px;
+  }
+  .email-input-email {
+    width: 105px;
+    height: 42px;
+
+    padding-left: 12px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .email-input-email ~ .email {
+    width: 113px;
+    background: url('../../assets/arrow_down.png') calc(100% - 10px) center
+      no-repeat;
+    background-size: 10px 5.89px;
+  }
+  .email-input-container span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    padding: 0 3px;
+  }
+  .email-input-container button {
+    width: 79px;
+    height: 42px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+
+    margin-left: 4px;
+  }
+  .email-input-num {
+    width: 236px;
+    height: 42px;
+
+    padding-left: 12px;
+    outline: none;
+  }
+  .auth-next {
+    padding-top: 205px;
+  }
+  .auth-next button {
+    width: 155px;
+    height: 54px;
+    margin-right: 9px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }

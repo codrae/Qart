@@ -16,6 +16,7 @@ import Marketplace from './pages/Marketplace/Marketplace'
 import SignUp from './components/SignUp/SignUp'
 import Login from './components/Login/Login'
 import SignUpAuth from './components/SignUp/SignUpAuth'
+import SignUpGeneral from './components/SignUp/General/SignUpGeneral'
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Main />}></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="/signUp/auth" element={<SignUpAuth />}></Route>
+        <Route path="/signUp/auth/general" element={<SignUpGeneral />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route
           path="/artdb"

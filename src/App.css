@@ -50,9 +50,8 @@
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  height: 100%;
-  overflow: hidden;
   position: relative;
+  height: 100%;
   z-index: 0;
 }
 .bottom-border {
