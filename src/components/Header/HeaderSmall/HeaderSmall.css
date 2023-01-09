@@ -2,16 +2,18 @@
   width: 100%;
   min-width: 1920px;
   height: 100px;
+  background: #fbfbfb;
 
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #e0e0e0;
 }
 .header-small-container {
   display: flex;
   flex-direction: row;
   width: 1378px;
 
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
 }
 .header-small-list {
   align-items: center;

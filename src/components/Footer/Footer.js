@@ -1,12 +1,11 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer__menu">
         <div className="footer-container">
-          <span className="footer-line"></span>
           <div className="footer__menu__item">
             <div className="item-container">
               <ul>
@@ -28,7 +27,6 @@ const Footer = () => {
         </div>
         <div className="footer__detail">
           <div className="footer-container">
-            <span className="footer-line"></span>
             <div className="footer__detail__item">
               <div className="detail__name">
                 <span className="detail__name--co">아트시냅스</span>
@@ -48,6 +46,6 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  );
-};
-export default Footer;
+  )
+}
+export default Footer

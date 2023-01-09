@@ -33,17 +33,17 @@ function App() {
         <Route path="/signUp/auth/cert" element={<SignUpCert />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route
-          path="/artdb"
+          path="/artdb/artist"
           element={
-            <ArtDatabase>
+            <ArtDatabase active={1}>
               <ArtDbArtist />
             </ArtDatabase>
           }
         ></Route>
         <Route
-          path="/artdb/work"
+          path="/artdb"
           element={
-            <ArtDatabase>
+            <ArtDatabase active={0}>
               <ArtDbWork />
             </ArtDatabase>
           }

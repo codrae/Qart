@@ -1,11 +1,9 @@
 footer {
   width: 100%;
   min-width: 1920px;
-  height: 540px;
+  height: 455px;
   background: #fbfbfb;
-  border-top: 1px solid #bdbdbd;
 }
-/* 선 */
 .footer-container {
   max-width: 1920px;
   width: 100%;
@@ -14,34 +12,29 @@ footer {
   display: flex;
   flex-direction: row;
 }
-.footer-line {
-  display: block;
-  width: 25%;
-}
 .footer__menu__item,
 .footer__detail__item {
   width: 75%;
   height: 100%;
   padding-top: 40px;
-  border-left: 1px solid #bdbdbd;
+  padding-left: 920px;
+  box-sizing: border-box;
 }
 
 .footer__menu {
-  border-bottom: 1px solid #bdbdbd;
-  height: 193px;
+  border-bottom: 1px solid #e0e0e0;
+  height: 233px;
 }
 .footer__detail {
-  height: 267px;
+  height: 222px;
 }
 .item-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 30.48%;
-  padding-right: 36.31%;
 }
 .footer__menu__item h3 {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -49,7 +42,7 @@ footer {
   padding-bottom: 22px;
 }
 .footer__menu__item ul li {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -62,34 +55,31 @@ footer {
 }
 
 .detail__name {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 22px;
   color: #333333;
   display: flex;
   flex-direction: row;
   margin-bottom: 22px;
-  padding-left: 30.48%;
-  padding-right: 36.31%;
 }
 .detail__name--co {
   margin-right: 147px;
 }
 .detail__location {
   display: block;
+  line-height: 22px;
   margin-bottom: 16px;
-  padding-left: 30.48%;
-  padding-right: 36.31%;
 }
 .footer__detail__item p {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  line-height: 22px;
   color: #333333;
-  padding-left: 30.48%;
-  padding-right: 36.31%;
 }
 @media (max-width: 380px) {
   footer {

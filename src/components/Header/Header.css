@@ -3,7 +3,7 @@ header {
   min-width: 1920px;
   height: 100px;
 
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #4f4f4f;
 }
 header.black {
   border-bottom: 1px solid #4f4f4f;
@@ -16,6 +16,7 @@ header.black {
 
   border-left: 1px solid #bdbdbd;
   border-right: 1px solid #bdbdbd;
+  box-sizing: border-box;
 }
 .black .header-container {
   border-left: 1px solid #4f4f4f;
