@@ -2,45 +2,38 @@
   width: 100%;
   min-width: 1920px;
   height: 147px;
-  border-bottom: 1px solid #bdbdbd;
+  background: #222222;
 }
 .search__container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+
+  width: 1378px;
+
+  border-left: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
+
+  padding: 0 49px;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 .search__title {
   display: block;
-  width: 25%;
-  border-right: 1px solid #bdbdbd;
   text-align: left;
-}
-.search__title-info {
-  display: block;
-  font-family: "Noto Sans";
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
-
-  padding-left: 320px;
-  padding-top: 36px;
-  color: #bdbdbd;
-}
-.search__title-number {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 40px;
-  line-height: 54px;
+  line-height: 47px;
 
-  padding-left: 320px;
-  color: #222222;
+  color: #ffffff;
 }
 .search__block {
-  width: 75%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 670px;
 }
 .search__block__input {
   height: 62px;
@@ -51,15 +44,22 @@
   border-bottom-left-radius: 8px;
   padding: 0;
   margin: 0;
-  margin-left: 6.04%;
   padding-left: 32px;
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 600px;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
   font-size: 20px;
+  line-height: 27px;
 }
 .search__block__input:focus {
   outline: none;
 }
 .search__block__input::-webkit-input-placeholder {
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -68,16 +68,16 @@
   color: #bdbdbd;
 }
 .search__block__button {
+  box-sizing: border-box;
   flex: none; /* 버튼을 끝에 고정*/
-  width: 6.94%;
+  width: 70px;
   height: 62px;
   border: none;
   padding: 0;
   margin: 0;
-  background: url(../../assets/ico_search.png) no-repeat 30px/30px #f2f2f2;
+  background: url(../../assets/ico_search.png) no-repeat 25.39px/25.39px #ffffff;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-right: 320px;
 }
 @media (max-width: 380px) {
   .search {

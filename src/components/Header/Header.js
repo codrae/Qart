@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 const Header = props => {
   return (
-    <header>
+    <header className={props.colored}>
       <div className="container header-container">
         <div className="header__logo">
           <a href="/">

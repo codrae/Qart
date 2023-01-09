@@ -1,17 +1,14 @@
-import React from "react";
-import "./SearchHeader.css";
-const SectionHeader = () => {
+import React from 'react'
+import './SearchHeader.css'
+const SectionHeader = props => {
   return (
     <nav className="search">
       <div className="container search__container">
-        <section className="search__title">
-          <span className="search__title-info">Browse over</span>
-          <h2 className="search__title-number">000,000</h2>
-        </section>
+        <h2 className="search__title">{props.title}</h2>
         <section className="search__block">
           <input
-            type={"text"}
-            placeholder={"작가 이름을 검색해주세요"}
+            type={'text'}
+            placeholder={'작가 이름을 검색해주세요'}
             className="search__block__input"
           />
           <button className="search__block__button">
@@ -20,6 +17,6 @@ const SectionHeader = () => {
         </section>
       </div>
     </nav>
-  );
-};
-export default SectionHeader;
+  )
+}
+export default SectionHeader

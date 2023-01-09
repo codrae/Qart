@@ -5,6 +5,10 @@ header {
 
   border-bottom: 1px solid #bdbdbd;
 }
+header.black {
+  border-bottom: 1px solid #4f4f4f;
+  background: #222222;
+}
 .header-container {
   display: flex;
   flex-direction: row;
@@ -12,6 +16,10 @@ header {
 
   border-left: 1px solid #bdbdbd;
   border-right: 1px solid #bdbdbd;
+}
+.black .header-container {
+  border-left: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
 }
 .header__logo {
   display: flex;
@@ -26,7 +34,10 @@ header {
   margin-left: auto;
   background: url(../../assets/logo.png) no-repeat;
 }
-
+.black .header__logo > a {
+  background: url(../../assets/logo_color.png) no-repeat;
+  background-size: contain;
+}
 .header__menu {
   align-items: center;
   display: flex;
@@ -49,10 +60,20 @@ header {
 
   color: #222222;
 }
+.black .header__menu li a {
+  color: #bdbdbd;
+}
+
 .header__menu li a:hover,
 .header__menu li a:active,
 .header__menu li a.active {
   color: #2f80ed;
+}
+.black .header__menu li a:hover,
+.black .header__menu li a:active,
+.black .header__menu li a.active {
+  font-weight: 700;
+  color: #ffffff;
 }
 .header__padding {
   display: flex;
@@ -67,6 +88,9 @@ header {
   font-weight: 500;
   font-size: 24px;
   line-height: 33px;
+}
+.black .header__padding .login {
+  color: #2f80ed;
 }
 @media (max-width: 380px) {
   header {
