@@ -1,29 +1,29 @@
-import React from "react";
-import "./DetailInfo.css";
-import WorkHeader from "../../components/WorkHeader/WorkHeader";
+import React from 'react'
+import './DetailInfo.css'
+import SectionHeader from '../SectionHeader/SectionHeader'
 function DetailInfo(props) {
-  const detail_items = (itemList) => {
+  const detail_items = itemList => {
     return itemList.map((item, i) => {
       return (
         <li>
           <img
             className="detail-info__img"
-            src={require("../../" + item.info)}
+            src={require('../../' + item.info)}
             width={item.width}
             height={item.height}
           />
           <p className="detail-info__comment">{item.detail}</p>
         </li>
-      );
-    });
-  };
+      )
+    })
+  }
   return (
     <>
-      <WorkHeader title_k={props.title} left={true} small={true} />
+      <SectionHeader title="작품 정보"></SectionHeader>
       <section className="container detail-info">
         <ul>{detail_items(props.item)}</ul>
       </section>
     </>
-  );
+  )
 }
-export default DetailInfo;
+export default DetailInfo

@@ -1,46 +1,66 @@
-import React from "react";
-import "./WorkHeader.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './WorkHeader.css'
 
-const WorkHeader = (props) => {
+const WorkHeader = props => {
   return (
-    <header className="work-header">
-      <section
-        className={
-          props.small ? "work-header-basic small-header" : "work-header-basic"
-        }
-      >
-        <div className="container work-header__container">
-          <div
+    <header
+      className={
+        props.moreList && props.moreActive
+          ? 'work-header work-header-d'
+          : 'work-header'
+      }
+      style={props.color == false ? { background: 'none' } : {}}
+    >
+      <div className="container">
+        <div className="work-header__container">
+          <section
             className={
-              props.left ? "work-header__info-left" : "work-header__info"
+              props.title_e
+                ? 'work-header__info work-header__info'
+                : 'work-header__info-big'
             }
           >
-            <h2 className="work-header__info-k">{props.title_k}</h2>
-            <h3 className="work-header__info-e">{props.title_e}</h3>
-          </div>
-          <p className="work-header__more">
-            {props.follow ? <button>팔로우</button> : <></>}
+            {props.title_e ? <h4>{props.title_e}</h4> : <></>}
+            <h2>{props.title_k}</h2>
+          </section>
+          <p className="work-header__move">
+            {props.follow ? (
+              <button className="work-header__follow">팔로우</button>
+            ) : props.move ? (
+              <Link
+                to="./work/detail"
+                state={{
+                  title_e: props.title_e,
+                  title_k: props.title_k,
+                  items: props.items,
+                  moreList: props.moreList,
+                  moreActive: props.moreActive,
+                }}
+              >
+                <span>더보기</span>
+                <button className="work-header__move-icon"></button>
+              </Link>
+            ) : (
+              <></>
+            )}
           </p>
         </div>
-      </section>
-      {props.moreList ? (
-        <section className="work-header-detail">
-          <div className="container work-header__container">
-            <ul>
-              {props.moreList.map((item, i) => {
-                return (
-                  <li key={i}>
-                    <button className={i == 0 ? "choice" : ""}>{item}</button>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </section>
-      ) : (
-        <></>
-      )}
+        {props.moreList && props.moreActive ? (
+          <ul className="work-header__detail">
+            {props.moreList.map((item, i) => {
+              return (
+                <li key={i}>
+                  <button className={i == 0 ? 'choice' : ''}>{item}</button>
+                </li>
+              )
+            })}
+          </ul>
+        ) : (
+          <></>
+        )}
+      </div>
     </header>
-  );
-};
-export default WorkHeader;
+  )
+}
+export default WorkHeader

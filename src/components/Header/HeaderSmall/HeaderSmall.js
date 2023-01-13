@@ -3,7 +3,10 @@ import './HeaderSmall.css'
 
 function HeaderSmall(props) {
   return (
-    <header className="header-small">
+    <header
+      className="header-small"
+      style={!props.active ? { display: 'none' } : {}}
+    >
       <div className="container header-small-container">
         <ul className="header-small-list">
           {props.moreList.menu.map((item, i) => {
@@ -14,7 +17,7 @@ function HeaderSmall(props) {
               >
                 <a
                   link={item.link}
-                  className={i == props.active ? 'active' : ''}
+                  className={i == props.choice ? 'active' : ''}
                 >
                   {item.title}
                 </a>

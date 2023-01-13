@@ -34,7 +34,7 @@
 .page-item-author {
   width: 400px;
   display: block;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -45,7 +45,7 @@
 }
 .page-item-detail {
   width: 400px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
@@ -63,8 +63,11 @@
   bottom: -25px;
   /* width: 288px;
   height: 40px; */
+
   width: 100%;
   height: 100%;
+  width: 240px;
+  overflow: hidden;
 }
 
 .page-slider .slick-dots li {
@@ -79,7 +82,7 @@
 
 .page-slider .dots-number {
   height: 100%;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -125,8 +128,8 @@
 .page-slider__list .slick-last:before,
 .page-slider__list .slick-prev:before,
 .page-slider__list .slick-next:before {
-  content: "";
-  background: url("../../assets/page_prev.png") no-repeat;
+  content: '';
+  background: url('../../assets/page_prev.png') no-repeat;
   background-size: 40px 40px;
   width: 40px;
   height: 40px;
@@ -135,15 +138,15 @@
   opacity: 1;
 }
 .page-slider__list .slick-next:before {
-  background: url("../../assets/page_next.png") no-repeat;
+  background: url('../../assets/page_next.png') no-repeat;
   background-size: 40px 40px;
 }
 .page-slider__list .slick-first:before {
-  background: url("../../assets/page_first.png") no-repeat;
+  background: url('../../assets/page_first.png') no-repeat;
   background-size: 40px 40px;
 }
 .page-slider__list .slick-last:before {
-  background: url("../../assets/page_last.png") no-repeat;
+  background: url('../../assets/page_last.png') no-repeat;
   background-size: 40px 40px;
 }
 .page-slider__list .slick-next {

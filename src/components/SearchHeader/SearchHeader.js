@@ -2,7 +2,7 @@ import React from 'react'
 import './SearchHeader.css'
 const SectionHeader = props => {
   return (
-    <nav className="search">
+    <nav className="search" style={!props.active ? { display: 'none' } : {}}>
       <div className="container search__container">
         <h2 className="search__title">{props.title}</h2>
         <section className="search__block">

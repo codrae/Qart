@@ -1,9 +1,9 @@
-import React from "react";
-import SectionHeader from "../../components/SectionHeader/SectionHeader";
-import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "./TopArrowSlider.css";
+import React from 'react'
+import SectionHeader from '../../components/SectionHeader/SectionHeader'
+import Slider from 'react-slick'
+import '../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import './TopArrowSlider.css'
 
 function TopArrowSlider(props) {
   /* 배너 셋팅 */
@@ -16,36 +16,34 @@ function TopArrowSlider(props) {
     slidesToScroll: 1,
     variableWidth: true,
     initialSlide: 0,
-  };
+  }
 
-  const slider_items = (imgList) => {
+  const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
         <div className="top-arrow-item">
-          <p className="top-arrow-image">
-            <img src={require("../../" + item.info)} />
-          </p>
+          <img
+            className="top-arrow-image"
+            src={require('../../' + item.info)}
+          />
+
           <h4 className="top-arrow-author">{item.author}</h4>
           <span className="top-arrow-title">{item.title}</span>
           <span className="top-arrow-price">{item.price}</span>
         </div>
-      );
-    });
-  };
+      )
+    })
+  }
 
   return (
     <section className="top-arrow">
-      {props.title ? (
-        <SectionHeader title_k={props.title} line="right-line" />
-      ) : (
-        <></>
-      )}
+      <SectionHeader title="작품 정보"></SectionHeader>
       <div className="top-arrow-container">
         <Slider {...settings} className="top-arrow-slider">
           {slider_items(props.item)}
         </Slider>
       </div>
     </section>
-  );
+  )
 }
-export default TopArrowSlider;
+export default TopArrowSlider

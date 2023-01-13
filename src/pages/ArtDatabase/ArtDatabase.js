@@ -23,8 +23,12 @@ function ArtDatabase(props) {
   return (
     <div className="main">
       <Header active="0" colored="black" />
-      <SearchHeader title="Art Database" />
-      <HeaderSmall moreList={moreList} active={props.active} />
+      <SearchHeader title="Art Database" active={props.search} />
+      <HeaderSmall
+        moreList={moreList}
+        active={props.search}
+        choice={props.active}
+      />
       {props.children}
       <Footer />
     </div>

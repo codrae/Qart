@@ -6,6 +6,7 @@ import Main from './pages/Home/Main'
 import ArtDatabase from './pages/ArtDatabase/ArtDatabase'
 import ArtDbArtist from './pages/ArtDatabase/Artist/ArtDbArtist'
 import ArtDbWork from './pages/ArtDatabase/Work/ArtDbWork'
+import ArtDbMain from './pages/ArtDatabase/Work/Main/Main'
 import ArtDbWork2 from './pages/ArtDatabase/Work/ArtDbWork2'
 import ArtDbWork3 from './pages/ArtDatabase/Work/ArtDbWork3'
 import Venue from './pages/ArtDatabase/Venue/Venue'
@@ -20,6 +21,7 @@ import SignUpGeneral from './components/SignUp/General/SignUpGeneral'
 import SignUpArtist from './components/SignUp/Artist/SignUpArtist'
 import SignUpCert from './components/SignUp/SignUpCert'
 import SignUpAgency from './components/SignUp/Agency/SignUpAgency'
+import ArtDetail from './components/ArtDetail/ArtDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -35,7 +37,7 @@ function App() {
         <Route
           path="/artdb/artist"
           element={
-            <ArtDatabase active={1}>
+            <ArtDatabase search={true} active={1}>
               <ArtDbArtist />
             </ArtDatabase>
           }
@@ -43,8 +45,28 @@ function App() {
         <Route
           path="/artdb"
           element={
-            <ArtDatabase active={0}>
-              <ArtDbWork />
+            <ArtDatabase search={true} active={0}>
+              <ArtDbWork>
+                <ArtDbMain />
+              </ArtDbWork>
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/work/:workId"
+          element={
+            <ArtDatabase search={false}>
+              <ArtDbWork3 />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/work/detail"
+          element={
+            <ArtDatabase search={true} active={0}>
+              <ArtDbWork>
+                <ArtDetail />
+              </ArtDbWork>
             </ArtDatabase>
           }
         ></Route>
@@ -57,14 +79,14 @@ function App() {
             </ArtDatabase>
           }
         ></Route>
-        <Route
+        {/* <Route
           path="/artdb/work3"
           element={
             <ArtDatabase>
               <ArtDbWork3 />
             </ArtDatabase>
           }
-        ></Route>
+        ></Route> */}
         <Route
           path="/artdb/venue"
           element={

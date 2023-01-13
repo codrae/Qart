@@ -1,71 +1,72 @@
 .work-header {
   width: 100%;
-  height: inherit;
-  background: #fbfbfb;
-  border-bottom: none;
-}
-.work-header-basic {
-  height: 133px;
-  border-bottom: 1px solid #bdbdbd;
-}
-.small-header {
-  height: 109px;
+  min-width: 1920px;
+  height: 147px;
+  border-bottom: 1px solid #e0e0e0;
 }
 .work-header__container {
   display: flex;
   flex-direction: row;
-}
-.work-header__info {
-  height: 100%;
-  width: 1440px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-}
-.work-header__info-left {
+  justify-content: space-between;
+  padding: 0 49px;
   height: 100%;
-  width: 480px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
-.work-header__info-k {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 49px;
+.work-header .container {
+  width: 1378px;
 
-  color: #000000;
-
-  padding-left: 320px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
 }
-
-.work-header__info-e {
-  font-family: "Noto Sans";
+.work-header__info h4 {
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 33px;
-
-  /* Gray 2 */
-
   color: #4f4f4f;
-  padding-left: 12px;
 
-  display: block;
-  margin-top: 16px;
+  padding-bottom: 12px;
+}
+.work-header__info-big h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+
+  color: #000000;
+  font-size: 42px;
+  line-height: 49px;
+}
+.work-header__info h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
 }
 
-.work-header__more {
-  height: 100%;
-  width: 480px;
-  border-left: 1px solid #bdbdbd;
+.work-header__move,
+.work-header__move a {
+  display: flex;
+  flex-direction: row;
+}
+.work-header__move span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #333333;
+
+  padding-right: 12px;
 
   display: flex;
   align-items: center;
 }
-.work-header__more button {
+.work-header__move .work-header__follow {
   width: 112px;
   height: 39px;
 
@@ -76,7 +77,7 @@
   border-radius: 34px;
   margin-left: 48px;
 
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -84,23 +85,58 @@
 
   color: #ffffff;
 }
-.work-header-detail {
-  height: 82px;
-  border-bottom: 1px solid #bdbdbd;
+.work-header__move-icon {
+  width: 36px;
+  height: 36px;
+  background: url('../../assets/arrow_right.png') no-repeat center;
+  background-size: contain;
+  border: none;
 }
-.work-header-detail ul {
-  padding-left: 320px;
+
+/* detail menu */
+.work-header-d {
+  height: 216px;
+  background: #fbfbfb;
+}
+.work-header-d .work-header__container {
+  height: 135px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.work-header-d .work-header__info {
+  display: flex;
+  flex-direction: row;
+}
+
+.work-header-d h4 {
+  display: flex;
+  order: 1;
+  padding-bottom: 0;
+  line-height: 49px;
+  padding-top: 4px;
+}
+.work-header-d h2 {
+  display: flex;
+  order: 0;
+
+  padding-right: 16px;
+
+  font-size: 42px;
+  line-height: 49px;
+}
+.work-header__detail {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 81px;
+  padding-left: 49px;
 }
-.work-header-detail button {
+.work-header__detail button {
   margin: 0;
   padding: 0;
   margin-right: 80px;
   border: none;
   background: none;
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -110,10 +146,11 @@
 
   color: #bdbdbd;
 }
-.work-header-detail button.choice {
+.work-header__detail button.choice {
   font-weight: 700;
   color: #333333;
 }
+/*******/
 @media (max-width: 380px) {
   .work-header-basic {
     height: 75px;
@@ -164,7 +201,7 @@
     border-radius: 34px;
     margin-left: 48px;
 
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -188,7 +225,7 @@
     margin-right: 80px;
     border: none;
     background: none;
-    font-family: "Noto Sans";
+    font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;

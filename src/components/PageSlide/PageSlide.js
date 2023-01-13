@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
-import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "./PageSlide.css";
+import React, { useRef } from 'react'
+import Slider from 'react-slick'
+import '../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import './PageSlide.css'
 function PageSlide(props) {
-  const sliderRef = useRef();
+  const sliderRef = useRef()
+
   const settings = {
     arrows: true,
     dots: true,
@@ -12,34 +13,34 @@ function PageSlide(props) {
     speed: 500,
     rows: 2,
     slidesPerRow: 3,
-    appendDots: (dots) => (
+    appendDots: dots => (
       <div>
-        <ul style={{ width: "288px", height: "40px" }}> {dots} </ul>
+        <ul style={{ width: '288px', height: '40px' }}> {dots} </ul>
       </div>
     ),
-    customPaging: (i) => <div className="dots-number">{i + 1}</div>,
-  };
+    customPaging: i => <div className="dots-number">{i + 1}</div>,
+  }
 
-  const slider_items = (imgList) => {
+  const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
         <div key={i} className="page-slider__item">
           <p className="page-item-image">
-            <img src={require("../../" + item.info)}></img>
+            <img src={require('../../' + item.info)}></img>
           </p>
           <h2 className="page-item-author">{item.author}</h2>
           <h3 className="page-item-detail">{item.detail}</h3>
         </div>
-      );
-    });
-  };
+      )
+    })
+  }
   return (
     <section className="container page-slider">
       <div className="page-slider__list">
         <button
           className="slick-first"
           onClick={() => {
-            sliderRef.current.slickGoTo(0);
+            sliderRef.current.slickGoTo(0)
           }}
         >
           <span className="ir_pm">처음으로</span>
@@ -48,7 +49,7 @@ function PageSlide(props) {
         <button
           className="slick-last"
           onClick={() => {
-            sliderRef.current.slickGoTo(props.items.length / 6 - 1);
+            sliderRef.current.slickGoTo(props.items.length / 6 - 1)
           }}
         >
           <span className="ir_pm">끝으로</span>
@@ -58,6 +59,6 @@ function PageSlide(props) {
         </Slider>
       </div>
     </section>
-  );
+  )
 }
-export default PageSlide;
+export default PageSlide

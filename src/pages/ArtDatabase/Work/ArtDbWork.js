@@ -1,38 +1,7 @@
 import React, { useState } from 'react'
-
-import RPaddingSlide from '../../../components/RPaddingSlide/RPaddingSlide'
-import WorkHeader from '../../../components/WorkHeader/WorkHeader'
-import PageSlide from '../../../components/PageSlide/PageSlide'
-import './ArtDbWork.css'
 import HeaderSmall from '../../../components/Header/HeaderSmall/HeaderSmall'
 import ArtMoveDetail from '../../../components/ArtMoveDetail/ArtMoveDetail'
-function ArtDbWork() {
-  const bannerList1 = [
-    {
-      info: 'qart_test/고미술/작가미상, 나전칠연상, 높이 26.7cm, 너비 24.4cm, 길이 36.7cm, 조선시대.jpg',
-      author: '작가미상',
-      title: '나전칠연상, 조선시대',
-      link: '/artdb/work3',
-    },
-    {
-      info: 'qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg',
-      author: '작가미상',
-      title: '백자 달항아리, 조선시대',
-      link: '/artdb/work3',
-    },
-    {
-      info: 'qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg',
-      author: '작가미상',
-      title: '석조나한좌상, 19세기',
-      link: '/artdb/work3',
-    },
-    {
-      info: 'qart_test/고미술/KakaoTalk_Photo_2022-07-13-17-18-21.jpeg',
-      author: 'Kim HoDeuk',
-      title: 'Distant Mountain, 2015',
-      link: '/artdb/work3',
-    },
-  ]
+function ArtDbWork(props) {
   const bannerList2 = [
     {
       info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
@@ -88,26 +57,8 @@ function ArtDbWork() {
   }
   return (
     <div>
-      <HeaderSmall moreList={menuList} detail={1} active={0} />
-      <ArtMoveDetail
-        title_e={'Antique Art'}
-        title_k={'고미술(000)'}
-        items={bannerList1}
-        represent={3}
-      />
-      <ArtMoveDetail
-        title_e={'Modern&Contemporary'}
-        title_k={'근현대'}
-        items={bannerList2}
-        represent={3}
-      />
-      <ArtMoveDetail
-        title_e={'by genre'}
-        title_k={'유형별'}
-        moreList={moreList}
-        items={pageItem}
-        represent={6}
-      />
+      <HeaderSmall moreList={menuList} detail={1} active={1} choice={0} />
+      {props.children}
     </div>
   )
 }
