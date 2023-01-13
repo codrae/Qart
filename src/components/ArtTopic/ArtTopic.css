@@ -1,0 +1,39 @@
+.art-topic {
+  border-bottom: 1px solid #e0e0e0;
+}
+.art-topic .container {
+  width: 1378px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.art-topic-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 49px;
+  padding-top: 70px;
+  padding-bottom: 119px;
+  height: 100%;
+}
+.art-topic-content img {
+  border: 1px solid #f2f2f2;
+  box-sizing: content-box;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+.art-topic--main {
+  width: 730px;
+  height: 954px;
+}
+.art-topic--sub {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.art-topic--sub img {
+  width: 510px;
+  height: 457px;
+}
+.art-topic--sub img:first-child {
+  margin-bottom: 40px;
+}

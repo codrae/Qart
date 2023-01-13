@@ -1,5 +1,6 @@
 import React from 'react'
 import ArtMoveDetail from '../../../../components/ArtMoveDetail/ArtMoveDetail'
+import ArtTopic from '../../../../components/ArtTopic/ArtTopic'
 function Main() {
   const bannerList1 = [
     {
@@ -101,8 +102,27 @@ function Main() {
       date: '2010년대',
     })
   }
+  const topicList = [
+    {
+      id: 1,
+      info: 'qart_test/고미술/작가미상, 나전칠연상, 높이 26.7cm, 너비 24.4cm, 길이 36.7cm, 조선시대.jpg',
+    },
+    {
+      id: 2,
+      info: 'qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg',
+    },
+    {
+      id: 3,
+      info: 'qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg',
+    },
+  ]
   return (
     <div>
+      <ArtTopic
+        title_e={'Focus on'}
+        title_k={'오늘의 작품'}
+        items={bannerList1}
+      />
       <ArtMoveDetail
         title_e={'Antique Art'}
         title_k={'고미술(000)'}
