@@ -194,15 +194,3 @@
   color: #bdbdbd;
   padding-top: 8px;
 }
-.art-md__list-item .item-author {
-  width: inherit;
-  text-align-last: left;
-  padding-top: 32px;
-
-  color: #000000;
-}
-.art-md__list-item .item-title {
-  text-align-last: left;
-  padding-top: 12px;
-  color: #bdbdbd;
-}
