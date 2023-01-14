@@ -57,7 +57,12 @@ function ArtDbWork(props) {
   }
   return (
     <div>
-      <HeaderSmall moreList={menuList} detail={1} active={1} choice={0} />
+      <HeaderSmall
+        moreList={menuList}
+        detail={1}
+        active={1}
+        choice={props.active}
+      />
       {props.children}
     </div>
   )

@@ -7,8 +7,8 @@ import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './ArtDetail.css'
 import WorkHeader from '../WorkHeader/WorkHeader'
 
-function ArtDetail() {
-  const { title_e, title_k, moreList, items } = useLocation().state
+function ArtDetail(props) {
+  const { title_e, title_k, moreList, items } = useLocation().state || props
   const TOTAL_PAGE = Math.round(items.length / 12)
   const [dotArr, setDotArr] = useState(new Array(TOTAL_PAGE).fill(0))
   const sliderRef = useRef()
@@ -56,7 +56,20 @@ function ArtDetail() {
           ></img>
           <h3>{item.author}</h3>
           <h2>{item.title}</h2>
-          <h4>{item.date}</h4>
+          {item.sell ? (
+            <div className="nft-item">
+              <p>
+                <span className="nft-item-title">제작년도</span>
+                <span className="nft-item-created">{item.created}</span>
+              </p>
+              <p>
+                <span className="nft-item-title">판매</span>
+                <span className="nft-item-sell">{item.sell}</span>
+              </p>
+            </div>
+          ) : (
+            <h4>{item.date}</h4>
+          )}
         </div>
       )
     })

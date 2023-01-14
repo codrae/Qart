@@ -16,7 +16,7 @@ function HeaderSmall(props) {
                 key={i}
               >
                 <a
-                  link={item.link}
+                  href={item.link}
                   className={i == props.choice ? 'active' : ''}
                 >
                   {item.title}
