@@ -46,16 +46,35 @@ function PageSlide(props) {
     return imgList.map((item, i) => {
       return (
         <div key={i} className="page-slider__item">
-          <img
-            className="page-item-image"
-            src={require('../../' + item.info)}
-          ></img>
-          <h2 className="page-item-author">
-            {item.author} <span>{item.author_e}</span>
-          </h2>
-          <h3 className="page-item-email">{item.title}</h3>
-          <h3 className="page-item-email">{item.email}</h3>
-          <button className="page-item-button">팔로우</button>
+          <div className="page-slider-item-row">
+            <img
+              className="page-item-image"
+              src={require('../../' + item.info)}
+            ></img>
+            <div>
+              {item.name ? (
+                <h2 className="page-item-author">
+                  {item.name} <span>{item.name_e}</span>
+                </h2>
+              ) : (
+                <></>
+              )}
+              {item.author ? (
+                <h2 className="page-item-author">
+                  {item.author} <span>{item.author_e}</span>
+                </h2>
+              ) : (
+                <></>
+              )}
+              {item.title ? (
+                <h3 className="page-item-email">{item.title}</h3>
+              ) : (
+                <></>
+              )}
+              <h3 className="page-item-email">{item.email}</h3>
+              <button className="page-item-button">팔로우</button>
+            </div>
+          </div>
         </div>
       )
     })
@@ -107,7 +126,7 @@ function PageSlide(props) {
           className="slick-last"
           onClick={() => {
             sliderRef.current.slickGoTo(
-              Math.round(props.items.length / PAGE_PER_ITEM) - 1
+              Math.ceil(props.items.length / PAGE_PER_ITEM) - 1
             )
           }}
         >

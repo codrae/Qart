@@ -16,7 +16,7 @@ function ArtDatabase(props) {
       },
       {
         title: 'Venue',
-        link: '#',
+        link: '/artdb/venue',
       },
     ],
   }

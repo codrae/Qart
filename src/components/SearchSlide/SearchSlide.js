@@ -14,8 +14,8 @@ function SearchSlide(props) {
     dots: false,
     infinite: true,
     speed: 500,
-    rows: 3,
-    slidesPerRow: 5,
+    rows: props.rows,
+    slidesPerRow: props.slidesPerRow,
     variableWidth: true,
     responsive: [
       {
@@ -36,6 +36,7 @@ function SearchSlide(props) {
 
           <h2 className="search-item-author">{item.author}</h2>
           <h3 className="search-item-email">{item.email}</h3>
+
           {i % 3 == 0 ? (
             <button className="clicked">팔로우</button> /* 클릭 시 버튼 */
           ) : (
@@ -212,7 +213,11 @@ function SearchSlide(props) {
         {/* <div className="search-slider__list">
           <Slider {...settings}>{slider_items(props.items)}</Slider>
         </div> */}
-        <PageSlide items={props.items} rows={3} slidesPerRow={5} />
+        <PageSlide
+          items={props.items}
+          rows={props.rows}
+          slidesPerRow={props.slidesPerRow}
+        />
       </div>
     </section>
   )

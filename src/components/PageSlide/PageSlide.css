@@ -17,6 +17,10 @@
 .page-slider__item:nth-child(5) {
   margin-right: 0;
 }
+.page-slider-item-row {
+  display: flex;
+  flex-direction: column;
+}
 .page-item-image {
   width: 232px;
   height: 232px;

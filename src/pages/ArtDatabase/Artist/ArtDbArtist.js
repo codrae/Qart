@@ -86,6 +86,8 @@ function ArtDbArtist() {
       <SearchSlide
         title_e={'Discover Artist'}
         title_k={'작가 탐방하기'}
+        rows={3}
+        slidesPerRow={5}
         items={searchItem}
       />
       <GalleryInfo title_e={'News On'} title_k={'새소식'} items={galleryInfo} />

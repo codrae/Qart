@@ -91,14 +91,14 @@ function App() {
           }
         ></Route>
 
-        <Route
+        {/* <Route
           path="/artdb/work2"
           element={
             <ArtDatabase>
               <ArtDbWork2 />
             </ArtDatabase>
           }
-        ></Route>
+        ></Route> */}
         {/* <Route
           path="/artdb/work3"
           element={
@@ -110,7 +110,7 @@ function App() {
         <Route
           path="/artdb/venue"
           element={
-            <ArtDatabase>
+            <ArtDatabase search={true} active={2}>
               <Venue />
             </ArtDatabase>
           }

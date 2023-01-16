@@ -26,7 +26,7 @@ function GalleryInfo(props) {
   }
   return (
     <section className="gallery_section">
-      <WorkHeader title_e={'News On'} title_k={'새소식'} />
+      <WorkHeader title_e={props.title_e} title_k={props.title_k} />
       {gallery_items(props.items)}
     </section>
   )
