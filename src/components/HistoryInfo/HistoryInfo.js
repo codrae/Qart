@@ -4,12 +4,18 @@ import './HistoryInfo.css'
 
 function HistoryInfo(props) {
   const [isShowMore, setIsShowMore] = useState(false) // 더보기 열고 닫는 스위치
+  const [menu, setMenu] = useState(0)
   return (
     <section>
-      <SectionHeader title="전시 이력"></SectionHeader>
+      <SectionHeader
+        title={props.title}
+        moreList={props.moreList}
+        setMenu={setMenu}
+        active={menu}
+      ></SectionHeader>
       <ul className="container display-history__list">
         {props.historyItem ? (
-          props.historyItem.map((item, i) => {
+          props.historyItem[menu].map((item, i) => {
             return (
               <li key={i}>
                 <span className="display-history__item-period">

@@ -5,6 +5,7 @@ import '../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './RPaddingSlide.css'
 import WorkHeader from '../WorkHeader/WorkHeader'
+import { Link } from 'react-router-dom'
 function RPaddingSlide(props) {
   const settings = {
     arrows: true,
@@ -20,14 +21,19 @@ function RPaddingSlide(props) {
   const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
-        <a href={item.link}>
+        <Link
+          to={`${item.link}/${item.id}`}
+          state={{
+            item: item,
+          }}
+        >
           <div className="slider__item">
             <img src={require('../../' + item.info)}></img>
             <h3>{item.author}</h3>
             <h2>{item.title}</h2>
             <h4>{item.date}</h4>
           </div>
-        </a>
+        </Link>
       )
     })
   }

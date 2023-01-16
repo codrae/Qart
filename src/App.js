@@ -23,6 +23,7 @@ import SignUpCert from './components/SignUp/SignUpCert'
 import SignUpAgency from './components/SignUp/Agency/SignUpAgency'
 import ArtDetail from './components/ArtDetail/ArtDetail'
 import NftMain from './pages/ArtDatabase/Work/NFT/NftMain'
+import ArtistDetail from './pages/ArtDatabase/Artist/ArtistDetail/ArtistDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -40,6 +41,14 @@ function App() {
           element={
             <ArtDatabase search={true} active={1}>
               <ArtDbArtist />
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/artist/:artistId"
+          element={
+            <ArtDatabase search={false}>
+              <ArtistDetail />
             </ArtDatabase>
           }
         ></Route>

@@ -53,6 +53,7 @@ function PageSlide(props) {
           <h2 className="page-item-author">
             {item.author} <span>{item.author_e}</span>
           </h2>
+          <h3 className="page-item-email">{item.title}</h3>
           <h3 className="page-item-email">{item.email}</h3>
           <button className="page-item-button">팔로우</button>
         </div>

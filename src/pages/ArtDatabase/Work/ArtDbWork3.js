@@ -87,43 +87,45 @@ function ArtDbWork3() {
   }
 
   var historyItem = [
-    {
-      period: '0000.00.00 - 0000.00.00',
-      category: '개인전',
-      title:
-        'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-    },
-    {
-      period: '0000.00.00 - 0000.00.00',
-      category: '단체전',
-      title:
-        'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-    },
-    {
-      period: '0000.00.00 - 0000.00.00',
-      category: '개인전',
-      title:
-        'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-    },
-    {
-      period: '0000.00.00 - 0000.00.00',
-      category: '기타',
-      title:
-        'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-    },
-    {
-      period: '0000.00.00 - 0000.00.00',
-      category: '아트페어',
-      title:
-        'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-    },
+    [
+      {
+        period: '0000.00.00 - 0000.00.00',
+        category: '개인전',
+        title:
+          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+      },
+      {
+        period: '0000.00.00 - 0000.00.00',
+        category: '단체전',
+        title:
+          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+      },
+      {
+        period: '0000.00.00 - 0000.00.00',
+        category: '개인전',
+        title:
+          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+      },
+      {
+        period: '0000.00.00 - 0000.00.00',
+        category: '기타',
+        title:
+          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+      },
+      {
+        period: '0000.00.00 - 0000.00.00',
+        category: '아트페어',
+        title:
+          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+      },
+    ],
   ]
 
   return (
     <div className="artdb-work3">
       <WorkHeader title_k={item.title} />
       <ArtDetailInfo item={infoItem} />
-      <HistoryInfo historyItem={historyItem} />
+      <HistoryInfo title={'전시이력'} historyItem={historyItem} />
       <DetailInfo item={detailItem} />
       <TopArrowSlider title={'작가의 다른 작품'} item={moreItem} />
     </div>
