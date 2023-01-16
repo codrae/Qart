@@ -37,7 +37,7 @@ function TopArrowSlider(props) {
 
   return (
     <section className="top-arrow">
-      <SectionHeader title="작품 정보"></SectionHeader>
+      <SectionHeader title="작가의 다른 작품"></SectionHeader>
       <div className="top-arrow-container">
         <Slider {...settings} className="top-arrow-slider">
           {slider_items(props.item)}

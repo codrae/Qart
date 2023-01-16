@@ -44,14 +44,13 @@ function ArtDetail(props) {
     beforeChange: (prev, next) => {
       ShowPaginationNumbers(next + 1)
     },
-    afterChange: (prev, current) => {},
   }
   const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
-        <div key={i} className="page-slider__item">
+        <div key={i} className="art-d-slider__item">
           <img
-            className="page-item-image"
+            className="art-d-item-image"
             src={require('../../' + item.info)}
           ></img>
           <h3>{item.author}</h3>
@@ -139,8 +138,8 @@ function ArtDetail(props) {
           </select>
         </div>
       </header>
-      <section className="container page-slider">
-        <div className="page-slider__list">
+      <section className="container art-d-slider">
+        <div className="art-d-slider__list">
           <button
             className="slick-first"
             onClick={() => {

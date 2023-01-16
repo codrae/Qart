@@ -41,6 +41,7 @@ function ArtDbArtist() {
     searchItem.push({
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
       author: '김동선',
+      author_e: 'Kim dongsun',
       email: '00000@naver.com',
     })
   }

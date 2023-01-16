@@ -43,21 +43,21 @@
   /* font-weight: 600; */
   color: #2f80ed;
 }
-.nft-main .art-d .page-slider__item {
+.nft-main .art-d .art-d-slider__item {
   text-align-last: left;
 }
-.nft-main .art-d .page-slider {
+.nft-main .art-d .art-d-slider {
   height: 3169px;
 }
-.nft-main .art-d .page-slider__list {
+.nft-main .art-d .art-d-slider__list {
   height: 3169px;
 }
-.nft-main .art-d .page-slider__list .slick-first,
-.nft-main .art-d .page-slider__list .slick-last,
-.nft-main .art-d .page-slider__list .slick-prev,
-.nft-main .art-d .page-slider__list .slick-next {
+.nft-main .art-d .art-d-slider__list .slick-first,
+.nft-main .art-d .art-d-slider__list .slick-last,
+.nft-main .art-d .art-d-slider__list .slick-prev,
+.nft-main .art-d .art-d-slider__list .slick-next {
   top: calc(2682px + 346px);
 }
-.nft-main .art-d .page-slider .slick-dots {
+.nft-main .art-d .art-d-slider .slick-dots {
   top: calc(2682px - 20px + 346px);
 }

@@ -1,11 +1,12 @@
-import React from "react";
-import { useState } from "react";
-import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
-import "./SearchSlide.css";
-import DicModal from "../Modal/DicModal";
-import ModalPortal from "../Modal/ModalPortal";
+import React from 'react'
+import { useState } from 'react'
+import Slider from 'react-slick'
+import '../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+import './SearchSlide.css'
+import DicModal from '../Modal/DicModal'
+import ModalPortal from '../Modal/ModalPortal'
+import PageSlide from '../PageSlide/PageSlide'
 
 function SearchSlide(props) {
   const settings = {
@@ -25,13 +26,13 @@ function SearchSlide(props) {
         },
       },
     ],
-  };
+  }
 
-  const slider_items = (imgList) => {
+  const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
         <div className="search-slider__item">
-          <img src={require("../../" + item.info)}></img>
+          <img src={require('../../' + item.info)}></img>
 
           <h2 className="search-item-author">{item.author}</h2>
           <h3 className="search-item-email">{item.email}</h3>
@@ -41,25 +42,25 @@ function SearchSlide(props) {
             <button>팔로우</button>
           )}
         </div>
-      );
-    });
-  };
+      )
+    })
+  }
 
   // 모달창 노출 여부 state
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false)
 
   // 모달창 노출
   const showModal = () => {
-    setModalOpen(true);
-    document.body.style.overflow = "hidden"; // 모달 창 오픈 시 스크롤 불가
-  };
+    setModalOpen(true)
+    document.body.style.overflow = 'hidden' // 모달 창 오픈 시 스크롤 불가
+  }
   return (
     <section className="search-slide">
       <header className="search-slide__header">
         <div className="container search-slide__header-container">
           <div className="search__header__info">
-            <h3 className="search__header__info-e">{props.title_e}</h3>
             <h2 className="search__header__info-k">{props.title_k}</h2>
+            <h3 className="search__header__info-e">{props.title_e}</h3>
           </div>
           <div className="search__header__dic">
             <ul>
@@ -104,6 +105,9 @@ function SearchSlide(props) {
               </li>
               <li>
                 <button>ㅎ</button>
+              </li>
+              <li>
+                <button>기타</button>
               </li>
             </ul>
             <ul>
@@ -185,6 +189,9 @@ function SearchSlide(props) {
               <li>
                 <button>Z</button>
               </li>
+              <li>
+                <button>etc</button>
+              </li>
             </ul>
           </div>
           <div className="search-modal">
@@ -200,12 +207,14 @@ function SearchSlide(props) {
           </div>
         </div>
       </header>
+
       <div className="container search-slider">
-        <div className="search-slider__list">
+        {/* <div className="search-slider__list">
           <Slider {...settings}>{slider_items(props.items)}</Slider>
-        </div>
+        </div> */}
+        <PageSlide items={props.items} rows={3} slidesPerRow={5} />
       </div>
     </section>
-  );
+  )
 }
-export default SearchSlide;
+export default SearchSlide
