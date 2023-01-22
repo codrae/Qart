@@ -8,6 +8,9 @@ import GalleryDirection from '../../../components/GalleryDirection/GalleryDirect
 import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 import BigTopArrow from '../../../components/TopArrowSlider/BigTopArrow/BigTopArrow'
 import BannerSlide from '../../../components/BannerSlide/BannerSlide'
+import ArtTopic from '../../../components/ArtTopic/ArtTopic'
+import { Link } from 'react-router-dom'
+import ArtMoveDetail from '../../../components/ArtMoveDetail/ArtMoveDetail'
 
 function MarketMain() {
   const moreList = ['바로구매', '옥션', '갤러리']
@@ -21,42 +24,42 @@ function MarketMain() {
     'Collectible',
     'NFT',
   ]
-  var moreItem = []
-  for (var i = 0; i < 9; i++) {
-    moreItem.push({
-      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
-      author: 'Kim HoDeuk',
-      title: 'Distant Mountain, 2015',
-      price: '000,000,000원',
-    })
-  }
+
   const bannerList = [
     {
+      id: 1,
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
-      size: '359px',
       author: '김동선',
-      title: '곰순이, 2010년대',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
       price: '000,000,000원',
     },
     {
+      id: 1,
       info: 'qart_test/판화/민정기, 묵안리, 2015.jpg',
-      size: '701px',
-      author: '민정기',
-      title: '묵안리2, 2015',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
       price: '000,000,000원',
     },
     {
+      id: 1,
       info: 'qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png',
-      size: '327px',
-      author: 'Chang SangEui',
-      title: 'Flower Rain, 2019',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
       price: '000,000,000원',
     },
     {
+      id: 1,
       info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
-      size: '329px',
-      author: 'Kim HoDeuk',
-      title: 'Distant Mountain, 2015',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
       price: '000,000,000원',
     },
   ]
@@ -105,21 +108,116 @@ function MarketMain() {
       order: -1,
     },
   ]
+
+  const info = [
+    {
+      id: 1,
+      info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
+      author: 'Kim HoDeuk',
+      title: 'Distant Mountain',
+      created: '2015',
+      price: '000,000,000원',
+      link: '.',
+    },
+    {
+      id: 1,
+      info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
+      author: 'Kim HoDeuk',
+      title: 'Distant Mountain',
+      created: '2015',
+      price: '000,000,000원',
+      link: '.',
+    },
+    {
+      id: 1,
+      info: 'qart_test/판화/민정기, 묵안리, 2015.jpg',
+      author: 'Kim HoDeuk',
+      title: 'Distant Mountain',
+      created: '2015',
+      price: '000,000,000원',
+      link: '.',
+    },
+  ]
+
+  var moreItem = []
+  for (var i = 0; i < 9; i++) {
+    moreItem.push({
+      id: 1,
+      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
+      title: '기획전시명',
+      detail: '비움갤러리가 선별한 전 작품 30% 할인가로 경매 시작!',
+      date: '2000.00.00 00:00 ~ 2000.00.00 00:00 ',
+    })
+  }
+  function RepresentingItems(item) {
+    const result = []
+
+    for (var i = 0; i < 4; i++) {
+      result.push(
+        <Link
+          to={`./market/${item[i].id}`}
+          state={{
+            item: item[i],
+          }}
+          key={i}
+          className="upcoming-auction-item"
+        >
+          <img src={require('../../../' + item[i].info)}></img>
+          <div className="upcoming-auction-info">
+            <h2 className="upcoming-auction--date">{item[i].date}</h2>
+            <h1 className="upcoming-auction--title">{item[i].title}</h1>
+            <h3 className="upcoming-auction--detail">{item[i].detail}</h3>
+          </div>
+        </Link>
+      )
+    }
+    return result
+  }
+
   return (
     <div className="market-main">
-      <BannerSlide />
-      <section className="top-border">
-        <WorkHeader title_k="전체" title_e="all" moreList={moreList} />
-        <TopArrowSlider item={moreItem} />
+      <BannerSlide items={info} />
+      <ArtTopic title_k={'큐레이터’s Pick'} items={info} hover={true} />
+      <BigTopArrow
+        title_e={'Qart’s Pick'}
+        title_k={'금주의 추천작'}
+        items={bannerList}
+      />
+      <section className="art-tok">
+        <WorkHeader
+          title_e={'알고나니 더 좋아지는 아트'}
+          title_k={'Art Tok!'}
+        />
+        <div className="container">
+          <div className="art-tok-main">
+            <img
+              src={require('../../../qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png')}
+            ></img>
+            <div className="art-tok-info">
+              <h2>김동선 Kim dongsun</h2>
+              <p>
+                아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가
+                셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.
+              </p>
+              <Link>Explore Now</Link>
+            </div>
+          </div>
+          <div className="art-tok-sub">
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+          </div>
+        </div>
       </section>
-      <section className="top-border">
-        <WorkHeader title_k="작품" title_e="work" moreList={moreList2} />
-        <TopArrowSlider item={moreItem} />
-      </section>
-      {/* <WorkHeader title_k="Curator’s Pick" /> */}
-      <BigTopArrow title_k="Curator’s Pick" items={bannerList} />
-      <SectionHeader title_k="Upcoming Auctions" line="right-line" />
-      <GalleryDirection items={infoItem} />
+      <ArtMoveDetail
+        title_k={'Upcoming Auction'}
+        items={moreItem}
+        represent={4}
+        RepresentingItems={RepresentingItems(moreItem)}
+      />
     </div>
   )
 }

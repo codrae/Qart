@@ -91,22 +91,6 @@ function App() {
           }
         ></Route>
 
-        {/* <Route
-          path="/artdb/work2"
-          element={
-            <ArtDatabase>
-              <ArtDbWork2 />
-            </ArtDatabase>
-          }
-        ></Route> */}
-        {/* <Route
-          path="/artdb/work3"
-          element={
-            <ArtDatabase>
-              <ArtDbWork3 />
-            </ArtDatabase>
-          }
-        ></Route> */}
         <Route
           path="/artdb/venue"
           element={
@@ -123,18 +107,18 @@ function App() {
             </ArtDatabase>
           }
         ></Route>
-        <Route
+        {/* <Route
           path="/artdb/venue/display/1"
           element={
             <ArtDatabase>
               <VenueDisplay />
             </ArtDatabase>
           }
-        ></Route>
+        ></Route> */}
         <Route
           path="/market"
           element={
-            <Marketplace>
+            <Marketplace search={true}>
               <MarketMain />
             </Marketplace>
           }

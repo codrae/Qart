@@ -16,9 +16,7 @@ const WorkHeader = props => {
         <div className="work-header__container">
           <section
             className={
-              props.title_e
-                ? 'work-header__info work-header__info'
-                : 'work-header__info-big'
+              props.title_e ? 'work-header__info' : 'work-header__info-big'
             }
           >
             {props.title_e ? <h4>{props.title_e}</h4> : <></>}

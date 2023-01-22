@@ -35,6 +35,7 @@
   color: #ffffff;
 
   text-transform: uppercase;
+  text-align-last: left;
 }
 .banner h2 {
   font-size: 46.7339px;

@@ -39,7 +39,9 @@ function ArtMoveDetail(props) {
       <section className="art-md--content">
         <div className="container">
           <section className="art-md--content__list">
-            {RepresentingItems(props.items)}
+            {props.RepresentingItems
+              ? props.RepresentingItems
+              : RepresentingItems(props.items)}
           </section>
         </div>
       </section>

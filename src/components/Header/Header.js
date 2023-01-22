@@ -21,17 +21,12 @@ const Header = props => {
             </a>
           </li>
           <li>
-            <a className={props.active == '2' ? 'active' : ''} href="#">
-              NFT
-            </a>
-          </li>
-          <li>
-            <a className={props.active == '3' ? 'active' : ''} href="/market">
+            <a className={props.active == '2' ? 'active' : ''} href="/market">
               Marketplace
             </a>
           </li>
           <li>
-            <a className={props.active == '4' ? 'active' : ''} href="#">
+            <a className={props.active == '3' ? 'active' : ''} href="#">
               Support
             </a>
           </li>

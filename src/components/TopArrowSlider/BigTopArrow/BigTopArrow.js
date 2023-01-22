@@ -28,9 +28,21 @@ function BigTopArrow(props) {
         >
           <div className="slider__item">
             <img src={require('../../../' + item.info)} alt="item"></img>
-            <h3>{item.author}</h3>
+            <h3>
+              {item.author} {item.author_e ? item.author_e : ''}{' '}
+            </h3>
             <h2>{item.title}</h2>
             <h4>{item.date}</h4>
+            {item.price ? (
+              <div className="market-item">
+                <span className="market-item--price">{item.price}</span>
+                <button href="#" className="market-item--heart">
+                  <span className="ir_pm">좋아요</span>
+                </button>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </Link>
       )

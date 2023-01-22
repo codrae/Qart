@@ -1,16 +1,38 @@
-import React from "react";
-import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import SearchHeader from "../../components/SearchHeader/SearchHeader";
+import React from 'react'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+import SearchHeader from '../../components/SearchHeader/SearchHeader'
+import HeaderSmall from '../../components/Header/HeaderSmall/HeaderSmall'
 
 function Marketplace(props) {
+  const moreList = {
+    menu: [
+      {
+        title: 'ALL',
+        link: '/market/all',
+      },
+      {
+        title: 'PlatformQ',
+        link: '/market/platform',
+      },
+      {
+        title: 'Auction',
+        link: '/market/auction',
+      },
+    ],
+  }
   return (
-    <div className="main">
-      <Header active="3" />
-      <SearchHeader />
+    <div>
+      <Header active="2" colored="black" />
+      <SearchHeader title="Marketplace" active={props.search} />
+      <HeaderSmall
+        moreList={moreList}
+        active={props.search}
+        choice={props.active}
+      />
       {props.children}
       <Footer />
     </div>
-  );
+  )
 }
-export default Marketplace;
+export default Marketplace
