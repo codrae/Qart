@@ -116,9 +116,9 @@ function App() {
           }
         ></Route>
         <Route
-          path="/artdb/venue/1"
+          path="/artdb/venue/:venuId"
           element={
-            <ArtDatabase>
+            <ArtDatabase search={false}>
               <VenueDetail />
             </ArtDatabase>
           }

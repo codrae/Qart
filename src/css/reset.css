@@ -124,7 +124,7 @@ table {
 }
 a {
   text-decoration: none;
-  color: #222222;
+  /* color: #222222; */
 }
 .ir_pm {
   display: block;
