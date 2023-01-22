@@ -117,35 +117,40 @@ function ArtistDetail(props) {
         moreList={moreList}
       />
 
-      <SectionHeader title={'소식'} />
-      <div className="container">
-        <ul className="artist-detail-info">
-          <li className="artist-d-item">
-            <img src={require('../../../../assets/gallery_02.png')}></img>
-            <h2>Marco Fusinato</h2>
-            <p>
-              You could hear the deep droning hum even before the black granite
-              block that housed the Australian pavilion came into view...
-            </p>
-          </li>
-          <li className="artist-d-item">
-            <img src={require('../../../../assets/gallery_02.png')}></img>
-            <h2>Marco Fusinato</h2>
-            <p>
-              You could hear the deep droning hum even before the black granite
-              block that housed the Australian pavilion came into view...
-            </p>
-          </li>
-          <li className="artist-d-item">
-            <img src={require('../../../../assets/gallery_02.png')}></img>
-            <h2>Marco Fusinato</h2>
-            <p>
-              You could hear the deep droning hum even before the black granite
-              block that housed the Australian pavilion came into view...
-            </p>
-          </li>
-        </ul>
-      </div>
+      <section className="artist-detail-info">
+        <SectionHeader title={'소식'} />
+        <div className="container">
+          <ul>
+            <li className="artist-d-item">
+              <img src={require('../../../../assets/gallery_02.png')}></img>
+              <h2>Marco Fusinato</h2>
+              <p>
+                You could hear the deep droning hum even before the black
+                granite block that housed the Australian pavilion came into
+                view...
+              </p>
+            </li>
+            <li className="artist-d-item">
+              <img src={require('../../../../assets/gallery_02.png')}></img>
+              <h2>Marco Fusinato</h2>
+              <p>
+                You could hear the deep droning hum even before the black
+                granite block that housed the Australian pavilion came into
+                view...
+              </p>
+            </li>
+            <li className="artist-d-item">
+              <img src={require('../../../../assets/gallery_02.png')}></img>
+              <h2>Marco Fusinato</h2>
+              <p>
+                You could hear the deep droning hum even before the black
+                granite block that housed the Australian pavilion came into
+                view...
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
       <WorkHeader
         moreList={detailList}
         moreActive={1}

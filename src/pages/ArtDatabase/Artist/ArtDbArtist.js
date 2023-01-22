@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './ArtDbArtist.css'
-import RPaddingSlide from '../../../components/RPaddingSlide/RPaddingSlide'
+import BigTopArrow from '../../../components/TopArrowSlider/BigTopArrow/BigTopArrow'
 import SearchSlide from '../../../components/SearchSlide/SearchSlide'
 import GalleryInfo from '../../../components/GalleryInfo/GalleryInfo'
 import TopArrowSlider from '../../../components/TopArrowSlider/TopArrowSlider'
@@ -78,7 +78,7 @@ function ArtDbArtist() {
 
   return (
     <div>
-      <RPaddingSlide
+      <BigTopArrow
         title_e={'Today’s Artists'}
         title_k={'오늘의 작가'}
         items={bannerList}

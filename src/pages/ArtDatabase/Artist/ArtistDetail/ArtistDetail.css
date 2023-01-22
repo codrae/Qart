@@ -23,10 +23,12 @@
   display: none;
 }
 .artist-detail-info {
+  border-bottom: 1px solid #e0e0e0;
+}
+.artist-detail-info ul {
   padding: 0 320px;
   padding-top: 59px;
   padding-bottom: 80px;
-
   display: flex;
   flex-direction: row;
 }

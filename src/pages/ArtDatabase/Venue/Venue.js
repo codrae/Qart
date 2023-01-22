@@ -3,10 +3,12 @@ import React, { useState } from 'react'
 import SearchSlide from '../../../components/SearchSlide/SearchSlide'
 import GalleryInfo from '../../../components/GalleryInfo/GalleryInfo'
 import './Venue.css'
+import BannerSlide from '../../../components/BannerSlide/BannerSlide'
 function Venue() {
   var searchItem = []
   for (var i = 0; i < 90; i++) {
     searchItem.push({
+      id: 1,
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
       name: '기관이름',
       name_e: 'Eng name',
@@ -40,8 +42,33 @@ function Venue() {
         'You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...',
     },
   ]
+
+  const info = [
+    {
+      id: 1,
+      info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
+      title: 'YOSIGO',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+    {
+      id: 2,
+      info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
+      title: 'YOSIGO',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+    {
+      id: 3,
+      info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
+      title: 'YOSIGO',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+  ]
   return (
     <div className="artdb-venue">
+      <BannerSlide items={info} />
       <SearchSlide
         title_e={'Venue'}
         title_k={'기관'}

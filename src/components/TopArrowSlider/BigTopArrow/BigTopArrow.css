@@ -1,10 +1,10 @@
-.banner-slide {
+.big-top-arrow {
   width: 100%;
   height: 890px;
   position: relative;
   z-index: 0;
 }
-.banner-slide-container {
+.big-top-arrow-container {
   max-width: 1920px;
   margin: 0 auto;
   height: 100%;
@@ -13,7 +13,7 @@
   z-index: 2;
   top: -147px;
 }
-.banner-slider {
+.big-top-arrow-slider {
   padding: 0 320px;
   overflow: hidden;
   height: 100%;
@@ -23,7 +23,7 @@
   z-index: 2;
 }
 
-.banner__slider {
+.big-top-arrow__slider {
   display: block;
   overflow: hidden;
   width: 100%;
@@ -34,12 +34,12 @@
   height: 593px !important;
 } */
 
-.slider__list {
+.big-top-arrow .slider__list {
   position: absolute;
   height: 593px;
   width: 1280px;
 }
-.slider__item {
+.big-top-arrow .slider__item {
   display: block;
   margin-right: 40px;
   height: 593px;
@@ -47,16 +47,16 @@
   display: flex;
   flex-direction: column;
 }
-.slider__item img {
+.big-top-arrow .slider__item img {
   width: 400px;
   height: 430px;
   object-fit: contain;
   box-sizing: border-box;
   border: 1px solid #e0e0e0;
 }
-.slider__item h2,
-.slider__item h3,
-.slider__item h4 {
+.big-top-arrow .slider__item h2,
+.big-top-arrow .slider__item h3,
+.big-top-arrow .big-top-arrow.slider__item h4 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -74,13 +74,13 @@
   word-break: keep-all;
   padding-top: 10px;
 }
-.slider__item h3 {
+.big-top-arrow .slider__item h3 {
   font-weight: 500;
   font-size: 28px;
   line-height: 33px;
   padding-top: 32px;
 }
-.slider__item h4 {
+.big-top-arrow .slider__item h4 {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -89,8 +89,8 @@
 }
 
 /* 화살표 */
-.banner-slider .slick-prev,
-.banner-slider .slick-next {
+.big-top-arrow .slick-prev,
+.big-top-arrow .slick-next {
   position: absolute;
   z-index: 2;
   top: 73.5px;
@@ -112,10 +112,10 @@
   /* background: #000; */
 }
 
-.banner-slider .slick-prev:before,
-.banner-slider .slick-next:before {
+.big-top-arrow .slick-prev:before,
+.big-top-arrow .slick-next:before {
   content: '';
-  background: url('../../assets/slider_prev.png') no-repeat;
+  background: url('../../../assets/slider_prev.png') no-repeat;
   background-size: 52px 52px;
   width: 52px;
   height: 52px;
@@ -123,72 +123,72 @@
   line-height: 0;
   opacity: 1;
 }
-.banner-slider .slick-next:before {
-  background: url('../../assets/slider_next.png') no-repeat;
+.big-top-arrow .slick-next:before {
+  background: url('../../../assets/slider_next.png') no-repeat;
   background-size: 52px 52px;
 }
 
-.banner-slide .slick-next {
+.big-top-arrow .slick-next {
   left: calc(1476px + 72px);
 }
 
 @media (max-width: 380px) {
-  .banner-slide {
+  .big-top-arrow {
     width: 360px;
     height: 357px;
   }
-  .banner-slide-container {
+  .big-top-arrow-container {
     max-width: 360px;
     top: -43px;
   }
-  .banner-slider .slick-list {
+  .big-top-arrow .slick-list {
     height: 231px !important;
   }
 
-  .banner-slide .section-header h2 {
+  .big-top-arrow .section-header h2 {
     font-size: 20px;
     line-height: 23px;
   }
-  .banner-slide .section-header {
+  .big-top-arrow.section-header {
     padding-top: 28px;
   }
-  .banner-slider {
+  .big-top-arrow-slider {
     padding-left: 20px;
     padding-top: 63px;
     padding-bottom: 35px;
     z-index: 2;
   }
-  .banner__slider {
+  .big-top-arrow__slider {
     height: 231px;
     margin-top: 20px;
   }
-  .slider__list {
+  .big-top-arrow .slider__list {
     position: absolute;
     height: 231px;
     width: 340px;
   }
-  .slider__item {
+  .big-top-arrow .slider__item {
     margin-right: 11px;
     height: 231px;
   }
-  .slider__item img {
+  .big-top-arrow .slider__item img {
     height: 183px;
   }
 
-  .slider__item h3 {
+  .big-top-arrow .slider__item h3 {
     font-size: 14px;
     line-height: 16px;
   }
-  .item-author {
+  .big-top-arrow .item-author {
     padding-top: 12px;
   }
-  .item-title {
+  .big-top-arrow .item-title {
     padding-top: 4px;
   }
 
   /* 화살표 */
-  .banner-slider .slick-prev,
-  .banner-slider .slick-next {
+  .big-top-arrow .slick-prev,
+  .big-top-arrow .slick-next {
     /* top: 61.5px;
     left: 1476px; */
     top: 30.5px;
@@ -197,17 +197,17 @@
     height: 20px;
   }
 
-  .banner-slider .slick-prev:before,
-  .banner-slider .slick-next:before {
+  .big-top-arrow .slick-prev:before,
+  .big-top-arrow .slick-next:before {
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
   }
-  .banner-slider .slick-next:before {
+  .big-top-arrow .slick-next:before {
     background-size: 20px 20px;
   }
 
-  .banner-slide .slick-next {
+  .big-top-arrow .slick-next {
     left: calc(296px + 24px);
   }
 }

@@ -1,97 +1,96 @@
-.main-banner {
+.banner {
   width: 100%;
-  height: 745px;
-  display: flex !important;
-  flex-direction: row;
+  height: 707px;
 }
-.main-image_slider {
-  width: 320px;
+.banner-slider,
+.banner .slick-list {
+  width: 100%;
   height: 100%;
-  overflow: hidden;
+}
+.banner .slider__item {
+  width: 1920px !important;
+  height: 707px;
   position: relative;
 }
-.main-image-slider__item {
+.banner .item-image {
+  width: 100%;
   height: 100%;
+  object-fit: inherit;
 }
-.main-image-slider__item img {
-  height: 745px;
+.banner .item-info {
+  position: absolute;
+  top: 205px;
+  left: 450px;
 }
-.main-item_slider {
-  width: 1282px;
-  height: 100%;
-}
-
-.main-slider__item {
-  width: 1282px;
-  height: 498px;
-  display: flex !important;
-  flex-direction: row;
-  padding: 18px 0;
-}
-
-.main-slider__item-info {
-  width: 551px;
-  height: 100%;
-  text-align-last: left;
-
-  color: white;
-}
-.main-slider__item-info h2 {
-  font-family: "Roboto";
+.banner h1,
+.banner h2 {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
-  padding-left: 54px;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 0.07em;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
 }
-.main-item-author {
-  padding-top: 241px;
+.banner h2 {
+  font-size: 46.7339px;
+  line-height: 55px;
 }
-.main-item-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* justify-content: space-between; */
-}
-.main-item-title span {
-  display: block;
-  width: 93px;
-  height: 4px;
-  background: #ffffff;
-  margin-right: 23px;
-}
-.main-slider__item img {
-  width: 731px;
-  height: 498px;
-}
-.main-item-detail {
-  font-family: "Noto Sans";
+.banner p {
+  width: 287px;
+
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05em;
 
-  padding-left: 54px;
-  padding-right: 54px;
-  padding-top: 19px;
-}
-.main-item_slider .slick-list {
-  height: 100%;
-  padding: 105px 0; /* 양 끝 padding */
-}
+  color: #ffffff;
 
+  padding-top: 26px;
+  padding-bottom: 56px;
+}
+.item-button {
+  display: block;
+  width: 152px;
+  height: 48px;
+
+  border: 2px solid #ffffff;
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
 /* 화살표 */
-.main-item_slider .slick-prev {
-  display: none !important;
-}
-.main-item_slider .slick-next {
+.banner .slick-prev,
+.banner .slick-next {
   position: absolute;
-  top: 365px;
-  right: -254px;
+  z-index: 2;
+
+  top: 354px;
+
   display: block;
 
-  width: 52px;
-  height: 52px;
+  width: 25px;
+  height: 50px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -105,41 +104,37 @@
   /* background: #000; */
 }
 
-.main-item_slider .slick-next:before {
-  content: "";
-  background: url("../../assets/slider_next.png") no-repeat;
-  background-size: 52px 52px;
-  width: 52px;
-  height: 52px;
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  content: '';
+  background: url('../../assets/arrow_left.png') no-repeat;
+  background-size: 25px 50px;
+  width: 25px;
+  height: 50px;
   display: inline-block;
-  line-height: 0;
-  opacity: 1;
 }
-/* .main-item_slider .slick-next:before {
-  background: url("../../assets/slider_next.png") no-repeat;
-  background-size: 40px 40px;
+.banner .slick-next:before {
+  background: url('../../assets/arrow_right.png') no-repeat;
+  background-size: 25px 50px;
 }
 
-.main-item_slider .slick-prev {
-  right: 54px;
+.banner .slick-prev {
+  left: 336px;
 }
-.main-item_slider .slick-next {
-  right: 322px;
-  right: 0;
-} */
-.dots_custom {
+.banner .slick-next {
+  right: 336px;
+}
+.banner .dots_custom {
   display: inline-block;
   vertical-align: middle;
   margin: auto 0;
   padding: 0;
-  bottom: 25px;
 }
-
 .dots_custom li {
   list-style: none;
   cursor: pointer;
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 8px;
   padding: 0;
 }
 
@@ -149,18 +144,12 @@
   color: transparent;
   cursor: pointer;
   display: block;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   border-radius: 100%;
   padding: 0;
 }
 
 .dots_custom li.slick-active button {
-  background-color: #2f80ed;
-}
-.main-item_slider .slick-active .main-slider__item-info {
-  color: #222222;
-}
-.main-item_slider .slick-active .main-item-title span {
-  background: #222222;
+  background-color: #222222;
 }
