@@ -1,0 +1,373 @@
+.market-nft-info {
+  padding: 100px 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-nft__image {
+  box-sizing: border-box;
+  width: 608px;
+  height: 667px;
+
+  border: 1px solid #e0e0e0;
+
+  object-fit: contain;
+}
+.market-nft__info {
+  width: 620px;
+}
+.market-nft__title {
+  padding-top: 284px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 49px;
+  color: #222222;
+
+  padding-bottom: 28px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-nft__title button {
+  width: 47.5px;
+  height: 43.58px;
+  background: none;
+  background: url('../../../../assets/heart-icon.png') center no-repeat;
+  background-size: contain;
+
+  border: none;
+
+  cursor: pointer;
+}
+.market-nft__title button:hover,
+.market-nft__title button:active {
+  background: url('../../../../assets/heart-active-icon.png') center no-repeat;
+  background-size: contain;
+}
+.market-nft__price {
+  border-top: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-nft__price span.price-title {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 19px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #333333;
+}
+.market-nft__price span.price {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 19px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #2f80ed;
+}
+.market-nft__info span.price-usd {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+
+  padding-bottom: 24px;
+}
+.market-nft__button {
+  border-top: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+.market-nft__button span {
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 29px;
+  padding-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #eb5757;
+}
+.market-nft__button button {
+  width: 620px;
+  height: 102px;
+
+  background: #333333;
+  border: none;
+  border-radius: 2px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.market-nft-header {
+  height: 213px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.m-nft-header-container {
+  height: 100%;
+  width: 1378px;
+  box-sizing: border-box;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  padding-top: 44px;
+  padding-left: 51px;
+  padding-bottom: 39px;
+
+  display: flex;
+  flex-direction: row;
+}
+.m-nft__image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+.m-nft__creator {
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.m-nft__creator h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #222222;
+
+  padding-bottom: 12px;
+}
+.m-nft__creator span {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #4f4f4f;
+}
+.m-nft__stock {
+  margin-left: 40px;
+  width: 362px;
+  height: 130px;
+
+  background: #fbfbfb;
+  box-sizing: border-box;
+  padding: 29px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.m-nft-stock__id {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #4f4f4f;
+
+  padding-bottom: 17px;
+}
+.m-nft-stock__num {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+.m-nft-detail {
+  padding-bottom: 100px;
+}
+.m-nft-detail__list {
+  padding-left: 322px;
+  padding-top: 76px;
+}
+.m-nft-detail__list li {
+  width: 1154px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+
+  /* Black */
+
+  color: #222222;
+
+  padding-bottom: 76px;
+}
+.m-nft-detail__list li:last-child {
+  padding-bottom: 45px;
+}
+.m-nft-detail__info {
+  margin-left: 326px;
+  width: 1275px;
+  height: 265px;
+  background: #fbfbfb;
+  box-sizing: border-box;
+
+  padding: 30px;
+}
+.m-nft-detail__info h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #333333;
+
+  padding-bottom: 24px;
+}
+.m-nft-info__list li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+.m-nft-info__list li:last-child {
+  padding-bottom: 0;
+}
+.m-nft-info__list li span.info-title {
+  display: block;
+  width: 220px;
+}
+.m-nft-info__list li span.info-content {
+  font-weight: 500;
+  color: #222222;
+}
+.market-nft-deal-container {
+  border-bottom: 1px solid #e0e0e0;
+  min-width: 1920px;
+}
+.m-nft-deal {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 132px;
+}
+.m-nft-deal-container {
+  height: 100%;
+  width: 1378px;
+  box-sizing: border-box;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.m-nft-deal__table {
+  width: 100%;
+}
+.m-nft-table__thead,
+.m-nft-table__body {
+  width: 100%;
+  height: 78px;
+
+  background: #fbfbfb;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-direction: row;
+
+  padding-left: 51px;
+  padding-right: 66px;
+}
+.m-nft-table__thead span,
+.m-nft-table__body span {
+  height: 100%;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: left;
+
+  /* Gray 2 */
+
+  color: #4f4f4f;
+}
+.m-nft-table__body span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #222222;
+}
+.m-nft-table__body span:first-child,
+.m-nft-table__thead span:first-child {
+  width: 417px;
+}
+.m-nft-table__thead span:last-child,
+.m-nft-table__body span:last-child {
+  margin-left: auto; /* 오른쪽 끝 */
+}
+.m-nft-table__body {
+  background: none;
+}
+.m-nft-table__body:last-child {
+  border: none;
+}

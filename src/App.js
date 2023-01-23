@@ -26,6 +26,7 @@ import NftMain from './pages/ArtDatabase/Work/NFT/NftMain'
 import ArtistDetail from './pages/ArtDatabase/Artist/ArtistDetail/ArtistDetail'
 import MarketAll from './pages/Marketplace/All/MarketAll'
 import MarketItem from './pages/Marketplace/Item/MarketItem'
+import MarketNftItem from './pages/Marketplace/Item/MarketNftItem.js/MarketNftItem'
 function App() {
   return (
     <BrowserRouter>
@@ -138,6 +139,14 @@ function App() {
           element={
             <Marketplace search={false}>
               <MarketItem />
+            </Marketplace>
+          }
+        ></Route>
+        <Route
+          path="/market/nft/:nftId"
+          element={
+            <Marketplace search={false}>
+              <MarketNftItem />
             </Marketplace>
           }
         ></Route>

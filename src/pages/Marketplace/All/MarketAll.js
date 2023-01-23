@@ -119,7 +119,7 @@ function MarketAll() {
       created: '2000.00.00',
       sell: '총 1개중 1개 판매중',
       detail: '0.234 ETH~',
-      link: '.',
+      link: '/market/nft',
     })
   }
 
