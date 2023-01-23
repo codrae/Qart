@@ -16,7 +16,9 @@ function HistoryInfo(props) {
       <ul className="container display-history__list">
         {props.historyItem ? (
           props.historyItem[menu].map((item, i) => {
-            return (
+            return item.divItem ? (
+              item.divItem
+            ) : (
               <li key={i}>
                 <span className="display-history__item-period">
                   {item.period}

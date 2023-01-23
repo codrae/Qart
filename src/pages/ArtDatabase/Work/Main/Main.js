@@ -9,6 +9,7 @@ function Main() {
       author: '작가미상',
       title: '나전칠연상, 조선시대',
       date: '2010년대',
+      link: '/artdb/work',
     },
     {
       id: 2,
@@ -16,6 +17,7 @@ function Main() {
       author: '작가미상',
       title: '백자 달항아리, 조선시대',
       date: '2010년대',
+      link: '/artdb/work',
     },
     {
       id: 3,
@@ -23,6 +25,7 @@ function Main() {
       author: '작가미상',
       title: '석조나한좌상, 19세기',
       date: '2010년대',
+      link: '/artdb/work',
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ function Main() {
       author: 'Kim HoDeuk',
       title: 'Distant Mountain, 2015',
       date: '2010년대',
+      link: '/artdb/work',
     },
   ]
   for (var i = 0; i < 100; i++) {

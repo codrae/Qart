@@ -1,0 +1,226 @@
+.market-art {
+  padding: 70px 320px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-art-image {
+  display: flex;
+  flex-direction: column;
+  width: 608px;
+}
+.market-image__image {
+  width: 608px;
+  height: 667px;
+
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  object-fit: contain;
+}
+.market-image__list {
+  padding-top: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-image__item {
+  width: 185px;
+  height: 207px;
+  object-fit: contain;
+  box-sizing: border-box;
+
+  border: 1px solid #e0e0e0;
+}
+.market-art-info {
+  width: 651px;
+  height: 900px;
+
+  background: #fbfbfb;
+  box-sizing: border-box;
+  padding: 24px 26px 32px 32px;
+}
+.market-info__gallery {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  display: flex;
+  align-items: center;
+
+  color: #2f80ed;
+
+  padding-bottom: 40px;
+}
+.info__arrow {
+  margin-left: 11.37px;
+  width: 12.26px;
+  height: 20.83px;
+  background: url('../../../assets/arrow-right-blue.png') center no-repeat;
+  background-size: contain;
+}
+.market-info__list {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 45px;
+}
+.market-info__list li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 28px;
+}
+.market-info__list li:last-child {
+  padding-bottom: 0;
+}
+
+.market-info__list li span:first-child {
+  display: block;
+  width: 167px;
+}
+/* 기타 설명 */
+.market-info__list li:last-child span:last-child {
+  display: block;
+  width: 426px;
+}
+.market-art-sell {
+  border-top: 1px solid #e0e0e0;
+  font-family: 'Roboto';
+  font-style: normal;
+}
+.market-sell__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 26px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #222222;
+}
+.market-sell__price span:last-child {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000000;
+}
+.market-sell__usd {
+  display: block;
+  padding-top: 8px;
+  width: 100%;
+  text-align: right;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.market-sell__time {
+  display: block;
+  padding-top: 53px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  text-align: right;
+
+  /* Red */
+
+  color: #eb5757;
+}
+.market-sell__button {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.market-sell__button button {
+  width: 284px;
+  height: 84px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  background: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Black */
+
+  color: #222222;
+  cursor: pointer;
+}
+.market-sell__button button:last-child {
+  box-sizing: border-box;
+  background: #333333;
+  border: none;
+  color: #ffffff;
+}
+.market-detail .art-detail-section {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 0 320px;
+  padding-bottom: 150px;
+}
+.market-detail .art-detail__image {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.market-detail .art-detail__list {
+  width: calc(100% - 240px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.market-detail .art-detail__list .art-detail__item {
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #222222;
+  padding-left: 46px;
+}
+.market-detail .art-detail__list .art-detail__item:first-child {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+
+  color: #333333;
+}
+.market-detail .art-detail__list .art-detail__name {
+  display: inline-block;
+  color: #4f4f4f;
+  width: 127px;
+  vertical-align: top;
+}
+.market-detail .art-detail__list .art-detail__content {
+  display: inline-block;
+  width: calc(100% - 167px);
+  color: #222222;
+}

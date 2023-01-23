@@ -72,9 +72,20 @@
   padding-top: 12px;
   color: #bdbdbd;
 }
+.top-arrow-price {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  padding-top: 32px;
+  color: #2f80ed;
+}
 .top-arrow-slider .slick-list {
   width: 1280px;
-  height: 510px;
+  /* height: 510px; */
   padding: 0 0 !important;
 }
 .top-arrow-slider .slick-track {

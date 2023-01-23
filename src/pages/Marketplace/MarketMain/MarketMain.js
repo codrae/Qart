@@ -18,6 +18,7 @@ function MarketMain() {
       title: '곰순이',
       date: '2010년대',
       price: '000,000,000원',
+      link: '/market',
     },
     {
       id: 1,
@@ -27,6 +28,7 @@ function MarketMain() {
       title: '곰순이',
       date: '2010년대',
       price: '000,000,000원',
+      link: '/market',
     },
     {
       id: 1,
@@ -36,6 +38,7 @@ function MarketMain() {
       title: '곰순이',
       date: '2010년대',
       price: '000,000,000원',
+      link: '/market',
     },
     {
       id: 1,
@@ -45,6 +48,7 @@ function MarketMain() {
       title: '곰순이',
       date: '2010년대',
       price: '000,000,000원',
+      link: '/market',
     },
   ]
 

@@ -9,7 +9,7 @@ function ArtTopic(props) {
       <WorkHeader title_e={props.title_e} title_k={props.title_k}></WorkHeader>
       <section className="container art-topic-content">
         <Link
-          to={`./work/${props.items[0].id}`}
+          to={`${props.items[0].link}/${props.items[0].id}`}
           state={{
             item: props.items[0],
           }}
@@ -35,7 +35,7 @@ function ArtTopic(props) {
         </Link>
         <div className="art-topic--sub">
           <Link
-            to={`./work/${props.items[1].id}`}
+            to={`${props.items[1].link}/${props.items[1].id}`}
             state={{
               item: props.items[1],
             }}
@@ -59,7 +59,7 @@ function ArtTopic(props) {
             )}
           </Link>
           <Link
-            to={`./work/${props.items[2].id}`}
+            to={`${props.items[2].link}/${props.items[2].id}`}
             state={{
               item: props.items[2],
             }}
