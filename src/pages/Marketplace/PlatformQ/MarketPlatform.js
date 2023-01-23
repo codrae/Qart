@@ -76,6 +76,8 @@ function MarketPlatform() {
       </div>
     )
   }
+
+  const options = ['가나다순', 'ABC순', '오름순', '내림순']
   return (
     <div className="market-platform">
       <BannerSlide items={info} />
@@ -87,6 +89,7 @@ function MarketPlatform() {
           slidersPerRow={3}
           divItem={true}
           items={result}
+          options={options}
         />
       </div>
     </div>

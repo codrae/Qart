@@ -28,6 +28,7 @@ import MarketAll from './pages/Marketplace/All/MarketAll'
 import MarketItem from './pages/Marketplace/Item/MarketItem'
 import MarketNftItem from './pages/Marketplace/Item/MarketNftItem.js/MarketNftItem'
 import MarketPlatform from './pages/Marketplace/PlatformQ/MarketPlatform'
+import MarketAuction from './pages/Marketplace/Auction/MarketAuction'
 function App() {
   return (
     <BrowserRouter>
@@ -94,7 +95,6 @@ function App() {
             </ArtDatabase>
           }
         ></Route>
-
         <Route
           path="/artdb/venue"
           element={
@@ -158,6 +158,10 @@ function App() {
               <MarketPlatform />
             </Marketplace>
           }
+        ></Route>
+        <Route
+          path="/market/auction"
+          element={<MarketAuction search={true} active={0} />}
         ></Route>
       </Routes>
     </BrowserRouter>

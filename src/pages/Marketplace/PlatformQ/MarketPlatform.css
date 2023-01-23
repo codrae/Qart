@@ -1,6 +1,9 @@
 .market-platform .art-d-header {
   border-top: 1px solid #e0e0e0;
 }
+.market-platform-slider {
+  border-bottom: 1px solid #e0e0e0;
+}
 .market-platform-slider .slider__item {
   width: 400px !important;
   margin-right: 40px;
