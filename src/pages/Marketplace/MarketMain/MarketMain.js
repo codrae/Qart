@@ -9,18 +9,6 @@ import { Link } from 'react-router-dom'
 import ArtMoveDetail from '../../../components/ArtMoveDetail/ArtMoveDetail'
 
 function MarketMain() {
-  const moreList = ['바로구매', '옥션', '갤러리']
-  const moreList2 = [
-    '전체',
-    '회화',
-    '판화',
-    '사진',
-    '입체-조각',
-    '미디어-다원예술',
-    'Collectible',
-    'NFT',
-  ]
-
   const bannerList = [
     {
       id: 1,
@@ -57,51 +45,6 @@ function MarketMain() {
       title: '곰순이',
       date: '2010년대',
       price: '000,000,000원',
-    },
-  ]
-
-  const galleryInfo = [
-    {
-      info: 'assets/gallery_01.png',
-      size: 'contain',
-      title: 'Marco Fusinato',
-      order: 0,
-      detail:
-        'You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...',
-    },
-    {
-      info: 'qart_test/ȸȭ/KIM TAEHO, Internal Rythem 2005-21, 50x65.1 cm, Acrylic on canvas, 2005.jpg',
-      size: 'none',
-      title: 'Marco Fusinato',
-      order: -1,
-      detail:
-        'You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...',
-    },
-    {
-      info: 'assets/gallery_02.png',
-      size: 'contain',
-      title: 'Marco Fusinato',
-      order: 0,
-      detail:
-        'You could hear the deep droning hum even before the black granite block that housed the Australian pavilion came into view...',
-    },
-  ]
-
-  const infoItem = [
-    {
-      image: 'assets/art_01.png',
-      link: '#',
-      small: 'Upcoming Auctions',
-      section: 'ABCD Auction',
-      title: '옥션 정보 바로가기',
-    },
-    {
-      image: 'assets/art_02.png',
-      link: '#',
-      small: 'Upcoming Auctions',
-      section: 'ABCD Auction',
-      title: '옥션 정보 바로가기',
-      order: -1,
     },
   ]
 

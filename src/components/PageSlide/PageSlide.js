@@ -133,7 +133,9 @@ function PageSlide(props) {
           <span className="ir_pm">끝으로</span>
         </button>
         <Slider ref={sliderRef} {...settings}>
-          {slider_items(props.items)}
+          {props.RepresentingItems
+            ? props.RepresentingItems
+            : slider_items(props.items)}
         </Slider>
       </div>
     </section>

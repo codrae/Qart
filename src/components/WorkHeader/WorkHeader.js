@@ -49,7 +49,14 @@ const WorkHeader = props => {
             {props.moreList.map((item, i) => {
               return (
                 <li key={i}>
-                  <button className={i == 0 ? 'choice' : ''}>{item}</button>
+                  <button
+                    className={i == props.moreMenu ? 'choice' : ''}
+                    onClick={() => {
+                      props.moreListChange(i)
+                    }}
+                  >
+                    {item}
+                  </button>
                 </li>
               )
             })}

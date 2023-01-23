@@ -24,6 +24,7 @@ import SignUpAgency from './components/SignUp/Agency/SignUpAgency'
 import ArtDetail from './components/ArtDetail/ArtDetail'
 import NftMain from './pages/ArtDatabase/Work/NFT/NftMain'
 import ArtistDetail from './pages/ArtDatabase/Artist/ArtistDetail/ArtistDetail'
+import MarketAll from './pages/Marketplace/All/MarketAll'
 function App() {
   return (
     <BrowserRouter>
@@ -120,6 +121,14 @@ function App() {
           element={
             <Marketplace search={true}>
               <MarketMain />
+            </Marketplace>
+          }
+        ></Route>
+        <Route
+          path="/market/all"
+          element={
+            <Marketplace search={true} active={0}>
+              <MarketAll />
             </Marketplace>
           }
         ></Route>

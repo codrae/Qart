@@ -145,6 +145,11 @@
   /* Gray 4 */
 
   color: #bdbdbd;
+
+  cursor: pointer;
+}
+.work-header__detail li:last-child button {
+  margin-right: 0;
 }
 .work-header__detail button.choice {
   font-weight: 700;

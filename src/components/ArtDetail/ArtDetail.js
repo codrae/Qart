@@ -9,8 +9,10 @@ import WorkHeader from '../WorkHeader/WorkHeader'
 import DropDown from '../DropDown/DropDown'
 
 function ArtDetail(props) {
+  const rows = props.rows || 4
+  const slidersPerRow = props.slidersPerRow || 3
   const { title_e, title_k, moreList, items } = useLocation().state || props
-  const TOTAL_PAGE = Math.round(items.length / 12)
+  const TOTAL_PAGE = Math.round(items.length / (rows * slidersPerRow))
   const [dotArr, setDotArr] = useState(new Array(TOTAL_PAGE).fill(0))
   const sliderRef = useRef()
 
@@ -19,8 +21,8 @@ function ArtDetail(props) {
     dots: true,
     infinite: true,
     speed: 500,
-    rows: 4,
-    slidesPerRow: 3,
+    rows: rows,
+    slidesPerRow: slidersPerRow,
     appendDots: dots => (
       <div>
         <ul className="slick-dots-container">
@@ -48,7 +50,9 @@ function ArtDetail(props) {
   }
   const slider_items = imgList => {
     return imgList.map((item, i) => {
-      return (
+      return props.divItem ? (
+        item
+      ) : (
         <div key={i} className="art-d-slider__item">
           <img
             className="art-d-item-image"
@@ -132,7 +136,9 @@ function ArtDetail(props) {
             {title_e ? <h4>{title_e}</h4> : <></>}
             <h2>{title_k}</h2>
           </div>
-          <DropDown options={options}></DropDown>
+          <DropDown
+            options={props.options ? props.options : options}
+          ></DropDown>
         </div>
       </header>
       <section className="container art-d-slider">
@@ -149,7 +155,9 @@ function ArtDetail(props) {
           <button
             className="slick-last"
             onClick={() => {
-              sliderRef.current.slickGoTo(Math.round(items.length / 12) - 1)
+              sliderRef.current.slickGoTo(
+                Math.round(items.length / (rows * slidersPerRow)) - 1
+              )
             }}
           >
             <span className="ir_pm">끝으로</span>
