@@ -27,6 +27,7 @@ import ArtistDetail from './pages/ArtDatabase/Artist/ArtistDetail/ArtistDetail'
 import MarketAll from './pages/Marketplace/All/MarketAll'
 import MarketItem from './pages/Marketplace/Item/MarketItem'
 import MarketNftItem from './pages/Marketplace/Item/MarketNftItem.js/MarketNftItem'
+import MarketPlatform from './pages/Marketplace/PlatformQ/MarketPlatform'
 function App() {
   return (
     <BrowserRouter>
@@ -147,6 +148,14 @@ function App() {
           element={
             <Marketplace search={false}>
               <MarketNftItem />
+            </Marketplace>
+          }
+        ></Route>
+        <Route
+          path="/market/platform"
+          element={
+            <Marketplace search={true} active={1}>
+              <MarketPlatform />
             </Marketplace>
           }
         ></Route>
