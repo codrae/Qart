@@ -29,6 +29,7 @@ import MarketItem from './pages/Marketplace/Item/MarketItem'
 import MarketNftItem from './pages/Marketplace/Item/MarketNftItem.js/MarketNftItem'
 import MarketPlatform from './pages/Marketplace/PlatformQ/MarketPlatform'
 import MarketAuction from './pages/Marketplace/Auction/MarketAuction'
+import AuctionItem from './pages/Marketplace/Auction/Item/AuctionItem'
 function App() {
   return (
     <BrowserRouter>
@@ -162,6 +163,10 @@ function App() {
         <Route
           path="/market/auction"
           element={<MarketAuction search={true} active={0} />}
+        ></Route>
+        <Route
+          path="/market/auction/:auctionId"
+          element={<AuctionItem />}
         ></Route>
       </Routes>
     </BrowserRouter>

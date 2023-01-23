@@ -25,7 +25,7 @@ function MarketAuction(props) {
   for (var i = 0; i < 20; i++) {
     item.push({
       id: 1,
-      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
+      info: 'qart_test/미디어/node00, 내재율의 외적 파동, 2019.jpg',
       title: '기획전시명',
       detail: '비움갤러리가 선별한 전 작품 30% 할인가로 경매 시작!',
       date: '2000.00.00 00:00 ~ 2000.00.00 00:00 ',
@@ -37,7 +37,7 @@ function MarketAuction(props) {
   for (var i = 0; i < 20; i++) {
     result.push(
       <Link
-        to={`./market/${item[i].id}`}
+        to={`./${item[i].id}`}
         state={{
           item: item[i],
         }}

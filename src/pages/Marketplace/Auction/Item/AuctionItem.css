@@ -1,0 +1,202 @@
+.auction-detail-header {
+  height: 147px;
+  background: #222222;
+  border-bottom: 1px solid #e0e0e0;
+}
+.ad-header-container {
+  width: 1378px;
+  box-sizing: border-box;
+  border-left: 1px solid #4f4f4f;
+  border-right: 1px solid #4f4f4f;
+
+  padding-left: 49px;
+  padding-top: 32px;
+}
+.ad-haeder__route {
+  display: flex;
+  flex-direction: row;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+}
+.ad-haeder__route .next {
+  width: 10.79px;
+  height: 19.17px;
+  background: url('../../../../assets/arrow_right.png') center no-repeat;
+  background-size: contain;
+
+  margin: 0 5.61px;
+}
+.ad-header-container h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 47px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+  padding-top: 8px;
+}
+.auction-detail-banner {
+  padding-left: 322px;
+  padding-top: 58px;
+  position: relative;
+}
+.ad-banner-image {
+  width: 1267px;
+  height: 328px;
+  object-fit: cover;
+}
+.ad-banner-info {
+  position: absolute;
+  top: 58px;
+  left: 322px;
+}
+.ad-banner-info .upcoming-auction--date {
+  margin-top: 20px;
+  margin-left: 894px;
+}
+.ad-banner-info--title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  padding-top: 53px;
+}
+.ad-banner-info--detail {
+  display: block;
+  width: 100%;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: -0.02em;
+
+  /* Gray 6 */
+
+  padding-top: 20px;
+  color: #f2f2f2;
+}
+.auction-detail-slider .slider__item {
+  display: block;
+  margin-right: 40px;
+  height: 556px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.auction-detail-slider .slider__item img {
+  width: 400px;
+  height: 399px;
+  object-fit: contain;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+}
+.auction-detail-slider .slider__item h2,
+.auction-detail-slider .slider__item h3,
+.auction-detail-slider .slider__item h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+
+  width: 100%;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+  padding-top: 10px;
+}
+.auction-detail-slider .slider__item h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  padding-top: 24px;
+}
+.auction-detail-slider .slider__item h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #bdbdbd;
+  padding-top: 12px;
+}
+.buy-button {
+  width: 399px;
+  margin-left: 1px;
+  height: 64px;
+
+  background: #222222;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* White */
+
+  color: #ffffff;
+
+  margin-top: 28px;
+  margin-bottom: 80px;
+}
+.auction-detail-slider .art-d-header-container {
+  height: 174px;
+}
+.auction-detail-slider .art-d .art-d-slider__list {
+  height: 3191px;
+}
+.auction-detail-slider .art-d .art-d-slider {
+  height: 3191px;
+}
+.auction-detail-slider .art-d .art-d-slider__list {
+  height: 3191px;
+}
+.auction-detail-slider .art-d .art-d-slider .slick-dots {
+  top: calc(3137px - 20px);
+}
+.auction-detail-slider .art-d .art-d-slider__list .slick-first,
+.auction-detail-slider .art-d .art-d-slider__list .slick-last,
+.auction-detail-slider .art-d .art-d-slider__list .slick-prev,
+.auction-detail-slider .art-d .art-d-slider__list .slick-next {
+  top: 3137px;
+}

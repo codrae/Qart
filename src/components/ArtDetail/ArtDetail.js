@@ -9,9 +9,10 @@ import WorkHeader from '../WorkHeader/WorkHeader'
 import DropDown from '../DropDown/DropDown'
 
 function ArtDetail(props) {
+  const location = useLocation().state
   const rows = props.rows || 4
   const slidersPerRow = props.slidersPerRow || 3
-  const { title_e, title_k, moreList, items } = useLocation().state || props
+  const { title_e, title_k, moreList, items } = props ? props : location
   const TOTAL_PAGE = Math.round(items.length / (rows * slidersPerRow))
   const [dotArr, setDotArr] = useState(new Array(TOTAL_PAGE).fill(0))
   const sliderRef = useRef()
