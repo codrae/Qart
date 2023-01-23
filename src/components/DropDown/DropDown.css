@@ -1,0 +1,65 @@
+.drop-container {
+  position: relative;
+  z-index: 2;
+}
+.drop-select,
+.show-drop-list li {
+  width: 228px;
+  height: 72px;
+
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+
+  padding-left: 20px;
+
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+.drop-select:after {
+  /* position: absolute; */
+  content: '';
+  background: url('../../assets/arrow_down.png') no-repeat center;
+  background-size: 16px 9px;
+  width: 16px;
+  height: 100%;
+  /* display: inline-block; */
+  position: absolute;
+  top: 0;
+  right: 23.31px;
+}
+
+.drop-list {
+  display: none; /*hide original SELECT element: */
+}
+.show-drop-list {
+  display: block;
+  position: absolute;
+  border: 1px solid #e0e0e0;
+  z-index: 222;
+  margin-top: 8px;
+}
+.show-drop-list li {
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 222 !important;
+}
+.show-drop-list li:last-child {
+  border-bottom: none;
+}
+.show-drop-list li:hover {
+  background: #f2f2f2;
+}

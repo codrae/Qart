@@ -1,11 +1,7 @@
 import React from 'react'
 import WorkHeader from '../../../components/WorkHeader/WorkHeader'
-import TopArrowSlider from '../../../components/TopArrowSlider/TopArrowSlider'
 import './MarketMain.css'
 
-import GalleryInfo from '../../../components/GalleryInfo/GalleryInfo'
-import GalleryDirection from '../../../components/GalleryDirection/GalleryDirection'
-import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 import BigTopArrow from '../../../components/TopArrowSlider/BigTopArrow/BigTopArrow'
 import BannerSlide from '../../../components/BannerSlide/BannerSlide'
 import ArtTopic from '../../../components/ArtTopic/ArtTopic'

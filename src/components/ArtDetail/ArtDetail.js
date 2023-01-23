@@ -6,6 +6,7 @@ import '../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './ArtDetail.css'
 import WorkHeader from '../WorkHeader/WorkHeader'
+import DropDown from '../DropDown/DropDown'
 
 function ArtDetail(props) {
   const { title_e, title_k, moreList, items } = useLocation().state || props
@@ -105,6 +106,7 @@ function ArtDetail(props) {
     setDotArr(numArr)
   }
 
+  const options = ['최신등록순', '작품명순', '작가명순', '제작연도순']
   return (
     <div className="art-d">
       <header className="art-d-header">
@@ -130,12 +132,7 @@ function ArtDetail(props) {
             {title_e ? <h4>{title_e}</h4> : <></>}
             <h2>{title_k}</h2>
           </div>
-          <select className="email-input-email email">
-            <option value="최신순">최신순</option>
-            <option value="인기순">인기순</option>
-            <option value="인기순">..순</option>
-            <option value="뭐뭐순">뭐뭐순</option>
-          </select>
+          <DropDown options={options}></DropDown>
         </div>
       </header>
       <section className="container art-d-slider">
