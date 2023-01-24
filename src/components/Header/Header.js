@@ -11,7 +11,7 @@ const Header = props => {
         </div>
         <ul className="header__menu">
           <li>
-            <a className={props.active == '0' ? 'active' : ''} href="/artdb">
+            <a className={props.active == '0' ? 'active' : ''} href="/">
               Art Database
             </a>
           </li>

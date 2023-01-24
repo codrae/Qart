@@ -30,11 +30,12 @@ import MarketNftItem from './pages/Marketplace/Item/MarketNftItem.js/MarketNftIt
 import MarketPlatform from './pages/Marketplace/PlatformQ/MarketPlatform'
 import MarketAuction from './pages/Marketplace/Auction/MarketAuction'
 import AuctionItem from './pages/Marketplace/Auction/Item/AuctionItem'
+import Payment from './pages/Marketplace/Payment/Payment'
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Main />}></Route>
+        {/* <Route path="/" element={<Main />}></Route> */}
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="/signUp/auth" element={<SignUpAuth />}></Route>
         <Route path="/signUp/auth/general" element={<SignUpGeneral />}></Route>
@@ -59,7 +60,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/artdb"
+          path="/"
           element={
             <ArtDatabase search={true} active={0}>
               <ArtDbWork active={0}>
@@ -168,6 +169,7 @@ function App() {
           path="/market/auction/:auctionId"
           element={<AuctionItem />}
         ></Route>
+        <Route path="/market/payment" element={<Payment />}></Route>
       </Routes>
     </BrowserRouter>
   )

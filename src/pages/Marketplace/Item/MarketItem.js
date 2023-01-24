@@ -285,7 +285,14 @@ function MarketItem() {
               </span>
               <div className="market-sell__button">
                 <button>판매자 문의하기</button>
-                <button>구입/응찰하기</button>
+                <Link
+                  to={'/market/payment'}
+                  state={{
+                    item: item,
+                  }}
+                >
+                  구입/응찰하기
+                </Link>
               </div>
             </div>
           </section>

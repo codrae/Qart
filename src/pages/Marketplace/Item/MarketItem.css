@@ -144,7 +144,8 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.market-sell__button button {
+.market-sell__button button,
+.market-sell__button a {
   width: 284px;
   height: 84px;
   box-sizing: border-box;
@@ -162,7 +163,7 @@
   color: #222222;
   cursor: pointer;
 }
-.market-sell__button button:last-child {
+.market-sell__button a {
   box-sizing: border-box;
   background: #333333;
   border: none;
