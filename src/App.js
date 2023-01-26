@@ -31,6 +31,7 @@ import MarketPlatform from './pages/Marketplace/PlatformQ/MarketPlatform'
 import MarketAuction from './pages/Marketplace/Auction/MarketAuction'
 import AuctionItem from './pages/Marketplace/Auction/Item/AuctionItem'
 import Payment from './pages/Marketplace/Payment/Payment'
+import MyPageGeneral from './pages/MyPage/General/MyPageGeneral'
 function App() {
   return (
     <BrowserRouter>
@@ -170,6 +171,9 @@ function App() {
           element={<AuctionItem />}
         ></Route>
         <Route path="/market/payment" element={<Payment />}></Route>
+
+        {/* 마이페이지 */}
+        <Route path="/mypage/general" element={<MyPageGeneral />}></Route>
       </Routes>
     </BrowserRouter>
   )

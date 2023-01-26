@@ -82,17 +82,27 @@ header.black {
   align-items: center;
   margin-left: auto;
   margin-right: 60px;
+  justify-content: space-between;
 }
-.header__padding .login {
+.header__padding .login,
+.header__padding .logout,
+.header__padding .mypage {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 33px;
-}
-.black .header__padding .login {
   color: #2f80ed;
 }
+.header__padding .mypage {
+  padding-right: 40px;
+}
+.header__padding .logout {
+  color: #ffffff;
+}
+/* .black .header__padding .login {
+  color: #2f80ed;
+} */
 @media (max-width: 380px) {
   header {
     height: 63px;

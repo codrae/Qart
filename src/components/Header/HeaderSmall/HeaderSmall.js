@@ -2,6 +2,9 @@ import React from 'react'
 import './HeaderSmall.css'
 
 function HeaderSmall(props) {
+  const changeMenu = e => {
+    props.setMenu(e)
+  }
   return (
     <header
       className="header-small"
@@ -17,6 +20,7 @@ function HeaderSmall(props) {
               >
                 <a
                   href={item.link}
+                  onClick={() => changeMenu(i)}
                   className={i == props.choice ? 'active' : ''}
                 >
                   {item.title}

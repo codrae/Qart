@@ -32,9 +32,21 @@ const Header = props => {
           </li>
         </ul>
         <div className="header__padding">
-          <a className="login" href="/login">
-            <span>로그인</span>
-          </a>
+          {props.login ? (
+            <div>
+              <a className="mypage" href="/mypage/general">
+                <span>마이페이지</span>
+              </a>
+              <a className="logout" href="/logout">
+                <span>로그아웃</span>
+              </a>
+            </div>
+          ) : (
+            <a className="login" href="/login">
+              <span>로그인</span>
+            </a>
+          )}
+
           <a className={props.active == '0' ? 'active' : ''} href="#">
             <span className="search-icon ir_pm">검색</span>
           </a>

@@ -1,0 +1,86 @@
+.general-profile {
+  height: calc(100% - 347px - 455px); /* header,footer 빼고 */
+}
+.g-profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1378px;
+  /* border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0; */
+  box-sizing: border-box;
+}
+.g-profile-list {
+  padding: 0 51px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.g-profile-list li {
+  width: 596px;
+  padding-top: 70px;
+}
+.g-profile-list li h2 {
+  display: block;
+  /* width: 100%; */
+  text-align: left;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 41px;
+
+  color: #222222;
+
+  padding-bottom: 16px;
+}
+.g-profile-input {
+  width: 596px;
+  height: 72px;
+
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+
+  outline: none;
+  box-sizing: border-box;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+
+  padding-left: 20px;
+}
+.g-profile-password {
+  display: flex;
+  flex-direction: row;
+}
+.g-profile-password input {
+  width: calc(596px - 72px);
+  border-right: hidden;
+}
+.g-profile-password .password__icon {
+  width: 72px;
+  height: 72px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-left: none;
+}
+.g-profile-button {
+  width: 482px;
+  height: 90px;
+  background: #000000;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #ffffff;
+
+  margin: 70px 0;
+  border: none;
+}
