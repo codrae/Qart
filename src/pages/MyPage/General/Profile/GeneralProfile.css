@@ -1,5 +1,6 @@
 .general-profile {
   height: calc(100% - 347px - 455px); /* header,footer 빼고 */
+  border-bottom: 1px solid #e0e0e0;
 }
 .g-profile-container {
   display: flex;

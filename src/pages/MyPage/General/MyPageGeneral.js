@@ -67,7 +67,7 @@ function MyPageGeneral() {
       <HeaderSmall
         moreList={moreList}
         active={true}
-        choice={0}
+        choice={choice}
         setMenu={setChoice}
       />
       {choice == 0 ? (
