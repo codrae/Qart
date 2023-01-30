@@ -44,7 +44,9 @@ function PageSlide(props) {
 
   const slider_items = imgList => {
     return imgList.map((item, i) => {
-      return (
+      return props.divItem ? (
+        item
+      ) : (
         <div key={i} className="page-slider__item">
           <div className="page-slider-item-row">
             <img
@@ -133,9 +135,7 @@ function PageSlide(props) {
           <span className="ir_pm">끝으로</span>
         </button>
         <Slider ref={sliderRef} {...settings}>
-          {props.RepresentingItems
-            ? props.RepresentingItems
-            : slider_items(props.items)}
+          {slider_items(props.items)}
         </Slider>
       </div>
     </section>

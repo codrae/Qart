@@ -45,7 +45,7 @@ function DropDown(props) {
       <div
         className="drop-select"
         onClick={() => {
-          setShow(!show)
+          if (!props.disabled) setShow(!show)
         }}
       >
         {props.options[select]}

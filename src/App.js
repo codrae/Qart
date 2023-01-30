@@ -32,6 +32,7 @@ import MarketAuction from './pages/Marketplace/Auction/MarketAuction'
 import AuctionItem from './pages/Marketplace/Auction/Item/AuctionItem'
 import Payment from './pages/Marketplace/Payment/Payment'
 import MyPageGeneral from './pages/MyPage/General/MyPageGeneral'
+import MyPageArtist from './pages/MyPage/Artist/MyPageArtist'
 function App() {
   return (
     <BrowserRouter>
@@ -71,7 +72,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/artdb/work/:workId"
+          path="/work/:workId"
           element={
             <ArtDatabase search={false}>
               <ArtDbWork3 />
@@ -79,7 +80,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/artdb/work/detail"
+          path="/work/detail"
           element={
             <ArtDatabase search={true} active={0}>
               <ArtDbWork active={0}>
@@ -174,6 +175,7 @@ function App() {
 
         {/* 마이페이지 */}
         <Route path="/mypage/general" element={<MyPageGeneral />}></Route>
+        <Route path="/mypage/artist" element={<MyPageArtist />}></Route>
       </Routes>
     </BrowserRouter>
   )
