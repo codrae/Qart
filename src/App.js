@@ -33,6 +33,8 @@ import AuctionItem from './pages/Marketplace/Auction/Item/AuctionItem'
 import Payment from './pages/Marketplace/Payment/Payment'
 import MyPageGeneral from './pages/MyPage/General/MyPageGeneral'
 import MyPageArtist from './pages/MyPage/Artist/MyPageArtist'
+import ArtistExhibition from './pages/MyPage/Artist/Profile/ArtistExhibition'
+import ArtistSchool from './pages/MyPage/Artist/Profile/ArtistSchool'
 function App() {
   return (
     <BrowserRouter>
@@ -176,6 +178,11 @@ function App() {
         {/* 마이페이지 */}
         <Route path="/mypage/general" element={<MyPageGeneral />}></Route>
         <Route path="/mypage/artist" element={<MyPageArtist />}></Route>
+        <Route
+          path="/mypage/artist/exhibition"
+          element={<ArtistExhibition />}
+        ></Route>
+        <Route path="/mypage/artist/school" element={<ArtistSchool />}></Route>
       </Routes>
     </BrowserRouter>
   )

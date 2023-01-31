@@ -1,0 +1,296 @@
+.artist-exhibition {
+  height: 100%;
+}
+.artist-exhibition .header-small-list a.active {
+  color: #222222;
+}
+.a-exhibition-content {
+  width: 1378px;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  border-bottom: none;
+
+  min-height: 1966px;
+  height: calc(100% - 347px - 455px);
+}
+.a-exhibition-content h2 {
+  width: 387px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #222222;
+}
+.a-ex-edit-image {
+  height: 448px;
+
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  border-bottom: 1px solid #e0e0e0;
+}
+.a-ex-edit-image-container {
+  width: 1378px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  padding: 48px 346px 78px 49px;
+}
+.a-ex-edit-image-container h2 {
+  padding-top: 3px;
+}
+.a-ex-edit-image-container img {
+  width: 322px;
+  height: 322px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+.a-ex-edit-info {
+  z-index: 1;
+  height: 0;
+}
+
+.image-button {
+  position: absolute;
+  cursor: pointer;
+
+  top: 176px;
+  left: 565px;
+  width: 65px;
+  height: 65px;
+  background: url('../../../../assets/icon_plus.png') no-repeat center;
+  background-size: contain;
+}
+
+/* 못생긴 기존 input 숨기기 */
+#chooseFile {
+  visibility: hidden;
+}
+.a-ex-edit-info {
+  width: 1378px;
+  box-sizing: border-box;
+  height: inherit;
+  padding: 48px 346px 109px 49px;
+}
+.a-ex-edit-info li {
+  display: flex;
+  flex-direction: row;
+  padding-top: 54px;
+}
+.a-ex-edit-info li:first-child {
+  padding-top: 0;
+}
+.a-ex-edit-info input {
+  width: 596px;
+  height: 72px;
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1px solid #bdbdbd;
+
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #222222;
+
+  box-sizing: border-box;
+  padding-left: 24px;
+}
+.a-ex-edit-info input::placeholder {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #222222;
+}
+.a-ex-edit-info .drop-container {
+  width: 596px;
+  height: 72px;
+  z-index: unset;
+}
+.a-ex-edit-info .drop-select {
+  width: 596px;
+  height: 72px;
+  box-sizing: border-box;
+  border: 1px solid #bdbdbd;
+  color: #222222;
+}
+.a-ex-edit-info .show-drop-list {
+  border: 1px solid #bdbdbd;
+}
+.a-ex-edit-info .show-drop-list li {
+  width: 590px;
+  padding-top: 0;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #f2f2f2;
+}
+.a-ex-edit-info textarea {
+  box-sizing: border-box;
+
+  padding-left: 24px;
+  padding-top: 21px;
+  width: 596px;
+  height: 241px;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1px solid #bdbdbd;
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #222222;
+
+  resize: none;
+}
+.a-ex-edit-info textarea::placeholder {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #bdbdbd;
+}
+.a-ex-edit--button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.a-ex-edit--button button {
+  background: none;
+
+  box-sizing: border-box;
+
+  width: 290px;
+  height: 80px;
+
+  border: 1px solid #000000;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Black */
+
+  color: #222222;
+
+  margin-right: 16px;
+}
+.a-ex-edit--button button:last-child {
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  margin-right: 0;
+}
+.artist-exhibition .footer__menu {
+  border-top: 1px solid #e0e0e0;
+}
+.date-bar {
+  display: block;
+  width: 36px;
+  height: 72px;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Gray 4 */
+
+  color: #bdbdbd;
+}
+input[type='date'] {
+  outline: none;
+}
+input[type='date']::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-month-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type='date']::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type='date']::before {
+  content: attr(data-placeholder);
+  width: calc(100% - 104px);
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  color: #bdbdbd;
+}
+input[type='date']:focus::before,
+input[type='date']:valid::before {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(../../../../assets/icon_calendar.png) center no-repeat;
+  background-size: 22.5px 25px;
+  width: 84px;
+  height: 100%;
+  border-width: thin;
+}
+::-webkit-date-picker {
+  width: 100%;
+}
+.artist-exhibition .date-input {
+  width: 280px !important;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}

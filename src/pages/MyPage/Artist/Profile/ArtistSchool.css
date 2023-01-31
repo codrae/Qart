@@ -1,0 +1,17 @@
+.artist-school {
+  height: 100%;
+  min-height: 1352px;
+}
+.artist-school .header-small-list a.active {
+  color: #222222;
+}
+.artist-school .a-ex-edit-info {
+  padding-top: 50px;
+}
+.artist-school .date-input {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}

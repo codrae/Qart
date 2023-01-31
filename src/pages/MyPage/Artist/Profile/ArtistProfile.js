@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import DropDown from '../../../../components/DropDown/DropDown'
 import './ArtistProfile.css'
 
@@ -183,7 +184,9 @@ function ArtistProfile() {
             <div className="container artist-profile-exhibition-container">
               <div className="ap-edit-header">
                 <h1>Exhibition History</h1>
-                <button>전시 추가</button>
+                <Link to={'./exhibition'}>
+                  <button>전시 추가</button>
+                </Link>
               </div>
               <ul className="ap-exhibition-list">
                 <li className="ap-list--header">
@@ -228,7 +231,9 @@ function ArtistProfile() {
             <div className="container artist-profile-school-container">
               <div className="ap-edit-header">
                 <h1>학력정보</h1>
-                <button>학력 추가</button>
+                <Link to={'./school'}>
+                  <button>학력 추가</button>
+                </Link>
               </div>
               <ul className="ap-exhibition-list">
                 <li className="ap-list--header">
