@@ -4,14 +4,14 @@
 }
 .drop-select,
 .show-drop-list li {
-  width: 228px;
+  width: 248px;
   height: 72px;
 
   border: 1px solid #e0e0e0;
   background-color: #ffffff;
 
   padding-left: 20px;
-
+  padding-bottom: 2px;
   outline: none;
 
   font-family: 'Noto Sans KR';
@@ -27,6 +27,11 @@
   /* Gray 1 */
 
   color: #333333;
+
+  box-sizing: border-box;
+}
+.show-drop-list li {
+  width: 240px;
 }
 .drop-select:after {
   /* position: absolute; */

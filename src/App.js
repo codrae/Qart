@@ -35,6 +35,7 @@ import MyPageGeneral from './pages/MyPage/General/MyPageGeneral'
 import MyPageArtist from './pages/MyPage/Artist/MyPageArtist'
 import ArtistExhibition from './pages/MyPage/Artist/Profile/ArtistExhibition'
 import ArtistSchool from './pages/MyPage/Artist/Profile/ArtistSchool'
+import ArtistArchive from './pages/MyPage/Artist/MyArchive/ArtistArchive'
 function App() {
   return (
     <BrowserRouter>
@@ -183,6 +184,10 @@ function App() {
           element={<ArtistExhibition />}
         ></Route>
         <Route path="/mypage/artist/school" element={<ArtistSchool />}></Route>
+        <Route
+          path="/mypage/artist/archive"
+          element={<ArtistArchive />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   )

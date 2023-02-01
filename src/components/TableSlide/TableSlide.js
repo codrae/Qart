@@ -7,7 +7,7 @@ function TableSlide(props) {
     <div className="table-slide">
       <header className="table-header">
         <div className="container table-header-container">
-          <h1>{props.title}</h1>
+          {props.title}
           <DropDown options={props.options} />
         </div>
       </header>

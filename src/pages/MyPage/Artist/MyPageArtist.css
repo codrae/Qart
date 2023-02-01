@@ -1,0 +1,41 @@
+.mypage-artist {
+  height: 100%;
+}
+.table-header-title {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.table-header-title a {
+  width: 240px;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.th-title-select h1 {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 33px;
+
+  color: #000000;
+
+  padding-top: 62px;
+  padding-bottom: 14px;
+}
+.th-title-select span {
+  display: block;
+  background: #000000;
+  border-radius: 0px;
+  width: 240px;
+  height: 6px;
+}
+/* 선택되지 않은 경우 */
+.th-title-select:last-child h1 {
+  color: #bdbdbd;
+}
+.th-title-select:last-child span {
+  background: #f2f2f2;
+}

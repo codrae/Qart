@@ -4,6 +4,7 @@ import ArtDetail from '../../../components/ArtDetail/ArtDetail'
 import Footer from '../../../components/Footer/Footer'
 import Header from '../../../components/Header/Header'
 import HeaderSmall from '../../../components/Header/HeaderSmall/HeaderSmall'
+import TableSlide from '../../../components/TableSlide/TableSlide'
 import './MyPageArtist.css'
 import ArtistProfile from './Profile/ArtistProfile'
 
@@ -16,6 +17,7 @@ function MyPageArtist() {
       },
       {
         title: 'My Archive',
+        link: './artist/archive',
       },
       {
         title: '나의 지갑',
@@ -60,6 +62,56 @@ function MyPageArtist() {
       </div>
     )
   }
+
+  const options = ['실물 작품', 'NFT']
+
+  var item = []
+  for (var i = 0; i < 80; i++) {
+    item.push({
+      id: 1,
+      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
+      title: '지식의 기념비',
+      buy: '리움 미술관',
+      date: '0000.00.00',
+      price: '000,000,000원',
+      state: '배송중',
+    })
+  }
+
+  const tableItem = []
+
+  for (var i = 0; i < 80; i++) {
+    tableItem.push(
+      <Link
+        state={{
+          item: item[i],
+        }}
+        key={i}
+        className="table-slider-item"
+      >
+        <img src={require('../../../' + item[i].info)}></img>
+        <span>{item[i].title}</span>
+        <span>{item[i].buy}</span>
+        <span>{item[i].date}</span>
+        <span>{item[i].price}</span>
+        <button className="">{item[i].state}</button>
+      </Link>
+    )
+  }
+
+  const titleItem = []
+  titleItem.push(
+    <div className="table-header-title">
+      <a className="th-title-select">
+        <h1>구매 내역</h1>
+        <span></span>
+      </a>
+      <a className="th-title-select">
+        <h1>판매 내역</h1>
+        <span></span>
+      </a>
+    </div>
+  )
   return (
     <div className="mypage-artist">
       <Header login={true} colored="black" />
@@ -76,6 +128,8 @@ function MyPageArtist() {
       />
       {choice == 0 ? (
         <ArtistProfile />
+      ) : choice == 2 ? (
+        <TableSlide title={titleItem} options={options} items={tableItem} />
       ) : choice == 3 ? (
         <div className="g-like-slider">
           <ArtDetail

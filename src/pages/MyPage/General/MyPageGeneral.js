@@ -94,6 +94,8 @@ function MyPageGeneral() {
     )
   }
 
+  const titleItem = []
+  titleItem.push(<h1>구매 내역</h1>)
   return (
     <div className="mypage-general">
       <Header login={true} colored="black" />
@@ -111,7 +113,7 @@ function MyPageGeneral() {
       {choice == 0 ? (
         <GeneralProfile />
       ) : choice == 1 ? (
-        <TableSlide title={'구매 내역'} options={options} items={tableItem} />
+        <TableSlide title={titleItem} options={options} items={tableItem} />
       ) : choice == 2 ? (
         <div className="g-like-slider">
           <ArtDetail
