@@ -1,5 +1,5 @@
 .my-qcoa-list {
-  height: calc(100% - 347rem - 455rem);
+  min-height: calc(100vh - 347rem - 455rem);
 }
 .my-qcoa-list .table-slider-header-container {
   padding-left: 54rem;

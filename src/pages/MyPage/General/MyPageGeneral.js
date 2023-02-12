@@ -113,7 +113,9 @@ function MyPageGeneral() {
       {choice == 0 ? (
         <GeneralProfile />
       ) : choice == 1 ? (
-        <TableSlide title={titleItem} options={options} items={tableItem} />
+        <div className="mypage-general-list">
+          <TableSlide title={titleItem} options={options} items={tableItem} />
+        </div>
       ) : choice == 2 ? (
         <div className="g-like-slider">
           <ArtDetail

@@ -1,5 +1,5 @@
 .my-article-list {
-  height: calc(100% - 347rem - 455rem);
+  min-height: calc(100% - 347rem - 455rem);
 }
 .my-article-list .table-slider-item ul {
   padding-left: 66rem;

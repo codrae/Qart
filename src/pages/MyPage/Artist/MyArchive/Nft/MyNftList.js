@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import TableSlide from '../../../../components/TableSlide/TableSlide'
-import './MyWorkList.css'
-function MyWorkList() {
+import TableSlide from '../../../../../components/TableSlide/TableSlide'
+import './MyNftList.css'
+function MyNftList() {
   const [allCheck, setAllCheck] = useState(false)
 
   var item = []
@@ -25,29 +25,18 @@ function MyWorkList() {
         <ul>
           <li>
             <label className="login-option">
-              <input
-                type="checkbox"
-                checked={allCheck}
-                onChange={() => false}
-              />
+              <input type="checkbox" checked={allCheck} />
               <span className="login-option__check" />
             </label>
           </li>
           <li>{i + 1}</li>
           <li>
-            <img src={require('../../../../' + item[i].info)}></img>
+            <img src={require('../../../../../' + item[i].info)}></img>
           </li>
           <li>지식의 기념비</li>
-          <li>캔버스</li>
           <li>2000.00.00</li>
-          <li>리움 미술관</li>
-          <li>
-            {i % 3 == 0 ? (
-              <span className="regis-status regis-compelete">등록완료</span>
-            ) : (
-              <span className="regis-status ">미신청</span>
-            )}
-          </li>
+          <li>000,000</li>
+          <li>000,000</li>
           <li>
             {i % 3 == 0 ? (
               <p className="sell-status">판매중</p>
@@ -66,7 +55,9 @@ function MyWorkList() {
 
   titleItem.push(
     <div className="table-header-search">
-      <h2>My Work List</h2>
+      <h2>
+        My NFT List <span className="download-button"></span>
+      </h2>
       <div className="th-search-container">
         <section className="search__block">
           <input
@@ -102,16 +93,21 @@ function MyWorkList() {
       <li>N</li>
       <li>대표 이미지</li>
       <li>작품명</li>
-      <li>재질</li>
       <li>제작일</li>
-      <li>소장처</li>
-      <li>Q-CoA</li>
+      <li>
+        <span className="nl-t nl-t-sl">판매/</span>
+        <span className="nl-t">발행현황</span>
+      </li>
+      <li>
+        <span className="nl-t">판매수/</span>
+        <span className="nl-t nl-t-sl">발행수</span>
+      </li>
       <li>마켓플레이스</li>
       <li>편집</li>
     </ul>
   )
   return (
-    <div className="my-work-list">
+    <div className="my-nft-list">
       <TableSlide
         title={titleItem}
         slideHeader={tableSlideHeader}
@@ -121,4 +117,4 @@ function MyWorkList() {
     </div>
   )
 }
-export default MyWorkList
+export default MyNftList

@@ -1,5 +1,5 @@
 .my-work-list {
-  height: calc(100% - 347rem - 455rem);
+  min-height: calc(100% - 347rem - 455rem);
 }
 .my-work-list .table-slider-header-container {
   padding-left: 51rem;

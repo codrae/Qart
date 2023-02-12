@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import DropDown from '../../../../components/DropDown/DropDown'
 import Footer from '../../../../components/Footer/Footer'
 import Header from '../../../../components/Header/Header'
@@ -6,6 +6,9 @@ import HeaderSmall from '../../../../components/Header/HeaderSmall/HeaderSmall'
 import './ArtistExhibition.css'
 
 function ArtistExhibition() {
+  const [imgFile, setImgFile] = useState('')
+  const imgRef = useRef()
+
   const moreList = {
     menu: [
       {
@@ -19,6 +22,15 @@ function ArtistExhibition() {
     'Korea, Republic of',
   ]
   const typeList = ['개인전', '단체전', '아트페어', '기타']
+
+  const saveImgFile = () => {
+    const file = imgRef.current.files[0]
+    const reader = new FileReader()
+    reader.readAsDataURL(file)
+    reader.onloadend = () => {
+      setImgFile(reader.result)
+    }
+  }
   return (
     <div className="artist-exhibition">
       <Header login={true} colored="black" />
@@ -31,8 +43,16 @@ function ArtistExhibition() {
       <section className="container a-exhibition-content">
         <div className="a-ex-edit-image">
           <div className="container a-ex-edit-image-container">
-            <h2>대표 이미지</h2>
-            <img></img>
+            <h2 className="a-ex-img-tlt">대표 이미지</h2>
+            <img
+              className={imgFile ? 'a-ex-img-show' : 'a-ex-img-hide'}
+              src={imgFile}
+              alt="선택 이미지"
+            />
+            <button
+              className={imgFile ? 'edit-photo' : 'edit-photo a-ex-img-hide'}
+              onClick={() => setImgFile('')}
+            ></button>
             <form method="post" enctype="multipart/form-data">
               <div className="button">
                 <label className="image-button" for="chooseFile"></label>
@@ -42,6 +62,8 @@ function ArtistExhibition() {
                 id="chooseFile"
                 name="chooseFile"
                 accept="image/*"
+                onChange={saveImgFile}
+                ref={imgRef}
               />
             </form>
           </div>

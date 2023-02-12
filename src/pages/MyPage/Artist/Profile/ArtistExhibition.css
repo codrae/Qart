@@ -29,6 +29,9 @@
   line-height: 35rem;
   color: #222222;
 }
+.a-ex-img-tlt {
+  align-items: flex-start !important;
+}
 .a-ex-edit-image {
   height: 448rem;
 
@@ -63,14 +66,30 @@
   position: absolute;
   cursor: pointer;
 
-  top: 176rem;
-  left: 565rem;
-  width: 65rem;
-  height: 65rem;
+  width: 322rem;
+  height: 322rem;
   background: url('../../../../assets/icon_plus.png') no-repeat center;
-  background-size: contain;
+  background-size: 65rem 65rem;
+  border: 1rem solid #bdbdbd;
+  box-sizing: border-box;
 }
-
+.a-ex-edit-image-container .edit-photo {
+  top: 60rem;
+  left: 718rem;
+  z-index: 2;
+}
+.a-ex-img-show {
+  position: absolute;
+  top: 48rem;
+  left: 436rem;
+  width: 322rem;
+  height: 322rem;
+  background: #ffffff;
+  z-index: 1;
+}
+.a-ex-img-hide {
+  display: none;
+}
 /* 못생긴 기존 input 숨기기 */
 #chooseFile {
   visibility: hidden;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import TableSlide from '../../../../components/TableSlide/TableSlide'
-import './MyQCoAList.css'
-function MyQcoAList() {
+import TableSlide from '../../../../../components/TableSlide/TableSlide'
+import './MyArticleList.css'
+function MyArticleList() {
   const [allCheck, setAllCheck] = useState(false)
 
   var item = []
@@ -25,26 +25,17 @@ function MyQcoAList() {
         <ul>
           <li>
             <label className="login-option">
-              <input
-                type="checkbox"
-                checked={allCheck}
-                onChange={() => false}
-              />
+              <input type="checkbox" checked={allCheck} />
               <span className="login-option__check" />
             </label>
           </li>
           <li>{i + 1}</li>
           <li>
-            <img src={require('../../../../' + item[i].info)}></img>
+            <img src={require('../../../../../' + item[i].info)}></img>
           </li>
-          <li>홍길동</li>
-          <li>지식의 기념비</li>
-          <li>캔버스</li>
-          <li>2000.00.00</li>
-          <li>리움 미술관</li>
-          <li>
-            <span className="fz-c-blue">2000.00.00</span>
-          </li>
+          <li>Representive Name</li>
+          <li>Change Date</li>
+          <li>Address</li>
         </ul>
       </div>
     )
@@ -54,13 +45,13 @@ function MyQcoAList() {
   titleItem.push(
     <div className="table-header-search">
       <h2>
-        My Q-CoA List <span className="download-button"></span>
+        My Article List <span className="download-button"></span>
       </h2>
       <div className="th-search-container">
         <section className="search__block">
           <input
             type={'text'}
-            placeholder={'기사를 검색해주세요'}
+            placeholder={'기사명, 키워드를 검색해주세요'}
             className="search__block__input"
           />
           <button className="search__block__button">
@@ -89,17 +80,14 @@ function MyQcoAList() {
         </label>
       </li>
       <li>N</li>
-      <li>대표 이미지</li>
-      <li>작가명</li>
-      <li>작품명</li>
-      <li>재질</li>
-      <li>제작일</li>
-      <li>소장처</li>
-      <li>Q-CoA 등록일</li>
+      <li>Image</li>
+      <li>Material name</li>
+      <li>Source</li>
+      <li>Issued by</li>
     </ul>
   )
   return (
-    <div className="my-qcoa-list">
+    <div className="my-article-list">
       <TableSlide
         title={titleItem}
         slideHeader={tableSlideHeader}
@@ -109,4 +97,4 @@ function MyQcoAList() {
     </div>
   )
 }
-export default MyQcoAList
+export default MyArticleList

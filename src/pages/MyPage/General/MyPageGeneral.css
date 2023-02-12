@@ -2,7 +2,7 @@
   height: 100%;
 }
 .g-like-slider {
-  height: calc(100% - 347rem - 455rem); /* header,footer 빼고 */
+  min-height: calc(100% - 347rem - 455rem); /* header,footer 빼고 */
   border-bottom: 1rem solid #e0e0e0;
 }
 .g-like-slider .drop-container {
@@ -76,7 +76,7 @@
 .g-like-slider .art-d .art-d-slider {
   height: 1924rem;
 }
-.g-like-slider.art-d .art-d-slider__list {
+.g-like-slider .art-d .art-d-slider__list {
   height: 1924rem;
 }
 .g-like-slider .art-d .art-d-slider .slick-dots {

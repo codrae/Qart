@@ -5,10 +5,10 @@ import Header from '../../../../components/Header/Header'
 import HeaderSmall from '../../../../components/Header/HeaderSmall/HeaderSmall'
 import TableSlide from '../../../../components/TableSlide/TableSlide'
 import './ArtistArchive.css'
-import MyArticleList from './MyArticleList'
-import MyNftList from './MyNftList'
-import MyQcoAList from './MyQCoAList'
-import MyWorkList from './MyWorkList'
+import MyArticleList from './Article/MyArticleList'
+import MyNftList from './Nft/MyNftList'
+import MyQcoAList from './QCoA/MyQCoAList'
+import MyWorkList from './Work/MyWorkList'
 
 function ArtistArchive() {
   const [choice, setChoice] = useState(0)

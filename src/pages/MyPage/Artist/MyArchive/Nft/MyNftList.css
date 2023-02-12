@@ -1,5 +1,5 @@
 .my-nft-list {
-  height: calc(100% - 347rem - 455rem);
+  min-height: calc(100% - 347rem - 455rem);
 }
 .my-nft-list .table-slider-header-container {
   padding-left: 54rem;

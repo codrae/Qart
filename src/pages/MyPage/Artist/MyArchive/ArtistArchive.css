@@ -23,6 +23,14 @@
 
   padding-bottom: 8rem;
 }
+.mypage-archive .search__container h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 40rem !important;
+  line-height: 47rem !important;
+  color: #ffffff !important;
+}
 .mypage-archive .table-header {
   height: 226rem;
 }
