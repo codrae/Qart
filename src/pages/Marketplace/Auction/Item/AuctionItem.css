@@ -1,16 +1,16 @@
 .auction-detail-header {
-  height: 147px;
+  height: 147rem;
   background: #222222;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .ad-header-container {
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
-  border-left: 1px solid #4f4f4f;
-  border-right: 1px solid #4f4f4f;
+  border-left: 1rem solid #4f4f4f;
+  border-right: 1rem solid #4f4f4f;
 
-  padding-left: 49px;
-  padding-top: 32px;
+  padding-left: 49rem;
+  padding-top: 32rem;
 }
 .ad-haeder__route {
   display: flex;
@@ -19,8 +19,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
 
@@ -29,19 +29,19 @@
   color: #ffffff;
 }
 .ad-haeder__route .next {
-  width: 10.79px;
-  height: 19.17px;
+  width: 10.79rem;
+  height: 19.17rem;
   background: url('../../../../assets/arrow_right.png') center no-repeat;
   background-size: contain;
 
-  margin: 0 5.61px;
+  margin: 0 5.61rem;
 }
 .ad-header-container h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 40rem;
+  line-height: 47rem;
   /* identical to box height */
 
   display: flex;
@@ -50,26 +50,26 @@
   /* White */
 
   color: #ffffff;
-  padding-top: 8px;
+  padding-top: 8rem;
 }
 .auction-detail-banner {
-  padding-left: 322px;
-  padding-top: 58px;
+  padding-left: 322rem;
+  padding-top: 58rem;
   position: relative;
 }
 .ad-banner-image {
-  width: 1267px;
-  height: 328px;
+  width: 1267rem;
+  height: 328rem;
   object-fit: cover;
 }
 .ad-banner-info {
   position: absolute;
-  top: 58px;
-  left: 322px;
+  top: 58rem;
+  left: 322rem;
 }
 .ad-banner-info .upcoming-auction--date {
-  margin-top: 20px;
-  margin-left: 894px;
+  margin-top: 20rem;
+  margin-left: 894rem;
 }
 .ad-banner-info--title {
   display: block;
@@ -78,8 +78,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   /* identical to box height */
 
   display: flex;
@@ -88,7 +88,7 @@
 
   color: #ffffff;
 
-  padding-top: 53px;
+  padding-top: 53rem;
 }
 .ad-banner-info--detail {
   display: block;
@@ -96,8 +96,8 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 20rem;
+  line-height: 27rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,23 +106,23 @@
 
   /* Gray 6 */
 
-  padding-top: 20px;
+  padding-top: 20rem;
   color: #f2f2f2;
 }
 .auction-detail-slider .slider__item {
   display: block;
-  margin-right: 40px;
-  height: 556px;
-  width: 400px;
+  margin-right: 40rem;
+  height: 556rem;
+  width: 400rem;
   display: flex;
   flex-direction: column;
 }
 .auction-detail-slider .slider__item img {
-  width: 400px;
-  height: 399px;
+  width: 400rem;
+  height: 399rem;
   object-fit: contain;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
 }
 .auction-detail-slider .slider__item h2,
 .auction-detail-slider .slider__item h3,
@@ -130,8 +130,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   color: #000000;
 
   width: 100%;
@@ -142,33 +142,33 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: keep-all;
-  padding-top: 10px;
+  padding-top: 10rem;
 }
 .auction-detail-slider .slider__item h3 {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  padding-top: 24px;
+  font-size: 28rem;
+  line-height: 33rem;
+  padding-top: 24rem;
 }
 .auction-detail-slider .slider__item h4 {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   color: #bdbdbd;
-  padding-top: 12px;
+  padding-top: 12rem;
 }
 .buy-button {
-  width: 399px;
-  margin-left: 1px;
-  height: 64px;
+  width: 399rem;
+  margin-left: 1rem;
+  height: 64rem;
 
   background: #222222;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,28 +176,28 @@
 
   color: #ffffff;
 
-  margin-top: 28px;
-  margin-bottom: 80px;
+  margin-top: 28rem;
+  margin-bottom: 80rem;
   cursor: pointer;
 }
 .auction-detail-slider .art-d-header-container {
-  height: 174px;
+  height: 174rem;
 }
 .auction-detail-slider .art-d .art-d-slider__list {
-  height: 3191px;
+  height: 3191rem;
 }
 .auction-detail-slider .art-d .art-d-slider {
-  height: 3191px;
+  height: 3191rem;
 }
 .auction-detail-slider .art-d .art-d-slider__list {
-  height: 3191px;
+  height: 3191rem;
 }
 .auction-detail-slider .art-d .art-d-slider .slick-dots {
-  top: calc(3137px - 20px);
+  top: calc(3137rem - 20rem);
 }
 .auction-detail-slider .art-d .art-d-slider__list .slick-first,
 .auction-detail-slider .art-d .art-d-slider__list .slick-last,
 .auction-detail-slider .art-d .art-d-slider__list .slick-prev,
 .auction-detail-slider .art-d .art-d-slider__list .slick-next {
-  top: 3137px;
+  top: 3137rem;
 }

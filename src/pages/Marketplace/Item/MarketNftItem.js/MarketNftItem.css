@@ -1,39 +1,39 @@
 .market-nft-info {
-  padding: 100px 320px;
+  padding: 100rem 320rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .market-nft__image {
   box-sizing: border-box;
-  width: 608px;
-  height: 667px;
+  width: 608rem;
+  height: 667rem;
 
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
 
   object-fit: contain;
 }
 .market-nft__info {
-  width: 620px;
+  width: 620rem;
 }
 .market-nft__title {
-  padding-top: 284px;
+  padding-top: 284rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 42rem;
+  line-height: 49rem;
   color: #222222;
 
-  padding-bottom: 28px;
+  padding-bottom: 28rem;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .market-nft__title button {
-  width: 47.5px;
-  height: 43.58px;
+  width: 47.5rem;
+  height: 43.58rem;
   background: none;
   background: url('../../../../assets/heart-icon.png') center no-repeat;
   background-size: contain;
@@ -48,7 +48,7 @@
   background-size: contain;
 }
 .market-nft__price {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -56,25 +56,25 @@
 }
 .market-nft__price span.price-title {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 19px;
+  padding-top: 24rem;
+  padding-bottom: 19rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   color: #333333;
 }
 .market-nft__price span.price {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 19px;
+  padding-top: 24rem;
+  padding-bottom: 19rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   color: #2f80ed;
 }
@@ -85,45 +85,45 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #000000;
 
-  padding-bottom: 24px;
+  padding-bottom: 24rem;
 }
 .market-nft__button {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .market-nft__button span {
   display: block;
   width: 100%;
   text-align: right;
-  padding-top: 29px;
-  padding-bottom: 20px;
+  padding-top: 29rem;
+  padding-bottom: 20rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 20rem;
+  line-height: 23rem;
 
   color: #eb5757;
 }
 .market-nft__button button {
-  width: 620px;
-  height: 102px;
+  width: 620rem;
+  height: 102rem;
 
   background: #333333;
   border: none;
-  border-radius: 2px;
+  border-radius: 2rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   /* identical to box height */
 
   display: flex;
@@ -136,31 +136,31 @@
 }
 
 .market-nft-header {
-  height: 213px;
-  border-bottom: 1px solid #e0e0e0;
+  height: 213rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .m-nft-header-container {
   height: 100%;
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
-  padding-top: 44px;
-  padding-left: 51px;
-  padding-bottom: 39px;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+  padding-top: 44rem;
+  padding-left: 51rem;
+  padding-bottom: 39rem;
 
   display: flex;
   flex-direction: row;
 }
 .m-nft__image {
-  width: 130px;
-  height: 130px;
+  width: 130rem;
+  height: 130rem;
   object-fit: cover;
 
   border-radius: 50%;
 }
 .m-nft__creator {
-  padding-left: 24px;
+  padding-left: 24rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,30 +169,30 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   color: #222222;
 
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .m-nft__creator span {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #4f4f4f;
 }
 .m-nft__stock {
-  margin-left: 40px;
-  width: 362px;
-  height: 130px;
+  margin-left: 40rem;
+  width: 362rem;
+  height: 130rem;
 
   background: #fbfbfb;
   box-sizing: border-box;
-  padding: 29px;
+  padding: 29rem;
 
   display: flex;
   flex-direction: column;
@@ -205,19 +205,19 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #4f4f4f;
 
-  padding-bottom: 17px;
+  padding-bottom: 17rem;
 }
 .m-nft-stock__num {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
 
@@ -226,59 +226,59 @@
   color: #333333;
 }
 .m-nft-detail {
-  padding-bottom: 100px;
+  padding-bottom: 100rem;
 }
 .m-nft-detail__list {
-  padding-left: 322px;
-  padding-top: 76px;
+  padding-left: 322rem;
+  padding-top: 76rem;
 }
 .m-nft-detail__list li {
-  width: 1154px;
+  width: 1154rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   /* Black */
 
   color: #222222;
 
-  padding-bottom: 76px;
+  padding-bottom: 76rem;
 }
 .m-nft-detail__list li:last-child {
-  padding-bottom: 45px;
+  padding-bottom: 45rem;
 }
 .m-nft-detail__info {
-  margin-left: 326px;
-  width: 1275px;
-  height: 265px;
+  margin-left: 326rem;
+  width: 1275rem;
+  height: 265rem;
   background: #fbfbfb;
   box-sizing: border-box;
 
-  padding: 30px;
+  padding: 30rem;
 }
 .m-nft-detail__info h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   color: #333333;
 
-  padding-bottom: 24px;
+  padding-bottom: 24rem;
 }
 .m-nft-info__list li {
   display: flex;
   flex-direction: row;
-  padding-bottom: 24px;
+  padding-bottom: 24rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
 
@@ -291,26 +291,26 @@
 }
 .m-nft-info__list li span.info-title {
   display: block;
-  width: 220px;
+  width: 220rem;
 }
 .m-nft-info__list li span.info-content {
   font-weight: 500;
   color: #222222;
 }
 .market-nft-deal-container {
-  border-bottom: 1px solid #e0e0e0;
-  min-width: 1920px;
+  border-bottom: 1rem solid #e0e0e0;
+  min-width: 1920rem;
 }
 .m-nft-deal {
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 132px;
+  border-bottom: 1rem solid #e0e0e0;
+  margin-bottom: 132rem;
 }
 .m-nft-deal-container {
   height: 100%;
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 }
 .m-nft-deal__table {
   width: 100%;
@@ -318,18 +318,18 @@
 .m-nft-table__thead,
 .m-nft-table__body {
   width: 100%;
-  height: 78px;
+  height: 78rem;
 
   background: #fbfbfb;
 
   box-sizing: border-box;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 
   display: flex;
   flex-direction: row;
 
-  padding-left: 51px;
-  padding-right: 66px;
+  padding-left: 51rem;
+  padding-right: 66rem;
 }
 .m-nft-table__thead span,
 .m-nft-table__body span {
@@ -338,8 +338,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   /* identical to box height */
 
   display: flex;
@@ -352,14 +352,14 @@
 }
 .m-nft-table__body span {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
   color: #222222;
 }
 .m-nft-table__body span:first-child,
 .m-nft-table__thead span:first-child {
-  width: 417px;
+  width: 417rem;
 }
 .m-nft-table__thead span:last-child,
 .m-nft-table__body span:last-child {

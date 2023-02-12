@@ -1,15 +1,15 @@
 .market-all .big-top-arrow {
-  height: 980px;
-  border-bottom: 1px solid #e0e0e0;
+  height: 980rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .market-all .big-top-arrow-slider {
-  padding-bottom: 100px;
+  padding-bottom: 100rem;
 }
 .market-all .big-top-arrow .slider__item {
   height: inherit;
 }
 .market-all .big-top-arrow .slider__item h4 {
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .market-all .work-header__info {
   display: flex;
@@ -18,44 +18,44 @@
 .market-all .work-header__info h4 {
   display: block;
   order: 1;
-  height: 147px;
-  padding-top: 66px;
+  height: 147rem;
+  padding-top: 66rem;
   box-sizing: border-box;
 }
 
 .market-all .work-header__info h2 {
   order: 0;
   display: block;
-  height: 147px;
-  padding-top: 57px;
-  padding-right: 16px;
+  height: 147rem;
+  padding-top: 57rem;
+  padding-right: 16rem;
   box-sizing: border-box;
 }
 
 .market-all .work-header__detail button {
-  margin-right: 40px;
+  margin-right: 40rem;
 }
 .market-all-slider .art-d-header-container {
   height: inherit;
-  padding-top: 36px;
-  padding-bottom: 48px;
+  padding-top: 36rem;
+  padding-bottom: 48rem;
 }
 .market-all-slider .slider__item {
-  width: 400px !important;
-  margin-right: 40px;
+  width: 400rem !important;
+  margin-right: 40rem;
   box-sizing: border-box;
   text-align: center;
   position: relative;
   z-index: 0;
-  padding-bottom: 80px;
+  padding-bottom: 80rem;
 }
 
 .market-all-slider .slider__item:nth-child(3) {
   margin-right: 0;
 }
 .market-all-slider .slider__item img {
-  width: 400px;
-  height: 430px;
+  width: 400rem;
+  height: 430rem;
   background: none;
   /* background: #ebebeb; */
   display: flex;
@@ -63,38 +63,38 @@
   margin-bottom: 0;
   object-fit: contain;
   box-sizing: border-box;
-  border: 1px solid #f2f2f2;
+  border: 1rem solid #f2f2f2;
 }
 .market-all-slider .slider__item img {
-  width: 400px;
-  height: 430px;
+  width: 400rem;
+  height: 430rem;
   object-fit: contain;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
 }
 .market-all-slider .slider__item h2 {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
 
   color: #333333;
 
-  padding-top: 10px;
+  padding-top: 10rem;
 }
 .market-all-slider .slider__item h3 {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  padding-top: 32px;
+  font-size: 28rem;
+  line-height: 33rem;
+  padding-top: 32rem;
   color: #000000;
 }
 .market-all-slider .slider__item h4 {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   color: #bdbdbd;
-  padding-top: 8px;
-  padding-bottom: 12px;
+  padding-top: 8rem;
+  padding-bottom: 12rem;
 }
 .market-all-slider .slider__item h2,
 .market-all-slider .slider__item h3,
@@ -120,13 +120,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 16px;
+  padding-top: 16rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
 
@@ -140,32 +140,32 @@
   color: #222222;
 }
 .market-all-slider .market-item--price + .now-price {
-  padding-top: 12px;
-  padding-bottom: 16px;
+  padding-top: 12rem;
+  padding-bottom: 16rem;
 }
 .market-all-slider .now-price .price {
   color: #eb5757;
 }
 
 .market-all-slider .market-item--button {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .market-all-slider .market-button {
   border: none;
-  width: 326px;
-  margin-left: 1px;
-  height: 64px;
+  width: 326rem;
+  margin-left: 1rem;
+  height: 64rem;
   background: #222222;
-  margin-top: 16px;
+  margin-top: 16rem;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,50 +175,50 @@
   color: #ffffff;
 }
 .market-all-slider .market-button--heart {
-  width: 65px;
-  height: 64px;
+  width: 65rem;
+  height: 64rem;
   background: url('../../../assets/heart-icon.png') center no-repeat;
-  background-size: 38.33px 35.17px;
-  margin-top: 16px;
+  background-size: 38.33rem 35.17rem;
+  margin-top: 16rem;
   cursor: pointer;
-  border: 1px solid #f2f2f2;
+  border: 1rem solid #f2f2f2;
 }
 /* 좋아요 클릭, 오버시 */
 .market-all-slider .market-button--heart:active,
 .market-all-slider .market-button--heart:hover {
   background: url('../../../assets/heart-active-icon.png') center no-repeat;
-  background-size: 38.33px 35.17px;
+  background-size: 38.33rem 35.17rem;
 }
 .market-all-slider .art-d .art-d-slider {
-  height: 2814px;
+  height: 2814rem;
 }
 .market-all-slider .art-d .art-d-slider__list {
   height: inherit;
 
-  width: 1280px;
+  width: 1280rem;
 }
 .market-all-slider .art-d .art-d-slider .slick-dots {
-  top: calc(2599px - 20px);
+  top: calc(2599rem - 20rem);
 }
 .market-all-slider .art-d .art-d-slider__list .slick-first,
 .market-all-slider .art-d .art-d-slider__list .slick-last,
 .market-all-slider .art-d .art-d-slider__list .slick-prev,
 .market-all-slider .art-d .art-d-slider__list .slick-next {
-  top: 2599px;
+  top: 2599rem;
 }
 .market-all-slider .nft-item {
-  margin-top: 2px;
+  margin-top: 2rem;
 }
 .market-all-slider .nft-button {
-  margin-top: 24px;
+  margin-top: 24rem;
   border-top: none;
 }
 .market-all-slider .nft-button span {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   /* identical to box height */
 
   display: flex;

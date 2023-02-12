@@ -1,13 +1,14 @@
 .sign-auth {
   width: 100%;
-  min-width: 1920px;
+  min-width: 1920rem;
   height: 100%;
 }
 .sign-auth-container {
-  width: 1378px;
-  height: calc(100% - 100px);
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  width: 1378rem;
+  height: calc(100% - 100rem);
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -17,10 +18,10 @@
   display: flex;
   flex-direction: row;
 
-  padding-top: 161px;
+  padding-top: 161rem;
 }
 .auth-item {
-  width: 298px;
+  width: 298rem;
 
   display: flex;
   flex-direction: column;
@@ -34,8 +35,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
   color: #bdbdbd;
 }
@@ -44,20 +45,20 @@
 }
 .auth-item span {
   display: block;
-  width: 298px;
-  height: 6px;
+  width: 298rem;
+  height: 6rem;
 
   background: #f2f2f2;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 0rem 2rem 2rem 0rem;
 
-  margin-top: 16px;
+  margin-top: 16rem;
 }
 .auth-item span.auth-select {
   background: #222222;
 }
 .auth-content {
-  padding-top: 42px;
-  width: 596px;
+  padding-top: 42rem;
+  width: 596rem;
 
   text-align-last: left;
 }
@@ -65,11 +66,11 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   color: #222222;
 
-  padding-bottom: 16px;
+  padding-bottom: 16rem;
 }
 .email-input-container {
   display: flex;
@@ -77,35 +78,35 @@
   flex-direction: row;
   align-items: center;
 
-  padding-bottom: 28px;
+  padding-bottom: 28rem;
 }
 .email-input-container:last-child {
   padding-bottom: 0;
 }
 
 .email-input-email {
-  width: 230px;
-  height: 56px;
+  width: 230rem;
+  height: 56rem;
 
   background: #ffffff;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   box-sizing: border-box;
 
-  padding-left: 20px;
+  padding-left: 20rem;
 
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
   border-radius: 0;
   color: #222222;
 }
 .email-input-email:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 select::-ms-expand {
   display: none;
@@ -117,33 +118,33 @@ select::-ms-expand {
   appearance: none;
 }
 .email-input-email ~ .email {
-  background: url('../../assets/arrow_down.png') calc(100% - 20px) center
+  background: url('../../assets/arrow_down.png') calc(100% - 20rem) center
     no-repeat;
-  background-size: 16px 9px;
+  background-size: 16rem 9rem;
 }
 .email-input-container span {
   display: block;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
   color: #222222;
 
-  padding: 0 8px;
+  padding: 0 8rem;
 }
 .email-input-container button {
-  width: 115px;
-  height: 56px;
+  width: 115rem;
+  height: 56rem;
 
   background: #e0e0e0;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
   color: #222222;
 
@@ -156,52 +157,52 @@ select::-ms-expand {
 
   border: none;
 
-  margin-left: 16px;
+  margin-left: 16rem;
 }
 .email-input-container button:active {
   background: #2f80ed;
   color: #ffffff;
 }
 .email-input-num {
-  width: 490px;
-  height: 56px;
+  width: 490rem;
+  height: 56rem;
 
   background: #ffffff;
   /* Black */
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
 
   box-sizing: border-box;
 
-  padding-left: 20px;
+  padding-left: 20rem;
   outline: none;
   border-radius: 0;
 }
 .email-input-num:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 .auth-next {
-  padding-top: 140px;
+  padding-top: 140rem;
 
   display: flex;
   flex-direction: row;
 }
 .auth-next button {
-  width: 290px;
-  height: 80px;
-  left: 658px;
-  top: 730px;
+  width: 290rem;
+  height: 80rem;
+  left: 658rem;
+  top: 730rem;
 
-  border: 1px solid #000000;
+  border: 1rem solid #000000;
 
-  margin-right: 16px;
+  margin-right: 16rem;
 
   background: #ffffff;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   color: #222222;
 }
 .auth-next button.auth-next-button {
@@ -209,40 +210,40 @@ select::-ms-expand {
   background: #000000;
   color: #ffffff;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .sign-auth {
-    min-width: 360px;
+    min-width: 360rem;
   }
   .sign-auth-container {
-    width: 360px;
-    height: calc(100% - 63px);
+    width: 360rem;
+    height: calc(100% - 63rem);
     border: none;
   }
   .auth-list {
-    padding-top: 23px;
+    padding-top: 23rem;
   }
   .auth-item {
-    width: 160px;
+    width: 160rem;
   }
   .auth-item h1 {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 16rem;
+    line-height: 23rem;
   }
   .auth-item span {
-    width: 160px;
-    height: 4px;
+    width: 160rem;
+    height: 4rem;
     border-radius: 0;
-    margin-top: 12px;
+    margin-top: 12rem;
   }
   .auth-content {
-    padding-top: 28px;
-    width: 320px;
+    padding-top: 28rem;
+    width: 320rem;
   }
   .email-title {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 16rem;
+    line-height: 22rem;
 
-    padding-bottom: 16px;
+    padding-bottom: 16rem;
   }
   .email-input-container {
     display: flex;
@@ -250,58 +251,58 @@ select::-ms-expand {
     flex-direction: row;
     align-items: center;
 
-    padding-bottom: 12px;
+    padding-bottom: 12rem;
   }
   .email-input-email {
-    width: 105px;
-    height: 42px;
+    width: 105rem;
+    height: 42rem;
 
-    padding-left: 12px;
+    padding-left: 12rem;
 
     font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 12rem;
+    line-height: 17rem;
   }
   .email-input-email ~ .email {
-    width: 113px;
-    background: url('../../assets/arrow_down.png') calc(100% - 10px) center
+    width: 113rem;
+    background: url('../../assets/arrow_down.png') calc(100% - 10rem) center
       no-repeat;
-    background-size: 10px 5.89px;
+    background-size: 10rem 5.89rem;
   }
   .email-input-container span {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 12rem;
+    line-height: 17rem;
 
-    padding: 0 3px;
+    padding: 0 3rem;
   }
   .email-input-container button {
-    width: 79px;
-    height: 42px;
+    width: 79rem;
+    height: 42rem;
 
     font-weight: 400;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 12rem;
+    line-height: 17rem;
 
-    margin-left: 4px;
+    margin-left: 4rem;
   }
   .email-input-num {
-    width: 236px;
-    height: 42px;
+    width: 236rem;
+    height: 42rem;
 
-    padding-left: 12px;
+    padding-left: 12rem;
     outline: none;
   }
   .auth-next {
-    padding-top: 205px;
+    padding-top: 205rem;
   }
   .auth-next button {
-    width: 155px;
-    height: 54px;
-    margin-right: 9px;
+    width: 155rem;
+    height: 54rem;
+    margin-right: 9rem;
 
     font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18rem;
+    line-height: 26rem;
   }
 }

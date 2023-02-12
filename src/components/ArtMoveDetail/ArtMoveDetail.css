@@ -5,32 +5,32 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 49px;
+  padding: 0 49rem;
   height: 100%;
 }
 .art-md--header .container {
-  width: 1378px;
+  width: 1378rem;
 
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .art-md--header__info h4 {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
   color: #4f4f4f;
 
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .art-md--header__info h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 36rem;
+  line-height: 42rem;
   color: #000000;
 }
 .art-md--header__move {
@@ -41,31 +41,31 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #333333;
 
-  padding-right: 12px;
+  padding-right: 12rem;
 
   display: flex;
   align-items: center;
 }
 .art-md--header__move button {
-  width: 36px;
-  height: 36px;
+  width: 36rem;
+  height: 36rem;
   background: url('../../assets/slider_next.png') no-repeat center;
   background-size: contain;
   border: none;
 }
 /* detail menu */
 .art-md-d .art-md--header {
-  height: 216px;
+  height: 216rem;
   background: #fbfbfb;
 }
 .art-md-d .art-md--header .art-md--header-container {
-  height: 135px;
-  border-bottom: 1px solid #e0e0e0;
+  height: 135rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .art-md-d .art-md--header .art-md--header__info {
   display: flex;
@@ -76,36 +76,36 @@
   display: flex;
   order: 1;
   padding-bottom: 0;
-  line-height: 49px;
-  padding-top: 4px;
+  line-height: 49rem;
+  padding-top: 4rem;
 }
 .art-md-d .art-md--header h2 {
   display: flex;
   order: 0;
 
-  padding-right: 16px;
+  padding-right: 16rem;
 
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 42rem;
+  line-height: 49rem;
 }
 .art-md--header__detail {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 81px;
-  padding-left: 49px;
+  height: 81rem;
+  padding-left: 49rem;
 }
 .art-md--header__detail button {
   margin: 0;
   padding: 0;
-  margin-right: 80px;
+  margin-right: 80rem;
   border: none;
   background: none;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   /* Gray 4 */
 
@@ -116,26 +116,26 @@
   color: #333333;
 }
 .art-md-d .container {
-  width: 1378px;
+  width: 1378rem;
 
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .art-md-d .art-md--content__list {
-  padding: 56px 49px;
+  padding: 56rem 49rem;
   padding-bottom: 0;
 }
 /*******/
 .art-md--content {
-  /* height: 690px; */
+  /* height: 690rem; */
 
   width: 100%;
-  min-width: 1920px;
-  border-bottom: 1px solid #e0e0e0;
+  min-width: 1920rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .art-md--content__list {
-  padding: 70px 320px;
+  padding: 70rem 320rem;
   padding-bottom: 0;
   display: flex;
   flex-direction: row;
@@ -143,23 +143,23 @@
 }
 .art-md__list-item {
   display: block;
-  margin-right: 37px;
-  width: 400px;
+  margin-right: 37rem;
+  width: 400rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
+  margin-bottom: 80rem;
 }
 .art-md__list-item:nth-child(3n) {
   margin-right: 0;
 }
 .art-md__list-item img {
   width: 100%;
-  height: 430px;
+  height: 430rem;
   display: flex;
   align-items: center;
   justify-content: center;
   object-fit: contain;
-  border: 1px solid #f2f2f2;
+  border: 1rem solid #f2f2f2;
 }
 .art-md__list-item h2,
 .art-md__list-item h3,
@@ -167,8 +167,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   color: #000000;
 
   width: 100%;
@@ -179,18 +179,18 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   word-break: keep-all;
-  padding-top: 10px;
+  padding-top: 10rem;
 }
 .art-md__list-item h3 {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
-  padding-top: 32px;
+  font-size: 28rem;
+  line-height: 33rem;
+  padding-top: 32rem;
 }
 .art-md__list-item h4 {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   color: #bdbdbd;
-  padding-top: 8px;
+  padding-top: 8rem;
 }

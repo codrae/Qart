@@ -1,0 +1,132 @@
+.my-work-list {
+  height: calc(100% - 347rem - 455rem);
+}
+.my-work-list .table-slider-header-container {
+  padding-left: 51rem;
+}
+.my-work-list .table-slider-header-container li {
+  font-size: 20rem;
+  line-height: 29rem;
+  text-align: left;
+}
+.my-work-list .table-slider-header-container li:nth-child(1) {
+  width: 28rem;
+}
+.my-work-list .table-slider-header-container li:nth-child(2) {
+  width: 77rem;
+  text-align: center;
+}
+.my-work-list .table-slider-header-container li:nth-child(3) {
+  width: calc(97rem + 105rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(4) {
+  width: calc(56rem + 101rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(5) {
+  width: calc(37rem + 81rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(6) {
+  width: calc(56rem + 93rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(7) {
+  width: calc(56rem + 91rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(8) {
+  width: calc(62rem + 54rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(9) {
+  width: calc(111rem + 75rem);
+}
+.my-work-list .table-slider-header-container li:nth-child(10) {
+  width: calc(37rem + 110rem);
+  padding-left: 0;
+}
+
+.my-work-list .table-slider-item ul {
+  padding-left: 51rem;
+}
+.my-work-list .table-slider-item li {
+  font-size: 20rem;
+  line-height: 29rem;
+  /* text-align: left; */
+}
+.my-work-list .table-slider-item li:nth-child(1) {
+  width: 30rem;
+}
+.my-work-list .table-slider-item li:nth-child(2) {
+  width: 70rem;
+  text-align: center;
+}
+.my-work-list .table-slider-item li:nth-child(3) {
+  width: 107rem;
+  margin-right: 71rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.my-work-list .table-slider-item li:nth-child(4) {
+  width: calc(115rem + 61rem);
+}
+.my-work-list .table-slider-item li:nth-child(5) {
+  width: calc(56rem + 48rem);
+}
+.my-work-list .table-slider-item li:nth-child(6) {
+  width: calc(104rem + 49rem);
+}
+.my-work-list .table-slider-item li:nth-child(7) {
+  width: calc(97rem + 64rem);
+}
+.my-work-list .table-slider-item li:nth-child(8) {
+  width: calc(74rem + 48rem);
+}
+.my-work-list .table-slider-item li:nth-child(9) {
+  width: 111rem;
+  margin-right: 57rem;
+}
+.my-work-list .table-slider-item li:nth-child(10) {
+  width: 74rem;
+  margin-right: 91rem;
+}
+.sell-status {
+  width: 111rem;
+  height: 48rem;
+
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16rem;
+  line-height: 23rem;
+}
+.sell-compelete {
+  color: #bdbdbd;
+}
+.edit-btn {
+  width: 74rem;
+  height: 48rem;
+
+  border: 1rem solid #000000;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #222222;
+  background: none;
+  cursor: pointer;
+}
+.regis-status {
+  display: inline-block !important;
+  width: 74rem !important;
+  color: #bdbdbd !important;
+}
+.regis-compelete {
+  color: #219653 !important;
+}

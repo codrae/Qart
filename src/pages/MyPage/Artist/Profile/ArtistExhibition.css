@@ -5,18 +5,18 @@
   color: #222222;
 }
 .a-exhibition-content {
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
   border-top: none;
   border-bottom: none;
 
-  min-height: 1966px;
-  height: calc(100% - 347px - 455px);
+  min-height: 1966rem;
+  height: calc(100% - 347rem - 455rem);
 }
 .a-exhibition-content h2 {
-  width: 387px;
-  height: 72px;
+  width: 387rem;
+  height: 72rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,32 +25,32 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   color: #222222;
 }
 .a-ex-edit-image {
-  height: 448px;
+  height: 448rem;
 
   width: 100vw;
   margin-left: calc(-50vw + 50%);
 
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .a-ex-edit-image-container {
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
 
-  padding: 48px 346px 78px 49px;
+  padding: 48rem 346rem 78rem 49rem;
 }
 .a-ex-edit-image-container h2 {
-  padding-top: 3px;
+  padding-top: 3rem;
 }
 .a-ex-edit-image-container img {
-  width: 322px;
-  height: 322px;
+  width: 322rem;
+  height: 322rem;
   box-sizing: border-box;
   object-fit: contain;
 }
@@ -63,10 +63,10 @@
   position: absolute;
   cursor: pointer;
 
-  top: 176px;
-  left: 565px;
-  width: 65px;
-  height: 65px;
+  top: 176rem;
+  left: 565rem;
+  width: 65rem;
+  height: 65rem;
   background: url('../../../../assets/icon_plus.png') no-repeat center;
   background-size: contain;
 }
@@ -76,89 +76,89 @@
   visibility: hidden;
 }
 .a-ex-edit-info {
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
   height: inherit;
-  padding: 48px 346px 109px 49px;
+  padding: 48rem 346rem 109rem 49rem;
 }
 .a-ex-edit-info li {
   display: flex;
   flex-direction: row;
-  padding-top: 54px;
+  padding-top: 54rem;
 }
 .a-ex-edit-info li:first-child {
   padding-top: 0;
 }
 .a-ex-edit-info input {
-  width: 596px;
-  height: 72px;
+  width: 596rem;
+  height: 72rem;
   background: #ffffff;
   /* Gray 5 */
 
-  border: 1px solid #bdbdbd;
+  border: 1rem solid #bdbdbd;
 
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #222222;
 
   box-sizing: border-box;
-  padding-left: 24px;
+  padding-left: 24rem;
 }
 .a-ex-edit-info input::placeholder {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #222222;
 }
 .a-ex-edit-info .drop-container {
-  width: 596px;
-  height: 72px;
+  width: 596rem;
+  height: 72rem;
   z-index: unset;
 }
 .a-ex-edit-info .drop-select {
-  width: 596px;
-  height: 72px;
+  width: 596rem;
+  height: 72rem;
   box-sizing: border-box;
-  border: 1px solid #bdbdbd;
+  border: 1rem solid #bdbdbd;
   color: #222222;
 }
 .a-ex-edit-info .show-drop-list {
-  border: 1px solid #bdbdbd;
+  border: 1rem solid #bdbdbd;
 }
 .a-ex-edit-info .show-drop-list li {
-  width: 590px;
+  width: 590rem;
   padding-top: 0;
 
   box-sizing: border-box;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1rem solid #f2f2f2;
 }
 .a-ex-edit-info textarea {
   box-sizing: border-box;
 
-  padding-left: 24px;
-  padding-top: 21px;
-  width: 596px;
-  height: 241px;
+  padding-left: 24rem;
+  padding-top: 21rem;
+  width: 596rem;
+  height: 241rem;
 
   background: #ffffff;
   /* Gray 5 */
 
-  border: 1px solid #bdbdbd;
+  border: 1rem solid #bdbdbd;
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #222222;
 
@@ -168,8 +168,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #bdbdbd;
 }
@@ -184,16 +184,16 @@
 
   box-sizing: border-box;
 
-  width: 290px;
-  height: 80px;
+  width: 290rem;
+  height: 80rem;
 
-  border: 1px solid #000000;
+  border: 1rem solid #000000;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   /* identical to box height */
 
   display: flex;
@@ -204,7 +204,7 @@
 
   color: #222222;
 
-  margin-right: 16px;
+  margin-right: 16rem;
 }
 .a-ex-edit--button button:last-child {
   border: none;
@@ -213,18 +213,18 @@
   margin-right: 0;
 }
 .artist-exhibition .footer__menu {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
 }
 .date-bar {
   display: block;
-  width: 36px;
-  height: 72px;
+  width: 36rem;
+  height: 72rem;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   /* identical to box height */
 
   display: flex;
@@ -256,12 +256,12 @@ input[type='date']::-webkit-datetime-edit-year-field {
 
 input[type='date']::before {
   content: attr(data-placeholder);
-  width: calc(100% - 104px);
+  width: calc(100% - 104rem);
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   /* identical to box height */
 
   display: flex;
@@ -278,8 +278,8 @@ input[type='date']:valid::before {
   opacity: 1;
   display: block;
   background: url(../../../../assets/icon_calendar.png) center no-repeat;
-  background-size: 22.5px 25px;
-  width: 84px;
+  background-size: 22.5rem 25rem;
+  width: 84rem;
   height: 100%;
   border-width: thin;
 }
@@ -287,10 +287,10 @@ input[type='date']:valid::before {
   width: 100%;
 }
 .artist-exhibition .date-input {
-  width: 280px !important;
+  width: 280rem !important;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 }

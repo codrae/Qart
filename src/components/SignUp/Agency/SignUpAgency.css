@@ -1,17 +1,33 @@
+.sign-agency {
+  width: 100%;
+  min-width: 1920rem;
+}
+.sign-agency-container {
+  width: 1378rem;
+  height: calc(100% - 100rem);
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
 .agency-content {
-  padding: 0 49px;
-  padding-top: 60px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 0 49rem;
+  padding-top: 60rem;
+  padding-bottom: 6rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .pt-89 {
-  padding-top: 89px;
+  padding-top: 89rem;
 }
 .pb-26 {
-  padding-bottom: 26px;
+  padding-bottom: 26rem;
 }
 .agency-content .general-item {
-  padding-bottom: 26px;
+  padding-bottom: 26rem;
 }
 input[type='date']::before {
   content: attr(data-placeholder);
@@ -19,8 +35,8 @@ input[type='date']::before {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
   color: #bdbdbd;
 }
@@ -34,8 +50,8 @@ input[type='date']:valid::before {
   opacity: 1;
   display: block;
   background: url(../../../assets/icon_calendar.png) center no-repeat;
-  background-size: 22.5px 25px;
-  width: 60px;
+  background-size: 22.5rem 25rem;
+  width: 60rem;
   height: 100%;
   border-width: thin;
 }
@@ -43,61 +59,61 @@ input[type='date']:valid::before {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 }
 .agency-content .search__icon {
   background: url('../../../assets/icon_search-bd.png') no-repeat center;
-  background-size: 25.39px 25.39px;
+  background-size: 25.39rem 25.39rem;
 }
 .artist-content .email-input-container {
-  width: 596px;
-  margin-right: 88px;
+  width: 596rem;
+  margin-right: 88rem;
 }
 .artist-content .email-input-email {
-  width: 295px;
+  width: 295rem;
 }
 .artist-content .email-input-email ~ .email {
-  width: 264px;
+  width: 264rem;
 }
 .filebox {
   display: flex;
   flex-direction: row;
-  width: 596px;
+  width: 596rem;
 }
 .filebox .upload-name {
   box-sizing: border-box;
-  width: 386px;
-  height: 56px;
+  width: 386rem;
+  height: 56rem;
 
   background: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
   color: #222222;
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .filebox .upload-name:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 .filebox label {
-  width: 198px;
-  height: 56px;
+  width: 198rem;
+  height: 56rem;
 
   background: #828282;
-  margin-right: 12px;
+  margin-right: 12rem;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;

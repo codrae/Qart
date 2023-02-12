@@ -1,39 +1,39 @@
 header {
   width: 100%;
-  min-width: 1920px;
-  height: 100px;
-
-  border-bottom: 1px solid #4f4f4f;
+  min-width: 1920rem;
+  height: 100rem;
+  border-bottom: 1rem solid #bdbdbd;
 }
 header.black {
-  border-bottom: 1px solid #4f4f4f;
+  border-bottom: 1rem solid #4f4f4f;
   background: #222222;
 }
 .header-container {
   display: flex;
   flex-direction: row;
-  width: 1378px;
+  width: 1378rem;
 
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
   box-sizing: border-box;
 }
 .black .header-container {
-  border-left: 1px solid #4f4f4f;
-  border-right: 1px solid #4f4f4f;
+  border-left: 1rem solid #4f4f4f;
+  border-right: 1rem solid #4f4f4f;
 }
 .header__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  margin-left: 51px;
+  margin-left: 51rem;
 }
 .header__logo > a {
-  width: 135px;
-  height: 44px;
+  width: 135rem;
+  height: 44rem;
   margin-left: auto;
   background: url(../../assets/logo.png) no-repeat;
+  background-size: contain;
 }
 .black .header__logo > a {
   background: url(../../assets/logo_color.png) no-repeat;
@@ -43,12 +43,12 @@ header.black {
   align-items: center;
   display: flex;
   flex-direction: row;
-  padding: 0 110px;
+  padding: 0 110rem;
   justify-content: space-between;
   box-sizing: border-box;
 }
 .header__menu li {
-  margin-right: 44px;
+  margin-right: 44rem;
 }
 .header__menu li:last-child {
   margin-right: 0;
@@ -56,8 +56,8 @@ header.black {
 .header__menu li a {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   color: #222222;
 }
@@ -81,7 +81,7 @@ header.black {
   flex-direction: row;
   align-items: center;
   margin-left: auto;
-  margin-right: 60px;
+  margin-right: 60rem;
   justify-content: space-between;
 }
 .header__padding .login,
@@ -90,12 +90,12 @@ header.black {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
   color: #2f80ed;
 }
 .header__padding .mypage {
-  padding-right: 40px;
+  padding-right: 40rem;
 }
 .header__padding .logout {
   color: #ffffff;
@@ -103,21 +103,21 @@ header.black {
 /* .black .header__padding .login {
   color: #2f80ed;
 } */
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   header {
-    height: 63px;
-    min-width: 360px;
+    height: 63rem;
+    min-width: 360rem;
   }
   .header-container {
-    width: 360px;
+    width: 360rem;
     justify-content: space-between;
     border: none;
   }
   .header__logo {
-    width: 73px;
-    height: 24px;
-    margin-left: 20px;
-    margin-top: 19px;
+    width: 73rem;
+    height: 24rem;
+    margin-left: 20rem;
+    margin-top: 19rem;
   }
   .header__logo > a {
     width: 100%;
@@ -132,7 +132,7 @@ header.black {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 20rem;
   }
   .header__padding .login {
     display: none;
@@ -144,19 +144,19 @@ header.black {
   .header__padding .bar {
     display: block;
     background: url(../../assets/hambar.png) no-repeat;
-    width: 28px;
-    height: 24px;
-    background-size: 28px 24px;
+    width: 28rem;
+    height: 24rem;
+    background-size: 28rem 24rem;
     background-position: center center;
   }
   .header__padding .search-icon {
     display: block;
     background: url(../../assets/ico_search.png) no-repeat 50% 50%;
-    width: 25.39px;
-    height: 25.39px;
-    background-size: 25.39px 25.39px;
+    width: 25.39rem;
+    height: 25.39rem;
+    background-size: 25.39rem 25.39rem;
     background-position: center center;
 
-    margin-right: 18.11px;
+    margin-right: 18.11rem;
   }
 }

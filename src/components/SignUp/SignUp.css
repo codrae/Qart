@@ -1,17 +1,18 @@
 .sign {
   width: 100%;
-  min-width: 1920px;
+  min-width: 1920rem;
   height: 100%;
 }
 .sign-container {
-  width: 1378px;
-  height: calc(100% - 100px);
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  width: 1378rem;
+  height: calc(100% - 100rem);
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
+  box-sizing: border-box;
 }
 .sign-list {
-  padding: 0 49px;
-  padding-top: 180px;
+  padding: 0 49rem;
+  padding-top: 180rem;
 
   display: flex;
   flex-direction: row;
@@ -19,9 +20,9 @@
 }
 .sign-item {
   display: block;
-  width: 400px;
-  height: 519px;
-  border: 1px solid #e0e0e0;
+  width: 400rem;
+  height: 519rem;
+  border: 1rem solid #e0e0e0;
 
   box-sizing: border-box;
   position: relative;
@@ -37,36 +38,36 @@
   text-align: center;
 }
 .sign-item img {
-  width: 164px;
-  height: 164px;
+  width: 164rem;
+  height: 164rem;
   border-radius: 50%;
-  margin-top: 126px;
+  margin-top: 126rem;
   filter: grayscale(100%);
 }
 .sign-active {
-  border: 2px solid #222222;
+  border: 2rem solid #222222;
 }
 .sign-active img {
   filter: none;
 }
 .sign-item h1 {
-  padding-top: 32px;
+  padding-top: 32rem;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 28rem;
+  line-height: 38rem;
 
   color: #222222;
 }
 .sign-item span {
-  padding-top: 7px;
+  padding-top: 7rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 20rem;
+  line-height: 27rem;
 
   color: #222222;
 }
@@ -92,60 +93,60 @@
   justify-content: center;
 }
 .sign-item__hover span {
-  padding-top: 8px;
+  padding-top: 8rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 20rem;
+  line-height: 27rem;
   text-align: center;
   color: #ffffff;
 }
 .sign-next {
   width: 100%;
-  padding-top: 107px;
-  padding-bottom: 94px;
+  padding-top: 107rem;
+  padding-bottom: 94rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .sign-next button {
-  width: 509px;
-  height: 80px;
+  width: 509rem;
+  height: 80rem;
   border: none;
   background: #bdbdbd;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   color: #ffffff;
 }
 .sign-next button:active {
   background: #000000;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .sign {
     width: 100%;
-    min-width: 360px;
+    min-width: 360rem;
   }
   .sign-container {
-    width: 360px;
-    height: calc(100% - 100px);
+    width: 360rem;
+    height: calc(100% - 100rem);
     border: none;
   }
   .sign-list {
-    padding: 0 20px;
-    padding-top: 40px;
+    padding: 0 20rem;
+    padding-top: 40rem;
 
     flex-direction: column;
   }
   .sign-item {
-    width: 320px;
-    height: 120px;
+    width: 320rem;
+    height: 120rem;
     justify-content: initial;
-    margin-bottom: 12px;
+    margin-bottom: 12rem;
   }
   .sign-item:last-child {
     margin-bottom: 0;
@@ -160,30 +161,30 @@
     align-items: initial;
   }
   .sign-item img {
-    width: 80px;
-    height: 80px;
-    margin-top: 20px;
-    margin-left: 33px;
+    width: 80rem;
+    height: 80rem;
+    margin-top: 20rem;
+    margin-left: 33rem;
   }
   .sign-active {
-    border: 1px solid #222222;
+    border: 1rem solid #222222;
   }
   .sign-active img {
     filter: none;
   }
   .sign-item section {
-    padding-left: 16px;
+    padding-left: 16rem;
   }
   .sign-item h1 {
-    padding-top: 39px;
+    padding-top: 39rem;
 
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 16rem;
+    line-height: 22rem;
   }
   .sign-item span {
-    padding-top: 4px;
-    font-size: 12px;
-    line-height: 16px;
+    padding-top: 4rem;
+    font-size: 12rem;
+    line-height: 16rem;
   }
 
   .sign-item__hover {
@@ -197,16 +198,16 @@
     display: none;
   }
   .sign-next {
-    padding-top: 50px;
-    padding-bottom: 24px;
+    padding-top: 50rem;
+    padding-bottom: 24rem;
   }
   .sign-next button {
-    width: 320px;
-    height: 54px;
+    width: 320rem;
+    height: 54rem;
     border: none;
     background: #bdbdbd;
 
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18rem;
+    line-height: 26rem;
   }
 }

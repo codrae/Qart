@@ -3,25 +3,25 @@
   background: #fbfbfb;
 }
 .payment-item {
-  width: 1368px;
-  padding: 70px 320px;
+  width: 1368rem;
+  padding: 70rem 320rem;
   display: flex;
   flex-direction: row;
 }
 .payment-item img {
-  width: 157px;
-  height: 167px;
+  width: 157rem;
+  height: 167rem;
   object-fit: contain;
   background: #f2f2f2;
 }
 .payment-item-info {
-  padding: 42px 0;
-  padding-left: 93px;
+  padding: 42rem 0;
+  padding-left: 93rem;
   display: flex;
   flex-direction: row;
 }
 .payment-item-info li {
-  padding-right: 70px;
+  padding-right: 70rem;
 }
 .payment-item-info li:last-child {
   padding-right: 0;
@@ -33,8 +33,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #4f4f4f;
 }
@@ -43,22 +43,22 @@
   font-weight: 700;
 
   color: #222222;
-  padding-top: 24px;
+  padding-top: 24rem;
 }
 .payment-checkout {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .checkout-location {
-  padding: 0 320px;
-  padding-top: 61px;
-  padding-bottom: 80px;
+  padding: 0 320rem;
+  padding-top: 61rem;
+  padding-bottom: 80rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .checkout-location li {
-  width: 596px;
-  padding-bottom: 46px;
+  width: 596rem;
+  padding-bottom: 46rem;
 }
 .checkout-location li:last-child {
   padding-bottom: 0;
@@ -71,49 +71,49 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
   color: #222222;
 
-  padding-bottom: 20px;
+  padding-bottom: 20rem;
 }
 .checkout-input {
-  width: 596px;
-  height: 72px;
+  width: 596rem;
+  height: 72rem;
 
   background: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
+  border: 1rem solid #cccccc;
+  border-radius: 2rem;
 
   outline: none;
   box-sizing: border-box;
 
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .checkout-button {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 74px;
-  margin-bottom: 40px;
+  margin-top: 74rem;
+  margin-bottom: 40rem;
 }
 .checkout-button button {
-  width: 648px;
-  height: 102px;
+  width: 648rem;
+  height: 102rem;
 
   background: #000000;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   /* identical to box height */
 
   display: flex;
@@ -123,13 +123,13 @@
   color: #ffffff;
 }
 .payment-complete-container {
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .payment-complete {
-  padding: 0 320px;
-  padding-top: 109px;
-  padding-bottom: 153px;
+  padding: 0 320rem;
+  padding-top: 109rem;
+  padding-bottom: 153rem;
 
   display: flex;
   flex-direction: column;
@@ -140,26 +140,26 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 42rem;
+  line-height: 49rem;
   display: flex;
   align-items: center;
   text-align: center;
 
   color: #000000;
 
-  padding-bottom: 47px;
+  padding-bottom: 47rem;
 }
 .payment-complete a {
-  width: 648px;
-  height: 102px;
+  width: 648rem;
+  height: 102rem;
   background: #000000;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   /* identical to box height */
 
   display: flex;
@@ -172,7 +172,7 @@
 .checkout-location__checkbox {
   display: flex;
   flex-direction: row;
-  padding-top: 20px;
+  padding-top: 20rem;
 }
 input[type='checkbox'] {
   display: none;
@@ -189,21 +189,21 @@ input[type='checkbox'] {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
   color: #333333;
 
-  margin-right: 97px;
+  margin-right: 97rem;
 }
 .check-option__check {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 24rem;
+  height: 24rem;
   background: url('../../../assets/pay-check.png') no-repeat center;
   background-size: contain;
 
-  margin-right: 12px;
+  margin-right: 12rem;
 }
 input[type='checkbox']:checked + .check-option__check {
   background: url('../../../assets/pay-check-active.png') no-repeat center;

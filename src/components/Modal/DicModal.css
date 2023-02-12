@@ -5,15 +5,15 @@
   width: 100%;
   height: 100%;
   background: rgba(34, 34, 34, 0.7);
-  backdrop-filter: blur(8.5px);
+  backdrop-filter: blur(8.5rem);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .modal-body {
   /* 모달창 크기 */
-  width: 360px;
-  /* height: 200px; */
+  width: 360rem;
+  /* height: 200rem; */
 
   /* 최상단 위치 */
   z-index: 999;
@@ -28,45 +28,45 @@
 
   /* 모달창 디자인 */
   /* background-color: gray;
-  border: 1px solid black;
-  border-radius: 8px; */
+  border: 1rem solid black;
+  border-radius: 8rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .modal-item__dic {
-  width: 325px;
-  margin: 0 18px;
+  width: 325rem;
+  margin: 0 18rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .modal-item__dic ul {
-  border-top: 0.5px solid #828282;
-  border-bottom: 0.5px solid #828282;
+  border-top: 0.5rem solid #828282;
+  border-bottom: 0.5rem solid #828282;
 
   width: inherit;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  padding: 22px 0;
+  padding: 22rem 0;
 }
 .modal-item__dic ul:last-child {
   border-top: none;
 }
 .modal-item__dic ul button {
-  width: 39px;
-  height: 40px;
+  width: 39rem;
+  height: 40rem;
   border: none;
   background: none;
 
-  font-family: "Noto Sans";
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 20rem;
+  line-height: 27rem;
   color: #828282;
   padding: 0;
 }
@@ -76,20 +76,20 @@
 }
 /* 모달창 내부 X버튼 */
 .modal-close {
-  margin-top: 72px;
-  /* margin-bottom: 36px; */
+  margin-top: 72rem;
+  /* margin-bottom: 36rem; */
 
-  width: 50px;
-  height: 50px;
+  width: 50rem;
+  height: 50rem;
 
-  background: url("../../assets/close_button.png") #ffffff no-repeat;
-  background-size: 15px 15px;
+  background: url('../../assets/close_button.png') #ffffff no-repeat;
+  background-size: 15rem 15rem;
   background-position: center center;
   border: none;
   border-radius: 50%;
 }
 
-@media (min-width: 381px) {
+@media (min-width: 381rem) {
   .modal-container {
     display: none;
   }

@@ -5,9 +5,14 @@ import Header from '../../../../components/Header/Header'
 import HeaderSmall from '../../../../components/Header/HeaderSmall/HeaderSmall'
 import TableSlide from '../../../../components/TableSlide/TableSlide'
 import './ArtistArchive.css'
+import MyArticleList from './MyArticleList'
+import MyNftList from './MyNftList'
+import MyQcoAList from './MyQCoAList'
+import MyWorkList from './MyWorkList'
 
 function ArtistArchive() {
   const [choice, setChoice] = useState(0)
+  const [allCheck, setAllCheck] = useState(false)
   const moreList = {
     menu: [
       {
@@ -24,18 +29,17 @@ function ArtistArchive() {
       },
     ],
   }
-  const options = ['실물 작품', 'NFT']
 
   var item = []
   for (var i = 0; i < 80; i++) {
     item.push({
       id: 1,
       info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
-      title: '지식의 기념비',
-      buy: '리움 미술관',
-      date: '0000.00.00',
-      price: '000,000,000원',
-      state: '배송중',
+      // title: '지식의 기념비',
+      // buy: '리움 미술관',
+      // date: '0000.00.00',
+      // price: '000,000,000원',
+      // state: '배송중',
     })
   }
 
@@ -43,26 +47,30 @@ function ArtistArchive() {
 
   for (var i = 0; i < 80; i++) {
     tableItem.push(
-      <Link
-        state={{
-          item: item[i],
-        }}
-        key={i}
-        className="table-slider-item"
-      >
-        <img src={require('../../../../' + item[i].info)}></img>
-        <span>{item[i].title}</span>
-        <span>{item[i].buy}</span>
-        <span>{item[i].date}</span>
-        <span>{item[i].price}</span>
-        <button className="">{item[i].state}</button>
-      </Link>
+      <div className="table-slider-item">
+        <ul>
+          <li>
+            <label className="login-option">
+              <input type="checkbox" checked={allCheck} />
+              <span className="login-option__check" />
+            </label>
+          </li>
+          <li>{i + 1}</li>
+          <li>
+            <img src={require('../../../../' + item[i].info)}></img>
+          </li>
+          <li>Representive Name</li>
+          <li>Change Date</li>
+          <li>Address</li>
+        </ul>
+      </div>
     )
   }
   const titleItem = []
+
   titleItem.push(
     <div className="table-header-search">
-      <h2>Article</h2>
+      <h2>{moreList.menu[choice].title} List</h2>
       <div className="th-search-container">
         <section className="search__block">
           <input
@@ -81,7 +89,87 @@ function ArtistArchive() {
       </div>
     </div>
   )
-
+  const tableSlideHeader = []
+  tableSlideHeader.push(
+    <ul className="container table-slider-header-container">
+      <li>
+        <label className="login-option">
+          <input
+            type="checkbox"
+            onChange={e => {
+              setAllCheck(!allCheck)
+            }}
+          />
+          <span className="login-option__check" />
+        </label>
+      </li>
+      <li>N</li>
+      <li>Image</li>
+      <li>Material name</li>
+      <li>Source</li>
+      <li>Issued by</li>
+    </ul>
+  )
+  tableSlideHeader.push(
+    <ul className="container table-slider-header-container">
+      <li>
+        <label className="login-option">
+          <input
+            type="checkbox"
+            onChange={e => {
+              setAllCheck(!allCheck)
+            }}
+          />
+          <span className="login-option__check" />
+        </label>
+      </li>
+      <li>N</li>
+      <li>Image</li>
+      <li>Material name</li>
+      <li>Source</li>
+      <li>Issued by</li>
+    </ul>
+  )
+  tableSlideHeader.push(
+    <ul className="container table-slider-header-container">
+      <li>
+        <label className="login-option">
+          <input
+            type="checkbox"
+            onChange={e => {
+              setAllCheck(!allCheck)
+            }}
+          />
+          <span className="login-option__check" />
+        </label>
+      </li>
+      <li>N</li>
+      <li>Image</li>
+      <li>Material name</li>
+      <li>Source</li>
+      <li>Issued by</li>
+    </ul>
+  )
+  tableSlideHeader.push(
+    <ul className="container table-slider-header-container">
+      <li>
+        <label className="login-option">
+          <input
+            type="checkbox"
+            onChange={e => {
+              setAllCheck(!allCheck)
+            }}
+          />
+          <span className="login-option__check" />
+        </label>
+      </li>
+      <li>N</li>
+      <li>Image</li>
+      <li>Material name</li>
+      <li>Source</li>
+      <li>Issued by</li>
+    </ul>
+  )
   return (
     <div className="mypage-archive">
       <Header login={true} colored="black" />
@@ -100,7 +188,21 @@ function ArtistArchive() {
         choice={choice}
         setMenu={setChoice}
       />
-      <TableSlide title={titleItem} options={options} items={tableItem} />
+      {/* <TableSlide
+        title={titleItem}
+        slideHeader={tableSlideHeader[choice]}
+        items={tableItem}
+        rows={9}
+      /> */}
+      {choice == 0 ? (
+        <MyWorkList />
+      ) : choice == 1 ? (
+        <MyNftList />
+      ) : choice == 2 ? (
+        <MyArticleList />
+      ) : (
+        <MyQcoAList />
+      )}
       <Footer />
     </div>
   )

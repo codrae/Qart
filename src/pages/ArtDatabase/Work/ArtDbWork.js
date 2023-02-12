@@ -5,21 +5,21 @@ function ArtDbWork(props) {
   const bannerList2 = [
     {
       info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
-      size: '719px',
+      size: '719rem',
       author: '김문정',
       title: 'looseroutside_pespective, 2020',
       link: '/artdb/work3',
     },
     {
       info: 'qart_test/미디어/node00, 내재율의 외적 파동, 2019.jpg',
-      size: '475px',
+      size: '475rem',
       author: 'node00',
       title: '내재울의 외적 파동, 2019',
       link: '/artdb/work3',
     },
     {
       info: 'qart_test/미디어/node00, 내재율의 외적 파동2, 2019.jpg',
-      size: '430px',
+      size: '430rem',
       author: 'node00',
       title: '내재울의 외적 파동2, 2019',
       link: '/artdb/work3',

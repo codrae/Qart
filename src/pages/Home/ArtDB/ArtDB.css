@@ -1,7 +1,7 @@
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .artbase__item {
-    min-width: 360px;
-    height: 180px;
+    min-width: 360rem;
+    height: 180rem;
   }
   .artbase__info__deatil {
     width: 100%;
@@ -11,28 +11,28 @@
     border-left: none;
   }
   .artbase__info__deatil > .artbase__info-name {
-    padding-top: 20px;
+    padding-top: 20rem;
     padding-left: 11.11%;
-    font-size: 8px;
-    line-height: 11px;
+    font-size: 8rem;
+    line-height: 11rem;
   }
   .artbase__info__deatil > h3 {
-    padding-top: 78px;
+    padding-top: 78rem;
     padding-left: 11.11%;
 
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 20rem;
+    line-height: 23rem;
   }
   .artbase__info__deatil > h5 {
-    padding-top: 2px;
+    padding-top: 2rem;
     padding-left: 11.11%;
 
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 10rem;
+    line-height: 14rem;
   }
   .artbase-link {
     margin-left: 11.11%;
-    margin-top: 12px;
+    margin-top: 12rem;
     padding-left: 11.11%;
   }
 }

@@ -130,7 +130,7 @@ function ArtDetail(props) {
         )}
         <div
           className="container art-d-header-container"
-          style={moreList ? { height: '144px' } : {}}
+          style={moreList ? { height: '144rem' } : {}}
         >
           <div
             className="art-d-header__info"

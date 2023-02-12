@@ -1,13 +1,13 @@
 .sign-general {
   width: 100%;
-  min-width: 1920px;
-  /* height: 100%; */
+  height: 100%;
+  min-width: 1920rem;
 }
 .sign-general-container {
-  width: 1378px;
-  height: calc(100% - 100px);
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  width: 1378rem;
+  height: calc(100% - 100rem);
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
 
   display: flex;
   flex-direction: column;
@@ -16,8 +16,8 @@
   box-sizing: border-box;
 }
 .general-content {
-  padding-top: 89px;
-  width: 596px;
+  padding-top: 89rem;
+  width: 596rem;
 
   text-align-last: left;
 }
@@ -25,11 +25,11 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   color: #222222;
 
-  padding-bottom: 16px;
+  padding-bottom: 16rem;
 }
 .general-input-container {
   display: flex;
@@ -37,19 +37,19 @@
   flex-direction: row;
   align-items: center;
 
-  padding-bottom: 28px;
+  padding-bottom: 28rem;
 }
 .general-input-container button {
-  width: 115px;
-  height: 56px;
+  width: 115rem;
+  height: 56rem;
 
   background: #e0e0e0;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
   color: #222222;
 
@@ -62,96 +62,96 @@
 
   border: none;
 
-  margin-left: 16px;
+  margin-left: 16rem;
 }
 .general-input-container button:active {
   background: #2f80ed;
   color: #ffffff;
 }
 .general-input-num {
-  width: 490px;
-  height: 56px;
+  width: 490rem;
+  height: 56rem;
 
   background: #ffffff;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   box-sizing: border-box;
 
-  padding-left: 20px;
+  padding-left: 20rem;
   outline: none;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
   border-radius: 0;
 }
 .general-input-num:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 .general-password {
   width: 100%;
-  height: 56px;
+  height: 56rem;
 
   display: flex;
   flex-direction: row;
 
-  padding-bottom: 28px;
+  padding-bottom: 28rem;
 }
 .general-password .general-password-input {
   padding: 0;
-  width: calc(100% - 60px);
-  height: 56px;
+  width: calc(100% - 60rem);
+  height: 56rem;
 
   box-sizing: content-box;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   border-right: none;
 
   box-sizing: border-box;
 
-  padding-left: 20px;
+  padding-left: 20rem;
   outline: none;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
   border-radius: 0;
 }
 .general-password .general-password-input:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
   border-right: none;
 }
 .general-password .password__icon {
   display: block;
-  width: 60px;
-  height: 56px;
+  width: 60rem;
+  height: 56rem;
   background: url('../../../assets/password.png') no-repeat center;
-  background-size: 15.33px 15.96px;
+  background-size: 15.33rem 15.96rem;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   border-left: none;
   box-sizing: border-box;
 }
 .general-password .general-password-input:focus + .password__icon {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
   border-left: none;
 }
 .general-input {
   padding: 0;
   width: 100%;
-  height: 56px;
+  height: 56rem;
 
   background: #ffffff;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   box-sizing: border-box;
 
-  padding-left: 20px;
+  padding-left: 20rem;
   outline: none;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 16rem;
+  line-height: 23rem;
 
-  margin-bottom: 28px;
+  margin-bottom: 28rem;
   border-radius: 0;
 }
 .general-input:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 .general-input-num::-webkit-input-placeholder,
 .general-input::-webkit-input-placeholder,
@@ -162,9 +162,9 @@
   color: #bdbdbd;
 }
 .general-option {
-  width: 596px;
-  padding-top: 68px;
-  padding-bottom: 36px;
+  width: 596rem;
+  padding-top: 68rem;
+  padding-bottom: 36rem;
 
   display: flex;
   flex-direction: column;
@@ -175,23 +175,23 @@
   flex-direction: row;
   align-items: center;
 
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .general-option .login-option__check {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 24rem;
+  height: 24rem;
   background: url('../../../assets/login_check.png') no-repeat center;
   background-size: contain;
 
-  margin-right: 11px;
+  margin-right: 11rem;
 }
 .option-text {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   text-decoration-line: underline;
 
   color: #bdbdbd;
@@ -203,24 +203,24 @@ input[type='checkbox']:checked ~ .option-text {
   display: flex;
   flex-direction: row;
 
-  padding-bottom: 139px;
+  padding-bottom: 139rem;
 }
 .general-next button {
-  width: 290px;
-  height: 80px;
-  left: 658px;
-  top: 730px;
+  width: 290rem;
+  height: 80rem;
+  left: 658rem;
+  top: 730rem;
 
-  border: 1px solid #000000;
+  border: 1rem solid #000000;
 
-  margin-right: 16px;
+  margin-right: 16rem;
 
   background: #ffffff;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
   color: #222222;
 }
 .general-next button.general-next-button {
@@ -228,26 +228,26 @@ input[type='checkbox']:checked ~ .option-text {
   background: #000000;
   color: #ffffff;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .sign-general {
     width: 100%;
-    min-width: 360px;
+    min-width: 360rem;
     /* height: 100%; */
   }
   .sign-general-container {
-    width: 360px;
-    height: calc(100% - 63px);
+    width: 360rem;
+    height: calc(100% - 63rem);
     border: none;
   }
   .general-content {
-    padding-top: 24px;
-    width: 319px;
+    padding-top: 24rem;
+    width: 319rem;
   }
   .general-title {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 16rem;
+    line-height: 22rem;
 
-    padding-bottom: 12px;
+    padding-bottom: 12rem;
   }
   .general-input-container {
     display: flex;
@@ -255,101 +255,101 @@ input[type='checkbox']:checked ~ .option-text {
     flex-direction: row;
     align-items: center;
 
-    padding-bottom: 28px;
+    padding-bottom: 28rem;
   }
   .general-input-container button {
-    width: 79px;
-    height: 42px;
+    width: 79rem;
+    height: 42rem;
 
     background: #e0e0e0;
 
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 12rem;
+    line-height: 17rem;
 
-    margin-left: 4px;
+    margin-left: 4rem;
   }
   .general-input-num {
-    width: 236px;
-    height: 42px;
+    width: 236rem;
+    height: 42rem;
 
     background: #ffffff;
 
-    border: 1px solid #cccccc;
+    border: 1rem solid #cccccc;
     box-sizing: border-box;
 
-    padding-left: 12px;
-    font-size: 12px;
-    line-height: 17px;
+    padding-left: 12rem;
+    font-size: 12rem;
+    line-height: 17rem;
   }
   .general-input-num:focus {
-    border: 1px solid #222222;
+    border: 1rem solid #222222;
   }
   .general-password {
-    height: 42px;
+    height: 42rem;
   }
   .general-password .general-password-input {
     padding: 0;
-    width: calc(100% - 60px);
-    height: 42px;
+    width: calc(100% - 60rem);
+    height: 42rem;
 
-    padding-left: 12px;
-    font-size: 12px;
-    line-height: 17px;
+    padding-left: 12rem;
+    font-size: 12rem;
+    line-height: 17rem;
   }
   .general-password .password__icon {
     display: block;
-    width: 60px;
-    height: 42px;
+    width: 60rem;
+    height: 42rem;
     background: url('../../../assets/password.png') no-repeat center;
-    background-size: 12.83px 11.17px;
+    background-size: 12.83rem 11.17rem;
   }
   .general-input {
     padding: 0;
     width: 100%;
-    height: 42px;
+    height: 42rem;
 
     background: #ffffff;
 
-    border: 1px solid #cccccc;
+    border: 1rem solid #cccccc;
     box-sizing: border-box;
 
-    padding-left: 12px;
-    font-size: 12px;
-    line-height: 17px;
+    padding-left: 12rem;
+    font-size: 12rem;
+    line-height: 17rem;
 
-    margin-bottom: 28px;
+    margin-bottom: 28rem;
   }
   .general-option {
-    width: 319px;
-    padding-top: 4px;
-    padding-bottom: 16px;
+    width: 319rem;
+    padding-top: 4rem;
+    padding-bottom: 16rem;
   }
   .general-option .login-option {
-    padding-bottom: 8px;
+    padding-bottom: 8rem;
   }
   .general-option .login-option__check {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 12rem;
+    height: 12rem;
     background: url('../../../assets/login_check.png') no-repeat center;
     background-size: contain;
 
-    margin-right: 8px;
+    margin-right: 8rem;
   }
   .option-text {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 10rem;
+    line-height: 14rem;
   }
   .general-next {
-    padding-bottom: 24px;
+    padding-bottom: 24rem;
   }
   .general-next button {
-    width: 155px;
-    height: 54px;
+    width: 155rem;
+    height: 54rem;
 
-    margin-right: 9px;
+    margin-right: 9rem;
 
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18rem;
+    line-height: 26rem;
   }
 }

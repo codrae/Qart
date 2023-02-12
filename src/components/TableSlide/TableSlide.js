@@ -8,22 +8,26 @@ function TableSlide(props) {
       <header className="table-header">
         <div className="container table-header-container">
           {props.title}
-          <DropDown options={props.options} />
+          {props.options ? <DropDown options={props.options} /> : <></>}
         </div>
       </header>
       <div className="table-slider-header">
-        <ul className="container table-slider-header-container">
-          <li>대표 이미지</li>
-          <li>작품명</li>
-          <li>구매처</li>
-          <li>구매 일자</li>
-          <li>결제금액</li>
-          <li>배송상태</li>
-        </ul>
+        {props.slideHeader ? (
+          props.slideHeader
+        ) : (
+          <ul className="container table-slider-header-container">
+            <li>대표 이미지</li>
+            <li>작품명</li>
+            <li>구매처</li>
+            <li>구매 일자</li>
+            <li>결제금액</li>
+            <li>배송상태</li>
+          </ul>
+        )}
       </div>
       <div className="table-slider">
         <PageSlide
-          rows={6}
+          rows={props.rows ? props.rows : 6}
           slidesPerRow={1}
           items={props.items}
           divItem={true}

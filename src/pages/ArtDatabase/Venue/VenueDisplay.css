@@ -2,13 +2,13 @@
   background: none;
 }
 .venue-display-detail .work-header .small-header {
-  height: 90px;
+  height: 90rem;
 }
 .venue-display-detail .work-header__info-k {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 }
 .venue-display .top-arrow {
-  height: calc(767px + 135px);
+  height: calc(767rem + 135rem);
 }

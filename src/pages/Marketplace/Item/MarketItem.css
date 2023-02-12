@@ -1,6 +1,6 @@
 .market-art {
-  padding: 70px 320px;
-  padding-bottom: 100px;
+  padding: 70rem 320rem;
+  padding-bottom: 100rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,37 +8,37 @@
 .market-art-image {
   display: flex;
   flex-direction: column;
-  width: 608px;
+  width: 608rem;
 }
 .market-image__image {
-  width: 608px;
-  height: 667px;
+  width: 608rem;
+  height: 667rem;
 
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
   object-fit: contain;
 }
 .market-image__list {
-  padding-top: 26px;
+  padding-top: 26rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .market-image__item {
-  width: 185px;
-  height: 207px;
+  width: 185rem;
+  height: 207rem;
   object-fit: contain;
   box-sizing: border-box;
 
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
 }
 .market-art-info {
-  width: 651px;
-  height: 900px;
+  width: 651rem;
+  height: 900rem;
 
   background: #fbfbfb;
   box-sizing: border-box;
-  padding: 24px 26px 32px 32px;
+  padding: 24rem 26rem 32rem 32rem;
 }
 .market-info__gallery {
   cursor: pointer;
@@ -49,20 +49,20 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   display: flex;
   align-items: center;
 
   color: #2f80ed;
 
-  padding-bottom: 40px;
+  padding-bottom: 40rem;
 }
 .info__arrow {
-  margin-left: 11.37px;
-  width: 12.26px;
-  height: 20.83px;
+  margin-left: 11.37rem;
+  width: 12.26rem;
+  height: 20.83rem;
   background: url('../../../assets/arrow-right-blue.png') center no-repeat;
   background-size: contain;
 }
@@ -70,14 +70,14 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  padding-bottom: 45px;
+  font-size: 24rem;
+  line-height: 28rem;
+  padding-bottom: 45rem;
 }
 .market-info__list li {
   display: flex;
   flex-direction: row;
-  padding-bottom: 28px;
+  padding-bottom: 28rem;
 }
 .market-info__list li:last-child {
   padding-bottom: 0;
@@ -85,15 +85,15 @@
 
 .market-info__list li span:first-child {
   display: block;
-  width: 167px;
+  width: 167rem;
 }
 /* 기타 설명 */
 .market-info__list li:last-child span:last-child {
   display: block;
-  width: 426px;
+  width: 426rem;
 }
 .market-art-sell {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   font-family: 'Roboto';
   font-style: normal;
 }
@@ -101,36 +101,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 26px;
+  padding-top: 26rem;
 
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #222222;
 }
 .market-sell__price span:last-child {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   color: #000000;
 }
 .market-sell__usd {
   display: block;
-  padding-top: 8px;
+  padding-top: 8rem;
   width: 100%;
   text-align: right;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 20rem;
+  line-height: 23rem;
   color: #000000;
 }
 .market-sell__time {
   display: block;
-  padding-top: 53px;
+  padding-top: 53rem;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 20rem;
+  line-height: 23rem;
 
   text-align: right;
 
@@ -139,21 +139,21 @@
   color: #eb5757;
 }
 .market-sell__button {
-  padding-top: 20px;
+  padding-top: 20rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .market-sell__button button,
 .market-sell__button a {
-  width: 284px;
-  height: 84px;
+  width: 284rem;
+  height: 84rem;
   box-sizing: border-box;
-  border: 1px solid #000000;
+  border: 1rem solid #000000;
   background: none;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 20rem;
+  line-height: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,22 +174,22 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
-  padding: 0 320px;
-  padding-bottom: 150px;
+  padding: 0 320rem;
+  padding-bottom: 150rem;
 }
 .market-detail .art-detail__image {
   display: flex;
   align-items: center;
   box-sizing: border-box;
 
-  width: 240px;
-  height: 240px;
+  width: 240rem;
+  height: 240rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .market-detail .art-detail__list {
-  width: calc(100% - 240px);
+  width: calc(100% - 240rem);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -198,30 +198,30 @@
 }
 .market-detail .art-detail__list .art-detail__item {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 20rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 24rem;
+  line-height: 28rem;
   color: #222222;
-  padding-left: 46px;
+  padding-left: 46rem;
 }
 .market-detail .art-detail__list .art-detail__item:first-child {
   font-weight: 700;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 28rem;
+  line-height: 38rem;
 
   color: #333333;
 }
 .market-detail .art-detail__list .art-detail__name {
   display: inline-block;
   color: #4f4f4f;
-  width: 127px;
+  width: 127rem;
   vertical-align: top;
 }
 .market-detail .art-detail__list .art-detail__content {
   display: inline-block;
-  width: calc(100% - 167px);
+  width: calc(100% - 167rem);
   color: #222222;
 }

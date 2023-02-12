@@ -1,13 +1,13 @@
 .display-history__list {
-  padding: 56px 0;
-  min-width: 1920px;
+  padding: 56rem 0;
+  min-width: 1920rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .display-history__list li {
-  padding-left: 320px;
-  padding-bottom: 46px;
+  padding-left: 320rem;
+  padding-bottom: 46rem;
   align-self: flex-start;
 }
 .display-history__list li:last-child {
@@ -17,14 +17,14 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 28rem;
+  line-height: 38rem;
 
   color: #828282;
 }
 .display-history__item-period {
-  width: 267px;
-  margin-right: 28px;
+  width: 267rem;
+  margin-right: 28rem;
 }
 .display-history__item-title {
   font-weight: 400;
@@ -34,18 +34,18 @@
   display: inline-block;
   font-weight: 700;
   color: #222222;
-  width: 150px;
+  width: 150rem;
 }
 .display-history__more {
-  width: 346px;
-  height: 84px;
+  width: 346rem;
+  height: 84rem;
   border: none;
   background: none;
 
-  margin-top: 22px;
-  margin-bottom: 24px;
+  margin-top: 22rem;
+  margin-bottom: 24rem;
 
-  border: 1px solid #333333;
+  border: 1rem solid #333333;
 }
 .display-history__more p {
   display: flex;
@@ -56,8 +56,8 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   color: #4f4f4f;
 }
@@ -68,9 +68,9 @@
   background: url(../../assets/arrow-more.png) no-repeat;
   background-position: center center;
   background-size: contain;
-  font-size: 12px;
-  width: 12px;
-  height: 23px;
-  padding-left: 12px;
-  margin-left: 16px;
+  font-size: 12rem;
+  width: 12rem;
+  height: 23rem;
+  padding-left: 12rem;
+  margin-left: 16rem;
 }

@@ -4,9 +4,9 @@ import './SignUpArtist.css'
 
 function SignUpArtist() {
   return (
-    <div className="sign-general">
+    <div className="sign-artist">
       <Header />
-      <section className="container sign-general-container">
+      <section className="container sign-artist-container">
         <div className="artist-content">
           <div className="general-item">
             <h2 className="general-title">아이디</h2>

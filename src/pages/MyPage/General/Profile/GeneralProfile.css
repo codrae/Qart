@@ -1,26 +1,27 @@
 .general-profile {
-  height: calc(100% - 347px - 455px); /* header,footer 빼고 */
-  border-bottom: 1px solid #e0e0e0;
+  min-height: calc(100% - 347rem - 455rem); /* header,footer 빼고 */
+  min-width: 1920rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .g-profile-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 1378px;
-  /* border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0; */
+  width: 1378rem;
+  /* border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0; */
   box-sizing: border-box;
 }
 .g-profile-list {
-  padding: 0 51px;
+  padding: 0 51rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .g-profile-list li {
-  width: 596px;
-  padding-top: 70px;
+  width: 596rem;
+  padding-top: 70rem;
 }
 .g-profile-list li h2 {
   display: block;
@@ -30,58 +31,58 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 41px;
+  font-size: 28rem;
+  line-height: 41rem;
 
   color: #222222;
 
-  padding-bottom: 16px;
+  padding-bottom: 16rem;
 }
 .g-profile-input {
-  width: 596px;
-  height: 72px;
+  width: 596rem;
+  height: 72rem;
 
   background: #ffffff;
-  border: 1px solid #cccccc;
-  border-radius: 2px;
+  border: 1rem solid #cccccc;
+  border-radius: 2rem;
 
   outline: none;
   box-sizing: border-box;
 
   font-weight: 500;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
-  padding-left: 20px;
+  padding-left: 20rem;
 }
 .g-profile-password {
   display: flex;
   flex-direction: row;
 }
 .g-profile-password input {
-  width: calc(596px - 72px);
+  width: calc(596rem - 72rem);
   border-right: hidden;
 }
 .g-profile-password .password__icon {
-  width: 72px;
-  height: 72px;
+  width: 72rem;
+  height: 72rem;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border-left: none;
 }
 .g-profile-button {
-  width: 482px;
-  height: 90px;
+  width: 482rem;
+  height: 90rem;
   background: #000000;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 24rem;
+  line-height: 35rem;
 
   color: #ffffff;
 
-  margin: 70px 0;
+  margin: 70rem 0;
   border: none;
 }

@@ -4,21 +4,21 @@
 }
 .drop-select,
 .show-drop-list li {
-  width: 248px;
-  height: 72px;
+  width: 248rem;
+  height: 72rem;
 
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
   background-color: #ffffff;
 
-  padding-left: 20px;
-  padding-bottom: 2px;
+  padding-left: 20rem;
+  padding-bottom: 2rem;
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
   /* identical to box height */
 
   display: flex;
@@ -31,19 +31,19 @@
   box-sizing: border-box;
 }
 .show-drop-list li {
-  width: 240px;
+  width: 240rem;
 }
 .drop-select:after {
   /* position: absolute; */
   content: '';
   background: url('../../assets/arrow_down.png') no-repeat center;
-  background-size: 16px 9px;
-  width: 16px;
+  background-size: 16rem 9rem;
+  width: 16rem;
   height: 100%;
   /* display: inline-block; */
   position: absolute;
   top: 0;
-  right: 23.31px;
+  right: 23.31rem;
 }
 
 .drop-list {
@@ -52,13 +52,13 @@
 .show-drop-list {
   display: block;
   position: absolute;
-  border: 1px solid #e0e0e0;
+  border: 1rem solid #e0e0e0;
   z-index: 222;
-  margin-top: 8px;
+  margin-top: 8rem;
 }
 .show-drop-list li {
   border: none;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
   position: relative;
   z-index: 222 !important;
 }

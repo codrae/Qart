@@ -82,8 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  /* font: inherit; */
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -131,7 +130,7 @@ a {
   overflow: hidden;
   font-size: 0;
   line-height: 0;
-  text-indent: -9999px;
+  text-indent: -9999rem;
 }
 button {
   padding: 0;

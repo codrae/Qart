@@ -20,9 +20,9 @@ function SignUpAgency() {
     setFile(fileName)
   }
   return (
-    <div className="sign-general">
+    <div className="sign-agency">
       <Header />
-      <section className="container sign-general-container">
+      <section className="container sign-agency-container">
         <div className="artist-content agency-content pt-89">
           <div className="general-item">
             <h2 className="general-title">아이디</h2>
@@ -117,7 +117,7 @@ function SignUpAgency() {
             </div>
           </div>
         </div>
-        <div className="artist-content" style={{ paddingTop: '60px' }}>
+        <div className="artist-content" style={{ paddingTop: '60rem' }}>
           <div className="pb-26">
             <h2 className="general-title">기관 이메일</h2>
             <div className="email-input-container">
@@ -147,7 +147,7 @@ function SignUpAgency() {
             </div>
           </div>
         </div>
-        <div className="artist-option" style={{ paddingTop: '118px' }}>
+        <div className="artist-option" style={{ paddingTop: '118rem' }}>
           <label className="login-option">
             <input type="checkbox" />
             <span className="login-option__check" />

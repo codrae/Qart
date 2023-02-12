@@ -2,33 +2,33 @@
   height: 100%;
 }
 .g-like-slider {
-  height: calc(100% - 347px - 455px); /* header,footer 빼고 */
-  border-bottom: 1px solid #e0e0e0;
+  height: calc(100% - 347rem - 455rem); /* header,footer 빼고 */
+  border-bottom: 1rem solid #e0e0e0;
 }
 .g-like-slider .drop-container {
   display: none;
 }
 .g-like-slider .slider__item {
-  padding-bottom: 70px;
+  padding-bottom: 70rem;
   position: relative;
 }
 .g-like-slider .slider__item .like {
   position: absolute;
-  top: 25.25px;
-  left: 340.28px;
-  width: 36px;
-  height: 32px;
+  top: 25.25rem;
+  left: 340.28rem;
+  width: 36rem;
+  height: 32rem;
   background: url('../../../assets/heart-active-icon.png') no-repeat center;
-  background-size: 35.44px 31.5px;
+  background-size: 35.44rem 31.5rem;
   border: none;
 }
 .g-like-slider .slider__item img {
-  width: 398px;
-  margin-left: 2px;
+  width: 398rem;
+  margin-left: 2rem;
 
-  height: 430px;
+  height: 430rem;
 
-  border: 1px solid #f2f2f2;
+  border: 1rem solid #f2f2f2;
   box-sizing: border-box;
   object-fit: contain;
 }
@@ -36,8 +36,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   /* identical to box height */
 
   display: flex;
@@ -45,15 +45,15 @@
 
   color: #000000;
 
-  padding-top: 20px;
-  margin-left: 1px;
+  padding-top: 20rem;
+  margin-left: 1rem;
 }
 .g-like-slider .slider__item h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   /* identical to box height */
 
   display: flex;
@@ -63,28 +63,28 @@
 
   color: #bdbdbd;
 
-  padding-top: 12px;
-  margin-left: 1px;
+  padding-top: 12rem;
+  margin-left: 1rem;
 }
 .g-like-slider .art-d-header-container {
-  height: 160px;
+  height: 160rem;
   align-items: initial;
 }
 .g-like-slider .art-d-header__info {
-  padding-top: 70px;
+  padding-top: 70rem;
 }
 .g-like-slider .art-d .art-d-slider {
-  height: 1924px;
+  height: 1924rem;
 }
 .g-like-slider.art-d .art-d-slider__list {
-  height: 1924px;
+  height: 1924rem;
 }
 .g-like-slider .art-d .art-d-slider .slick-dots {
-  top: calc(1813px - 20px);
+  top: calc(1813rem - 20rem);
 }
 .g-like-slider .art-d .art-d-slider__list .slick-first,
 .g-like-slider .art-d .art-d-slider__list .slick-last,
 .g-like-slider .art-d .art-d-slider__list .slick-prev,
 .g-like-slider .art-d .art-d-slider__list .slick-next {
-  top: 1813px;
+  top: 1813rem;
 }

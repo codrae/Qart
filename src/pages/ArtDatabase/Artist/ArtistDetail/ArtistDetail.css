@@ -1,20 +1,20 @@
 .artist-detail {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .artist-detail .work-header {
   background: #fbfbfb;
 }
 .artist-detail .art-detail__image {
-  width: 240px;
-  height: 240px;
+  width: 240rem;
+  height: 240rem;
   border-radius: 50%;
   object-fit: cover;
 }
 .artist-detail .art-detail__list {
-  width: calc(100% - 240px);
+  width: calc(100% - 240rem);
 }
 .artist-detail .art-detail__list li:first-child {
-  padding-top: 30px;
+  padding-top: 30rem;
 }
 .artist-detail .art-detail__profile {
   display: none;
@@ -23,47 +23,47 @@
   display: none;
 }
 .artist-detail-info {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .artist-detail-info ul {
-  padding: 0 320px;
-  padding-top: 59px;
-  padding-bottom: 80px;
+  padding: 0 320rem;
+  padding-top: 59rem;
+  padding-bottom: 80rem;
   display: flex;
   flex-direction: row;
 }
 .artist-d-item {
-  padding-right: 40px;
+  padding-right: 40rem;
 }
 .artist-d-item:last-child {
   padding-right: 0;
 }
 .artist-d-item img {
-  width: 400px;
-  height: 400px;
+  width: 400rem;
+  height: 400rem;
   object-fit: cover;
 }
 .artist-d-item h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   color: #000000;
 
-  padding-top: 24px;
+  padding-top: 24rem;
 }
 .artist-d-item p {
-  width: 400px;
-  height: 132px;
-  margin-top: 20px;
+  width: 400rem;
+  height: 132rem;
+  margin-top: 20rem;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   color: #333333;
 
@@ -76,44 +76,44 @@
   word-break: keep-all;
 }
 .artist-d-page-slide {
-  width: 1378px;
+  width: 1378rem;
   box-sizing: border-box;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 }
 .artist-detail .page-slider {
-  height: 2052px;
+  height: 2052rem;
 }
 .artist-detail .page-slider__list {
-  padding: 0 49px;
+  padding: 0 49rem;
 }
 .artist-detail .page-slider__item {
-  width: 400px !important;
-  padding-bottom: 78px;
-  margin-right: 40px;
+  width: 400rem !important;
+  padding-bottom: 78rem;
+  margin-right: 40rem;
 }
 .artist-detail .page-slider__item:nth-child(3) {
   margin-right: 0;
 }
 .artist-detail .page-item-image {
-  width: 400px;
-  height: 430px;
+  width: 400rem;
+  height: 430rem;
   object-fit: contain;
-  border: 1px solid #f2f2f2;
+  border: 1rem solid #f2f2f2;
   box-sizing: border-box;
-  margin-bottom: 38px;
+  margin-bottom: 38rem;
 }
 .artist-detail .page-item-author {
   font-weight: 400;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   border-bottom: none;
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .artist-detail .page-item-email {
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
   color: #bdbdbd;
 
   padding-top: 0;
@@ -123,21 +123,21 @@
   display: none;
 }
 .artist-detail .page-slider .slick-dots {
-  top: calc(1945px - 20px);
+  top: calc(1945rem - 20rem);
 }
 .artist-detail .page-slider__list .slick-first,
 .artist-detail .page-slider__list .slick-last,
 .artist-detail .page-slider__list .slick-prev,
 .artist-detail .page-slider__list .slick-next {
-  top: 1945px;
-  left: 472px;
+  top: 1945rem;
+  left: 472rem;
 }
 .artist-detail .page-slider__list .slick-next {
-  left: calc(472px + 296px);
+  left: calc(472rem + 296rem);
 }
 .artist-detail .page-slider__list .slick-first {
-  left: calc(472px + 9px);
+  left: calc(472rem + 9rem);
 }
 .artist-detail .page-slider__list .slick-last {
-  left: calc(472px + 296px + 89px);
+  left: calc(472rem + 296rem + 89rem);
 }

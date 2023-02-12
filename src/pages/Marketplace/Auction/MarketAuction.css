@@ -1,24 +1,24 @@
 .market-auction {
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1rem solid #bdbdbd;
 }
 .market-auction .upcoming-auction-item {
-  width: 620px !important;
+  width: 620rem !important;
 }
 .market-auction .art-d-header-container {
-  height: 205px;
+  height: 205rem;
 }
 .market-auction .art-d .art-d-slider {
-  height: 1734px;
+  height: 1734rem;
 }
 .market-auction .art-d .art-d-slider__list {
-  height: 1734px;
+  height: 1734rem;
 }
 .market-auction .art-d .art-d-slider .slick-dots {
-  top: calc(1557px - 20px);
+  top: calc(1557rem - 20rem);
 }
 .market-auction .art-d .art-d-slider__list .slick-first,
 .market-auction .art-d .art-d-slider__list .slick-last,
 .market-auction .art-d .art-d-slider__list .slick-prev,
 .market-auction .art-d .art-d-slider__list .slick-next {
-  top: 1557px;
+  top: 1557rem;
 }

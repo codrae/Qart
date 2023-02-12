@@ -89,7 +89,7 @@ function MyPageGeneral() {
         <span>{item[i].buy}</span>
         <span>{item[i].date}</span>
         <span>{item[i].price}</span>
-        <button className="">{item[i].state}</button>
+        <button className="delivery-status">{item[i].state}</button>
       </Link>
     )
   }

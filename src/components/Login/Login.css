@@ -1,68 +1,69 @@
 .login-main {
   width: 100%;
-  min-width: 1920px;
+  min-width: 1920rem;
   height: 100%;
 }
 .login-container {
-  width: 1378px;
-  height: calc(100% - 100px);
-  border-left: 1px solid #bdbdbd;
-  border-right: 1px solid #bdbdbd;
+  width: 1378rem;
+  height: calc(100% - 100rem);
+  border-left: 1rem solid #bdbdbd;
+  border-right: 1rem solid #bdbdbd;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 .login-container h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
 
-  padding-top: 130px;
-  padding-bottom: 45px;
+  padding-top: 130rem;
+  padding-bottom: 45rem;
 }
 .login-form {
   display: flex;
   flex-direction: column;
 }
 .login-input {
-  width: 574px;
-  height: 68px;
+  width: 574rem;
+  height: 68rem;
   background: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
 
   padding: 0;
-  margin-bottom: 16px;
-  font-size: 20px;
-  padding-left: 24px;
+  margin-bottom: 16rem;
+  font-size: 20rem;
+  padding-left: 24rem;
   border-radius: 0;
   box-sizing: content-box;
 }
 .login-password {
-  width: 600px;
-  height: 68px;
+  width: 600rem;
+  height: 68rem;
 
   display: flex;
   flex-direction: row;
 
-  margin-bottom: 16px;
+  margin-bottom: 16rem;
 }
 .login-password .login-input {
-  width: calc(600px - 60px);
+  width: calc(600rem - 60rem);
   height: 100%;
   border-right: none;
   box-sizing: content-box;
 }
 .password__icon {
   display: block;
-  width: 60px;
+  width: 60rem;
   height: 100%;
   background: url('../../assets/password.png') no-repeat center;
-  background-size: 28px 28px;
+  background-size: 28rem 28rem;
 
-  border: 1px solid #cccccc;
+  border: 1rem solid #cccccc;
   border-left: none;
   box-sizing: content-box;
 }
@@ -70,21 +71,21 @@
   outline: none;
 }
 .login-input:focus {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
 }
 .login-password .login-input:focus {
   border-right: none;
 }
 .login-input:focus + .password__icon {
-  border: 1px solid #222222;
+  border: 1rem solid #222222;
   border-left: none;
 }
 .login-form input::-webkit-input-placeholder {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #bdbdbd;
 }
@@ -104,35 +105,35 @@ input[type='checkbox'] {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #828282;
 }
 .login-option__check {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 20rem;
+  height: 20rem;
   background: url('../../assets/login_check.png') no-repeat center;
   background-size: contain;
 
-  margin-right: 11px;
+  margin-right: 11rem;
 }
 input[type='checkbox']:checked + .login-option__check {
   background: url('../../assets/login_check_color.png') no-repeat center;
   background-size: contain;
 }
 .login-button {
-  margin-top: 40px;
-  width: 596px;
-  height: 80px;
+  margin-top: 40rem;
+  width: 596rem;
+  height: 80rem;
   background: #bdbdbd;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 80px;
+  font-size: 24rem;
+  line-height: 80rem;
 
   color: #ffffff;
   border: none;
@@ -142,7 +143,7 @@ input[type='checkbox']:checked + .login-option__check {
   background: #222222;
 }
 .login-more {
-  padding-top: 56px;
+  padding-top: 56rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -152,58 +153,58 @@ input[type='checkbox']:checked + .login-option__check {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
+  font-size: 20rem;
+  line-height: 29rem;
 
   color: #828282;
 }
 .login-more span {
   display: block;
-  width: 3px;
-  height: 18px;
+  width: 3rem;
+  height: 18rem;
 
   background: #d9d9d9;
 
-  margin: 0 24px;
-  margin-top: 3px;
+  margin: 0 24rem;
+  margin-top: 3rem;
 }
 .login-link {
-  margin-top: 108px;
+  margin-top: 108rem;
 
   display: flex;
   flex-direction: row;
 }
 .login-link__icon {
-  width: 100px;
-  height: 100px;
+  width: 100rem;
+  height: 100rem;
   border-radius: 50%;
   background: url('../../assets/login_google.png') no-repeat center;
-  background-size: 100px 100px;
-  margin-right: 40px;
+  background-size: 100rem 100rem;
+  margin-right: 40rem;
   cursor: pointer;
 }
 .login-link__icon:nth-child(2) {
   background: url('../../assets/login_kakao.png') no-repeat center #f2c94c;
-  background-size: 57.52px 57.52px;
+  background-size: 57.52rem 57.52rem;
 }
 .login-link__icon:nth-child(3) {
   background: url('../../assets/login_facebook.png') no-repeat center #2f80ed;
-  background-size: 24.26px 45.6px;
+  background-size: 24.26rem 45.6rem;
 }
 .login-link__icon:nth-child(4) {
   background: url('../../assets/login_apple.png') no-repeat center #d9d9d9;
-  background-size: 39.81px 47.26px;
+  background-size: 39.81rem 47.26rem;
   margin-right: 0;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .login-main {
     width: 100%;
-    min-width: 360px;
+    min-width: 360rem;
     height: 100%;
   }
   .login-container {
-    width: 360px;
-    height: calc(100% - 100px);
+    width: 360rem;
+    height: calc(100% - 100rem);
     border: none;
 
     display: flex;
@@ -211,45 +212,45 @@ input[type='checkbox']:checked + .login-option__check {
     align-items: center;
   }
   .login-container h1 {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 24rem;
+    line-height: 28rem;
 
-    padding-top: 28px;
-    padding-bottom: 20px;
+    padding-top: 28rem;
+    padding-bottom: 20rem;
   }
   .login-form {
     display: flex;
     flex-direction: column;
   }
   .login-input {
-    width: 304px;
-    height: 48px;
+    width: 304rem;
+    height: 48rem;
     background: #ffffff;
-    border: 1px solid #cccccc;
+    border: 1rem solid #cccccc;
 
-    margin-bottom: 16px;
-    font-size: 14px;
-    padding-left: 16px;
+    margin-bottom: 16rem;
+    font-size: 14rem;
+    padding-left: 16rem;
   }
 
   .login-password {
-    width: 322px;
-    height: 48px;
-    margin-bottom: 16px;
+    width: 322rem;
+    height: 48rem;
+    margin-bottom: 16rem;
   }
   .login-password .login-input {
-    width: calc(320px - 60px);
+    width: calc(320rem - 60rem);
     height: 100%;
     border-right: none;
   }
   .password__icon {
     display: block;
-    width: 60px;
-    height: 48px;
+    width: 60rem;
+    height: 48rem;
     background: url('../../assets/password.png') no-repeat center;
-    background-size: 14.67px 12.77px;
+    background-size: 14.67rem 12.77rem;
 
-    border: 1px solid #cccccc;
+    border: 1rem solid #cccccc;
     border-left: none;
   }
   .login-form input:focus {
@@ -257,8 +258,8 @@ input[type='checkbox']:checked + .login-option__check {
   }
   .login-form input::-webkit-input-placeholder {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14rem;
+    line-height: 20rem;
   }
 
   input[type='checkbox'] {
@@ -268,75 +269,75 @@ input[type='checkbox']:checked + .login-option__check {
   }
   .login-option {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 14rem;
+    line-height: 20rem;
 
     color: #828282;
   }
   .login-option__check {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 16rem;
+    height: 16rem;
     background: url('../../assets/login_check.png') no-repeat center;
     background-size: contain;
 
-    margin-right: 4px;
+    margin-right: 4rem;
   }
   .login-button {
-    margin-top: 36px;
-    width: 320px;
-    height: 54px;
+    margin-top: 36rem;
+    width: 320rem;
+    height: 54rem;
 
-    font-size: 20px;
-    line-height: 29px;
+    font-size: 20rem;
+    line-height: 29rem;
   }
   .login-button:active {
     background: #222222;
   }
   .login-more {
-    padding-top: 32px;
+    padding-top: 32rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   .login-more a {
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 12rem;
+    line-height: 17rem;
   }
   .login-more span {
     display: block;
-    width: 1px;
-    height: 13px;
+    width: 1rem;
+    height: 13rem;
 
     background: #d9d9d9;
 
-    margin: 0 6px;
-    margin-top: 2px;
+    margin: 0 6rem;
+    margin-top: 2rem;
   }
   .login-link {
-    margin-top: 95px;
+    margin-top: 95rem;
 
     display: flex;
     flex-direction: row;
   }
   .login-link__icon {
-    width: 63px;
-    height: 63px;
+    width: 63rem;
+    height: 63rem;
     background: url('../../assets/login_google.png') no-repeat center;
-    background-size: 63px 63px;
-    margin-right: 8px;
+    background-size: 63rem 63rem;
+    margin-right: 8rem;
   }
   .login-link__icon:nth-child(2) {
     background: url('../../assets/login_kakao.png') no-repeat center #f2c94c;
-    background-size: 36.24px 33.22px;
+    background-size: 36.24rem 33.22rem;
   }
   .login-link__icon:nth-child(3) {
     background: url('../../assets/login_facebook.png') no-repeat center #2f80ed;
-    background-size: 15.28px 28.73px;
+    background-size: 15.28rem 28.73rem;
   }
   .login-link__icon:nth-child(4) {
     background: url('../../assets/login_apple.png') no-repeat center #d9d9d9;
-    background-size: 25.08px 29.77px;
+    background-size: 25.08rem 29.77rem;
     margin-right: 0;
   }
 }

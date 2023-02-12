@@ -9,10 +9,10 @@
   height: inherit;
 }
 .market-main .art-topic--sub .art-topic-item {
-  height: 457px;
+  height: 457rem;
 }
 .market-main .art-topic--sub .art-topic-item:first-child {
-  margin-bottom: 40px;
+  margin-bottom: 40rem;
 }
 .market-main .art-topic-item:hover .art-topic__hover {
   position: absolute;
@@ -29,67 +29,67 @@
 }
 
 .market-main .art-topic-item--title {
-  padding-top: 12px;
+  padding-top: 12rem;
   font-weight: 400;
 }
 .market-main .art-topic-item--author {
-  padding-top: 12px;
+  padding-top: 12rem;
   font-weight: 700;
 }
 
 .market-main .art-topic__hover h2 {
   font-family: 'Roboto';
   font-style: normal;
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 28rem;
+  line-height: 33rem;
 
   color: #ffffff;
 }
 .market-main .art-topic-item--price {
   font-family: 'Roboto';
   font-style: normal;
-  padding-top: 32px;
+  padding-top: 32rem;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   color: #59a0ff;
 }
 
 .market-main .big-top-arrow {
-  height: 980px;
+  height: 980rem;
 }
 .market-main .big-top-arrow-slider {
-  padding-bottom: 100px;
+  padding-bottom: 100rem;
 }
 .market-main .big-top-arrow .slider__item {
   height: inherit;
 }
 .market-main .big-top-arrow .slider__item h4 {
-  padding-bottom: 12px;
+  padding-bottom: 12rem;
 }
 .market-item {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 400px;
+  width: 400rem;
 }
 .market-item--price {
-  padding-top: 20px;
+  padding-top: 20rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   color: #2f80ed;
   display: block;
 }
 .market-item--heart {
-  height: 29.05px;
-  width: 31.67px;
+  height: 29.05rem;
+  width: 31.67rem;
   background: url('../../../assets/heart-icon.png') no-repeat;
   background-size: contain;
-  margin-top: 20px;
+  margin-top: 20rem;
   border: none;
   cursor: pointer;
 }
@@ -107,35 +107,35 @@
 .market-main .work-header__info h4 {
   display: block;
   order: 1;
-  height: 147px;
-  padding-top: 66px;
+  height: 147rem;
+  padding-top: 66rem;
   box-sizing: border-box;
 }
 
 .market-main .work-header__info h2 {
   order: 0;
   display: block;
-  height: 147px;
-  padding-top: 57px;
-  padding-right: 16px;
+  height: 147rem;
+  padding-top: 57rem;
+  padding-right: 16rem;
   box-sizing: border-box;
 }
 
 .art-tok {
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-  height: 955px;
+  border-top: 1rem solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
+  height: 955rem;
 }
 .art-tok .container {
   display: flex;
   flex-direction: row;
 }
 .art-tok-main {
-  width: 1270px;
-  height: 628px;
+  width: 1270rem;
+  height: 628rem;
 
-  margin-top: 80px;
-  margin-right: 40px;
+  margin-top: 80rem;
+  margin-right: 40rem;
 }
 .art-tok-main img {
   width: 100%;
@@ -145,26 +145,26 @@
 }
 .art-tok-info {
   position: absolute;
-  top: 435px;
-  left: 917px;
+  top: 435rem;
+  left: 917rem;
 }
 .art-tok-info h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
 
   color: #ffffff;
-  padding-bottom: 11px;
+  padding-bottom: 11rem;
 }
 .art-tok-info p {
-  width: 289px;
+  width: 289rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 16rem;
+  line-height: 26rem;
 
   letter-spacing: -0.05em;
 
@@ -172,16 +172,16 @@
 }
 .art-tok-info a {
   display: block;
-  width: 152px;
-  height: 48px;
+  width: 152rem;
+  height: 48rem;
 
-  border: 2px solid #ffffff;
+  border: 2rem solid #ffffff;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 16rem;
+  line-height: 19rem;
   /* identical to box height */
 
   display: flex;
@@ -191,32 +191,32 @@
 
   color: #ffffff;
 
-  margin-top: 40px;
+  margin-top: 40rem;
 }
 .art-tok-sub {
-  width: 290px;
-  height: 628px;
+  width: 290rem;
+  height: 628rem;
 
-  padding-top: 80px;
+  padding-top: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .art-tok-sub img {
-  width: 290px;
-  height: 290px;
+  width: 290rem;
+  height: 290rem;
   margin: 0;
   padding: 0;
 }
 .market-main .art-md--content__list {
-  padding-bottom: 60px;
+  padding-bottom: 60rem;
 }
 .upcoming-auction-item {
-  width: 620px;
-  height: 328px;
+  width: 620rem;
+  height: 328rem;
   position: relative;
-  margin-right: 38px;
-  margin-bottom: 40px;
+  margin-right: 38rem;
+  margin-bottom: 40rem;
 }
 
 .upcoming-auction-item:nth-child(2n) {
@@ -229,21 +229,21 @@
 }
 .upcoming-auction-info {
   position: absolute;
-  top: 20px;
-  left: 24px;
+  top: 20rem;
+  left: 24rem;
 }
 .upcoming-auction--date {
   display: block;
-  width: 353px;
-  height: 49px;
+  width: 353rem;
+  height: 49rem;
 
   background: #000000;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 20rem;
+  line-height: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,13 +252,13 @@
   color: #ffffff;
 }
 .upcoming-auction--title {
-  padding-top: 150px;
-  padding-bottom: 8px;
+  padding-top: 150rem;
+  padding-bottom: 8rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 32rem;
+  line-height: 38rem;
   /* identical to box height */
 
   display: flex;
@@ -270,8 +270,8 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 20rem;
+  line-height: 27rem;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;

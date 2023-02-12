@@ -1,8 +1,8 @@
 .section-header {
   width: 100%;
   background: none;
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
+  border-top: 1rem solid #e0e0e0;
+  border-bottom: 1rem solid #e0e0e0;
 
   position: relative;
   z-index: 0;
@@ -11,12 +11,12 @@
   display: flex;
   justify-content: space-between;
   height: 100%;
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 }
 .section-header-container {
   height: 100%;
-  width: 1378px;
+  width: 1378rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,67 +26,67 @@
 .section-header h3 {
   display: flex;
   align-items: center;
-  height: 102px;
+  height: 102rem;
   width: 100%;
   text-align: left;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 36rem;
+  line-height: 42rem;
 
   color: #000000;
-  padding-left: 49px;
+  padding-left: 49rem;
   box-sizing: border-box;
 }
 .section-header-list {
-  border-top: 1px solid #e0e0e0;
-  height: 81px;
+  border-top: 1rem solid #e0e0e0;
+  height: 81rem;
   box-sizing: border-box;
-  padding: 0 49px;
+  padding: 0 49rem;
 
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 49px;
+  padding-left: 49rem;
 }
 .section-header--item {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 24rem;
+  line-height: 33rem;
 
   color: #828282;
 
-  padding-right: 80px;
+  padding-right: 80rem;
   cursor: pointer;
 }
 .section-header--item .active {
   font-weight: 700;
   color: #333333;
 }
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .section-header {
-    min-width: 360px;
-    height: 43px;
-    border-top: 0.5px solid #828282;
-    border-bottom: 0.5px solid #828282;
+    min-width: 360rem;
+    height: 43rem;
+    border-top: 0.5rem solid #828282;
+    border-bottom: 0.5rem solid #828282;
   }
   .section-header h2 {
-    width: calc(100% - 20px);
-    padding-left: 20px;
-    font-size: 20px;
-    line-height: 23px;
+    width: calc(100% - 20rem);
+    padding-left: 20rem;
+    font-size: 20rem;
+    line-height: 23rem;
   }
   .section-header h4 {
-    width: calc(100% - 20px);
-    padding-left: 20px;
-    font-size: 12px;
-    line-height: 16px;
-    padding-bottom: 4px;
+    width: calc(100% - 20rem);
+    padding-left: 20rem;
+    font-size: 12rem;
+    line-height: 16rem;
+    padding-bottom: 4rem;
   }
   .section-header span {
     display: none;

@@ -19,7 +19,7 @@ function BannerSlide(props) {
         style={{
           width: '100%',
           position: 'absolute',
-          bottom: '21px',
+          bottom: '21rem',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
