@@ -1,0 +1,61 @@
+.mypage-gallery {
+  height: 100%;
+}
+.table-header-title {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.table-header-title a {
+  width: 240rem;
+  height: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.th-title-select h1 {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28rem;
+  line-height: 33rem;
+
+  color: #000000;
+
+  padding-top: 62rem;
+  padding-bottom: 14rem;
+}
+.th-title-select span {
+  display: block;
+  background: #000000;
+  border-radius: 0rem;
+  width: 240rem;
+  height: 6rem;
+}
+/* 선택되지 않은 경우 */
+.th-title-select:last-child h1 {
+  color: #bdbdbd;
+}
+.th-title-select:last-child span {
+  background: #f2f2f2;
+}
+.ps-item__button {
+  width: 149rem;
+  height: 48rem;
+  border: 1px solid #2f80ed;
+  border-radius: 2rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2f80ed;
+  background: none;
+  margin-left: 60rem;
+}

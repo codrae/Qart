@@ -1,0 +1,74 @@
+.gallery-exhibition {
+  height: 100%;
+  min-height: 1352rem;
+}
+.gallery-exhibition .header-small-list a.active {
+  color: #222222;
+}
+.gallery-exhibition .a-ex-edit-info {
+  padding-top: 50rem;
+  height: inherit;
+}
+.gallery-exhibition .date-input {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+}
+.gallery-exhibition .gp-edit-image {
+  width: 100%;
+  height: 448rem;
+  box-sizing: border-box;
+  border-bottom: 1rem solid #e0e0e0;
+}
+.gallery-exhibition .gp-edit-image .container {
+  width: 1378rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+
+  padding: 45rem 620rem 78rem 49rem;
+}
+.gallery-exhibition .gp-edit-image h2 {
+  width: 387rem;
+  height: 72rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 35rem;
+  color: #222222;
+}
+.gallery-exhibition .gp-edit-image form {
+  width: 322rem;
+}
+.gallery-exhibition .a-ex-edit-info {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.gallery-exhibition .a-ex-edit-info > li {
+  padding-left: 49rem;
+}
+.gallery-exhibition .a-exhibition-content {
+  height: 1447rem;
+}
+.gallery-exhibition .footer__menu {
+  border-top: 1rem solid #e0e0e0;
+}
+
+.gallery-exhibition .a-ex-edit--button {
+  padding-top: 109rem;
+}
+.gallery-exhibition .date-input {
+  width: 280rem;
+}

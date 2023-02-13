@@ -1,0 +1,61 @@
+.ma-nft-add {
+  height: 100%;
+  min-width: 1920rem;
+}
+.ma-nft-add .search__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ma-nft-add .ad-haeder__route {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 28rem;
+  display: flex;
+  align-items: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  padding-bottom: 8rem;
+}
+.ma-nft-content {
+  height: calc(100% - 247rem - 455rem);
+}
+.ma-nft-content .container {
+  width: 1378rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+}
+.ma-nft-content button {
+  width: 290rem;
+  height: 80rem;
+
+  background: #000000;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 35rem;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+.ma-nft-add .footer__menu {
+  border-top: 1rem solid #e0e0e0;
+}

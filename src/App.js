@@ -39,6 +39,12 @@ import ArtistArchive from './pages/MyPage/Artist/MyArchive/ArtistArchive'
 import MyWorkAdd from './pages/MyPage/Artist/MyArchive/Work/MyWorkAdd'
 import MyArticleAdd from './pages/MyPage/Artist/MyArchive/Article/MyArticleAdd'
 import MyNftAdd from './pages/MyPage/Artist/MyArchive/Nft/MyNftAdd'
+import MyPageGallery from './pages/MyPage/Gallery/MyPageGallery'
+import GalleryProfileEdit from './pages/MyPage/Gallery/Profile/GalleryProfileEdit'
+import GalleryExhibition from './pages/MyPage/Gallery/Profile/GalleryExhibition'
+import GalleryTeam from './pages/MyPage/Gallery/Profile/GalleryTeam'
+import GalleryAgency from './pages/MyPage/Gallery/Profile/GalleryAgency'
+import GalleryArchive from './pages/MyPage/Gallery/MyArchive/GalleryArchive'
 function App() {
   return (
     <BrowserRouter>
@@ -182,6 +188,7 @@ function App() {
         {/* 마이페이지 */}
         <Route path="/mypage/general" element={<MyPageGeneral />}></Route>
         <Route path="/mypage/artist" element={<MyPageArtist />}></Route>
+        <Route path="/mypage/gallery" element={<MyPageGallery />}></Route>
         <Route
           path="/mypage/artist/exhibition"
           element={<ArtistExhibition />}
@@ -200,6 +207,24 @@ function App() {
           element={<MyArticleAdd />}
         ></Route>
         <Route path="/mypage/artist/archive/nft" element={<MyNftAdd />}></Route>
+
+        <Route
+          path="/mypage/gallery/profile"
+          element={<GalleryProfileEdit />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/exhibition"
+          element={<GalleryExhibition />}
+        ></Route>
+        <Route path="/mypage/gallery/team" element={<GalleryTeam />}></Route>
+        <Route
+          path="/mypage/gallery/agency"
+          element={<GalleryAgency />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/archive"
+          element={<GalleryArchive />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   )

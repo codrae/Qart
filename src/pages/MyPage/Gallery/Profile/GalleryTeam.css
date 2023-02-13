@@ -1,0 +1,56 @@
+.gallery-team {
+  height: 100%;
+}
+.gallery-team .header-small-list a.active {
+  color: #222222;
+}
+.gallery-team-content .container {
+  width: 1378rem;
+
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+}
+.gallery-team-content {
+  border-bottom: 1rem solid #e0e0e0;
+  min-height: calc(100% - 347rem - 455rem);
+}
+.gallery-team-content ul {
+  padding: 60rem 346rem 120rem 49rem;
+}
+.gallery-team-content li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 54rem;
+}
+.gallery-team-content li:last-child {
+  padding-bottom: 0;
+}
+.gallery-team-content li h2 {
+  width: 387rem;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gallery-team-content li input {
+  box-sizing: border-box;
+
+  width: 596rem;
+  height: 72rem;
+
+  background: #ffffff;
+  border: 1rem solid #cccccc;
+  padding-left: 4rem;
+}
+.gallery-team-content .a-ex-edit--button {
+  padding-bottom: 111rem;
+}
