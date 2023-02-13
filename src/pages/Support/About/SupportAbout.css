@@ -83,6 +83,12 @@
 
   padding: 0 60rem;
 }
+.as-content-02 .section-header h3 {
+  padding-left: 0;
+}
+.as-content-02 .section-header-container {
+  padding-left: 49rem;
+}
 .as-02-list__01 {
   font-size: 16rem;
   line-height: 22rem;
