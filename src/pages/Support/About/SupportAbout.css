@@ -1,0 +1,156 @@
+.support-about {
+  border-bottom: 1rem solid #e0e0e0;
+}
+.as-content-01 {
+  width: 100%;
+}
+.as-content-01 .container {
+  width: 1378rem;
+
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+}
+.as-content-01 ul {
+  padding-bottom: 80rem;
+}
+.as-content-01 li {
+  display: flex;
+  flex-direction: row;
+  height: 400rem;
+}
+.as-content-01 li .as-content-01__img {
+  width: 50%;
+  height: 100%;
+  background: url('../../../assets/support_01.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li:nth-child(2) .as-content-01__img {
+  background: url('../../../assets/support_02.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li:nth-child(3) .as-content-01__img {
+  background: url('../../../assets/support_03.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li:nth-child(4) .as-content-01__img {
+  background: url('../../../assets/support_04.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li:nth-child(5) .as-content-01__img {
+  background: url('../../../assets/support_05.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li:nth-child(6) .as-content-01__img {
+  background: url('../../../assets/support_06.png') no-repeat center;
+  background-size: contain;
+}
+.as-content-01 li .as-content-01__info--logo {
+  width: 50%;
+  height: 100%;
+  background: url('../../../assets/logo-black.png') no-repeat center;
+  background-size: 161.27rem 59rem;
+}
+.as-content-01 li .as-content-01__info {
+  width: 50%;
+  height: 100%;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40rem;
+  line-height: 54rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #000000;
+  padding: 0 30rem;
+  box-sizing: border-box;
+}
+.as-content-02 .container {
+  width: 1378rem;
+
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  color: #222222;
+
+  padding: 0 60rem;
+}
+.as-02-list__01 {
+  font-size: 16rem;
+  line-height: 22rem;
+
+  padding-top: 47rem;
+  padding-bottom: 90rem;
+}
+.as-02-list__01 > span {
+  display: block;
+  padding-bottom: 5rem;
+}
+.as-02-list__01 > span:last-child {
+  padding-bottom: 0;
+}
+.as-02-list__02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.as-02-list__02 > div {
+  width: 400rem;
+  height: 270rem;
+
+  background: #d9d9d9;
+  padding: 22rem 32rem 23rem 32rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+.as-02-list__02 > div > h2 {
+  font-size: 24rem;
+  line-height: 33rem;
+
+  color: #2f80ed;
+
+  padding-bottom: 32rem;
+}
+.as-02-list__02 > div > p {
+  font-size: 16rem;
+  line-height: 22rem;
+  text-align-last: left;
+  color: #222222;
+  padding-bottom: 6rem;
+}
+.as-02-list__02 > div > p:last-child {
+  padding-bottom: 0;
+}
+.as-02-list__03 {
+  padding-top: 78rem;
+  padding-bottom: 406rem;
+  padding-left: 330rem;
+}
+.as-02-list__03 > div {
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 46rem;
+}
+.as-02-list__03 > div > h3 {
+  font-size: 20rem;
+  line-height: 27rem;
+  display: block;
+  width: 142rem;
+}
+.as-02-list__03 > div > p {
+  width: 800rem;
+  font-size: 16rem;
+  line-height: 19rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

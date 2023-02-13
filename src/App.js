@@ -45,6 +45,11 @@ import GalleryExhibition from './pages/MyPage/Gallery/Profile/GalleryExhibition'
 import GalleryTeam from './pages/MyPage/Gallery/Profile/GalleryTeam'
 import GalleryAgency from './pages/MyPage/Gallery/Profile/GalleryAgency'
 import GalleryArchive from './pages/MyPage/Gallery/MyArchive/GalleryArchive'
+import SupportMain from './pages/Support/SupportMain'
+import SupportAbout from './pages/Support/About/SupportAbout'
+import SupportNotice from './pages/Support/Notice/SupportNotice'
+import SupportFAQ from './pages/Support/FAQ/SupportFAQ'
+import SupportInQuiry from './pages/Support/InQuiry/SuportInQuiry'
 function App() {
   return (
     <BrowserRouter>
@@ -138,7 +143,7 @@ function App() {
         <Route
           path="/market"
           element={
-            <Marketplace search={true}>
+            <Marketplace>
               <MarketMain />
             </Marketplace>
           }
@@ -146,7 +151,7 @@ function App() {
         <Route
           path="/market/all"
           element={
-            <Marketplace search={true} active={0}>
+            <Marketplace active={0}>
               <MarketAll />
             </Marketplace>
           }
@@ -154,7 +159,7 @@ function App() {
         <Route
           path="/market/:marketId"
           element={
-            <Marketplace search={false}>
+            <Marketplace>
               <MarketItem />
             </Marketplace>
           }
@@ -162,7 +167,7 @@ function App() {
         <Route
           path="/market/nft/:nftId"
           element={
-            <Marketplace search={false}>
+            <Marketplace>
               <MarketNftItem />
             </Marketplace>
           }
@@ -170,7 +175,7 @@ function App() {
         <Route
           path="/market/platform"
           element={
-            <Marketplace search={true} active={1}>
+            <Marketplace active={1}>
               <MarketPlatform />
             </Marketplace>
           }
@@ -224,6 +229,39 @@ function App() {
         <Route
           path="/mypage/gallery/archive"
           element={<GalleryArchive />}
+        ></Route>
+
+        <Route
+          path="/support"
+          element={
+            <SupportMain search={false} choice={0}>
+              <SupportAbout />
+            </SupportMain>
+          }
+        ></Route>
+        <Route
+          path="/support/notice"
+          element={
+            <SupportMain search={false} choice={1}>
+              <SupportNotice />
+            </SupportMain>
+          }
+        ></Route>
+        <Route
+          path="/support/faq"
+          element={
+            <SupportMain search={false} choice={2}>
+              <SupportFAQ />
+            </SupportMain>
+          }
+        ></Route>
+        <Route
+          path="/support/inquiry"
+          element={
+            <SupportMain search={false} choice={3}>
+              <SupportInQuiry />
+            </SupportMain>
+          }
         ></Route>
       </Routes>
     </BrowserRouter>
