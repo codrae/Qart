@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css'
@@ -56,28 +56,35 @@ function ArtDetail(props) {
       return props.divItem ? (
         item
       ) : (
-        <div key={i} className="art-d-slider__item">
-          <img
-            className="art-d-item-image"
-            src={require('../../' + item.info)}
-          ></img>
-          <h3>{item.author}</h3>
-          <h2>{item.title}</h2>
-          {item.sell ? (
-            <div className="nft-item">
-              <p>
-                <span className="nft-item-title">제작년도</span>
-                <span className="nft-item-created">{item.created}</span>
-              </p>
-              <p>
-                <span className="nft-item-title">판매</span>
-                <span className="nft-item-sell">{item.sell}</span>
-              </p>
-            </div>
-          ) : (
-            <h4>{item.date}</h4>
-          )}
-        </div>
+        <Link
+          to={'/market/nft/' + item.id}
+          state={{
+            item: item,
+          }}
+        >
+          <div key={i} className="art-d-slider__item">
+            <img
+              className="art-d-item-image"
+              src={require('../../' + item.info)}
+            ></img>
+            <h3>{item.author}</h3>
+            <h2>{item.title}</h2>
+            {item.sell ? (
+              <div className="nft-item">
+                <p>
+                  <span className="nft-item-title">제작년도</span>
+                  <span className="nft-item-created">{item.created}</span>
+                </p>
+                <p>
+                  <span className="nft-item-title">판매</span>
+                  <span className="nft-item-sell">{item.sell}</span>
+                </p>
+              </div>
+            ) : (
+              <h4>{item.date}</h4>
+            )}
+          </div>
+        </Link>
       )
     })
   }

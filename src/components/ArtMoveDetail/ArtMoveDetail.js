@@ -33,7 +33,7 @@ function ArtMoveDetail(props) {
         moreActive={props.moreActive}
         title_e={props.title_e}
         title_k={props.title_k}
-        move={'./work/detail'}
+        move={'./detail'}
         items={props.items}
       ></WorkHeader>
       <section className="art-md--content">

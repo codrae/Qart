@@ -169,6 +169,9 @@
   border: none;
   color: #ffffff;
 }
+.market-detail {
+  min-width: 1920rem;
+}
 .market-detail .art-detail-section {
   /* width: 100%; */
   display: flex;

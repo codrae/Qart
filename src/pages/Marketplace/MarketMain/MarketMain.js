@@ -126,6 +126,30 @@ function MarketMain() {
         title_k={'금주의 추천작'}
         items={bannerList}
       />
+      <section className="hot-click">
+        <WorkHeader title_k={'Hot Click!'} />
+        <div className="hot-click-content container">
+          <div className="hot-click-main">
+            <img
+              src={require('../../../qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png')}
+            ></img>
+          </div>
+          <div className="hot-click-sub">
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+            <img
+              src={require('../../../qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png')}
+            />
+          </div>
+        </div>
+      </section>
       <section className="art-tok">
         <WorkHeader
           title_e={'알고나니 더 좋아지는 아트'}

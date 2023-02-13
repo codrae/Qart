@@ -24,7 +24,11 @@ function Marketplace(props) {
   return (
     <div>
       <Header active="2" colored="black" />
-      <SearchHeader title="Marketplace" active={props.search} />
+      <SearchHeader
+        title="Marketplace"
+        active={props.search}
+        placeholder="작가, 작품, 기관을 검색하세요"
+      />
       <HeaderSmall
         moreList={moreList}
         active={props.search}

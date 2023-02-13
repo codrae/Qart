@@ -1,4 +1,5 @@
 .art-topic {
+  min-width: 1920rem;
   border-bottom: 1rem solid #e0e0e0;
 }
 .art-topic .container {

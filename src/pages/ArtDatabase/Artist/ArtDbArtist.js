@@ -48,7 +48,7 @@ function ArtDbArtist() {
       author: '김동선',
       author_e: 'Kim dongsun',
       link: '/artdb/artist',
-      email: '00000@naver.com',
+      email: '00.00.00 - 00.00.00',
     })
   }
 
@@ -77,7 +77,7 @@ function ArtDbArtist() {
   ]
 
   return (
-    <div>
+    <div className="artdb-artist">
       <BigTopArrow
         title_e={'Today’s Artists'}
         title_k={'오늘의 작가'}

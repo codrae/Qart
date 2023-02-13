@@ -1,9 +1,9 @@
-import React from "react";
-import Slider from "react-slick";
-import "../../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../../node_modules/slick-carousel/slick/slick-theme.css";
-import SectionHeader from "../../../components/SectionHeader/SectionHeader";
-import "./New.css";
+import React from 'react'
+import Slider from 'react-slick'
+import '../../../../node_modules/slick-carousel/slick/slick.css'
+import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
+import SectionHeader from '../../../components/SectionHeader/SectionHeader'
+import './New.css'
 
 const New = () => {
   const settings = {
@@ -14,45 +14,43 @@ const New = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: false,
-  };
-  var newItems = [];
+  }
+  var newItems = []
   for (var i = 0; i < 3; i++) {
     newItems.push(
       {
-        info: "qart_test/판화/민정기, 묵안리, 2015.jpg",
-        author: "민정기, 2015",
-        title: "묵안리1",
+        info: 'qart_test/판화/민정기, 묵안리, 2015.jpg',
+        author: '민정기, 2015',
+        title: '묵안리1',
       },
       {
-        info: "qart_test/판화/민정기, 묵안리2, 2015.jpg",
-        author: "민정기, 2015",
-        title: "묵안리2",
+        info: 'qart_test/판화/민정기, 묵안리2, 2015.jpg',
+        author: '민정기, 2015',
+        title: '묵안리2',
       }
-    );
+    )
   }
-  const slider_items = (imgList) => {
+  const slider_items = imgList => {
     return imgList.map((item, i) => {
       return (
         <div className="new-slider__item">
-          <p className="new-slider__item-info">
-            <h4>{item.author}</h4>
-            <h2>{item.title}</h2>
-          </p>
           <div className="new-slider__item-container">
-            <p className="new-slider__item-image">
-              <a href="/artdb/work2">
-                <img src={require("../../../" + item.info)}></img>
-              </a>
-            </p>
+            <a href="/artdb/work2">
+              <img src={require('../../../' + item.info)}></img>
+              <div className="new-slider__item-info">
+                <h4>{item.author}</h4>
+                <h2>{item.title}</h2>
+              </div>
+            </a>
           </div>
         </div>
-      );
-    });
-  };
+      )
+    })
+  }
   return (
     <div className="new">
-      <SectionHeader title_k={"New"} line="left-line" />
-      <section className="new-container">
+      <SectionHeader title={'New'} />
+      <section className="container new-container">
         <div className="new-slider-container">
           <div className="right-border"></div>
           <div className="new-slide">
@@ -64,6 +62,6 @@ const New = () => {
         </div>
       </section>
     </div>
-  );
-};
-export default New;
+  )
+}
+export default New

@@ -1,8 +1,10 @@
 import React from 'react'
+import DropDown from '../../DropDown/DropDown'
 import Header from '../../Header/Header'
 import './SignUpArtist.css'
 
 function SignUpArtist() {
+  var countryList = ['한국', '미국', '일본', '중국', '캐나다']
   return (
     <div className="sign-artist">
       <Header />
@@ -21,7 +23,16 @@ function SignUpArtist() {
           </div>
           <div className="general-item">
             <h2 className="general-title">이름(실명)</h2>
-            <input type="text" className="general-input"></input>
+            <input
+              type="text"
+              className="general-input mr-88"
+              placeholder="한글"
+            ></input>
+            <input
+              type="text"
+              className="general-input"
+              placeholder="ENG"
+            ></input>
           </div>
           <div className="general-item">
             <h2 className="general-title">휴대폰 번호</h2>
@@ -80,15 +91,7 @@ function SignUpArtist() {
           </div>
           <div className="general-item">
             <h2 className="general-title">국적</h2>
-            <select className="nation-select">
-              <option className="nation-default" value="" disabled selected>
-                국적 선택
-              </option>
-              <option value="한국">한국</option>
-              <option value="미국">미국</option>
-              <option value="중국">중국</option>
-              <option value="일본">일본</option>
-            </select>
+            <DropDown options={countryList} />
           </div>
         </div>
         <div className="artist-option">

@@ -1,4 +1,7 @@
-.detail-info ul {
+.detail-info {
+  min-width: 1920rem;
+}
+.detail-info > ul {
   padding: 87rem 320rem;
 }
 .detail-info li {
@@ -14,10 +17,13 @@
 }
 .detail-info__img {
   padding-bottom: 97rem;
+  width: 1145rem;
+  height: 780rem;
   margin: 0 auto;
+  object-fit: contain;
 }
 .detail-info__comment {
-  width: 100%;
+  width: 1145rem;
   text-align: center;
   font-family: 'Noto Sans';
   font-style: normal;

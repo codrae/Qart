@@ -47,7 +47,7 @@ function ArtDbWork(props) {
     menu: [
       {
         title: 'Art Work',
-        link: '/',
+        link: '/artdb/work/',
       },
       {
         title: 'NFT',

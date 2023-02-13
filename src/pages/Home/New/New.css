@@ -1,38 +1,32 @@
 .new {
   width: 100%;
-  height: 1330rem;
+  min-width: 1920rem;
 }
-.new-container {
-  max-width: 1920rem;
-  margin: 0 auto;
-  height: 1330rem;
-  overflow: hidden;
-
-  position: relative;
-  z-index: 2;
-  top: -135rem;
+.new .section-header {
+  background: #fbfbfb;
+  height: 135rem;
 }
-.new-slider-container {
-  width: 1920rem;
-  display: flex;
-  flex-direction: row;
-}
-.new-container .right-border,
-.new-container .left-border {
+.new .section-header-container {
+  border-left: none;
+  border-right: none;
   box-sizing: border-box;
-  display: block;
-  width: 480rem;
-  margin-top: 135rem;
-  height: 1193rem;
+  align-items: flex-start;
+}
+.new .section-header-container h3 {
+  width: 210rem;
+  height: 100%;
+  font-size: 48rem;
+  line-height: 56rem;
   border-right: 1rem solid #bdbdbd;
 }
-.new-container .left-border {
+.new-container {
+  width: 960rem;
+  height: 1195rem;
   border-left: 1rem solid #bdbdbd;
-  border-right: none;
+  border-right: 1rem solid #bdbdbd;
+  box-sizing: border-box;
 }
 .new-slide {
-  position: relative;
-  z-index: 2;
   width: 960rem;
 }
 .new-slider__list {
@@ -40,32 +34,31 @@
   height: 100%;
 }
 .new-slider__item {
-  height: 1330rem;
+  /* height: 1330rem; */
   width: 960rem;
   display: flex;
   flex-direction: column;
 }
 .new-slider__item-info {
-  height: 135rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+
+  padding-top: 60rem;
+  padding-right: 24rem;
 }
-.new-slider__item-info h4 {
+.new-slider__item-info > h4 {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 36rem;
   line-height: 49rem;
-  /* identical to box height */
-
-  /* Gray 1 */
 
   color: #333333;
 }
-.new-slider__item-info h2 {
-  font-family: 'Roboto';
+.new-slider__item-info > h2 {
+  font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 36rem;
@@ -78,19 +71,17 @@
   display: block;
   height: 1195rem;
   overflow: auto;
-}
 
-.new-slider__item-container .new-slider__item-image {
-  margin: 100rem 0;
-  width: 960rem;
-  height: 995rem;
-  background: #f2f2f2;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
-.new-slider__item-image img {
+
+.new-slider__item-container img {
   width: 960rem;
   height: 651rem;
+  object-fit: contain;
+  margin-left: -1rem;
 }
 /* 화살표 */
 .new-slide .slick-prev,
@@ -98,7 +89,7 @@
   position: absolute;
   z-index: 2;
 
-  top: 732rem;
+  top: 571rem;
 
   display: block;
 

@@ -1,0 +1,98 @@
+.main-nft .section-header {
+  height: 135rem;
+
+  background: #fbfbfb;
+}
+.main-nft .top-arrow {
+  height: calc(895rem + 135rem);
+}
+.main-nft .section-header .container {
+  border: none;
+}
+.main-nft .top-arrow-container {
+  height: calc(895rem + 135rem);
+  top: -135rem;
+}
+.main-nft .top-arrow-slider {
+  height: calc(895rem + 135rem);
+  padding-top: calc(100rem + 135rem);
+}
+
+.main-nft .section-header h3 {
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48rem;
+  line-height: 56rem;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+.main-nft .art-d-slider__item {
+  width: 400rem !important;
+  margin-right: 40rem;
+  padding-bottom: 80rem;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+.main-nft .art-d-slider__item:nth-child(3) {
+  margin-right: 0;
+}
+.main-nft .art-d-item-image {
+  width: 400rem;
+  height: 430rem;
+
+  background: none;
+  /* background: #ebebeb; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  object-fit: contain;
+  box-sizing: border-box;
+  border: 1rem solid #f2f2f2;
+}
+.main-nft .art-d-slider__item > h2,
+.main-nft .art-d-slider__item > h3,
+.main-nft .art-d-slider__item > h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32rem;
+  line-height: 38rem;
+  color: #000000;
+
+  text-align: left;
+  width: 100%;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+  padding-top: 10rem;
+}
+.main-nft .art-d-slider__item > h4 {
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 28rem;
+  padding-top: 34rem;
+}
+.main-nft .art-d-slider__item > h3 {
+  font-weight: 700;
+  font-size: 28rem;
+  line-height: 33rem;
+  padding-top: 12rem;
+}
+.main-nft .top-arrow-slider .slick-prev,
+.main-nft .top-arrow-slider .slick-next {
+  top: 68rem;
+}

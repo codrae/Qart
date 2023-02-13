@@ -5,3 +5,6 @@
   padding-bottom: 112rem;
   padding-left: 320rem;
 }
+.artdb-artist .page-item-image {
+  border-radius: 20rem;
+}

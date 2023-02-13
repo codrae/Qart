@@ -39,8 +39,17 @@ function SignUpGeneral() {
               <span className="ir_pm">가리기</span>
             </button>
           </div>
-          <h2 className="general-title">이름(실명)</h2>
-          <input type="text" className="general-input"></input>
+          <h2 className="general-title ">이름(실명)</h2>
+          <input
+            type="text"
+            className="general-input mb-8"
+            placeholder="한글"
+          ></input>
+          <input
+            type="text"
+            className="general-input"
+            placeholder="ENG"
+          ></input>
           <h2 className="general-title">휴대폰 번호</h2>
           <input
             type="text"

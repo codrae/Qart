@@ -232,3 +232,6 @@
   border: none;
   margin-top: 0;
 }
+.market-all .show-drop-list li {
+  width: 246rem;
+}

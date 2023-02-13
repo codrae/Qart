@@ -166,7 +166,7 @@ input[type='checkbox']:checked + .login-option__check {
   background: #d9d9d9;
 
   margin: 0 24rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 .login-link {
   margin-top: 108rem;

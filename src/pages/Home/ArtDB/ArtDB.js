@@ -6,7 +6,7 @@ const ArtDB = () => {
   const infoItem = [
     {
       image: 'assets/art_01.png',
-      link: '/',
+      link: '/artdb/artist',
       small: 'Art Database',
       section: 'Artist',
       title: '큐아트 작가 정보 바로가기',
@@ -30,7 +30,7 @@ const ArtDB = () => {
 
   return (
     <section className="artbase">
-      <SectionHeader title_k="Art Database" line="right-line" />
+      <SectionHeader title="Art Database" />
       <GalleryDirection items={infoItem} />
     </section>
   )

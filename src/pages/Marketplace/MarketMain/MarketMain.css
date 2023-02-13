@@ -1,3 +1,6 @@
+.market-main {
+  min-width: 1920rem;
+}
 .market-main .art-topic .container {
   border: none;
 }
@@ -279,4 +282,39 @@
   /* Gray 6 */
 
   color: #f2f2f2;
+}
+.hot-click .work-header {
+  border-top: 1rem solid #e0e0e0;
+}
+.hot-click-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+  padding: 80rem 320rem 100rem 320rem;
+}
+.hot-click-main > img {
+  width: 620rem;
+  height: 620rem;
+  background: #f2f2f2;
+
+  object-fit: contain;
+}
+.hot-click-sub {
+  width: 620rem;
+  height: 620rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.hot-click-sub > img {
+  width: 290rem;
+  height: 290rem;
+  /* Gray 6 */
+
+  background: #f2f2f2;
+  object-fit: contain;
 }

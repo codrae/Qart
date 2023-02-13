@@ -1,5 +1,6 @@
 .big-top-arrow {
   width: 100%;
+  min-width: 1920rem;
   height: 890rem;
   position: relative;
   z-index: 0;

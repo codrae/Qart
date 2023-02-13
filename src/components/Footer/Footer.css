@@ -22,6 +22,7 @@ footer {
 }
 
 .footer__menu {
+  border-top: 1rem solid #e0e0e0;
   border-bottom: 1rem solid #e0e0e0;
   height: 233rem;
 }

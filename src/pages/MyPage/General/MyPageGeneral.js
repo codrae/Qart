@@ -29,8 +29,11 @@ function MyPageGeneral() {
       id: 1,
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
       author: '김동선',
-      title: '곰순이, 2010년대',
+      title: '곰순이',
+      date: '2010년대',
       link: '/market',
+      author_e: 'Kim dongsun',
+      price: '000,000,000원',
     })
   }
 
@@ -38,22 +41,28 @@ function MyPageGeneral() {
 
   for (var i = 0; i < 36; i++) {
     result.push(
-      <div className="slider__item">
+      <div className="slider-item">
         <Link
           to={`${item[i].link}/${item[i].id}`}
           state={{
             item: item[i],
           }}
         >
-          <div>
+          <div className="slider__item">
             <img src={require('../../../' + item[i].info)} alt="item"></img>
-            <h3>{item[i].author}</h3>
+            <h3>
+              {item[i].author} {item[i].author_e}
+            </h3>
             <h2>{item[i].title}</h2>
+            <h4>{item[i].date}</h4>
           </div>
         </Link>
-        <button className="like">
-          <span className="ir_pm">좋아요</span>
-        </button>
+        <div className="market-item">
+          <span className="market-item--price">{item[i].price}</span>
+          <button href="#" className="market-item--heart">
+            <span className="ir_pm">좋아요</span>
+          </button>
+        </div>
       </div>
     )
   }

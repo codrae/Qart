@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom'
 import './WorkHeader.css'
 
 const WorkHeader = props => {
+  const moreListChange = e => {
+    props.moreListChange(e)
+  }
   return (
     <header
       className={
@@ -27,7 +30,7 @@ const WorkHeader = props => {
               <button className="work-header__follow">팔로우</button>
             ) : props.move ? (
               <Link
-                to="./work/detail"
+                to="./detail"
                 state={{
                   title_e: props.title_e,
                   title_k: props.title_k,
@@ -51,9 +54,7 @@ const WorkHeader = props => {
                 <li key={i}>
                   <button
                     className={i == props.moreMenu ? 'choice' : ''}
-                    onClick={() => {
-                      props.moreListChange(i)
-                    }}
+                    onClick={() => moreListChange(i)}
                   >
                     {item}
                   </button>

@@ -21,6 +21,7 @@
 
   text-align-last: left;
 }
+
 .general-title {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -149,6 +150,9 @@
 
   margin-bottom: 28rem;
   border-radius: 0;
+}
+.mb-8 {
+  margin-bottom: 8rem;
 }
 .general-input:focus {
   border: 1rem solid #222222;

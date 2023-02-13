@@ -8,7 +8,9 @@ const SectionHeader = props => {
         <section className="search__block">
           <input
             type={'text'}
-            placeholder={'작가 이름을 검색해주세요'}
+            placeholder={
+              props.placeholder ? props.placeholder : '작가 이름을 검색해주세요'
+            }
             className="search__block__input"
           />
           <button className="search__block__button">

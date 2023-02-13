@@ -8,15 +8,15 @@ function ArtDatabase(props) {
     menu: [
       {
         title: 'Work',
-        link: '/',
+        link: '/artdb/work/',
       },
       {
         title: 'Artist',
-        link: '/artdb/artist',
+        link: '/artdb/artist/',
       },
       {
         title: 'Venue',
-        link: '/artdb/venue',
+        link: '/artdb/venue/',
       },
     ],
   }

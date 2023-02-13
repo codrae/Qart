@@ -54,7 +54,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route path="/" element={<Main />}></Route> */}
+        <Route path="/" element={<Main />}></Route>
         <Route path="/signUp" element={<SignUp />}></Route>
         <Route path="/signUp/auth" element={<SignUpAuth />}></Route>
         <Route path="/signUp/auth/general" element={<SignUpGeneral />}></Route>
@@ -79,7 +79,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/"
+          path="/artdb/work"
           element={
             <ArtDatabase search={true} active={0}>
               <ArtDbWork active={0}>
@@ -89,7 +89,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/work/:workId"
+          path="/artdb/work/:workId"
           element={
             <ArtDatabase search={false}>
               <ArtDbWork3 />
@@ -97,7 +97,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/work/detail"
+          path="/artdb/work/detail"
           element={
             <ArtDatabase search={true} active={0}>
               <ArtDbWork active={0}>
@@ -143,7 +143,7 @@ function App() {
         <Route
           path="/market"
           element={
-            <Marketplace>
+            <Marketplace search={1}>
               <MarketMain />
             </Marketplace>
           }
@@ -151,7 +151,7 @@ function App() {
         <Route
           path="/market/all"
           element={
-            <Marketplace active={0}>
+            <Marketplace search={1} active={0}>
               <MarketAll />
             </Marketplace>
           }
@@ -159,7 +159,7 @@ function App() {
         <Route
           path="/market/:marketId"
           element={
-            <Marketplace>
+            <Marketplace search={0}>
               <MarketItem />
             </Marketplace>
           }

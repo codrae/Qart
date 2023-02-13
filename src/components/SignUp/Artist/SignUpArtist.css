@@ -82,3 +82,21 @@
 
   padding-bottom: 12rem;
 }
+
+.sign-artist .drop-select,
+.sign-artist .show-drop-list li {
+  width: 596rem;
+  height: 56rem;
+}
+.sign-artist .drop-select {
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+}
+.sign-artist .show-drop-list li {
+  width: 594rem;
+
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+}

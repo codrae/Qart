@@ -1,3 +1,6 @@
+.market-nft-item {
+  min-width: 1920rem;
+}
 .market-nft-info {
   padding: 100rem 320rem;
   display: flex;
@@ -18,18 +21,19 @@
 }
 .market-nft__title {
   padding-top: 284rem;
+  padding-bottom: 28rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.market-nft__title > h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 42rem;
   line-height: 49rem;
   color: #222222;
-
-  padding-bottom: 28rem;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 .market-nft__title button {
   width: 47.5rem;

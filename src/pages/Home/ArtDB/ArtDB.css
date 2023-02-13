@@ -1,3 +1,28 @@
+.artbase .section-header {
+  height: 135rem;
+  background: #fbfbfb;
+}
+.artbase .section-header-container {
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  padding-right: 209rem;
+}
+.artbase .section-header-container h3 {
+  border-right: 1rem solid #bdbdbd;
+  height: 100%;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48rem;
+  line-height: 56rem;
+
+  color: #000000;
+}
+.artbase .section-header {
+  background: #fbfbfb;
+}
 @media (max-width: 480px) {
   .artbase__item {
     min-width: 360rem;

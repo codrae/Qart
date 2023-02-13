@@ -20,7 +20,9 @@ function TopArrowSlider(props) {
 
   const slider_items = imgList => {
     return imgList.map((item, i) => {
-      return (
+      return props.divItem ? (
+        item
+      ) : (
         <div className="top-arrow-item">
           <img
             className="top-arrow-image"
@@ -37,7 +39,7 @@ function TopArrowSlider(props) {
 
   return (
     <section className="top-arrow">
-      <SectionHeader title="작가의 다른 작품"></SectionHeader>
+      <SectionHeader title={props.title}></SectionHeader>
       <div className="top-arrow-container">
         <Slider {...settings} className="top-arrow-slider">
           {slider_items(props.item)}

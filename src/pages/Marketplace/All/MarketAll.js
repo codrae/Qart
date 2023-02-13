@@ -175,7 +175,7 @@ function MarketAll() {
     '고미술(0000)',
     'NFT(0000)',
   ]
-  const options = ['LOT 번호순', '등록순', '인기순', '작가명순', '작품명순']
+  const options = ['최신등록순', '인기순', '작가명순', '작품명순']
   return (
     <section className="market-all">
       <BigTopArrow
@@ -188,8 +188,7 @@ function MarketAll() {
         moreListChange={setMenu}
         moreMenu={menu}
         moreActive={1}
-        title_e={'Antique Art'}
-        title_k={'고미술'}
+        title_k={'ALL(000)'}
       ></WorkHeader>
       <div className="market-all-slider">
         <ArtDetail

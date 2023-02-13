@@ -1,5 +1,6 @@
 .banner {
   width: 100%;
+  min-width: 1920rem;
   height: 707rem;
 }
 .banner-slider,

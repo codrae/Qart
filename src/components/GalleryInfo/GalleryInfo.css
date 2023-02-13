@@ -1,4 +1,5 @@
 .gallery_section {
+  min-width: 1920rem;
 }
 .gallery {
   height: 100%;
@@ -17,6 +18,7 @@
   border-bottom: 1rem solid #e0e0e0;
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;
+  box-sizing: border-box;
 }
 /* .gallery__item-container {
   width: 1378rem;
