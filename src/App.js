@@ -37,6 +37,8 @@ import ArtistExhibition from './pages/MyPage/Artist/Profile/ArtistExhibition'
 import ArtistSchool from './pages/MyPage/Artist/Profile/ArtistSchool'
 import ArtistArchive from './pages/MyPage/Artist/MyArchive/ArtistArchive'
 import MyWorkAdd from './pages/MyPage/Artist/MyArchive/Work/MyWorkAdd'
+import MyArticleAdd from './pages/MyPage/Artist/MyArchive/Article/MyArticleAdd'
+import MyNftAdd from './pages/MyPage/Artist/MyArchive/Nft/MyNftAdd'
 function App() {
   return (
     <BrowserRouter>
@@ -193,6 +195,11 @@ function App() {
           path="/mypage/artist/archive/work"
           element={<MyWorkAdd />}
         ></Route>
+        <Route
+          path="/mypage/artist/archive/article"
+          element={<MyArticleAdd />}
+        ></Route>
+        <Route path="/mypage/artist/archive/nft" element={<MyNftAdd />}></Route>
       </Routes>
     </BrowserRouter>
   )

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import TableSlide from '../../../../../components/TableSlide/TableSlide'
 import './MyNftList.css'
 function MyNftList() {
@@ -71,7 +72,9 @@ function MyNftList() {
         </section>
         <section className="th-search-button">
           <button>Delete</button>
-          <button>Add</button>
+          <Link to={'./nft'}>
+            <button>Add</button>
+          </Link>
         </section>
       </div>
     </div>

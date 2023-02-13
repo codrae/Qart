@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import TableSlide from '../../../../../components/TableSlide/TableSlide'
 import './MyArticleList.css'
 function MyArticleList() {
@@ -60,7 +61,9 @@ function MyArticleList() {
         </section>
         <section className="th-search-button">
           <button>Delete</button>
-          <button>Add</button>
+          <Link to={'./article'}>
+            <button>Add</button>
+          </Link>
         </section>
       </div>
     </div>

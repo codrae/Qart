@@ -3,9 +3,9 @@ import DropDown from '../../../../../components/DropDown/DropDown'
 import Footer from '../../../../../components/Footer/Footer'
 import Header from '../../../../../components/Header/Header'
 import HeaderSmall from '../../../../../components/Header/HeaderSmall/HeaderSmall'
-import './MyWorkAdd.css'
+import './MyArticleAdd.css'
 
-function MyWorkAdd() {
+function MyArticleAdd() {
   const [imgFile, setImgFile] = useState('')
   const [subImgFile, setSubImgFile] = useState('')
   const imgRef = useRef()
@@ -49,7 +49,7 @@ function MyWorkAdd() {
     setFile(fileName)
   }
   return (
-    <div className="ma-work-add">
+    <div className="ma-article-add">
       <Header login={true} colored="black" />
       <nav className="search">
         <div className="container search__container">
@@ -59,7 +59,7 @@ function MyWorkAdd() {
             <span>My archive </span>
             <span className="next"></span>
           </div>
-          <h2 className="search__title">Add Work</h2>
+          <h2 className="search__title">Add Article</h2>
         </div>
       </nav>
       <div className="ma-edit-image">
@@ -91,10 +91,7 @@ function MyWorkAdd() {
       </div>
       <div className="ma-edit-image-02">
         <div className="container ma-edit-image-container">
-          <h2 className="ma-img-tlt">
-            서브 이미지{' '}
-            <span className="ma-img-tlt--sub">*최대 10개까지 가능</span>
-          </h2>
+          <h2 className="ma-img-tlt">서브 이미지</h2>
           <div>
             <img
               className={subImgFile ? 'ma-img-show' : 'ma-img-hide'}
@@ -121,15 +118,14 @@ function MyWorkAdd() {
           </div>
         </div>
       </div>
-      <ul className="ma-add-info ma-add-info-01">
+      <ul className="ma-add-info ma-article-add-info">
         <div className="container">
           <li>
-            <h2>재질</h2>
+            <h2>제목</h2>
             <input type="text"></input>
           </li>
           <li>
             <h2>Dates</h2>
-            <DropDown options={datesList} />
             <input
               type="date"
               id="date"
@@ -141,59 +137,24 @@ function MyWorkAdd() {
             ></input>
           </li>
           <li>
-            <h2>소장처</h2>
+            <h2>Country</h2>
+            <DropDown options={countryList} />
+          </li>
+          <li>
+            <h2>Source</h2>
+            <input type="text"></input>
+          </li>
+          <li>
+            <h2>Publisher</h2>
+            <input type="text"></input>
+          </li>
+          <li>
+            <h2>Producer/Organization</h2>
             <input type="text"></input>
           </li>
           <li>
             <h2>상세 설명</h2>
             <textarea placeholder="상세한 설명입니다."></textarea>
-          </li>
-        </div>
-      </ul>
-      <ul className="ma-add-info ma-add-info-02">
-        <div className="container">
-          <li>
-            <h2>가격</h2>
-            <div className="ma-info-02-input">
-              <input type="text" placeholder="원화"></input>
-              <span>원</span>
-            </div>
-          </li>
-          <li>
-            <h2></h2>
-            <div className="ma-info-02-input">
-              <input type="text" placeholder="원화"></input>
-              <span>$</span>
-            </div>
-          </li>
-        </div>
-      </ul>
-      <ul className="ma-add-info-03 ma-add-info">
-        <div className="container">
-          <li>
-            <h2>아트 아카이브 공개</h2>
-            <DropDown options={archiveList} />
-          </li>
-          <li>
-            <h2>온라인마켓플레이스</h2>
-            <DropDown options={marketList} />
-          </li>
-          <li>
-            <h2>Q-CoA</h2>
-            <div class="filebox">
-              <label for="file">파일찾기</label>
-              <input type="file" id="file" onChange={changeFile} />
-              <input class="upload-name" value={file} readOnly />
-            </div>
-          </li>
-          <li>
-            <h2>NFT 전환</h2>
-            <button>등록하기</button>
-          </li>
-          <li className="ma-info-03-drop-03">
-            <h2>전시이력</h2>
-            <DropDown options={archiveList} />
-            <button>직접입력</button>
           </li>
         </div>
       </ul>
@@ -207,4 +168,4 @@ function MyWorkAdd() {
     </div>
   )
 }
-export default MyWorkAdd
+export default MyArticleAdd
