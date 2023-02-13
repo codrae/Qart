@@ -26,7 +26,7 @@ const Header = props => {
             </a>
           </li>
           <li>
-            <a className={props.active == '3' ? 'active' : ''} href="/support">
+            <a className={props.active == '3' ? 'active' : ''} href="/support/">
               Support
             </a>
           </li>

@@ -234,7 +234,7 @@ function App() {
         <Route
           path="/support"
           element={
-            <SupportMain search={false} choice={0}>
+            <SupportMain search={false} active={3} choice={0}>
               <SupportAbout />
             </SupportMain>
           }
@@ -242,7 +242,7 @@ function App() {
         <Route
           path="/support/notice"
           element={
-            <SupportMain search={false} choice={1}>
+            <SupportMain search={false} active={3} choice={1}>
               <SupportNotice />
             </SupportMain>
           }
@@ -250,7 +250,7 @@ function App() {
         <Route
           path="/support/faq"
           element={
-            <SupportMain search={false} choice={2}>
+            <SupportMain search={false} active={3} choice={2}>
               <SupportFAQ />
             </SupportMain>
           }
@@ -258,7 +258,7 @@ function App() {
         <Route
           path="/support/inquiry"
           element={
-            <SupportMain search={false} choice={3}>
+            <SupportMain search={false} active={3} choice={3}>
               <SupportInQuiry />
             </SupportMain>
           }

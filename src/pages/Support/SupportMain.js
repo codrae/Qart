@@ -28,7 +28,7 @@ function SupportMain(props) {
 
   return (
     <div className="support-main">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" active={props.active} />
       <nav className="search">
         <div className="container search__container">
           <h2 className="search__title">Support</h2>

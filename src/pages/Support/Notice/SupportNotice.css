@@ -1,5 +1,7 @@
 .support-notice {
   min-height: 2145rem;
+  min-width: 1920rem;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .support-notice .table-slider-header {
   display: none;
