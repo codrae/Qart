@@ -20,7 +20,19 @@ footer {
   padding-left: 920rem;
   box-sizing: border-box;
 }
-
+.footer__menu__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 320rem;
+}
+.footer__logo {
+  display: block;
+  width: 203rem;
+  height: 66rem;
+  background: url('../../assets/logo.png') no-repeat center;
+  background-size: contain;
+}
 .footer__menu {
   border-top: 1rem solid #e0e0e0;
   border-bottom: 1rem solid #e0e0e0;
@@ -32,7 +44,9 @@ footer {
 .item-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+}
+.item-container ul {
+  padding-right: 92rem;
 }
 .footer__menu__item h3 {
   font-family: 'Noto Sans';

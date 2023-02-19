@@ -1,6 +1,7 @@
 .drop-container {
   position: relative;
   z-index: 2;
+  color: #bdbdbd;
 }
 .drop-select,
 .show-drop-list li {

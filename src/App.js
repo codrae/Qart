@@ -50,6 +50,7 @@ import SupportAbout from './pages/Support/About/SupportAbout'
 import SupportNotice from './pages/Support/Notice/SupportNotice'
 import SupportFAQ from './pages/Support/FAQ/SupportFAQ'
 import SupportInQuiry from './pages/Support/InQuiry/SuportInQuiry'
+import SignUpKYC from './components/SignUp/SignUpKYC'
 function App() {
   return (
     <BrowserRouter>
@@ -61,6 +62,7 @@ function App() {
         <Route path="/signUp/auth/artist" element={<SignUpArtist />}></Route>
         <Route path="/signUp/auth/agency" element={<SignUpAgency />}></Route>
         <Route path="/signUp/auth/cert" element={<SignUpCert />}></Route>
+        <Route path="/signUp/auth/kyc" element={<SignUpKYC />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route
           path="/artdb/artist"

@@ -12,12 +12,10 @@ function SignUpAuth() {
       <>
         <h2 className="email-title">이메일</h2>
         <div className="email-input-container">
-          <input type="text" className="email-input-email"></input>
+          <input type="text" className="email-input-email" required></input>
           <span>@</span>
-          <select className="email-input-email email">
-            <option value="direct" selected>
-              직접입력
-            </option>
+          <select className="email-input-email email" required>
+            <option value="">직접입력</option>
             <option value="naver">naver.com</option>
             <option value="gm">gmail.com</option>
             <option value="da">daum.com</option>
@@ -27,7 +25,7 @@ function SignUpAuth() {
         </div>
         <h2 className="email-title">인증번호</h2>
         <div className="email-input-container">
-          <input type="text" className="email-input-num"></input>
+          <input type="text" className="email-input-num" required></input>
           <button>확인하기</button>
         </div>
       </>

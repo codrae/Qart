@@ -93,7 +93,9 @@
   justify-content: center;
 }
 .sign-item__hover span {
+  padding: 0 28rem;
   padding-top: 8rem;
+
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;

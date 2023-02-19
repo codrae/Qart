@@ -105,7 +105,8 @@
   border-radius: 0;
   color: #222222;
 }
-.email-input-email:focus {
+.email-input-email:focus,
+.email-input-email:valid {
   border: 1rem solid #222222;
 }
 select::-ms-expand {
@@ -121,6 +122,12 @@ select::-ms-expand {
   background: url('../../assets/arrow_down.png') calc(100% - 20rem) center
     no-repeat;
   background-size: 16rem 9rem;
+  border: 1rem solid #cccccc;
+  color: #bdbdbd;
+}
+.email-input-email ~ .email:valid {
+  border: 1rem solid #222222;
+  color: #222222;
 }
 .email-input-container span {
   display: block;
@@ -178,7 +185,8 @@ select::-ms-expand {
   outline: none;
   border-radius: 0;
 }
-.email-input-num:focus {
+.email-input-num:focus,
+.email-input-num:valid {
   border: 1rem solid #222222;
 }
 .auth-next {

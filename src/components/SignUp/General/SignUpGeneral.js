@@ -14,6 +14,7 @@ function SignUpGeneral() {
               type="text"
               className="general-input-num"
               placeholder="12자 이내로 입력"
+              required
             ></input>
             <button>중복확인</button>
           </div>
@@ -23,6 +24,7 @@ function SignUpGeneral() {
               type="password"
               className="general-password-input"
               placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+              required
             ></input>
             <button className="password__icon">
               <span className="ir_pm">가리기</span>
@@ -34,6 +36,7 @@ function SignUpGeneral() {
               type="password"
               className="general-password-input"
               placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+              required
             ></input>
             <button className="password__icon">
               <span className="ir_pm">가리기</span>
@@ -44,23 +47,27 @@ function SignUpGeneral() {
             type="text"
             className="general-input mb-8"
             placeholder="한글"
+            required
           ></input>
           <input
             type="text"
             className="general-input"
             placeholder="ENG"
+            required
           ></input>
           <h2 className="general-title">휴대폰 번호</h2>
           <input
             type="text"
             className="general-input"
             placeholder="- 없이 숫자만 입력"
+            required
           ></input>
           <h2 className="general-title">생년월일</h2>
           <input
             type="text"
             className="general-input"
             placeholder="생년월일 6자리 입력"
+            required
           ></input>
         </div>
         <div className="general-option">

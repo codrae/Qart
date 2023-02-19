@@ -26,7 +26,11 @@ function SignUp() {
               </section>
             </div>
             <div className="sign-item__hover">
-              <span>큐아트 웹과 모든 서비스 이용 가능</span>
+              <span>
+                큐아트 모든 서비스 이용가능<br></br>
+                단체활동, Artist Group은<br></br> 대표자 가입 후 작가 추가
+                가능합니다.
+              </span>
             </div>
           </a>
           <a
@@ -44,7 +48,11 @@ function SignUp() {
               </section>
             </div>
             <div className="sign-item__hover">
-              <span>큐아트 웹과 모든 서비스 이용 가능</span>
+              <span>
+                큐아트 모든 서비스 이용가능<br></br> 단체 대표자명으로
+                등록해주시기 바랍니다. 대표자 등록 후 관리자 추가는<br></br>
+                마이페이지를 통해 가능합니다.
+              </span>
             </div>
           </a>
           <a
@@ -63,12 +71,11 @@ function SignUp() {
             </div>
             <div className="sign-item__hover">
               <span>
-                큐아트에서 제공되는 정보 상세보기와 온라인마켓플레이스 서비스
-                이용가능
+                큐아트에서 제공되는 정보 상세보기와 <br></br>온라인마켓플레이스
+                서비스 이용가능
               </span>
               <span>
-                큐아트에서 제공되는 정보 상세보기와 온라인마켓플레이스 서비스
-                이용가능 아트아카이브 자료등록,큐아트인증, NFT 등록 서비스는
+                아트아카이브 자료등록,큐아트인증,<br></br> NFT 등록 서비스는
                 이용불가
               </span>
             </div>

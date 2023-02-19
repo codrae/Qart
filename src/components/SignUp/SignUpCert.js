@@ -4,7 +4,7 @@ import './SignUpCert.css'
 
 function SignUpCert() {
   return (
-    <>
+    <div className="cert">
       <Header />
       <div className="container cert-container">
         <article className="cert-content">
@@ -25,7 +25,7 @@ function SignUpCert() {
             transaction history registration.
           </p>
         </article>
-        <a href="#">
+        <a href="./kyc">
           <button className="cert-button">KYC 인증 진행하기</button>
         </a>
         <div className="general-next">
@@ -33,11 +33,11 @@ function SignUpCert() {
             <button>이전</button>
           </a>
           <a href="#">
-            <button className="general-next-button">다음</button>
+            <button className="general-next-button">건너뛰기</button>
           </a>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default SignUpCert

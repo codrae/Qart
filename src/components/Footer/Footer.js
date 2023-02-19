@@ -7,6 +7,7 @@ const Footer = () => {
       <div className="footer__menu">
         <div className="footer-container">
           <div className="footer__menu__item">
+            <div className="footer__logo"></div>
             <div className="item-container">
               <ul>
                 <h3>ABOUT</h3>

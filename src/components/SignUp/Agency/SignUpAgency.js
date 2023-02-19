@@ -31,13 +31,25 @@ function SignUpAgency() {
                 type="text"
                 className="general-input-num"
                 placeholder="12자 이내로 입력"
+                required
               ></input>
               <button>중복확인</button>
             </div>
           </div>
           <div className="general-item">
             <h2 className="general-title">이름(실명)</h2>
-            <input type="text" className="general-input"></input>
+            <input
+              type="text"
+              className="general-input mr-88"
+              placeholder="한글"
+              required
+            ></input>
+            <input
+              type="text"
+              className="general-input"
+              placeholder="ENG"
+              required
+            ></input>
           </div>
           <div className="general-item">
             <h2 className="general-title">휴대폰 번호</h2>
@@ -45,6 +57,7 @@ function SignUpAgency() {
               type="text"
               className="general-input"
               placeholder="- 없이 숫자만 입력"
+              required
             ></input>
           </div>
           <div className="general-item">
@@ -53,6 +66,7 @@ function SignUpAgency() {
               type="text"
               className="general-input"
               placeholder="생년월일 6자리 입력"
+              required
             ></input>
           </div>
           <div className="general-item">
@@ -62,6 +76,7 @@ function SignUpAgency() {
                 type="password"
                 className="general-password-input"
                 placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+                required
               ></input>
               <button className="password__icon">
                 <span className="ir_pm">가리기</span>
@@ -75,6 +90,7 @@ function SignUpAgency() {
                 type="password"
                 className="general-password-input"
                 placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+                required
               ></input>
               <button className="password__icon">
                 <span className="ir_pm">가리기</span>
@@ -89,11 +105,13 @@ function SignUpAgency() {
               type="text"
               className="general-input mr-88"
               placeholder="한글 ko"
+              required
             ></input>
             <input
               type="text"
               className="general-input"
               placeholder="영문 Eng"
+              required
             ></input>
           </div>
           <div className="general-item mr-88">
@@ -110,7 +128,12 @@ function SignUpAgency() {
           <div className="general-item" style={{ marginRight: 0 }}>
             <h2 className="general-title">주소</h2>
             <div className="general-password">
-              <input type="text" className="general-password-input"></input>
+              <input
+                type="text"
+                className="general-password-input"
+                required
+                placeholder="주소 검색"
+              ></input>
               <button className="search__icon password__icon">
                 <span className="ir_pm">검색하기</span>
               </button>
@@ -118,13 +141,31 @@ function SignUpAgency() {
           </div>
         </div>
         <div className="artist-content" style={{ paddingTop: '60rem' }}>
+          <div className="general-item">
+            <h2 className="general-title">연락처1</h2>
+            <input
+              type="text"
+              className="general-input"
+              placeholder="- 없이 숫자만 입력"
+              required
+            ></input>
+          </div>
+          <div className="general-item">
+            <h2 className="general-title">연락처2</h2>
+            <input
+              type="text"
+              className="general-input"
+              placeholder="- 없이 숫자만 입력"
+              required
+            ></input>
+          </div>
           <div className="pb-26">
             <h2 className="general-title">기관 이메일</h2>
             <div className="email-input-container">
-              <input type="text" className="email-input-email"></input>
+              <input type="text" className="email-input-email" required></input>
               <span>@</span>
-              <select className="email-input-email email">
-                <option value="direct" selected>
+              <select className="email-input-email email" required>
+                <option value="" selected>
                   직접입력
                 </option>
                 <option value="naver">naver.com</option>
@@ -136,7 +177,7 @@ function SignUpAgency() {
           </div>
           <div className="general-item pb-26">
             <h2 className="general-title">홈페이지 주소</h2>
-            <input type="text" className="general-input"></input>
+            <input type="text" className="general-input" required></input>
           </div>
           <div className="general-item">
             <h2 className="general-title">사업자/법인 등록증</h2>

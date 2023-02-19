@@ -9,12 +9,17 @@ function Login() {
       <div className="container login-container">
         <h1>로그인</h1>
         <section className="login-form">
-          <input className="login-input" placeholder="이메일 주소"></input>
+          <input
+            className="login-input"
+            placeholder="이메일 주소"
+            required
+          ></input>
           <div className="login-password">
             <input
               type="password"
               className="login-input"
               placeholder="비밀번호"
+              required
             ></input>
             <button className="password__icon">
               <span className="ir_pm">가리기</span>

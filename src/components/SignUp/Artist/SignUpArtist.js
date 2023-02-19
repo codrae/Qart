@@ -4,7 +4,7 @@ import Header from '../../Header/Header'
 import './SignUpArtist.css'
 
 function SignUpArtist() {
-  var countryList = ['한국', '미국', '일본', '중국', '캐나다']
+  var countryList = ['국적 선택', '한국', '미국', '일본', '중국', '캐나다']
   return (
     <div className="sign-artist">
       <Header />
@@ -17,6 +17,7 @@ function SignUpArtist() {
                 type="text"
                 className="general-input-num"
                 placeholder="12자 이내로 입력"
+                required
               ></input>
               <button>중복확인</button>
             </div>
@@ -27,11 +28,13 @@ function SignUpArtist() {
               type="text"
               className="general-input mr-88"
               placeholder="한글"
+              required
             ></input>
             <input
               type="text"
               className="general-input"
               placeholder="ENG"
+              required
             ></input>
           </div>
           <div className="general-item">
@@ -40,6 +43,7 @@ function SignUpArtist() {
               type="text"
               className="general-input"
               placeholder="- 없이 숫자만 입력"
+              required
             ></input>
           </div>
           <div className="general-item">
@@ -48,6 +52,7 @@ function SignUpArtist() {
               type="text"
               className="general-input"
               placeholder="생년월일 6자리 입력"
+              required
             ></input>
           </div>
           <div className="general-item">
@@ -57,6 +62,7 @@ function SignUpArtist() {
                 type="password"
                 className="general-password-input"
                 placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+                required
               ></input>
               <button className="password__icon">
                 <span className="ir_pm">가리기</span>
@@ -70,6 +76,7 @@ function SignUpArtist() {
                 type="password"
                 className="general-password-input"
                 placeholder="영문, 특수문자, 숫자 포함 6~12자 이내"
+                required
               ></input>
               <button className="password__icon">
                 <span className="ir_pm">가리기</span>
@@ -82,11 +89,13 @@ function SignUpArtist() {
               type="text"
               className="general-input mr-88"
               placeholder="한글 ko"
+              required
             ></input>
             <input
               type="text"
               className="general-input"
               placeholder="영문 Eng"
+              required
             ></input>
           </div>
           <div className="general-item">
