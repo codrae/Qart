@@ -291,7 +291,7 @@ function MarketItem() {
                     item: item,
                   }}
                 >
-                  구입/응찰하기
+                  구입하기
                 </Link>
               </div>
             </div>

@@ -1,0 +1,155 @@
+.del-modal .modal-body {
+  display: block;
+  width: 706rem;
+  height: 893rem;
+  background: #ffffff;
+}
+.del-header {
+  border-bottom: none;
+  width: 100%;
+  min-width: 100%;
+  height: 105rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.del-header > h1 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.del-close {
+  position: absolute;
+  display: block;
+  height: 32rem;
+  width: 32rem;
+  background: url('../../assets/icon-x-black.png') no-repeat center;
+  background-size: 18.67rem 18.67rem;
+
+  left: 640.67rem;
+}
+.del-content {
+  padding: 0 40rem;
+  height: 656rem;
+  overflow: scroll;
+}
+.del-item {
+  width: 626rem;
+  height: 318rem;
+
+  border: 1rem solid #e0e0e0;
+
+  box-sizing: border-box;
+  padding: 0 28rem;
+  margin-bottom: 20rem;
+}
+.del-tag {
+  width: 127rem;
+  height: 53rem;
+  background: #f2f2f2;
+  border-radius: 26.5rem;
+
+  margin-top: 28rem;
+  margin-bottom: 16rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 29rem;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #222222;
+}
+.del-info {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18rem;
+  line-height: 26rem;
+  /* identical to box height */
+
+  display: flex;
+  flex-direction: row;
+
+  padding-bottom: 12rem;
+}
+.del-tlt {
+  width: 99rem;
+  text-align: left;
+  color: #828282;
+}
+.del-btn {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.del-btn button {
+  width: 112rem;
+  height: 42rem;
+
+  background: none;
+  border: 1rem solid #222222;
+  border-radius: 2rem;
+  box-sizing: border-box;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #222222;
+
+  margin-right: 8rem;
+}
+.del-btn button:last-child {
+  margin-right: 0;
+  border: none;
+  background: #222222;
+  color: #ffffff;
+}
+.del-add {
+  margin: 0 40rem;
+  margin-top: 28rem;
+  margin-bottom: 34rem;
+  width: 626rem;
+  height: 70rem;
+
+  background: #f2f2f2;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18rem;
+  line-height: 26rem;
+
+  color: #222222;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.del-add-sym {
+  width: 24rem;
+  height: 100%;
+
+  margin-right: 12.13rem;
+
+  background: url('../../assets/icon-plus-black.png') no-repeat center;
+  background-size: 14rem 14rem;
+}
+.del-add span {
+  display: inline-block;
+}

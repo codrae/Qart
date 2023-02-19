@@ -1,0 +1,57 @@
+.check-modal .modal-body {
+  display: block;
+  width: 412rem;
+  height: 213rem;
+  background: #ffffff;
+
+  box-sizing: border-box;
+  padding: 24rem 32rem 16rem 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.check-modal h1 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 33rem;
+
+  color: #222222;
+}
+.check-content {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 22rem;
+
+  color: #4f4f4f;
+
+  padding-top: 16rem;
+  padding-bottom: 48rem;
+}
+.check-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.check-btn button {
+  width: 170rem;
+  height: 54rem;
+
+  /* Black */
+
+  background: #222222;
+
+  font-weight: 700;
+  font-size: 16rem;
+  line-height: 22rem;
+  color: #ffffff;
+}
+.check-btn button:first-child {
+  color: #222222;
+  background: none;
+  border: 1rem solid #4f4f4f;
+}

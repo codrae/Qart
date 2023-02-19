@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Footer from '../../../components/Footer/Footer'
 import Header from '../../../components/Header/Header'
+import CheckModal from '../../../components/Modal/CheckModal'
+import DeliveryModal from '../../../components/Modal/DeliveryModal'
+import ModalPortal from '../../../components/Modal/ModalPortal'
 import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 import WorkHeader from '../../../components/WorkHeader/WorkHeader'
 import './Payment.css'
@@ -25,6 +28,24 @@ function Payment() {
         checkboxes[i].checked = false
       }
     }
+  }
+
+  // 모달창 노출 여부 state
+  const [delOpen, setDellOpen] = useState(false)
+
+  // 모달창 노출
+  const showDelModal = () => {
+    setDellOpen(true)
+    //document.body.style.overflow = 'hidden' // 모달 창 오픈 시 스크롤 불가
+  }
+
+  // 모달창 노출 여부 state
+  const [checkOpen, setCheckOpen] = useState(false)
+
+  // 모달창 노출
+  const showCheckModal = () => {
+    setCheckOpen(true)
+    //document.body.style.overflow = 'hidden' // 모달 창 오픈 시 스크롤 불가
   }
   return (
     <div className="payment">
@@ -76,7 +97,13 @@ function Payment() {
                       checked
                       name="location"
                       onChange={e => checkOnlyOne01(e.target)}
+                      onClick={showDelModal}
                     />
+                    {delOpen && (
+                      <ModalPortal>
+                        <DeliveryModal setModalOpen={setDellOpen} />
+                      </ModalPortal>
+                    )}
                     <span className="check-option__check" />
                     회원정보 주소
                   </label>
@@ -162,14 +189,19 @@ function Payment() {
                 </div>
               </li>
               <div className="checkout-button">
-                <button
-                  className="checkout-button"
-                  onClick={() => {
-                    setPay(1)
-                  }}
-                >
+                <button className="checkout-button" onClick={showCheckModal}>
                   000,000,000원 결제하기
                 </button>
+                {checkOpen && (
+                  <ModalPortal>
+                    <CheckModal
+                      setModalOpen={setCheckOpen}
+                      setFunc={setPay}
+                      title={'구매 확인'}
+                      content={'결제를 완료하시겠습니까?'}
+                    />
+                  </ModalPortal>
+                )}
               </div>
             </ul>
           </div>
