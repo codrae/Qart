@@ -18,7 +18,7 @@ function CheckModal({ setModalOpen, setFunc, title, content }) {
           <div className="check-content">{content}</div>
           <div className="check-btn">
             <button onClick={closeModal}>취소</button>
-            <button onClick={setFunc ? changeState : ''}>확인</button>
+            <button onClick={setFunc ? changeState : closeModal}>확인</button>
           </div>
         </div>
       </div>

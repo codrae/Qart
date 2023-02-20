@@ -52,6 +52,7 @@ import SupportFAQ from './pages/Support/FAQ/SupportFAQ'
 import SupportInQuiry from './pages/Support/InQuiry/SuportInQuiry'
 import SignUpKYC from './components/SignUp/SignUpKYC'
 import Search from './pages/Search/Search'
+import AuctionDetail from './pages/Marketplace/Auction/Item/AuctionDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -191,6 +192,10 @@ function App() {
         <Route
           path="/market/auction/:auctionId"
           element={<AuctionItem />}
+        ></Route>
+        <Route
+          path="/market/auction/:auctionId/:itemId"
+          element={<AuctionDetail />}
         ></Route>
         <Route path="/market/payment" element={<Payment />}></Route>
 

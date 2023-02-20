@@ -1,0 +1,158 @@
+.autcion-detail .market-art {
+  padding: 0 320rem;
+  padding-top: 51rem;
+  padding-bottom: 80rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.autcion-detail .market-image__image {
+  width: 608rem;
+  height: 551rem;
+
+  box-sizing: border-box;
+  border: 1rem solid #e0e0e0;
+  object-fit: contain;
+}
+.autcion-detail .market-image__list {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.autcion-detail .market-image__item {
+  width: 185rem;
+  height: 195rem;
+  object-fit: contain;
+  box-sizing: border-box;
+
+  border: 1rem solid #e0e0e0;
+}
+.autcion-detail .market-art-info {
+  width: 651rem;
+  height: 766rem;
+
+  background: #fbfbfb;
+  box-sizing: border-box;
+  padding: 22rem 32rem 32rem 34rem;
+}
+.aution-detail-title {
+  box-sizing: border-box;
+  padding-top: 0 !important;
+  padding-bottom: 16rem !important;
+  border-bottom: 1rem solid #bdbdbd;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.aution-detail-title > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32rem;
+  line-height: 38rem;
+
+  color: #222222;
+}
+.aution-detail-title .market-item--heart {
+  height: 36.7rem;
+  width: 40rem;
+  margin-top: 0;
+}
+.autcion-detail .market-info__list {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 23rem;
+  padding-bottom: 20rem;
+}
+.autcion-detail .market-info__list li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-top: 20rem;
+}
+.autcion-detail .market-info__list li:nth-child(2) {
+  padding-top: 24rem;
+}
+.autcion-detail .market-info__list li:last-child {
+  padding-bottom: 0;
+}
+.autcion-detail .market-info__list li span:first-child {
+  display: block;
+  width: 125rem;
+  color: #4f4f4f;
+}
+.autcion-detail .market-art-sell {
+  border-top: 1rem solid #bdbdbd;
+}
+.autcion-detail .market-sell__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 27rem;
+
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 23rem;
+
+  color: #222222;
+}
+.autcion-detail .market-sell__price span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.autcion-detail .market-sell__price span:last-child {
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 28rem;
+  color: #000000;
+}
+.autcion-detail .market-sell__price + .color-red {
+  padding-top: 20rem;
+
+  padding-bottom: 24rem;
+  border-bottom: 1rem solid #bdbdbd;
+}
+.autcion-detail .color-red span:last-child {
+  color: #eb5757;
+}
+.autcion-detail .market-sell__time {
+  display: block;
+  padding-top: 86rem;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 23rem;
+
+  text-align: right;
+
+  /* Red */
+
+  color: #2f80ed;
+}
+.autcion-detail .market-sell__button {
+  padding-top: 16rem;
+}
+.autcion-detail .market-sell__button button {
+  width: 587rem;
+  height: 80rem;
+
+  background: #333333;
+
+  color: #ffffff;
+}
+.autcion-detail .market-sell__warn {
+  display: block;
+  padding-top: 26rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 19rem;
+
+  color: #333333;
+}

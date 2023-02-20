@@ -25,11 +25,12 @@
   font-weight: 400;
   font-size: 16rem;
   line-height: 22rem;
+  text-align: center;
 
   color: #4f4f4f;
 
-  padding-top: 16rem;
-  padding-bottom: 48rem;
+  padding: 16rem 0;
+  height: 76rem;
 }
 .check-btn {
   width: 100%;
