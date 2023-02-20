@@ -16,7 +16,7 @@ const Header = props => {
             </a>
           </li>
           <li>
-            <a className={props.active == '1' ? 'active' : ''} href="#">
+            <a className={props.active == '1' ? 'active' : ''} href="/qcoa/">
               Q-CoA
             </a>
           </li>

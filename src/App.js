@@ -53,6 +53,9 @@ import SupportInQuiry from './pages/Support/InQuiry/SuportInQuiry'
 import SignUpKYC from './components/SignUp/SignUpKYC'
 import Search from './pages/Search/Search'
 import AuctionDetail from './pages/Marketplace/Auction/Item/AuctionDetail'
+import QCoAMain from './pages/QCoA/QCoAMain'
+import QCoAAbout from './pages/QCoA/About/QCoAAbout'
+import QCoAList from './pages/QCoA/List/QcoAList'
 function App() {
   return (
     <BrowserRouter>
@@ -270,6 +273,23 @@ function App() {
             <SupportMain search={false} active={3} choice={3}>
               <SupportInQuiry />
             </SupportMain>
+          }
+        ></Route>
+
+        <Route
+          path="/qcoa"
+          element={
+            <QCoAMain search={1} active={1} choice={0}>
+              <QCoAAbout />
+            </QCoAMain>
+          }
+        ></Route>
+        <Route
+          path="/qcoa/list"
+          element={
+            <QCoAMain search={1} active={1} choice={1}>
+              <QCoAList />
+            </QCoAMain>
           }
         ></Route>
       </Routes>
