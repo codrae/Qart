@@ -51,6 +51,7 @@ import SupportNotice from './pages/Support/Notice/SupportNotice'
 import SupportFAQ from './pages/Support/FAQ/SupportFAQ'
 import SupportInQuiry from './pages/Support/InQuiry/SuportInQuiry'
 import SignUpKYC from './components/SignUp/SignUpKYC'
+import Search from './pages/Search/Search'
 function App() {
   return (
     <BrowserRouter>
@@ -64,6 +65,7 @@ function App() {
         <Route path="/signUp/auth/cert" element={<SignUpCert />}></Route>
         <Route path="/signUp/auth/kyc" element={<SignUpKYC />}></Route>
         <Route path="/login" element={<Login />}></Route>
+        <Route path="/search" element={<Search />}></Route>
         <Route
           path="/artdb/artist"
           element={
@@ -177,7 +179,7 @@ function App() {
         <Route
           path="/market/platform"
           element={
-            <Marketplace active={1}>
+            <Marketplace search={1} active={1}>
               <MarketPlatform />
             </Marketplace>
           }

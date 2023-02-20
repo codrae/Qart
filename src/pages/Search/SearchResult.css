@@ -1,0 +1,65 @@
+.search-result-list {
+  position: relative;
+  z-index: 0;
+  padding: 0 49rem;
+  padding-top: 48rem;
+  padding-bottom: 129rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  z-index: -1;
+}
+.search-item {
+  width: 400rem;
+  position: relative;
+  z-index: -1;
+}
+.search-item > a {
+  position: relative;
+  z-index: -1;
+}
+.search-item > img {
+  width: 100%;
+  height: 430rem;
+  object-fit: contain;
+
+  box-sizing: border-box;
+  border: 1rem solid #f2f2f2;
+}
+.search-item-info {
+  font-family: 'Roboto';
+  font-style: normal;
+  text-align: center;
+
+  padding-top: 31rem;
+  padding-bottom: 80rem;
+}
+.search-item-info > h3 {
+  font-weight: 500;
+  font-size: 28rem;
+  line-height: 33rem;
+
+  color: #000000;
+}
+.search-item-info > h2 {
+  font-weight: 700;
+  font-size: 32rem;
+  line-height: 38rem;
+
+  color: #333333;
+  padding-top: 10rem;
+}
+.search-item-info > h4 {
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 28rem;
+  padding-top: 8rem;
+
+  color: #bdbdbd;
+}

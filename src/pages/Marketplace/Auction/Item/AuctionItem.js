@@ -27,28 +27,28 @@ function AuctionItem() {
   for (var i = 0; i < 20; i++) {
     result.push(
       <div>
-        <Link
-          to={`${pitem[i].link}/${pitem[i].id}`}
-          state={{
-            item: pitem[i],
-          }}
-        >
-          <div className="slider__item">
-            <img src={require('../../../../' + pitem[i].info)} alt="item"></img>
-            <h3>{pitem[i].author}</h3>
-            <h2>{pitem[i].title}</h2>
-            <h4>
-              {pitem[i].date} {pitem[i].size} {pitem[i].detail}
-            </h4>
-          </div>
-        </Link>
+        <div className="slider__item">
+          <img src={require('../../../../' + pitem[i].info)} alt="item"></img>
+          <h3>{pitem[i].author}</h3>
+          <h2>{pitem[i].title}</h2>
+          <h4>
+            {pitem[i].date} {pitem[i].size} {pitem[i].detail}
+          </h4>
+        </div>
         <div className="market-item">
           <span className="market-item--price">{pitem[i].price}</span>
           <button href="#" className="market-item--heart">
             <span className="ir_pm">좋아요</span>
           </button>
         </div>
-        <button className="buy-button">응찰하기</button>
+        <Link
+          to={`./${pitem[i].id}`}
+          state={{
+            item: pitem[i],
+          }}
+        >
+          <button className="buy-button">응찰하기</button>
+        </Link>
       </div>
     )
   }
