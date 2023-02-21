@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import ArtDetailInfo from '../../../../components/ArtDetailInfo/ArtDetailInfo'
 import HistoryInfo from '../../../../components/HistoryInfo/HistoryInfo'
@@ -8,6 +8,7 @@ import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './ArtistDetail.css'
 
 function ArtistDetail(props) {
+  const [menu, setMenu] = useState(0)
   const { item } = useLocation().state
 
   const infoItem = {
@@ -151,14 +152,18 @@ function ArtistDetail(props) {
           </ul>
         </div>
       </section>
-      <WorkHeader
-        moreList={detailList}
-        moreActive={1}
-        title_e={'by genre'}
-        title_k={'작품'}
-      ></WorkHeader>
-      <div className="container artist-d-page-slide">
-        <PageSlide items={pageItem} rows={3} slidesPerRow={3} />
+      <div className="artist-detail-ps">
+        <WorkHeader
+          moreListChange={setMenu}
+          moreMenu={menu}
+          moreList={detailList}
+          moreActive={1}
+          title_e={'by genre'}
+          title_k={'작품'}
+        ></WorkHeader>
+        <div className="container artist-d-page-slide">
+          <PageSlide items={pageItem} rows={3} slidesPerRow={3} />
+        </div>
       </div>
     </section>
   )

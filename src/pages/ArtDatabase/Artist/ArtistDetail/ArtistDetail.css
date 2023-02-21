@@ -4,6 +4,13 @@
 }
 .artist-detail .work-header {
   background: #fbfbfb;
+  height: 129rem;
+}
+.artist-detail-ps .work-header {
+  height: 203rem;
+}
+.artist-detail-ps .work-header-d .work-header__container {
+  height: 122rem;
 }
 .artist-detail .art-detail__image {
   width: 240rem;
@@ -124,13 +131,13 @@
   display: none;
 }
 .artist-detail .page-slider .slick-dots {
-  top: calc(1945rem - 20rem);
+  top: calc(1900rem - 20rem);
 }
 .artist-detail .page-slider__list .slick-first,
 .artist-detail .page-slider__list .slick-last,
 .artist-detail .page-slider__list .slick-prev,
 .artist-detail .page-slider__list .slick-next {
-  top: 1945rem;
+  top: 1900rem;
   left: 472rem;
 }
 .artist-detail .page-slider__list .slick-next {
