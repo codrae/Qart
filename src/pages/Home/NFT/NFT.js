@@ -38,7 +38,7 @@ function NFT() {
           <div className="nft-item">
             <p>
               <span className="nft-item-title">제작년도</span>
-              <span className="nft-item-created">{item.created}</span>
+              <span className="nft-item-created">{item[i].created}</span>
             </p>
             <p>
               <span className="nft-item-title">판매</span>

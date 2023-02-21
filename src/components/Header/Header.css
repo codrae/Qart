@@ -100,9 +100,9 @@ header.black {
 .header__padding .logout {
   color: #ffffff;
 }
-/* .black .header__padding .login {
+.black .header__padding .login {
   color: #2f80ed;
-} */
+}
 @media (max-width: 480px) {
   header {
     height: 63rem;

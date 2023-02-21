@@ -6,40 +6,57 @@ import ArtDB from './ArtDB/ArtDB'
 import New from './New/New'
 import BannerSlide from '../../components/BannerSlide/BannerSlide'
 import NFT from './NFT/NFT'
+import HeaderSmall from '../../components/Header/HeaderSmall/HeaderSmall'
 
 const Main = () => {
+  const moreList = {
+    menu: [
+      {
+        title: 'Work',
+        link: '/artdb/work/',
+      },
+      {
+        title: 'Artist',
+        link: '/artdb/artist/',
+      },
+      {
+        title: 'Venue',
+        link: '/artdb/venue/',
+      },
+    ],
+  }
   const bannerList = [
     {
       id: 1,
-      info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
-      author: '김동선',
-      title: '곰순이, 2010년대',
-      link: '/artdb/artist',
-      date: '2010년대',
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
     },
     {
       id: 2,
-      info: 'qart_test/판화/민정기, 묵안리, 2015.jpg',
-      author: '민정기',
-      title: '묵안리2, 2015',
-      link: '/artdb/artist',
-      date: '2010년대',
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
     },
     {
       id: 3,
-      info: 'qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png',
-      author: 'Chang SangEui',
-      title: 'Flower Rain, 2019',
-      link: '/artdb/artist',
-      date: '2010년대',
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
     },
     {
       id: 4,
-      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
-      author: 'Kim HoDeuk',
-      title: 'Distant Mountain, 2015',
-      link: '/artdb/artist',
-      date: '2010년대',
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
     },
   ]
   return (
@@ -51,6 +68,7 @@ const Main = () => {
         placeholder={'작가, 작품, 기관을 검색하세요'}
         active={true}
       />
+      <HeaderSmall moreList={moreList} active={1} />
       <BannerSlide items={bannerList} />
       <ArtDB />
       <New />

@@ -45,31 +45,32 @@
 
 .gallery-dir__info__deatil > .gallery-dir__info-name {
   display: block;
-  padding-top: 80rem;
+  padding-top: 40rem;
   padding-left: 5%;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16rem;
+  line-height: 22rem;
   color: #333333;
   width: 95%;
 }
 .gallery-dir__info__deatil > h3 {
   display: block;
-  padding-top: 195rem;
+  padding-top: 243rem;
   padding-left: 5%;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
-  font-size: 53rem;
-  line-height: 62rem;
+  font-size: 40rem;
+  line-height: 47rem;
   color: #000000;
 }
 .gallery-dir__info__deatil > h5 {
   display: block;
-  padding-top: 8rem;
+  padding-top: 15rem;
   padding-left: 5%;
 
   font-family: 'Noto Sans';
@@ -87,7 +88,7 @@
 } */
 .gallery-dir-link {
   margin-left: 5%;
-  margin-top: 20rem;
+  margin-top: 40rem;
   background: url('../../assets/move_right.png') no-repeat 100% 100%;
   background-size: contain;
   padding-left: 8.33%;

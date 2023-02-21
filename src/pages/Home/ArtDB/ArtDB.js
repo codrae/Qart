@@ -23,8 +23,8 @@ const ArtDB = () => {
       image: 'assets/art_03.png',
       link: '/artdb/venue',
       small: 'Art Database',
-      section: 'Venue',
-      title: '전시기관 정보 바로가기',
+      section: 'Agency&Collector',
+      title: '소장처별 바로가기',
     },
   ]
 

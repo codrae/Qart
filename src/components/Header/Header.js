@@ -43,7 +43,7 @@ const Header = props => {
             </div>
           ) : (
             <a className="login" href="/login">
-              <span>로그인</span>
+              <span>Log-in</span>
             </a>
           )}
 
