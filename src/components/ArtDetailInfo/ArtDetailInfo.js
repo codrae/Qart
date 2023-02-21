@@ -29,13 +29,15 @@ function ArtDetailInfo(props) {
               <div className="art-detail__profile">
                 <img src={require('../../' + item.author.image)}></img>
                 <article className="art-detail__profile__info">
-                  <h2>{item.author.name}</h2>
+                  <h2>
+                    <span className="ad-profile__info-k">
+                      {item.author.name}
+                    </span>{' '}
+                    {item.author.e_name}
+                  </h2>
                   <h4>{item.author.email}</h4>
-                  <button>팔로우</button>
                 </article>
-                <button className="art-detail__profile__move">
-                  <span className="ir_pm">이동</span>
-                </button>
+                <button className="art-detail__profile__move">팔로우</button>
               </div>
             ) : (
               <></>

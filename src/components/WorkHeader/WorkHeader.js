@@ -37,6 +37,7 @@ const WorkHeader = props => {
                   items: props.items,
                   moreList: props.moreList,
                   moreActive: props.moreActive,
+                  options: props.options,
                 }}
               >
                 <span>더보기</span>

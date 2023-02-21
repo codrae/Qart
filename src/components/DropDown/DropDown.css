@@ -32,7 +32,7 @@
   box-sizing: border-box;
 }
 .show-drop-list li {
-  width: 240rem;
+  width: 244rem;
 }
 .drop-select:after {
   /* position: absolute; */

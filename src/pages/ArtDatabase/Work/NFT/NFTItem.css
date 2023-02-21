@@ -1,0 +1,15 @@
+.nft-detail-item .market-nft__info {
+  height: 667rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.nft-detail-item .art-detail__profile {
+  margin-left: 0;
+}
+.nft-detail-item .m-nft-detail__list {
+  padding-top: 54rem;
+}
+.nft-detail-item .m-nft-deal {
+  margin-bottom: 217rem;
+}

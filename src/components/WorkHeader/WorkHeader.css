@@ -105,35 +105,32 @@
 .work-header-d .work-header__info {
   display: flex;
   flex-direction: row;
+  height: 100%;
+  align-items: center;
 }
 
 .work-header-d h4 {
-  display: flex;
+  font-size: 24rem;
   order: 1;
+  padding-top: 8rem;
   padding-bottom: 0;
-  line-height: 49rem;
-  padding-top: 4rem;
 }
 .work-header-d h2 {
-  display: flex;
   order: 0;
-
   padding-right: 16rem;
-
   font-size: 42rem;
-  line-height: 49rem;
 }
 .work-header__detail {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 81rem;
-  padding-left: 49rem;
+  padding-left: 51rem;
 }
 .work-header__detail button {
   margin: 0;
   padding: 0;
-  margin-right: 50rem;
+  margin-right: 80rem;
   border: none;
   background: none;
   font-family: 'Noto Sans';

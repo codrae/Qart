@@ -24,6 +24,7 @@
 }
 .detail-info__comment {
   width: 1145rem;
+  margin: 0 auto;
   text-align: center;
   font-family: 'Noto Sans';
   font-style: normal;

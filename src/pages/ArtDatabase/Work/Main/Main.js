@@ -43,6 +43,7 @@ function Main() {
       author: '작가미상',
       title: '나전칠연상, 조선시대',
       date: '2010년대',
+      link: '/artdb/work',
     })
   }
   const bannerList2 = [
@@ -51,24 +52,24 @@ function Main() {
       info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
       author: '김문정',
       title: 'looseroutside_pespective, 2020',
-      link: '/artdb/work3',
       date: '2010년대',
+      link: '/artdb/work',
     },
     {
       id: 6,
       info: 'qart_test/미디어/node00, 내재율의 외적 파동, 2019.jpg',
       author: 'node00',
       title: '내재울의 외적 파동, 2019',
-      link: '/artdb/work3',
       date: '2010년대',
+      link: '/artdb/work',
     },
     {
       id: 7,
       info: 'qart_test/미디어/node00, 내재율의 외적 파동2, 2019.jpg',
       author: 'node00',
       title: '내재울의 외적 파동2, 2019',
-      link: '/artdb/work3',
       date: '2010년대',
+      link: '/artdb/work',
     },
   ]
   for (var i = 0; i < 100; i++) {
@@ -77,7 +78,7 @@ function Main() {
       info: 'qart_test/미디어/김문정_looseroutside_pespective, 3d모델링모션, 2020.jpg',
       author: '김문정',
       title: 'looseroutside_pespective, 2020',
-      link: '/artdb/work3',
+      link: '/artdb/work',
       date: '2010년대',
     })
   }
@@ -96,30 +97,41 @@ function Main() {
     '공예(0000)',
     '기타(0000)',
   ]
-
+  const detailList2 = [
+    '전체(0000)',
+    '회화(0000)',
+    '판화(0000)',
+    '사진(0000)',
+    '조각/입체(0000)',
+    '미디어(0000)',
+  ]
   var pageItem = []
   for (var i = 0; i < 36; i++) {
     pageItem.push({
+      id: 9,
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
       author: '김동선',
       title: '곰순이, 2010년대',
       date: '2010년대',
+      link: '/artdb/work',
     })
   }
-  const topicList = [
-    {
-      id: 1,
-      info: 'qart_test/고미술/작가미상, 나전칠연상, 높이 26.7cm, 너비 24.4cm, 길이 36.7cm, 조선시대.jpg',
-    },
-    {
-      id: 2,
-      info: 'qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg',
-    },
-    {
-      id: 3,
-      info: 'qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg',
-    },
-  ]
+  // const topicList = [
+  //   {
+  //     id: 1,
+  //     info: 'qart_test/고미술/작가미상, 나전칠연상, 높이 26.7cm, 너비 24.4cm, 길이 36.7cm, 조선시대.jpg',
+  //   },
+  //   {
+  //     id: 2,
+  //     info: 'qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg',
+  //   },
+  //   {
+  //     id: 3,
+  //     info: 'qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg',
+  //   },
+  // ]
+  const options01 = ['연도순', '작품명']
+  const options02 = ['연도순', '작품명', '작가명']
   return (
     <div>
       <ArtTopic
@@ -134,21 +146,27 @@ function Main() {
         represent={3}
         moreList={detailList}
         moreActive={false}
+        options={options01}
       />
       <ArtMoveDetail
         title_e={'Modern&Contemporary'}
-        title_k={'근현대'}
+        title_k={'근현대(000)'}
         items={bannerList2}
         represent={3}
+        moreList={detailList2}
+        moreActive={false}
+        options={options02}
       />
-      <ArtMoveDetail
-        title_e={'by genre'}
-        title_k={'유형별'}
-        moreList={moreList}
-        moreActive={true}
-        items={pageItem}
-        represent={6}
-      />
+      <div className="art-md-with-header">
+        <ArtMoveDetail
+          title_e={'by genre'}
+          title_k={'유형별'}
+          moreList={moreList}
+          moreActive={true}
+          items={pageItem}
+          represent={6}
+        />
+      </div>
     </div>
   )
 }

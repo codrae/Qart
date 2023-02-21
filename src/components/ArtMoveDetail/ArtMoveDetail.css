@@ -134,6 +134,21 @@
   min-width: 1920rem;
   border-bottom: 1rem solid #e0e0e0;
 }
+.art-md-with-header .art-md--content {
+  border-bottom: 0;
+}
+.art-md-with-header .work-header {
+  /* height: 135rem; */
+}
+.art-md-with-header .art-md--content .container {
+  width: 1378rem;
+  box-sizing: border-box;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+}
+.art-md-with-header .art-md--content__list {
+  padding: 70rem 49rem;
+}
 .art-md--content__list {
   padding: 70rem 320rem;
   padding-bottom: 0;

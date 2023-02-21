@@ -2,35 +2,35 @@
 
 # 수정
 
-- header Login
+- header Login +
 
 # 링크
 
 # Art Database
 
 - main : http://localhost:3000/
-  - banner 멘트 넣기, 수정 -> venue 거 가져오기
-  - artdb 위아래 간격 수정
-  - artdb Gallery 멘트 수정
-  - NFT 제작년도 없음
+  - banner 멘트 넣기, 수정 -> venue 거 가져오기 +
+  - artdb 위아래 간격 수정 +
+  - artdb Gallery 멘트 수정 +
+  - NFT 제작년도 없음 +
 
 ## art work
 
 - art work : http://localhost:3000/artdb/work/
-  - 유형별 세로선 넣기
+  - 유형별 세로선 넣기 +
 - 고미술 : http://localhost:3000/artdb/work/detail
-  - 작은 메뉴 선택 가능하도록
-  - 드롭 메뉴 내용 수정
-  - 드롭 메뉴 li 크기 수정
+  - 작은 메뉴 선택 가능하도록 +
+  - 드롭 메뉴 내용 수정 +
+  - 드롭 메뉴 li 크기 수정 +
 - 근현대 : http://localhost:3000/artdb/work/detail
-  - 작은 메뉴 추가
-  - 드롭 메뉴 내용 수정
-  - 드롭 메뉴 li 크기 수정
-  - 연결 수정
+  - 작은 메뉴 추가 +
+  - 드롭 메뉴 내용 수정 +
+  - 드롭 메뉴 li 크기 수정 +
+  - 연결 수정 +
 - 상세 페이지 : http://localhost:3000/artdb/work/1
-  - header 크기, 색상 수정
-  - 에디션 내용 수정
-  - follow 배치 수정
+  - header 크기, 색상 수정 +
+  - 에디션 내용 수정 +
+  - follow 배치 수정 +
 
 ## NFT
 

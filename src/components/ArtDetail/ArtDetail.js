@@ -9,12 +9,13 @@ import WorkHeader from '../WorkHeader/WorkHeader'
 import DropDown from '../DropDown/DropDown'
 
 function ArtDetail(props) {
+  const [menu, setMenu] = useState(0)
   const location = useLocation().state
   const rows = props.rows || 4
   const slidersPerRow = props.slidersPerRow || 3
-  const { title_e, title_k, moreList, items } = props.items ? props : location
-  console.log('props', props)
-  console.log('location', location)
+  const { title_e, title_k, moreList, items, options } = props.items
+    ? props
+    : location
   const TOTAL_PAGE = Math.round(items.length / (rows * slidersPerRow))
   const [dotArr, setDotArr] = useState(new Array(TOTAL_PAGE).fill(0))
   const sliderRef = useRef()
@@ -57,10 +58,11 @@ function ArtDetail(props) {
         item
       ) : (
         <Link
-          to={'/market/nft/' + item.id}
+          to={item.link + '/' + item.id}
           state={{
             item: item,
           }}
+          className="art-d-slider__item-container"
         >
           <div key={i} className="art-d-slider__item">
             <img
@@ -120,7 +122,6 @@ function ArtDetail(props) {
     setDotArr(numArr)
   }
 
-  const options = ['최신등록순', '작품명순', '작가명순', '제작연도순']
   return (
     <div className="art-d">
       <header className="art-d-header">
@@ -128,6 +129,8 @@ function ArtDetail(props) {
           <WorkHeader
             moreList={moreList}
             moreActive={true}
+            moreListChange={setMenu}
+            moreMenu={menu}
             title_e={title_e}
             title_k={title_k}
             color={false}
@@ -148,6 +151,7 @@ function ArtDetail(props) {
           </div>
           <DropDown
             options={props.options ? props.options : options}
+            //options={props.options}
           ></DropDown>
         </div>
       </header>

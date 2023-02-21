@@ -61,3 +61,6 @@
 .nft-main .art-d .art-d-slider .slick-dots {
   top: calc(2682rem - 20rem + 346rem);
 }
+.nft-main .art-d-header-container {
+  height: 203rem;
+}

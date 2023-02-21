@@ -7,6 +7,8 @@ import ArtDetailInfo from '../../../components/ArtDetailInfo/ArtDetailInfo'
 import { useLocation } from 'react-router-dom'
 import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
+
+import './ArtDbWork3.css'
 function ArtDbWork3() {
   const item = useLocation().state.item
   const [isShowMore, setIsShowMore] = useState(false) // 더보기 열고 닫는 스위치
@@ -40,6 +42,7 @@ function ArtDbWork3() {
     author: {
       image: 'qart_test/고미술/KakaoTalk_Photo_2022-07-13-17-18-21.jpeg',
       name: item.author,
+      e_name: 'eeeeee',
       email: '00000@naver.com',
     },
     infos: [
@@ -49,7 +52,7 @@ function ArtDbWork3() {
       },
       {
         title: '에디션',
-        content: 'Giclée print on Canvas',
+        content: '2/7',
       },
       {
         title: '작품크기',

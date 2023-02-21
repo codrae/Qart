@@ -56,6 +56,7 @@ import AuctionDetail from './pages/Marketplace/Auction/Item/AuctionDetail'
 import QCoAMain from './pages/QCoA/QCoAMain'
 import QCoAAbout from './pages/QCoA/About/QCoAAbout'
 import QCoAList from './pages/QCoA/List/QcoAList'
+import NFTItem from './pages/ArtDatabase/Work/NFT/NFTItem'
 function App() {
   return (
     <BrowserRouter>
@@ -121,6 +122,14 @@ function App() {
               <ArtDbWork active={1}>
                 <NftMain />
               </ArtDbWork>
+            </ArtDatabase>
+          }
+        ></Route>
+        <Route
+          path="/artdb/work/nft/:nftId"
+          element={
+            <ArtDatabase search={false}>
+              <NFTItem />
             </ArtDatabase>
           }
         ></Route>

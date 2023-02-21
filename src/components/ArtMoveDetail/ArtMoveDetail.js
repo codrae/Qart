@@ -11,7 +11,7 @@ function ArtMoveDetail(props) {
     for (var i = 0; i < props.represent; i++) {
       result.push(
         <Link
-          to={`./work/${item[i].id}`}
+          to={item[i].link + '/' + item[i].id}
           state={{
             item: item[i],
           }}
@@ -31,10 +31,12 @@ function ArtMoveDetail(props) {
       <WorkHeader
         moreList={props.moreList}
         moreActive={props.moreActive}
+        moreMenu={0}
         title_e={props.title_e}
         title_k={props.title_k}
         move={'./detail'}
         items={props.items}
+        options={props.options}
       ></WorkHeader>
       <section className="art-md--content">
         <div className="container">

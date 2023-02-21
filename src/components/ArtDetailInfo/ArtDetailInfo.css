@@ -79,20 +79,22 @@
   color: #000000;
 }
 .art-detail__profile__info h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24rem;
   line-height: 28rem;
-  padding-bottom: 4rem;
+  padding-bottom: 16rem;
+}
+.ad-profile__info-k {
+  font-weight: 700;
 }
 .art-detail__profile__info h4 {
   font-weight: 400;
   font-size: 20rem;
   line-height: 23rem;
   color: #828282;
-  padding-bottom: 12rem;
 }
-.art-detail__profile__info button {
-  width: 100rem;
+.art-detail__profile__move {
+  width: 101rem;
   height: 35rem;
   font-weight: 400;
   font-size: 16rem;
@@ -103,21 +105,13 @@
   border: 1rem solid #2f80ed;
   border-radius: 34rem;
   background: none;
+  margin-right: 27rem;
 }
-.art-detail__profile__info button:active,
-.art-detail__profile__info button:hover {
+.art-detail__profile__move:active,
+.art-detail__profile__move:hover {
   color: #ffffff;
   background: #2f80ed;
 }
-.art-detail__profile__move {
-  width: 87rem;
-  height: 100%;
-
-  background: url('../../assets/page_next.png') no-repeat center;
-  background-size: 32.5rem;
-  border: none;
-}
-
 .side-arrow-slider__list {
   display: flex;
   flex-direction: row;
