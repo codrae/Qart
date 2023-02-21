@@ -16,7 +16,7 @@ function MarketAuction(props) {
       },
       {
         title: 'Past',
-        link: '/market/auction/past',
+        link: '#',
       },
     ],
   }

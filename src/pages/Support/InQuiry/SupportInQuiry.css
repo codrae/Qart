@@ -1,6 +1,6 @@
 .support-inq {
   width: 100%;
-  border-bottom: 1rem solid #e0e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0e0; */
   min-height: calc(100% - 347rem - 455rem);
 }
 .support-inq .header-small-list li a {
@@ -77,7 +77,7 @@
 .si-admit {
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .si-admit h1 {
   text-align: right;
@@ -91,6 +91,7 @@
   color: #333333;
 
   margin-right: 20rem;
+  padding-bottom: 147rem;
 }
 .si-admit-icon {
   display: block;

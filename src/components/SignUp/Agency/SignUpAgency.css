@@ -4,9 +4,9 @@
 }
 .sign-agency-container {
   width: 1378rem;
-  height: calc(100% - 100rem);
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  height: calc(100% - 100rem - 455rem);
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@ input[type='date']:valid::before {
   display: none;
 }
 
-::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
   display: block;
@@ -53,7 +53,7 @@ input[type='date']:valid::before {
   background-size: 22.5rem 25rem;
   width: 60rem;
   height: 100%;
-  border-width: thin;
+  /* border-width: thin; */
 }
 .date-input {
   font-family: 'Noto Sans KR';
@@ -69,6 +69,32 @@ input[type='date']:valid::before {
 .artist-content .email-input-container {
   width: 596rem;
   margin-right: 88rem;
+}
+.artist-content .email-input-container .drop-select {
+  width: 137rem;
+  height: 56rem;
+
+  font-size: 16rem;
+  line-height: 23rem;
+
+  padding-left: 16rem;
+
+  border: 1rem solid #cccccc;
+}
+.artist-content .email-input-container .drop-select:after {
+  right: 14.18rem;
+}
+.artist-content .email-input-container .show-drop-list {
+  border: 1rem solid #cccccc;
+}
+.artist-content .email-input-container .show-drop-list li {
+  width: 135rem;
+  height: 56rem;
+
+  font-size: 16rem;
+  line-height: 23rem;
+
+  padding-left: 16rem;
 }
 .artist-content .email-input-email {
   width: 295rem;

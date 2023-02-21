@@ -165,6 +165,7 @@ function Main() {
           moreActive={true}
           items={pageItem}
           represent={6}
+          options={options02}
         />
       </div>
     </div>

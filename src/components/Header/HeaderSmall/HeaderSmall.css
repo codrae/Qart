@@ -4,7 +4,7 @@
   height: 86rem;
   background: #fbfbfb;
 
-  border-bottom: 1rem solid #e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0; */
 }
 .header-small-container {
   display: flex;
@@ -37,6 +37,7 @@
   line-height: 38rem;
 
   color: #828282;
+  cursor: pointer;
 }
 .header-small-list li a:active,
 .header-small-list li a.active,

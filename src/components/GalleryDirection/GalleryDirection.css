@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 1920rem;
   height: 480rem;
-  border-bottom: 1rem solid #bdbdbd;
+  border-bottom: 1rem solid #e0e0e0;
 }
 .gallery-dir__item:last-child {
   border-bottom: none;
@@ -32,13 +32,13 @@
   display: block;
   width: 50%;
   height: 100%;
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .gallery-dir-left {
   border-right: none;
-  border-left: 1rem solid #bdbdbd;
+  border-left: 1rem solid #e0e0e0;
   /* text-align: right; */
   margin-left: 50%;
 }

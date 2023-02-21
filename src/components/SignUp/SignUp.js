@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './SignUp.css'
 
@@ -87,6 +88,7 @@ function SignUp() {
           </Link>
         </section>
       </div>
+      <Footer />
     </div>
   )
 }

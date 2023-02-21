@@ -128,7 +128,7 @@ function MarketAll() {
 
   for (var i = 0; i < 36; i++) {
     nftResult.push(
-      <div className="slider__item">
+      <div className="market-nft slider__item">
         <Link
           to={`${nftItem[i].link}/${nftItem[i].id}`}
           state={{
@@ -141,7 +141,6 @@ function MarketAll() {
               {nftItem[i].author} {nftItem[i].author_e}
             </h3>
             <h2>{nftItem[i].title}</h2>
-            <h4>{nftItem[i].created}</h4>
           </div>
         </Link>
 
@@ -155,8 +154,9 @@ function MarketAll() {
             <span className="nft-item-sell">{nftItem[i].sell}</span>
           </p>
         </div>
+        <span className="nft-price">$200.00</span>
         <div className="nft-button market-item--button ">
-          <span>{nftItem[i].detail}</span>
+          <span>000,000,000원</span>
           <button href="#" className="market-button--heart">
             <span className="ir_pm">좋아요</span>
           </button>

@@ -1,7 +1,7 @@
 .support-faq {
   min-width: 1920rem;
-  border-bottom: 1rem solid #e0e0e0e0;
-  min-height: calc(100% - 347rem 455rem);
+  /* border-bottom: 1rem solid #e0e0e0e0; */
+  min-height: calc(100% - 347rem - 455rem);
 }
 .support-faq .header-small-list li a {
   font-size: 24rem;

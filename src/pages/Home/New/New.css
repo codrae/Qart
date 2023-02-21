@@ -18,13 +18,13 @@
   font-size: 48rem;
   line-height: 56rem;
   box-sizing: border-box;
-  border-right: 1rem solid #bdbdbd;
+  border-right: 1rem solid #e0e0e0;
 }
 .new-container {
   width: 960rem;
   height: 1195rem;
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .new-slide {

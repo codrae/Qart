@@ -20,6 +20,9 @@
   border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
+.gallery__item:last-child {
+  border-bottom: 0;
+}
 /* .gallery__item-container {
   width: 1378rem;
 

@@ -5,9 +5,9 @@
 }
 .sign-artist-container {
   width: 1378rem;
-  min-height: calc(100% - 100rem);
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  min-height: calc(100% - 100rem - 455rem);
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 
   display: flex;
   flex-direction: column;
@@ -30,6 +30,7 @@
 }
 .artist-content .general-input {
   width: 596rem;
+  margin-bottom: 54rem;
 }
 .artist-content .general-input-num {
   width: 465rem;

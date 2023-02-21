@@ -1,8 +1,21 @@
 .market-main {
   min-width: 1920rem;
 }
-.market-main .art-topic .container {
+.art-topic {
+  box-sizing: border-box;
+  /* border-top: 1rem solid #e0e0e0; */
+}
+.art-topic .container {
   border: none;
+}
+.art-topic .work-header {
+  height: 126rem;
+}
+.art-topic .work-header > .container {
+  width: 1378rem;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
+  box-sizing: border-box;
 }
 .market-main .art-topic__hover {
   display: none;
@@ -130,11 +143,12 @@
   height: 955rem;
 }
 .art-tok .container {
+  width: 1378rem;
   display: flex;
   flex-direction: row;
 }
 .art-tok-main {
-  width: 1270rem;
+  width: 999rem;
   height: 628rem;
 
   margin-top: 80rem;
@@ -149,7 +163,7 @@
 .art-tok-info {
   position: absolute;
   top: 435rem;
-  left: 917rem;
+  left: 646rem;
 }
 .art-tok-info h2 {
   font-family: 'Roboto';
@@ -213,6 +227,9 @@
 }
 .market-main .art-md--content__list {
   padding-bottom: 60rem;
+}
+.upcoming-auction .art-md--content {
+  border-bottom: 0;
 }
 .upcoming-auction-item {
   width: 620rem;
@@ -317,4 +334,11 @@
 
   background: #f2f2f2;
   object-fit: contain;
+}
+.upcoming-auction .work-header {
+  height: 126rem;
+}
+.market-main .work-header__info-big h2 {
+  font-size: 36rem;
+  line-height: 42rem;
 }

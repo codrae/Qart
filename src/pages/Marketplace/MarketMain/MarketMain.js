@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 import ArtMoveDetail from '../../../components/ArtMoveDetail/ArtMoveDetail'
 
 function MarketMain() {
-  const bannerList = [
+  const pickList = [
     {
       id: 1,
       info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
@@ -51,7 +51,40 @@ function MarketMain() {
       link: '/market',
     },
   ]
-
+  const bannerList = [
+    {
+      id: 1,
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+    {
+      id: 2,
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+    {
+      id: 3,
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+    {
+      id: 4,
+      info: 'assets/banner01.png',
+      title: 'YOSIGO',
+      link: '.',
+      detail:
+        '아날로그의 낭만을 사랑하는 스페인 출신 예술가 요시고. 그가 셔터를 누르는 순간 일상적 풍경에 영화적 숨결이 깃든다.',
+    },
+  ]
   const info = [
     {
       id: 1,
@@ -119,12 +152,12 @@ function MarketMain() {
 
   return (
     <div className="market-main">
-      <BannerSlide items={info} />
+      <BannerSlide items={bannerList} />
       <ArtTopic title_k={'큐레이터’s Pick'} items={info} hover={true} />
       <BigTopArrow
         title_e={'Qart’s Pick'}
         title_k={'금주의 추천작'}
-        items={bannerList}
+        items={pickList}
       />
       <section className="hot-click">
         <WorkHeader title_k={'Hot Click!'} />
@@ -179,12 +212,14 @@ function MarketMain() {
           </div>
         </div>
       </section>
-      <ArtMoveDetail
-        title_k={'Upcoming Auction'}
-        items={moreItem}
-        represent={4}
-        RepresentingItems={RepresentingItems(moreItem)}
-      />
+      <div className="upcoming-auction">
+        <ArtMoveDetail
+          title_k={'Upcoming Auction'}
+          items={moreItem}
+          represent={4}
+          RepresentingItems={RepresentingItems(moreItem)}
+        />
+      </div>
     </div>
   )
 }

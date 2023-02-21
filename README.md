@@ -51,7 +51,7 @@
 ## venue
 
 - venue : http://localhost:3000/artdb/venue/
-  - venue 선택 가능하도록
+  - venue 선택 가능하도록 ??
 - 상세 페이지 : http://localhost:3000/artdb/venue/1
   - header 크기 수정 +
   - 연락처 내용 수정 +
@@ -64,28 +64,28 @@
 # 전체 검색
 
 - search : http://localhost:3000/search
+  - 선택 시 이동되도록 +
 
 ---
 
 # Marketplace
 
 - main : http://localhost:3000/market
-  - small header 없애기
-  - banner 수정
-  - 큐레이터 픽 height 수정
-  - artTok 이미지 크기 수정
+  - banner 수정 +
+  - 큐레이터 픽 height 수정 +
+  - artTok 이미지 크기 수정 +
 
 ## all
 
 - all : http://localhost:3000/market/all
-  - 신규작품 header height 수정
-  - all header height 수정
-  - nft item 수정
-  - nft item 결제 페이지 연결
+  - 신규작품 header height 수정 +
+  - all header height 수정 +
+  - nft item 수정 +
+  - nft item 결제 페이지 연결 +
 - 상세페이지 : http://localhost:3000/market/1
-  - header height, 색상 수정
-  - 남은 시간 없애기
-  - 작가의 다른 작품 height 수정
+  - header height, 색상 수정 +
+  - 남은 시간 없애기 +
+  - 작가의 다른 작품 height 수정 +
 - nft 상세 페이지 : http://localhost:3000/market/nft/1
 
 ### 결제 페이지
@@ -100,15 +100,14 @@
 
 - auction : http://localhost:3000/market/auction
 - auction 상세 페이지 : http://localhost:3000/market/auction/1
-  - header 선택 가능하게 수정
-  - 페이지 스크롤 없는지 물어보기
+  - header 선택 가능하게 수정 +
 - auction 작품 상세 : http://localhost:3000/market/auction/1/1
   - 응찰하기 -> 응찰하기 클릭 시 팝업 둘 다 나옴
 
 ## PlatformQ
 
 - platformQ : http://localhost:3000/market/platform
-  - 드롭 다운 li 크기 수정
+  - 드롭 다운 li 크기 수정 +
 
 ---
 
@@ -116,8 +115,7 @@
 
 - ## About QCoA : http://localhost:3000/qcoa/
 - QCoA : http://localhost:3000/qcoa/list
-  - 세로 선 없애기
-  - dots 올리기
+  - 세로 선 없애기 +
 
 ---
 

@@ -5,6 +5,7 @@
 }
 .main-nft .top-arrow {
   height: calc(895rem + 135rem);
+  border-bottom: 0;
 }
 .main-nft .section-header .container {
   border: none;

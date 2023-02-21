@@ -5,9 +5,9 @@
 }
 .sign-auth-container {
   width: 1378rem;
-  height: calc(100% - 100rem);
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  height: calc(100% - 100rem - 455rem);
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 
   display: flex;
@@ -58,7 +58,7 @@
 }
 .auth-content {
   padding-top: 42rem;
-  width: 596rem;
+  /* width: 596rem; */
 
   text-align-last: left;
 }
@@ -83,12 +83,63 @@
 .email-input-container:last-child {
   padding-bottom: 0;
 }
+.email-input-required {
+  width: 173rem;
+  height: 56rem;
+  border: 1rem solid #cccccc;
+  box-sizing: border-box;
 
-.email-input-email {
-  width: 230rem;
+  padding-left: 20rem;
+
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+  border-radius: 0;
+  color: #222222;
+
+  margin-right: 12rem;
+}
+.email-input-required:disabled::placeholder {
+  font-size: 16rem;
+  line-height: 23rem;
+  color: #222222;
+}
+.email-input-required:disabled {
+  background: none;
+}
+.sign-auth .drop-select {
+  width: 137rem;
   height: 56rem;
 
-  background: #ffffff;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  padding-left: 16rem;
+
+  border: 1rem solid #cccccc;
+}
+.sign-auth .drop-select:after {
+  right: 14.18rem;
+}
+.sign-auth .show-drop-list {
+  border: 1rem solid #cccccc;
+}
+.sign-auth .show-drop-list li {
+  width: 135rem;
+  height: 56rem;
+
+  font-size: 16rem;
+  line-height: 23rem;
+
+  padding-left: 16rem;
+}
+.email-input-email {
+  width: 181rem;
+  height: 56rem;
 
   border: 1rem solid #cccccc;
   box-sizing: border-box;
@@ -105,6 +156,8 @@
   border-radius: 0;
   color: #222222;
 }
+.email-input-required:focus,
+.email-input-required:valid,
 .email-input-email:focus,
 .email-input-email:valid {
   border: 1rem solid #222222;
@@ -171,7 +224,7 @@ select::-ms-expand {
   color: #ffffff;
 }
 .email-input-num {
-  width: 490rem;
+  width: 535rem;
   height: 56rem;
 
   background: #ffffff;

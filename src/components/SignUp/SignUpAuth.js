@@ -1,36 +1,23 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import DropDown from '../DropDown/DropDown'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './SignUpAuth.css'
 
 function SignUpAuth() {
   const [select, setSelect] = useState(0)
+  const [menu, setMenu] = useState(0)
+  const [value, setValue] = useState('')
+
   const next = useLocation().state.next
 
-  function AuthEmail() {
-    return (
-      <>
-        <h2 className="email-title">이메일</h2>
-        <div className="email-input-container">
-          <input type="text" className="email-input-email" required></input>
-          <span>@</span>
-          <select className="email-input-email email" required>
-            <option value="">직접입력</option>
-            <option value="naver">naver.com</option>
-            <option value="gm">gmail.com</option>
-            <option value="da">daum.com</option>
-            <option value="yah">yahoo.com</option>
-          </select>
-          <button>인증하기</button>
-        </div>
-        <h2 className="email-title">인증번호</h2>
-        <div className="email-input-container">
-          <input type="text" className="email-input-num" required></input>
-          <button>확인하기</button>
-        </div>
-      </>
-    )
+  const options = ['직접입력', 'naver.com', 'gmail.com', 'daum.com']
+
+  const onChange = e => {
+    setValue(e.target.value)
   }
+
   return (
     <div className="sign-auth">
       <Header />
@@ -46,7 +33,36 @@ function SignUpAuth() {
           </button>
         </div>
         <div className="auth-content">
-          {select == 0 ? <AuthEmail /> : <></>}
+          {select == 0 ? (
+            <>
+              <h2 className="email-title">이메일</h2>
+              <div className="email-input-container">
+                <input
+                  type="text"
+                  className="email-input-email"
+                  required
+                ></input>
+                <span>@</span>
+                <input
+                  type="text"
+                  className="email-input-required"
+                  disabled={menu != 0}
+                  value={menu != 0 ? options[menu] : value}
+                  onChange={onChange}
+                  required
+                ></input>
+                <DropDown options={options} select={menu} setSelect={setMenu} />
+                <button>인증하기</button>
+              </div>
+              <h2 className="email-title">인증번호</h2>
+              <div className="email-input-container">
+                <input type="text" className="email-input-num" required></input>
+                <button>확인하기</button>
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="auth-next">
           <a href="/signUp">
@@ -67,6 +83,7 @@ function SignUpAuth() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

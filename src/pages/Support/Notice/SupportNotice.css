@@ -1,7 +1,7 @@
 .support-notice {
   min-height: 2145rem;
   min-width: 1920rem;
-  border-bottom: 1rem solid #e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0; */
 }
 .support-notice .table-slider-header {
   display: none;
@@ -70,11 +70,13 @@
 }
 .sb-ti-content > h1 {
   font-size: 36rem;
-  line-height: 49rem;
+  /* line-height: 49rem; */
   font-weight: 500;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+
+  padding-bottom: 12rem;
 }
 .sb-ti-content > p {
   font-size: 14rem;

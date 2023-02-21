@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import DropDown from '../../DropDown/DropDown'
+import Footer from '../../Footer/Footer'
 import Header from '../../Header/Header'
 import './SignUpAgency.css'
 
@@ -18,6 +20,13 @@ function SignUpAgency() {
   const changeFile = e => {
     var fileName = e.target.value
     setFile(fileName)
+  }
+
+  const [value, setValue] = useState('')
+  const [menu, setMenu] = useState(0)
+  const options = ['직접입력', 'naver.com', 'gmail.com', 'daum.com']
+  const onChange = e => {
+    setValue(e.target.value)
   }
   return (
     <div className="sign-agency">
@@ -164,15 +173,15 @@ function SignUpAgency() {
             <div className="email-input-container">
               <input type="text" className="email-input-email" required></input>
               <span>@</span>
-              <select className="email-input-email email" required>
-                <option value="" selected>
-                  직접입력
-                </option>
-                <option value="naver">naver.com</option>
-                <option value="gm">gmail.com</option>
-                <option value="da">daum.com</option>
-                <option value="yah">yahoo.com</option>
-              </select>
+              <input
+                type="text"
+                className="email-input-required"
+                disabled={menu != 0}
+                value={menu != 0 ? options[menu] : value}
+                onChange={onChange}
+                required
+              ></input>
+              <DropDown options={options} select={menu} setSelect={setMenu} />
             </div>
           </div>
           <div className="general-item pb-26">
@@ -182,7 +191,7 @@ function SignUpAgency() {
           <div className="general-item">
             <h2 className="general-title">사업자/법인 등록증</h2>
             <div class="filebox">
-              <label for="file">파일찾기</label>
+              <label for="file">파일 업로드</label>
               <input type="file" id="file" onChange={changeFile} />
               <input class="upload-name" value={file} readOnly />
             </div>
@@ -223,6 +232,7 @@ function SignUpAgency() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

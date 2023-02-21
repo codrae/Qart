@@ -5,8 +5,8 @@ footer {
   background: #fbfbfb;
 }
 .footer-container {
-  max-width: 1920rem;
-  width: 100%;
+  /* min-width: 1920rem; */
+  width: 1378rem;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -14,17 +14,19 @@ footer {
 }
 .footer__menu__item,
 .footer__detail__item {
-  width: 75%;
+  width: 100%;
   height: 100%;
   padding-top: 40rem;
-  padding-left: 920rem;
   box-sizing: border-box;
 }
 .footer__menu__item {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-left: 320rem;
+  /* justify-content: space-between; */
+  padding-left: 49rem;
+}
+.footer__detail__item {
+  padding-left: 649rem;
 }
 .footer__logo {
   display: block;
@@ -44,6 +46,7 @@ footer {
 .item-container {
   display: flex;
   flex-direction: row;
+  padding-left: 397rem;
 }
 .item-container ul {
   padding-right: 92rem;
@@ -70,6 +73,7 @@ footer {
 }
 
 .detail__name {
+  width: 521rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
@@ -84,11 +88,13 @@ footer {
   margin-right: 147rem;
 }
 .detail__location {
+  width: 521rem;
   display: block;
   line-height: 22rem;
   margin-bottom: 16rem;
 }
 .footer__detail__item p {
+  width: 521rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;

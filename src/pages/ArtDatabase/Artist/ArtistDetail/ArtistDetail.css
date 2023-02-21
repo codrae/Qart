@@ -1,6 +1,6 @@
 .artist-detail {
   min-width: 1920rem;
-  border-bottom: 1rem solid #e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0; */
 }
 .artist-detail .work-header {
   background: #fbfbfb;

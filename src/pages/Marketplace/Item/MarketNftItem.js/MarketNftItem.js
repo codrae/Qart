@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SectionHeader from '../../../../components/SectionHeader/SectionHeader'
 import './MarketNftItem.css'
 
@@ -28,7 +28,14 @@ function MarketNftItem() {
             <span className="price-usd">000,000USD</span>
             <div className="market-nft__button">
               <span>총 1개중 1개 판매중</span>
-              <button>구매하기</button>
+              <Link
+                to={'/market/payment'}
+                state={{
+                  item: item,
+                }}
+              >
+                <button>구매하기</button>
+              </Link>
             </div>
           </div>
         </div>

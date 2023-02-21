@@ -236,9 +236,13 @@ function AuctionDetail() {
         <header className="auction-detail-header">
           <div className="container ad-header-container">
             <div className="ad-haeder__route">
-              <span>Marketplace</span>
+              <Link to="/market">
+                <span>Marketplace</span>
+              </Link>
               <span className="next"></span>
-              <span>Auction</span>
+              <Link to="/market/auction">
+                <span>Auction</span>
+              </Link>
               <span className="next"></span>
             </div>
             <h1>HAPPY NEW YEAR</h1>

@@ -6,9 +6,9 @@
 }
 .cert-container {
   width: 1378rem;
-  height: calc(100% - 100rem);
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  height: calc(100% - 100rem - 455rem);
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 
   display: flex;
   flex-direction: column;

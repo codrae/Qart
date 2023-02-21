@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import './Login.css'
 
@@ -53,6 +54,7 @@ function Login() {
           </a>
         </section>
       </div>
+      <Footer />
     </div>
   )
 }

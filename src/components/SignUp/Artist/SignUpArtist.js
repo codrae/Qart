@@ -1,5 +1,6 @@
 import React from 'react'
 import DropDown from '../../DropDown/DropDown'
+import Footer from '../../Footer/Footer'
 import Header from '../../Header/Header'
 import './SignUpArtist.css'
 
@@ -138,6 +139,7 @@ function SignUpArtist() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

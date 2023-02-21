@@ -12,7 +12,8 @@
   padding-left: 49rem;
   padding-top: 32rem;
 }
-.ad-haeder__route {
+.ad-haeder__route,
+.ad-haeder__route a {
   display: flex;
   flex-direction: row;
 
@@ -27,6 +28,9 @@
   /* White */
 
   color: #ffffff;
+}
+.ad-haeder__route a {
+  cursor: pointer;
 }
 .ad-haeder__route .next {
   width: 10.79rem;

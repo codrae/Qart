@@ -6,6 +6,9 @@ function DropDown(props) {
   const [select, setSelect] = useState(0)
   const el = useRef()
 
+  const changeSelect = e => {
+    props.setSelect ? props.setSelect(e) : setSelect(e)
+  }
   useEffect(() => {
     window.addEventListener('click', handleClickOutside)
     return () => {
@@ -25,9 +28,9 @@ function DropDown(props) {
           key={i}
           value={i}
           onClick={e => {
-            if (select != i) {
+            if (props.select ? props.select != i : select != i) {
               // 자기 자신 선택 아닌 경우
-              setSelect(i)
+              changeSelect(i)
               // 선택 후 닫기
 
               setShow(false)
@@ -48,7 +51,7 @@ function DropDown(props) {
           if (!props.disabled) setShow(!show)
         }}
       >
-        {props.options[select]}
+        {props.options[props.select ? props.select : select]}
       </div>
       <ul ref={el} className={show ? 'show-drop-list' : 'drop-list'}>
         {getOptions()}

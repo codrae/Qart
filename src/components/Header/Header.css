@@ -2,7 +2,7 @@ header {
   width: 100%;
   min-width: 1920rem;
   height: 100rem;
-  border-bottom: 1rem solid #bdbdbd;
+  border-bottom: 1rem solid #e0e0e0;
 }
 header.black {
   border-bottom: 1rem solid #4f4f4f;
@@ -13,8 +13,8 @@ header.black {
   flex-direction: row;
   width: 1378rem;
 
-  border-left: 1rem solid #bdbdbd;
-  border-right: 1rem solid #bdbdbd;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
 }
 .black .header-container {

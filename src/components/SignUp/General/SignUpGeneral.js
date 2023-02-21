@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../Footer/Footer'
 import Header from '../../Header/Header'
 import './SignUpGeneral.css'
 
@@ -105,6 +106,7 @@ function SignUpGeneral() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   )
 }

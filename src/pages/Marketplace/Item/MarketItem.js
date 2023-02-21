@@ -280,9 +280,9 @@ function MarketItem() {
                 <span>000,000,000원</span>
               </p>
               <span className="market-sell__usd">000,000,00USD</span>
-              <span className="market-sell__time">
+              {/* <span className="market-sell__time">
                 남은 시간 00시간 00분 00초
-              </span>
+              </span> */}
               <div className="market-sell__button">
                 <button>판매자 문의하기</button>
                 <Link

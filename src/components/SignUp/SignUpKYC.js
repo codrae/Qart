@@ -7,8 +7,16 @@ import './SignUpKYC.css'
 function SignUpKYC() {
   const [imgFile, setImgFile] = useState('')
   const [subImgFile, setSubImgFile] = useState('')
+
   const imgRef = useRef()
   const subImgRef = useRef()
+
+  const [value, setValue] = useState('')
+  const [menu, setMenu] = useState(0)
+  const options = ['직접입력', 'naver.com', 'gmail.com', 'daum.com']
+  const onChange = e => {
+    setValue(e.target.value)
+  }
 
   const countryList = [
     'Korea, Republic of',
@@ -107,20 +115,19 @@ function SignUpKYC() {
             <DropDown options={phonelist} />
             <input type="text" placeholder="01000000000"></input>
           </li>
-          <li>
+          <li className="kyc-email">
             <h2>E-Mail</h2>
-
             <input type="text" className="email-input-email" required></input>
             <span className="email-sym">@</span>
-            <select className="email-input-email email" required>
-              <option value="" selected>
-                직접입력
-              </option>
-              <option value="naver">naver.com</option>
-              <option value="gm">gmail.com</option>
-              <option value="da">daum.com</option>
-              <option value="yah">yahoo.com</option>
-            </select>
+            <input
+              type="text"
+              className="email-input-required"
+              disabled={menu != 0}
+              value={menu != 0 ? options[menu] : value}
+              onChange={onChange}
+              required
+            ></input>
+            <DropDown options={options} select={menu} setSelect={setMenu} />
           </li>
         </ul>
         <div className="ma-add--button">

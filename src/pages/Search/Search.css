@@ -79,6 +79,7 @@
 
   font-size: 24rem;
   line-height: 33rem;
+  color: #222222;
 }
 
 .search__block__input::-webkit-input-placeholder {

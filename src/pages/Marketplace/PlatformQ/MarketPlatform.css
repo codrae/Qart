@@ -2,7 +2,7 @@
   border-top: 1rem solid #e0e0e0;
 }
 .market-platform-slider {
-  border-bottom: 1rem solid #e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0; */
 }
 .market-platform-slider .slider__item {
   width: 400rem !important;

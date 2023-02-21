@@ -1,6 +1,18 @@
 .my-qcoa-list {
   min-height: calc(100vh - 347rem - 455rem);
 }
+.my-qcoa-list .table-slider {
+  border-bottom: 0;
+}
+.my-qcoa-list .table-header-container {
+  border: none;
+}
+.my-qcoa-list .table-slider .page-slider {
+  border: none;
+}
+.my-qcoa-list .table-slider-header-container {
+  border: none;
+}
 .my-qcoa-list .table-slider-header-container {
   padding-left: 54rem;
 }
