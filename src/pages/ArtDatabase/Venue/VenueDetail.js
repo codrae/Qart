@@ -9,6 +9,7 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 
 import './VenueDetail.css'
 function VenueDetail() {
+  const [menu, setMenu] = useState(0)
   const item = useLocation().state.item
   const infoItem = {
     image: item.info,
@@ -32,7 +33,7 @@ function VenueDetail() {
       },
       {
         title: '연락처',
-        content: '2015',
+        content: '홈페이지/sns계정 링크',
       },
       {
         title: '기관소개',
@@ -160,6 +161,8 @@ function VenueDetail() {
         </div>
       </section>
       <WorkHeader
+        moreListChange={setMenu}
+        moreMenu={menu}
         moreList={detailList}
         moreActive={1}
         title_k={'소장 작품'}

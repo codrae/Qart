@@ -35,30 +35,29 @@
 ## NFT
 
 - nft : http://localhost:3000/artdb/work/nft
-  - 드롭 메뉴 크기 수정
+  - 드롭 메뉴 크기 수정 +
 - 상세 페이지 : http://localhost:3000/market/nft/1
-  - 마켓과 구분된 nft 생성 필요,,
+  - 마켓과 구분된 nft 생성 필요,, +
 
 ## artist
 
 - ## artist : http://localhost:3000/artdb/artist/
 - 상세 페이지 : http://localhost:3000/artdb/artist/1
-  - header height 수정
-  - 작품 header 크기 수정
-  - 작품 header 선택
-  - dots 올리기
+  - header height 수정 +
+  - 작품 header 크기 수정 +
+  - 작품 header 선택 +
+  - dots 올리기 +
 
 ## venue
 
 - venue : http://localhost:3000/artdb/venue/
   - venue 선택 가능하도록
 - 상세 페이지 : http://localhost:3000/artdb/venue/1
-  - header 크기 수정
-  - 연락처 내용 수정
-  - 전시와 소식 top arrow?
-  - 소장 작품 header 크기 수정
-  - 소장 작품 선택 되도록
-  - 소장 작품 min-width 설정
+  - header 크기 수정 +
+  - 연락처 내용 수정 +
+  - 소장 작품 header 크기 수정 +
+  - 소장 작품 선택 되도록 ??
+  - 소장 작품 min-width 설정 +
 
 ---
 

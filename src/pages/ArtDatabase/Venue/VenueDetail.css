@@ -1,14 +1,19 @@
 .venue-detail {
-  border-bottom: 1rem solid #e0e0e0;
+  min-width: 1920rem;
 }
 .venue-detail .work-header {
   background: #fbfbfb;
+  height: 129rem;
 }
 .venue-detail .work-header-d {
   height: 183rem;
 }
 .venue-detail .work-header-d .work-header__container {
   height: 102rem;
+}
+.venue-detail .work-header-d h2 {
+  font-size: 36rem;
+  line-height: 42rem;
 }
 .venue-detail .art-detail-container {
   padding-top: 70rem;

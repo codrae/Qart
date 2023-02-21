@@ -12,6 +12,9 @@
 .artist-detail-ps .work-header-d .work-header__container {
   height: 122rem;
 }
+.artist-detail-ps .work-header-d h2 {
+  font-size: 36rem;
+}
 .artist-detail .art-detail__image {
   width: 240rem;
   height: 240rem;

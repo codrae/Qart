@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './SearchHeader.css'
 const SectionHeader = props => {
   return (
@@ -6,13 +7,9 @@ const SectionHeader = props => {
       <div className="container search__container">
         <h2 className="search__title">{props.title}</h2>
         <section className="search__block">
-          <input
-            type={'text'}
-            placeholder={
-              props.placeholder ? props.placeholder : '작가 이름을 검색해주세요'
-            }
-            className="search__block__input"
-          />
+          <Link to="/search" className="search__block__input">
+            {props.placeholder ? props.placeholder : '작가 이름을 검색해주세요'}
+          </Link>
           <button className="search__block__button">
             <span className="ir_pm">검색</span>
           </button>

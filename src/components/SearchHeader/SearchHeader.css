@@ -60,7 +60,10 @@
 .search__block__input:focus {
   outline: none;
 }
-.search__block__input::-webkit-input-placeholder {
+.search__block__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
