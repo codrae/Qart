@@ -23,7 +23,7 @@
 
 ## artist
 
-- ## artist : https://main--qart-publishing.netlify.app/artdb/artist/
+- artist : https://main--qart-publishing.netlify.app/artdb/artist/
 - 상세 페이지 : https://main--qart-publishing.netlify.app/artdb/artist/1
 
 ## venue
@@ -73,7 +73,7 @@
 
 # QCoA
 
-- ## About QCoA : https://main--qart-publishing.netlify.app/qcoa/
+- About QCoA : https://main--qart-publishing.netlify.app/qcoa/
 - QCoA : https://main--qart-publishing.netlify.app/qcoa/list
 
 ---
@@ -97,23 +97,23 @@
 
 - 회원가입 선택 : https://main--qart-publishing.netlify.app/signUp
 
-# 인증
+## 인증
 
 - 인증 : https://main--qart-publishing.netlify.app/signUp/auth
 
-# 개인
+## 개인
 
 - 정보 입력 : https://main--qart-publishing.netlify.app/signup/auth/general
 
-# 작가
+## 작가
 
 - 정보 입력 : https://main--qart-publishing.netlify.app/signUp/auth/artist
 
-# 기관
+## 기관
 
 - 정보 입력 : https://main--qart-publishing.netlify.app/signup/auth/agency
 
-# KYC 인증
+## KYC 인증
 
 - kyc 인증 : https://main--qart-publishing.netlify.app/signUp/auth/cert
 - 인증서 신청 : https://main--qart-publishing.netlify.app/signUp/auth/kyc
