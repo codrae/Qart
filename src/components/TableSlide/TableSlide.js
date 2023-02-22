@@ -3,11 +3,42 @@ import DropDown from '../DropDown/DropDown'
 import PageSlide from '../PageSlide/PageSlide'
 import './TableSlide.css'
 function TableSlide(props) {
+  const changeMenu = e => {
+    props.changeMenu(e)
+  }
+
   return (
     <div className="table-slide">
       <header className="table-header">
         <div className="container table-header-container">
-          {props.title}
+          {props.title ? (
+            props.title
+          ) : (
+            <div className="table-header-title">
+              <a
+                className={
+                  props.menu == 0
+                    ? 'th-title-select-active th-title-select '
+                    : 'th-title-select'
+                }
+                onClick={() => changeMenu(0)}
+              >
+                <h1>구매 내역</h1>
+                <span></span>
+              </a>
+              <a
+                className={
+                  props.menu == 1
+                    ? 'th-title-select-active th-title-select '
+                    : 'th-title-select'
+                }
+                onClick={() => changeMenu(1)}
+              >
+                <h1>응찰 내역</h1>
+                <span></span>
+              </a>
+            </div>
+          )}
           {props.options ? <DropDown options={props.options} /> : <></>}
         </div>
       </header>

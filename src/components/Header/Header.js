@@ -33,12 +33,13 @@ const Header = props => {
         </ul>
         <div className="header__padding">
           {props.login ? (
-            <div>
+            <div className="header-logined">
               <a className="mypage" href="/mypage/general">
                 <span>마이페이지</span>
               </a>
+              <span className="mypage-sym">|</span>
               <a className="logout" href="/logout">
-                <span>로그아웃</span>
+                <span>Log-out</span>
               </a>
             </div>
           ) : (

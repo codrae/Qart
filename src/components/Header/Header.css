@@ -82,7 +82,23 @@ header.black {
   align-items: center;
   margin-left: auto;
   margin-right: 60rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+.header-logined {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mypage-sym {
+  display: block;
+
+  color: #2f80ed;
+  margin: 0 16rem;
+  margin-bottom: 2rem;
+
+  font-size: 30rem;
+
+  font-weight: 200;
 }
 .header__padding .login,
 .header__padding .logout,
@@ -94,15 +110,13 @@ header.black {
   line-height: 33rem;
   color: #222222;
 }
-.header__padding .mypage {
-  padding-right: 40rem;
-}
-.header__padding .logout {
-  color: #ffffff;
-}
-.black .header__padding .login {
+
+.black .header__padding .login,
+.black .header__padding .logout,
+.black .header__padding .mypage {
   color: #2f80ed;
 }
+
 @media (max-width: 480px) {
   header {
     height: 63rem;

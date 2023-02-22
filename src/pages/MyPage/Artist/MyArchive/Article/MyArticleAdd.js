@@ -3,6 +3,7 @@ import DropDown from '../../../../../components/DropDown/DropDown'
 import Footer from '../../../../../components/Footer/Footer'
 import Header from '../../../../../components/Header/Header'
 import HeaderSmall from '../../../../../components/Header/HeaderSmall/HeaderSmall'
+import SectionHeader from '../../../../../components/SectionHeader/SectionHeader'
 import './MyArticleAdd.css'
 
 function MyArticleAdd() {
@@ -51,17 +52,7 @@ function MyArticleAdd() {
   return (
     <div className="ma-article-add">
       <Header login={true} colored="black" />
-      <nav className="search">
-        <div className="container search__container">
-          <div className="ad-haeder__route">
-            <span>마이페이지 </span>
-            <span className="next"></span>
-            <span>My archive </span>
-            <span className="next"></span>
-          </div>
-          <h2 className="search__title">Add Article</h2>
-        </div>
-      </nav>
+      <SectionHeader title="Add Article" />
       <div className="ma-edit-image">
         <div className="container ma-edit-image-container">
           <h2 className="ma-img-tlt">대표 이미지</h2>

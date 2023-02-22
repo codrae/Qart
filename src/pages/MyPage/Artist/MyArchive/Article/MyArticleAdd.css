@@ -2,26 +2,16 @@
   height: 100%;
   min-width: 1920rem;
 }
-.ma-article-add .search__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.ma-article-add .section-header {
+  background: #fbfbfb;
 }
-.ma-article-add .ad-haeder__route {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24rem;
-  line-height: 28rem;
-  display: flex;
-  align-items: center;
+.ma-article-add .section-header h3 {
+  height: 100rem;
 
-  /* White */
+  font-size: 32rem;
+  line-height: 46rem;
 
-  color: #ffffff;
-
-  padding-bottom: 8rem;
+  color: #222222;
 }
 .ma-article-add .search__container h2 {
   display: inline-block;

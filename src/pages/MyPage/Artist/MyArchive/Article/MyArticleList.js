@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import TableSlide from '../../../../../components/TableSlide/TableSlide'
 import './MyArticleList.css'
 function MyArticleList() {
-  const [allCheck, setAllCheck] = useState(false)
+  const [checkItems, setCheckItems] = useState([])
 
-  var item = []
+  var items = []
   for (var i = 0; i < 80; i++) {
-    item.push({
+    items.push({
       id: 1,
       info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
       // title: '지식의 기념비',
@@ -20,19 +20,23 @@ function MyArticleList() {
 
   const tableItem = []
 
-  for (var i = 0; i < 80; i++) {
+  items.map((item, i) => {
     tableItem.push(
       <div className="table-slider-item">
         <ul>
           <li>
             <label className="login-option">
-              <input type="checkbox" checked={allCheck} />
+              <input
+                type="checkbox"
+                onChange={e => checkHandler(e.target.checked, i)}
+                checked={checkItems.indexOf(i) >= 0 ? true : false}
+              />
               <span className="login-option__check" />
             </label>
           </li>
           <li>{i + 1}</li>
           <li>
-            <img src={require('../../../../../' + item[i].info)}></img>
+            <img src={require('../../../../../' + item.info)}></img>
           </li>
           <li>Representive Name</li>
           <li>Change Date</li>
@@ -40,6 +44,26 @@ function MyArticleList() {
         </ul>
       </div>
     )
+  })
+  // 개별선택
+  function checkHandler(checked, id) {
+    if (checked) {
+      setCheckItems([...checkItems, id])
+    } else {
+      // 체크해제
+      setCheckItems(checkItems.filter(o => o !== id))
+    }
+  }
+
+  // 전체선택
+  function checkAllHandler(checked) {
+    if (checked) {
+      const ids = []
+      tableItem.forEach((v, id) => ids.push(id))
+      setCheckItems(ids)
+    } else {
+      setCheckItems([])
+    }
   }
   const titleItem = []
 
@@ -62,7 +86,7 @@ function MyArticleList() {
         <section className="th-search-button">
           <button>Delete</button>
           <Link to={'./article'}>
-            <button>Add</button>
+            <button className="last-button">Add</button>
           </Link>
         </section>
       </div>
@@ -75,9 +99,14 @@ function MyArticleList() {
         <label className="login-option">
           <input
             type="checkbox"
-            onChange={e => {
-              setAllCheck(!allCheck)
-            }}
+            onChange={e => checkAllHandler(e.target.checked)}
+            checked={
+              checkItems.length == 0
+                ? false
+                : checkItems.length === tableItem.length
+                ? true
+                : false
+            }
           />
           <span className="login-option__check" />
         </label>

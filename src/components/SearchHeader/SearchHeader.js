@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './SearchHeader.css'
-const SectionHeader = props => {
+const SearchHeader = props => {
   return (
     <nav className="search" style={!props.active ? { display: 'none' } : {}}>
       <div className="container search__container">
@@ -18,4 +18,4 @@ const SectionHeader = props => {
     </nav>
   )
 }
-export default SectionHeader
+export default SearchHeader

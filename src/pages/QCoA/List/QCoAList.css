@@ -8,7 +8,6 @@
   padding-left: 54rem;
   padding-right: 0;
 
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -137,6 +136,7 @@
   width: calc(121rem + 82rem);
   margin-right: 0;
   text-align: center;
+  padding-left: 0;
 }
 
 .qcoa-list .table-slider-item img {

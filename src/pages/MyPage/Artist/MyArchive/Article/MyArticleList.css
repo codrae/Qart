@@ -60,3 +60,6 @@
 .my-article-list .table-slider-item li:nth-child(6) {
   width: calc(92rem + 133rem);
 }
+.my-article-list .table-slider-header-container {
+  padding-left: 66rem;
+}

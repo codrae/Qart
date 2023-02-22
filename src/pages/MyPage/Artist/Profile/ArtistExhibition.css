@@ -1,8 +1,13 @@
 .artist-exhibition {
   height: 100%;
 }
-.artist-exhibition .header-small-list a.active {
-  color: #222222;
+.artist-exhibition .section-header {
+  background: #fbfbfb;
+}
+.artist-exhibition .section-header h3 {
+  height: 100rem;
+  font-size: 32rem;
+  line-height: 46rem;
 }
 .a-exhibition-content {
   width: 1378rem;
@@ -11,9 +16,10 @@
   border-top: none;
   border-bottom: none;
 
-  min-height: 1966rem;
-  height: calc(100% - 347rem - 455rem);
+  height: 100%;
+  min-height: calc(100% - 347rem - 455rem);
 }
+.a-ex-edit-image-container h2,
 .a-exhibition-content h2 {
   width: 387rem;
   height: 72rem;
@@ -35,8 +41,7 @@
 .a-ex-edit-image {
   height: 448rem;
 
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
 
   border-bottom: 1rem solid #e0e0e0;
 }
@@ -44,7 +49,10 @@
   width: 1378rem;
   box-sizing: border-box;
   display: flex;
+  height: 100%;
   flex-direction: row;
+  border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0;
 
   padding: 48rem 346rem 78rem 49rem;
 }
@@ -59,7 +67,7 @@
 }
 .a-ex-edit-info {
   z-index: 1;
-  height: 0;
+  /* height: 0 */
 }
 
 .image-button {
@@ -97,7 +105,7 @@
 .a-ex-edit-info {
   width: 1378rem;
   box-sizing: border-box;
-  height: inherit;
+  /* height: inherit; */
   padding: 48rem 346rem 109rem 49rem;
 }
 .a-ex-edit-info li {

@@ -117,3 +117,15 @@
 
 - kyc 인증 : https://main--qart-publishing.netlify.app/signUp/auth/cert
 - 인증서 신청 : https://main--qart-publishing.netlify.app/signUp/auth/kyc
+
+# Mypage
+
+# 개인
+
+- main : http://localhost:3000/mypage/general
+- 프로필
+  - 완전 새로 만들기
+- 나의 지갑
+  - header 수정
+  - 테이블 간격 맞추가
+  -

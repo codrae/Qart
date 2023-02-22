@@ -1,6 +1,5 @@
 .artist-profile {
   min-width: 1920rem;
-  border-bottom: 1rem solid #e0e0e0;
 }
 .artist-profile-edit {
   width: 1378rem;
@@ -124,15 +123,13 @@
   border: 1rem solid #bdbdbd;
   object-fit: contain;
 }
-.edit-photo {
-  position: absolute;
-  width: 32rem;
-  height: 32rem;
-  background: url('../../../../assets/remove-icon.png') no-repeat center;
-  background-size: 26.67rem 26.67rem;
-
-  top: 70rem;
-  left: 330rem;
+.ap-edit-content .edit-photo {
+  width: 24rem;
+  height: 24rem;
+  background: url('../../../../assets/img_delete.png') no-repeat center;
+  background-size: contain;
+  top: 40rem;
+  left: 368rem;
 }
 .ap-edit-content .ap-edit-image h2 {
   width: 100%;
@@ -288,19 +285,29 @@
   justify-content: space-between;
 }
 .ap-drop .drop-container {
-  width: 151rem;
-  height: 72rem;
   z-index: unset;
 }
 .ap-drop .drop-select {
   width: 139rem;
   height: 72rem;
   box-sizing: border-box;
+
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
+
+  margin-right: 12rem;
 }
 .ap-drop .show-drop-list li {
   width: 134rem;
   padding-top: 0;
   box-sizing: border-box;
+
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
 }
 .a-profile-input__number {
   width: 445rem !important;
@@ -324,11 +331,20 @@
   width: 596rem;
   height: 72rem;
   box-sizing: border-box;
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
 }
 .ap-edit-drop .show-drop-list li {
-  width: 590rem;
+  width: 594rem;
   padding-top: 0;
   box-sizing: border-box;
+
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
 }
 
 .cant-edit .drop-select::after {
@@ -460,4 +476,25 @@
   background: #222222;
   margin-right: 0;
   color: #ffffff;
+}
+
+.mypage-artist-profile .search {
+  display: none;
+}
+.mypage-artist-profile .header-small {
+  display: none;
+}
+.mypage-artist-profile .ap-edit-content {
+  padding-top: 56rem;
+}
+.mypage-artist-profile .section-header {
+  background: #fbfbfb;
+}
+.mypage-artist-profile .section-header h3 {
+  height: 100rem;
+
+  font-size: 32rem;
+  line-height: 46rem;
+
+  color: #222222;
 }

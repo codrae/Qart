@@ -18,6 +18,7 @@
   flex-direction: row;
   width: 1378rem;
 
+  height: 100%;
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
@@ -39,7 +40,7 @@
 }
 .table-slider {
   height: calc(100% - 304rem);
-  border-bottom: 1rem solid #e0e0e0;
+  /* border-bottom: 1rem solid #e0e0e0; */
   position: relative;
   z-index: -1;
 }
@@ -112,7 +113,6 @@
 .table-slider-item button.delivery-status {
   width: 149rem;
   height: 48rem;
-  border: none;
   border: 1rem solid #2f80ed;
   border-radius: 2rem;
   box-sizing: border-box;
@@ -124,8 +124,25 @@
   font-weight: 500;
   font-size: 16rem;
   line-height: 23rem;
-
   color: #2f80ed;
+
+  margin: 0 120rem;
+}
+.table-slider-item button.delivery-complete {
+  width: 149rem;
+  height: 48rem;
+  border: none;
+  border-radius: 2rem;
+  box-sizing: border-box;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #ffffff;
+  background: #2f80ed;
 
   margin: 0 120rem;
 }
@@ -176,4 +193,32 @@
 }
 .table-slider .slick-last {
   left: calc(501rem + 310rem + 40rem);
+}
+.table-slide .th-title-select-active h1 {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+.table-slide .th-title-select-active span {
+  background: #000000 !important;
+}
+.table-slide .th-title-select h1 {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28rem;
+  line-height: 33rem;
+
+  color: #bdbdbd;
+
+  padding-top: 61rem;
+  padding-bottom: 14rem;
+}
+.table-slide .th-title-select span {
+  display: block;
+  background: #f2f2f2;
+
+  border-radius: 0rem;
+  width: 240rem;
+  height: 6rem;
 }

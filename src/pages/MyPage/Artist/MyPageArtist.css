@@ -12,6 +12,13 @@
   text-align: center;
   cursor: pointer;
 }
+/* 선택되지 않은 경우 */
+.th-title-select-active h1 {
+  color: #000000;
+}
+.th-title-select-active span {
+  background: #000000;
+}
 .th-title-select h1 {
   display: block;
   font-family: 'Roboto';
@@ -20,22 +27,16 @@
   font-size: 28rem;
   line-height: 33rem;
 
-  color: #000000;
+  color: #bdbdbd;
 
-  padding-top: 62rem;
+  padding-top: 61rem;
   padding-bottom: 14rem;
 }
 .th-title-select span {
   display: block;
-  background: #000000;
+  background: #f2f2f2;
+
   border-radius: 0rem;
   width: 240rem;
   height: 6rem;
-}
-/* 선택되지 않은 경우 */
-.th-title-select:last-child h1 {
-  color: #bdbdbd;
-}
-.th-title-select:last-child span {
-  background: #f2f2f2;
 }

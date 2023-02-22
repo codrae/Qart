@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 import TableSlide from '../../../../../components/TableSlide/TableSlide'
 import './MyWorkList.css'
 function MyWorkList() {
-  const [allCheck, setAllCheck] = useState(false)
+  const [checkItems, setCheckItems] = useState([])
 
-  var item = []
+  var items = []
   for (var i = 0; i < 80; i++) {
-    item.push({
+    items.push({
       id: 1,
       info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
       // title: '지식의 기념비',
@@ -20,7 +20,7 @@ function MyWorkList() {
 
   const tableItem = []
 
-  for (var i = 0; i < 80; i++) {
+  items.map((item, i) => {
     tableItem.push(
       <div className="table-slider-item">
         <ul>
@@ -28,15 +28,15 @@ function MyWorkList() {
             <label className="login-option">
               <input
                 type="checkbox"
-                checked={allCheck}
-                onChange={() => false}
+                onChange={e => checkHandler(e.target.checked, i)}
+                checked={checkItems.indexOf(i) >= 0 ? true : false}
               />
               <span className="login-option__check" />
             </label>
           </li>
           <li>{i + 1}</li>
           <li>
-            <img src={require('../../../../../' + item[i].info)}></img>
+            <img src={require('../../../../../' + item.info)}></img>
           </li>
           <li>지식의 기념비</li>
           <li>캔버스</li>
@@ -62,17 +62,39 @@ function MyWorkList() {
         </ul>
       </div>
     )
+  })
+  // 개별선택
+  function checkHandler(checked, id) {
+    if (checked) {
+      setCheckItems([...checkItems, id])
+    } else {
+      // 체크해제
+      setCheckItems(checkItems.filter(o => o !== id))
+    }
+  }
+
+  // 전체선택
+  function checkAllHandler(checked) {
+    if (checked) {
+      const ids = []
+      tableItem.forEach((v, id) => ids.push(id))
+      setCheckItems(ids)
+    } else {
+      setCheckItems([])
+    }
   }
   const titleItem = []
 
   titleItem.push(
     <div className="table-header-search">
-      <h2>My Work List</h2>
+      <h2>
+        My Work List <span className="download-button"></span>
+      </h2>
       <div className="th-search-container">
         <section className="search__block">
           <input
             type={'text'}
-            placeholder={'기사를 검색해주세요'}
+            placeholder={'작품를 검색해주세요'}
             className="search__block__input"
           />
           <button className="search__block__button">
@@ -81,8 +103,11 @@ function MyWorkList() {
         </section>
         <section className="th-search-button">
           <button>Delete</button>
+          <Link to="#">
+            <button className="long-button">Add to Excel</button>
+          </Link>
           <Link to="./work">
-            <button>Add</button>
+            <button className="last-button">Add</button>
           </Link>
         </section>
       </div>
@@ -95,9 +120,14 @@ function MyWorkList() {
         <label className="login-option">
           <input
             type="checkbox"
-            onChange={e => {
-              setAllCheck(!allCheck)
-            }}
+            onChange={e => checkAllHandler(e.target.checked)}
+            checked={
+              checkItems.length == 0
+                ? false
+                : checkItems.length === tableItem.length
+                ? true
+                : false
+            }
           />
           <span className="login-option__check" />
         </label>

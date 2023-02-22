@@ -2,26 +2,17 @@
   height: 100%;
   min-width: 1920rem;
 }
-.ma-nft-add .search__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+
+.ma-nft-add .section-header {
+  background: #fbfbfb;
 }
-.ma-nft-add .ad-haeder__route {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24rem;
-  line-height: 28rem;
-  display: flex;
-  align-items: center;
+.ma-nft-add .section-header h3 {
+  height: 100rem;
 
-  /* White */
+  font-size: 32rem;
+  line-height: 46rem;
 
-  color: #ffffff;
-
-  padding-bottom: 8rem;
+  color: #222222;
 }
 .ma-nft-content {
   height: calc(100% - 247rem - 455rem);
@@ -32,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  height: 100%;
   box-sizing: border-box;
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;

@@ -1,6 +1,18 @@
 .mypage-archive {
   height: 100%;
 }
+.mypage-archive .section-header {
+  background: #fbfbfb;
+}
+.mypage-archive .section-header h3 {
+  height: 100rem;
+
+  font-size: 32rem;
+  line-height: 46rem;
+
+  color: #222222;
+}
+
 .mypage-archive .search__container {
   display: flex;
   flex-direction: column;
@@ -73,6 +85,9 @@
   padding-left: 21rem;
   padding-bottom: 2rem;
   height: 54rem;
+  height: 100%;
+
+  color: #222222;
 }
 .table-header-search .search__block__button {
   width: 84rem;
@@ -86,7 +101,7 @@
   flex-direction: row;
 }
 .th-search-button button {
-  width: 150rem;
+  width: 125rem;
   height: 62rem;
 
   border: 1rem solid #000000;
@@ -104,11 +119,18 @@
 
   color: #222222;
 
-  margin-right: 12rem;
+  margin-right: 8rem;
   box-sizing: border-box;
   background: none;
 }
-.th-search-button button:last-child {
+.th-search-button button.long-button {
+  width: 187rem;
+  border: none;
+  background: #222222;
+  color: #ffffff;
+  margin-right: 8rem;
+}
+.th-search-button button.last-button {
   border: none;
 
   margin-right: 0;
@@ -224,6 +246,16 @@
   background: url('../../../../assets/download-icon.png') no-repeat center;
   background-size: 30.83rem 30.83rem;
   margin-left: 16rem;
-  margin-top: 4.5rem;
+  margin-bottom: 6rem;
   cursor: pointer;
+}
+.mypage-archive .table-header-container {
+  border: none;
+}
+.mypage-archive .table-slider .page-slider {
+  border: none;
+}
+.mypage-archive .table-slider-header-container {
+  padding-left: 54rem;
+  border: none;
 }

@@ -57,6 +57,12 @@ import QCoAMain from './pages/QCoA/QCoAMain'
 import QCoAAbout from './pages/QCoA/About/QCoAAbout'
 import QCoAList from './pages/QCoA/List/QcoAList'
 import NFTItem from './pages/ArtDatabase/Work/NFT/NFTItem'
+import GeneralProfile from './pages/MyPage/General/Profile/GeneralProfile'
+import GeneralWallet from './pages/MyPage/General/Wallet/GeneralWallet'
+import GeneralLike from './pages/MyPage/General/Like/GeneralLike'
+import ArtistWallet from './pages/MyPage/Artist/Wallet/ArtistWallet'
+import ArtistLike from './pages/MyPage/Artist/Like/ArtistLike'
+import ArtistProfile from './pages/MyPage/Artist/Profile/ArtistProfile'
 function App() {
   return (
     <BrowserRouter>
@@ -212,8 +218,40 @@ function App() {
         <Route path="/market/payment" element={<Payment />}></Route>
 
         {/* 마이페이지 */}
-        <Route path="/mypage/general" element={<MyPageGeneral />}></Route>
-        <Route path="/mypage/artist" element={<MyPageArtist />}></Route>
+        <Route path="/mypage/general" element={<GeneralProfile />}></Route>
+        <Route
+          path="/mypage/general/wallet"
+          element={
+            <MyPageGeneral active={1}>
+              <GeneralWallet />
+            </MyPageGeneral>
+          }
+        ></Route>
+        <Route
+          path="/mypage/general/like"
+          element={
+            <MyPageGeneral active={2}>
+              <GeneralLike />
+            </MyPageGeneral>
+          }
+        ></Route>
+        <Route path="/mypage/artist" element={<ArtistProfile />}></Route>
+        <Route
+          path="/mypage/artist/wallet"
+          element={
+            <MyPageArtist active={2}>
+              <ArtistWallet />
+            </MyPageArtist>
+          }
+        ></Route>
+        <Route
+          path="/mypage/artist/like"
+          element={
+            <MyPageArtist active={3}>
+              <ArtistLike />
+            </MyPageArtist>
+          }
+        ></Route>
         <Route path="/mypage/gallery" element={<MyPageGallery />}></Route>
         <Route
           path="/mypage/artist/exhibition"
