@@ -1,0 +1,112 @@
+.ma-excel-add {
+  height: 100%;
+  min-width: 1920rem;
+}
+
+.ma-excel-add .section-header {
+  background: #fbfbfb;
+}
+.ma-excel-add .section-header h3 {
+  height: 100rem;
+
+  font-size: 32rem;
+  line-height: 46rem;
+
+  color: #222222;
+}
+.ma-excel-content {
+  height: calc(100% - 247rem - 455rem);
+}
+.ma-excel-content .container {
+  width: 1378rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100%;
+  box-sizing: border-box;
+}
+.ma-excel-content h2 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.excel-item-01 {
+  display: flex;
+  flex-direction: row;
+  height: 72rem;
+  align-items: center;
+
+  padding-top: 68rem;
+}
+.excel-item-01 h2 {
+  display: block;
+  height: 100%;
+  padding-right: 221rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.excel-item-01 .filebox label {
+  width: 189rem;
+  height: 72rem;
+
+  background: #2f80ed;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 29rem;
+
+  color: #ffffff;
+}
+.excel-item-01 .filebox .upload-name {
+  width: 395rem;
+  height: 72rem;
+
+  border: 1px solid #cccccc;
+}
+.excel-item-02 {
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 80rem;
+  padding-bottom: 159rem;
+}
+.excel-item-02 h2 {
+  display: block;
+  height: 100%;
+  padding-right: 249rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.excel-info > h3 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20rem;
+  line-height: 29rem;
+
+  text-decoration-line: underline;
+
+  /* Black */
+
+  color: #222222;
+
+  padding-bottom: 26rem;
+}
+.excel-info p {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #828282;
+}

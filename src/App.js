@@ -63,6 +63,7 @@ import GeneralLike from './pages/MyPage/General/Like/GeneralLike'
 import ArtistWallet from './pages/MyPage/Artist/Wallet/ArtistWallet'
 import ArtistLike from './pages/MyPage/Artist/Like/ArtistLike'
 import ArtistProfile from './pages/MyPage/Artist/Profile/ArtistProfile'
+import AddWorkToExcel from './pages/MyPage/Artist/MyArchive/AddWorkToExcel'
 function App() {
   return (
     <BrowserRouter>
@@ -262,6 +263,7 @@ function App() {
           path="/mypage/artist/archive"
           element={<ArtistArchive />}
         ></Route>
+        <Route path="/mypage/artist/excel" element={<AddWorkToExcel />}></Route>
         <Route
           path="/mypage/artist/archive/work"
           element={<MyWorkAdd />}

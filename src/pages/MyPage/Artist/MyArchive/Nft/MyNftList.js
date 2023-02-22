@@ -96,7 +96,7 @@ function MyNftList() {
         </section>
         <section className="th-search-button">
           <button>Delete</button>
-          <Link to="#">
+          <Link to="/mypage/artist/excel">
             <button className="long-button">Add to Excel</button>
           </Link>
           <Link to="./nft">

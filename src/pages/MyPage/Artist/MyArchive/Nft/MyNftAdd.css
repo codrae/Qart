@@ -25,8 +25,8 @@
   align-items: center;
   height: 100%;
   box-sizing: border-box;
-  border-left: 1rem solid #e0e0e0;
-  border-right: 1rem solid #e0e0e0;
+  /* border-left: 1rem solid #e0e0e0;
+  border-right: 1rem solid #e0e0e0; */
 }
 .ma-nft-content button {
   width: 290rem;
