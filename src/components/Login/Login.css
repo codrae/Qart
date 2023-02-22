@@ -5,7 +5,7 @@
 }
 .login-container {
   width: 1378rem;
-  height: calc(100% - 100rem - 455rem);
+  min-height: calc(100% - 100rem - 455rem);
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;
 
@@ -180,6 +180,7 @@ input[type='checkbox']:checked + .login-option__check {
 }
 .login-link {
   margin-top: 108rem;
+  margin-bottom: 138rem;
 
   display: flex;
   flex-direction: row;

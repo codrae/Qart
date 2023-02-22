@@ -14,9 +14,9 @@
   position: relative;
 }
 .banner .item-image {
-  width: 100%;
-  height: 100%;
-  object-fit: inherit;
+  width: 1920rem;
+  height: 707rem;
+  object-fit: fill;
 }
 .banner .item-info {
   position: absolute;

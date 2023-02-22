@@ -16,7 +16,7 @@
   max-width: 1920rem;
   margin: 0 auto;
   position: relative;
-  height: 100%;
+  /* height: 100%; */
   z-index: 0;
 }
 .bottom-border {

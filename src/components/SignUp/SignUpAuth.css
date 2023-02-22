@@ -5,7 +5,7 @@
 }
 .sign-auth-container {
   width: 1378rem;
-  height: calc(100% - 100rem - 455rem);
+  min-height: calc(100% - 100rem - 455rem);
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;
   box-sizing: border-box;
@@ -244,6 +244,7 @@ select::-ms-expand {
 }
 .auth-next {
   padding-top: 140rem;
+  padding-bottom: 270rem;
 
   display: flex;
   flex-direction: row;

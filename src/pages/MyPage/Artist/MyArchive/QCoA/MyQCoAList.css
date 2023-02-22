@@ -6,6 +6,7 @@
 }
 .my-qcoa-list .table-header-container {
   border: none;
+  height: 100%;
 }
 .my-qcoa-list .table-slider .page-slider {
   border: none;
