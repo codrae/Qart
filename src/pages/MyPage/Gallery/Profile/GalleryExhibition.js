@@ -4,6 +4,10 @@ import DropDown from '../../../../components/DropDown/DropDown'
 import Footer from '../../../../components/Footer/Footer'
 import Header from '../../../../components/Header/Header'
 import HeaderSmall from '../../../../components/Header/HeaderSmall/HeaderSmall'
+import CheckModal from '../../../../components/Modal/CheckModal'
+import ModalPortal from '../../../../components/Modal/ModalPortal'
+import SectionHeader from '../../../../components/SectionHeader/SectionHeader'
+
 function GalleryExhibition() {
   const [imgFile, setImgFile] = useState('')
   const imgRef = useRef()
@@ -28,15 +32,18 @@ function GalleryExhibition() {
       setImgFile(reader.result)
     }
   }
+
+  // 모달창 노출 여부 state
+  const [checkOpen, setCheckOpen] = useState(false)
+
+  // 모달창 노출
+  const showCheckModal = () => {
+    setCheckOpen(true)
+  }
   return (
     <div className="gallery-exhibition">
       <Header login={true} colored="black" />
-      <nav className="search">
-        <div className="container search__container">
-          <h2 className="search__title">마이페이지</h2>
-        </div>
-      </nav>
-      <HeaderSmall moreList={moreList} active={true} choice={0} />
+      <SectionHeader title={'Exhibition History'} />
       <div className="gp-edit-image">
         <div className="container">
           <h2>기관 사진</h2>
@@ -79,7 +86,7 @@ function GalleryExhibition() {
             <DropDown options={countryList} />
           </li>
           <li>
-            <h2>Country</h2>
+            <h2>전시 형태</h2>
             <DropDown options={exhibitList} />
           </li>
           <li>
@@ -113,7 +120,16 @@ function GalleryExhibition() {
           </li>
           <div className="a-ex-edit--button">
             <button>취소</button>
-            <button>저장</button>
+            <button onClick={showCheckModal}>저장</button>
+            {checkOpen && (
+              <ModalPortal>
+                <CheckModal
+                  setModalOpen={setCheckOpen}
+                  title={'완료'}
+                  content={'히스토리를 추가하시겠습니까?'}
+                />
+              </ModalPortal>
+            )}
           </div>
         </ul>
       </section>

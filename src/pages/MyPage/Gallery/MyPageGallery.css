@@ -1,6 +1,21 @@
 .mypage-gallery {
   height: 100%;
 }
+
+.mypage-gallery .section-header {
+  background: #fbfbfb;
+}
+.mypage-gallery .section-header h3 {
+  height: 100rem;
+
+  font-size: 32rem;
+  line-height: 46rem;
+
+  color: #222222;
+}
+.ma-nft-content {
+  height: calc(100% - 247rem - 455rem);
+}
 .table-header-title {
   display: flex;
   flex-direction: row;

@@ -40,11 +40,9 @@ import MyWorkAdd from './pages/MyPage/Artist/MyArchive/Work/MyWorkAdd'
 import MyArticleAdd from './pages/MyPage/Artist/MyArchive/Article/MyArticleAdd'
 import MyNftAdd from './pages/MyPage/Artist/MyArchive/Nft/MyNftAdd'
 import MyPageGallery from './pages/MyPage/Gallery/MyPageGallery'
-import GalleryProfileEdit from './pages/MyPage/Gallery/Profile/GalleryProfileEdit'
 import GalleryExhibition from './pages/MyPage/Gallery/Profile/GalleryExhibition'
 import GalleryTeam from './pages/MyPage/Gallery/Profile/GalleryTeam'
 import GalleryAgency from './pages/MyPage/Gallery/Profile/GalleryAgency'
-import GalleryArchive from './pages/MyPage/Gallery/MyArchive/GalleryArchive'
 import SupportMain from './pages/Support/SupportMain'
 import SupportAbout from './pages/Support/About/SupportAbout'
 import SupportNotice from './pages/Support/Notice/SupportNotice'
@@ -64,6 +62,8 @@ import ArtistWallet from './pages/MyPage/Artist/Wallet/ArtistWallet'
 import ArtistLike from './pages/MyPage/Artist/Like/ArtistLike'
 import ArtistProfile from './pages/MyPage/Artist/Profile/ArtistProfile'
 import AddWorkToExcel from './pages/MyPage/Artist/MyArchive/AddWorkToExcel'
+import GalleryProfile from './pages/MyPage/Gallery/Profile/GalleryProfile'
+import MyWorkEdit from './pages/MyPage/Artist/MyArchive/Work/MyWorkEdit'
 function App() {
   return (
     <BrowserRouter>
@@ -218,80 +218,6 @@ function App() {
         ></Route>
         <Route path="/market/payment" element={<Payment />}></Route>
 
-        {/* 마이페이지 */}
-        <Route path="/mypage/general" element={<GeneralProfile />}></Route>
-        <Route
-          path="/mypage/general/wallet"
-          element={
-            <MyPageGeneral active={1}>
-              <GeneralWallet />
-            </MyPageGeneral>
-          }
-        ></Route>
-        <Route
-          path="/mypage/general/like"
-          element={
-            <MyPageGeneral active={2}>
-              <GeneralLike />
-            </MyPageGeneral>
-          }
-        ></Route>
-        <Route path="/mypage/artist" element={<ArtistProfile />}></Route>
-        <Route
-          path="/mypage/artist/wallet"
-          element={
-            <MyPageArtist active={2}>
-              <ArtistWallet />
-            </MyPageArtist>
-          }
-        ></Route>
-        <Route
-          path="/mypage/artist/like"
-          element={
-            <MyPageArtist active={3}>
-              <ArtistLike />
-            </MyPageArtist>
-          }
-        ></Route>
-        <Route path="/mypage/gallery" element={<MyPageGallery />}></Route>
-        <Route
-          path="/mypage/artist/exhibition"
-          element={<ArtistExhibition />}
-        ></Route>
-        <Route path="/mypage/artist/school" element={<ArtistSchool />}></Route>
-        <Route
-          path="/mypage/artist/archive"
-          element={<ArtistArchive />}
-        ></Route>
-        <Route path="/mypage/artist/excel" element={<AddWorkToExcel />}></Route>
-        <Route
-          path="/mypage/artist/archive/work"
-          element={<MyWorkAdd />}
-        ></Route>
-        <Route
-          path="/mypage/artist/archive/article"
-          element={<MyArticleAdd />}
-        ></Route>
-        <Route path="/mypage/artist/archive/nft" element={<MyNftAdd />}></Route>
-
-        <Route
-          path="/mypage/gallery/profile"
-          element={<GalleryProfileEdit />}
-        ></Route>
-        <Route
-          path="/mypage/gallery/exhibition"
-          element={<GalleryExhibition />}
-        ></Route>
-        <Route path="/mypage/gallery/team" element={<GalleryTeam />}></Route>
-        <Route
-          path="/mypage/gallery/agency"
-          element={<GalleryAgency />}
-        ></Route>
-        <Route
-          path="/mypage/gallery/archive"
-          element={<GalleryArchive />}
-        ></Route>
-
         <Route
           path="/support"
           element={
@@ -340,6 +266,121 @@ function App() {
               <QCoAList />
             </QCoAMain>
           }
+        ></Route>
+        {/* 마이페이지 - 일반 */}
+        <Route path="/mypage/general" element={<GeneralProfile />}></Route>
+        <Route
+          path="/mypage/general/wallet"
+          element={
+            <MyPageGeneral active={1}>
+              <GeneralWallet />
+            </MyPageGeneral>
+          }
+        ></Route>
+        <Route
+          path="/mypage/general/like"
+          element={
+            <MyPageGeneral active={2}>
+              <GeneralLike />
+            </MyPageGeneral>
+          }
+        ></Route>
+
+        {/* 마이페이지 - 아티스트 */}
+        <Route path="/mypage/artist" element={<ArtistProfile />}></Route>
+        <Route
+          path="/mypage/artist/wallet"
+          element={
+            <MyPageArtist active={2}>
+              <ArtistWallet />
+            </MyPageArtist>
+          }
+        ></Route>
+        <Route
+          path="/mypage/artist/like"
+          element={
+            <MyPageArtist active={3}>
+              <ArtistLike />
+            </MyPageArtist>
+          }
+        ></Route>
+
+        <Route
+          path="/mypage/artist/exhibition"
+          element={<ArtistExhibition />}
+        ></Route>
+        <Route path="/mypage/artist/school" element={<ArtistSchool />}></Route>
+        <Route
+          path="/mypage/artist/archive"
+          element={<ArtistArchive />}
+        ></Route>
+
+        <Route
+          path="/mypage/artist/archive/work"
+          element={<MyWorkAdd />}
+        ></Route>
+        <Route
+          path="/mypage/artist/archive/article"
+          element={<MyArticleAdd />}
+        ></Route>
+        <Route path="/mypage/artist/school" element={<ArtistSchool />}></Route>
+        <Route path="/mypage/artist/archive/nft" element={<MyNftAdd />}></Route>
+
+        <Route path="/mypage/excel" element={<AddWorkToExcel />}></Route>
+        <Route path="/mypage/archive/edit" element={<MyWorkEdit />}></Route>
+
+        {/* 마이페이지 - 갤러리 */}
+        <Route path="/mypage/gallery" element={<GalleryProfile />}></Route>
+        <Route
+          path="/mypage/gallery/wallet"
+          element={
+            <MyPageGallery active={2}>
+              <ArtistWallet />
+            </MyPageGallery>
+          }
+        ></Route>
+        <Route
+          path="/mypage/gallery/like"
+          element={
+            <MyPageGallery active={3}>
+              <ArtistLike />
+            </MyPageGallery>
+          }
+        ></Route>
+
+        <Route
+          path="/mypage/gallery/exhibition"
+          element={<ArtistExhibition />}
+        ></Route>
+
+        <Route
+          path="/mypage/gallery/archive"
+          element={<ArtistArchive />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/excel"
+          element={<AddWorkToExcel />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/archive/work"
+          element={<MyWorkAdd />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/archive/article"
+          element={<MyArticleAdd />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/archive/nft"
+          element={<MyNftAdd />}
+        ></Route>
+        <Route
+          path="/mypage/gallery/exhibition"
+          element={<GalleryExhibition />}
+        ></Route>
+        <Route path="/mypage/gallery/team" element={<GalleryTeam />}></Route>
+        <Route
+          path="/mypage/gallery/agency"
+          element={<GalleryAgency />}
         ></Route>
       </Routes>
     </BrowserRouter>

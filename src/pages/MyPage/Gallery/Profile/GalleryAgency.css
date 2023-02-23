@@ -1,6 +1,17 @@
 .gallery-agency {
   height: 100%;
 }
+.gallery-agency .section-header {
+  background: #fbfbfb;
+}
+.gallery-agency .section-header h3 {
+  height: 100rem;
+
+  font-size: 32rem;
+  line-height: 46rem;
+
+  color: #222222;
+}
 .gallery-agency .header-small-list a.active {
   color: #222222;
 }

@@ -76,7 +76,7 @@
 }
 .a-ex-edit-info {
   z-index: 1;
-  height: 0;
+  /* height: 0; */
 }
 /* 못생긴 기존 input 숨기기 */
 #chooseFile-02 {

@@ -124,6 +124,7 @@
   object-fit: contain;
 }
 .ap-edit-content .edit-photo {
+  position: absolute;
   width: 24rem;
   height: 24rem;
   background: url('../../../../assets/img_delete.png') no-repeat center;
@@ -139,7 +140,7 @@
   font-size: 24rem;
   line-height: 35rem;
 
-  color: #222222;
+  color: #222222 !important;
   padding-bottom: 17rem;
 }
 .ap-edit-basic,
@@ -486,6 +487,9 @@
 }
 .mypage-artist-profile .ap-edit-content {
   padding-top: 56rem;
+}
+.mypage-artist-profile .ap-edit-content h2 {
+  color: #4f4f4f;
 }
 .mypage-artist-profile .section-header {
   background: #fbfbfb;

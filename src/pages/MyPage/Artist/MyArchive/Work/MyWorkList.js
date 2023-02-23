@@ -57,7 +57,9 @@ function MyWorkList() {
             )}
           </li>
           <li>
-            <button className="edit-btn">Edit</button>
+            <Link to={'/mypage/archive/edit'}>
+              <button className="edit-btn">Edit</button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -103,7 +105,7 @@ function MyWorkList() {
         </section>
         <section className="th-search-button">
           <button>Delete</button>
-          <Link to="/mypage/artist/excel">
+          <Link to="/mypage/excel">
             <button className="long-button">Add to Excel</button>
           </Link>
           <Link to="./work">
