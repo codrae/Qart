@@ -122,41 +122,41 @@
 
 # 개인
 
-- profile : http://localhost:3000/mypage/general
-- 나의 지갑 : http://localhost:3000/mypage/general/wallet
-- 관심 목록 : http://localhost:3000/mypage/general/like
+- profile : https://main--qart-publishing.netlify.app/mypage/general
+- 나의 지갑 : https://main--qart-publishing.netlify.app/mypage/general/wallet
+- 관심 목록 : https://main--qart-publishing.netlify.app/mypage/general/like
 
 # 작가
 
-- profile : http://localhost:3000/mypage/artist
+- profile : https://main--qart-publishing.netlify.app/mypage/artist
 
-  - 전시 이력 추가 : http://localhost:3000/mypage/artist/exhibition
-  - 학력 정보 추가 : http://localhost:3000/mypage/artist/school
+  - 전시 이력 추가 : https://main--qart-publishing.netlify.app/mypage/artist/exhibition
+  - 학력 정보 추가 : https://main--qart-publishing.netlify.app/mypage/artist/school
 
-- My Archive : http://localhost:3000/mypage/artist/archive
+- My Archive : https://main--qart-publishing.netlify.app/mypage/artist/archive
 
-  - Add Work : http://localhost:3000/mypage/artist/archive/work
-  - Edit Work : http://localhost:3000/mypage/archive/edit
-  - Add to Excel : http://localhost:3000/mypage/excel
-  - Nft Add : http://localhost:3000/mypage/artist/archive/nft
-  - Article Add : http://localhost:3000/mypage/artist/archive/article
+  - Add Work : https://main--qart-publishing.netlify.app/mypage/artist/archive/work
+  - Edit Work : https://main--qart-publishing.netlify.app/mypage/archive/edit
+  - Add to Excel : https://main--qart-publishing.netlify.app/mypage/excel
+  - Nft Add : https://main--qart-publishing.netlify.app/mypage/artist/archive/nft
+  - Article Add : https://main--qart-publishing.netlify.app/mypage/artist/archive/article
 
-- 나의 지갑 : http://localhost:3000/mypage/artist/wallet
-- 관심 목록 : http://localhost:3000/mypage/artist/like
+- 나의 지갑 : https://main--qart-publishing.netlify.app/mypage/artist/wallet
+- 관심 목록 : https://main--qart-publishing.netlify.app/mypage/artist/like
 
 # gallery
 
-- profile http://localhost:3000/mypage/gallery
-  - 팀원 추가: http://localhost:3000/mypage/gallery/team
-  - 학력 추가 : http://localhost:3000/mypage/gallery/agency
-  - 전시 이력 추가 : http://localhost:3000/mypage/gallery/exhibition
-- My Archive : http://localhost:3000/mypage/gallery/archive
+- profile https://main--qart-publishing.netlify.app/mypage/gallery
+  - 팀원 추가: https://main--qart-publishing.netlify.app/mypage/gallery/team
+  - 학력 추가 : https://main--qart-publishing.netlify.app/mypage/gallery/agency
+  - 전시 이력 추가 : https://main--qart-publishing.netlify.app/mypage/gallery/exhibition
+- My Archive : https://main--qart-publishing.netlify.app/mypage/gallery/archive
 
-  - Add Work : http://localhost:3000/mypage/gallery/archive/work
-  - Edit Work : http://localhost:3000/mypage/gallery/edit
-  - Add to Excel : http://localhost:3000/mypage/excel
-  - Nft Add : http://localhost:3000/mypage/artist/archive/nft
-  - Article Add : http://localhost:3000/mypage/gallery/archive/article
+  - Add Work : https://main--qart-publishing.netlify.app/mypage/gallery/archive/work
+  - Edit Work : https://main--qart-publishing.netlify.app/mypage/gallery/edit
+  - Add to Excel : https://main--qart-publishing.netlify.app/mypage/excel
+  - Nft Add : https://main--qart-publishing.netlify.app/mypage/artist/archive/nft
+  - Article Add : https://main--qart-publishing.netlify.app/mypage/gallery/archive/article
 
-- 나의 지갑 : http://localhost:3000/mypage/gallery/wallet
-- 관심 목록 : http://localhost:3000/mypage/gallery/like
+- 나의 지갑 : https://main--qart-publishing.netlify.app/mypage/gallery/wallet
+- 관심 목록 : https://main--qart-publishing.netlify.app/mypage/gallery/like
