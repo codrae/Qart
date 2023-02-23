@@ -1,5 +1,6 @@
 .artist-exhibition {
   height: 100%;
+  min-width: 1920rem;
 }
 .artist-exhibition .section-header {
   background: #fbfbfb;
@@ -265,7 +266,7 @@
 input[type='date'] {
   outline: none;
 }
-input[type='date']::-webkit-datetime-edit-text {
+/* input[type='date']::-webkit-datetime-edit-text {
   -webkit-appearance: none;
   display: none;
 }
@@ -280,9 +281,9 @@ input[type='date']::-webkit-datetime-edit-day-field {
 input[type='date']::-webkit-datetime-edit-year-field {
   -webkit-appearance: none;
   display: none;
-}
+} */
 
-input[type='date']::before {
+/* input[type='date']::before {
   content: attr(data-placeholder);
   width: calc(100% - 104rem);
   font-family: 'Noto Sans KR';
@@ -290,7 +291,7 @@ input[type='date']::before {
   font-weight: 500;
   font-size: 20rem;
   line-height: 29rem;
-  /* identical to box height */
+
 
   display: flex;
   align-items: center;
@@ -299,7 +300,7 @@ input[type='date']::before {
 input[type='date']:focus::before,
 input[type='date']:valid::before {
   display: none;
-}
+} */
 
 ::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
@@ -319,6 +320,4 @@ input[type='date']:valid::before {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
 }

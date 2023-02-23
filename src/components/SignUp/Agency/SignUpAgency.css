@@ -29,8 +29,9 @@
 .agency-content .general-item {
   padding-bottom: 26rem;
 }
+
 input[type='date']::before {
-  content: attr(data-placeholder);
+  content: attr(data-placeholder) !important;
   width: 100%;
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -44,7 +45,13 @@ input[type='date']:focus::before,
 input[type='date']:valid::before {
   display: none;
 }
-
+.agency-content > input[type='date'] {
+  border: 1rem solid #bdbdbd !important;
+}
+.agency-content > input[type='date']:valid,
+.agency-content > input[type='date']:focus {
+  border: 1rem solid #222222 !important;
+}
 input[type='date']::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
   opacity: 1;
@@ -61,6 +68,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   font-weight: 500;
   font-size: 16rem;
   line-height: 23rem;
+  color: #222222;
 }
 .agency-content .search__icon {
   background: url('../../../assets/icon_search-bd.png') no-repeat center;

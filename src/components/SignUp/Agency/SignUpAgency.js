@@ -130,8 +130,8 @@ function SignUpAgency() {
               id="date"
               className="general-input date-input"
               data-placeholder="YYYY.MM.DD"
-              // value={toStringByFormatting(new Date())}
               required
+              //onChange={e => console.log(e.target.value)}
             ></input>
           </div>
           <div className="general-item" style={{ marginRight: 0 }}>
