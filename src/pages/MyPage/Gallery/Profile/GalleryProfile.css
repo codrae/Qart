@@ -208,8 +208,13 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.gp-edit-personal li {
+.gp-edit-personal .drop-select {
+  width: 596rem;
+}
+.gp-edit-personal .show-drop-list li {
+  width: 593rem;
+}
+.gp-edit-personal > li {
   padding-top: 57rem;
 }
 .gp-drop {

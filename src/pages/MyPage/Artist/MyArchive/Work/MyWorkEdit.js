@@ -62,7 +62,7 @@ function MyWorkEdit() {
   return (
     <div className="ma-work-edit ma-work-add">
       <Header login={true} colored="black" />
-      <SectionHeader title={'Add Work'} />
+      <SectionHeader title={'Edit Work'} />
       <div className="ma-edit-image">
         <div className="container ma-edit-image-container">
           <h2 className="ma-img-tlt">대표 이미지</h2>
@@ -326,7 +326,7 @@ function MyWorkEdit() {
       <div className="ma-add--button">
         <div className="container">
           <button>취소</button>
-          <button>저장</button>
+          <button>수정</button>
         </div>
       </div>
       <Footer />

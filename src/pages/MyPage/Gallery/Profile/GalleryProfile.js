@@ -42,7 +42,7 @@ function GalleryProfile() {
   const phonelist = ['+82', '+82', '+82', '+82', '+82', '+82']
   const banklist = ['은행', '은행', '은행', '은행']
   const infoList = ['본명으로 활동(Real Name)', '본명으로 활동(Real Name)']
-  const infoList2 = ['작가', '기관']
+  const infoList2 = ['기관', '작가']
   return (
     <div
       className={edit ? 'mypage-artist' : 'mypage-artist mypage-artist-profile'}
@@ -169,12 +169,7 @@ function GalleryProfile() {
             <ul className="gp-edit-personal">
               <li>
                 <h2>사용자 유형 변경</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="기관"
-                  disabled={edit}
-                ></input>
+                <DropDown disabled={edit} options={infoList2} />
               </li>
               {edit ? (
                 <li>

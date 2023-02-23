@@ -65,9 +65,9 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 23rem;
-  padding-bottom: 20rem;
+  font-size: 24rem;
+  line-height: 28rem;
+  padding-bottom: 35rem;
 }
 .autcion-detail .market-info__list li {
   display: flex;
@@ -96,8 +96,8 @@
   padding-top: 27rem;
 
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 23rem;
+  font-size: 24rem;
+  line-height: 28rem;
 
   color: #222222;
 }
@@ -123,7 +123,7 @@
 }
 .autcion-detail .market-sell__time {
   display: block;
-  padding-top: 86rem;
+  padding-top: 41rem;
   font-weight: 500;
   font-size: 20rem;
   line-height: 23rem;
@@ -151,8 +151,8 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 19rem;
+  font-size: 20rem;
+  line-height: 23rem;
 
   color: #333333;
 }

@@ -109,8 +109,9 @@
 }
 
 .ma-edit-image-container .edit-photo {
+  position: absolute;
   top: 37rem;
-  left: 745rem;
+  left: 744rem;
 
   width: 24rem;
   height: 24rem;
@@ -223,7 +224,7 @@
   border: 1rem solid #bdbdbd;
 }
 .ma-article-add-info .show-drop-list li {
-  width: 590rem;
+  width: 592rem;
   padding-top: 0;
 
   box-sizing: border-box;

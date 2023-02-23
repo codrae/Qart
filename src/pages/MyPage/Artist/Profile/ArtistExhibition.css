@@ -82,8 +82,9 @@
   box-sizing: border-box;
 }
 .a-ex-edit-image-container .edit-photo {
-  top: 60rem;
-  left: 718rem;
+  position: absolute;
+  top: 38rem;
+  left: 744rem;
   z-index: 2;
 }
 .a-ex-img-show {
@@ -162,7 +163,7 @@
   border: 1rem solid #bdbdbd;
 }
 .a-ex-edit-info .show-drop-list li {
-  width: 590rem;
+  width: 593rem;
   padding-top: 0;
 
   box-sizing: border-box;

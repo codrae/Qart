@@ -122,10 +122,41 @@
 
 # 개인
 
-- main : http://localhost:3000/mypage/general
-- 프로필
-  - 완전 새로 만들기
-- 나의 지갑
-  - header 수정
-  - 테이블 간격 맞추가
-  -
+- profile : http://localhost:3000/mypage/general
+- 나의 지갑 : http://localhost:3000/mypage/general/wallet
+- 관심 목록 : http://localhost:3000/mypage/general/like
+
+# 작가
+
+- profile : http://localhost:3000/mypage/artist
+
+  - 전시 이력 추가 : http://localhost:3000/mypage/artist/exhibition
+  - 학력 정보 추가 : http://localhost:3000/mypage/artist/school
+
+- My Archive : http://localhost:3000/mypage/artist/archive
+
+  - Add Work : http://localhost:3000/mypage/artist/archive/work
+  - Edit Work : http://localhost:3000/mypage/archive/edit
+  - Add to Excel : http://localhost:3000/mypage/excel
+  - Nft Add : http://localhost:3000/mypage/artist/archive/nft
+  - Article Add : http://localhost:3000/mypage/artist/archive/article
+
+- 나의 지갑 : http://localhost:3000/mypage/artist/wallet
+- 관심 목록 : http://localhost:3000/mypage/artist/like
+
+# gallery
+
+- profile http://localhost:3000/mypage/gallery
+  - 팀원 추가: http://localhost:3000/mypage/gallery/team
+  - 학력 추가 : http://localhost:3000/mypage/gallery/agency
+  - 전시 이력 추가 : http://localhost:3000/mypage/gallery/exhibition
+- My Archive : http://localhost:3000/mypage/gallery/archive
+
+  - Add Work : http://localhost:3000/mypage/gallery/archive/work
+  - Edit Work : http://localhost:3000/mypage/gallery/edit
+  - Add to Excel : http://localhost:3000/mypage/excel
+  - Nft Add : http://localhost:3000/mypage/artist/archive/nft
+  - Article Add : http://localhost:3000/mypage/gallery/archive/article
+
+- 나의 지갑 : http://localhost:3000/mypage/gallery/wallet
+- 관심 목록 : http://localhost:3000/mypage/gallery/like
