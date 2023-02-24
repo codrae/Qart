@@ -4,6 +4,11 @@ import './Footer.css'
 const Footer = () => {
   return (
     <footer>
+      <div className="footer-phone-header">
+        <div className="footer-container">
+          <span className="ir_pm">Qart</span>
+        </div>
+      </div>
       <div className="footer__menu">
         <div className="footer-container">
           <div className="footer__menu__item">
@@ -30,11 +35,20 @@ const Footer = () => {
           <div className="footer-container">
             <div className="footer__detail__item">
               <div className="detail__name">
-                <span className="detail__name--co">아트시냅스</span>
-                <span>사업자등록번호 : 436-86-02273</span>
+                <span className="detail__name--co">
+                  <span className="detail__name--phone">사업자명 : </span>
+                  <span className="footer-bold">아트시냅스</span>
+                </span>
+                <span>
+                  사업자등록번호 :{' '}
+                  <span className="footer-bold">436-86-02273</span>
+                </span>
               </div>
               <span className="detail__location">
-                주소 : 부산광역시 중구 중앙대로102, 7층 795호
+                주소 :{' '}
+                <span className="footer-bold">
+                  부산광역시 중구 중앙대로102, 7층 795호
+                </span>
               </span>
               <p>
                 큐아트 사이트에서 제공하는 작가, 작품, 갤러리, 기관정보를 포함한

@@ -12,6 +12,9 @@ footer {
   display: flex;
   flex-direction: row;
 }
+.footer-phone-header {
+  display: none;
+}
 .footer__menu__item,
 .footer__detail__item {
   width: 100%;
@@ -87,6 +90,9 @@ footer {
 .detail__name--co {
   margin-right: 147rem;
 }
+.detail__name--phone {
+  display: none;
+}
 .detail__location {
   width: 521rem;
   display: block;
@@ -104,64 +110,103 @@ footer {
 }
 @media (max-width: 480px) {
   footer {
-    display: none;
-    /* min-width: 380rem;
-    height: 322rem; */
+    width: 100%;
+    min-width: 360rem;
+    height: 322rem;
   }
   .footer-container {
-    max-width: 360rem;
+    width: 360rem;
   }
-  .footer-line {
+  .footer-phone-header {
     display: block;
-    width: 0%;
+    width: 100%;
+    height: 50rem;
+
+    background: #222222;
   }
-  .footer__menu {
-    height: 127rem;
+  .footer-phone-header > .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  .footer__detail {
-    height: 195rem;
+  .footer-phone-header > .footer-container > span {
+    display: block;
+    width: 73rem;
+    height: 26rem;
+    margin-left: 46rem;
+    background: url('../../assets/logo_color.png') no-repeat center;
+    background-size: contain;
   }
-  .item-container {
-    padding-left: 0;
-    padding-right: 0;
+  .footer__logo {
+    display: none;
   }
   .footer__menu__item,
   .footer__detail__item {
-    height: calc(100% - 22rem);
-    padding: 0 12.77%;
-    padding-top: 22rem;
-    min-width: 0;
-    border-left: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 16rem;
+  }
+  .footer__menu__item {
+    padding-left: 46rem;
+  }
+  .footer__detail__item {
+    padding-left: 46rem;
+  }
+  .footer__menu {
+    border-top: 0;
+    border-bottom: 1rem solid #e0e0e0;
+    height: 121rem;
+  }
+  .footer__detail {
+    height: 151rem;
+  }
+  .item-container {
+    padding-left: 0;
+  }
+  .item-container ul {
+    padding-right: 45rem;
   }
   .footer__menu__item h3 {
-    padding-bottom: 12rem;
     font-size: 14rem;
+    line-height: 29rem;
+    padding-bottom: 8rem;
   }
   .footer__menu__item ul li {
-    margin-bottom: 8rem;
     font-size: 10rem;
+    margin-bottom: 14rem;
+  }
+  .footer__menu__item ul li:last-child {
+    margin-bottom: 8rem;
   }
   .detail__name {
-    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    width: 521rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 10rem;
     line-height: 14rem;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 8rem;
+  }
+  .detail__name--phone {
+    display: inline;
   }
   .detail__name--co {
-    margin-right: 72rem;
+    margin-right: 0;
+    margin-bottom: 8rem;
   }
   .detail__location {
-    margin-bottom: 7rem;
-    font-size: 10rem;
     line-height: 14rem;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 8rem;
   }
   .footer__detail__item p {
+    width: 284.62rem;
+    font-weight: 500;
     font-size: 10rem;
     line-height: 14rem;
-    padding-left: 0;
-    padding-right: 0;
+  }
+  .footer-bold {
+    font-weight: 600;
   }
 }

@@ -107,7 +107,7 @@
   }
   .sign-artist-container {
     width: 360rem;
-    min-height: calc(100% - 63rem);
+    min-height: calc(100% - 63rem - 322rem);
     border: none;
   }
   .artist-content {

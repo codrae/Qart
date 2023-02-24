@@ -83,7 +83,7 @@
   }
   .cert-container {
     width: 360rem;
-    min-height: calc(100% - 100rem);
+    min-height: calc(100% - 63rem - 322rem);
     border: none;
   }
   .cert-content {

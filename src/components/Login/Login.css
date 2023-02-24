@@ -215,7 +215,7 @@ input[type='checkbox']:checked + .login-option__check {
   }
   .login-container {
     width: 360rem;
-    height: calc(100% - 100rem);
+    min-height: calc(100% - 63rem - 322rem);
     border: none;
 
     display: flex;
