@@ -43,6 +43,12 @@ function SignUpKYC() {
   return (
     <div className="kyc">
       <Header />
+      <Header colored="black" />
+      <header className="kyc-phone-header">
+        <div className="container kyc-header-container">
+          <h2>마이페이지</h2>
+        </div>
+      </header>
       <header className="kyc-header">
         <div className="container kyc-header-container">
           <h2>KYC 인증 신청서</h2>
@@ -78,8 +84,8 @@ function SignUpKYC() {
           <h2 className="kyc-img-tlt">
             인증사진
             <span className="kyc-img-tlt--sub">
-              *오늘의 날짜가 적힌 메모와 <br></br>&nbsp;&nbsp;신분증을 들고
-              촬영한 사진
+              *오늘의 날짜가 적힌 메모와 <br></br>
+              <span className="white-space"></span>신분증을 들고 촬영한 사진
             </span>
           </h2>
           <img
@@ -112,25 +118,29 @@ function SignUpKYC() {
           </li>
           <li className="kyc-phone">
             <h2>Contact</h2>
-            <DropDown options={phonelist} />
-            <input type="text" placeholder="01000000000"></input>
+            <div className="kyc-phone-input">
+              <DropDown options={phonelist} />
+              <input type="text" placeholder="01000000000"></input>
+            </div>
           </li>
           <li className="kyc-email">
             <h2>E-Mail</h2>
-            <input type="text" className="email-input-email" required></input>
-            <span className="email-sym">@</span>
-            <input
-              type="text"
-              className="email-input-required"
-              disabled={menu != 0}
-              value={menu != 0 ? options[menu] : value}
-              onChange={onChange}
-              required
-            ></input>
-            <DropDown options={options} select={menu} setSelect={setMenu} />
+            <div className="kyc-email-input">
+              <input type="text" className="email-input-email" required></input>
+              <span className="email-sym">@</span>
+              <input
+                type="text"
+                className="email-input-required"
+                disabled={menu != 0}
+                value={menu != 0 ? options[menu] : value}
+                onChange={onChange}
+                required
+              ></input>
+              <DropDown options={options} select={menu} setSelect={setMenu} />
+            </div>
           </li>
         </ul>
-        <div className="ma-add--button">
+        <div className="kyc-add--button">
           <button>취소</button>
           <button>저장</button>
         </div>

@@ -155,7 +155,7 @@
   border-radius: 0;
 }
 .mb-8 {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 .general-input:focus,
 .general-input:valid {
@@ -243,7 +243,7 @@ input[type='checkbox']:checked ~ .option-text {
   }
   .sign-general-container {
     width: 360rem;
-    height: calc(100% - 63rem);
+    min-height: calc(100% - 63rem);
     border: none;
   }
   .general-content {
@@ -348,7 +348,7 @@ input[type='checkbox']:checked ~ .option-text {
     line-height: 14rem;
   }
   .general-next {
-    padding-bottom: 24rem;
+    padding-bottom: 221rem;
   }
   .general-next button {
     width: 155rem;

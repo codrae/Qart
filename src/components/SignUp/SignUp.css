@@ -60,6 +60,8 @@
   line-height: 38rem;
 
   color: #222222;
+
+  text-align: left;
 }
 .sign-item span {
   padding-top: 7rem;
@@ -125,7 +127,8 @@
   line-height: 35rem;
   color: #ffffff;
 }
-.sign-next button:active {
+.sign-next button:active,
+.sign-next button.active {
   background: #000000;
 }
 @media (max-width: 480px) {

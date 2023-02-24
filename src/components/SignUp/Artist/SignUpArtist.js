@@ -12,7 +12,7 @@ function SignUpArtist() {
       <section className="container sign-artist-container">
         <div className="artist-content">
           <div className="general-item">
-            <h2 className="general-title">아이디</h2>
+            <h2 className="general-title">회원 아이디</h2>
             <div className="general-input-container">
               <input
                 type="text"
@@ -38,7 +38,7 @@ function SignUpArtist() {
               required
             ></input>
           </div>
-          <div className="general-item">
+          <div className="general-item mr-88">
             <h2 className="general-title">휴대폰 번호</h2>
             <input
               type="text"
@@ -56,8 +56,8 @@ function SignUpArtist() {
               required
             ></input>
           </div>
-          <div className="general-item">
-            <h2 className="general-title">비밀번호</h2>
+          <div className="general-item mr-88">
+            <h2 className="general-title ">비밀번호</h2>
             <div className="general-password">
               <input
                 type="password"
@@ -84,7 +84,7 @@ function SignUpArtist() {
               </button>
             </div>
           </div>
-          <div>
+          <div className="general-item">
             <h2 className="general-title">활동명/단체명</h2>
             <input
               type="text"

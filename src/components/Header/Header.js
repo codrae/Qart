@@ -4,6 +4,11 @@ const Header = props => {
   return (
     <header className={props.colored}>
       <div className="container header-container">
+        <div className="header__before">
+          <a href="/">
+            <span className="before-icon"></span>
+          </a>
+        </div>
         <div className="header__logo">
           <a href="/">
             <span className="none">Qart</span>

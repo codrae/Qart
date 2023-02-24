@@ -104,8 +104,9 @@ footer {
 }
 @media (max-width: 480px) {
   footer {
-    min-width: 380rem;
-    height: 322rem;
+    display: none;
+    /* min-width: 380rem;
+    height: 322rem; */
   }
   .footer-container {
     max-width: 360rem;

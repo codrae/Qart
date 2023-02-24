@@ -24,8 +24,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.artist-content .mr-88,
-.artist-content .general-item:nth-child(odd) {
+.artist-content .mr-88 {
   margin-right: 88rem;
 }
 .artist-content .general-input {
@@ -100,4 +99,79 @@
   font-weight: 400;
   font-size: 16rem;
   line-height: 23rem;
+}
+@media (max-width: 480px) {
+  .sign-artist {
+    width: 100%;
+    min-width: 360rem;
+  }
+  .sign-artist-container {
+    width: 360rem;
+    min-height: calc(100% - 63rem);
+    border: none;
+  }
+  .artist-content {
+    padding-top: 24rem;
+    width: 319rem;
+  }
+  .artist-content .mr-88,
+  .artist-content .general-item:nth-child(odd) {
+    margin-right: 0rem;
+    margin-bottom: 8rem !important;
+  }
+  .artist-content .general-input {
+    width: 319rem;
+    margin-bottom: 28rem;
+  }
+  .artist-content .general-input-num {
+    width: 236rem;
+  }
+  .artist-content .general-password-input {
+    width: calc(319rem - 60rem);
+  }
+
+  .artist-option {
+    width: 319rem;
+    padding-top: 48rem;
+    padding-bottom: 16rem;
+  }
+  .artist-option .login-option {
+    padding-bottom: 8rem;
+  }
+
+  .sign-artist .drop-select,
+  .sign-artist .show-drop-list li {
+    width: 319rem;
+    height: 42rem;
+  }
+  .sign-artist .drop-select {
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 17rem;
+  }
+  .sign-artist .show-drop-list li {
+    width: 317rem;
+
+    font-size: 12rem;
+    line-height: 17rem;
+  }
+
+  .sign-artist .general-next {
+    padding-bottom: 36rem;
+  }
+  .artist-content .general-item {
+    display: flex;
+    flex-direction: column;
+    order: 4;
+  }
+  .artist-content .general-item:nth-child(1) {
+    order: 1;
+  }
+
+  .artist-content .general-item:nth-child(5) {
+    order: 2;
+  }
+  .artist-content .general-item:nth-child(6) {
+    order: 3;
+  }
 }

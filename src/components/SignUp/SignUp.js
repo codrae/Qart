@@ -84,7 +84,7 @@ function SignUp() {
         </div>
         <section className="sign-next">
           <Link to="/signUp/auth" state={{ next: select }}>
-            <button>다음</button>
+            <button className={select != 0 ? 'active' : ''}>다음</button>
           </Link>
         </section>
       </div>

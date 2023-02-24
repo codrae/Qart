@@ -9,7 +9,7 @@ function SignUpGeneral() {
       <Header />
       <section className="container sign-general-container">
         <div className="general-content">
-          <h2 className="general-title">아이디</h2>
+          <h2 className="general-title">회원 아이디</h2>
           <div className="general-input-container">
             <input
               type="text"

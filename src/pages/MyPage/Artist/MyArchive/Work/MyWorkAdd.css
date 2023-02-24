@@ -255,13 +255,13 @@
 
   color: #bdbdbd;
 }
-.ma-add--button {
+.ma-work-add .ma-add--button {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.ma-add--button button {
+.ma-work-add .ma-add--button button {
   background: none;
 
   box-sizing: border-box;
@@ -288,14 +288,11 @@
 
   margin-right: 16rem;
 }
-.ma-add--button button:last-child {
+.ma-work-add .ma-add--button button:last-child {
   border: none;
   background: #000000;
   color: #ffffff;
   margin-right: 0;
-}
-.ma-work-add .footer__menu {
-  border-top: 1rem solid #e0e0e0;
 }
 
 .ma-work-add .date-input {
@@ -424,7 +421,7 @@
   position: relative;
   z-index: -1;
 }
-.ma-add--button .container {
+.ma-work-add .ma-add--button .container {
   width: 1378rem;
   border-left: 1rem solid #e0e0e0;
   border-right: 1rem solid #e0e0e0;

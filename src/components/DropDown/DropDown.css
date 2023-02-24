@@ -69,3 +69,12 @@
 .show-drop-list li:hover {
   background: #f2f2f2;
 }
+@media (max-width: 480px) {
+  .drop-select:after {
+    width: 14rem;
+    background-size: 10rem 5.89rem;
+    right: 16rem;
+    /* width: 5.89rem;
+    height: 10rem; */
+  }
+}

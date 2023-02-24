@@ -25,3 +25,8 @@
 .top-border {
   border-top: 1rem solid #bdbdbd;
 }
+@media (max-width: 480px) {
+  .container {
+    max-width: 480rem;
+  }
+}

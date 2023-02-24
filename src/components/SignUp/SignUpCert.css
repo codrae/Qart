@@ -75,3 +75,50 @@
 
   border: none;
 }
+@media (max-width: 480px) {
+  .cert {
+    width: 100%;
+    min-width: 360rem;
+    /* height: 100%; */
+  }
+  .cert-container {
+    width: 360rem;
+    min-height: calc(100% - 100rem);
+    border: none;
+  }
+  .cert-content {
+    margin-top: 35rem;
+    box-sizing: border-box;
+
+    width: 320rem;
+    height: 330rem;
+  }
+  .cert-content h1 {
+    font-size: 24rem;
+    line-height: 28rem;
+
+    padding-top: 36rem;
+    padding-bottom: 20rem;
+  }
+  .cert-content p {
+    margin-left: 22rem;
+    margin-right: 21rem;
+    margin-bottom: 36rem;
+
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+  .cert-button {
+    margin-top: 47rem;
+    margin-bottom: 9rem;
+    width: 320rem;
+    height: 54rem;
+
+    font-weight: 700;
+    font-size: 18rem;
+    line-height: 26rem;
+  }
+  .cert .general-next {
+    padding-bottom: 24rem;
+  }
+}

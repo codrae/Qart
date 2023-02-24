@@ -21,6 +21,9 @@ header.black {
   border-left: 1rem solid #4f4f4f;
   border-right: 1rem solid #4f4f4f;
 }
+.header__before {
+  display: none;
+}
 .header__logo {
   display: flex;
   flex-direction: row;
@@ -122,15 +125,42 @@ header.black {
     height: 63rem;
     min-width: 360rem;
   }
+  .black .header-container {
+    border: none;
+  }
   .header-container {
     width: 360rem;
-    justify-content: space-between;
+    justify-content: initial;
     border: none;
+    padding-left: 20rem;
+    padding-right: 21rem;
+    box-sizing: border-box;
+  }
+  .header__before {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .header__before .before-icon {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    background: url('../../assets/arrow_left_black.png') no-repeat center;
+    background-size: 11.77rem 20rem;
+  }
+  .black .header__before .before-icon {
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    background: url('../../assets/arrow_left.png') no-repeat center;
+    background-size: 11.77rem 20rem;
   }
   .header__logo {
     width: 73rem;
     height: 24rem;
-    margin-left: 20rem;
+    margin-left: 99rem;
+    margin-right: 50rem;
     margin-top: 19rem;
   }
   .header__logo > a {
@@ -146,15 +176,16 @@ header.black {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 20rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .header__padding .login {
     display: none;
   }
-  /* .header__padding a {
-    width: 50%;
-    height: 100%;
-  } */
+  .black .header__padding .bar {
+    background: url(../../assets/hambar-w.png) no-repeat;
+    background-size: 28rem 24rem;
+  }
   .header__padding .bar {
     display: block;
     background: url(../../assets/hambar.png) no-repeat;
@@ -163,14 +194,18 @@ header.black {
     background-size: 28rem 24rem;
     background-position: center center;
   }
+  .black .header__padding .search-icon {
+    background: url(../../assets/icon_search_w.png) no-repeat 50% 50%;
+    background-size: 25.39rem 25.39rem;
+  }
   .header__padding .search-icon {
     display: block;
     background: url(../../assets/ico_search.png) no-repeat 50% 50%;
-    width: 25.39rem;
-    height: 25.39rem;
+    width: 30rem;
+    height: 30rem;
     background-size: 25.39rem 25.39rem;
     background-position: center center;
 
-    margin-right: 18.11rem;
+    margin-right: 16rem;
   }
 }
