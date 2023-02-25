@@ -21,8 +21,8 @@ function SearchSlide(props) {
       {
         breakpoint: 380,
         settings: {
-          slidesPerRow: 3,
-          rows: 3,
+          slidesPerRow: props.breakRows,
+          rows: props.breakSlidesPerRow,
         },
       },
     ],
@@ -197,7 +197,7 @@ function SearchSlide(props) {
           </div>
           <div className="search-modal">
             <button onClick={showModal}>
-              <span>카테고리</span>
+              <span>작가명</span>
               <span className="botton-arrow"></span>
             </button>
             {modalOpen && (
@@ -217,6 +217,8 @@ function SearchSlide(props) {
           items={props.items}
           rows={props.rows}
           slidesPerRow={props.slidesPerRow}
+          breakRows={props.breakRows}
+          breakSlidesPerRow={props.breakSlidesPerRow}
         />
       </div>
     </section>

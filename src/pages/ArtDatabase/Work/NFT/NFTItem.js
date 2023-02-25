@@ -1,6 +1,7 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SectionHeader from '../../../../components/SectionHeader/SectionHeader'
+import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './NFTItem.css'
 
 function NFTItem() {
@@ -8,6 +9,7 @@ function NFTItem() {
   const moreList = ['리스트', '그래프']
   return (
     <section className="nft-detail-item market-nft-item">
+      <WorkHeader title_k="NFT" />
       <div className="container">
         <div className="market-nft-info">
           <img
@@ -32,6 +34,9 @@ function NFTItem() {
               </article>
               <button className="art-detail__profile__move">팔로우</button>
             </div>
+            <Link className="market-nft__buy">
+              <button>구매하기</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -94,29 +99,39 @@ function NFTItem() {
           <div className="container m-nft-deal-container">
             <ul className="m-nft-deal__table">
               <li className="m-nft-table__thead">
-                <span>거래일시</span>
-                <span>에디션</span>
-                <span>체결가</span>
+                <div>
+                  <span>거래일시</span>
+                  <span>에디션</span>
+                  <span>체결가</span>
+                </div>
               </li>
               <li className="m-nft-table__body">
-                <span>2000.00.00</span>
-                <span>#7</span>
-                <span>0.000ETH</span>
+                <div>
+                  <span>2000.00.00</span>
+                  <span>#7</span>
+                  <span>0.000ETH</span>
+                </div>
               </li>
               <li className="m-nft-table__body">
-                <span>2000.00.00</span>
-                <span>#7</span>
-                <span>0.000ETH</span>
+                <div>
+                  <span>2000.00.00</span>
+                  <span>#7</span>
+                  <span>0.000ETH</span>
+                </div>
               </li>
               <li className="m-nft-table__body">
-                <span>2000.00.00</span>
-                <span>#7</span>
-                <span>0.000ETH</span>
+                <div>
+                  <span>2000.00.00</span>
+                  <span>#7</span>
+                  <span>0.000ETH</span>
+                </div>
               </li>
               <li className="m-nft-table__body">
-                <span>2000.00.00</span>
-                <span>#7</span>
-                <span>0.000ETH</span>
+                <div>
+                  <span>2000.00.00</span>
+                  <span>#7</span>
+                  <span>0.000ETH</span>
+                </div>
               </li>
             </ul>
           </div>

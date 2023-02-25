@@ -15,65 +15,66 @@ function ArtDetailInfo(props) {
   }
 
   return (
-    <section className="container">
-      <div className="art-detail-container">
-        <section className="art-detail-section">
-          <img
-            className="art-detail__image"
-            src={require('../../' + item.image)}
-          ></img>
+    <div className="art-detail">
+      <section className="container">
+        <div className="art-detail-container">
+          <section className="art-detail-section">
+            <img
+              className="art-detail__image"
+              src={require('../../' + item.image)}
+            ></img>
 
-          <ul className="art-detail__list">
-            {InfoItem(item.infos)}
-            {item.author ? (
-              <div className="art-detail__profile">
-                <img src={require('../../' + item.author.image)}></img>
-                <article className="art-detail__profile__info">
-                  <h2>
-                    <span className="ad-profile__info-k">
-                      {item.author.name}
-                    </span>{' '}
-                    {item.author.e_name}
-                  </h2>
-                  <h4>{item.author.email}</h4>
-                </article>
-                <button className="art-detail__profile__move">팔로우</button>
+            <ul className="art-detail__list">
+              {InfoItem(item.infos)}
+              {item.author ? (
+                <div className="art-detail__profile">
+                  <img src={require('../../' + item.author.image)}></img>
+                  <article className="art-detail__profile__info">
+                    <h2>
+                      <span className="ad-profile__info-k">
+                        {item.author.name}
+                      </span>{' '}
+                      {item.author.e_name}
+                    </h2>
+                    <h4>{item.author.email}</h4>
+                  </article>
+                  <button className="art-detail__profile__move">팔로우</button>
+                </div>
+              ) : (
+                <></>
+              )}
+            </ul>
+
+            <div className="side-arrow-slider__list">
+              <div className="side-arrow-slider__item">
+                <img
+                  className="side-arrow-image"
+                  src={require('../../' + item.image)}
+                ></img>
               </div>
-            ) : (
-              <></>
-            )}
-          </ul>
-        </section>
-        <section>
-          <div className="side-arrow-slider__list">
-            <div className="side-arrow-slider__item">
-              <img
-                className="side-arrow-image"
-                src={require('../../' + item.image)}
-              ></img>
+              <div className="side-arrow-slider__item">
+                <img
+                  className="side-arrow-image"
+                  src={require('../../' + item.image)}
+                ></img>
+              </div>
+              <div className="side-arrow-slider__item">
+                <img
+                  className="side-arrow-image"
+                  src={require('../../' + item.image)}
+                ></img>
+              </div>
+              <div className="side-arrow-slider__item">
+                <img
+                  className="side-arrow-image"
+                  src={require('../../' + item.image)}
+                ></img>
+              </div>
             </div>
-            <div className="side-arrow-slider__item">
-              <img
-                className="side-arrow-image"
-                src={require('../../' + item.image)}
-              ></img>
-            </div>
-            <div className="side-arrow-slider__item">
-              <img
-                className="side-arrow-image"
-                src={require('../../' + item.image)}
-              ></img>
-            </div>
-            <div className="side-arrow-slider__item">
-              <img
-                className="side-arrow-image"
-                src={require('../../' + item.image)}
-              ></img>
-            </div>
-          </div>
-        </section>
-      </div>
-    </section>
+          </section>
+        </div>
+      </section>
+    </div>
   )
 }
 export default ArtDetailInfo

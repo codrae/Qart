@@ -59,3 +59,84 @@
 .artdb-venue .page-slider__list .slick-last {
   left: calc(458rem + 320rem + 328rem + 40rem);
 }
+@media (max-width: 480px) {
+  .artdb-venue .search-slider {
+    padding: 0;
+  }
+  .artdb-venue .page-slider {
+    height: 390rem;
+    padding-top: 20rem;
+    box-sizing: border-box;
+  }
+  .artdb-venue .page-slider__list {
+    height: 370rem;
+  }
+  .artdb-venue .page-slider__item {
+    width: 152rem !important;
+    padding-bottom: 16rem;
+    margin-right: 15rem;
+  }
+  .artdb-venue .page-slider__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .artdb-venue .page-slider__item:nth-child(3n) {
+    margin-right: 15rem;
+  }
+  .artdb-venue .page-slider-item-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .artdb-venue .page-item-image {
+    width: 57rem;
+    height: 57rem;
+    object-fit: cover;
+    margin-bottom: 0;
+    margin-right: 8rem;
+  }
+  .artdb-venue .page-item-author {
+    border-bottom: none;
+    padding-bottom: 4rem;
+
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 14rem;
+  }
+
+  .artdb-venue .page-item-email {
+    width: 100%;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #bdbdbd;
+
+    padding-top: 0;
+    padding-bottom: 8rem;
+  }
+  .artdb-venue .page-item-button {
+    width: 52rem;
+    height: 19rem;
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+  .artdb-venue .page-slider .slick-dots {
+    top: calc(328rem - 10rem);
+  }
+  /* 화살표 */
+  .artdb-venue .page-slider__list .slick-first,
+  .artdb-venue .page-slider__list .slick-last,
+  .artdb-venue .page-slider__list .slick-prev,
+  .artdb-venue .page-slider__list .slick-next {
+    top: 328rem;
+    left: 70rem;
+  }
+  .artdb-venue .page-slider__list .slick-first {
+    left: 70rem;
+  }
+  .artdb-venue .page-slider__list .slick-next {
+    left: calc(70rem + 160rem);
+  }
+
+  .artdb-venue .page-slider__list .slick-last {
+    left: calc(70rem + 160rem + 40rem);
+  }
+}

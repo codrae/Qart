@@ -1,7 +1,7 @@
 .login-main {
   width: 100%;
   min-width: 1920rem;
-  height: 100%;
+  min-height: 100%;
 }
 .login-container {
   width: 1378rem;
@@ -211,7 +211,7 @@ input[type='checkbox']:checked + .login-option__check {
   .login-main {
     width: 100%;
     min-width: 360rem;
-    height: 100%;
+    min-height: 100%;
   }
   .login-container {
     width: 360rem;

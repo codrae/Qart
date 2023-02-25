@@ -89,6 +89,8 @@ function ArtDbArtist() {
         rows={3}
         slidesPerRow={5}
         items={searchItem}
+        breakRows={3}
+        breakSlidesPerRow={3}
       />
       <GalleryInfo title_e={'News On'} title_k={'새소식'} items={galleryInfo} />
     </div>

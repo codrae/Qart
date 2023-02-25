@@ -27,6 +27,15 @@ function ArtDetail(props) {
     speed: 500,
     rows: rows,
     slidesPerRow: slidersPerRow,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          rows: 4,
+          slidesPerRow: 2,
+        },
+      },
+    ],
     appendDots: dots => (
       <div>
         <ul className="slick-dots-container">

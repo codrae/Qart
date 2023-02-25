@@ -231,6 +231,10 @@ function MarketItem() {
                 className="market-image__item"
                 src={require('../../../' + item.info)}
               ></img>
+              <img
+                className="market-image__item"
+                src={require('../../../' + item.info)}
+              ></img>
             </div>
           </section>
           <section className="market-art-info">

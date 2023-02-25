@@ -81,7 +81,13 @@
 }
 @media (max-width: 480px) {
   .gallery_section {
-    height: 450rem;
+    height: 396rem;
+    min-width: 360rem;
+  }
+  .gallery_section .work-header {
+    height: 57rem;
+    box-sizing: border-box;
+    border-bottom: 1rem solid #f2f2f2;
   }
   .gallery__header {
     height: 75rem;
@@ -107,9 +113,10 @@
     padding-top: 4rem;
   }
   .gallery__item {
+    width: 360rem;
     min-width: 360rem;
     height: 113rem;
-    border-bottom: 0.5rem solid #bdbdbd;
+    border: none;
   }
   .gallery__item-container {
     width: 100%;
@@ -122,8 +129,7 @@
   }
   .gallery__item-info {
     width: 50%;
-    border-left: 0.5rem solid #bdbdbd;
-    border-right: 0.5rem solid #bdbdbd;
+    border: none;
   }
   .gallery__item h3 {
     display: block;

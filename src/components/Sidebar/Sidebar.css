@@ -1,0 +1,83 @@
+.side-container {
+  background: none;
+}
+@media (max-width: 480px) {
+  .side-container {
+    position: absolute;
+    width: 243rem;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    top: 64rem;
+    right: 0;
+    background: rgba(34, 34, 34, 0.5);
+    z-index: 99;
+  }
+  .side-bar {
+    width: 243rem;
+
+    background: #ffffff;
+    position: fixed;
+    top: 64rem;
+    bottom: 0;
+    right: 0;
+
+    color: #202020;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .side-bar-list li {
+    width: 100%;
+    height: 51rem;
+    padding: 16rem 0;
+    padding-left: 24rem;
+    box-sizing: border-box;
+    border: 1rem solid #f2f2f2;
+  }
+  .side-bar-list li h2 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .side-bar-list li h2.active {
+    font-weight: 700;
+  }
+  .side-log-out > a {
+    width: 100%;
+    height: 51rem;
+    background: #828282;
+
+    box-sizing: border-box;
+    padding: 13rem 0 14rem 24rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .log-out-icon {
+    display: inline-block;
+    width: 18rem;
+    height: 18rem;
+    background: url('../../assets/logout-icon.png') no-repeat center;
+    background-size: contain;
+  }
+  .side-log-out h2 {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #ffffff;
+
+    padding-left: 7rem;
+  }
+}

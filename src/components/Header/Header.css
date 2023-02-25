@@ -124,6 +124,7 @@ header.black {
   header {
     height: 63rem;
     min-width: 360rem;
+    border-bottom: 1rem solid #f2f2f2;
   }
   .black .header-container {
     border: none;
@@ -182,16 +183,32 @@ header.black {
   .header__padding .login {
     display: none;
   }
-  .black .header__padding .bar {
+  .logout-button-active,
+  .logout-button {
+    background: none;
+  }
+  .black .header__padding .logout-button > .bar {
     background: url(../../assets/hambar-w.png) no-repeat;
     background-size: 28rem 24rem;
   }
-  .header__padding .bar {
+  .header__padding .logout-button > .bar {
     display: block;
-    background: url(../../assets/hambar.png) no-repeat;
+    background: url(../../assets/hambar.png) no-repeat center;
     width: 28rem;
     height: 24rem;
     background-size: 28rem 24rem;
+    background-position: center center;
+  }
+  .black .header__padding .logout-button-active > .bar {
+    background: url(../../assets/icon-x.png) no-repeat center;
+    background-size: 17.5rem 17.5rem;
+  }
+  .header__padding .logout-button-active > .bar {
+    display: block;
+    background: url(../../assets/icon-x-black.png) no-repeat;
+    width: 28rem;
+    height: 24rem;
+    background-size: 17.5rem 17.5rem;
     background-position: center center;
   }
   .black .header__padding .search-icon {

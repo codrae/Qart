@@ -9,3 +9,17 @@
 .artdb-work3 .top-arrow {
   border-bottom: 0;
 }
+@media (max-width: 480px) {
+  .artdb-work3 .work-header {
+    height: 40rem;
+    background: #fbfbfb;
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .artdb-work3 .work-header__info-big h2 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .artdb-work3 .top-arrow {
+    border-bottom: 0;
+  }
+}

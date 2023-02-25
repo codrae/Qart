@@ -70,11 +70,55 @@
   background: #f2f2f2;
 }
 @media (max-width: 480px) {
+  .drop-container {
+  }
+  .drop-select,
+  .show-drop-list li {
+    width: 74rem;
+    height: 30rem;
+
+    border: 0.524194rem solid #e0e0e0;
+    background-color: #ffffff;
+
+    padding-left: 12rem;
+    padding-bottom: 2rem;
+
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+  .show-drop-list li {
+    width: 72rem;
+  }
+  .show-drop-list {
+    display: block;
+    position: absolute;
+    border: 1rem solid #e0e0e0;
+    z-index: 222;
+    margin-top: 8rem;
+  }
+  .show-drop-list li {
+    border: none;
+    border-bottom: 1rem solid #e0e0e0;
+    position: relative;
+    z-index: 222 !important;
+  }
+  .show-drop-list li:last-child {
+    border-bottom: none;
+  }
+  .show-drop-list li:hover {
+    background: #f2f2f2;
+  }
   .drop-select:after {
     width: 14rem;
-    background-size: 10rem 5.89rem;
-    right: 16rem;
+    background-size: 7.9rem 4.52rem;
+    right: 7rem;
     /* width: 5.89rem;
     height: 10rem; */
   }
+  /* .drop-select:after {
+    width: 14rem;
+    background-size: 10rem 5.89rem;
+    right: 16rem;
+    
+  } */
 }

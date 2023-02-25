@@ -38,3 +38,33 @@
 .art-topic--sub img:first-child {
   margin-bottom: 40rem;
 }
+@media (max-width: 480px) {
+  .art-topic {
+    min-width: 360rem;
+    border-bottom: 0;
+  }
+  .art-topic .container {
+    width: 360rem;
+    border: none;
+  }
+  .art-topic-content {
+    padding: 0 20rem;
+    padding-top: 0;
+    padding-bottom: 24rem;
+    /* height: 100%; */
+  }
+  .art-topic--main {
+    width: 182rem;
+    height: 238rem;
+  }
+  .art-topic--sub {
+    padding-left: 10rem;
+  }
+  .art-topic--sub img {
+    width: 128rem;
+    height: 114rem;
+  }
+  .art-topic--sub img:first-child {
+    margin-bottom: 10rem;
+  }
+}

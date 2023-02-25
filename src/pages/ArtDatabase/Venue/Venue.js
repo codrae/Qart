@@ -78,6 +78,8 @@ function Venue() {
         rows={7}
         slidesPerRow={3}
         items={searchItem}
+        breakRows={2}
+        breakSlidesPerRow={4}
       />
       <GalleryInfo
         title_e={'Issue +'}

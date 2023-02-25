@@ -10,6 +10,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .art-detail__image {
   width: 608rem;
@@ -136,4 +137,115 @@
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+}
+
+@media (max-width: 480px) {
+  .art-detail .container {
+    width: 360rem;
+  }
+  .art-detail-container {
+    padding: 0 24rem;
+    padding-top: 30rem;
+    padding-bottom: 24rem;
+    width: 360rem;
+    box-sizing: border-box;
+  }
+  .art-detail-section {
+    width: 312rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .art-detail__image {
+    width: 312rem;
+    height: 343rem;
+  }
+
+  .art-detail__list {
+    order: 2;
+    width: 100%;
+    padding-top: 27rem;
+  }
+  .art-detail__list li {
+    padding-bottom: 16rem;
+    font-size: 12rem;
+    line-height: 14rem;
+    padding-left: 0;
+  }
+
+  .art-detail__list .art-detail__name {
+    width: 71rem;
+  }
+  .art-detail__list .art-detail__content {
+    display: inline-block;
+    width: calc(100% - 71rem);
+  }
+  .art-detail__profile {
+    display: flex;
+    flex-direction: row;
+    height: 64rem;
+    width: 312rem;
+    border: 0.504039rem solid #bdbdbd;
+    border-radius: 1.00808rem;
+    margin-left: 0;
+  }
+  .art-detail__profile img {
+    width: 48rem;
+    height: 48rem;
+    border-radius: 50%;
+    margin-left: 12rem;
+  }
+  .art-detail__profile__info {
+    padding-left: 8rem;
+    width: 188em;
+    font-family: 'Roboto';
+    font-style: normal;
+
+    color: #000000;
+  }
+  .art-detail__profile__info h2 {
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 14rem;
+    padding-bottom: 6rem;
+  }
+  .ad-profile__info-k {
+    font-weight: 700;
+  }
+  .art-detail__profile__info h4 {
+    font-size: 10rem;
+    line-height: 12rem;
+  }
+  .art-detail__profile__move {
+    width: 52rem;
+    height: 19rem;
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 10rem;
+
+    color: #2f80ed;
+
+    border: 0.504039rem solid #2f80ed;
+    border-radius: 17.14rem;
+    background: none;
+    margin-right: 12rem;
+  }
+
+  .side-arrow-slider__list {
+    padding-top: 12rem;
+  }
+  .side-arrow-slider__item {
+    padding-right: 9rem;
+  }
+  .side-arrow-slider__item:nth-child(4) {
+    padding-right: 0;
+  }
+  .side-arrow-image {
+    width: 71rem;
+    height: 78rem;
+  }
+  .side-arrow-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
 }

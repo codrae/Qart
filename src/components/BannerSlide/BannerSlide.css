@@ -155,3 +155,142 @@
 .dots_custom li.slick-active button {
   background-color: #222222;
 }
+
+@media (max-width: 480px) {
+  .banner {
+    width: 100%;
+    min-width: 360rem;
+    height: 202rem;
+  }
+  .banner-slider,
+  .banner .slick-list {
+    width: 100%;
+    height: 100%;
+  }
+  .banner .slider__item {
+    width: 100vw !important;
+    height: 202rem;
+    position: relative;
+  }
+  .banner .item-image {
+    width: 100vw;
+    height: 202rem;
+    object-fit: fill;
+  }
+  .banner .item-info {
+    position: absolute;
+    top: 65rem;
+    left: 68.3rem;
+  }
+  .banner h1,
+  .banner h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20rem;
+    line-height: 24rem;
+    text-align: center;
+    letter-spacing: 0.07em;
+
+    color: #ffffff;
+
+    text-transform: uppercase;
+    text-align-last: left;
+  }
+  .banner h2 {
+    font-size: 13rem;
+    line-height: 15rem;
+  }
+  .banner p {
+    display: none;
+  }
+  .item-button {
+    display: flex;
+    width: 77rem;
+    height: 23rem;
+
+    border: 0.565771rem solid #ffffff;
+    cursor: pointer;
+
+    font-size: 10rem;
+    line-height: 12rem;
+
+    margin-top: 8.51rem;
+  }
+  /* 화살표 */
+  .banner .slick-prev,
+  .banner .slick-next {
+    position: absolute;
+    z-index: 2;
+
+    top: 93.07rem;
+
+    display: block;
+
+    width: 12rem;
+    height: 25rem;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    /* background: #000; */
+  }
+
+  .banner .slick-prev:before,
+  .banner .slick-next:before {
+    content: '';
+    background: url('../../assets/arrow_left.png') no-repeat;
+    background-size: 7rem 15rem;
+    width: 7rem;
+    height: 15rem;
+    display: inline-block;
+  }
+  .banner .slick-next:before {
+    background: url('../../assets/arrow_right.png') no-repeat;
+    background-size: 7rem 15rem;
+  }
+
+  .banner .slick-prev {
+    left: 35.77rem;
+  }
+  .banner .slick-next {
+    right: 35.77rem;
+  }
+  .banner .dots_custom {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto 0;
+    padding: 0;
+    bottom: 12rem !important;
+    height: 6rem;
+  }
+  .dots_custom li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 4rem;
+    padding: 0;
+  }
+
+  .dots_custom li button {
+    border: none;
+    background: #ffffff;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    padding: 0;
+  }
+
+  .dots_custom li.slick-active button {
+    background-color: #222222;
+  }
+}

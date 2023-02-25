@@ -93,160 +93,51 @@
 .search-modal {
   display: none;
 }
-/* .search-slider {
-  width: 100%;
-  padding-top: 180rem;
-  padding-bottom: 44rem;
-}
-.search-slider__list {
-  width: 1280rem;
-  padding-left: 320rem;
-  position: relative;
-}
-
-.search-slider__item {
-  width: 262rem !important;
-
-  text-align-last: left;
-  margin-bottom: 56rem;
-  padding-right: -20rem;
-}
-.search-slider__item:nth-child(5) {
-  width: 232rem !important;
-}
-.search-slider__item img {
-  width: 232rem;
-  height: 232rem;
-  padding-bottom: 20rem;
-}
-.search-item-author {
-  width: 232rem;
-  display: block;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24rem;
-  line-height: 28rem;
-
-  padding-bottom: 8rem;
-  color: #000000;
-}
-.search-item-email {
-  width: 232rem;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20rem;
-  line-height: 23rem;
-
-  color: #bdbdbd;
-
-  padding-bottom: 20rem;
-}
-.search-slider__item button {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20rem;
-  line-height: 23rem;
-
-  width: 112rem;
-  height: 39rem;
-
-
-  border: 1rem solid #2f80ed;
-  border-radius: 34rem;
-
-  color: #2f80ed;
-  text-align: center;
-
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  background: none;
-}
-.search-slider__item button:active,
-.search-slider__item button.clicked {
-  color: #ffffff;
-  background: #2f80ed;
-}
-
-.search-slider__list .slick-prev,
-.search-slider__list .slick-next {
-  position: absolute;
-  top: -74rem;
-  left: 1156rem;
-  display: block;
-
-  width: 52rem;
-  height: 52rem;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-
-  cursor: pointer;
-
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.search-slider__list .slick-prev:before,
-.search-slider__list .slick-next:before {
-  content: '';
-  background: url('../../assets/slider_prev.png') no-repeat;
-  background-size: 52rem 52rem;
-  width: 52rem;
-  height: 52rem;
-  display: inline-block;
-  line-height: 0;
-  opacity: 1;
-}
-.search-slider__list .slick-next:before {
-  background: url('../../assets/slider_next.png') no-repeat;
-  background-size: 52rem 52rem;
-}
-.search-slider__list .slick-next {
-  left: calc(1156rem + 72rem);
-} */
 
 @media (max-width: 480px) {
   .search-slide {
     width: 100%;
+    border-bottom: 1rem solid #f2f2f2;
   }
   .search-slide__header {
     width: 100%;
-    height: 75rem;
+    height: 50rem;
 
     background: #fbfbfb;
 
-    border-bottom: 1rem solid #bdbdbd;
-    border-top: 1rem solid #bdbdbd;
+    border-bottom: 1rem solid #f2f2f2;
+    border-top: 1rem solid #f2f2f2;
   }
   .search-slide__header-container {
     width: 360rem;
     display: flex;
     flex-direction: row;
+    border: none;
   }
   .search__header__info {
     width: inherit;
     height: 100%;
-    text-align-last: left;
-    border-right: none;
+    text-align: left;
+    border: none;
+
+    padding: 0 20rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .search__header__info-e {
-    font-size: 12rem;
-    line-height: 16rem;
-    padding-top: 16rem;
-    padding-left: 20rem;
+    font-size: 10rem;
+    line-height: 14rem;
+    padding-top: 8rem;
+    padding-left: 0;
   }
   .search__header__info-k {
-    font-size: 20rem;
-    line-height: 23rem;
+    order: 1;
+    font-size: 14rem;
+    line-height: 16rem;
     padding-top: 4rem;
-    padding-left: 20rem;
+    padding-left: 0;
   }
   .search__header__dic {
     display: none;
@@ -257,12 +148,12 @@
   }
   .search-modal button {
     display: block;
-    width: 89rem;
-    height: 33rem;
-    border: 1rem solid #bdbdbd;
+    width: 74rem;
+    height: 30rem;
+    border: 1rem solid #e0e0e0;
 
     background: transparent;
-    margin-right: 16rem;
+    margin-right: 0;
 
     display: flex;
     flex-direction: row;
@@ -275,8 +166,8 @@
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 12rem;
-    line-height: 16rem;
+    font-size: 10rem;
+    line-height: 14rem;
     color: #222222;
   }
   .search-modal button .botton-arrow {
@@ -290,8 +181,11 @@
     width: 100%;
     /* height: 1468rem; */
     /* padding: 0 320rem; */
-    padding-top: 64rem;
+    padding-top: 37rem;
     padding-bottom: 10rem;
+  }
+  .search-slider .container {
+    width: 360rem;
   }
   .search-slider__list {
     width: 320rem;

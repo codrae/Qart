@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import Sidebar from '../Sidebar/Sidebar'
 import './Header.css'
 const Header = props => {
+  const [isOpen, setOpen] = useState(false)
+  const [xPosition, setX] = useState(-243)
+  const side = useRef()
+  // button 클릭 시 토글
+  const toggleMenu = () => {
+    if (xPosition < 0) {
+      setX(0)
+      setOpen(true)
+    } else {
+      setX(-243)
+      setOpen(false)
+    }
+  }
+
+  // 사이드바 외부 클릭시 닫히는 함수
+  const handleClose = async e => {
+    let sideArea = side.current
+    let sideCildren = side.current.contains(e.target)
+    if (isOpen && (!sideArea || !sideCildren)) {
+      setX(-243)
+      setOpen(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('click', handleClose)
+    return () => {
+      window.removeEventListener('click', handleClose)
+    }
+  })
   return (
-    <header className={props.colored}>
+    <header className={props.colored} ref={side}>
       <div className="container header-container">
         <div className="header__before">
           <a href="/">
@@ -56,11 +87,16 @@ const Header = props => {
           <a className={props.active == '0' ? 'active' : ''} href="#">
             <span className="search-icon ir_pm">검색</span>
           </a>
-          <a className={props.active == '0' ? 'active' : ''} href="#">
+          <button
+            className={isOpen ? 'logout-button-active' : 'logout-button'}
+            href="#"
+            onClick={() => toggleMenu()}
+          >
             <span className="bar ir_pm">더보기</span>
-          </a>
+          </button>
         </div>
       </div>
+      {isOpen ? <Sidebar active={props.active}></Sidebar> : <></>}
     </header>
   )
 }

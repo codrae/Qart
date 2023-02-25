@@ -32,6 +32,9 @@
 
   border: 1rem solid #e0e0e0;
 }
+.market-image__item:last-child {
+  display: none;
+}
 .market-art-info {
   width: 651rem;
   height: 900rem;
@@ -248,4 +251,234 @@
 .market-detail .top-arrow-slider .slick-prev,
 .market-detail .top-arrow-slider .slick-next {
   top: 67rem;
+}
+@media (max-width: 480px) {
+  .market-art {
+    padding: 19rem 20rem;
+    padding-bottom: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .market-art-image {
+    display: flex;
+    flex-direction: column;
+    width: 312rem;
+  }
+  .market-image__image {
+    width: 312rem;
+    height: 343rem;
+
+    box-sizing: border-box;
+    border: 1rem solid #e0e0e0;
+    object-fit: contain;
+  }
+  .market-image__list {
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .market-image__item {
+    width: 71rem;
+    height: 78rem;
+    object-fit: contain;
+    box-sizing: border-box;
+
+    border: 1rem solid #e0e0e0;
+  }
+  .market-image__item:last-child {
+    display: block;
+  }
+  .market-art-info {
+    width: 312rem;
+    height: 371rem;
+    padding: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .market-info__gallery {
+    display: none;
+  }
+  .market-info__list {
+    height: 224rem;
+    order: 1;
+    font-size: 10rem;
+    line-height: 12rem;
+    background: #fbfbfb;
+    padding: 16rem 16rem 12rem 16rem;
+    margin-top: 16rem;
+    box-sizing: border-box;
+  }
+  .market-info__list li {
+    padding-bottom: 12rem;
+  }
+  .market-info__list li:last-child {
+    padding-bottom: 0;
+  }
+
+  .market-info__list li span:first-child {
+    display: block;
+    width: 68rem;
+  }
+  /* 기타 설명 */
+  .market-info__list li:last-child span:last-child {
+    display: block;
+    width: 212rem;
+  }
+  .market-art-sell {
+    border-top: none;
+  }
+  .market-sell__price {
+    padding-top: 12rem;
+
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 19rem;
+
+    color: #222222;
+  }
+  .market-sell__price span:last-child {
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #000000;
+  }
+  .market-sell__usd {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+
+    font-size: 12rem;
+    line-height: 14rem;
+  }
+  .market-sell__time {
+    display: block;
+    padding-top: 53rem;
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 23rem;
+
+    text-align: right;
+
+    /* Red */
+
+    color: #eb5757;
+  }
+  .market-sell__button {
+    border-top: 1rem solid #f2f2f2;
+    padding-top: 16rem;
+  }
+  .market-sell__button button,
+  .market-sell__button a {
+    width: 153rem;
+    height: 42rem;
+    box-sizing: border-box;
+    border: 0.53365rem solid #000000;
+
+    font-size: 12rem;
+    line-height: 14rem;
+  }
+  .market-detail {
+    min-width: 360rem;
+  }
+  .market-detail > .work-header {
+    background: #fbfbfb;
+    height: 51rem;
+    border-bottom: 1rem solid #e0e0e0;
+  }
+  .market-detail .art-detail-section {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 0 0;
+    padding: 0;
+    height: 152rem;
+  }
+  .market-detail .art-detail__image {
+    width: 64rem;
+    height: 64rem;
+  }
+
+  .market-detail .art-detail__list {
+    width: calc(100% - 64rem);
+  }
+  .market-detail .art-detail__list .art-detail__item {
+    width: 100%;
+    padding-left: 12rem;
+    padding-bottom: 9rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 12rem;
+    color: #222222;
+  }
+  .market-detail .art-detail__list .art-detail__item:first-child {
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 19rem;
+    padding-bottom: 8rem;
+    color: #333333;
+  }
+  .market-detail .art-detail__list .art-detail__name {
+    width: 49rem;
+  }
+  .market-detail .art-detail__list .art-detail__content {
+    width: calc(100% - 49rem);
+  }
+  .market-detail .art-detail__list .art-detail__item:nth-child(3) {
+    padding-bottom: 0;
+  }
+  .market-detail .art-detail__list .art-detail__item:last-child {
+    position: absolute;
+    width: 312rem;
+    top: 82rem;
+    left: 24rem;
+    padding: 0;
+  }
+  .market-detail
+    .art-detail__list
+    .art-detail__item:last-child
+    .art-detail__name {
+    display: none;
+  }
+  .market-detail
+    .art-detail__list
+    .art-detail__item:last-child
+    .art-detail__content {
+    width: 100%;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+  }
+
+  .market-detail .display-history__list .display-history__more {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
+  .market-detail .section-header h3 {
+    height: 43rem;
+  }
+  .market-detail .top-arrow,
+  .market-detail .top-arrow-container {
+    height: calc(133rem + 815rem);
+  }
+
+  .market-detail .top-arrow-container {
+    top: -133rem;
+  }
+  .market-detail .top-arrow-slider {
+    height: calc(133rem + 815rem);
+    padding-top: calc(100rem + 133rem);
+  }
+  .market-detail .top-arrow-slider .slick-prev,
+  .market-detail .top-arrow-slider .slick-next {
+    top: 67rem;
+  }
 }

@@ -16,6 +16,15 @@ function PageSlide(props) {
     speed: 500,
     rows: props.rows,
     slidesPerRow: props.slidesPerRow,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          rows: props.breakRows,
+          slidesPerRow: props.breakSlidesPerRow,
+        },
+      },
+    ],
     appendDots: dots => (
       <div>
         <ul className="slick-dots-container">

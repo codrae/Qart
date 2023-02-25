@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import ArtDetailInfo from '../../../../components/ArtDetailInfo/ArtDetailInfo'
 import DetailInfo from '../../../../components/DetailIfo/DetailInfo'
 import Footer from '../../../../components/Footer/Footer'
 import Header from '../../../../components/Header/Header'
 import HistoryInfo from '../../../../components/HistoryInfo/HistoryInfo'
 import AuctionModal from '../../../../components/Modal/AuctionModal'
-import DeliveryModal from '../../../../components/Modal/DeliveryModal'
 import ModalPortal from '../../../../components/Modal/ModalPortal'
-import TopArrowSlider from '../../../../components/TopArrowSlider/TopArrowSlider'
-import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './AuctionDetail.css'
 
 function AuctionDetail() {

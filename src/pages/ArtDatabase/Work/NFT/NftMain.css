@@ -48,6 +48,7 @@
 }
 .nft-main .art-d .art-d-slider {
   height: 3169rem;
+  width: 360rem;
 }
 .nft-main .art-d .art-d-slider__list {
   height: 3169rem;
@@ -63,4 +64,63 @@
 }
 .nft-main .art-d-header-container {
   height: 203rem;
+}
+@media (max-width: 480px) {
+  .nft-main .art-d-header-container {
+    height: 203rem;
+    width: 360rem;
+  }
+  .nft-item {
+    width: 150rem;
+    height: 56rem;
+
+    background: #fbfbfb;
+
+    margin-top: 8rem;
+    padding: 12rem 8rem;
+  }
+
+  .nft-item p:first-child {
+    padding-bottom: 8rem;
+  }
+  .nft-item-title {
+    font-size: 10rem;
+    line-height: 12rem;
+  }
+  .nft-item-created,
+  .nft-item-sell {
+    font-weight: 600;
+    font-size: 10rem;
+    line-height: 12rem;
+
+    color: #333333;
+  }
+  .nft-item-sell {
+    color: #2f80ed;
+  }
+  .nft-main .art-d .art-d-slider__item {
+    text-align-last: left;
+  }
+  .nft-main .art-d .art-d-slider {
+    height: 1623rem;
+  }
+  .nft-main .art-d .art-d-slider__list {
+    height: 1623rem;
+  }
+  .nft-main .art-d .art-d-slider__list .slick-first,
+  .nft-main .art-d .art-d-slider__list .slick-last,
+  .nft-main .art-d .art-d-slider__list .slick-prev,
+  .nft-main .art-d .art-d-slider__list .slick-next {
+    top: calc(1266rem);
+  }
+  .nft-main .art-d .art-d-slider .slick-dots {
+    top: calc(1266rem - 10rem);
+  }
+  .nft-main .drop-select,
+  .nft-main .show-drop-list li {
+    width: 92rem;
+  }
+  .nft-main .show-drop-list li {
+    width: 90rem;
+  }
 }

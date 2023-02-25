@@ -11,18 +11,20 @@ const SectionHeader = props => {
         <h3>{props.title}</h3>
         {props.moreList ? (
           <ul className="section-header-list">
-            {props.moreList.map((item, i) => {
-              return (
-                <li className="section-header--item" key={i}>
-                  <a
-                    onClick={() => changeMenu(i)}
-                    className={props.active == i ? 'active' : ''}
-                  >
-                    {props.moreList[i]}
-                  </a>
-                </li>
-              )
-            })}
+            <div>
+              {props.moreList.map((item, i) => {
+                return (
+                  <li className="section-header--item" key={i}>
+                    <a
+                      onClick={() => changeMenu(i)}
+                      className={props.active == i ? 'active' : ''}
+                    >
+                      {props.moreList[i]}
+                    </a>
+                  </li>
+                )
+              })}
+            </div>
           </ul>
         ) : (
           <></>

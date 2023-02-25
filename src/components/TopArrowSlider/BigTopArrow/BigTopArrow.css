@@ -59,7 +59,7 @@
 }
 .big-top-arrow .slider__item h2,
 .big-top-arrow .slider__item h3,
-.big-top-arrow .big-top-arrow.slider__item h4 {
+.big-top-arrow .slider__item h4 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -137,12 +137,14 @@
 
 @media (max-width: 480px) {
   .big-top-arrow {
-    width: 360rem;
+    min-width: 360rem;
+    width: 100%;
     height: 357rem;
   }
+
   .big-top-arrow-container {
     max-width: 360rem;
-    top: -43rem;
+    top: -72rem;
   }
   .big-top-arrow .slick-list {
     height: 231rem !important;
@@ -156,8 +158,10 @@
     padding-top: 28rem;
   }
   .big-top-arrow-slider {
-    padding-left: 20rem;
-    padding-top: 63rem;
+    min-width: 360rem;
+
+    padding: 0 20rem;
+    padding-top: 72rem;
     padding-bottom: 35rem;
     z-index: 2;
   }
@@ -171,16 +175,41 @@
     width: 340rem;
   }
   .big-top-arrow .slider__item {
-    margin-right: 11rem;
+    margin-right: 20rem;
     height: 231rem;
+    width: 150rem;
+  }
+  .big-top-arrow .slider__item:nth-child(2) {
+    margin-right: 0;
   }
   .big-top-arrow .slider__item img {
-    height: 183rem;
+    height: 164rem;
+    width: 150rem;
+    border: 0.379762rem solid #f2f2f2;
   }
 
+  .big-top-arrow .slider__item h2,
+  .big-top-arrow .slider__item h3,
+  .big-top-arrow .slider__item h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #000000;
+    padding-top: 4rem;
+  }
   .big-top-arrow .slider__item h3 {
-    font-size: 14rem;
-    line-height: 16rem;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 14rem;
+    padding-top: 12rem;
+  }
+  .big-top-arrow .slider__item h4 {
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 12rem;
+    color: #bdbdbd;
   }
   .big-top-arrow .item-author {
     padding-top: 12rem;
@@ -194,23 +223,25 @@
   .big-top-arrow .slick-next {
     /* top: 61.5rem;
     left: 1476rem; */
-    top: 30.5rem;
-    left: 296rem;
-    width: 20rem;
-    height: 20rem;
+    /* top: 30.5rem;
+    left: 296rem; */
+    top: 44rem;
+    left: 280rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .big-top-arrow .slick-prev:before,
   .big-top-arrow .slick-next:before {
-    background-size: 20rem 20rem;
-    width: 20rem;
-    height: 20rem;
+    background-size: 24rem 24rem;
+    width: 24rem;
+    height: 24rem;
   }
   .big-top-arrow .slick-next:before {
-    background-size: 20rem 20rem;
+    background-size: 24rem 24rem;
   }
 
   .big-top-arrow .slick-next {
-    left: calc(296rem + 24rem);
+    left: calc(280rem + 24rem + 12rem);
   }
 }
