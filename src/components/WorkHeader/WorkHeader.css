@@ -193,23 +193,15 @@
     padding-right: 2rem;
   }
   .work-header__move .work-header__follow {
-    width: 112rem;
-    height: 39rem;
+    width: 52rem;
+    height: 23rem;
 
-    background: #2f80ed;
-    /* Blue 1 */
+    border: none;
+    border-radius: 17.1373rem;
+    margin-left: 0;
 
-    border: 1rem solid #2f80ed;
-    border-radius: 34rem;
-    margin-left: 48rem;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20rem;
-    line-height: 23rem;
-
-    color: #ffffff;
+    font-size: 10rem;
+    line-height: 10rem;
   }
   .work-header__move-icon {
     width: 12rem;
@@ -225,24 +217,39 @@
     background: #fbfbfb;
   }
   .work-header-d .work-header__container {
+    width: 100%;
     height: 43rem;
     border-bottom: 1rem solid #f2f2f2;
+    padding: 0;
   }
-
+  .work-header-d .container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .work-header-d .work-header__info {
+    height: 43rem;
+    width: 360rem;
+    margin: 0 auto;
+    padding: 0 20rem;
+    box-sizing: border-box;
+  }
   .work-header-d h4 {
     font-size: 10rem;
     padding-top: 5rem;
     padding-bottom: 0;
   }
+  .work-header__detail {
+    height: 38rem;
+    width: 360rem;
+    margin: 0 auto;
+    padding: 0 20rem;
+    box-sizing: border-box;
+  }
   .work-header-d h2 {
     padding-right: 8rem;
     font-size: 16rem;
   }
-  .work-header__detail {
-    height: 38rem;
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
+
   .work-header__detail button {
     margin-right: 20rem;
     font-size: 8rem;

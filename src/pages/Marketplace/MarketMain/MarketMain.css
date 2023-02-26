@@ -344,7 +344,7 @@
 }
 @media (max-width: 480px) {
   .market-main {
-    min-width: 1920rem;
+    min-width: 360rem;
   }
   .art-topic {
     box-sizing: border-box;
@@ -354,13 +354,16 @@
     border: none;
   }
   .market-main .art-topic .work-header {
-    height: 126rem;
+    height: 61rem;
+    border-bottom: 1rem solid #f2f2f2;
   }
-  .art-topic .work-header > .container {
+  .market-main .art-topic .work-header > .container {
     width: 360rem;
     border: none;
-
     box-sizing: border-box;
+  }
+  .market-main .art-topic-content {
+    padding-top: 20rem;
   }
   .market-main .art-topic__hover {
     display: none;
@@ -370,10 +373,10 @@
     height: inherit;
   }
   .market-main .art-topic--sub .art-topic-item {
-    height: 457rem;
+    height: 114rem;
   }
   .market-main .art-topic--sub .art-topic-item:first-child {
-    margin-bottom: 40rem;
+    margin-bottom: 10rem;
   }
   .market-main .art-topic-item:hover .art-topic__hover {
     position: absolute;
@@ -390,67 +393,123 @@
   }
 
   .market-main .art-topic-item--title {
-    padding-top: 12rem;
+    padding-top: 6rem;
     font-weight: 400;
   }
   .market-main .art-topic-item--author {
-    padding-top: 12rem;
+    padding-top: 6rem;
     font-weight: 700;
   }
 
   .market-main .art-topic__hover h2 {
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 28rem;
-    line-height: 33rem;
+    font-size: 14rem;
+    line-height: 16rem;
 
     color: #ffffff;
+    text-align: center;
   }
   .market-main .art-topic-item--price {
     font-family: 'Roboto';
     font-style: normal;
-    padding-top: 32rem;
+    padding-top: 6rem;
     font-weight: 600;
-    font-size: 32rem;
-    line-height: 38rem;
+    font-size: 16rem;
+    line-height: 18rem;
     color: #59a0ff;
   }
 
   .market-main .big-top-arrow {
-    height: 980rem;
+    height: 643rem;
   }
+
+  .market-main .big-top-arrow .work-header {
+    height: 61rem;
+    border-top: 1rem solid #f2f2f2;
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .market-main .big-top-arrow .work-header__info {
+    flex-direction: column;
+  }
+  .market-main .big-top-arrow .work-header__info h2 {
+    padding-top: 0;
+    order: 1;
+  }
+  .market-main .big-top-arrow .work-header__info h4 {
+    padding-top: 0;
+    height: inherit;
+  }
+  .market-main .big-top-arrow-container {
+    top: -61rem;
+  }
+
   .market-main .big-top-arrow-slider {
-    padding-bottom: 100rem;
+    padding-top: 62rem;
+    padding-bottom: 12rem;
+  }
+  .market-main .big-top-arrow .slick-list {
+    padding-top: 26rem;
+    width: 320rem !important;
+    height: 582rem !important;
+  }
+  .market-main .big-top-arrow .big-top-item {
+    display: block;
+    width: 150rem !important;
   }
   .market-main .big-top-arrow .slider__item {
     height: inherit;
+    margin: 0 10rem;
+  }
+  .market-main .big-top-arrow .slider__item h3 {
+    padding-top: 8rem;
   }
   .market-main .big-top-arrow .slider__item h4 {
-    padding-bottom: 12rem;
+    padding-bottom: 4rem;
+  }
+  .market-main .big-top-arrow .slider__item {
+    width: 150rem;
+  }
+
+  /* 화살표 */
+  .market-main .big-top-arrow .slick-prev,
+  .market-main .big-top-arrow .slick-next {
+    /* top: 61.5rem;
+     left: 1476rem; */
+    /* top: 30.5rem;
+     left: 296rem; */
+    top: 30rem;
+    left: 280rem;
+  }
+
+  .market-main .big-top-arrow .slick-next {
+    left: calc(280rem + 24rem + 12rem);
   }
   .market-item {
-    border-top: 1rem solid #e0e0e0;
+    border-top: 1rem solid #f2f2f2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 400rem;
+    width: 150rem;
+    padding-bottom: 24rem;
+    margin: 0 10rem;
   }
   .market-item--price {
-    padding-top: 20rem;
+    padding-top: 8rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    font-size: 32rem;
-    line-height: 38rem;
+    font-size: 12rem;
+    line-height: 14rem;
     color: #2f80ed;
     display: block;
   }
   .market-item--heart {
-    height: 29.05rem;
-    width: 31.67rem;
+    height: 11.67rem;
+    width: 10.7rem;
     background: url('../../../assets/heart-icon.png') no-repeat;
     background-size: contain;
-    margin-top: 20rem;
+    margin-top: 8rem;
     border: none;
     cursor: pointer;
   }
@@ -476,28 +535,40 @@
   .market-main .work-header__info h2 {
     order: 0;
     display: block;
-    height: 147rem;
+    height: 100%;
     padding-top: 57rem;
     padding-right: 16rem;
     box-sizing: border-box;
   }
 
   .art-tok {
-    border-top: 1rem solid #e0e0e0;
-    border-bottom: 1rem solid #e0e0e0;
-    height: 955rem;
+    border: none;
+    height: 330rem;
+  }
+  .art-tok .work-header {
+    height: 42rem;
+    border-top: 1rem solid #f2f2f2;
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .art-tok .work-header h2,
+  .art-tok .work-header h4 {
+    padding: 0;
+    height: inherit;
+  }
+  .art-tok .work-header h4 {
+    padding-top: 5rem;
+    padding-left: 8rem;
   }
   .art-tok .container {
-    width: 1378rem;
+    width: 360rem;
     display: flex;
     flex-direction: row;
   }
   .art-tok-main {
-    width: 999rem;
-    height: 628rem;
-
-    margin-top: 80rem;
-    margin-right: 40rem;
+    width: 232rem;
+    height: 248rem;
+    margin-top: 20rem;
+    margin-right: 8rem;
   }
   .art-tok-main img {
     width: 100%;
@@ -507,68 +578,56 @@
   }
   .art-tok-info {
     position: absolute;
-    top: 435rem;
-    left: 646rem;
+    top: 183rem;
+    left: 84rem;
   }
   .art-tok-info h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 32rem;
-    line-height: 38rem;
+    font-size: 14rem;
+    line-height: 16rem;
 
     color: #ffffff;
-    padding-bottom: 11rem;
+    padding-bottom: 15rem;
   }
   .art-tok-info p {
-    width: 289rem;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16rem;
-    line-height: 26rem;
-
-    letter-spacing: -0.05em;
-
-    color: #ffffff;
+    display: none;
   }
   .art-tok-info a {
     display: block;
-    width: 152rem;
-    height: 48rem;
+    width: 75rem;
+    height: 27rem;
 
-    border: 2rem solid #ffffff;
+    border: 0.792994rem solid #ffffff;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16rem;
-    line-height: 19rem;
-    /* identical to box height */
-
+    font-size: 10rem;
+    line-height: 12rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-transform: capitalize;
 
-    color: #ffffff;
-
-    margin-top: 40rem;
+    margin-top: 0;
   }
   .art-tok-sub {
-    width: 290rem;
-    height: 628rem;
+    width: 120rem;
+    height: 248rem;
 
-    padding-top: 80rem;
+    padding-top: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   .art-tok-sub img {
-    width: 290rem;
-    height: 290rem;
+    width: 120rem;
+    height: 120rem;
     margin: 0;
     padding: 0;
+    margin-bottom: 8rem;
+  }
+  .art-tok-sub img:last-child {
+    margin-bottom: 0;
   }
   .market-main .art-md--content__list {
     padding-bottom: 60rem;
@@ -577,15 +636,14 @@
     border-bottom: 0;
   }
   .upcoming-auction-item {
-    width: 620rem;
-    height: 328rem;
+    width: 320rem;
+    height: 169.29rem;
     position: relative;
-    margin-right: 38rem;
-    margin-bottom: 40rem;
-  }
-
-  .upcoming-auction-item:nth-child(2n) {
     margin-right: 0;
+    margin-bottom: 9rem;
+  }
+  .upcoming-auction-item:last-child {
+    display: none;
   }
   .upcoming-auction-item img {
     width: 100%;
@@ -594,59 +652,42 @@
   }
   .upcoming-auction-info {
     position: absolute;
-    top: 20rem;
-    left: 24rem;
+    top: 12rem;
+    left: 12rem;
   }
   .upcoming-auction--date {
     display: block;
-    width: 353rem;
-    height: 49rem;
+    width: 177rem;
+    height: 25rem;
 
     background: #000000;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20rem;
-    line-height: 23rem;
+    font-size: 10rem;
+    line-height: 12rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    letter-spacing: -0.02em;
-
-    color: #ffffff;
   }
   .upcoming-auction--title {
-    padding-top: 150rem;
-    padding-bottom: 8rem;
+    padding-top: 76rem;
+    padding-bottom: 4rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 32rem;
-    line-height: 38rem;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #ffffff;
+    font-size: 16rem;
+    line-height: 19rem;
   }
   .upcoming-auction--detail {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20rem;
-    line-height: 27rem;
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.02em;
-
-    /* Gray 6 */
-
-    color: #f2f2f2;
+    font-size: 10rem;
+    line-height: 14rem;
   }
   .hot-click .work-header {
-    border-top: 1rem solid #e0e0e0;
+    height: 46rem;
+    border-top: 1rem solid #f2f2f2;
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .hot-click > .container {
+    width: 360rem;
   }
   .hot-click-content {
     display: flex;
@@ -654,18 +695,15 @@
     justify-content: space-between;
 
     box-sizing: border-box;
-    padding: 80rem 320rem 100rem 320rem;
+    padding: 20rem 20rem 56rem 20rem;
   }
-  .hot-click-main > img {
-    width: 620rem;
-    height: 620rem;
-    background: #f2f2f2;
+  .hot-click-main {
+    display: none;
+  }
 
-    object-fit: contain;
-  }
   .hot-click-sub {
-    width: 620rem;
-    height: 620rem;
+    width: 320;
+    height: 320rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -673,18 +711,18 @@
     flex-wrap: wrap;
   }
   .hot-click-sub > img {
-    width: 290rem;
-    height: 290rem;
+    width: 156rem;
+    height: 156rem;
     /* Gray 6 */
 
     background: #f2f2f2;
     object-fit: contain;
   }
   .upcoming-auction .work-header {
-    height: 126rem;
+    height: 43rem;
   }
   .market-main .work-header__info-big h2 {
-    font-size: 36rem;
-    line-height: 42rem;
+    font-size: 16rem;
+    line-height: 19rem;
   }
 }

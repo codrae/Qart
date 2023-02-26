@@ -300,3 +300,300 @@
   font-size: 20rem;
   line-height: 27rem;
 }
+@media (max-width: 480px) {
+  .market-all .big-top-arrow {
+    height: 374rem;
+    border-bottom: none;
+  }
+  .market-all .big-top-arrow .work-header {
+    height: 62rem;
+    border-bottom: 1rem solid #f2f2f2;
+    border-top: 1rem solid #f2f2f2;
+  }
+  .market-all .big-top-arrow-container {
+    top: -62rem;
+  }
+
+  .market-all .big-top-arrow-slider {
+    padding-bottom: 0;
+    padding-top: calc(62rem + 24rem);
+  }
+  .market-all .big-top-arrow .slick-list {
+    height: 250rem !important;
+  }
+  .market-all .big-top-arrow .slick-prev,
+  .market-all .big-top-arrow .slick-next {
+    top: 32rem;
+  }
+  .market-all .big-top-arrow .slider__item {
+    height: inherit;
+    margin: 0 10rem;
+  }
+  .market-all .big-top-arrow .slider__item h3 {
+    padding-top: 8rem;
+  }
+  .market-all .big-top-arrow .slider__item h4 {
+    padding-bottom: 4rem;
+  }
+  .market-all .work-header__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .market-all .work-header__info h4 {
+    display: flex;
+    order: 0;
+
+    padding-top: 0;
+    padding-bottom: 4rem;
+    box-sizing: border-box;
+  }
+
+  .market-all .work-header__info h2 {
+    order: 1;
+    display: flex;
+
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+
+  .market-all .work-header__detail button {
+    margin-right: 40rem;
+  }
+  .market-all-slider .art-d-header-container {
+    height: inherit;
+    padding-top: 16rem;
+    padding-bottom: 12rem;
+  }
+  .market-all-slider .drop-select,
+  .market-all-slider .show-drop-list li {
+    width: 92rem;
+  }
+  .market-all-slider .slider__item {
+    width: 150rem !important;
+    margin-right: 20rem;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 24rem;
+  }
+
+  .market-all-slider .slider__item:nth-child(3) {
+    margin-right: 20rem;
+  }
+  .market-all-slider .slider__item:nth-child(2) {
+    margin-right: 0;
+  }
+  .market-all-slider .slider__item img {
+    width: 150rem;
+    height: 164rem;
+    border: 1rem solid #f2f2f2;
+  }
+
+  .market-all-slider h2 {
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 14rem;
+
+    color: #333333;
+
+    padding-top: 4rem;
+  }
+  .market-all-slider h3 {
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 12rem;
+    padding-top: 8rem;
+    color: #000000;
+  }
+  .market-all-slider h4 {
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 12rem;
+    color: #bdbdbd;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+  .market-all-slider h2,
+  .market-all-slider h3,
+  .market-all-slider h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: keep-all;
+  }
+  .market-all-slider .market-item {
+    flex-direction: column;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .market-all-slider .market-item--price {
+    padding-top: 8rem;
+
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+  .market-all-slider .market-item--price .price {
+    font-weight: 500;
+
+    color: #222222;
+  }
+  .market-all-slider .market-item--price + .now-price {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+  .market-all-slider .now-price .price {
+    color: #eb5757;
+  }
+
+  .market-all-slider .market-item--button {
+    border-top: 1rem solid #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .market-all-slider .market-button {
+    border: none;
+    width: 117rem;
+    margin-left: 0;
+    height: 30rem;
+    background: #222222;
+    margin-top: 8rem;
+
+    font-size: 12rem;
+    line-height: 14rem;
+
+    color: #ffffff;
+  }
+  .market-all-slider .market-button--heart {
+    width: 20rem;
+    height: 20rem;
+    background: url('../../../assets/heart-icon.png') center no-repeat;
+    background-size: 16.67rem 15.29rem;
+    margin-top: 13rem;
+    cursor: pointer;
+    border: none;
+  }
+  /* 좋아요 클릭, 오버시 */
+  .market-all-slider .market-button--heart:active,
+  .market-all-slider .market-button--heart:hover {
+    background: url('../../../assets/heart-active-icon.png') center no-repeat;
+    background-size: 16.67rem 15.29rem;
+  }
+  .market-all-slider .art-d .art-d-slider {
+    height: 1400rem;
+  }
+  .market-all-slider .art-d .art-d-slider__list {
+    height: inherit;
+    width: 320rem;
+  }
+  .market-all-slider .art-d .art-d-slider .slick-dots {
+    top: calc(1370rem - 10rem);
+  }
+  .market-all-slider .art-d .art-d-slider__list .slick-first,
+  .market-all-slider .art-d .art-d-slider__list .slick-last,
+  .market-all-slider .art-d .art-d-slider__list .slick-prev,
+  .market-all-slider .art-d .art-d-slider__list .slick-next {
+    top: 1370rem;
+  }
+  .market-nft h3 {
+    font-size: 10rem;
+    line-height: 12rem;
+  }
+  .market-nft h2 {
+    font-size: 12rem;
+    line-height: 14rem;
+  }
+  .market-all-slider .nft-item {
+    margin-top: 9rem;
+  }
+  .nft-price {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-top: 10rem;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 10rem;
+
+    color: #828282;
+  }
+  .market-all-slider .nft-button {
+    margin-top: 4rem;
+    border-top: none;
+    padding-bottom: 8rem;
+  }
+  .market-all-slider .nft-button .market-button--heart {
+    width: 16.67rem;
+    height: 15.29rem;
+    background: url('../../../assets/heart-icon.png') center no-repeat;
+    background-size: contain;
+    margin-top: 8rem;
+    cursor: pointer;
+    border: none;
+  }
+  /* 좋아요 클릭, 오버시 */
+  .market-all-slider .nft-button .market-button--heart:active,
+  .market-all-slider .nft-button .market-button--heart:hover {
+    background: url('../../../assets/heart-active-icon.png') center no-repeat;
+    background-size: contain;
+  }
+  .market-all-slider .nft-button span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12rem;
+    line-height: 14rem;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Gray 1 */
+
+    color: #333333;
+  }
+  .market-all-slider .nft-button .market-button--heart {
+    border: none;
+    margin-top: 0;
+  }
+  .market-all .show-drop-list li {
+    width: 244rem;
+  }
+  .market-all .work-header-d {
+    height: 78rem;
+    border-top: 1rem solid #f2f2f2;
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .market-all .work-header-d .work-header__container {
+    height: 40rem;
+  }
+  .market-all .work-header-d .work-header__info-big {
+    width: 360rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20rem;
+  }
+  .market-all .work-header__info-big h2 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .market-all .work-header__detail button {
+    font-size: 10rem;
+    line-height: 14rem;
+    margin-right: 10rem;
+  }
+}

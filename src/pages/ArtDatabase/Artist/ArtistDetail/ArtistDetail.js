@@ -162,7 +162,13 @@ function ArtistDetail(props) {
           title_k={'작품'}
         ></WorkHeader>
         <div className="container artist-d-page-slide">
-          <PageSlide items={pageItem} rows={3} slidesPerRow={3} />
+          <PageSlide
+            items={pageItem}
+            rows={3}
+            slidesPerRow={3}
+            breakRows={4}
+            breakSlidesPerRow={2}
+          />
         </div>
       </div>
     </section>

@@ -23,3 +23,50 @@
 .market-auction .art-d .art-d-slider__list .slick-next {
   top: 1586rem;
 }
+@media (max-width: 480px) {
+  .market-auction {
+    /* border-bottom: 1rem solid #bdbdbd; */
+  }
+
+  .market-auction .art-d-header__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .market-auction .art-d-header__info h4 {
+    font-size: 10rem;
+    line-height: 14rem;
+    padding-bottom: 4rem;
+  }
+  .market-auction .art-d-header__info h2 {
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .market-auction .upcoming-auction-item {
+    width: 320rem !important;
+  }
+  .market-auction .art-d-header {
+    border-bottom: 1rem solid #f2f2f2;
+  }
+  .market-auction .art-d-header-container {
+    height: 62rem;
+  }
+  .market-auction .art-d-header-container .drop-container {
+    display: none;
+  }
+  .market-auction .art-d .art-d-slider {
+    height: 1148rem;
+    padding-top: 20rem;
+  }
+  .market-auction .art-d .art-d-slider__list {
+    height: 1148rem;
+  }
+  .market-auction .art-d .art-d-slider .slick-dots {
+    top: calc(1110rem - 10rem);
+  }
+  .market-auction .art-d .art-d-slider__list .slick-first,
+  .market-auction .art-d .art-d-slider__list .slick-last,
+  .market-auction .art-d .art-d-slider__list .slick-prev,
+  .market-auction .art-d .art-d-slider__list .slick-next {
+    top: 1110rem;
+  }
+}

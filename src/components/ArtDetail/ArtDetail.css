@@ -10,7 +10,6 @@
   z-index: 0;
 }
 .art-d-header .container {
-  width: 360rem;
   box-sizing: border-box;
   position: relative;
   z-index: 0;
@@ -263,6 +262,7 @@
     box-sizing: border-box;
   }
   .art-d-header .container {
+    width: 360rem;
     box-sizing: border-box;
     position: relative;
     z-index: 0;

@@ -27,8 +27,8 @@ function AuctionModal({ setModalOpen }) {
           </header>
           <div className="auc-content">
             <div className="auc-list-th">
-              <h1>응찰하기</h1>
-              <h1>응찰하기</h1>
+              <h1>응찰자</h1>
+              {/* <h1>응찰하기</h1> */}
             </div>
             <ul className="auc-list-tb">
               <li>

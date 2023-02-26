@@ -70,6 +70,8 @@ function MarketAuction(props) {
           title_k={'진행중인 기획경매(000)'}
           rows={2}
           slidersPerRow={4}
+          breakRows={1}
+          breakSlidersPerRow={6}
           divItem={true}
           options={options}
           items={result}

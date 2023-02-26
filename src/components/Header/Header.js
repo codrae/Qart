@@ -84,7 +84,7 @@ const Header = props => {
             </a>
           )}
 
-          <a className={props.active == '0' ? 'active' : ''} href="#">
+          <a className={props.active == '0' ? 'active' : ''} href="/search">
             <span className="search-icon ir_pm">검색</span>
           </a>
           <button

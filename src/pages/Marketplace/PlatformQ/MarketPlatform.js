@@ -87,6 +87,8 @@ function MarketPlatform() {
           title_k={'모든 판매자(000)'}
           rows={4}
           slidersPerRow={3}
+          breakRows={4}
+          breakSlidersPerRow={2}
           divItem={true}
           items={result}
           options={options}

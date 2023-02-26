@@ -56,3 +56,56 @@
   background: none;
   border: 1rem solid #4f4f4f;
 }
+@media (max-width: 480px) {
+  .check-modal .modal-body {
+    display: block;
+    width: 305rem;
+    height: 166rem;
+
+    padding: 24rem;
+    padding-bottom: 16rem;
+  }
+  .check-modal h1 {
+    font-size: 16rem;
+    line-height: 23rem;
+    text-align: center;
+  }
+  .check-content {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12rem;
+    line-height: 16rem;
+    text-align: center;
+
+    color: #4f4f4f;
+
+    padding: 16rem 0;
+    height: 32rem;
+  }
+  .check-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .check-btn button {
+    width: 102rem;
+    height: 40rem;
+
+    /* Black */
+
+    background: #222222;
+
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 16rem;
+    color: #ffffff;
+  }
+  .check-btn button:first-child {
+    color: #222222;
+    background: none;
+    border: 1rem solid #4f4f4f;
+    margin-right: 8rem;
+  }
+}

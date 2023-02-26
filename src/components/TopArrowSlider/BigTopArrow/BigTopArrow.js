@@ -11,10 +11,24 @@ function BigTopArrow(props) {
     dots: false,
     infinite: true,
     speed: 500,
+
     slidesToShow: 3,
     slidesToScroll: 1,
-    variableWidth: true,
+
+    // variableWidth: true,
     initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: props.breakRows ? props.breakRows : 2,
+          //slidesToScroll: props.breakRows,
+          // rows: props.breakRows,
+          slidesPerRow: props.slidesPerRow ? props.breakSlidesPerRow : 1,
+          arrows: true,
+        },
+      },
+    ],
   }
 
   const slider_items = items => {
@@ -26,6 +40,7 @@ function BigTopArrow(props) {
             state={{
               item: item,
             }}
+            className="big-top-item"
           >
             <div className="slider__item">
               <img src={require('../../../' + item.info)} alt="item"></img>

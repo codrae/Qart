@@ -144,6 +144,7 @@
     width: 360rem;
   }
   .art-detail-container {
+    min-width: 360rem;
     padding: 0 24rem;
     padding-top: 30rem;
     padding-bottom: 24rem;

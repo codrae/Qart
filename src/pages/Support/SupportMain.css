@@ -1,3 +1,8 @@
 .support-main .header-small {
   height: 100rem;
 }
+@media (max-width: 480px) {
+  .support-main .header-small {
+    height: 100rem;
+  }
+}

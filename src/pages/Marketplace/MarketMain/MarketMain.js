@@ -50,6 +50,46 @@ function MarketMain() {
       price: '000,000,000원',
       link: '/market',
     },
+    {
+      id: 1,
+      info: 'qart_test/회화/김동선, 곰순이, 종이에 수묵, 64×48.5cm, 2010년대.JPG',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
+      price: '000,000,000원',
+      link: '/market',
+    },
+    {
+      id: 1,
+      info: 'qart_test/판화/민정기, 묵안리, 2015.jpg',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
+      price: '000,000,000원',
+      link: '/market',
+    },
+    {
+      id: 1,
+      info: 'qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
+      price: '000,000,000원',
+      link: '/market',
+    },
+    {
+      id: 1,
+      info: 'qart_test/회화/Kim HoDeuk, Distant Mountain3, 161 × 112 cm, Acrylic on canvas, 2015.png',
+      author: '김동선',
+      author_e: 'Kim dongsun',
+      title: '곰순이',
+      date: '2010년대',
+      price: '000,000,000원',
+      link: '/market',
+    },
   ]
   const bannerList = [
     {
@@ -158,6 +198,8 @@ function MarketMain() {
         title_e={'Qart’s Pick'}
         title_k={'금주의 추천작'}
         items={pickList}
+        breakRows={2}
+        breakSlidesPerRow={2}
       />
       <section className="hot-click">
         <WorkHeader title_k={'Hot Click!'} />

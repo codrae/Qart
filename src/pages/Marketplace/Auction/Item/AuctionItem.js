@@ -91,6 +91,8 @@ function AuctionItem() {
           title_e={pitem.length + '개의 작품이 있습니다.'}
           rows={4}
           slidersPerRow={3}
+          breakRows={3}
+          breakSlidersPerRow={2}
           divItem={true}
           options={options}
           items={result}

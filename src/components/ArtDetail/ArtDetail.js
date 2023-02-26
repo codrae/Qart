@@ -31,8 +31,8 @@ function ArtDetail(props) {
       {
         breakpoint: 480,
         settings: {
-          rows: 4,
-          slidesPerRow: 2,
+          rows: props.breakRows,
+          slidesPerRow: props.breakSlidersPerRow,
         },
       },
     ],
@@ -158,10 +158,12 @@ function ArtDetail(props) {
             {title_e ? <h4>{title_e}</h4> : <></>}
             <h2>{title_k}</h2>
           </div>
-          <DropDown
-            options={props.options ? props.options : options}
-            //options={props.options}
-          ></DropDown>
+          <div className="art-d-header__drop">
+            <DropDown
+              options={props.options ? props.options : options}
+              //options={props.options}
+            ></DropDown>
+          </div>
         </div>
       </header>
       <section className="container art-d-slider">
