@@ -161,3 +161,142 @@
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .support-about {
+    /* border-bottom: 1rem solid #e0e0e0; */
+    min-width: 360rem;
+  }
+  .as-content-01 {
+    width: 100%;
+  }
+  .as-content-01 .container {
+    width: 360rem;
+
+    box-sizing: border-box;
+    border: none;
+  }
+  .as-content-01 ul {
+    padding-bottom: 40rem;
+  }
+  .as-content-01 li {
+    display: flex;
+    flex-direction: row;
+    height: 100rem;
+  }
+
+  .as-content-01 li .as-content-01__info--logo {
+    width: 50%;
+    height: 100%;
+    background: url('../../../assets/logo-black.png') no-repeat center;
+    background-size: 80rem 30rem;
+  }
+  .as-content-01 li .as-content-01__info {
+    width: 50%;
+    height: 100%;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000000;
+    padding: 0 16rem;
+    box-sizing: border-box;
+  }
+  .as-content-02 .container {
+    width: 360rem;
+
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    color: #222222;
+
+    padding: 0 24rem;
+  }
+  .as-content-02 .section-header h3 {
+    padding-left: 0;
+  }
+  .as-content-02 .section-header-container {
+    padding-left: 20rem;
+  }
+  .as-02-list__01 {
+    font-size: 12rem;
+    line-height: 16rem;
+
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+  .as-02-list__01 > span {
+    display: block;
+    padding-bottom: 11rem;
+  }
+  .as-02-list__01 > span:last-child {
+    padding-bottom: 0;
+  }
+  .as-02-list__02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .as-02-list__02 > div {
+    width: 312rem;
+    height: 192rem;
+
+    background: #d9d9d9;
+    padding: 10rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20rem;
+  }
+  .as-02-list__02 > div > h2 {
+    font-size: 20rem;
+    line-height: 27rem;
+
+    color: #2f80ed;
+
+    padding-bottom: 12rem;
+  }
+  .as-02-list__02 > div > p {
+    font-size: 12rem;
+    line-height: 16rem;
+    text-align-last: left;
+    color: #222222;
+    padding-bottom: 8rem;
+  }
+  .as-02-list__02 > div > p:last-child {
+    padding-bottom: 0;
+  }
+  .as-02-list__03 {
+    padding-top: 24rem;
+    padding-bottom: 87rem;
+    padding-left: 0;
+  }
+  .as-02-list__03 > div {
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 24rem;
+  }
+  .as-02-list__03 > div > h3 {
+    font-size: 12rem;
+    line-height: 16rem;
+    display: block;
+    width: inherit;
+    padding-bottom: 12rem;
+  }
+  .as-02-list__03 > div > p {
+    width: 100%;
+    font-size: 12rem;
+    line-height: 14rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

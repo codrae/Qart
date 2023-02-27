@@ -104,3 +104,124 @@
 .support-notice .slick-next {
   top: 1878rem;
 }
+@media (max-width: 480px) {
+  .support-notice {
+    min-height: 691rem;
+    min-width: 360rem;
+  }
+  .support-notice .table-slider-header {
+    display: none;
+  }
+  .support-notice .table-slide {
+    min-width: 360rem;
+  }
+  .support-notice .container {
+    width: 360rem;
+    height: 100%;
+  }
+  .support-notice .table-header {
+    min-width: 360rem;
+    height: 67rem;
+
+    font-size: 20rem;
+    line-height: 27rem;
+  }
+  .support-notice .table-header-container {
+    padding-left: 24rem;
+  }
+  .sn-table-item {
+    height: 134rem;
+    border-bottom: 1rem solid #f2f2f2;
+
+    box-sizing: border-box;
+    padding: 19rem 24rem 20rem 20rem;
+
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    color: #000000;
+  }
+  .sn-table-item .sb-ti-date {
+    width: 92rem;
+  }
+  .sn-table-item .sb-ti-date > h5 {
+    font-size: 10rem;
+    line-height: 14rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .sn-table-item .sb-ti-date > h1 {
+    font-size: 24rem;
+    line-height: 33rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-weight: 500;
+  }
+  .sb-ti-content {
+    width: 224rem;
+  }
+  .sb-ti-content > h1 {
+    font-size: 20rem;
+    /* line-height: 49rem; */
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-bottom: 4rem;
+  }
+  .sb-ti-content > p {
+    width: 100%;
+    height: 64rem;
+    font-size: 12rem;
+    line-height: 16rem;
+
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /* word-break: keep-all; */
+    /* padding-top: 0; */
+  }
+  .support-notice .table-slider {
+    border-bottom: none;
+  }
+  .support-notice .table-slide {
+    min-height: calc(100% - 182rem - 322rem);
+  }
+  .support-notice .table-slider {
+    height: 624rem;
+  }
+  .support-notice .page-slider__list {
+    height: 624rem;
+  }
+
+  .support-notice .slick-dots {
+    top: calc(580rem - 10rem);
+  }
+  .support-notice .slick-first,
+  .support-notice .slick-last,
+  .support-notice .slick-prev,
+  .support-notice .slick-next {
+    top: 580rem;
+    left: 79rem;
+  }
+  .support-notice .slick-next {
+    left: calc(79rem + 186rem);
+  }
+  .support-notice .slick-first {
+    left: calc(79rem - 14rem);
+  }
+  .support-notice .slick-last {
+    left: calc(79rem + 186rem + 14rem);
+  }
+}

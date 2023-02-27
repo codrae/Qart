@@ -26,7 +26,12 @@ function SupportNotice() {
   return (
     <div className="support-notice">
       <section className="container">
-        <TableSlide rows={10} title={titleItem} items={tableItem} />
+        <TableSlide
+          breakRows={3}
+          rows={10}
+          title={titleItem}
+          items={tableItem}
+        />
       </section>
     </div>
   )

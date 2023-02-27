@@ -58,6 +58,8 @@ function TableSlide(props) {
       </div>
       <div className="table-slider">
         <PageSlide
+          breakRows={props.breakRows}
+          breakSlidesPerRow={1}
           rows={props.rows ? props.rows : 6}
           slidesPerRow={1}
           items={props.items}
