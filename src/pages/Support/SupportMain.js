@@ -29,11 +29,11 @@ function SupportMain(props) {
   return (
     <div className="support-main">
       <Header colored="black" active={props.active} />
-      {/* <nav className="search">
+      <nav className="search">
         <div className="container search__container">
           <h2 className="search__title">Support</h2>
         </div>
-      </nav> */}
+      </nav>
       <HeaderSmall moreList={moreList} active={true} choice={props.choice} />
       {props.children}
       <Footer></Footer>

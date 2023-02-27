@@ -1,8 +1,25 @@
 .support-main .header-small {
   height: 100rem;
 }
+.support-main .search {
+  display: none;
+}
 @media (max-width: 480px) {
   .support-main .header-small {
     height: 38px;
+  }
+  .support-main .search {
+    display: block;
+    height: 51rem;
+    min-width: 360rem;
+  }
+  .support-main .search__container {
+    width: 360rem;
+    border: none;
+    padding: 0 20rem;
+  }
+  .support-main .search__container h2 {
+    font-size: 16rem;
+    line-height: 19rem;
   }
 }

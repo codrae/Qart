@@ -1,8 +1,9 @@
 .side-container {
-  background: none;
+  display: none;
 }
 @media (max-width: 480px) {
   .side-container {
+    display: block;
     position: absolute;
     width: 243rem;
     width: 100vw;

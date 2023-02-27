@@ -37,14 +37,15 @@
   box-sizing: border-box;
   padding: 20rem 196rem 20rem 49rem;
 
-  display: flex !important;
-  flex-direction: row;
-  justify-content: space-between;
-
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
   color: #000000;
+}
+.sn-mb-container {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .sn-table-item .sb-ti-date {
   width: 121rem;
@@ -116,8 +117,9 @@
     min-width: 360rem;
   }
   .support-notice .container {
-    width: 360rem;
+    width: 100%;
     height: 100%;
+    margin: 0;
   }
   .support-notice .table-header {
     min-width: 360rem;
@@ -127,7 +129,10 @@
     line-height: 27rem;
   }
   .support-notice .table-header-container {
+    margin: 0 auto;
+    width: 360rem;
     padding-left: 24rem;
+    border: none;
   }
   .sn-table-item {
     height: 134rem;
@@ -135,15 +140,16 @@
 
     box-sizing: border-box;
     padding: 19rem 24rem 20rem 20rem;
-
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
     color: #000000;
+  }
+  .sn-mb-container {
+    margin: 0 auto;
+    width: 360rem;
+    box-sizing: border-box;
+    padding: 0 24rem;
   }
   .sn-table-item .sb-ti-date {
     width: 92rem;
