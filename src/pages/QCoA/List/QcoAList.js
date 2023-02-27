@@ -42,6 +42,18 @@ function QCoAList() {
             <span className="fz-c-blue">2000.00.00</span>
           </li>
         </ul>
+        <div className="ts-mb-item">
+          <div className="ts-mb-img">
+            <img src={require('../../../' + items[i].info)}></img>
+          </div>
+          <div className="ts-mb-info">
+            <h2>[리움 미술관]</h2>
+            <h1>지식의 기념비</h1>
+            <span>홍길동</span>
+            <span>캔버스 ㅣ 2000.00.00</span>
+            <h3>Q-CoA 등록일 : 2000.00.00</h3>
+          </div>
+        </div>
       </div>
     )
   })
@@ -117,6 +129,7 @@ function QCoAList() {
         slideHeader={tableSlideHeader}
         items={tableItem}
         rows={9}
+        breakRows={7}
       />
     </div>
   )

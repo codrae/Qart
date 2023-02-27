@@ -138,3 +138,149 @@
   line-height: 33rem !important;
   text-align: justify !important;
 }
+@media (max-width: 480px) {
+  .qcoa-about {
+    width: 100%;
+    height: 100%;
+    min-width: 360rem;
+  }
+  .qcoa-about .container {
+    width: 360rem;
+  }
+  .qcoa-about article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .qcoa-about article h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #000000;
+  }
+  .qcoa-about article p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11rem;
+    line-height: 13rem;
+    color: #000000;
+    padding-bottom: 10rem;
+
+    text-align: center;
+  }
+  .qcoa-01 {
+    text-align: center;
+    padding-top: 37rem;
+  }
+  .qcoa-01 > h2 {
+    padding-bottom: 20rem;
+  }
+  .qcoa-01 p {
+    width: 100%;
+    text-align: center;
+  }
+  .color-blue {
+    font-weight: 700;
+    color: #2f80ed;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .qoca-img-01 {
+    margin-top: 43rem;
+    padding-bottom: 53rem;
+    width: 323rem;
+    height: 270rem;
+    background: url('../../../assets/qcoa-01.png') no-repeat center;
+    background-size: contain;
+    border: 0;
+  }
+  .qcoa-02 {
+    width: 100%;
+    height: 273rem;
+    background: #fbfbfb;
+
+    box-sizing: border-box;
+    padding: 32rem 18rem 40rem 19rem;
+
+    margin-bottom: 39rem;
+  }
+  .qcoa-02 > h2 {
+    padding-bottom: 31rem;
+  }
+  .qcoa-03 {
+    text-align: center;
+  }
+  .qcoa-03 > h2 {
+    padding-bottom: 19rem;
+  }
+  .qcoa-img-02 {
+    width: 332.1rem;
+    height: 192rem;
+
+    background: url('../../../assets/qcoa-02.png') no-repeat center;
+    background-size: contain;
+
+    margin-top: 11rem;
+    margin-bottom: 72rem;
+  }
+  .qcoa-04 {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+
+    margin-bottom: 39rem;
+  }
+  .qcoa-04 > div {
+    width: 100%;
+    height: 273rem;
+
+    background: #fbfbfb;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 23rem 14rem 27rem 20rem;
+    margin-bottom: 20rem;
+  }
+  .qcoa-04 > div:last-child {
+    margin-bottom: 0;
+  }
+  .qcoa-img-03 {
+    width: 83.66rem;
+    height: 83.66rem;
+    background: url('../../../assets/qcoa-03.png') no-repeat center;
+    background-size: contain;
+
+    margin-bottom: 20.34rem;
+  }
+  .qcoa-img-04 {
+    width: 83.66rem;
+    height: 83.66rem;
+    background: url('../../../assets/qcoa-04.png') no-repeat center;
+    background-size: contain;
+
+    margin-bottom: 20.1rem;
+  }
+  .qcoa-04 > div > h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+
+    color: #000000;
+
+    padding-bottom: 19rem;
+  }
+  .qcoa-04 p {
+    line-height: 15rem !important;
+    text-align: justify !important;
+  }
+}
