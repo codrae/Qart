@@ -52,6 +52,11 @@ function MyWorkAdd() {
   return (
     <div className="ma-work-add">
       <Header login={true} colored="black" />
+      <nav className="search">
+        <div className="container search__container">
+          <h2 className="search__title">My Archive</h2>
+        </div>
+      </nav>
       <SectionHeader title={'Add Work'} />
       <div className="ma-edit-image">
         <div className="container ma-edit-image-container">
@@ -120,16 +125,18 @@ function MyWorkAdd() {
           </li>
           <li>
             <h2>Dates</h2>
-            <DropDown options={datesList} />
-            <input
-              type="date"
-              id="date"
-              className="date-input"
-              data-placeholder="YYYY.MM.DD"
-              pattern="(?:19|20)\[0-9\]{2}.(?:(?:0\[1-9\]|1\[0-2\]).(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
-              // value={toStringByFormatting(new Date())}
-              required
-            ></input>
+            <div className="ma-add-date-mb">
+              <DropDown options={datesList} />
+              <input
+                type="date"
+                id="date"
+                className="date-input"
+                data-placeholder="YYYY.MM.DD"
+                pattern="(?:19|20)\[0-9\]{2}.(?:(?:0\[1-9\]|1\[0-2\]).(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
+                // value={toStringByFormatting(new Date())}
+                required
+              ></input>
+            </div>
           </li>
           <li>
             <h2>소장처</h2>
@@ -153,7 +160,7 @@ function MyWorkAdd() {
           <li>
             <h2></h2>
             <div className="ma-info-02-input">
-              <input type="text" placeholder="원화"></input>
+              <input type="text" placeholder="달러"></input>
               <span>$</span>
             </div>
           </li>
@@ -185,8 +192,10 @@ function MyWorkAdd() {
           </li>
           <li className="ma-info-03-drop-03">
             <h2>전시이력</h2>
-            <DropDown options={archiveList} />
-            <button>직접입력</button>
+            <div className="ma-add-date-mb">
+              <DropDown options={archiveList} />
+              <button>직접입력</button>
+            </div>
           </li>
         </div>
       </ul>

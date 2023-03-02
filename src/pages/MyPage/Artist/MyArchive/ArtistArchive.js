@@ -86,6 +86,18 @@ function ArtistArchive() {
           <button>Delete</button>
           <button>Add</button>
         </section>
+        <section className="th-mb-search-button">
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => {
+                setAllCheck(!allCheck)
+              }}
+            />
+            <span className="login-option__check" />
+          </label>
+          <button>Add</button>
+        </section>
       </div>
     </div>
   )

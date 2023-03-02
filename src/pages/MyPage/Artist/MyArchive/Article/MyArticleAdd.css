@@ -2,6 +2,9 @@
   height: 100%;
   min-width: 1920rem;
 }
+.ma-article-add .search {
+  display: none;
+}
 .ma-article-add .section-header {
   background: #fbfbfb;
 }
@@ -13,18 +16,7 @@
 
   color: #222222;
 }
-.ma-article-add .search__container h2 {
-  display: inline-block;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40rem;
-  line-height: 47rem;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  height: auto;
-}
+
 .ma-article-add .header-small-list a.active {
   color: #222222;
 }
@@ -303,4 +295,260 @@
   background: #000000;
   color: #ffffff;
   margin-right: 0;
+}
+@media (max-width: 480px) {
+  .ma-article-add {
+    height: 100%;
+    min-width: 360rem;
+  }
+  .ma-article-add .search {
+    display: block;
+    min-width: 360rem;
+    height: 51rem;
+  }
+  .ma-article-add .search__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    width: 360rem;
+    padding: 0 20rem;
+  }
+  .ma-article-add .search__container > h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+
+  .ma-article-add .section-header {
+    background: #fbfbfb;
+  }
+  .ma-article-add .section-header h3 {
+    height: 51rem;
+
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+
+  .ma-article-add .header-small-list a.active {
+    color: #222222;
+  }
+
+  .ma-article-add h2 {
+    width: inherit;
+    height: inherit;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 16rem;
+    color: #222222;
+    margin-bottom: 12rem;
+  }
+  .ma-edit-image-container h2 {
+    padding-top: 0;
+  }
+  .ma-edit-image {
+    height: inherit;
+    box-sizing: border-box;
+    border: none;
+  }
+  .ma-edit-image-02 {
+    height: inherit;
+
+    box-sizing: border-box;
+    border: none;
+  }
+  .ma-edit-image-02 .ma-img-tlt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ma-img-tlt--sub {
+    display: inline;
+    padding-top: 0;
+    font-size: 10rem;
+    line-height: 14rem;
+    margin-left: 4rem;
+  }
+  .ma-edit-image-container {
+    width: 360rem;
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 24rem;
+    padding-top: 18rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container {
+    padding: 0 20rem;
+  }
+
+  .ma-edit-image-02 form,
+  .ma-edit-image form {
+    height: 121rem;
+  }
+  .ma-edit-image-02 .button,
+  .ma-edit-image .button {
+    height: 101rem;
+    margin-bottom: 0;
+  }
+
+  .image-button,
+  .ma-edit-image-02 .image-button {
+    width: 101rem;
+    height: 101rem;
+    margin-bottom: 0;
+    background-size: 20rem 20rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .edit-photo,
+  .ma-edit-image-container .edit-photo {
+    top: 40rem;
+    left: 113rem;
+
+    width: 16rem;
+    height: 16rem;
+
+    background: url('../../../../../assets/img_delete.png') no-repeat center;
+    background-size: contain;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .ma-img-show,
+  .ma-edit-image-container .ma-img-show {
+    top: 49rem;
+    left: 20rem;
+
+    width: 101rem;
+    height: 101rem;
+    background: #ffffff;
+    border: 1rem solid #bdbdbd;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .edit-photo {
+    top: 22rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .ma-img-show {
+    top: 31rem;
+  }
+
+  .ma-article-add-info li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rem;
+  }
+  .ma-article-add-info li:first-child {
+    padding-top: 0;
+  }
+  .ma-article-add-info input {
+    width: 312rem;
+    height: 40rem;
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #bdbdbd;
+
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    box-sizing: border-box;
+    padding-left: 12rem;
+  }
+  .ma-article-add-info input::placeholder {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #bdbdbd;
+  }
+  .ma-article-add-info .drop-container {
+    width: 312rem;
+    height: 40rem;
+    z-index: unset;
+  }
+  .ma-article-add-info .drop-select {
+    width: 312rem;
+    height: 40rem;
+    box-sizing: border-box;
+    border: 1rem solid #bdbdbd;
+    color: #222222;
+  }
+  .ma-article-add-info .show-drop-list {
+    display: none;
+  }
+
+  .ma-article-add-info textarea {
+    box-sizing: border-box;
+
+    padding-left: 12rem;
+    padding-top: 12rem;
+    width: 312rem;
+    height: 140rem;
+
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #bdbdbd;
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    resize: none;
+  }
+  .ma-article-add-info textarea::placeholder {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #bdbdbd;
+  }
+  .ma-article-add .ma-add--button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .ma-article-add .ma-add--button .container {
+    box-sizing: border-box;
+  }
+  .ma-article-add .ma-add--button button {
+    background: none;
+
+    box-sizing: border-box;
+
+    width: 155rem;
+    height: 48rem;
+
+    border: 1rem solid #000000;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 23rem;
+
+    color: #222222;
+
+    margin-right: 9rem;
+  }
 }

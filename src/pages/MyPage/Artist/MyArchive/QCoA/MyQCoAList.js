@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import TableSlide from '../../../../../components/TableSlide/TableSlide'
 import './MyQCoAList.css'
 function MyQcoAList() {
@@ -46,6 +47,31 @@ function MyQcoAList() {
             <span className="fz-c-blue">2000.00.00</span>
           </li>
         </ul>
+        <div className="work-item-mb">
+          <div className="work-item-mb-container">
+            <label className="login-option">
+              <input
+                type="checkbox"
+                onChange={e => checkHandler(e.target.checked, i)}
+                checked={checkItems.indexOf(i) >= 0 ? true : false}
+              />
+              <span className="login-option__check" />
+            </label>
+            <div className="work-item-mb-content">
+              <div className="work-item-mb__info">
+                <img src={require('../../../../../' + item.info)}></img>
+                <div className="work-item-mb__detail">
+                  <h4>[리움 미술관]</h4>
+                  <h1>지식의 기념비</h1>
+                  <h3>홍길동</h3>
+                  <h3>캔버스 ㅣ 2000.00.000</h3>
+                  <h3>Q-CoA 등록일 : 2000.00.00</h3>
+                </div>
+                <button className="work-item-mb__delete"></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     )
   })
@@ -91,6 +117,26 @@ function MyQcoAList() {
           <button>Delete</button>
           <button className="last-button">Add</button>
         </section>
+        <section className="th-mb-search-button">
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => checkAllHandler(e.target.checked)}
+              checked={
+                checkItems.length == 0
+                  ? false
+                  : checkItems.length === tableItem.length
+                  ? true
+                  : false
+              }
+            />
+            <span className="login-option__check" />
+            모두선택
+          </label>
+          <Link>
+            <button>Add</button>
+          </Link>
+        </section>
       </div>
     </div>
   )
@@ -130,6 +176,7 @@ function MyQcoAList() {
         slideHeader={tableSlideHeader}
         items={tableItem}
         rows={9}
+        breakRows={7}
       />
     </div>
   )

@@ -33,10 +33,10 @@ code {
   html {
     font-size: 1px;
     -webkit-text-size-adjust: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .container {
     max-width: 360rem;

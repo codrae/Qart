@@ -11,7 +11,7 @@ function MyNftAdd() {
   return (
     <div className="ma-nft-add">
       <Header login={true} colored="black" />
-      <SectionHeader title={'Add Work'} />
+      <SectionHeader title={'Add NFT'} />
       <div className="ma-nft-content">
         <div className="container">
           <Link>

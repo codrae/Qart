@@ -5,6 +5,7 @@
 
 .ma-nft-add .section-header {
   background: #fbfbfb;
+  border-top: 1rem solid #4f4f4f;
 }
 .ma-nft-add .section-header h3 {
   height: 100rem;
@@ -47,6 +48,61 @@
 
   color: #ffffff;
 }
-.ma-nft-add .footer__menu {
-  border-top: 1rem solid #e0e0e0;
+
+@media (max-width: 480px) {
+  .ma-nft-add {
+    height: 100%;
+    min-width: 360rem;
+  }
+
+  .ma-nft-add .section-header {
+    background: #222222;
+  }
+  .ma-nft-add .section-header h3 {
+    height: 51rem;
+
+    font-size: 16rem;
+    line-height: 19rem;
+
+    color: #ffffff;
+  }
+  .ma-nft-add .ma-nft-content {
+    min-height: 502rem;
+
+    background: #ebebeb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ma-nft-content .container {
+    width: 360rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .ma-nft-content button {
+    width: 220rem;
+    height: 40rem;
+
+    background: #000000;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 20rem;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+  }
+  .ma-nft-add .footer__menu {
+    border: none;
+  }
 }

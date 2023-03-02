@@ -42,6 +42,29 @@ function MyArticleList() {
           <li>Change Date</li>
           <li>Address</li>
         </ul>
+        <div className="work-item-mb">
+          <div className="work-item-mb-container">
+            <label className="login-option">
+              <input
+                type="checkbox"
+                onChange={e => checkHandler(e.target.checked, i)}
+                checked={checkItems.indexOf(i) >= 0 ? true : false}
+              />
+              <span className="login-option__check" />
+            </label>
+            <div className="work-item-mb-content">
+              <div className="work-item-mb__info">
+                <img src={require('../../../../../' + item.info)}></img>
+                <div className="work-item-mb__detail">
+                  <h4>[Source]</h4>
+                  <h1>Material name</h1>
+                  <h3>Issued by</h3>
+                </div>
+                <button className="work-item-mb__delete"></button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     )
   })
@@ -89,6 +112,26 @@ function MyArticleList() {
             <button className="last-button">Add</button>
           </Link>
         </section>
+        <section className="th-mb-search-button">
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => checkAllHandler(e.target.checked)}
+              checked={
+                checkItems.length == 0
+                  ? false
+                  : checkItems.length === tableItem.length
+                  ? true
+                  : false
+              }
+            />
+            <span className="login-option__check" />
+            모두선택
+          </label>
+          <Link to={'./article'}>
+            <button>Add</button>
+          </Link>
+        </section>
       </div>
     </div>
   )
@@ -125,6 +168,7 @@ function MyArticleList() {
         slideHeader={tableSlideHeader}
         items={tableItem}
         rows={9}
+        breakRows={8}
       />
     </div>
   )

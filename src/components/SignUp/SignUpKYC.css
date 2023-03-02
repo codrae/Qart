@@ -636,4 +636,13 @@
     padding-top: 40rem;
     padding-bottom: 24rem;
   }
+
+  .ma-add--button .container {
+    width: 360rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 20rem;
+    padding-top: 40rem;
+    padding-bottom: 24rem;
+  }
 }

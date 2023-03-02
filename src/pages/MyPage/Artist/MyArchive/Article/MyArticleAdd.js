@@ -52,6 +52,11 @@ function MyArticleAdd() {
   return (
     <div className="ma-article-add">
       <Header login={true} colored="black" />
+      <nav className="search">
+        <div className="container search__container">
+          <h2 className="search__title">My Archive</h2>
+        </div>
+      </nav>
       <SectionHeader title="Add Article" />
       <div className="ma-edit-image">
         <div className="container ma-edit-image-container">
