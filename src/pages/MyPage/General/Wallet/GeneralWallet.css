@@ -1,0 +1,155 @@
+.wallet-mb-item {
+  display: none;
+}
+@media (max-width: 480px) {
+  .mypage-general-list .table-slider .page-slider {
+    width: 100%;
+    border: none;
+    max-width: 100vw;
+    width: 100%;
+  }
+  .mypage-general-list .table-slider .page-slider__list {
+    padding-bottom: 76rem;
+    height: inherit;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  .mypage-general-list .table-slider .slick-dots {
+    top: calc(1056rem - 10rem);
+  }
+  .mypage-general-list .table-slider .slick-first,
+  .mypage-general-list .table-slider .slick-last,
+  .mypage-general-list .table-slider .slick-prev,
+  .mypage-general-list .table-slider .slick-next {
+    top: 1056rem;
+  }
+  .mypage-general-list .table-slider .slick-prev {
+    left: 130rem;
+  }
+  .mypage-general-list .table-slider .slick-next {
+    left: calc(130rem + 196rem);
+  }
+
+  .mypage-general-list .table-slider .slick-first {
+    left: calc(130rem - 20rem);
+  }
+  .mypage-general-list .table-slider .slick-last {
+    left: calc(130rem + 196rem + 20rem);
+  }
+  .mypage-general-list .table-slider {
+    height: calc(100% - 159rem - 322rem);
+  }
+  .mypage-general-list .table-slider-item {
+    display: none !important;
+  }
+  .wallet-mb-item {
+    display: block;
+    height: 144rem;
+
+    border-bottom: 1rem solid #ebebeb;
+  }
+  .wallet-mb-container {
+    display: flex;
+    flex-direction: row;
+    width: 360rem;
+    padding: 16rem 20rem;
+    box-sizing: border-box;
+  }
+  .wallet-mb-container img {
+    width: 105rem;
+    height: 112rem;
+
+    margin-right: 8rem;
+    object-fit: contain;
+    background: #f2f2f2;
+  }
+  .wallet-mb-state {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5rem;
+  }
+  .w-mb-state-button {
+    display: block;
+
+    width: 44rem;
+    height: 19rem;
+
+    /* Blue 1 */
+
+    border: 1rem solid #2f80ed;
+    border-radius: 2rem;
+    box-sizing: border-box;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #2f80ed;
+
+    margin-right: 12rem;
+  }
+  .w-mb-state-date {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+
+    color: #222222;
+  }
+  .wallet-mb-info h2 {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 17rem;
+
+    color: #222222;
+
+    margin-bottom: 8rem;
+  }
+  .wallet-mb-info h4 {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+
+    color: #222222;
+
+    margin-bottom: 27rem;
+  }
+  .wallet-mb-info h1 {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14rem;
+    line-height: 20rem;
+
+    color: #222222;
+  }
+  .w-mb-state-pay {
+    width: 211rem;
+    height: 34rem;
+
+    border: 1rem solid #2f80ed;
+    border-radius: 2rem;
+    background: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 17rem;
+
+    margin-top: 12rem;
+    color: #2f80ed;
+  }
+}

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import ArtDetail from '../../../../components/ArtDetail/ArtDetail'
 import TableSlide from '../../../../components/TableSlide/TableSlide'
-import './ArtistLike.css'
+// import './ArtistLike.css'
 function ArtistLike() {
   const options = ['실물 작품', 'NFT']
 
@@ -54,6 +54,8 @@ function ArtistLike() {
         title_k={'관심 목록'}
         rows={3}
         slidersPerRow={3}
+        breakRows={4}
+        breakSlidersPerRow={2}
         divItem={true}
         items={result}
         options={options}

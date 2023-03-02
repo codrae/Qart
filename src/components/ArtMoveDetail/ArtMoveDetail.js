@@ -37,6 +37,8 @@ function ArtMoveDetail(props) {
         move={'./detail'}
         items={props.items}
         options={props.options}
+        breakRows={props.breakRows}
+        breakSlidersPerRow={props.breakSlidersPerRow}
       ></WorkHeader>
       <section className="art-md--content">
         <div className="container">

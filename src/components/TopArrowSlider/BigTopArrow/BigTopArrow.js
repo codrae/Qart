@@ -24,7 +24,7 @@ function BigTopArrow(props) {
           slidesToShow: props.breakRows ? props.breakRows : 2,
           //slidesToScroll: props.breakRows,
           // rows: props.breakRows,
-          slidesPerRow: props.slidesPerRow ? props.breakSlidesPerRow : 1,
+          slidesPerRow: props.breakSlidesPerRow ? props.breakSlidesPerRow : 1,
           arrows: true,
         },
       },

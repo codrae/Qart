@@ -194,6 +194,8 @@ function MarketAll() {
         <ArtDetail
           rows={3}
           slidersPerRow={3}
+          breakRows={4}
+          breakSlidersPerRow={2}
           divItem={true}
           options={options}
           items={menu == 7 ? nftResult : result}

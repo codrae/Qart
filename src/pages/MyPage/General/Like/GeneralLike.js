@@ -54,6 +54,8 @@ function GeneralLike() {
         title_k={'관심 목록'}
         rows={3}
         slidersPerRow={3}
+        breakRows={4}
+        breakSlidersPerRow={2}
         divItem={true}
         items={result}
         options={options}

@@ -40,3 +40,67 @@
   width: 240rem;
   height: 6rem;
 }
+@media (max-width: 480px) {
+  .mypage-artist {
+    height: 100%;
+  }
+  .mypage-artist .search {
+    display: block;
+    min-width: 360rem;
+    height: 51rem;
+  }
+  .mypage-artist .search__container {
+    width: 360rem;
+    padding: 0 20rem;
+    border: none;
+  }
+  .mypage-artist .search__title {
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .table-header-title {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  .table-header-title a {
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 12rem;
+  }
+
+  /* 선택되지 않은 경우 */
+  .th-title-select-active h1 {
+    color: #000000;
+  }
+  .th-title-select-active span {
+    background: #000000;
+  }
+  .th-title-select h1 {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28rem;
+    line-height: 33rem;
+
+    color: #bdbdbd;
+
+    padding-top: 61rem;
+    padding-bottom: 14rem;
+  }
+  .th-title-select span {
+    display: block;
+    background: #f2f2f2;
+
+    border-radius: 0rem;
+    width: 240rem;
+    height: 6rem;
+  }
+}

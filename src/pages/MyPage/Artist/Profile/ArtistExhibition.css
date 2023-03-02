@@ -244,6 +244,10 @@
 .artist-exhibition .footer__menu {
   border-top: 1rem solid #e0e0e0;
 }
+.mb-date-container {
+  display: flex;
+  flex-direction: row;
+}
 .date-bar {
   display: block;
   width: 36rem;
@@ -266,41 +270,6 @@
 input[type='date'] {
   outline: none;
 }
-/* input[type='date']::-webkit-datetime-edit-text {
-  -webkit-appearance: none;
-  display: none;
-}
-input[type='date']::-webkit-datetime-edit-month-field {
-  -webkit-appearance: none;
-  display: none;
-}
-input[type='date']::-webkit-datetime-edit-day-field {
-  -webkit-appearance: none;
-  display: none;
-}
-input[type='date']::-webkit-datetime-edit-year-field {
-  -webkit-appearance: none;
-  display: none;
-} */
-
-/* input[type='date']::before {
-  content: attr(data-placeholder);
-  width: calc(100% - 104rem);
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20rem;
-  line-height: 29rem;
-
-
-  display: flex;
-  align-items: center;
-  color: #bdbdbd;
-}
-input[type='date']:focus::before,
-input[type='date']:valid::before {
-  display: none;
-} */
 
 ::-webkit-calendar-picker-indicator {
   color: rgba(0, 0, 0, 0);
@@ -320,4 +289,282 @@ input[type='date']:valid::before {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .artist-exhibition {
+    height: 100%;
+    min-width: 360rem;
+  }
+  .artist-exhibition .section-header {
+    background: #fbfbfb;
+  }
+  .artist-exhibition .section-header h3 {
+    width: 360rem;
+    box-sizing: border-box;
+    padding: 0 20rem;
+    height: 51rem;
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .a-exhibition-content {
+    width: 360rem;
+    box-sizing: border-box;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+
+    height: 100%;
+    min-height: auto;
+    padding: 0 24rem;
+  }
+  .a-ex-edit-image-container h2,
+  .a-exhibition-content h2 {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12rem;
+    line-height: 16rem;
+    color: #222222;
+    padding-bottom: 12rem;
+  }
+  .a-ex-img-tlt {
+    align-items: flex-start !important;
+  }
+  .a-ex-edit-image {
+    height: inherit;
+
+    width: 100%;
+
+    border-bottom: none;
+  }
+  .a-ex-edit-image-container {
+    width: 360rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    border: none;
+
+    padding: 0 24rem;
+    padding-top: 18rem;
+  }
+  .a-ex-edit-image-container > form {
+    height: 101rem;
+  }
+  .a-ex-edit-image-container h2 {
+    padding-top: 0;
+  }
+  .a-ex-edit-image-container img {
+    width: 101rem;
+    height: 101rem;
+    box-sizing: border-box;
+    object-fit: contain;
+  }
+  .a-ex-edit-info {
+    z-index: 1;
+    /* height: 0 */
+  }
+
+  .image-button {
+    position: absolute;
+    cursor: pointer;
+
+    width: 101rem;
+    height: 101rem;
+    background: url('../../../../assets/icon_plus.png') no-repeat center;
+    background-size: 65rem 65rem;
+    border: 1rem solid #bdbdbd;
+    box-sizing: border-box;
+  }
+  .a-ex-edit-image-container .edit-photo {
+    position: absolute;
+    top: 38rem;
+    left: 117rem;
+    z-index: 2;
+  }
+  .a-ex-img-show {
+    position: absolute;
+    top: 46rem;
+    left: 24rem;
+    width: 101rem;
+    height: 101rem;
+    background: #ffffff;
+    z-index: 1;
+  }
+  .a-ex-img-hide {
+    display: none;
+  }
+  /* 못생긴 기존 input 숨기기 */
+  #chooseFile {
+    visibility: hidden;
+  }
+  .a-ex-edit-info {
+    width: 360rem;
+    box-sizing: border-box;
+    /* height: inherit; */
+    padding: 0;
+  }
+  .a-ex-edit-info li {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rem;
+  }
+  .a-ex-edit-info li:first-child {
+    padding-top: 20rem;
+  }
+  .a-ex-edit-info input {
+    width: 312rem;
+    height: 40rem;
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #bdbdbd;
+
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    box-sizing: border-box;
+    padding-left: 12rem;
+  }
+  .a-ex-edit-info input::placeholder {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+  }
+  .a-ex-edit-info .drop-container {
+    width: 312rem;
+    height: 40rem;
+    z-index: unset;
+  }
+  .a-ex-edit-info .drop-select {
+    width: 312rem;
+    height: 40rem;
+
+    font-weight: 400;
+    font-size: 14rem;
+    line-height: 19rem;
+  }
+
+  .a-ex-edit-info textarea {
+    box-sizing: border-box;
+
+    padding-left: 12rem;
+    padding-top: 11rem;
+    width: 312rem;
+    height: 140rem;
+
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #bdbdbd;
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    resize: none;
+  }
+  .a-ex-edit-info textarea::placeholder {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #bdbdbd;
+  }
+  .a-ex-edit--button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40rem;
+    padding-bottom: 20rem;
+  }
+  .a-ex-edit--button button {
+    background: none;
+
+    box-sizing: border-box;
+    width: 155rem;
+    height: 48rem;
+
+    border: 1rem solid #000000;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 23rem;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Black */
+
+    color: #222222;
+
+    margin-right: 9rem;
+  }
+  .a-ex-edit--button button:last-child {
+    border: none;
+    background: #000000;
+    color: #ffffff;
+    margin-right: 0;
+  }
+  .artist-exhibition .footer__menu {
+    border-top: 1rem solid #e0e0e0;
+  }
+  .mb-date-container .date-bar {
+    display: none;
+  }
+  input[type='date'] {
+    outline: none;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(../../../../assets/icon_calendar.png) center no-repeat;
+    background-size: 22.5rem 25rem;
+    width: 84rem;
+    height: 100%;
+    border-width: thin;
+  }
+  ::-webkit-date-picker {
+    width: 100%;
+  }
+  .artist-exhibition .date-input {
+    width: 152rem !important;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+  }
+  .artist-exhibition .date-input:first-child {
+    margin-right: 8rem;
+  }
 }

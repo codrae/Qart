@@ -24,15 +24,16 @@
   box-sizing: border-box;
 }
 .ap-edit-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
   width: 100%;
   height: 178rem;
   padding: 63rem 60rem 0 51rem;
 
   box-sizing: border-box;
+}
+.ap-edit-header-mb {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .ap-edit-header h1 {
   font-family: 'Noto Sans KR';
@@ -154,6 +155,7 @@
   border-bottom: 1rem solid #e0e0e0;
   height: inherit;
 }
+
 .ap-edit-intro {
   border-bottom: none;
 }
@@ -202,19 +204,19 @@
   color: #222222;
 }
 .ap-edit-personal,
-.ap-edit-bank {
+.ap-edit-personal .ap-edit-content-mb,
+.ap-edit-bank .ap-edit-content-mb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .ap-edit-personal li,
 .ap-edit-bank li {
   padding-top: 57rem;
 }
 
-.ap-edit-bank button {
+.ap-edit-bank .file-button {
   width: 189rem;
   height: 72rem;
 
@@ -389,7 +391,8 @@
 .ap-exhibition-list {
   padding-bottom: 118rem;
 }
-.ap-exhibition-list li {
+.ap-exhibition-list .ap-list,
+.ap-exhibition-list .ap-list--header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -423,29 +426,39 @@
 
   font-weight: 700 !important;
 }
+.ap-list-mb {
+  display: none;
+}
 
-.ap-exhibition-list li:last-child {
+.ap-exhibition-list .ap-list:last-child {
   border-bottom: 1rem solid #e0e0e0;
 }
-.ap-exhibition-list li span:nth-child(2) {
+.ap-exhibition-list .ap-list span:nth-child(2),
+.ap-exhibition-list .ap-list--header span:nth-child(2) {
   width: 177rem;
 }
-.ap-exhibition-list li span:nth-child(3) {
+.ap-exhibition-list .ap-list span:nth-child(3),
+.ap-exhibition-list .ap-list--header span:nth-child(3) {
   width: 218rem;
 }
-.ap-exhibition-list li span:nth-child(4) {
+.ap-exhibition-list .ap-list span:nth-child(4),
+.ap-exhibition-list .ap-list--header span:nth-child(4) {
   width: 142rem;
 }
-.ap-exhibition-list li span:nth-child(5) {
+.ap-exhibition-list .ap-list span:nth-child(5),
+.ap-exhibition-list .ap-list--header span:nth-child(5) {
   width: 90rem;
 }
-.artist-profile-school li {
+.artist-profile-school .ap-list,
+.artist-profile-school .ap-list--header {
   padding-right: 60rem;
 }
-.artist-profile-school .ap-exhibition-list li span:nth-child(4) {
+.artist-profile-school .ap-exhibition-list .ap-list span:nth-child(4),
+.artist-profile-school .ap-exhibition-list .ap-list--header span:nth-child(4) {
   width: 94rem;
 }
-.artist-profile-school .ap-exhibition-list li span:nth-child(5) {
+.artist-profile-school .ap-exhibition-list .ap-list span:nth-child(5),
+.artist-profile-school .ap-exhibition-list .ap-list--header span:nth-child(5) {
   width: 94rem;
 }
 .ap-liat--button {
@@ -501,4 +514,582 @@
   line-height: 46rem;
 
   color: #222222;
+}
+.file-input {
+  display: none;
+}
+.ap-mobile-edit--button {
+  display: none;
+}
+@media (max-width: 480px) {
+  .artist-profile {
+    min-width: 360rem;
+    border-bottom: 80rem solid #ebebeb;
+  }
+
+  .artist-profile .container {
+    width: 100%;
+    margin: 0;
+  }
+  .artist-profile-edit {
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+  }
+  .artist-profile-exhibition {
+    border-top: 1rem solid #e0e0e0;
+    border-bottom: 1rem solid #e0e0e0;
+  }
+  .artist-profile-exhibition-container {
+    width: 100%;
+    border-top: 8rem solid #ebebeb;
+    border-bottom: 8rem solid #ebebeb;
+    box-sizing: border-box;
+  }
+  .artist-profile-school-container {
+    width: 1378rem;
+    border-left: 1rem solid #e0e0e0;
+    border-right: 1rem solid #e0e0e0;
+    box-sizing: border-box;
+  }
+  .ap-edit-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 53rem;
+    padding: 0;
+
+    border-bottom: 1rem solid #ebebeb;
+  }
+  .ap-edit-header-mb {
+    width: 360rem;
+    margin: 0 auto;
+    padding: 16rem 24rem;
+
+    box-sizing: border-box;
+  }
+  .ap-edit-header h1 {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #222222;
+  }
+  .ap-edit-header button {
+    width: 66rem;
+    height: 24rem;
+    background: #2f80ed;
+
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+  }
+
+  .cant-edit .ap-edit-content {
+    border-bottom: none;
+  }
+  .ap-edit-content li input {
+    width: 312rem;
+    height: 42rem;
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #f2f2f2;
+
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    box-sizing: border-box;
+    padding-left: 12rem;
+  }
+  .ap-edit-content li input::placeholder {
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+  }
+
+  .ap-edit-content h2 {
+    font-size: 10rem;
+    line-height: 14rem;
+
+    color: #828282;
+
+    padding-bottom: 12rem;
+  }
+  .ap-edit-content .ap-edit-image {
+    width: 360rem;
+    margin: 0 auto;
+    padding: 0 24rem;
+    padding-top: 15rem;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .ap-edit-content .ap-edit-image img {
+    box-sizing: border-box;
+
+    width: 101rem;
+    height: 101rem;
+
+    border: 1rem solid #bdbdbd;
+    object-fit: contain;
+  }
+  .ap-edit-content .edit-photo {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    background: url('../../../../assets/img_delete.png') no-repeat center;
+    background-size: contain;
+    top: 36rem;
+    left: 118rem;
+  }
+  .ap-edit-content .ap-edit-image h2 {
+    width: 100%;
+    text-align: left;
+
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+
+    color: #222222 !important;
+    padding-bottom: 12rem;
+  }
+  .ap-edit-basic,
+  .ap-edit-personal,
+  .ap-edit-bank,
+  .ap-edit-intro {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: 4rem solid #ebebeb;
+    height: inherit;
+  }
+  .ap-edit-content-mb {
+    width: 360rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 24rem;
+    padding-bottom: 20rem;
+  }
+  .ap-edit-intro {
+    border-bottom: none;
+  }
+  .cant-edit .ap-edit-intro {
+    border-bottom: none;
+  }
+  .ap-edit-basic li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20rem;
+  }
+  .ap-edit-basic li h2 {
+    width: 100%;
+  }
+  .ap-edit-basic li input {
+    width: 312rem;
+    height: 42rem;
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #f2f2f2;
+
+    font-size: 14rem;
+    line-height: 19rem;
+    padding: 0;
+    padding-left: 12rem;
+    margin-bottom: 8rem;
+  }
+  .ap-edit-basic li input:last-child {
+    margin-bottom: 0;
+  }
+  .ap-edit-basic li input::placeholder {
+    font-size: 14rem;
+    line-height: 19rem;
+  }
+  .ap-edit-personal .ap-edit-content-mb,
+  .ap-edit-bank .ap-edit-content-mb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .ap-edit-auth {
+    display: none;
+  }
+  .ap-edit-personal li,
+  .ap-edit-bank li {
+    padding-top: 20rem;
+  }
+  .ap-edit-personal .drop-container {
+    display: none;
+  }
+  .ap-edit-bank .file-button {
+    width: 109rem;
+    height: 40rem;
+
+    background: #2f80ed;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* White */
+
+    color: #ffffff;
+    margin-right: 4rem;
+  }
+  .ap-edit-bank .file-input {
+    width: 199rem;
+    height: 40rem;
+    display: block;
+  }
+
+  .ap-edit-intro li {
+    width: 360rem;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding: 0 24rem;
+    padding-top: 20rem;
+    padding-bottom: 24rem;
+
+    /* height: 453rem; */
+  }
+  .ap-edit-intro li h2 {
+    width: 100%;
+  }
+  .ap-edit-intro textarea {
+    box-sizing: border-box;
+
+    padding: 0;
+    width: 312rem;
+    height: 208rem;
+
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 1rem solid #f2f2f2;
+    border-radius: 2rem;
+    outline: none;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #333333;
+
+    resize: none;
+
+    padding-top: 12rem;
+    padding-left: 12rem;
+  }
+  .ap-edit-intro textarea::placeholder {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #333333;
+  }
+  .ap-drop {
+    width: 312rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .ap-drop .drop-container {
+    z-index: unset;
+  }
+  .ap-drop .drop-select {
+    width: 312rem;
+    height: 40rem;
+    box-sizing: border-box;
+
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
+
+    margin-right: 0;
+  }
+  .ap-drop .show-drop-list li {
+    width: 134rem;
+    padding-top: 0;
+    box-sizing: border-box;
+
+    font-size: 24rem;
+    line-height: 35rem;
+
+    color: #222222;
+  }
+  .a-profile-input__number {
+    width: 445rem !important;
+  }
+  .ap-edit-bank .ap-drop .drop-container {
+    width: 102rem;
+  }
+  .ap-edit-bank .ap-drop .drop-select {
+    width: 102rem;
+  }
+  .ap-edit-bank .ap-drop .show-drop-list li {
+    width: 155rem;
+  }
+  .a-profile-input__bank {
+    width: 206rem !important;
+  }
+  .ap-edit-drop .drop-container {
+    z-index: unset;
+  }
+  .ap-edit-drop .drop-select {
+    width: 312rem;
+    height: 40rem;
+    box-sizing: border-box;
+    font-size: 14rem;
+    line-height: 19rem;
+    border: 1rem solid #f2f2f2;
+  }
+  .ap-edit-drop .show-drop-list li {
+    display: none;
+  }
+
+  .cant-edit .drop-select::after {
+    content: none;
+  }
+  .cant-edit .ap-edit-content {
+    border: none;
+  }
+  .cant-edit .ap-edit-content {
+    border: none;
+  }
+  .ap-profile-edit--button {
+    width: 360rem;
+    margin: 0 auto;
+    padding: 0 20rem;
+    padding-top: 0rem;
+    padding-bottom: 25rem;
+    box-sizing: border-box;
+  }
+  .ap-mobile-edit--button {
+    display: flex;
+    flex-direction: row;
+  }
+  .ap-mobile-edit--button button {
+    width: 155rem;
+    height: 48rem;
+
+    background: none;
+    box-sizing: border-box;
+    border: 1rem solid #000000;
+    color: #222222;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16rem;
+    line-height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ap-mobile-edit--button button:last-child {
+    background: #000000;
+    color: #ffffff;
+    margin-left: 9rem;
+  }
+  .ap-profile-edit--button > button {
+    display: none;
+  }
+  .artist-profile-exhibition .ap-edit-header,
+  .artist-profile-school .ap-edit-header {
+    padding-top: 0;
+    height: 51rem;
+    align-items: center;
+  }
+  .artist-profile-exhibition .ap-edit-header .ap-edit-header-mb {
+    padding: 0 20rem;
+  }
+  .ap-exhibition-list {
+    width: 360rem;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding: 0 22rem;
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+  }
+  .ap-exhibition-list .ap-list,
+  .ap-exhibition-list .ap-list--header {
+    display: none;
+  }
+  .ap-exhibition-list li:first-child,
+  .ap-list--header {
+    display: none;
+  }
+  .ap-list-mb {
+    display: block;
+
+    width: 316rem;
+    /* height: 104rem; */
+
+    background: #ffffff;
+    /* Gray 5 */
+
+    border: 0.456091rem solid #e0e0e0;
+    margin-bottom: 8rem;
+    box-sizing: border-box;
+    padding: 12rem;
+  }
+  .ap-list-mb:last-child {
+    margin-bottom: 0;
+  }
+  .ap-list-mb-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 7rem;
+  }
+  .ap-list-mb-content:last-child {
+    margin-bottom: 0;
+  }
+  .ap-list-mb-content span {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 14rem;
+    color: #222222;
+  }
+  .ap-list-title {
+    display: block;
+    width: 49rem;
+    color: #828282 !important;
+  }
+
+  .artist-profile-school .ap-exhibition-list li span:nth-child(4) {
+    width: 94rem;
+  }
+  .artist-profile-school .ap-exhibition-list li span:nth-child(5) {
+    width: 94rem;
+  }
+  .ap-list-mb-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .ap-list-mb-button button {
+    width: 54rem;
+    height: 24rem;
+    background: none;
+    border: 0.456091rem solid #222222;
+    border-radius: 0.912181rem;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10rem;
+    line-height: 14rem;
+
+    color: #222222;
+
+    margin-right: 5rem;
+  }
+  .ap-list-mb-button button:last-child {
+    background: #222222;
+    color: #ffffff;
+    border: none;
+    margin-right: 0;
+  }
+  .ap-liat--button {
+    display: flex;
+    flex-direction: row;
+    width: 192rem;
+  }
+  .ap-liat--button button {
+    width: 91rem;
+    height: 48rem;
+    border: none;
+    border: 1rem solid #000000;
+    background: none;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16rem;
+    line-height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #222222;
+
+    margin-right: 10rem;
+  }
+  .ap-liat--button button:last-child {
+    border: none;
+    background: #222222;
+    margin-right: 0;
+    color: #ffffff;
+  }
+
+  .mypage-artist-profile .search {
+    display: none;
+  }
+  .mypage-artist-profile .header-small {
+    display: none;
+  }
+  .mypage-artist-profile .ap-edit-content {
+    padding-top: 0;
+  }
+  .mypage-artist-profile .ap-edit-content h2 {
+    color: #4f4f4f;
+  }
+  .mypage-artist-profile .section-header {
+    background: #fbfbfb;
+  }
+  .mypage-artist-profile .section-header h3 {
+    height: 51rem;
+
+    font-size: 16rem;
+    line-height: 19rem;
+
+    color: #222222;
+  }
+  .artist-profile .file-container {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: 312rem;
+    height: 40rem;
+  }
+  .cant-edit .file-button {
+    display: none;
+  }
+  .cant-edit .file-input {
+    width: 312rem;
+    height: 40rem;
+    display: block;
+  }
 }

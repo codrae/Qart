@@ -67,8 +67,10 @@ function ArtistProfile() {
         >
           {edit ? (
             <div className="ap-edit-header">
-              <h1>프로필 관리</h1>
-              <button onClick={() => setEdit(false)}>수정하기</button>
+              <div className="ap-edit-header-mb">
+                <h1>프로필 관리</h1>
+                <button onClick={() => setEdit(false)}>수정하기</button>
+              </div>
             </div>
           ) : (
             <></>
@@ -82,74 +84,78 @@ function ArtistProfile() {
               {edit ? <></> : <button className="edit-photo"></button>}
             </div>
             <ul className="ap-edit-basic">
-              <li>
-                <h2>이름 (Name)</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="홍길동"
-                  disabled={edit}
-                ></input>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="Hong Gildong"
-                  disabled={edit}
-                ></input>
-              </li>
-              <li>
-                <h2>활동명 / 단체명 (Artist / Collective Name)</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="홍길동 그룹"
-                  disabled={edit}
-                ></input>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="Hong Gildong group"
-                  disabled={edit}
-                ></input>
-              </li>
-              <li className="ap-edit-drop">
-                <h2>작가정보 노출 (Please set your name to use for Qart)</h2>
-                <DropDown disabled={edit} options={infoList} />
-              </li>
-            </ul>
-            <ul className="ap-edit-personal">
-              <li>
-                <h2>국적 (Nationality)</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="Korea, Republic of"
-                  disabled={edit}
-                ></input>
-              </li>
-              <li>
-                <h2>생년월일 (Birth Date)</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="YYYY.MM.DD"
-                  disabled={edit}
-                ></input>
-              </li>
-              <li>
-                <h2>핸드폰 번호 (Contact Number)</h2>
-                <div className="ap-drop">
-                  <DropDown disabled={edit} options={phonelist} />
+              <div className="ap-edit-content-mb">
+                <li>
+                  <h2>이름 (Name)</h2>
                   <input
                     type="text"
-                    className="a-profile-input__number"
-                    placeholder="01000000000"
+                    className="a-profile-input"
+                    placeholder="홍길동"
                     disabled={edit}
                   ></input>
-                </div>
-              </li>
+                  <input
+                    type="text"
+                    className="a-profile-input"
+                    placeholder="Hong Gildong"
+                    disabled={edit}
+                  ></input>
+                </li>
+                <li>
+                  <h2>활동명 / 단체명 (Artist / Collective Name)</h2>
+                  <input
+                    type="text"
+                    className="a-profile-input"
+                    placeholder="홍길동 그룹"
+                    disabled={edit}
+                  ></input>
+                  <input
+                    type="text"
+                    className="a-profile-input"
+                    placeholder="Hong Gildong group"
+                    disabled={edit}
+                  ></input>
+                </li>
+                <li className="ap-edit-drop">
+                  <h2>작가정보 노출 (Please set your name to use for Qart)</h2>
+                  <DropDown disabled={edit} options={infoList} />
+                </li>
+              </div>
             </ul>
             <ul className="ap-edit-personal">
+              <div className="ap-edit-content-mb">
+                <li>
+                  <h2>국적 (Nationality)</h2>
+                  <input
+                    type="text"
+                    className="a-profile-input"
+                    placeholder="Korea, Republic of"
+                    disabled={edit}
+                  ></input>
+                </li>
+                <li>
+                  <h2>생년월일 (Birth Date)</h2>
+                  <input
+                    type="text"
+                    className="a-profile-input"
+                    placeholder="YYYY.MM.DD"
+                    disabled={edit}
+                  ></input>
+                </li>
+                <li>
+                  <h2>핸드폰 번호 (Contact Number)</h2>
+                  <div className="ap-drop">
+                    <DropDown disabled={edit} options={phonelist} />
+                    <input
+                      type="text"
+                      className="a-profile-input__number"
+                      placeholder="01000000000"
+                      disabled={edit}
+                    ></input>
+                  </div>
+                </li>
+              </div>
+            </ul>
+            <ul className="ap-edit-personal ap-edit-auth">
               <li>
                 <h2>KYC 인증 여부</h2>
                 <input
@@ -183,35 +189,50 @@ function ArtistProfile() {
               </li>
             </ul>
             <ul className="ap-edit-bank">
-              <li>
-                <h2>계좌번호</h2>
-                <div className="ap-drop">
-                  <DropDown disabled={edit} options={banklist} />
+              <div className="ap-edit-content-mb">
+                <li>
+                  <h2>계좌번호</h2>
+                  <div className="ap-drop">
+                    <DropDown disabled={edit} options={banklist} />
+                    <input
+                      type="text"
+                      className="a-profile-input__bank"
+                      placeholder="미등록"
+                      disabled={edit}
+                    ></input>
+                  </div>
+                </li>
+                <li>
+                  <h2>소유주</h2>
                   <input
                     type="text"
-                    className="a-profile-input__bank"
+                    className="a-profile-input"
                     placeholder="미등록"
                     disabled={edit}
                   ></input>
-                </div>
-              </li>
-              <li>
-                <h2>소유주</h2>
-                <input
-                  type="text"
-                  className="a-profile-input"
-                  placeholder="미등록"
-                  disabled={edit}
-                ></input>
-              </li>
-              <li>
-                <h2>통장사본</h2>
-                {edit ? (
-                  <button>업로드 완료</button>
-                ) : (
-                  <button>파일 업로드</button>
-                )}
-              </li>
+                </li>
+                <li>
+                  <h2>통장사본</h2>
+                  {edit ? (
+                    <div className="file-container">
+                      <button className="file-button">업로드 완료</button>
+                      <input
+                        className="file-input a-profile-input"
+                        disabled
+                        placeholder="업로드 완료"
+                      ></input>
+                    </div>
+                  ) : (
+                    <div className="file-container">
+                      <button className="file-button">파일 업로드</button>
+                      <input
+                        className="file-input a-profile-input"
+                        disabled
+                      ></input>
+                    </div>
+                  )}
+                </li>
+              </div>
             </ul>
             <ul className="ap-edit-intro">
               <li>
@@ -225,6 +246,10 @@ function ArtistProfile() {
           ) : (
             <section className="ap-profile-edit--button">
               <button onClick={showCheckModal}>수정하기</button>
+              <div className="ap-mobile-edit--button">
+                <button>취소</button>
+                <button onClick={showCheckModal}>저장</button>
+              </div>
               {checkOpen && (
                 <ModalPortal>
                   <CheckModal
@@ -244,10 +269,12 @@ function ArtistProfile() {
             <section className="artist-profile-exhibition">
               <div className="container artist-profile-exhibition-container">
                 <div className="ap-edit-header">
-                  <h1>Exhibition History</h1>
-                  <Link to={'./exhibition'}>
-                    <button>전시 추가</button>
-                  </Link>
+                  <div className="ap-edit-header-mb">
+                    <h1>Exhibition History</h1>
+                    <Link to={'./exhibition'}>
+                      <button>전시 추가</button>
+                    </Link>
+                  </div>
                 </div>
                 <ul className="ap-exhibition-list">
                   <li className="ap-list--header">
@@ -257,33 +284,113 @@ function ArtistProfile() {
                     <span>Country</span>
                     <span>Date</span>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>1</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
                     <span>Change Date</span>
                     <span>Address</span>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>2</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
                     <span>Change Date</span>
                     <span>Address</span>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>3</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
                     <span>Change Date</span>
                     <span>Address</span>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>4</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
                     <span>Change Date</span>
                     <span>Address</span>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Exname</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Place</span>
+                      <span>
+                        서울특별시 서울시 송파구 송파대로 570 101동 101호
+                      </span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Country</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Date</span>
+                      <span>0000-00-00</span>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Exname</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Place</span>
+                      <span>
+                        서울특별시 서울시 송파구 송파대로 570 101동 101호
+                      </span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Country</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Date</span>
+                      <span>0000-00-00</span>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Exname</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Place</span>
+                      <span>
+                        서울특별시 서울시 송파구 송파대로 570 101동 101호
+                      </span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Country</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Date</span>
+                      <span>0000-00-00</span>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Exname</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Place</span>
+                      <span>
+                        서울특별시 서울시 송파구 송파대로 570 101동 101호
+                      </span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Country</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">Date</span>
+                      <span>0000-00-00</span>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -291,10 +398,12 @@ function ArtistProfile() {
             <section className="artist-profile-school">
               <div className="container artist-profile-school-container">
                 <div className="ap-edit-header">
-                  <h1>학력정보</h1>
-                  <Link to={'./school'}>
-                    <button>학력 추가</button>
-                  </Link>
+                  <div className="ap-edit-header-mb">
+                    <h1>학력정보</h1>
+                    <Link to={'./school'}>
+                      <button>학력 추가</button>
+                    </Link>
+                  </div>
                 </div>
                 <ul className="ap-exhibition-list">
                   <li className="ap-list--header">
@@ -306,7 +415,7 @@ function ArtistProfile() {
                     <span>학위종류</span>
                     <div className="ap-liat--button"></div>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>1</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
@@ -318,7 +427,7 @@ function ArtistProfile() {
                       <button>편집</button>
                     </div>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>2</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
@@ -330,7 +439,7 @@ function ArtistProfile() {
                       <button>편집</button>
                     </div>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>3</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
@@ -342,7 +451,7 @@ function ArtistProfile() {
                       <button>편집</button>
                     </div>
                   </li>
-                  <li>
+                  <li className="ap-list">
                     <span>4</span>
                     <span>Company name</span>
                     <span>Representive Name</span>
@@ -350,6 +459,111 @@ function ArtistProfile() {
                     <span>00.00.00</span>
                     <span>Address</span>
                     <div className="ap-liat--button">
+                      <button>삭제</button>
+                      <button>편집</button>
+                    </div>
+                  </li>
+
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">기관명</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">국가</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">입학</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">졸업</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">학위종류</span>
+                      <span>석사</span>
+                    </div>
+                    <div className="ap-list-mb-button">
+                      <button>삭제</button>
+                      <button>편집</button>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">기관명</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">국가</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">입학</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">졸업</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">학위종류</span>
+                      <span>석사</span>
+                    </div>
+                    <div className="ap-list-mb-button">
+                      <button>삭제</button>
+                      <button>편집</button>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">기관명</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">국가</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">입학</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">졸업</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">학위종류</span>
+                      <span>석사</span>
+                    </div>
+                    <div className="ap-list-mb-button">
+                      <button>삭제</button>
+                      <button>편집</button>
+                    </div>
+                  </li>
+                  <li className="ap-list-mb">
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">기관명</span>
+                      <span>Company name</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">국가</span>
+                      <span>Korea</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">입학</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">졸업</span>
+                      <span>0000-00-00</span>
+                    </div>
+                    <div className="ap-list-mb-content">
+                      <span className="ap-list-title">학위종류</span>
+                      <span>석사</span>
+                    </div>
+                    <div className="ap-list-mb-button">
                       <button>삭제</button>
                       <button>편집</button>
                     </div>

@@ -214,6 +214,16 @@
     border-top: 1rem solid #f2f2f2;
     border-bottom: 1rem solid #f2f2f2;
   }
+
+  .art-md .work-header-d .work-header-info__container {
+    padding: 0 20rem;
+  }
+  .art-md .work-header-d .work-header__info {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   .art-md--header-container {
     padding: 0 20rem;
   }

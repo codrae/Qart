@@ -4,7 +4,6 @@ import './ArtDbArtist.css'
 import BigTopArrow from '../../../components/TopArrowSlider/BigTopArrow/BigTopArrow'
 import SearchSlide from '../../../components/SearchSlide/SearchSlide'
 import GalleryInfo from '../../../components/GalleryInfo/GalleryInfo'
-import TopArrowSlider from '../../../components/TopArrowSlider/TopArrowSlider'
 function ArtDbArtist() {
   const bannerList = [
     {

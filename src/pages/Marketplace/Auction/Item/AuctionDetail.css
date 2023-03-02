@@ -158,42 +158,46 @@
 }
 @media (max-width: 480px) {
   .autcion-detail .market-art {
-    padding: 0 20rem;
-    padding-top: 51rem;
-    padding-bottom: 80rem;
+    padding: 19rem 20rem;
+    padding-bottom: 24rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
   .autcion-detail .market-image__image {
-    width: 608rem;
-    height: 551rem;
+    width: 312rem;
+    height: 343rem;
 
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     border: 1rem solid #e0e0e0;
     object-fit: contain;
   }
   .autcion-detail .market-image__list {
-    padding-top: 20rem;
+    padding-top: 12rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .autcion-detail .market-image__item {
-    width: 185rem;
-    height: 195rem;
+    width: 71rem;
+    height: 78rem;
     object-fit: contain;
     box-sizing: border-box;
 
     border: 1rem solid #e0e0e0;
   }
   .autcion-detail .market-art-info {
-    width: 651rem;
-    height: 766rem;
+    width: 312rem;
+    height: 371rem;
 
-    background: #fbfbfb;
+    background: none;
     box-sizing: border-box;
-    padding: 22rem 32rem 32rem 34rem;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
   }
   .aution-detail-title {
     box-sizing: border-box;

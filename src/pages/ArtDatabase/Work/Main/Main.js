@@ -116,20 +116,6 @@ function Main() {
       link: '/artdb/work',
     })
   }
-  // const topicList = [
-  //   {
-  //     id: 1,
-  //     info: 'qart_test/고미술/작가미상, 나전칠연상, 높이 26.7cm, 너비 24.4cm, 길이 36.7cm, 조선시대.jpg',
-  //   },
-  //   {
-  //     id: 2,
-  //     info: 'qart_test/고미술/작가미상, 백자 달항아리, 높이 46cm, 입지름 20.3cm, 조선시대.jpg',
-  //   },
-  //   {
-  //     id: 3,
-  //     info: 'qart_test/고미술/작가미상, 석조나한좌상, 22.2x13.4cm(대좌높이 5.4cm, 머리높이 8.8cm), 19세기.jpg',
-  //   },
-  // ]
   const options01 = ['연도순', '작품명']
   const options02 = ['연도순', '작품명', '작가명']
   return (
@@ -144,6 +130,8 @@ function Main() {
         title_k={'고미술(000)'}
         items={bannerList1}
         represent={3}
+        breakRows={4}
+        breakSlidersPerRow={2}
         moreList={detailList}
         moreActive={false}
         options={options01}
@@ -154,6 +142,8 @@ function Main() {
         items={bannerList2}
         represent={3}
         moreList={detailList2}
+        breakRows={4}
+        breakSlidersPerRow={2}
         moreActive={false}
         options={options02}
       />
@@ -164,6 +154,8 @@ function Main() {
           moreList={moreList}
           moreActive={true}
           items={pageItem}
+          breakRows={4}
+          breakSlidersPerRow={2}
           represent={6}
           options={options02}
         />

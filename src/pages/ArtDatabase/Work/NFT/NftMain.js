@@ -60,7 +60,13 @@ function NftMain() {
   const options = ['최신등록순', '인기순', '작가명순', '작품명순']
   return (
     <section className="nft-main">
-      <ArtDetail title_k="NFT(000)" items={itemList} options={options} />
+      <ArtDetail
+        title_k="NFT(000)"
+        items={itemList}
+        options={options}
+        breakRows={4}
+        breakSlidersPerRow={2}
+      />
     </section>
   )
 }

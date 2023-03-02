@@ -93,24 +93,26 @@ function ArtistExhibition() {
           </li>
           <li>
             <h2>개최일시</h2>
-            <input
-              type="date"
-              id="date"
-              className="date-input"
-              data-placeholder="YYYY.MM.DD"
-              // value={toStringByFormatting(new Date())}
-              required
-            ></input>
-            <span className="date-bar">-</span>
-            <input
-              type="date"
-              id="date"
-              className="date-input"
-              data-placeholder="YYYY.MM.DD"
-              pattern="(?:19|20)\[0-9\]{2}.(?:(?:0\[1-9\]|1\[0-2\]).(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
-              // value={toStringByFormatting(new Date())}
-              required
-            ></input>
+            <div className="mb-date-container">
+              <input
+                type="date"
+                id="date"
+                className="date-input"
+                data-placeholder="YYYY.MM.DD"
+                // value={toStringByFormatting(new Date())}
+                required
+              ></input>
+              <span className="date-bar">-</span>
+              <input
+                type="date"
+                id="date"
+                className="date-input"
+                data-placeholder="YYYY.MM.DD"
+                pattern="(?:19|20)\[0-9\]{2}.(?:(?:0\[1-9\]|1\[0-2\]).(?:0\[1-9\]|1\[0-9\]|2\[0-9\])|(?:(?!02)(?:0\[1-9\]|1\[0-2\])-(?:30))|(?:(?:0\[13578\]|1\[02\])-31))"
+                // value={toStringByFormatting(new Date())}
+                required
+              ></input>
+            </div>
           </li>
           <li>
             <h2>주관/기획자</h2>

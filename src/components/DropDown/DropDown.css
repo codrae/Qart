@@ -90,11 +90,12 @@
     width: 72rem;
   }
   .show-drop-list {
-    display: block;
+    display: none;
+    /* display: block;
     position: absolute;
     border: 1rem solid #e0e0e0;
     z-index: 222;
-    margin-top: 8rem;
+    margin-top: 8rem; */
   }
   .show-drop-list li {
     border: none;

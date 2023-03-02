@@ -37,6 +37,29 @@ function TopArrowSlider(props) {
     })
   }
 
+  const mobile_items = item => {
+    let arr = []
+    for (var i = 0; i < 4; i++) {
+      arr.push(
+        props.divItem ? (
+          item[i]
+        ) : (
+          <div className="top-arrow-ㅡitem">
+            <img
+              className="top-arrow-image"
+              src={require('../../' + item[i].info)}
+            />
+
+            <h4 className="top-arrow-author">{item[i].author}</h4>
+            <span className="top-arrow-title">{item[i].title}</span>
+            <span className="top-arrow-price">{item[i].price}</span>
+          </div>
+        )
+      )
+    }
+    return arr
+  }
+
   return (
     <section className="top-arrow">
       <SectionHeader title={props.title}></SectionHeader>
@@ -44,6 +67,10 @@ function TopArrowSlider(props) {
         <Slider {...settings} className="top-arrow-slider">
           {slider_items(props.item)}
         </Slider>
+      </div>
+      <div className="top-arrow-mb-contianer">
+        <ul className="ta-mb-content">{mobile_items(props.item)}</ul>
+        <button className="ta-mb-more">더보기</button>
       </div>
     </section>
   )

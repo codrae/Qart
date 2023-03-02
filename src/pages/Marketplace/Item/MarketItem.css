@@ -382,6 +382,9 @@
   .market-detail {
     min-width: 360rem;
   }
+  .market-detail .container {
+    width: 360rem;
+  }
   .market-detail > .work-header {
     background: #fbfbfb;
     height: 51rem;

@@ -20,3 +20,27 @@
   /* font-size: 16rem;
   line-height: 23rem; */
 }
+@media (max-width: 480px) {
+  .artist-school {
+    height: 100%;
+    min-height: inherit;
+  }
+  .artist-school .section-header {
+    background: #fbfbfb;
+  }
+  .artist-school .section-header h3 {
+    height: 51rem;
+    font-size: 16rem;
+    line-height: 19rem;
+  }
+  .artist-school .a-ex-edit-info {
+    padding-top: 0;
+  }
+  .artist-school .date-input {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    /* font-size: 16rem;
+    line-height: 23rem; */
+  }
+}

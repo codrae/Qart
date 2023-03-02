@@ -5,3 +5,12 @@
 .mypage-general .th-title-select h1 {
   padding-top: 59rem;
 }
+@media (max-width: 480px) {
+  .mypage-general {
+    height: 100%;
+  }
+
+  .mypage-general .th-title-select h1 {
+    padding-top: 0;
+  }
+}

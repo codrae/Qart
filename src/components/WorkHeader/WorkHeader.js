@@ -17,36 +17,40 @@ const WorkHeader = props => {
     >
       <div className="container">
         <div className="work-header__container">
-          <section
-            className={
-              props.title_e ? 'work-header__info' : 'work-header__info-big'
-            }
-          >
-            {props.title_e ? <h4>{props.title_e}</h4> : <></>}
-            <h2>{props.title_k}</h2>
-          </section>
-          <p className="work-header__move">
-            {props.follow ? (
-              <button className="work-header__follow">팔로우</button>
-            ) : props.move ? (
-              <Link
-                to="./detail"
-                state={{
-                  title_e: props.title_e,
-                  title_k: props.title_k,
-                  items: props.items,
-                  moreList: props.moreList,
-                  moreActive: props.moreActive,
-                  options: props.options,
-                }}
-              >
-                <span>더보기</span>
-                <button className="work-header__move-icon"></button>
-              </Link>
-            ) : (
-              <></>
-            )}
-          </p>
+          <div className="work-header-info__container">
+            <section
+              className={
+                props.title_e ? 'work-header__info' : 'work-header__info-big'
+              }
+            >
+              {props.title_e ? <h4>{props.title_e}</h4> : <></>}
+              <h2>{props.title_k}</h2>
+            </section>
+            <p className="work-header__move">
+              {props.follow ? (
+                <button className="work-header__follow">팔로우</button>
+              ) : props.move ? (
+                <Link
+                  to="./detail"
+                  state={{
+                    title_e: props.title_e,
+                    title_k: props.title_k,
+                    items: props.items,
+                    moreList: props.moreList,
+                    moreActive: props.moreActive,
+                    options: props.options,
+                    breakRows: props.breakRows,
+                    breakSlidersPerRow: props.breakSlidersPerRow,
+                  }}
+                >
+                  <span>더보기</span>
+                  <button className="work-header__move-icon"></button>
+                </Link>
+              ) : (
+                <></>
+              )}
+            </p>
+          </div>
         </div>
         {props.moreList && props.moreActive ? (
           <ul className="work-header__detail">

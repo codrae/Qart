@@ -225,4 +225,8 @@ header.black {
 
     margin-right: 16rem;
   }
+
+  .header-logined {
+    display: none;
+  }
 }

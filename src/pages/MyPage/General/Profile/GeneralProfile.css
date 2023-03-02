@@ -138,3 +138,145 @@
 
   color: #222222;
 }
+@media (max-width: 480px) {
+  .general-profile {
+    min-height: calc(100% - 101rem - 322rem); /* header,footer 빼고 */
+    min-width: 360rem;
+  }
+  .g-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 360rem;
+    border: none;
+    padding: 0 24rem;
+    box-sizing: border-box;
+  }
+  .g-profile-container .ap-edit-header {
+    display: none;
+  }
+  .g-profile-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .g-profile-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 596rem;
+    padding-top: 57rem;
+  }
+  .g-profile-list li h2 {
+    display: block;
+    /* width: 596rem; */
+    text-align: left;
+
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20rem;
+    line-height: 29rem;
+
+    color: #828282;
+
+    padding-bottom: 19rem;
+  }
+  .g-profile-list li.has-2-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .g-profile-list li.has-2-input h2 {
+    width: 100%;
+  }
+
+  .g-profile-input {
+    width: 596rem;
+    height: 72rem;
+
+    background: #ffffff;
+    border: 1rem solid #e0e0e0;
+
+    outline: none;
+    box-sizing: border-box;
+
+    font-weight: 500;
+    font-size: 24rem;
+    line-height: 35rem;
+
+    padding-left: 24rem;
+  }
+
+  .g-profile-list .edit-photo {
+    width: 24rem;
+    height: 24rem;
+    background: url('../../../../assets/img_delete.png') no-repeat center;
+    background-size: contain;
+    top: 40rem;
+    left: 368rem;
+  }
+  .g-profile-password {
+    display: flex;
+    flex-direction: row;
+  }
+  .g-profile-password input {
+    width: calc(596rem - 72rem);
+    border-right: hidden;
+  }
+  .g-profile-password .password__icon {
+    width: 72rem;
+    height: 72rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-left: none;
+  }
+  .g-profile-button button {
+    width: 482rem;
+    height: 90rem;
+    background: #000000;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24rem;
+    line-height: 35rem;
+
+    color: #ffffff;
+
+    margin-top: 50rem;
+    margin-bottom: 106rem;
+    border: none;
+  }
+  .general-profile .ap-edit-content {
+    padding-bottom: 78rem;
+  }
+  .general-profile .ap-edit-content .ap-edit-image {
+    display: none;
+  }
+  .mypage-general-profile .search {
+    display: none;
+  }
+  .mypage-general-profile .header-small {
+    display: none;
+  }
+  .mypage-general-profile .ap-edit-content {
+    padding-top: 56rem;
+  }
+  .mypage-general-profile .section-header {
+    background: #fbfbfb;
+  }
+  .mypage-general-profile .section-header h3 {
+    height: 100rem;
+
+    font-size: 32rem;
+    line-height: 46rem;
+
+    color: #222222;
+  }
+}
