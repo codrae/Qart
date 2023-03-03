@@ -427,7 +427,7 @@
   font-weight: 700 !important;
 }
 .ap-list-mb {
-  display: none;
+  display: none !important;
 }
 
 .ap-exhibition-list .ap-list:last-child {
@@ -547,7 +547,7 @@
     box-sizing: border-box;
   }
   .artist-profile-school-container {
-    width: 1378rem;
+    width: 360rem;
     border-left: 1rem solid #e0e0e0;
     border-right: 1rem solid #e0e0e0;
     box-sizing: border-box;
@@ -951,7 +951,7 @@
     display: none;
   }
   .ap-list-mb {
-    display: block;
+    display: block !important;
 
     width: 316rem;
     /* height: 104rem; */
@@ -982,6 +982,7 @@
     font-size: 10rem;
     line-height: 14rem;
     color: #222222;
+    text-align: left;
   }
   .ap-list-title {
     display: block;

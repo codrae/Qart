@@ -24,6 +24,14 @@
   background: #fbfbfb;
 }
 @media (max-width: 480px) {
+  .artbase .section-header {
+    height: 51rem;
+  }
+  .artbase .section-header-container h3 {
+    border: none;
+    font-size: 20rem;
+    line-height: 27rem;
+  }
   .artbase__item {
     min-width: 360rem;
     height: 180rem;

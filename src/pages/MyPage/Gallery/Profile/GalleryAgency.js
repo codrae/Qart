@@ -17,6 +17,11 @@ function GalleryAgency() {
   return (
     <div className="gallery-agency">
       <Header login={true} colored="black" />
+      <nav className="search">
+        <div className="container search__container">
+          <h2 className="search__title">마이페이지</h2>
+        </div>
+      </nav>
       <SectionHeader title={'Agency History'} />
       <div className="gallery-agency-content">
         <div className="container">

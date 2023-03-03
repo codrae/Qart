@@ -43,6 +43,11 @@ function GalleryExhibition() {
   return (
     <div className="gallery-exhibition">
       <Header login={true} colored="black" />
+      <nav className="search">
+        <div className="container search__container">
+          <h2 className="search__title">마이페이지</h2>
+        </div>
+      </nav>
       <SectionHeader title={'Exhibition History'} />
       <div className="gp-edit-image">
         <div className="container">

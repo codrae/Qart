@@ -59,6 +59,17 @@ const New = () => {
             </div>
           </div>
           <div className="left-border"></div>
+
+          <div className="new-mb-container">
+            <img
+              src={require('../../../' +
+                'qart_test/판화/민정기, 묵안리, 2015.jpg')}
+            ></img>
+            <img
+              src={require('../../../' +
+                'qart_test/판화/민정기, 묵안리, 2015.jpg')}
+            ></img>
+          </div>
         </div>
       </section>
     </div>

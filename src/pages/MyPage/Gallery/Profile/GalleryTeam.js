@@ -17,6 +17,11 @@ function GalleryTeam() {
   return (
     <div className="gallery-team">
       <Header login={true} colored="black" />
+      <nav className="search">
+        <div className="container search__container">
+          <h2 className="search__title">마이페이지</h2>
+        </div>
+      </nav>
       <SectionHeader title={'팀원 추가'} />
       <div className="gallery-team-content">
         <div className="container">

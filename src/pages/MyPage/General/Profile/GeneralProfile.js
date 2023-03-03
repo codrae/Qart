@@ -65,8 +65,10 @@ function GeneralProfile() {
         >
           {edit ? (
             <div className="ap-edit-header">
-              <h1>프로필 관리</h1>
-              <button onClick={() => setEdit(false)}>수정하기</button>
+              <div className="ap-edit-header-mb">
+                <h1>프로필 관리</h1>
+                <button onClick={() => setEdit(false)}>수정하기</button>
+              </div>
             </div>
           ) : (
             <></>

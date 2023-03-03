@@ -15,6 +15,9 @@
 .gallery-team .header-small-list a.active {
   color: #222222;
 }
+.gallery-team-content {
+  min-width: 1920rem;
+}
 .gallery-team-content .container {
   width: 1378rem;
 
@@ -64,4 +67,104 @@
 }
 .gallery-team-content .a-ex-edit--button {
   padding-bottom: 111rem;
+}
+@media (max-width: 480px) {
+  .gallery-team {
+    height: 100%;
+  }
+  .gallery-team .search {
+    display: block;
+    min-width: 360rem;
+    height: 51rem;
+  }
+  .gallery-team .search__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: none;
+    width: 360rem;
+    padding: 0 20rem;
+  }
+  .gallery-team .search__container > h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16rem;
+    line-height: 19rem;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  .gallery-team .section-header {
+    background: #fbfbfb;
+  }
+  .gallery-team .section-header h3 {
+    height: 51rem;
+
+    font-size: 16rem;
+    line-height: 19rem;
+
+    color: #222222;
+  }
+  .gallery-team .header-small-list a.active {
+    color: #222222;
+  }
+  .gallery-team-content {
+    min-width: 360rem;
+  }
+  .gallery-team-content .container {
+    width: 360rem;
+    padding: 0 20rem;
+    box-sizing: border-box;
+    border: none;
+  }
+  .gallery-team-content {
+    border-bottom: none;
+    min-height: calc(100% - 347rem - 322rem);
+  }
+  .gallery-team-content ul {
+    padding: 0;
+  }
+  .gallery-team-content li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20rem;
+    padding-bottom: 0;
+  }
+  .gallery-team-content li:nth-child(1) {
+    order: 0;
+  }
+  .gallery-team-content li:nth-child(2) {
+    order: 3;
+  }
+  .gallery-team-content li:nth-child(3) {
+    order: 1;
+  }
+  .gallery-team-content li:nth-child(4) {
+    order: 3;
+  }
+  .gallery-team-content li h2 {
+    width: inherit;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12rem;
+    line-height: 16rem;
+    margin-bottom: 12rem;
+  }
+  .gallery-team-content li input {
+    box-sizing: border-box;
+
+    width: 312rem;
+    height: 40rem;
+
+    background: #ffffff;
+    border: 1rem solid #bdbdbd;
+    padding-left: 12rem;
+  }
+  .gallery-team-content .a-ex-edit--button {
+    padding-bottom: 24rem;
+  }
 }
