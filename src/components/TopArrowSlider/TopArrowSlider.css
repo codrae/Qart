@@ -213,6 +213,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 19rem;
+
+    color: #222222;
   }
   .ta-mb-more::after {
     display: inline-block;

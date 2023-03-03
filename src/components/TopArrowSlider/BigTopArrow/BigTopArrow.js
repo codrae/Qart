@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 import '../../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../../node_modules/slick-carousel/slick/slick-theme.css'
@@ -6,6 +6,8 @@ import './BigTopArrow.css'
 import WorkHeader from '../../WorkHeader/WorkHeader'
 import { Link } from 'react-router-dom'
 function BigTopArrow(props) {
+  const [rows, setRow] = useState(3)
+  const [slidersPerRow, setSlidersPerRow] = useState(1)
   const settings = {
     arrows: true,
     dots: false,
@@ -21,15 +23,38 @@ function BigTopArrow(props) {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: props.breakRows ? props.breakRows : 2,
+          slidesToShow: rows,
           //slidesToScroll: props.breakRows,
           // rows: props.breakRows,
-          slidesPerRow: props.breakSlidesPerRow ? props.breakSlidesPerRow : 1,
+          slidesPerRow: slidersPerRow,
           arrows: true,
         },
       },
     ],
   }
+  console.log('big!!!')
+  // 리사이즈 이벤트를 감지하여 가로 길이에 따라 모바일 여부 결정
+  const resizingHandler = () => {
+    if (window.innerWidth <= 480) {
+      setRow(props.breakRows ? props.breakRows : 2)
+      setSlidersPerRow(props.breakSlidesPerRow ? props.breakSlidesPerRow : 1)
+    } else {
+    }
+  }
+  // 우선 맨 처음 480이하면 모바일 처리
+
+  useEffect(() => {
+    if (window.innerWidth <= 480) {
+      setRow(props.breakRows ? props.breakRows : 2)
+      setSlidersPerRow(props.breakSlidesPerRow ? props.breakSlidesPerRow : 1)
+    }
+
+    window.addEventListener('resize', resizingHandler)
+    return () => {
+      // 메모리 누수를 줄이기 위한 removeEvent
+      window.removeEventListener('resize', resizingHandler)
+    }
+  }, [])
 
   const slider_items = items => {
     return items.map((item, i) => {

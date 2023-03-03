@@ -621,6 +621,17 @@
     padding: 0;
     padding-left: 12rem;
     margin-bottom: 0;
+    border-radius: 0;
+  }
+  .gp-edit-content li input {
+    border-radius: 0;
+  }
+  .gp-edit-content li input:disabled {
+    font-size: 14rem;
+    line-height: 19rem;
+    color: #222222;
+    opacity: 1;
+    -webkit-text-fill-color: inherit;
   }
   .gp-edit-basic li input::placeholder {
     font-family: 'Noto Sans KR';
@@ -703,10 +714,10 @@
     line-height: 14rem;
 
     padding: 12rem;
-    border: 0.456091rem solid #e0e0e0;
+    border: 1rem solid #e0e0e0;
   }
   .gp-exhibition-list li:last-child {
-    border: 0.456091rem solid #e0e0e0;
+    border: 1rem solid #e0e0e0;
   }
   .gp-exhibition-list .ap-list-mb-button {
     padding-top: 8rem;

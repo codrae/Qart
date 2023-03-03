@@ -439,6 +439,7 @@ input[type='date'] {
 
     box-sizing: border-box;
     padding-left: 12rem;
+    border-radius: 0;
   }
   .a-ex-edit-info input::placeholder {
     font-family: 'Noto Sans KR';
@@ -485,6 +486,7 @@ input[type='date'] {
     color: #222222;
 
     resize: none;
+    border-radius: 0;
   }
   .a-ex-edit-info textarea::placeholder {
     font-family: 'Noto Sans KR';

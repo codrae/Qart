@@ -519,7 +519,7 @@
     line-height: 19rem;
 
     color: #222222;
-
+    border-radius: 0;
     box-sizing: border-box;
     padding-left: 12rem;
   }
@@ -533,11 +533,10 @@
     color: #bdbdbd;
   }
   .ma-add-info .button-container {
-    width: 596rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-left: -4rem;
+    margin-left: 0;
   }
   .ma-add-info .drop-container {
     width: 312rem;
@@ -576,7 +575,7 @@
     line-height: 19rem;
 
     color: #222222;
-
+    border-radius: 0;
     resize: none;
     margin-bottom: 24rem;
   }

@@ -25,17 +25,17 @@
     top: 1056rem;
   }
   .mypage-general-list .table-slider .slick-prev {
-    left: 130rem;
+    left: 30%;
   }
   .mypage-general-list .table-slider .slick-next {
-    left: calc(130rem + 196rem);
+    left: calc(30% + 36%);
   }
 
   .mypage-general-list .table-slider .slick-first {
-    left: calc(130rem - 20rem);
+    left: calc(30% - 6%);
   }
   .mypage-general-list .table-slider .slick-last {
-    left: calc(130rem + 196rem + 20rem);
+    left: calc(30% + 36% + 6%);
   }
   .mypage-general-list .table-slider {
     height: calc(100% - 159rem - 322rem);

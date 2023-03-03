@@ -84,8 +84,7 @@ function SignUpKYC() {
           <h2 className="kyc-img-tlt">
             인증사진
             <span className="kyc-img-tlt--sub">
-              *오늘의 날짜가 적힌 메모와 <br></br>
-              <span className="white-space"></span>신분증을 들고 촬영한 사진
+              *오늘의 날짜가 적힌 메모와 신분증을 들고 촬영한 사진
             </span>
           </h2>
           <img

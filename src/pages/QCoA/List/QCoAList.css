@@ -333,17 +333,17 @@
   .qcoa-list .table-slider .slick-prev,
   .qcoa-list .table-slider .slick-next {
     top: 886rem;
-    left: 128rem;
+    left: 80rem;
   }
 
   .qcoa-list .table-slider .slick-next {
-    left: calc(128rem + 190rem);
+    left: calc(80rem + 190rem);
   }
   .qcoa-list .table-slider .slick-first {
-    left: calc(128rem - 20rem);
+    left: calc(80rem - 20rem);
   }
   .qcoa-list .table-slider .slick-last {
-    left: calc(128rem + 190rem + 20rem);
+    left: calc(80rem + 190rem + 20rem);
   }
   .qcoa-list .login-option {
     width: 100%;

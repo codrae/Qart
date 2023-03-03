@@ -6,6 +6,7 @@ import Header from '../../../../components/Header/Header'
 import HistoryInfo from '../../../../components/HistoryInfo/HistoryInfo'
 import AuctionModal from '../../../../components/Modal/AuctionModal'
 import ModalPortal from '../../../../components/Modal/ModalPortal'
+import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './AuctionDetail.css'
 
 function AuctionDetail() {
@@ -244,6 +245,8 @@ function AuctionDetail() {
             <h1>HAPPY NEW YEAR</h1>
           </div>
         </header>
+
+        <WorkHeader title_k={item.title}></WorkHeader>
         <div className="container">
           <div className="market-art">
             <section className="market-art-image">

@@ -373,17 +373,17 @@
   .mypage-archive .table-slider .slick-prev,
   .mypage-archive .table-slider .slick-next {
     top: 785rem;
-    left: 120rem;
+    left: 30%;
   }
 
   .mypage-archive .table-slider .slick-next {
-    left: calc(120rem + 180rem);
+    left: calc(30% + 36%);
   }
   .mypage-archive .table-slider .slick-first {
-    left: calc(120rem - 20rem);
+    left: calc(30% - 6%);
   }
   .mypage-archive .table-slider .slick-last {
-    left: calc(120rem + 180rem + 20rem);
+    left: calc(30% + 36% + 6%);
   }
   .mypage-archive .login-option {
     width: 100%;

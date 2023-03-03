@@ -86,7 +86,7 @@
     object-fit: contain;
 
     box-sizing: border-box;
-    border: 0.379762rem solid #f2f2f2;
+    border: 1rem solid #f2f2f2;
   }
   .search-item-info {
     font-family: 'Roboto';

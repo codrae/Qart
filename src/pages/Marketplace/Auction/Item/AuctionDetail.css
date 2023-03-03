@@ -6,6 +6,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.autcion-detail .work-header {
+  display: none;
+}
 .autcion-detail .market-image__image {
   width: 608rem;
   height: 551rem;
@@ -164,6 +167,9 @@
     flex-direction: column;
     justify-content: space-between;
   }
+  .autcion-detail .work-header {
+    display: block;
+  }
   .autcion-detail .market-image__image {
     width: 312rem;
     height: 343rem;
@@ -176,6 +182,7 @@
   }
   .autcion-detail .market-image__list {
     padding-top: 12rem;
+    margin-bottom: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -200,67 +207,49 @@
     flex-direction: column;
   }
   .aution-detail-title {
-    box-sizing: border-box;
-    padding-top: 0 !important;
-    padding-bottom: 16rem !important;
-    border-bottom: 1rem solid #bdbdbd;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: none !important;
   }
 
-  .aution-detail-title > h1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32rem;
-    line-height: 38rem;
-
-    color: #222222;
-  }
-  .aution-detail-title .market-item--heart {
-    height: 36.7rem;
-    width: 40rem;
-    margin-top: 0;
-  }
   .autcion-detail .market-info__list {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 24rem;
-    line-height: 28rem;
-    padding-bottom: 35rem;
+    font-size: 10rem;
+    line-height: 12rem;
+    padding: 16rem 16rem 12rem 16rem;
+    margin-top: 16rem;
+    box-sizing: border-box;
   }
   .autcion-detail .market-info__list li {
     display: flex;
     flex-direction: row;
     padding-bottom: 0;
-    padding-top: 20rem;
+    padding-top: 0;
+    padding-bottom: 12rem;
   }
   .autcion-detail .market-info__list li:nth-child(2) {
-    padding-top: 24rem;
+    padding-top: 0;
   }
   .autcion-detail .market-info__list li:last-child {
     padding-bottom: 0;
   }
   .autcion-detail .market-info__list li span:first-child {
     display: block;
-    width: 125rem;
+    width: 68rem;
     color: #4f4f4f;
   }
   .autcion-detail .market-art-sell {
-    border-top: 1rem solid #bdbdbd;
+    border-top: 1rem solid #e0e0e0;
   }
   .autcion-detail .market-sell__price {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 27rem;
+    padding-top: 8rem;
 
     font-weight: 500;
-    font-size: 24rem;
-    line-height: 28rem;
+    font-size: 16rem;
+    line-height: 19rem;
 
     color: #222222;
   }
@@ -271,25 +260,25 @@
   }
   .autcion-detail .market-sell__price span:last-child {
     font-weight: 500;
-    font-size: 24rem;
-    line-height: 28rem;
+    font-size: 16rem;
+    line-height: 19rem;
     color: #000000;
   }
   .autcion-detail .market-sell__price + .color-red {
-    padding-top: 20rem;
+    padding-top: 4rem;
 
-    padding-bottom: 24rem;
-    border-bottom: 1rem solid #bdbdbd;
+    padding-bottom: 8rem;
+    border-bottom: 1rem solid #e0e0e0;
   }
   .autcion-detail .color-red span:last-child {
     color: #eb5757;
   }
   .autcion-detail .market-sell__time {
     display: block;
-    padding-top: 41rem;
+    padding-top: 8rem;
     font-weight: 500;
-    font-size: 20rem;
-    line-height: 23rem;
+    font-size: 12rem;
+    line-height: 14rem;
 
     text-align: right;
 
@@ -299,10 +288,11 @@
   }
   .autcion-detail .market-sell__button {
     padding-top: 16rem;
+    border-top: 0;
   }
   .autcion-detail .market-sell__button button {
-    width: 587rem;
-    height: 80rem;
+    width: 320rem;
+    height: 40rem;
 
     background: #333333;
 
@@ -310,12 +300,12 @@
   }
   .autcion-detail .market-sell__warn {
     display: block;
-    padding-top: 26rem;
+    padding-top: 8rem;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 20rem;
-    line-height: 23rem;
+    font-size: 10rem;
+    line-height: 12rem;
 
     color: #333333;
   }

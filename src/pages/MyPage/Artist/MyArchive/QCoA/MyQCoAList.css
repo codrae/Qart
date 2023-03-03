@@ -178,15 +178,15 @@
   .my-qcoa-list .table-slider .slick-prev,
   .my-qcoa-list .table-slider .slick-next {
     top: 870rem;
-    left: 120rem;
+    left: 30%;
   }
   .my-qcoa-list .table-slider .slick-next {
-    left: calc(120rem + 180rem);
+    left: calc(30% + 36%);
   }
   .my-qcoa-list .table-slider .slick-first {
-    left: calc(120rem - 20rem);
+    left: calc(30% - 6%);
   }
   .my-qcoa-list .table-slider .slick-last {
-    left: calc(120rem + 180rem + 20rem);
+    left: calc(30% + 36% + 6%);
   }
 }

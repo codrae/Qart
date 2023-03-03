@@ -163,6 +163,7 @@
     background: #ffffff;
     border: 1rem solid #bdbdbd;
     padding-left: 12rem;
+    border-radius: 0;
   }
   .gallery-team-content .a-ex-edit--button {
     padding-bottom: 24rem;

@@ -59,7 +59,7 @@ function DropDown(props) {
         className="drop-select"
         onClick={() => {
           if (!props.disabled) setShow(!show)
-          showModal()
+          if (!props.disabled) showModal()
         }}
       >
         {props.options[props.select ? props.select : select]}

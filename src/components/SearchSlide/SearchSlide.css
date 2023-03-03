@@ -113,6 +113,8 @@
     display: flex;
     flex-direction: row;
     border: none;
+    padding: 0 20rem;
+    box-sizing: border-box;
   }
   .search__header__info {
     width: inherit;
@@ -120,7 +122,7 @@
     text-align: left;
     border: none;
 
-    padding: 0 20rem;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

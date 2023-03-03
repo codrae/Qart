@@ -202,6 +202,7 @@
   }
   .g-profile-list li.has-2-input > input {
     margin-bottom: 8rem;
+    border-radius: 0;
   }
   .g-profile-list li.has-2-input > input:last-child {
     margin-bottom: 0;

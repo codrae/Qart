@@ -77,6 +77,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   font-weight: 500;
   font-size: 16rem;
   line-height: 23rem;
+  padding-left: 12rem;
   color: #222222;
 }
 .agency-content .search__icon {
@@ -296,6 +297,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
     font-size: 12rem;
     line-height: 17rem;
     padding-left: 12rem;
+    border-radius: 0;
   }
 
   .filebox label {

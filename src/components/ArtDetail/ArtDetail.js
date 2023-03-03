@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 import Slider from 'react-slick'
@@ -11,8 +11,8 @@ import DropDown from '../DropDown/DropDown'
 function ArtDetail(props) {
   const [menu, setMenu] = useState(0)
   const location = useLocation().state
-  const rows = props.rows || 4
-  const slidersPerRow = props.slidersPerRow || 3
+  const [rows, setRow] = useState(props.rows || 4)
+  const [slidersPerRow, setSlidersPerRow] = useState(props.slidersPerRow || 3)
   const {
     title_e,
     title_k,
@@ -38,8 +38,8 @@ function ArtDetail(props) {
       {
         breakpoint: 480,
         settings: {
-          rows: breakRows,
-          slidesPerRow: breakSlidersPerRow,
+          rows: rows,
+          slidesPerRow: slidersPerRow,
         },
       },
     ],
@@ -138,6 +138,28 @@ function ArtDetail(props) {
     setDotArr(numArr)
   }
 
+  // 리사이즈 이벤트를 감지하여 가로 길이에 따라 모바일 여부 결정
+  const resizingHandler = () => {
+    if (window.innerWidth <= 480) {
+      setRow(breakRows)
+      setSlidersPerRow(breakSlidersPerRow)
+    } else {
+    }
+  }
+  // 우선 맨 처음 480이하면 모바일 처리
+
+  useEffect(() => {
+    if (window.innerWidth <= 480) {
+      setRow(breakRows)
+      setSlidersPerRow(breakSlidersPerRow)
+    }
+
+    window.addEventListener('resize', resizingHandler)
+    return () => {
+      // 메모리 누수를 줄이기 위한 removeEvent
+      window.removeEventListener('resize', resizingHandler)
+    }
+  }, [])
   return (
     <div className="art-d">
       <header className="art-d-header">

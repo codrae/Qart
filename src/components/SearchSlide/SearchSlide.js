@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css'
@@ -9,43 +9,45 @@ import ModalPortal from '../Modal/ModalPortal'
 import PageSlide from '../PageSlide/PageSlide'
 
 function SearchSlide(props) {
-  const settings = {
-    arrows: true,
-    dots: false,
-    infinite: true,
-    speed: 500,
-    rows: props.rows,
-    slidesPerRow: props.slidesPerRow,
-    variableWidth: true,
-    responsive: [
-      {
-        breakpoint: 380,
-        settings: {
-          slidesPerRow: props.breakRows,
-          rows: props.breakSlidesPerRow,
-        },
-      },
-    ],
-  }
+  // const [rows, setRow] = useState(props.rows)
+  // const [slidersPerRow, setSlidersPerRow] = useState(props.slidersPerRow)
+  // const settings = {
+  //   arrows: true,
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   rows: props.rows,
+  //   slidesPerRow: props.slidesPerRow,
+  //   variableWidth: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 480,
+  //       settings: {
+  //         rows: rows,
+  //         slidersPerRow: slidersPerRow,
+  //       },
+  //     },
+  //   ],
+  // }
 
-  const slider_items = imgList => {
-    return imgList.map((item, i) => {
-      return (
-        <div className="search-slider__item">
-          <img src={require('../../' + item.info)}></img>
+  // const slider_items = imgList => {
+  //   return imgList.map((item, i) => {
+  //     return (
+  //       <div className="search-slider__item">
+  //         <img src={require('../../' + item.info)}></img>
 
-          <h2 className="search-item-author">{item.author}</h2>
-          <h3 className="search-item-email">{item.email}</h3>
+  //         <h2 className="search-item-author">{item.author}</h2>
+  //         <h3 className="search-item-email">{item.email}</h3>
 
-          {i % 3 == 0 ? (
-            <button className="clicked">팔로우</button> /* 클릭 시 버튼 */
-          ) : (
-            <button>팔로우</button>
-          )}
-        </div>
-      )
-    })
-  }
+  //         {i % 3 == 0 ? (
+  //           <button className="clicked">팔로우</button> /* 클릭 시 버튼 */
+  //         ) : (
+  //           <button>팔로우</button>
+  //         )}
+  //       </div>
+  //     )
+  //   })
+  // }
 
   // 모달창 노출 여부 state
   const [modalOpen, setModalOpen] = useState(false)
@@ -55,6 +57,29 @@ function SearchSlide(props) {
     setModalOpen(true)
     document.body.style.overflow = 'hidden' // 모달 창 오픈 시 스크롤 불가
   }
+
+  // // 리사이즈 이벤트를 감지하여 가로 길이에 따라 모바일 여부 결정
+  // const resizingHandler = () => {
+  //   if (window.innerWidth <= 480) {
+  //     setRow(props.breakRows)
+  //     setSlidersPerRow(props.breakSlidersPerRow)
+  //   } else {
+  //   }
+  // }
+  // // 우선 맨 처음 480이하면 모바일 처리
+
+  // useEffect(() => {
+  //   if (window.innerWidth <= 480) {
+  //     setRow(props.breakRows)
+  //     setSlidersPerRow(props.breakSlidersPerRow)
+  //   }
+
+  //   window.addEventListener('resize', resizingHandler)
+  //   return () => {
+  //     // 메모리 누수를 줄이기 위한 removeEvent
+  //     window.removeEventListener('resize', resizingHandler)
+  //   }
+  // }, [])
   return (
     <section className="search-slide">
       <header className="search-slide__header">
