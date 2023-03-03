@@ -136,7 +136,7 @@ function SignUpKYC() {
                 onChange={onChange}
                 required
               ></input>
-              <DropDown options={options} select={menu} setSelect={setMenu} />
+              <DropDown options={options} />
             </div>
           </li>
         </ul>

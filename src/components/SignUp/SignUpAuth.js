@@ -51,7 +51,7 @@ function SignUpAuth() {
                   onChange={onChange}
                   required
                 ></input>
-                <DropDown options={options} select={menu} setSelect={setMenu} />
+                <DropDown options={options} />
                 <button>인증하기</button>
               </div>
               <h2 className="email-title">인증번호</h2>

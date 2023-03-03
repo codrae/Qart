@@ -31,7 +31,7 @@ const WorkHeader = props => {
                 <button className="work-header__follow">팔로우</button>
               ) : props.move ? (
                 <Link
-                  to="./detail"
+                  to={props.move}
                   state={{
                     title_e: props.title_e,
                     title_k: props.title_k,

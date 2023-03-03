@@ -171,7 +171,7 @@ function MarketMain() {
     for (var i = 0; i < 4; i++) {
       result.push(
         <Link
-          to={`./market/${item[i].id}`}
+          to={`./auction/${item[i].id}`}
           state={{
             item: item[i],
           }}
@@ -257,6 +257,7 @@ function MarketMain() {
       <div className="upcoming-auction">
         <ArtMoveDetail
           title_k={'Upcoming Auction'}
+          moveTo={'./auction'}
           items={moreItem}
           represent={4}
           RepresentingItems={RepresentingItems(moreItem)}

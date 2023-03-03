@@ -34,7 +34,7 @@ function ArtMoveDetail(props) {
         moreMenu={0}
         title_e={props.title_e}
         title_k={props.title_k}
-        move={'./detail'}
+        move={props.moveTo ? props.moveTo : './detail'}
         items={props.items}
         options={props.options}
         breakRows={props.breakRows}

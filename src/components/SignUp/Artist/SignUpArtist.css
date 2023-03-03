@@ -170,6 +170,7 @@
 
   .artist-content .general-item:nth-child(5) {
     order: 2;
+    padding-bottom: 28rem;
   }
   .artist-content .general-item:nth-child(6) {
     order: 3;

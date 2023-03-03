@@ -242,22 +242,29 @@ input[type='date']::-webkit-calendar-picker-indicator {
     width: 44rem;
   }
   .artist-content .email-input-container {
-    width: 596rem;
-    margin-right: 88rem;
+    width: 100%;
+    margin-right: 0;
+    padding-bottom: 28rem;
+  }
+  .artist-content .general-item:nth-child(5) {
+    padding-bottom: 28rem;
+  }
+  .agency-content .email-input-container span {
+    padding: 0 8rem;
   }
   .artist-content .email-input-container .drop-select {
-    width: 137rem;
-    height: 56rem;
+    width: 161rem;
+    height: 42rem;
 
-    font-size: 16rem;
-    line-height: 23rem;
+    font-size: 12rem;
+    line-height: 17rem;
 
-    padding-left: 16rem;
+    padding-left: 12rem;
 
     border: 1rem solid #cccccc;
   }
   .artist-content .email-input-container .drop-select:after {
-    right: 14.18rem;
+    right: 13rem;
   }
   .artist-content .email-input-container .show-drop-list {
     border: 1rem solid #cccccc;
@@ -272,7 +279,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
     padding-left: 16rem;
   }
   .artist-content .email-input-email {
-    width: 295rem;
+    width: 130rem;
   }
   .artist-content .email-input-email ~ .email {
     width: 264rem;
