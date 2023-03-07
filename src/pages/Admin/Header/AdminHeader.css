@@ -1,0 +1,53 @@
+.admin-header {
+  width: calc(100vw - 250rem);
+  height: 70rem;
+  min-width: calc(1920rem - 250rem);
+
+  background: #2b2e3f;
+}
+.admin-header > .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin-header h1 {
+  padding-left: 80rem;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 23rem;
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  box-sizing: border-box;
+}
+.admin-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ad-logout-icon {
+  display: block;
+  width: 34rem;
+  height: 34rem;
+  background: url('../../../assets/admin-logout.png') no-repeat center;
+  background-size: contain;
+  margin-right: 16rem;
+}
+.admin-logout > h2 {
+  padding-right: 173rem;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 33rem;
+  letter-spacing: -0.02em;
+
+  color: #979797;
+  box-sizing: border-box;
+}

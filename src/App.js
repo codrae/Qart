@@ -64,6 +64,8 @@ import ArtistProfile from './pages/MyPage/Artist/Profile/ArtistProfile'
 import AddWorkToExcel from './pages/MyPage/Artist/MyArchive/AddWorkToExcel'
 import GalleryProfile from './pages/MyPage/Gallery/Profile/GalleryProfile'
 import MyWorkEdit from './pages/MyPage/Artist/MyArchive/Work/MyWorkEdit'
+import AdminMain from './pages/Admin/AdminMain'
+import AdminManage from './pages/Admin/Main/AdminManage'
 function App() {
   return (
     <BrowserRouter>
@@ -381,6 +383,16 @@ function App() {
         <Route
           path="/mypage/gallery/agency"
           element={<GalleryAgency />}
+        ></Route>
+
+        {/* 관리자 페이지  */}
+        <Route
+          path="/admin"
+          element={
+            <AdminMain title={'운영지표'}>
+              <AdminManage />
+            </AdminMain>
+          }
         ></Route>
       </Routes>
     </BrowserRouter>

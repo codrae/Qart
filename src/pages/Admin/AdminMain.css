@@ -1,0 +1,9 @@
+.admin {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1920rem;
+  background: #ebebeb;
+
+  display: flex;
+  flex-direction: row;
+}
