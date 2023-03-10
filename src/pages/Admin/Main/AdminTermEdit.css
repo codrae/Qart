@@ -1,0 +1,11 @@
+.admin-term-edit .admin-term-c-item {
+  height: 798rem;
+
+  margin-bottom: 33rem;
+}
+.admin-term-c-item > p {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  -webkit-line-clamp: inherit;
+}

@@ -6,15 +6,18 @@
   background: #2b2e3f;
 }
 .admin-header > .container {
-  width: 100%;
+  width: 1670rem;
+  padding-left: 80rem;
+  padding-right: 173rem;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
 }
 .admin-header h1 {
-  padding-left: 80rem;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -40,7 +43,6 @@
   margin-right: 16rem;
 }
 .admin-logout > h2 {
-  padding-right: 173rem;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;

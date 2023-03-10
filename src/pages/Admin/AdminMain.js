@@ -5,10 +5,10 @@ import './AdminMain.css'
 const AdminMain = props => {
   return (
     <div className="admin">
-      <AdminMenu />
+      <AdminMenu bm={props.bm} sm={props.sm} />
       <div className="content">
         <AdminHeader title={props.title} />
-        <div className="container">{props.children}</div>
+        {props.children}
       </div>
     </div>
   )

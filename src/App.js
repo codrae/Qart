@@ -66,6 +66,8 @@ import GalleryProfile from './pages/MyPage/Gallery/Profile/GalleryProfile'
 import MyWorkEdit from './pages/MyPage/Artist/MyArchive/Work/MyWorkEdit'
 import AdminMain from './pages/Admin/AdminMain'
 import AdminManage from './pages/Admin/Main/AdminManage'
+import AdminEdit from './pages/Admin/Main/AdminEdit'
+import AdminTerm from './pages/Admin/Main/AdminTerm'
 function App() {
   return (
     <BrowserRouter>
@@ -387,10 +389,26 @@ function App() {
 
         {/* 관리자 페이지  */}
         <Route
-          path="/admin"
+          path="/admin/"
           element={
-            <AdminMain title={'운영지표'}>
+            <AdminMain title={'운영지표'} bm={0} sm={0}>
               <AdminManage />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/main/info"
+          element={
+            <AdminMain title={'사이트 정보 수정'} bm={0} sm={1}>
+              <AdminEdit />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/main/term"
+          element={
+            <AdminMain title={'약관본문 수정'} bm={0} sm={2}>
+              <AdminTerm />
             </AdminMain>
           }
         ></Route>

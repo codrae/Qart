@@ -1,0 +1,144 @@
+.admin-term {
+  width: 100%;
+}
+.admin-term > .container {
+  padding: 0 127rem;
+  padding-top: 32rem;
+  box-sizing: border-box;
+
+  margin: 0;
+}
+.admin-term-content,
+.admin-term-content02 {
+  width: 1416rem;
+}
+.admin-term-c-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16rem;
+}
+.admin-term-c-header > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 23rem;
+
+  color: #222222;
+}
+.admin-term-c-header > button {
+  width: 110rem;
+  height: 46rem;
+
+  background: #2f80ed;
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 22rem;
+
+  color: #ffffff;
+}
+.admin-term-c-item {
+  display: block;
+  width: 100%;
+  height: 298rem;
+  padding: 24rem 35rem;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 25rem;
+
+  color: #000000;
+
+  margin-bottom: 17rem;
+}
+.admin-term-c-item > p {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 10;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+.admin-term-content02 {
+  display: flex;
+  flex-direction: column;
+}
+.admin-term-content02 label {
+  width: 110rem;
+  height: 46rem;
+
+  background: #2f80ed;
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 22rem;
+
+  color: #ffffff;
+}
+.admin-term-c02-item {
+  width: 100%;
+  height: 96rem;
+
+  background: #ffffff;
+  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
+  border-radius: 8rem;
+
+  box-sizing: border-box;
+  padding: 24rem 35rem;
+}
+#attachFile {
+  display: flex;
+  flex-direction: row;
+}
+#attachFile .file-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200rem;
+  height: 48rem;
+
+  padding: 0 16rem;
+  box-sizing: border-box;
+  align-items: center;
+
+  border: 1rem solid #bdbdbd;
+  border-radius: 52rem;
+  margin-right: 10rem;
+}
+
+#attachFile .file-preview > h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18rem;
+  line-height: 21rem;
+
+  color: #222222;
+}
+#attachFile .file-preview > button {
+  display: block;
+  width: 14rem;
+  height: 14rem;
+  background: url('../../../assets/icon-x-black.png') no-repeat center;
+  background-size: contain;
+}

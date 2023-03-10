@@ -1,7 +1,10 @@
 .admin-manage {
-  margin: 0 auto;
   width: 1417rem;
-  box-sizing: border-box;
+  padding: 0 126rem;
+  margin: 0;
+}
+.admin-manage .container {
+  margin: 0;
 }
 .ad-manage-section-01 {
   padding-top: 40rem;
