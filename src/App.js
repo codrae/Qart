@@ -68,6 +68,11 @@ import AdminMain from './pages/Admin/AdminMain'
 import AdminManage from './pages/Admin/Main/AdminManage'
 import AdminEdit from './pages/Admin/Main/AdminEdit'
 import AdminTerm from './pages/Admin/Main/AdminTerm'
+import AdminKYC from './pages/Admin/Cert/AdminKYC'
+import AdminGeneral from './pages/Admin/Member/AdminGeneral'
+import AdminArtist from './pages/Admin/Member/AdminArtist'
+import AdminGallery from './pages/Admin/Member/AdminGallery'
+import AdminArtistDetail from './pages/Admin/Member/AdminArtistDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -409,6 +414,46 @@ function App() {
           element={
             <AdminMain title={'약관본문 수정'} bm={0} sm={2}>
               <AdminTerm />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/member/general"
+          element={
+            <AdminMain title={'회원관리 - 개인 회원'} bm={1} sm={0}>
+              <AdminGeneral />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/member/artist"
+          element={
+            <AdminMain title={'회원관리 - 작가 회원'} bm={1} sm={1}>
+              <AdminArtist />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/member/artist/detail"
+          element={
+            <AdminMain title={'작가 회원'} bm={1} sm={1}>
+              <AdminArtistDetail />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/member/gallery"
+          element={
+            <AdminMain title={'회원관리 - 기관 회원'} bm={1} sm={2}>
+              <AdminGallery />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/cert/kyc"
+          element={
+            <AdminMain title={'인증서 발급 내역 열람 및 관리'} bm={2} sm={0}>
+              <AdminKYC />
             </AdminMain>
           }
         ></Route>

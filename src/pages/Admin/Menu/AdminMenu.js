@@ -37,9 +37,9 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon2-active.png',
       title: '회원 관리',
       buttonList: [
-        { link: '/', title: '개인 회원' },
-        { link: '/', title: '작가 회원' },
-        { link: '/', title: '기관 회원' },
+        { link: '/admin/member/general', title: '개인 회원' },
+        { link: '/admin/member/artist', title: '작가 회원' },
+        { link: '/admin/member/gallery', title: '기관 회원' },
       ],
     },
     {
@@ -47,7 +47,7 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon3-active.png',
       title: '인증서 발급 내역 열람 및 관리',
       buttonList: [
-        { link: '/', title: 'KYC 인증' },
+        { link: '/admin/cert/kyc', title: 'KYC 인증' },
         { link: '/', title: 'Q-CoA 인증' },
       ],
     },
@@ -152,7 +152,7 @@ const AdminMenu = props => {
                       <Link to={bitem.link}>
                         <button
                           className={
-                            bi == props.sm
+                            index == props.bm && bi == props.sm
                               ? 'admin-menu-item active-content'
                               : 'admin-menu-item'
                           }

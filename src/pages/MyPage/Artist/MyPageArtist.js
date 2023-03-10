@@ -1,12 +1,8 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import ArtDetail from '../../../components/ArtDetail/ArtDetail'
 import Footer from '../../../components/Footer/Footer'
 import Header from '../../../components/Header/Header'
 import HeaderSmall from '../../../components/Header/HeaderSmall/HeaderSmall'
-import TableSlide from '../../../components/TableSlide/TableSlide'
 import './MyPageArtist.css'
-import ArtistProfile from './Profile/ArtistProfile'
 
 function MyPageArtist(props) {
   const [choice, setChoice] = useState(0)

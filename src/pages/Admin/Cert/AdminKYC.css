@@ -1,0 +1,52 @@
+.admin-kyc {
+  width: 1510rem;
+  padding: 0 80rem;
+  margin: 0;
+}
+.admin-kyc .container {
+  margin: 0;
+}
+.admin-kyc .admin-table-header li:first-child,
+.admin-kyc .admin-table-item li:first-child {
+  width: 51rem;
+}
+.admin-kyc .admin-table-header li:nth-child(2),
+.admin-kyc .admin-table-item li:nth-child(2) {
+  width: 102rem;
+}
+.admin-kyc .admin-table-header li:nth-child(3),
+.admin-kyc .admin-table-item li:nth-child(3) {
+  width: 157rem;
+}
+.admin-kyc .admin-table-header li:nth-child(4),
+.admin-kyc .admin-table-item li:nth-child(4) {
+  width: 205rem;
+}
+.admin-kyc .admin-table-header li:nth-child(5),
+.admin-kyc .admin-table-item li:nth-child(5) {
+  width: 229rem;
+}
+.admin-kyc .admin-table-header li:nth-child(6),
+.admin-kyc .admin-table-item li:nth-child(6) {
+  width: 279rem;
+}
+.admin-kyc .admin-table-header li:nth-child(7),
+.admin-kyc .admin-table-item li:nth-child(7) {
+  width: 179rem;
+}
+.admin-kyc .admin-table-header li:nth-child(8),
+.admin-kyc .admin-table-item li:nth-child(8) {
+  width: 144rem;
+}
+.admin-kyc .admin-table-header li:nth-child(9),
+.admin-kyc .admin-table-item li:nth-child(9) {
+  width: 156rem;
+  border-right: none;
+}
+.admin-kyc .check-icon {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url('../../../assets/admin-check-icon.png') no-repeat center;
+  background-size: contain;
+}
