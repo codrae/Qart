@@ -1,0 +1,113 @@
+.admin-auction-item {
+  padding-left: 86rem;
+  padding-right: 124rem;
+  width: calc(1670rem - 86rem - 124rem);
+}
+.admin-auction-item--content {
+  margin-top: 51rem;
+  box-sizing: border-box;
+
+  width: 1460rem;
+  height: 837rem;
+
+  background: #ffffff;
+  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
+  border-radius: 8rem;
+}
+.admin-auction-item--content > ul {
+  padding: 40rem;
+  padding-right: 61rem;
+  box-sizing: border-box;
+}
+.admin-auction-item--content > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24rem;
+}
+.admin-auction-item--content > ul > li > h2 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #333333;
+  width: 89rem;
+}
+.admin-auction-item--content > ul > li > input {
+  box-sizing: border-box;
+
+  padding: 12rem 0 12rem 20rem;
+  gap: 10rem;
+
+  width: 1280rem;
+  height: 47rem;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1rem solid #e0e0e0;
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #000000;
+}
+.admin-auction-item--content > ul > li > input.input-radio {
+  width: 22rem;
+}
+.admin-auction-item--content > ul > li > .input-radio:checked,
+.admin-auction-item--content > ul > li > .input-radio:active {
+  accent-color: #000000;
+}
+.admin-auction-item--content > ul > li > span {
+  display: block;
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-right: 33rem;
+}
+.admin-auction-item--content .image-layer {
+  position: relative;
+}
+.admin-auction-item--content .edit-image > input {
+  display: none;
+}
+.admin-auction-item--content .edit-image > label {
+  width: 92rem;
+  height: 43rem;
+
+  background: #2f80ed;
+  border-radius: 4rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 19rem;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.admin-auction-item--content .img-preview {
+  width: 241rem;
+  height: 241rem;
+
+  border: 1rem solid #bdbdbd;
+  margin-left: 89rem;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+.admin-auction-item--content .edit-photo {
+  top: 10rem;
+  left: 298rem;
+  position: absolute;
+}

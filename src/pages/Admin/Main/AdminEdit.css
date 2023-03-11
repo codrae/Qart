@@ -95,8 +95,6 @@
 .admin-edit-button > button {
   width: 117rem;
   height: 59rem;
-
-  border: 1px solid #2f80ed;
   border-radius: 8px;
 
   font-family: 'Noto Sans';
@@ -105,11 +103,13 @@
   font-size: 20rem;
   line-height: 27rem;
 
-  color: #2f80ed;
-  background: none;
-}
-.admin-edit-button > button:last-child {
   background: #2f80ed;
   color: #ffffff;
   margin-left: 12rem;
+}
+.admin-edit-button > button:first-child {
+  background: none;
+  border: 1px solid #2f80ed;
+  color: #2f80ed;
+  margin-left: 0;
 }

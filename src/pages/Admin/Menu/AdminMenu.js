@@ -76,8 +76,8 @@ const AdminMenu = props => {
       title: '자체 기획전 정보',
       buttonList: [
         { link: '/admin/special/auction', title: '기획경매' },
-        { link: '/', title: 'Art Tok!' },
-        { link: '/', title: '플렛폼Q' },
+        { link: '/admin/special/arttok', title: 'Art Tok!' },
+        { link: '/admin/special/platformq', title: '플렛폼Q' },
       ],
     },
     {

@@ -1,0 +1,50 @@
+.admin-arttok {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-arttok .admin-arttok--header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 61rem;
+  padding-bottom: 20rem;
+}
+.admin-arttok .admin-arttok--header > .ad-general-button {
+  padding: 0;
+}
+.admin-arttok .admin-arttok--header > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rem;
+  line-height: 35rem;
+
+  color: #222222;
+  display: block;
+
+  display: block;
+  width: 200rem;
+}
+.admin-arttok .admin-table-header li:first-child,
+.admin-arttok .admin-table-item li:first-child {
+  width: 51rem;
+}
+.admin-arttok .admin-table-header li:nth-child(2),
+.admin-arttok .admin-table-item li:nth-child(2) {
+  width: 102rem;
+}
+.admin-arttok .admin-table-header li:nth-child(3),
+.admin-arttok .admin-table-item li:nth-child(3) {
+  width: 157rem;
+}
+
+.admin-arttok .admin-table-header li:nth-child(4),
+.admin-arttok .admin-table-item li:nth-child(4) {
+  width: 957rem;
+}
+.admin-arttok .admin-table-header li:nth-child(5),
+.admin-arttok .admin-table-item li:nth-child(5) {
+  width: 239rem;
+  border-right: none;
+}

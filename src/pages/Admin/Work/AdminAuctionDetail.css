@@ -1,0 +1,138 @@
+.admin-auction-detail {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.ad-auction-info-01 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25rem;
+}
+.ad-auction-info-01 .ad-artist-info--item:nth-child(2) {
+  width: 260rem;
+}
+.ad-auction-info-01 .ad-artist-info--item:first-child > h2 > span:first-child {
+  width: 107rem;
+}
+
+.ad-auction-info-01 .ad-artist-info--item:nth-child(2) > h2 > span:first-child {
+  width: 127rem;
+}
+.ad-auction-info-01 .ad-artist-info--item:last-child > h2 > span:first-child {
+  width: 185rem;
+}
+.ad-auction-info-01 .ad-artist-info--item:nth-child(3) {
+  border: none;
+}
+.ad-history-info--item {
+  display: flex;
+  flex-direction: row;
+  margin: 0 70rem;
+  align-items: flex-start;
+}
+.ad-history-info--item > h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 19rem;
+
+  color: #828282;
+  width: 107rem;
+}
+
+.ad-auction-header {
+  margin-top: 51rem;
+  margin-bottom: 20rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ad-auction-header > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.ad-auction-header button > a {
+  color: #ffffff;
+}
+.admin-auction-section-02 {
+  margin-bottom: 180rem;
+}
+.admin-auction-section-02 .admin-table-item {
+  height: 162rem;
+}
+.admin-auction-section-02 .admin-table-header li:first-child,
+.admin-auction-section-02 .admin-table-item li:first-child {
+  width: 60rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(2),
+.admin-auction-section-02 .admin-table-item li:nth-child(2) {
+  width: 80rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(3),
+.admin-auction-section-02 .admin-table-item li:nth-child(3) {
+  width: 180rem;
+}
+
+.admin-auction-section-02 .admin-table-header li:nth-child(4),
+.admin-auction-section-02 .admin-table-item li:nth-child(4) {
+  width: 200rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(5),
+.admin-auction-section-02 .admin-table-item li:nth-child(5) {
+  width: 220rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(6),
+.admin-auction-section-02 .admin-table-item li:nth-child(6) {
+  width: 220rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(7),
+.admin-auction-section-02 .admin-table-item li:nth-child(7) {
+  width: 180rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(8),
+.admin-auction-section-02 .admin-table-item li:nth-child(8) {
+  width: 180rem;
+}
+.admin-auction-section-02 .admin-table-header li:nth-child(9),
+.admin-auction-section-02 .admin-table-item li:nth-child(9) {
+  width: 180rem;
+}
+.admin-auction-section-02 .ad-general-table {
+  height: 1199rem;
+}
+.admin-auction-section-02 .ad-general-table .page-slider {
+  height: 1140rem;
+  padding-top: 0;
+}
+.admin-auction-section-02 .admin-table-item li:nth-child(3) > img {
+  width: 120rem;
+  height: 120rem;
+  border: 1rem solid #bdbdbd;
+  object-fit: contain;
+}
+.admin-auction-section-02 .sealed-icon {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url('../../../assets/admin-check-blue.png') no-repeat center;
+  background-size: contain;
+}
+.admin-auction-section-02 .admin-table-header li,
+.admin-auction-section-02 .admin-table-item li {
+  border-right: none;
+}
+.admin-auction-section-02 .ad-general-table .page-slider .slick-dots {
+  top: 1185rem;
+}
+.admin-auction-section-02 .ad-general-table .page-slider__list .slick-first,
+.admin-auction-section-02 .ad-general-table .page-slider__list .slick-last,
+.admin-auction-section-02 .ad-general-table .page-slider__list .slick-prev,
+.admin-auction-section-02 .ad-general-table .page-slider__list .slick-next {
+  top: 1210rem;
+}

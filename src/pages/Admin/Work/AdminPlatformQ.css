@@ -1,0 +1,21 @@
+.admin-platformq .admin-table-header li:first-child,
+.admin-platformq .admin-table-item li:first-child {
+  width: 80rem;
+}
+.admin-platformq .admin-table-header li:nth-child(2),
+.admin-platformq .admin-table-item li:nth-child(2) {
+  width: 200rem;
+}
+.admin-platformq .admin-table-header li:nth-child(3),
+.admin-platformq .admin-table-item li:nth-child(3) {
+  width: 320rem;
+}
+
+.admin-platformq .admin-table-header li:nth-child(4),
+.admin-platformq .admin-table-item li:nth-child(4) {
+  width: 400rem;
+}
+.admin-platformq .admin-table-header li:nth-child(5),
+.admin-platformq .admin-table-item li:nth-child(5) {
+  width: 500rem;
+}

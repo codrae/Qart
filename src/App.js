@@ -89,6 +89,10 @@ import AdminWorkList from './pages/Admin/Work/AdminWorkList'
 import AdminNftEdit from './pages/Admin/NFT/AdminNftEdit'
 import AdminWorkArtist from './pages/Admin/Work/AdminWorkArtist'
 import AdminWork from './pages/Admin/Work/AdminWork'
+import AdminAuctionDetail from './pages/Admin/Work/AdminAuctionDetail'
+import AdminAuctionItem from './pages/Admin/Work/AdminAuctionItem'
+import AdminArtTok from './pages/Admin/Work/AdminArtTok'
+import AdminPlatformQ from './pages/Admin/Work/AdminPlatformQ'
 function App() {
   return (
     <BrowserRouter>
@@ -599,6 +603,38 @@ function App() {
           element={
             <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
               <AdminAuction />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/special/auction/detail"
+          element={
+            <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
+              <AdminAuctionDetail />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/special/auction/detail/edit"
+          element={
+            <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
+              <AdminAuctionItem />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/special/arttok"
+          element={
+            <AdminMain title={'자체 기획전 정보 - Art Tok!'} bm={5} sm={1}>
+              <AdminArtTok />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/special/platformq"
+          element={
+            <AdminMain title={'자체 기획전 정보 - 플렛폼Q'} bm={5} sm={2}>
+              <AdminPlatformQ />
             </AdminMain>
           }
         ></Route>
