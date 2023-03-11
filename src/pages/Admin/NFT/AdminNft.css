@@ -1,0 +1,100 @@
+.admin-nft {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-nft-container {
+  margin-bottom: 162rem;
+}
+.ad-nft--header {
+  padding-top: 40rem;
+  padding-bottom: 20rem;
+  height: 54rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ad-nft--header > .ad-general-button {
+  width: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ad-nft--header > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.admin-nft .admin-table-item {
+  height: 162rem;
+}
+.admin-nft .admin-table-header li:first-child,
+.admin-nft .admin-table-item li:first-child {
+  width: 80rem;
+}
+.admin-nft .admin-table-header li:nth-child(2),
+.admin-nft .admin-table-item li:nth-child(2) {
+  width: 100rem;
+}
+.admin-nft .admin-table-header li:nth-child(3),
+.admin-nft .admin-table-item li:nth-child(3) {
+  width: 220rem;
+}
+
+.admin-nft .admin-table-header li:nth-child(4),
+.admin-nft .admin-table-item li:nth-child(4) {
+  width: 200rem;
+}
+.admin-nft .admin-table-header li:nth-child(5),
+.admin-nft .admin-table-item li:nth-child(5) {
+  width: 200rem;
+}
+.admin-nft .admin-table-header li:nth-child(6),
+.admin-nft .admin-table-item li:nth-child(6) {
+  width: 240rem;
+}
+.admin-nft .admin-table-header li:nth-child(7),
+.admin-nft .admin-table-item li:nth-child(7) {
+  width: 240rem;
+}
+.admin-nft .admin-table-header li:nth-child(8),
+.admin-nft .admin-table-item li:nth-child(8) {
+  width: 230rem;
+}
+
+.admin-nft .ad-general-table {
+  height: 1199rem;
+}
+.admin-nft .ad-general-table .page-slider {
+  height: 1140rem;
+  padding-top: 0;
+}
+.admin-nft .admin-table-item li:nth-child(3) > img {
+  width: 120rem;
+  height: 120rem;
+  border: 1rem solid #bdbdbd;
+  object-fit: contain;
+}
+.admin-nft .sealed-icon {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url('../../../assets/admin-check-blue.png') no-repeat center;
+  background-size: contain;
+}
+.admin-nft .admin-table-header li,
+.admin-nft .admin-table-item li {
+  border-right: none;
+}
+.admin-nft .ad-general-table .page-slider .slick-dots {
+  top: 1185rem;
+}
+.admin-nft .ad-general-table .page-slider__list .slick-first,
+.admin-nft .ad-general-table .page-slider__list .slick-last,
+.admin-nft .ad-general-table .page-slider__list .slick-prev,
+.admin-nft .ad-general-table .page-slider__list .slick-next {
+  top: 1210rem;
+}

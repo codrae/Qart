@@ -1,0 +1,100 @@
+.admin-auction {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-auction-container {
+  margin-bottom: 162rem;
+}
+.ad-auction--header {
+  padding-top: 40rem;
+  padding-bottom: 20rem;
+  height: 54rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ad-auction--header > .ad-general-button {
+  width: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.ad-auction--header > h1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.admin-auction .admin-table-item {
+  height: 162rem;
+}
+.admin-auction .admin-table-header li:first-child,
+.admin-auction .admin-table-item li:first-child {
+  width: 80rem;
+}
+.admin-auction .admin-table-header li:nth-child(2),
+.admin-auction .admin-table-item li:nth-child(2) {
+  width: 100rem;
+}
+.admin-auction .admin-table-header li:nth-child(3),
+.admin-auction .admin-table-item li:nth-child(3) {
+  width: 220rem;
+}
+
+.admin-auction .admin-table-header li:nth-child(4),
+.admin-auction .admin-table-item li:nth-child(4) {
+  width: 200rem;
+}
+.admin-auction .admin-table-header li:nth-child(5),
+.admin-auction .admin-table-item li:nth-child(5) {
+  width: 200rem;
+}
+.admin-auction .admin-table-header li:nth-child(6),
+.admin-auction .admin-table-item li:nth-child(6) {
+  width: 240rem;
+}
+.admin-auction .admin-table-header li:nth-child(7),
+.admin-auction .admin-table-item li:nth-child(7) {
+  width: 240rem;
+}
+.admin-auction .admin-table-header li:nth-child(8),
+.admin-auction .admin-table-item li:nth-child(8) {
+  width: 230rem;
+}
+
+.admin-auction .ad-general-table {
+  height: 1199rem;
+}
+.admin-auction .ad-general-table .page-slider {
+  height: 1140rem;
+  padding-top: 0;
+}
+.admin-auction .admin-table-item li:nth-child(3) > img {
+  width: 120rem;
+  height: 120rem;
+  border: 1rem solid #bdbdbd;
+  object-fit: contain;
+}
+.admin-auction .sealed-icon {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url('../../../assets/admin-check-blue.png') no-repeat center;
+  background-size: contain;
+}
+.admin-auction .admin-table-header li,
+.admin-auction .admin-table-item li {
+  border-right: none;
+}
+.admin-auction .ad-general-table .page-slider .slick-dots {
+  top: 1185rem;
+}
+.admin-auction .ad-general-table .page-slider__list .slick-first,
+.admin-auction .ad-general-table .page-slider__list .slick-last,
+.admin-auction .ad-general-table .page-slider__list .slick-prev,
+.admin-auction .ad-general-table .page-slider__list .slick-next {
+  top: 1210rem;
+}

@@ -83,6 +83,12 @@ import AdminNew from './pages/Admin/New/AdminNew'
 import AdminNewEdit from './pages/Admin/New/AdminNewEdit'
 import AdminBannerMain from './pages/Admin/Banner/AdminBannerMain'
 import AdminBannerEdit from './pages/Admin/Banner/AdminBannerEdit'
+import AdminAuction from './pages/Admin/Special/AdminAuction'
+import AdminNft from './pages/Admin/NFT/AdminNft'
+import AdminWorkList from './pages/Admin/Work/AdminWorkList'
+import AdminNftEdit from './pages/Admin/NFT/AdminNftEdit'
+import AdminWorkArtist from './pages/Admin/Work/AdminWorkArtist'
+import AdminWork from './pages/Admin/Work/AdminWork'
 function App() {
   return (
     <BrowserRouter>
@@ -589,6 +595,38 @@ function App() {
           }
         ></Route>
         <Route
+          path="/admin/special/auction"
+          element={
+            <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
+              <AdminAuction />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/work/list"
+          element={
+            <AdminMain title={'작품 등록'} bm={6} sm={0}>
+              <AdminWorkList />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/work/artist"
+          element={
+            <AdminMain title={'작가'} bm={6} sm={1}>
+              <AdminWorkArtist />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/work"
+          element={
+            <AdminMain title={'작품'} bm={6} sm={2}>
+              <AdminWork />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
           path="/admin/new"
           element={
             <AdminMain title={'새소식'} bm={7}>
@@ -601,6 +639,23 @@ function App() {
           element={
             <AdminMain title={'새소식'} bm={7}>
               <AdminNewEdit />
+            </AdminMain>
+          }
+        ></Route>
+
+        <Route
+          path="/admin/nft"
+          element={
+            <AdminMain title={'NFT'} bm={8}>
+              <AdminNft />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/nft/edit"
+          element={
+            <AdminMain title={'NFT'} bm={8}>
+              <AdminNftEdit />
             </AdminMain>
           }
         ></Route>

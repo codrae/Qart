@@ -75,7 +75,7 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon6-active.png',
       title: '자체 기획전 정보',
       buttonList: [
-        { link: '/', title: '기획경매' },
+        { link: '/admin/special/auction', title: '기획경매' },
         { link: '/', title: 'Art Tok!' },
         { link: '/', title: '플렛폼Q' },
       ],
@@ -85,9 +85,9 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon7-active.png',
       title: '작품 등록 기능',
       buttonList: [
-        { link: '/', title: '작품 리스트' },
-        { link: '/', title: '작가 등록' },
-        { link: '/', title: '작품 등록' },
+        { link: '/admin/work/list', title: '작품 리스트' },
+        { link: '/admin/work/artist', title: '작가 등록' },
+        { link: '/admin/work', title: '작품 등록' },
       ],
     },
     {
@@ -101,6 +101,7 @@ const AdminMenu = props => {
       icon: 'admin-icon9.png',
       activeIcon: 'admin-icon9-active.png',
       title: 'NFT',
+      link: '/admin/nft',
     },
   ]
 

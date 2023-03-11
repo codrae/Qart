@@ -1,0 +1,290 @@
+.admin-work-artist {
+  padding-left: 86rem;
+  padding-right: 124rem;
+  width: calc(1670rem - 86rem - 124rem);
+}
+.admin-work-artist-section-01 {
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 371rem;
+
+  background: #ffffff;
+  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
+  border-radius: 8rem;
+
+  margin-top: 65rem;
+}
+.admin-work-artist-section-01 > ul {
+  padding: 48rem 79rem 36rem 57rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.admin-work-artist-section-01 > ul > li {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 24rem;
+}
+.admin-work-artist-section-01 > ul > li > h2 {
+  width: 106rem;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #333333;
+}
+.admin-work-artist-section-01 > ul > li > input {
+  box-sizing: border-box;
+
+  padding-left: 12rem;
+
+  width: 514rem;
+  height: 47rem;
+
+  /* Gray 5 */
+
+  border: 1rem solid #e0e0e0;
+  border-radius: 8rem;
+  background: none;
+  outline: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #000000;
+}
+.admin-work-artist-section-01 > ul > li > input::-webkit-input-placeholder {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #000000;
+}
+.admin-work-artist-section-01 .admin-work-artist-dropdown .drop-container {
+  z-index: 0;
+}
+.admin-work-artist-section-01 .admin-work-artist-dropdown .drop-select,
+.admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list li {
+  box-sizing: border-box;
+
+  width: 514rem;
+  height: 47rem;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1rem solid #e0e0e0;
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #000000;
+}
+.admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list li {
+  width: 512rem;
+  border: none;
+  border-bottom: 1rem solid #e0e0e0;
+  border-radius: 0;
+}
+.admin-work-artist-section-01
+  .admin-work-artist-dropdown
+  .show-drop-list
+  li:first-child {
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+}
+.admin-work-artist-section-01
+  .admin-work-artist-dropdown
+  .show-drop-list
+  li:last-child {
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+}
+.admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list {
+  border-radius: 8rem;
+}
+.admin-work-artist-section-01 > ul > li > textarea {
+  padding: 12rem 0 12rem 20rem;
+
+  width: 1218rem;
+  height: 157rem;
+
+  background: none;
+  /* Gray 5 */
+
+  border: 1rem solid #e0e0e0;
+  border-radius: 8rem;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #000000;
+}
+.admin-work-artist-section-01 > ul > li > textarea::placeholder {
+  color: #000000;
+}
+.admin-work-artist-section-02 {
+  margin-top: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.admin-work-artist-02--content {
+  width: 720rem;
+}
+.admin-work-artist--header {
+  width: 100%;
+  height: 40rem;
+
+  background: #2b2e3f;
+  border-radius: 8rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14rem;
+  line-height: 16rem;
+
+  color: #ffffff;
+  box-sizing: border-box;
+  padding-left: 28rem;
+  padding-top: 12rem;
+
+  margin-bottom: 8rem;
+}
+.admin-work-artist-02--item {
+  width: 100%;
+  height: 370rem;
+
+  background: #ffffff;
+  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
+  border-radius: 8rem;
+
+  box-sizing: border-box;
+  padding: 32rem 42rem 26rem 42rem;
+}
+.admin-work-artist-02-drop-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16rem;
+}
+.admin-work-artist-02-drop-container .drop-container,
+.admin-work-artist-02-drop-container .drop-select,
+.admin-work-artist-02-drop-container .show-drop-list li {
+  width: 514rem;
+  height: 47rem;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1rem solid #e0e0e0;
+  border-radius: 8rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  /* Gray 1 */
+
+  color: #333333;
+  z-index: 0;
+}
+.admin-work-artist-02-drop-container .show-drop-list {
+  height: 326rem;
+
+  background: #ffffff;
+  border: 1rem solid #cccccc;
+  border-radius: 4rem;
+  overflow: scroll;
+}
+.admin-work-artist-02-drop-container .show-drop-list li {
+  border: none;
+}
+.admin-work-artist-02-drop-container > button {
+  width: 107rem;
+  height: 47rem;
+
+  /* Gray 4 */
+
+  background: #bdbdbd;
+  border-radius: 4rem;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  /* White */
+
+  color: #ffffff;
+}
+.admin-work-artist-02--item .history-container {
+  border-top: 1rem solid #f2f2f2;
+  padding-top: 16rem !important;
+}
+.admin-work-artist-02--item .history-list {
+  height: 233rem;
+  overflow: scroll;
+}
+.admin-work-artist-02--item .history-item {
+  width: 619rem;
+  height: 56rem;
+}
+.admin-work-artist-02--item .history-item > h4 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16rem;
+  line-height: 23rem;
+
+  color: #222222;
+}
+.admin-work-artist-02--item .history-item > button {
+  width: 56rem;
+  height: 14rem;
+}
+.admin-work-artist-02--item .history-item h4 {
+  font-family: 'Noto Sans';
+  font-style: normal;
+
+  font-size: 16rem;
+  line-height: 22rem;
+}
+.admin-work-artist-02--item h4 > span:first-child {
+  font-weight: 500;
+  color: #828282;
+}
+.admin-work-artist-02--item h4 > span:nth-child(2) {
+  font-weight: 700;
+  color: #222222;
+  padding: 0 8rem;
+}
+.admin-work-artist-02--item h4 > span:last-child {
+  font-weight: 400;
+  color: #333333;
+}

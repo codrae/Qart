@@ -1,0 +1,22 @@
+.admin-nft-edit {
+  width: 1670rem;
+  height: 1010rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.admin-nft-edit > a > button {
+  width: 290rem;
+  height: 80rem;
+
+  background: #000000;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 35rem;
+
+  color: #ffffff;
+}

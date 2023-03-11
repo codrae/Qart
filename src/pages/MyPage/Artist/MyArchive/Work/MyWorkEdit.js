@@ -1,9 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import DropDown from '../../../../../components/DropDown/DropDown'
 import Footer from '../../../../../components/Footer/Footer'
 import Header from '../../../../../components/Header/Header'
-import HeaderSmall from '../../../../../components/Header/HeaderSmall/HeaderSmall'
-import CheckModal from '../../../../../components/Modal/CheckModal'
 import HistoryModal from '../../../../../components/Modal/HistoryModal'
 import ModalPortal from '../../../../../components/Modal/ModalPortal'
 import SectionHeader from '../../../../../components/SectionHeader/SectionHeader'
@@ -17,13 +15,7 @@ function MyWorkEdit() {
   const subImgRef = useRef()
   const [file, setFile] = useState('')
 
-  const countryList = [
-    'Korea, Republic of',
-    'Korea, Republic of',
-    'Korea, Republic of',
-  ]
   const datesList = ['Unknown', 'Unknown', 'Unknown']
-  const typeList = ['개인전', '단체전', '아트페어', '기타']
   const archiveList = ['공개', '비공개']
 
   const archiveList2 = []
@@ -289,7 +281,7 @@ function MyWorkEdit() {
           <li className="ma-info-03-drop-03">
             <h2>전시이력</h2>
             <DropDown options={archiveList2} />
-            <button onClick={setModalOpen}>직접입력</button>
+            <button onClick={() => showModal()}>직접입력</button>
             {modalOpen && (
               <ModalPortal>
                 <HistoryModal setModalOpen={setModalOpen} />
