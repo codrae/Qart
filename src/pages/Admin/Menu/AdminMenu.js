@@ -48,7 +48,7 @@ const AdminMenu = props => {
       title: '인증서 발급 내역 열람 및 관리',
       buttonList: [
         { link: '/admin/cert/kyc', title: 'KYC 인증' },
-        { link: '/', title: 'Q-CoA 인증' },
+        { link: '/admin/cert/qcoa', title: 'Q-CoA 인증' },
       ],
     },
     {

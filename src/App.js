@@ -73,6 +73,8 @@ import AdminGeneral from './pages/Admin/Member/AdminGeneral'
 import AdminArtist from './pages/Admin/Member/AdminArtist'
 import AdminGallery from './pages/Admin/Member/AdminGallery'
 import AdminArtistDetail from './pages/Admin/Member/AdminArtistDetail'
+import AdminQCoA from './pages/Admin/Cert/AdminQCoA'
+import AdminQCoAAbout from './pages/Admin/Cert/AdminQCoaAbout'
 function App() {
   return (
     <BrowserRouter>
@@ -454,6 +456,22 @@ function App() {
           element={
             <AdminMain title={'인증서 발급 내역 열람 및 관리'} bm={2} sm={0}>
               <AdminKYC />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/cert/qcoa"
+          element={
+            <AdminMain title={'인증서 발급 내역 열람 및 관리'} bm={2} sm={1}>
+              <AdminQCoA />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/cert/qcoa/about"
+          element={
+            <AdminMain title={'인증서 발급 내역 열람 및 관리'} bm={2} sm={1}>
+              <AdminQCoAAbout />
             </AdminMain>
           }
         ></Route>
