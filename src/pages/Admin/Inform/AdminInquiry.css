@@ -1,0 +1,63 @@
+.admin-inquiry {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-inquiry > h1 {
+  padding-top: 80rem;
+  padding-bottom: 20rem;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rem;
+  line-height: 35rem;
+
+  color: #222222;
+}
+.admin-inquiry .admin-table-item {
+  height: 65rem;
+}
+.admin-inquiry .admin-table-header li:first-child,
+.admin-inquiry .admin-table-item li:first-child {
+  width: 188rem;
+}
+.admin-inquiry .admin-table-header li:nth-child(2),
+.admin-inquiry .admin-table-item li:nth-child(2) {
+  width: 190rem;
+}
+.admin-inquiry .admin-table-header li:nth-child(3),
+.admin-inquiry .admin-table-item li:nth-child(3) {
+  width: 197rem;
+}
+
+.admin-inquiry .admin-table-header li:nth-child(4),
+.admin-inquiry .admin-table-item li:nth-child(4) {
+  width: 228rem;
+}
+.admin-inquiry .admin-table-header li:nth-child(5),
+.admin-inquiry .admin-table-item li:nth-child(5) {
+  width: 524rem;
+}
+.admin-inquiry .admin-table-header li:nth-child(6),
+.admin-inquiry .admin-table-item li:nth-child(6) {
+  width: 178rem;
+  border-right: none;
+}
+.admin-inquiry .ad-general-table {
+  height: 706rem;
+}
+.admin-inquiry .ad-general-table .page-slider {
+  height: 644rem;
+  padding-top: 0;
+}
+.admin-inquiry .admin-table-item li:nth-child(5) > p {
+  margin: 21rem 59rem;
+
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}

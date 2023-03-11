@@ -56,8 +56,8 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon4-active.png',
       title: '문의 및 공지 관리',
       buttonList: [
-        { link: '/', title: '문의 관리' },
-        { link: '/', title: '공지 관리' },
+        { link: '/admin/inform/inquiry', title: '문의 관리' },
+        { link: '/admin/inform/notice', title: '공지 관리' },
       ],
     },
     {
@@ -93,8 +93,10 @@ const AdminMenu = props => {
     {
       icon: 'admin-icon8.png',
       activeIcon: 'admin-icon8-active.png',
-      title: '작품 등록',
+      title: '새소식',
+      link: '/admin/new',
     },
+
     {
       icon: 'admin-icon9.png',
       activeIcon: 'admin-icon9-active.png',
@@ -107,43 +109,45 @@ const AdminMenu = props => {
       return (
         <li key={index}>
           <div className="ad-m-col-item">
-            <a
-              className="ad-m-col-tit"
-              onClick={() => (item.buttonList ? toggle(index) : '')}
-            >
-              <div className="ad-m-col-tlt-container">
-                {open[index] == true ? (
-                  <img
-                    className="ad-m-col-tlt-icon"
-                    src={require('../../../assets/' + item.activeIcon)}
-                  ></img>
-                ) : (
-                  <img
-                    className="ad-m-col-tlt-icon"
-                    src={require('../../../assets/' + item.icon)}
-                  ></img>
+            <Link to={item.link ? item.link : ''}>
+              <a
+                className="ad-m-col-tit"
+                onClick={() => (item.buttonList ? toggle(index) : '')}
+              >
+                <div className="ad-m-col-tlt-container">
+                  {open[index] == true || props.bm == index ? (
+                    <img
+                      className="ad-m-col-tlt-icon"
+                      src={require('../../../assets/' + item.activeIcon)}
+                    ></img>
+                  ) : (
+                    <img
+                      className="ad-m-col-tlt-icon"
+                      src={require('../../../assets/' + item.icon)}
+                    ></img>
+                  )}
+                  <h2
+                    className={
+                      open[index] == true || props.bm == index
+                        ? 'ad-m-col-tlt-name active-title'
+                        : 'ad-m-col-tlt-name '
+                    }
+                  >
+                    {item.title}
+                  </h2>
+                </div>
+                {!open[index] == true && item.buttonList && (
+                  <button className="ad-m-toggle-btn">
+                    <span className="ir_pm">열기</span>
+                  </button>
                 )}
-                <h2
-                  className={
-                    open[index] == true
-                      ? 'ad-m-col-tlt-name active-title'
-                      : 'ad-m-col-tlt-name '
-                  }
-                >
-                  {item.title}
-                </h2>
-              </div>
-              {!open[index] == true && item.buttonList && (
-                <button className="ad-m-toggle-btn">
-                  <span className="ir_pm">열기</span>
-                </button>
-              )}
-              {open[index] == true && item.buttonList && (
-                <button className="ad-m-toggle-btn ad-m-toggle-btn__close">
-                  <span className="ir_pm">닫기</span>
-                </button>
-              )}
-            </a>
+                {open[index] == true && item.buttonList && (
+                  <button className="ad-m-toggle-btn ad-m-toggle-btn__close">
+                    <span className="ir_pm">닫기</span>
+                  </button>
+                )}
+              </a>
+            </Link>
             {open[index] == true && (
               <div className="ad-m-content">
                 <div className="admin-menu-content">

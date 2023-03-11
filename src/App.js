@@ -75,6 +75,12 @@ import AdminGallery from './pages/Admin/Member/AdminGallery'
 import AdminArtistDetail from './pages/Admin/Member/AdminArtistDetail'
 import AdminQCoA from './pages/Admin/Cert/AdminQCoA'
 import AdminQCoAAbout from './pages/Admin/Cert/AdminQCoaAbout'
+import AdminInquiry from './pages/Admin/Inform/AdminInquiry'
+import AdminInquiryDetail from './pages/Admin/Inform/AdminInquiryDetail'
+import AdminNotice from './pages/Admin/Inform/AdminNotice'
+import AdminNoticeEdit from './pages/Admin/Inform/AdminNoticeEdit'
+import AdminNew from './pages/Admin/New/AdminNew'
+import AdminNewEdit from './pages/Admin/New/AdminNewEdit'
 function App() {
   return (
     <BrowserRouter>
@@ -472,6 +478,55 @@ function App() {
           element={
             <AdminMain title={'인증서 발급 내역 열람 및 관리'} bm={2} sm={1}>
               <AdminQCoAAbout />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/inform/inquiry"
+          element={
+            <AdminMain title={'문의 관리'} bm={3} sm={0}>
+              <AdminInquiry />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/inform/inquiry/detail"
+          element={
+            <AdminMain title={'문의 관리'} bm={3} sm={0}>
+              <AdminInquiryDetail />
+            </AdminMain>
+          }
+        ></Route>
+
+        <Route
+          path="/admin/inform/notice"
+          element={
+            <AdminMain title={'공지 관리'} bm={3} sm={1}>
+              <AdminNotice />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/inform/notice/edit"
+          element={
+            <AdminMain title={'공지 관리'} bm={3} sm={1}>
+              <AdminNoticeEdit />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/new"
+          element={
+            <AdminMain title={'새소식'} bm={7}>
+              <AdminNew />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/new/edit"
+          element={
+            <AdminMain title={'새소식'} bm={7}>
+              <AdminNewEdit />
             </AdminMain>
           }
         ></Route>

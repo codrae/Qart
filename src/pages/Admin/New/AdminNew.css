@@ -1,0 +1,22 @@
+.admin-new {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-new .admin-table-header li:first-child,
+.admin-new .admin-table-item li:first-child {
+  width: 51rem;
+}
+.admin-new .admin-table-header li:nth-child(2),
+.admin-new .admin-table-item li:nth-child(2) {
+  width: 102rem;
+}
+.admin-new .admin-table-header li:nth-child(3),
+.admin-new .admin-table-item li:nth-child(3) {
+  width: 1081rem;
+}
+
+.admin-new .admin-table-header li:nth-child(4),
+.admin-new .admin-table-item li:nth-child(4) {
+  width: 273rem;
+  border-right: none;
+}

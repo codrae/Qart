@@ -14,7 +14,7 @@
   padding-top: 61rem;
   padding-bottom: 20rem;
 }
-.ad-general-button > button {
+.ad-general-button button {
   width: 120rem;
   height: 54rem;
 
@@ -28,9 +28,10 @@
   line-height: 27rem;
 
   color: #ffffff;
-}
-.ad-general-button > button:first-child {
   margin-right: 8rem;
+}
+.ad-general-button > button:last-child {
+  margin-right: 0;
 }
 .ad-general-table {
   width: 1510rem;

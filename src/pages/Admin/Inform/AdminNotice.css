@@ -1,0 +1,22 @@
+.admin-notice {
+  padding: 0 80rem;
+  width: calc(1670rem - 160rem);
+}
+.admin-notice .admin-table-header li:first-child,
+.admin-notice .admin-table-item li:first-child {
+  width: 51rem;
+}
+.admin-notice .admin-table-header li:nth-child(2),
+.admin-notice .admin-table-item li:nth-child(2) {
+  width: 102rem;
+}
+.admin-notice .admin-table-header li:nth-child(3),
+.admin-notice .admin-table-item li:nth-child(3) {
+  width: 1081rem;
+}
+
+.admin-notice .admin-table-header li:nth-child(4),
+.admin-notice .admin-table-item li:nth-child(4) {
+  width: 273rem;
+  border-right: none;
+}
