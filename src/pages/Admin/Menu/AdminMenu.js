@@ -65,9 +65,9 @@ const AdminMenu = props => {
       activeIcon: 'admin-icon5-active.png',
       title: '팝업 및 배너 등록 / 변경 관리',
       buttonList: [
-        { link: '/', title: '메인' },
-        { link: '/', title: '마켓플레이스' },
-        { link: '/', title: '플렛폼Q' },
+        { link: '/admin/banner', title: '메인' },
+        { link: '/admin/banner/market', title: '마켓플레이스' },
+        { link: '/admin/banner/platform', title: '플렛폼Q' },
       ],
     },
     {

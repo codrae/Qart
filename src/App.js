@@ -81,6 +81,8 @@ import AdminNotice from './pages/Admin/Inform/AdminNotice'
 import AdminNoticeEdit from './pages/Admin/Inform/AdminNoticeEdit'
 import AdminNew from './pages/Admin/New/AdminNew'
 import AdminNewEdit from './pages/Admin/New/AdminNewEdit'
+import AdminBannerMain from './pages/Admin/Banner/AdminBannerMain'
+import AdminBannerEdit from './pages/Admin/Banner/AdminBannerEdit'
 function App() {
   return (
     <BrowserRouter>
@@ -511,6 +513,78 @@ function App() {
           element={
             <AdminMain title={'공지 관리'} bm={3} sm={1}>
               <AdminNoticeEdit />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 메인'}
+              bm={4}
+              sm={0}
+            >
+              <AdminBannerMain />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner/edit"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 메인'}
+              bm={4}
+              sm={0}
+            >
+              <AdminBannerEdit />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner/market"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 마켓플레이스'}
+              bm={4}
+              sm={1}
+            >
+              <AdminBannerMain />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner/market/edit"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 마켓플레이스'}
+              bm={4}
+              sm={1}
+            >
+              <AdminBannerEdit />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner/platform"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 플렛폼Q'}
+              bm={4}
+              sm={2}
+            >
+              <AdminBannerMain />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/banner/platform/edit"
+          element={
+            <AdminMain
+              title={'팝업 및 배너 등록 변경 관리 - 플렛폼Q'}
+              bm={4}
+              sm={2}
+            >
+              <AdminBannerEdit />
             </AdminMain>
           }
         ></Route>
