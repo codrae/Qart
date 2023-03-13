@@ -42,7 +42,7 @@ function GalleryExhibition() {
   }
   return (
     <div className="gallery-exhibition">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <nav className="search">
         <div className="container search__container">
           <h2 className="search__title">마이페이지</h2>

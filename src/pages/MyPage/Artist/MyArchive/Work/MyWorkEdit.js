@@ -54,7 +54,7 @@ function MyWorkEdit() {
   return (
     <div className="ma-work-edit ma-work-add">
       <Header login={true} colored="black" />
-      <SectionHeader title={'Edit Work'} />
+      <SectionHeader title={'Edit Work'} detail={true} />
       <div className="ma-edit-image">
         <div className="container ma-edit-image-container">
           <h2 className="ma-img-tlt">대표 이미지</h2>

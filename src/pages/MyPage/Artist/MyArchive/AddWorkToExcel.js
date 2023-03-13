@@ -13,7 +13,7 @@ function AddWorkToExcel() {
   }
   return (
     <div className="ma-excel-add">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <SectionHeader title={'Add Work to Excel'} />
       <div className="ma-excel-content">
         <div className="container">

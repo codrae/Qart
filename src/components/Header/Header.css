@@ -143,7 +143,8 @@ header.black {
     flex-direction: row;
     align-items: center;
     width: 24rem;
-    height: 24rem;
+
+    height: 100%;
   }
   .header__before .before-icon {
     display: block;

@@ -44,7 +44,7 @@ function ArtistExhibition() {
   }
   return (
     <div className="artist-exhibition">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <SectionHeader title={'Exhibition History'} />
       <div className="a-ex-edit-image">
         <div className="container a-ex-edit-image-container">

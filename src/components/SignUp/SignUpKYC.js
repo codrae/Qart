@@ -43,7 +43,7 @@ function SignUpKYC() {
   return (
     <div className="kyc">
       <Header />
-      <Header colored="black" />
+      <Header colored="black" detail={true} />
       <header className="kyc-phone-header">
         <div className="container kyc-header-container">
           <h2>마이페이지</h2>

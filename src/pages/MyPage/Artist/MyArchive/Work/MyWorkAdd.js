@@ -51,7 +51,7 @@ function MyWorkAdd() {
   }
   return (
     <div className="ma-work-add">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <nav className="search">
         <div className="container search__container">
           <h2 className="search__title">My Archive</h2>

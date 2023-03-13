@@ -29,7 +29,7 @@ function ArtistArchive() {
 
   return (
     <div className="mypage-archive">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <nav className="search">
         <div className="container search__container">
           <div className="ad-haeder__route">

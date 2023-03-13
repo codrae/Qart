@@ -7,7 +7,7 @@ import './Login.css'
 function Login() {
   return (
     <div className="login-main">
-      <Header />
+      <Header detail={true} />
       <div className="container login-container">
         <h1>로그인</h1>
         <section className="login-form">

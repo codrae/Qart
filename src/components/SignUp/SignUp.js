@@ -9,7 +9,7 @@ function SignUp() {
 
   return (
     <div className="sign">
-      <Header />
+      <Header detail={true} />
       <div className="container sign-container">
         <div className="sign-list">
           <a

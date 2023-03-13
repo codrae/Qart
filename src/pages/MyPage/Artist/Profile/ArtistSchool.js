@@ -24,7 +24,7 @@ function ArtistSchool() {
 
   return (
     <div className="artist-school">
-      <Header login={true} colored="black" />
+      <Header login={true} colored="black" detail={true} />
       <SectionHeader title={'학력 정보'} />
       <section className="container a-exhibition-content">
         <ul className="a-ex-edit-info">
