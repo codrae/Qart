@@ -57,7 +57,7 @@ function MarketAuction(props) {
   const options = ['최신등록순', '작품명순', '작가명순', '제작연도순']
   return (
     <div>
-      <Header active="2" colored="black" />
+      <Header active="2" colored="black" detail={true} />
       <SearchHeader title="Auction" active={props.search} />
       <HeaderSmall
         moreList={moreList}

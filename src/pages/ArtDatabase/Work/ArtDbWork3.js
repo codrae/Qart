@@ -9,6 +9,8 @@ import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
 
 import './ArtDbWork3.css'
+import Header from '../../../components/Header/Header'
+import Footer from '../../../components/Footer/Footer'
 function ArtDbWork3() {
   const item = useLocation().state.item
   const [isShowMore, setIsShowMore] = useState(false) // 더보기 열고 닫는 스위치
@@ -35,6 +37,7 @@ function ArtDbWork3() {
       info: 'qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png',
       author: 'Chang SangEui ',
       title: 'Flower Rain, 2019',
+      link: '/artdb/work/1',
     })
   }
   const infoItem = {
@@ -126,11 +129,13 @@ function ArtDbWork3() {
 
   return (
     <div className="artdb-work3">
+      <Header active="0" colored="black" detail={true} />
       <WorkHeader title_k={item.title} />
       <ArtDetailInfo item={infoItem} />
       <HistoryInfo title={'전시이력'} historyItem={historyItem} />
       <DetailInfo item={detailItem} />
       <TopArrowSlider title={'작가의 다른 작품'} item={moreItem} />
+      <Footer />
     </div>
   )
 }

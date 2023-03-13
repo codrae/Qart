@@ -8,9 +8,12 @@ import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
 import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 
 import './VenueDetail.css'
+import Header from '../../../components/Header/Header'
+import Footer from '../../../components/Footer/Footer'
 function VenueDetail() {
   const [menu, setMenu] = useState(0)
   const item = useLocation().state.item
+  console.log(item)
   const infoItem = {
     image: item.info,
     author: {
@@ -114,11 +117,13 @@ function VenueDetail() {
       author: '김동선',
       title: '곰순이, 2010년대',
       date: '2010년대',
+      link: '/artdb/work/1',
     })
   }
   return (
     <section className="venue-detail">
-      <WorkHeader title_k={item.title} follow={true}></WorkHeader>
+      <Header active="0" colored="black" detail={true} />
+      <WorkHeader title_k={item.name} follow={true}></WorkHeader>
       <ArtDetailInfo item={infoItem} />
       <HistoryInfo
         title={'기관이력'}
@@ -176,6 +181,7 @@ function VenueDetail() {
           breakSlidesPerRow={2}
         />
       </div>
+      <Footer />
     </section>
   )
 }

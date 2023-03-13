@@ -55,7 +55,7 @@ function Payment() {
   ]
   return (
     <div className="payment">
-      <Header active="2" colored="black" />
+      <Header active="2" colored="black" detail={true} />
       <WorkHeader title_k={'주문/결제'} />
       <div className="container">
         <section className="payment-item">

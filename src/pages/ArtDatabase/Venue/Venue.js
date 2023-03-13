@@ -13,6 +13,7 @@ function Venue() {
       name: '기관이름',
       name_e: 'Eng name',
       email: '00000@naver.com',
+      link: '/artdb/venue/1',
     })
   }
 

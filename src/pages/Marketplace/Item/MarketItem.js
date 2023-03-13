@@ -2,6 +2,8 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ArtDetailInfo from '../../../components/ArtDetailInfo/ArtDetailInfo'
 import DetailInfo from '../../../components/DetailIfo/DetailInfo'
+import Footer from '../../../components/Footer/Footer'
+import Header from '../../../components/Header/Header'
 import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
 import TopArrowSlider from '../../../components/TopArrowSlider/TopArrowSlider'
 import WorkHeader from '../../../components/WorkHeader/WorkHeader'
@@ -206,10 +208,12 @@ function MarketItem() {
       author: 'Chang SangEui ',
       title: 'Flower Rain, 2019',
       price: '000,000,000원',
+      link: '/market/1',
     })
   }
   return (
     <section className="market-detail">
+      <Header active="0" colored="black" detail={true} />
       <WorkHeader title_k={item.title}></WorkHeader>
       <div className="container">
         <div className="market-art">
@@ -309,6 +313,7 @@ function MarketItem() {
       />
       <DetailInfo item={detailItem} />
       <TopArrowSlider title={'작가의 다른 작품'} item={moreItem} />
+      <Footer />
     </section>
   )
 }

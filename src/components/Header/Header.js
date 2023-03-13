@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Sidebar from '../Sidebar/Sidebar'
 import './Header.css'
 const Header = props => {
@@ -32,14 +33,20 @@ const Header = props => {
       window.removeEventListener('click', handleClose)
     }
   })
+
+  let navigate = useNavigate()
   return (
     <header className={props.colored} ref={side}>
       <div className="container header-container">
-        <div className="header__before">
-          <a href="/">
-            <span className="before-icon"></span>
-          </a>
-        </div>
+        {props.detail ? (
+          <div className="header__before">
+            <a onClick={() => navigate(-1)}>
+              <span className="before-icon"></span>
+            </a>
+          </div>
+        ) : (
+          <div className="header__before"></div>
+        )}
         <div className="header__logo">
           <a href="/">
             <span className="none">Qart</span>

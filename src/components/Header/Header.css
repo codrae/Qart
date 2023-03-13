@@ -142,6 +142,8 @@ header.black {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 24rem;
+    height: 24rem;
   }
   .header__before .before-icon {
     display: block;

@@ -258,6 +258,7 @@
     margin: 0 auto;
     padding: 0 20rem;
     box-sizing: border-box;
+    overflow-x: scroll;
   }
   .work-header-d h2 {
     padding-right: 8rem;
@@ -265,11 +266,16 @@
   }
 
   .work-header__detail button {
-    margin-right: 20rem;
-    font-size: 8rem;
+    font-size: 10rem;
     line-height: 14rem;
+    width: 60rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-right: 0;
   }
+  .work-header__detail li:nth-child(5) button,
   .work-header__detail li:last-child button {
+    width: 80rem;
     margin-right: 0;
   }
 }

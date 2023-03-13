@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import ArtDetailInfo from '../../../../components/ArtDetailInfo/ArtDetailInfo'
+import Footer from '../../../../components/Footer/Footer'
+import Header from '../../../../components/Header/Header'
+import HeaderSmall from '../../../../components/Header/HeaderSmall/HeaderSmall'
 import HistoryInfo from '../../../../components/HistoryInfo/HistoryInfo'
 import PageSlide from '../../../../components/PageSlide/PageSlide'
+import SearchHeader from '../../../../components/SearchHeader/SearchHeader'
 import SectionHeader from '../../../../components/SectionHeader/SectionHeader'
 import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './ArtistDetail.css'
@@ -106,10 +110,40 @@ function ArtistDetail(props) {
       author: '김동선',
       title: '곰순이, 2010년대',
       date: '2010년대',
+      link: '/artdb/work/1',
     })
   }
+
+  const result = []
+
+  pageItem.map((item, i) => {
+    result.push(
+      <div key={i} className="page-slider__item">
+        <div className="page-slider-item-row">
+          <Link
+            to={item.link}
+            state={{
+              item: item,
+            }}
+          >
+            <img
+              className="page-item-image"
+              src={require('../../../../' + item.info)}
+            ></img>
+          </Link>
+          <div>
+            <h2 className="page-item-author">{item.author}</h2>
+            <h3 className="page-item-email">{item.title}</h3>
+            <button className="page-item-button">팔로우</button>
+          </div>
+        </div>
+      </div>
+    )
+  })
+
   return (
     <section className="artist-detail">
+      <Header active="0" colored="black" detail={true} />
       <WorkHeader title_k={item.author} follow={true}></WorkHeader>
       <ArtDetailInfo item={infoItem} />
       <HistoryInfo
@@ -163,7 +197,8 @@ function ArtistDetail(props) {
         ></WorkHeader>
         <div className="container artist-d-page-slide">
           <PageSlide
-            items={pageItem}
+            items={result}
+            divItem={true}
             rows={3}
             slidesPerRow={3}
             breakRows={4}
@@ -171,6 +206,7 @@ function ArtistDetail(props) {
           />
         </div>
       </div>
+      <Footer />
     </section>
   )
 }

@@ -229,7 +229,7 @@ function AuctionDetail() {
   return (
     <div className="autcion-detail">
       <section className="market-detail">
-        <Header active="2" colored="black" />
+        <Header active="2" colored="black" detail={true} />
         <header className="auction-detail-header">
           <div className="container ad-header-container">
             <div className="ad-haeder__route">

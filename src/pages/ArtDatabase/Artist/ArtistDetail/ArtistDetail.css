@@ -173,6 +173,12 @@
   .artist-detail-ps .work-header__detail {
     height: 30rem;
   }
+  .artist-detail-ps .work-header__detail button {
+    width: 80rem;
+  }
+  .artist-detail-ps .work-header__detail li:last-child button {
+    width: 120rem;
+  }
   .artist-detail .art-detail-section {
     align-items: center;
   }

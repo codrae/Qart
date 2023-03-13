@@ -204,6 +204,12 @@
   .venue-detail-info > .container {
     width: 360rem;
   }
+  .venue-detail .work-header__detail button {
+    width: 90rem;
+  }
+  .venue-detail .work-header__detail li:last-child button {
+    width: 120rem;
+  }
   .venue-detail-info ul {
     padding: 0 20rem;
     padding-top: 20rem;
@@ -236,6 +242,7 @@
     font-size: 10rem;
     line-height: 14rem;
   }
+
   .venue-d-page-slide {
     width: 360rem;
     box-sizing: border-box;

@@ -29,6 +29,15 @@ function BannerSlide(props) {
       </div>
     ),
     dotsClass: 'dots_custom',
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          autoplay: true,
+          autoplaySpeed: 4000,
+        },
+      },
+    ],
   }
   const slider_items = items => {
     return items.map((item, i) => {

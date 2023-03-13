@@ -118,11 +118,7 @@ function App() {
         ></Route>
         <Route
           path="/artdb/artist/:artistId"
-          element={
-            <ArtDatabase search={false}>
-              <ArtistDetail />
-            </ArtDatabase>
-          }
+          element={<ArtistDetail />}
         ></Route>
         <Route
           path="/artdb/work"
@@ -137,19 +133,21 @@ function App() {
         <Route
           path="/artdb/work/:workId"
           element={
-            <ArtDatabase search={false}>
-              <ArtDbWork3 />
-            </ArtDatabase>
+            // <ArtDatabase search={false}>
+            //   <ArtDbWork3 />
+            // </ArtDatabase>
+            <ArtDbWork3 />
           }
         ></Route>
         <Route
           path="/artdb/work/detail"
           element={
-            <ArtDatabase search={true} active={0}>
-              <ArtDbWork active={0}>
-                <ArtDetail />
-              </ArtDbWork>
-            </ArtDatabase>
+            // <ArtDatabase search={true} active={0}>
+            //   <ArtDbWork active={0}>
+            //     <ArtDetail />
+            //   </ArtDbWork>
+            // </ArtDatabase>
+            <ArtDetail choice={0} detail={true} />
           }
         ></Route>
         <Route
@@ -157,7 +155,7 @@ function App() {
           element={
             <ArtDatabase search={true} active={0}>
               <ArtDbWork active={1}>
-                <NftMain />
+                <NftMain choice={0} />
               </ArtDbWork>
             </ArtDatabase>
           }
@@ -165,9 +163,10 @@ function App() {
         <Route
           path="/artdb/work/nft/:nftId"
           element={
-            <ArtDatabase search={false}>
-              <NFTItem />
-            </ArtDatabase>
+            // <ArtDatabase search={false}>
+            //   <NFTItem />
+            // </ArtDatabase>
+            <NFTItem />
           }
         ></Route>
         <Route
@@ -178,14 +177,7 @@ function App() {
             </ArtDatabase>
           }
         ></Route>
-        <Route
-          path="/artdb/venue/:venuId"
-          element={
-            <ArtDatabase search={false}>
-              <VenueDetail />
-            </ArtDatabase>
-          }
-        ></Route>
+        <Route path="/artdb/venue/:venuId" element={<VenueDetail />}></Route>
         {/* <Route
           path="/artdb/venue/display/1"
           element={
@@ -210,22 +202,8 @@ function App() {
             </Marketplace>
           }
         ></Route>
-        <Route
-          path="/market/:marketId"
-          element={
-            <Marketplace search={0}>
-              <MarketItem />
-            </Marketplace>
-          }
-        ></Route>
-        <Route
-          path="/market/nft/:nftId"
-          element={
-            <Marketplace>
-              <MarketNftItem />
-            </Marketplace>
-          }
-        ></Route>
+        <Route path="/market/:marketId" element={<MarketItem />}></Route>
+        <Route path="/market/nft/:nftId" element={<MarketNftItem />}></Route>
         <Route
           path="/market/platform"
           element={

@@ -109,7 +109,7 @@
 .banner .slick-prev:before,
 .banner .slick-next:before {
   content: '';
-  background: url('../../assets/arrow_left.png') no-repeat;
+  background: url('../../assets/arrow_left_slim.png') no-repeat;
   background-size: 25rem 50rem;
   width: 25rem;
   height: 50rem;
@@ -225,7 +225,7 @@
 
     top: 93.07rem;
 
-    display: block;
+    display: none !important;
 
     width: 12rem;
     height: 25rem;
@@ -245,7 +245,7 @@
   .banner .slick-prev:before,
   .banner .slick-next:before {
     content: '';
-    background: url('../../assets/arrow_left.png') no-repeat;
+    background: url('../../assets/arrow_left_slim.png') no-repeat;
     background-size: 7rem 15rem;
     width: 7rem;
     height: 15rem;

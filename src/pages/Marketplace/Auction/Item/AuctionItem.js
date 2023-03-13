@@ -55,7 +55,7 @@ function AuctionItem() {
   const options = ['최신등록순', '작품명순', '작가명순', '제작연도순']
   return (
     <div className="auction-detail">
-      <Header active="2" colored="black" />
+      <Header active="2" colored="black" detail={true} />
       <header className="auction-detail-header">
         <div className="container ad-header-container">
           <div className="ad-haeder__route">

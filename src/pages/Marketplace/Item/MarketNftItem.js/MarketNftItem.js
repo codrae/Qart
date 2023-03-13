@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import Footer from '../../../../components/Footer/Footer'
+import Header from '../../../../components/Header/Header'
 import SectionHeader from '../../../../components/SectionHeader/SectionHeader'
 import WorkHeader from '../../../../components/WorkHeader/WorkHeader'
 import './MarketNftItem.css'
@@ -9,6 +11,7 @@ function MarketNftItem() {
   const moreList = ['리스트', '그래프']
   return (
     <section className="market-nft-item">
+      <Header active="0" colored="black" detail={true} />
       <WorkHeader title_k={'NFT'} />
       <div className="container">
         <div className="market-nft-info">
@@ -157,6 +160,7 @@ function MarketNftItem() {
           </div>
         </div>
       </section>
+      <Footer />
     </section>
   )
 }

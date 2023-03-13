@@ -16,7 +16,7 @@ function Search() {
   var filter = ['최신등록순', '작품명순', '작가명순', '제작연도순']
   return (
     <div className="search-page">
-      <Header active="0" colored="black" login={false} />
+      <Header active="0" colored="black" login={false} detail={true} />
       <section className="search-bar">
         <div className="container">
           <DropDown options={genre} />

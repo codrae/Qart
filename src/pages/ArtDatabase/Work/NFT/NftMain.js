@@ -2,7 +2,7 @@ import React from 'react'
 import ArtDetail from '../../../../components/ArtDetail/ArtDetail'
 import './NftMain.css'
 
-function NftMain() {
+function NftMain(props) {
   const itemList = [
     {
       id: 1,
@@ -66,6 +66,7 @@ function NftMain() {
         options={options}
         breakRows={4}
         breakSlidersPerRow={2}
+        choice={props.choice}
       />
     </section>
   )

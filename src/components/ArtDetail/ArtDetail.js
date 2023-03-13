@@ -7,12 +7,16 @@ import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './ArtDetail.css'
 import WorkHeader from '../WorkHeader/WorkHeader'
 import DropDown from '../DropDown/DropDown'
+import Header from '../Header/Header'
+import HeaderSmall from '../Header/HeaderSmall/HeaderSmall'
+import Footer from '../Footer/Footer'
 
 function ArtDetail(props) {
   const [menu, setMenu] = useState(0)
   const location = useLocation().state
   const [rows, setRow] = useState(props.rows || 4)
   const [slidersPerRow, setSlidersPerRow] = useState(props.slidersPerRow || 3)
+
   const {
     title_e,
     title_k,
@@ -160,8 +164,14 @@ function ArtDetail(props) {
       window.removeEventListener('resize', resizingHandler)
     }
   }, [])
+
   return (
     <div className="art-d">
+      {props.detail ? (
+        <Header active="0" colored="black" detail={true} />
+      ) : (
+        <></>
+      )}
       <header className="art-d-header">
         {moreList ? (
           <WorkHeader
@@ -221,6 +231,7 @@ function ArtDetail(props) {
           </Slider>
         </div>
       </section>
+      {props.detail ? <Footer /> : <></>}
     </div>
   )
 }

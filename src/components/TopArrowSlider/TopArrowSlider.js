@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './TopArrowSlider.css'
+import { Link } from 'react-router-dom'
 
 function TopArrowSlider(props) {
   /* 배너 셋팅 */
@@ -45,10 +46,12 @@ function TopArrowSlider(props) {
           item[i]
         ) : (
           <div className="top-arrow-ㅡitem">
-            <img
-              className="top-arrow-image"
-              src={require('../../' + item[i].info)}
-            />
+            <Link to={item[i].link} state={{ item: item[i] }}>
+              <img
+                className="top-arrow-image"
+                src={require('../../' + item[i].info)}
+              />
+            </Link>
 
             <h4 className="top-arrow-author">{item[i].author}</h4>
             <span className="top-arrow-title">{item[i].title}</span>

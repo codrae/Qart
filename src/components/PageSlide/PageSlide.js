@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import '../../../node_modules/slick-carousel/slick/slick.css'
 import '../../../node_modules/slick-carousel/slick/slick-theme.css'
 import './PageSlide.css'
+import { Link } from 'react-router-dom'
 function PageSlide(props) {
   const sliderRef = useRef()
   const PAGE_PER_ITEM = props.rows * props.slidesPerRow
@@ -58,10 +59,18 @@ function PageSlide(props) {
       ) : (
         <div key={i} className="page-slider__item">
           <div className="page-slider-item-row">
-            <img
-              className="page-item-image"
-              src={require('../../' + item.info)}
-            ></img>
+            <Link
+              to={item.link}
+              state={{
+                item: item,
+              }}
+            >
+              <img
+                className="page-item-image"
+                src={require('../../' + item.info)}
+              ></img>
+            </Link>
+
             <div>
               {item.name ? (
                 <h2 className="page-item-author">
