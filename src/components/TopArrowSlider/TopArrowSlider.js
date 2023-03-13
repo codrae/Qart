@@ -25,11 +25,12 @@ function TopArrowSlider(props) {
         item
       ) : (
         <div className="top-arrow-item">
-          <img
-            className="top-arrow-image"
-            src={require('../../' + item.info)}
-          />
-
+          <Link to={item.link} state={{ item: item }}>
+            <img
+              className="top-arrow-image"
+              src={require('../../' + item.info)}
+            />
+          </Link>
           <h4 className="top-arrow-author">{item.author}</h4>
           <span className="top-arrow-title">{item.title}</span>
           <span className="top-arrow-price">{item.price}</span>

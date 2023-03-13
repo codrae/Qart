@@ -18,6 +18,9 @@
 .venue-detail .art-detail-container {
   padding-top: 70rem;
 }
+.venue-detail .art-detail-section {
+  flex-wrap: nowrap;
+}
 .venue-detail .art-detail__image {
   width: 494rem;
   height: 382rem;

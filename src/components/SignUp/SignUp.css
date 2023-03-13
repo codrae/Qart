@@ -61,7 +61,7 @@
 
   color: #222222;
 
-  text-align: left;
+  text-align: center;
 }
 .sign-item span {
   padding-top: 7rem;
@@ -185,6 +185,7 @@
 
     font-size: 16rem;
     line-height: 22rem;
+    text-align: left;
   }
   .sign-item span {
     padding-top: 4rem;

@@ -121,7 +121,7 @@ function ArtistDetail(props) {
       <div key={i} className="page-slider__item">
         <div className="page-slider-item-row">
           <Link
-            to={item.link}
+            to={menu == 0 ? item.link : '/market/1'}
             state={{
               item: item,
             }}

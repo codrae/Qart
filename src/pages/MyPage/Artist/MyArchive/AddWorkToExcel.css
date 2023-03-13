@@ -110,3 +110,47 @@
 
   color: #828282;
 }
+
+.ma-excel-add .ma-add--button {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 213rem;
+}
+.ma-excel-add .ma-add--button .container {
+  box-sizing: border-box;
+}
+.ma-excel-add .ma-add--button button {
+  background: none;
+
+  box-sizing: border-box;
+
+  width: 290rem;
+  height: 80rem;
+
+  border: 1rem solid #000000;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24rem;
+  line-height: 35rem;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Black */
+
+  color: #222222;
+
+  margin-right: 16rem;
+}
+.ma-excel-add .ma-add--button button:last-child {
+  border: none;
+  background: #000000;
+  color: #ffffff;
+  margin-right: 0;
+}

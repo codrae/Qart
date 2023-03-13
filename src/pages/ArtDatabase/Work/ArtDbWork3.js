@@ -37,7 +37,7 @@ function ArtDbWork3() {
       info: 'qart_test/회화/CHANG Sang-Eui, Flower Rain,Ink and colors on ramie fabric, 165 × 118 cm, 2019.png',
       author: 'Chang SangEui ',
       title: 'Flower Rain, 2019',
-      link: '/artdb/work/1',
+      link: '/artdb/work/2',
     })
   }
   const infoItem = {

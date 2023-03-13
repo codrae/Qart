@@ -3,7 +3,7 @@ import WorkHeader from '../../../components/WorkHeader/WorkHeader'
 import ArtDetailInfo from '../../../components/ArtDetailInfo/ArtDetailInfo'
 import PageSlide from '../../../components/PageSlide/PageSlide'
 
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
 import SectionHeader from '../../../components/SectionHeader/SectionHeader'
 
@@ -120,10 +120,38 @@ function VenueDetail() {
       link: '/artdb/work/1',
     })
   }
+
+  const result = []
+
+  pageItem.map((item, i) => {
+    result.push(
+      <div key={i} className="page-slider__item">
+        <div className="page-slider-item-row">
+          <Link
+            to={menu == 0 ? item.link : '/market/1'}
+            state={{
+              item: item,
+            }}
+          >
+            <img
+              className="page-item-image"
+              src={require('../../../' + item.info)}
+            ></img>
+          </Link>
+          <div>
+            <h2 className="page-item-author">{item.author}</h2>
+            <h3 className="page-item-email">{item.title}</h3>
+            <button className="page-item-button">팔로우</button>
+          </div>
+        </div>
+      </div>
+    )
+  })
+
   return (
     <section className="venue-detail">
       <Header active="0" colored="black" detail={true} />
-      <WorkHeader title_k={item.name} follow={true}></WorkHeader>
+      <WorkHeader title_k={item.name || item.title} follow={true}></WorkHeader>
       <ArtDetailInfo item={infoItem} />
       <HistoryInfo
         title={'기관이력'}
@@ -174,7 +202,8 @@ function VenueDetail() {
       ></WorkHeader>
       <div className="container artist-d-page-slide">
         <PageSlide
-          items={pageItem}
+          items={result}
+          divItem={true}
           rows={3}
           slidesPerRow={3}
           breakRows={4}

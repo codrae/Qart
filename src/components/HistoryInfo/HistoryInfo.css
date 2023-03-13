@@ -11,8 +11,11 @@
   align-items: center;
 }
 .display-history__list li {
-  padding-left: 0;
+  width: 1378rem;
+
+  padding-left: 56rem;
   padding-bottom: 46rem;
+  box-sizing: border-box;
   align-self: flex-start;
 }
 .display-history__list li:last-child {
