@@ -162,6 +162,9 @@
     min-width: 360rem;
     height: 202rem;
   }
+  .banner > .container {
+    height: 202rem;
+  }
   .banner-slider,
   .banner .slick-list {
     width: 100%;
