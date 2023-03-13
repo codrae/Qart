@@ -160,3 +160,71 @@
 
 - 나의 지갑 : https://main--qart-publishing.netlify.app/mypage/gallery/wallet
 - 관심 목록 : https://main--qart-publishing.netlify.app/mypage/gallery/like
+
+---
+
+# 관리자 페이지
+
+## 운영지표
+
+- 운영지표 : https://main--qart-publishing.netlify.app/admin
+
+- 사이트 정보수정 : https://main--qart-publishing.netlify.app/admin/main/info
+
+- 약관본문 수정 : https://main--qart-publishing.netlify.app/admin/main/term
+  - 수정 버튼 클릭시 전체 약관 보기
+
+## 회원 관리
+
+- 개인 회원 : https://main--qart-publishing.netlify.app/admin/
+- 작가 회원 :member/general
+  https://main--qart-publishing.netlify.app/admin/member/artist
+  - 상세 : https://main--qart-publishing.netlify.app/admin/member/artist/detail
+- 기관 회원 : https://main--qart-publishing.netlify.app/admin/member/gallery
+
+## 인증서 발급 내역 열람 및 관리
+
+- KYC 인증 : https://main--qart-publishing.netlify.app/admin/cert/kyc
+- Q-CoA 인증 : https://main--qart-publishing.netlify.app/admin/cert/qcoa
+  - 수정하기 : https://main--qart-publishing.netlify.app/admin/cert/qcoa/about
+
+## 문의 및 공지 관리
+
+- 문의 관리 : https://main--qart-publishing.netlify.app/admin/inform/inquiry
+  - 상세 : https://main--qart-publishing.netlify.app/admin/inform/inquiry/detail
+- 공지 관리 : https://main--qart-publishing.netlify.app/admin/inform/notice
+  - 상세 : https://main--qart-publishing.netlify.app/admin/inform/notice/edit
+
+## 팝업 및 배너 등록 / 변경 관리
+
+- 메인 : https://main--qart-publishing.netlify.app/admin/banner
+  - 수정 : https://main--qart-publishing.netlify.app/admin/banner/edit
+- 마켓플레이스 : https://main--qart-publishing.netlify.app/admin/banner/market
+  - 수정 : https://main--qart-publishing.netlify.app/admin/banner/market/edit
+- 플렛폼Q : https://main--qart-publishing.netlify.app/admin/banner/platform
+  - 수정 : https://main--qart-publishing.netlify.app/admin/banner/platform/edit
+
+## 자체 기획전 정보
+
+- 기획경매 : https://main--qart-publishing.netlify.app/admin/special/auction
+  - 등록 : https://main--qart-publishing.netlify.app/admin/special/auction/edit
+  - 상세 : https://main--qart-publishing.netlify.app/admin/special/auction/detail
+    - 수정 : https://main--qart-publishing.netlify.app/admin/special/auction/detail/edit
+- Art Tok! : https://main--qart-publishing.netlify.app/admin/special/arttok
+- 플렛폼Q : https://main--qart-publishing.netlify.app/admin/special/platformq
+
+## 작품 등록 기능
+
+- 작품 리스트 : https://main--qart-publishing.netlify.app/admin/work/list
+- 작가 등록 : https://main--qart-publishing.netlify.app/admin/work/artist
+- 작품 등록 : https://main--qart-publishing.netlify.app/admin/work
+
+## 새소식
+
+- 새소식 : https://main--qart-publishing.netlify.app/admin/new
+  - 수정 : https://main--qart-publishing.netlify.app/admin/new/edit
+
+## NFT
+
+- NFT : https://main--qart-publishing.netlify.app/admin/nft
+  - 상세 : https://main--qart-publishing.netlify.app/admin/nft/edit

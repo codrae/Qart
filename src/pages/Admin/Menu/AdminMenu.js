@@ -116,7 +116,7 @@ const AdminMenu = props => {
                 onClick={() => (item.buttonList ? toggle(index) : '')}
               >
                 <div className="ad-m-col-tlt-container">
-                  {open[index] == true || props.bm == index ? (
+                  {props.bm == index ? (
                     <img
                       className="ad-m-col-tlt-icon"
                       src={require('../../../assets/' + item.activeIcon)}
@@ -129,7 +129,7 @@ const AdminMenu = props => {
                   )}
                   <h2
                     className={
-                      open[index] == true || props.bm == index
+                      props.bm == index
                         ? 'ad-m-col-tlt-name active-title'
                         : 'ad-m-col-tlt-name '
                     }
