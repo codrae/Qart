@@ -1,166 +1,174 @@
 .admin-work {
-  padding-left: 86rem;
-  padding-right: 124rem;
-  width: calc(1670rem - 86rem - 124rem);
+  padding-left: 86px;
+  padding-right: 124px;
+  width: calc(1670px - 86px - 124px);
 }
 .admin-work--content {
   box-sizing: border-box;
 
-  height: 1402rem;
+  height: 1402px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
-  margin-top: 52rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  margin-top: 52px;
 }
 .admin-work--content > ul {
-  padding: 40rem;
+  padding: 40px;
   box-sizing: border-box;
 }
 .admin-work--content > ul > li {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 28rem;
+  margin-bottom: 28px;
 }
 .admin-work--content > ul > li.has-2-input {
-  margin-bottom: 12rem;
+  margin-bottom: 12px;
 }
 .admin-work--content ul li.edit-image {
-  height: 161rem;
+  height: 161px;
   position: relative;
 }
 .admin-work--content ul li .ma-img-show {
   position: absolute;
-  width: 161rem;
-  height: 161rem;
-  left: 169rem;
+  width: 161px;
+  height: 161px;
+  left: 169px;
   z-index: 1;
 
-  border: 1rem solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   box-sizing: border-box;
   object-fit: contain;
 }
 .admin-work--content ul li .edit-photo {
   position: absolute;
-  top: -10rem;
-  left: 317rem;
+  top: -10px;
+  left: 317px;
 }
 .admin-work--content ul li.edit-image > form,
 .admin-work--content ul li .image-button {
-  width: 161rem;
-  height: 161rem;
+  width: 161px;
+  height: 161px;
 
-  background-size: 32.5rem 32.5rem;
+  background-size: 32.5px 32.5px;
 }
 .admin-work--content ul li > h2 {
   display: block;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #222222;
   margin: 0;
   padding: 0;
-  width: 169rem;
+  width: 169px;
 }
 .admin-work--content ul li .ma-img-tlt--sub {
-  font-size: 14rem;
-  line-height: 20rem;
+  font-size: 14px;
+  line-height: 20px;
 }
 .admin-work--content .text-input {
   box-sizing: border-box;
 
-  width: 596rem;
-  height: 47rem;
+  width: 596px;
+  height: 47px;
 
   background: #ffffff;
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 
-  padding-left: 20rem;
+  padding-left: 20px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 }
 .admin-work--content .ma-add-date-mb .drop-select,
 .admin-work--content .ma-add-date-mb .show-drop-list li {
-  width: 207rem;
-  height: 47rem;
+  width: 207px;
+  height: 47px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #333333;
 }
 
 .admin-work--content .date-input {
   box-sizing: border-box;
-  width: 377rem;
-  height: 47rem;
+  width: 377px;
+  height: 47px;
 
   background: #ffffff;
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #333333;
-  margin-left: 12rem;
+  margin-left: 12px;
+}
+.admin-work--content .date-input::before {
+  font-size: 16px;
+  line-height: 23px;
+}
+.admin-work--content .date-input::-webkit-calendar-picker-indicator {
+  background-size: 22.5px 25px;
+  width: 60px;
 }
 .admin-work--content li > textarea {
   box-sizing: border-box;
 
-  width: 596rem;
-  height: 241rem;
+  width: 596px;
+  height: 241px;
 
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 
   outline: none;
   resize: none;
-  padding: 20rem;
+  padding: 20px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #333333;
 }
 .admin-work--content .ma-info-02-input {
-  height: 47rem;
+  height: 47px;
 }
 .admin-work--content .ma-info-02-input > input {
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
   box-sizing: border-box;
   border-right: none;
 
-  padding-left: 20rem;
+  padding-left: 20px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 }
 .admin-work--content .ma-info-02-input > span {
-  height: 47rem;
+  height: 47px;
 
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
   border-left: none;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 }
 .admin-work--content .drop-container {
   z-index: unset;
@@ -168,50 +176,55 @@
 
 .admin-work--content .drop-select,
 .admin-work--content .show-drop-list li {
-  width: 596rem;
-  height: 47rem;
+  width: 596px;
+  height: 47px;
 
   background: #ffffff;
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
+}
+.admin-work--content .drop-select:after {
+  width: 16px;
+  background-size: 16px 9px;
 }
 .admin-work--content .show-drop-list li {
   border: none;
-  border-bottom: 1rem solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 .admin-work--content .show-drop-list {
   z-index: 222;
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 }
 .admin-work--content .filebox label {
-  width: 189rem;
-  height: 47rem;
-
+  width: 189px;
+  height: 47px;
+  font-size: 16px;
+  line-height: 23px;
   background: #2f80ed;
 }
 .admin-work--content .filebox .upload-name {
-  width: 395rem;
-  height: 47rem;
+  width: 395px;
+  height: 47px;
 
-  border: 1rem solid #cccccc;
+  border: 1px solid #cccccc;
 }
 .admin-work--content .button-container > button {
-  width: 189rem;
-  height: 47rem;
+  width: 189px;
+  height: 47px;
 
   background: #2f80ed;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #ffffff;
 }
 .admin-work .admin-edit-button {
-  margin-top: 52rem;
-  margin-bottom: 82rem;
+  margin-top: 52px;
+  margin-bottom: 82px;
 }

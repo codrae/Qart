@@ -93,6 +93,7 @@ import AdminAuctionDetail from './pages/Admin/Work/AdminAuctionDetail'
 import AdminAuctionItem from './pages/Admin/Work/AdminAuctionItem'
 import AdminArtTok from './pages/Admin/Work/AdminArtTok'
 import AdminPlatformQ from './pages/Admin/Work/AdminPlatformQ'
+import AdminAuctionEdit from './pages/Admin/Work/AdminAuctionEdit'
 function App() {
   return (
     <BrowserRouter>
@@ -603,6 +604,14 @@ function App() {
           element={
             <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
               <AdminAuction />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/special/auction/edit"
+          element={
+            <AdminMain title={'자체 기획전 정보 - 기획경매'} bm={5} sm={0}>
+              <AdminAuctionEdit />
             </AdminMain>
           }
         ></Route>

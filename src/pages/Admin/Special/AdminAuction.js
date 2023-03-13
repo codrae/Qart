@@ -76,7 +76,10 @@ const AdminAuction = () => {
         <div className="ad-auction--header">
           <h1>경매</h1>
           <div className="ad-general-button">
-            <button>등록</button>
+            <Link to="./edit">
+              <button>등록</button>
+            </Link>
+
             <button>삭제</button>
           </div>
         </div>

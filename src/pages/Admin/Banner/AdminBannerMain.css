@@ -1,10 +1,10 @@
 .admin-banner-main {
-  padding: 0 80rem;
-  width: calc(1670rem - 160rem);
+  padding: 0 80px;
+  width: calc(1670px - 160px);
 }
 .admin-banner--header {
-  margin-top: 80rem;
-  margin-bottom: 24rem;
+  margin-top: 80px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,18 +14,18 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 30rem;
-  line-height: 35rem;
+  font-size: 30px;
+  line-height: 35px;
 
   color: #222222;
-  padding-bottom: 12rem;
+  padding-bottom: 12px;
 }
 .admin-banner--info > h2 {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 27rem;
+  font-size: 20px;
+  line-height: 27px;
 
   color: #000000;
 }
@@ -37,54 +37,54 @@
   flex-direction: row;
 }
 .admin-banner--button > button {
-  width: 54rem;
-  height: 54rem;
+  width: 54px;
+  height: 54px;
 
-  border: 1rem solid #000000;
+  border: 1px solid #000000;
   background: none;
 }
 .admin-banner--button > button:first-child {
   background: url('../../../assets/admin-up-icon.png') no-repeat center;
-  background-size: 24rem 26.8rem;
-  margin-right: 8rem;
+  background-size: 24px 26.8px;
+  margin-right: 8px;
 }
 .admin-banner--button > button:last-child {
   background: url('../../../assets/admin-down-icon.png') no-repeat center;
-  background-size: 24rem 26.8rem;
+  background-size: 24px 26.8px;
 }
 .admin-banner-main .admin-table-item {
-  height: 65rem;
+  height: 65px;
 }
 .admin-banner-main .admin-table-header li:first-child,
 .admin-banner-main .admin-table-item li:first-child {
-  width: 51rem;
+  width: 51px;
 }
 .admin-banner-main .admin-table-header li:nth-child(2),
 .admin-banner-main .admin-table-item li:nth-child(2) {
-  width: 102rem;
+  width: 102px;
 }
 .admin-banner-main .admin-table-header li:nth-child(3),
 .admin-banner-main .admin-table-item li:nth-child(3) {
-  width: 376rem;
+  width: 376px;
 }
 
 .admin-banner-main .admin-table-header li:nth-child(4),
 .admin-banner-main .admin-table-item li:nth-child(4) {
-  width: 361rem;
+  width: 361px;
 }
 .admin-banner-main .admin-table-header li:nth-child(5),
 .admin-banner-main .admin-table-item li:nth-child(5) {
-  width: 320rem;
+  width: 320px;
 }
 .admin-banner-main .admin-table-header li:nth-child(6),
 .admin-banner-main .admin-table-item li:nth-child(6) {
-  width: 295rem;
+  width: 295px;
   border-right: none;
 }
 .admin-banner-main .ad-general-table {
-  height: 379rem;
+  height: 379px;
 }
 .admin-banner-main .ad-general-table .page-slider {
-  height: 321rem;
+  height: 321px;
   padding-top: 0;
 }

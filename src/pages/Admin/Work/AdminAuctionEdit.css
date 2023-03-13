@@ -1,0 +1,208 @@
+.admin-auction-edit {
+  padding-left: 86px;
+  padding-right: 124px;
+  width: calc(1670px - 86px - 124px);
+}
+
+.admin-auction-edit--content {
+  box-sizing: border-box;
+
+  width: 1460px;
+  height: 837px;
+
+  /* White */
+
+  background: #ffffff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+
+  margin-top: 42px;
+  margin-bottom: 40px;
+}
+.admin-auction-edit--content > ul {
+  box-sizing: border-box;
+  padding: 29px 40px;
+}
+.admin-auction-edit--content > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.admin-auction-edit--content > ul > li > h2 {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #4f4f4f;
+  width: 140px;
+}
+.admin-auction-edit--content > ul > li > input {
+  box-sizing: border-box;
+
+  padding: 12px 20px 12px 20px;
+
+  width: 1240px;
+  height: 47px;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+}
+.admin-auction-edit--content > ul > li.textarea {
+  margin-bottom: 40px;
+}
+.admin-auction-edit--content > ul > li.textarea > h2 {
+  align-self: flex-start;
+}
+.admin-auction-edit--content > ul > li > textarea {
+  box-sizing: border-box;
+
+  padding: 12px 20px 12px 20px;
+
+  width: 1240px;
+  height: 128px;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #000000;
+  resize: none;
+  outline: none;
+}
+.admin-auction-edit--content > ul > li > .input-radio {
+  width: 22px;
+  height: 22px;
+}
+.admin-auction-edit--content > ul > li > .input-radio:checked,
+.admin-auction-edit--content > ul > li > .input-radio:active {
+  accent-color: #000000;
+}
+.admin-auction-edit--content > ul > li.radio > span {
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 4px;
+  padding-left: 5px;
+  padding-right: 33px;
+}
+.admin-auction-edit--content .filebox > label,
+.admin-auction-edit--content .img-filebox > label {
+  width: 92px;
+  height: 43px;
+
+  background: #2f80ed;
+  border-radius: 4px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.admin-auction-edit--content .img-filebox input[type='file'] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.admin-auction-edit--content .img-filebox .img-file-preview {
+  width: 186px;
+  height: 43px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-auction-edit--content .img-filebox .img-file-preview > h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #222222;
+  padding-left: 20px;
+}
+.admin-auction-edit--content .img-filebox .img-file-preview > button {
+  width: 19px;
+  height: 19px;
+  background: url('../../../assets/icon-x-black.png') no-repeat center;
+  background-size: 11.08px 11.08px;
+  margin-right: 12px;
+}
+.admin-auction-edit--content .filebox {
+  width: 100%;
+}
+.admin-auction-edit--content #attachFile .file-preview {
+  width: 1128px;
+  height: 43px;
+
+  background: #ffffff;
+  /* Gray 5 */
+
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-right: 0;
+}
+.admin-auction-edit--content > ul > li.date > input {
+  width: 263px;
+  margin-right: 10px;
+}
+.admin-auction-edit--content > ul > li.date > button {
+  width: 47px;
+  height: 47px;
+
+  background: #f2f2f2;
+  border-radius: 8px;
+}
+.admin-auction-edit--content > ul > li.date > button::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../../../assets/icon_calender-color.png') no-repeat center;
+  background-size: 17.25px 19.17px;
+}

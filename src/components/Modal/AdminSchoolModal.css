@@ -1,24 +1,24 @@
 .admin-school-modal .admin-history-content h2 {
-  width: 93rem;
+  width: 93px;
 }
 .admin-school-modal .admin-history-content .drop-select,
 .admin-school-modal .admin-history-content .show-drop-list > li {
-  width: 402rem;
+  width: 402px;
 }
 .admin-school-modal .admin-history-content input {
-  width: 402rem;
+  width: 402px;
 }
 .admin-school-modal .date-input {
-  width: 402rem;
+  width: 402px;
 }
 .admin-school-modal .full-size {
-  width: 943rem;
+  width: 943px;
 }
 .admin-school-modal .admin-history-content textarea {
-  width: 943rem;
-  height: 356rem;
-  border-radius: 8rem;
+  width: 943px;
+  height: 356px;
+  border-radius: 8px;
 }
 .admin-history-modal .admin-edit-button {
-  margin-right: 42rem;
+  margin-right: 42px;
 }

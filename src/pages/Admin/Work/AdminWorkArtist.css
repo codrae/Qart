@@ -1,22 +1,22 @@
 .admin-work-artist {
-  padding-left: 86rem;
-  padding-right: 124rem;
-  width: calc(1670rem - 86rem - 124rem);
+  padding-left: 86px;
+  padding-right: 124px;
+  width: calc(1670px - 86px - 124px);
 }
 .admin-work-artist-section-01 {
   box-sizing: border-box;
 
   width: 100%;
-  height: 371rem;
+  height: 371px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 
-  margin-top: 65rem;
+  margin-top: 65px;
 }
 .admin-work-artist-section-01 > ul {
-  padding: 48rem 79rem 36rem 57rem;
+  padding: 48px 79px 36px 57px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,38 +26,38 @@
 .admin-work-artist-section-01 > ul > li {
   display: flex;
   flex-direction: row;
-  padding-bottom: 24rem;
+  padding-bottom: 24px;
 }
 .admin-work-artist-section-01 > ul > li > h2 {
-  width: 106rem;
+  width: 106px;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #333333;
 }
 .admin-work-artist-section-01 > ul > li > input {
   box-sizing: border-box;
 
-  padding-left: 12rem;
+  padding-left: 12px;
 
-  width: 514rem;
-  height: 47rem;
+  width: 514px;
+  height: 47px;
 
   /* Gray 5 */
 
-  border: 1rem solid #e0e0e0;
-  border-radius: 8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
   background: none;
   outline: none;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #000000;
 }
@@ -65,8 +65,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #000000;
 }
@@ -77,57 +77,57 @@
 .admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list li {
   box-sizing: border-box;
 
-  width: 514rem;
-  height: 47rem;
+  width: 514px;
+  height: 47px;
 
   background: #ffffff;
   /* Gray 5 */
 
-  border: 1rem solid #e0e0e0;
-  border-radius: 8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #000000;
 }
 .admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list li {
-  width: 512rem;
+  width: 512px;
   border: none;
-  border-bottom: 1rem solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   border-radius: 0;
 }
 .admin-work-artist-section-01
   .admin-work-artist-dropdown
   .show-drop-list
   li:first-child {
-  border-top-left-radius: 8rem;
-  border-top-right-radius: 8rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .admin-work-artist-section-01
   .admin-work-artist-dropdown
   .show-drop-list
   li:last-child {
-  border-bottom-left-radius: 8rem;
-  border-bottom-right-radius: 8rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 .admin-work-artist-section-01 .admin-work-artist-dropdown .show-drop-list {
-  border-radius: 8rem;
+  border-radius: 8px;
 }
 .admin-work-artist-section-01 > ul > li > textarea {
-  padding: 12rem 0 12rem 20rem;
+  padding: 12px 0 12px 20px;
 
-  width: 1218rem;
-  height: 157rem;
+  width: 1218px;
+  height: 157px;
 
   background: none;
   /* Gray 5 */
 
-  border: 1rem solid #e0e0e0;
-  border-radius: 8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
   box-sizing: border-box;
   outline: none;
   resize: none;
@@ -135,8 +135,8 @@
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #000000;
 }
@@ -144,69 +144,69 @@
   color: #000000;
 }
 .admin-work-artist-section-02 {
-  margin-top: 20rem;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .admin-work-artist-02--content {
-  width: 720rem;
+  width: 720px;
 }
 .admin-work-artist--header {
   width: 100%;
-  height: 40rem;
+  height: 40px;
 
   background: #2b2e3f;
-  border-radius: 8rem;
+  border-radius: 8px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
 
   color: #ffffff;
   box-sizing: border-box;
-  padding-left: 28rem;
-  padding-top: 12rem;
+  padding-left: 28px;
+  padding-top: 12px;
 
-  margin-bottom: 8rem;
+  margin-bottom: 8px;
 }
 .admin-work-artist-02--item {
   width: 100%;
-  height: 370rem;
+  height: 370px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 
   box-sizing: border-box;
-  padding: 32rem 42rem 26rem 42rem;
+  padding: 32px 42px 26px 42px;
 }
 .admin-work-artist-02-drop-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 16rem;
+  margin-bottom: 16px;
 }
 .admin-work-artist-02-drop-container .drop-container,
 .admin-work-artist-02-drop-container .drop-select,
 .admin-work-artist-02-drop-container .show-drop-list li {
-  width: 514rem;
-  height: 47rem;
+  width: 514px;
+  height: 47px;
 
   background: #ffffff;
   /* Gray 5 */
 
-  border: 1rem solid #e0e0e0;
-  border-radius: 8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   /* Gray 1 */
 
@@ -214,66 +214,66 @@
   z-index: 0;
 }
 .admin-work-artist-02-drop-container .show-drop-list {
-  height: 326rem;
+  height: 326px;
 
   background: #ffffff;
-  border: 1rem solid #cccccc;
-  border-radius: 4rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
   overflow: scroll;
 }
 .admin-work-artist-02-drop-container .show-drop-list li {
   border: none;
 }
 .admin-work-artist-02-drop-container > button {
-  width: 107rem;
-  height: 47rem;
+  width: 107px;
+  height: 47px;
 
   /* Gray 4 */
 
   background: #bdbdbd;
-  border-radius: 4rem;
+  border-radius: 4px;
 
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   /* White */
 
   color: #ffffff;
 }
 .admin-work-artist-02--item .history-container {
-  border-top: 1rem solid #f2f2f2;
-  padding-top: 16rem !important;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 16px !important;
 }
 .admin-work-artist-02--item .history-list {
-  height: 233rem;
+  height: 233px;
   overflow: scroll;
 }
 .admin-work-artist-02--item .history-item {
-  width: 619rem;
-  height: 56rem;
+  width: 619px;
+  height: 56px;
 }
 .admin-work-artist-02--item .history-item > h4 {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #222222;
 }
 .admin-work-artist-02--item .history-item > button {
-  width: 56rem;
-  height: 14rem;
+  width: 56px;
+  height: 14px;
 }
 .admin-work-artist-02--item .history-item h4 {
   font-family: 'Noto Sans';
   font-style: normal;
 
-  font-size: 16rem;
-  line-height: 22rem;
+  font-size: 16px;
+  line-height: 22px;
 }
 .admin-work-artist-02--item h4 > span:first-child {
   font-weight: 500;
@@ -282,7 +282,7 @@
 .admin-work-artist-02--item h4 > span:nth-child(2) {
   font-weight: 700;
   color: #222222;
-  padding: 0 8rem;
+  padding: 0 8px;
 }
 .admin-work-artist-02--item h4 > span:last-child {
   font-weight: 400;

@@ -1,22 +1,22 @@
 .admin-notice {
-  padding: 0 80rem;
-  width: calc(1670rem - 160rem);
+  padding: 0 80px;
+  width: calc(1670px - 160px);
 }
 .admin-notice .admin-table-header li:first-child,
 .admin-notice .admin-table-item li:first-child {
-  width: 51rem;
+  width: 51px;
 }
 .admin-notice .admin-table-header li:nth-child(2),
 .admin-notice .admin-table-item li:nth-child(2) {
-  width: 102rem;
+  width: 102px;
 }
 .admin-notice .admin-table-header li:nth-child(3),
 .admin-notice .admin-table-item li:nth-child(3) {
-  width: 1081rem;
+  width: 1081px;
 }
 
 .admin-notice .admin-table-header li:nth-child(4),
 .admin-notice .admin-table-item li:nth-child(4) {
-  width: 273rem;
+  width: 273px;
   border-right: none;
 }

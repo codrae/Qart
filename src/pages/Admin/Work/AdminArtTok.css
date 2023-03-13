@@ -1,14 +1,14 @@
 .admin-arttok {
-  padding: 0 80rem;
-  width: calc(1670rem - 160rem);
+  padding: 0 80px;
+  width: calc(1670px - 160px);
 }
 .admin-arttok .admin-arttok--header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 61rem;
-  padding-bottom: 20rem;
+  padding-top: 61px;
+  padding-bottom: 20px;
 }
 .admin-arttok .admin-arttok--header > .ad-general-button {
   padding: 0;
@@ -17,34 +17,34 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 30rem;
-  line-height: 35rem;
+  font-size: 30px;
+  line-height: 35px;
 
   color: #222222;
   display: block;
 
   display: block;
-  width: 200rem;
+  width: 200px;
 }
 .admin-arttok .admin-table-header li:first-child,
 .admin-arttok .admin-table-item li:first-child {
-  width: 51rem;
+  width: 51px;
 }
 .admin-arttok .admin-table-header li:nth-child(2),
 .admin-arttok .admin-table-item li:nth-child(2) {
-  width: 102rem;
+  width: 102px;
 }
 .admin-arttok .admin-table-header li:nth-child(3),
 .admin-arttok .admin-table-item li:nth-child(3) {
-  width: 157rem;
+  width: 157px;
 }
 
 .admin-arttok .admin-table-header li:nth-child(4),
 .admin-arttok .admin-table-item li:nth-child(4) {
-  width: 957rem;
+  width: 957px;
 }
 .admin-arttok .admin-table-header li:nth-child(5),
 .admin-arttok .admin-table-item li:nth-child(5) {
-  width: 239rem;
+  width: 239px;
   border-right: none;
 }

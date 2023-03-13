@@ -1,38 +1,38 @@
 .admin-q-about-container {
   width: 100%;
-  margin-top: 50rem;
-  height: 779rem;
+  margin-top: 50px;
+  height: 779px;
   /* White */
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 .admin-q-about--header {
-  height: 70rem;
+  height: 70px;
 
-  border-top-left-radius: 8rem;
-  border-top-right-radius: 8rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 
   background: #2b2e3f;
 
   box-sizing: border-box;
-  padding-left: 32rem;
-  padding-top: 24rem;
+  padding-left: 32px;
+  padding-top: 24px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 20rem;
-  line-height: 23rem;
+  font-size: 20px;
+  line-height: 23px;
 
   color: #ffffff;
 }
 .admin-q-about-content {
-  height: calc(100% - 70rem);
+  height: calc(100% - 70px);
   box-sizing: border-box;
-  padding-top: 31rem;
-  padding-left: 32rem;
+  padding-top: 31px;
+  padding-left: 32px;
   display: flex;
   flex-direction: row;
 }
@@ -44,36 +44,39 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 18rem;
-  line-height: 21rem;
+  font-size: 18px;
+  line-height: 21px;
 
   color: #828282;
 
-  padding-right: 69rem;
+  padding-right: 69px;
 }
 .aq-about--item:last-child > img {
-  width: 429rem;
-  height: 657rem;
+  width: 429px;
+  height: 657px;
 
-  border: 1rem solid #e0e0e0;
-  border-radius: 8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.admin-q-about-content .filebox {
+  width: 579px;
 }
 .admin-q-about-content .filebox label {
-  width: 92rem;
-  height: 43rem;
+  width: 92px;
+  height: 43px;
 
   background: #2f80ed;
-  border-radius: 4rem;
+  border-radius: 4px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 19rem;
+  font-size: 16px;
+  line-height: 19px;
 
   color: #ffffff;
-  margin-right: 20rem;
+  margin-right: 20px;
 }
 .admin-q-about-container .admin-edit-button {
-  margin-top: 28rem;
+  margin-top: 28px;
 }

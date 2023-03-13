@@ -4,7 +4,7 @@ import './AdminHeader.css'
 const AdminHeader = ({ title }) => {
   return (
     <header className="admin-header">
-      <div className="container">
+      <div className="header-container">
         <h1>{title}</h1>
         <div className="admin-logout">
           <span className="ad-logout-icon"></span>

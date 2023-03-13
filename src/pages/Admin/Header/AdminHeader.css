@@ -1,14 +1,14 @@
 .admin-header {
-  width: calc(100vw - 250rem);
-  height: 70rem;
-  min-width: calc(1920rem - 250rem);
+  width: calc(100vw - 250px);
+  height: 70px;
+  min-width: calc(1920px - 250px);
 
   background: #2b2e3f;
 }
-.admin-header > .container {
-  width: 1670rem;
-  padding-left: 80rem;
-  padding-right: 173rem;
+.admin-header > .header-container {
+  width: 1670px;
+  padding-left: 80px;
+  padding-right: 173px;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -16,13 +16,14 @@
   align-items: center;
   box-sizing: border-box;
   margin: 0;
+  border: none;
 }
 .admin-header h1 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 20rem;
-  line-height: 23rem;
+  font-size: 20px;
+  line-height: 23px;
 
   letter-spacing: -0.02em;
 
@@ -36,18 +37,18 @@
 }
 .ad-logout-icon {
   display: block;
-  width: 34rem;
-  height: 34rem;
+  width: 34px;
+  height: 34px;
   background: url('../../../assets/admin-logout.png') no-repeat center;
   background-size: contain;
-  margin-right: 16rem;
+  margin-right: 16px;
 }
 .admin-logout > h2 {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 24rem;
-  line-height: 33rem;
+  font-size: 24px;
+  line-height: 33px;
   letter-spacing: -0.02em;
 
   color: #979797;

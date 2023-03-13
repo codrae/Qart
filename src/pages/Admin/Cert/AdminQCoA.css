@@ -1,38 +1,38 @@
 .admin-qcoa {
-  padding: 0 80rem;
-  width: calc(1670rem - 160rem);
+  padding: 0 80px;
+  width: calc(1670px - 160px);
 }
 .admin-qcoa-section-01 {
-  margin-top: 60rem;
+  margin-top: 60px;
   width: 100%;
 }
 .admin-qcoa-header {
   width: 100%;
-  height: 59rem;
+  height: 59px;
   box-sizing: border-box;
-  padding-left: 32rem;
-  padding-top: 18rem;
+  padding-left: 32px;
+  padding-top: 18px;
   background: #2b2e3f;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 20rem;
-  line-height: 23rem;
+  font-size: 20px;
+  line-height: 23px;
 
   color: #ffffff;
 
-  border-top-left-radius: 8rem;
-  border-top-right-radius: 8rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .ad-qoca-s-01-content {
-  height: 149rem;
+  height: 149px;
 
   /* White */
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 
   display: flex;
   flex-direction: row;
@@ -40,26 +40,26 @@
   justify-content: center;
 }
 .ad-qoca-s-01-content button {
-  width: 186rem;
-  height: 55rem;
+  width: 186px;
+  height: 55px;
   background: #2f80ed;
-  border-radius: 8rem;
+  border-radius: 8px;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 27rem;
+  font-size: 20px;
+  line-height: 27px;
 
   color: #ffffff;
 }
 .admin-qcoa-section-02 {
-  margin-bottom: 88rem;
+  margin-bottom: 88px;
 }
 .ad-qcoa-s-02--header {
-  padding-top: 40rem;
-  padding-bottom: 20rem;
-  height: 54rem;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  height: 54px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -74,72 +74,72 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 30rem;
-  line-height: 35rem;
+  font-size: 30px;
+  line-height: 35px;
 
   color: #222222;
 }
 .admin-qcoa .admin-table-item {
-  height: 162rem;
+  height: 162px;
 }
 .admin-qcoa .admin-table-header li:first-child,
 .admin-qcoa .admin-table-item li:first-child {
-  width: 60rem;
+  width: 60px;
 }
 .admin-qcoa .admin-table-header li:nth-child(2),
 .admin-qcoa .admin-table-item li:nth-child(2) {
-  width: 80rem;
+  width: 80px;
 }
 .admin-qcoa .admin-table-header li:nth-child(3),
 .admin-qcoa .admin-table-item li:nth-child(3) {
-  width: 180rem;
+  width: 180px;
 }
 
 .admin-qcoa .admin-table-header li:nth-child(4),
 .admin-qcoa .admin-table-item li:nth-child(4) {
-  width: 200rem;
+  width: 200px;
 }
 .admin-qcoa .admin-table-header li:nth-child(5),
 .admin-qcoa .admin-table-item li:nth-child(5) {
-  width: 220rem;
+  width: 220px;
 }
 .admin-qcoa .admin-table-header li:nth-child(6),
 .admin-qcoa .admin-table-item li:nth-child(6) {
-  width: 220rem;
+  width: 220px;
 }
 .admin-qcoa .admin-table-header li:nth-child(7),
 .admin-qcoa .admin-table-item li:nth-child(7) {
-  width: 140rem;
+  width: 140px;
 }
 .admin-qcoa .admin-table-header li:nth-child(8),
 .admin-qcoa .admin-table-item li:nth-child(8) {
-  width: 140rem;
+  width: 140px;
 }
 .admin-qcoa .admin-table-header li:nth-child(9),
 .admin-qcoa .admin-table-item li:nth-child(9) {
-  width: 140rem;
+  width: 140px;
 }
 .admin-qcoa .admin-table-header li:nth-child(10),
 .admin-qcoa .admin-table-item li:nth-child(10) {
-  width: 140rem;
+  width: 140px;
 }
 .admin-qcoa .ad-general-table {
-  height: 1199rem;
+  height: 1199px;
 }
 .admin-qcoa .ad-general-table .page-slider {
-  height: 1140rem;
+  height: 1140px;
   padding-top: 0;
 }
 .admin-qcoa .admin-table-item li:nth-child(3) > img {
-  width: 120rem;
-  height: 120rem;
-  border: 1rem solid #bdbdbd;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #bdbdbd;
   object-fit: contain;
 }
 .admin-qcoa .sealed-icon {
   display: block;
-  width: 20rem;
-  height: 20rem;
+  width: 20px;
+  height: 20px;
   background: url('../../../assets/admin-check-blue.png') no-repeat center;
   background-size: contain;
 }
@@ -148,11 +148,11 @@
   border-right: none;
 }
 .admin-qcoa .ad-general-table .page-slider .slick-dots {
-  top: 1165rem;
+  top: 1165px;
 }
 .admin-qcoa .ad-general-table .page-slider__list .slick-first,
 .admin-qcoa .ad-general-table .page-slider__list .slick-last,
 .admin-qcoa .ad-general-table .page-slider__list .slick-prev,
 .admin-qcoa .ad-general-table .page-slider__list .slick-next {
-  top: 1185rem;
+  top: 1185px;
 }

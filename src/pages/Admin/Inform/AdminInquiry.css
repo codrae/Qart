@@ -1,57 +1,57 @@
 .admin-inquiry {
-  padding: 0 80rem;
-  width: calc(1670rem - 160rem);
+  padding: 0 80px;
+  width: calc(1670px - 160px);
 }
 .admin-inquiry > h1 {
-  padding-top: 80rem;
-  padding-bottom: 20rem;
+  padding-top: 80px;
+  padding-bottom: 20px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 30rem;
-  line-height: 35rem;
+  font-size: 30px;
+  line-height: 35px;
 
   color: #222222;
 }
 .admin-inquiry .admin-table-item {
-  height: 65rem;
+  height: 65px;
 }
 .admin-inquiry .admin-table-header li:first-child,
 .admin-inquiry .admin-table-item li:first-child {
-  width: 188rem;
+  width: 188px;
 }
 .admin-inquiry .admin-table-header li:nth-child(2),
 .admin-inquiry .admin-table-item li:nth-child(2) {
-  width: 190rem;
+  width: 190px;
 }
 .admin-inquiry .admin-table-header li:nth-child(3),
 .admin-inquiry .admin-table-item li:nth-child(3) {
-  width: 197rem;
+  width: 197px;
 }
 
 .admin-inquiry .admin-table-header li:nth-child(4),
 .admin-inquiry .admin-table-item li:nth-child(4) {
-  width: 228rem;
+  width: 228px;
 }
 .admin-inquiry .admin-table-header li:nth-child(5),
 .admin-inquiry .admin-table-item li:nth-child(5) {
-  width: 524rem;
+  width: 524px;
 }
 .admin-inquiry .admin-table-header li:nth-child(6),
 .admin-inquiry .admin-table-item li:nth-child(6) {
-  width: 178rem;
+  width: 178px;
   border-right: none;
 }
 .admin-inquiry .ad-general-table {
-  height: 706rem;
+  height: 706px;
 }
 .admin-inquiry .ad-general-table .page-slider {
-  height: 644rem;
+  height: 644px;
   padding-top: 0;
 }
 .admin-inquiry .admin-table-item li:nth-child(5) > p {
-  margin: 21rem 59rem;
+  margin: 21px 59px;
 
   overflow: hidden;
   white-space: normal;

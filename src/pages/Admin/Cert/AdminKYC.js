@@ -100,43 +100,41 @@ const AdminKYC = () => {
   )
   return (
     <div className="admin-kyc">
-      <div className="container">
-        <section className="ad-general-button">
-          <button>이용정지</button>
-          <button>이용재개</button>
-        </section>
-        <section className="ad-general-table">
-          <ul className="admin-table-header">
-            <li>
-              <label className="login-option">
-                <input
-                  type="checkbox"
-                  onChange={e => checkAllHandler(e.target.checked)}
-                  checked={
-                    checkItems.length == 0
-                      ? false
-                      : checkItems.length === tableItem.length
-                      ? true
-                      : false
-                  }
-                />
-                <span className="login-option__check" />
-              </label>
-            </li>
-            <li>회원번호</li>
-            <li>회원아이디</li>
-            <li>이름</li>
-            <li>휴대폰번호</li>
-            <li>E-mail</li>
-            <li>국적</li>
-            <li>신분증</li>
-            <li>인증사진</li>
-          </ul>
-          <div className="admin-table-slider">
-            <AdminSlide items={tableItem} rows={10} slidesPerRow={1} />
-          </div>
-        </section>
-      </div>
+      <section className="ad-general-button">
+        <button>이용정지</button>
+        <button>이용재개</button>
+      </section>
+      <section className="ad-general-table">
+        <ul className="admin-table-header">
+          <li>
+            <label className="login-option">
+              <input
+                type="checkbox"
+                onChange={e => checkAllHandler(e.target.checked)}
+                checked={
+                  checkItems.length == 0
+                    ? false
+                    : checkItems.length === tableItem.length
+                    ? true
+                    : false
+                }
+              />
+              <span className="login-option__check" />
+            </label>
+          </li>
+          <li>회원번호</li>
+          <li>회원아이디</li>
+          <li>이름</li>
+          <li>휴대폰번호</li>
+          <li>E-mail</li>
+          <li>국적</li>
+          <li>신분증</li>
+          <li>인증사진</li>
+        </ul>
+        <div className="admin-table-slider">
+          <AdminSlide items={tableItem} rows={10} slidesPerRow={1} />
+        </div>
+      </section>
     </div>
   )
 }

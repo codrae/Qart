@@ -1,6 +1,6 @@
 .admin-general {
-  width: 1510rem;
-  padding: 0 80rem;
+  width: 1510px;
+  padding: 0 80px;
   margin: 0;
 }
 .admin-general .container {
@@ -11,57 +11,57 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding-top: 61rem;
-  padding-bottom: 20rem;
+  padding-top: 61px;
+  padding-bottom: 20px;
 }
 .ad-general-button button {
-  width: 120rem;
-  height: 54rem;
+  width: 120px;
+  height: 54px;
 
   background: #2f80ed;
-  border-radius: 8rem;
+  border-radius: 8px;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 27rem;
+  font-size: 20px;
+  line-height: 27px;
 
   color: #ffffff;
-  margin-right: 8rem;
+  margin-right: 8px;
 }
 .ad-general-button > button:last-child {
   margin-right: 0;
 }
 .ad-general-table {
-  width: 1510rem;
-  height: 708rem;
+  width: 1510px;
+  height: 708px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
 }
 .admin-table-header {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 58rem;
+  height: 58px;
 
   background: #2b2e3f;
-  border-top-left-radius: 8rem;
-  border-top-right-radius: 8rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .admin-table-header li {
   font-weight: 700;
   color: #ffffff;
-  border-right: 1rem solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
 .ad-general-table li {
   font-family: 'Noto Sans KR';
   font-style: normal;
 
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
   text-align: center;
 
   /* White */
@@ -76,39 +76,39 @@
 
 .admin-general .admin-table-header li:first-child,
 .admin-general .admin-table-item li:first-child {
-  width: 51rem;
+  width: 51px;
 }
 .admin-general .admin-table-header li:nth-child(2),
 .admin-general .admin-table-item li:nth-child(2) {
-  width: 102rem;
+  width: 102px;
 }
 .admin-general .admin-table-header li:nth-child(3),
 .admin-general .admin-table-item li:nth-child(3) {
-  width: 157rem;
+  width: 157px;
 }
 .admin-general .admin-table-header li:nth-child(4),
 .admin-general .admin-table-item li:nth-child(4) {
-  width: 205rem;
+  width: 205px;
 }
 .admin-general .admin-table-header li:nth-child(5),
 .admin-general .admin-table-item li:nth-child(5) {
-  width: 269rem;
+  width: 269px;
 }
 .admin-general .admin-table-header li:nth-child(6),
 .admin-general .admin-table-item li:nth-child(6) {
-  width: 240rem;
+  width: 240px;
 }
 .admin-general .admin-table-header li:nth-child(7),
 .admin-general .admin-table-item li:nth-child(7) {
-  width: 240rem;
+  width: 240px;
 }
 .admin-general .admin-table-header li:nth-child(8),
 .admin-general .admin-table-item li:nth-child(8) {
-  width: 239rem;
+  width: 239px;
   border-right: none;
 }
 .ad-general-table .page-slider {
-  height: 644rem;
+  height: 644px;
   padding-top: 0;
 }
 .ad-general-table .page-slider__list {
@@ -119,39 +119,42 @@
 .admin-table-item {
   display: flex !important;
   flex-direction: row;
-  height: 65rem;
-  border-top: 1rem solid #bdbdbd;
+  height: 65px;
+  border-top: 1px solid #bdbdbd;
   box-sizing: border-box;
 }
 
 .admin-table-item li {
   font-weight: 400;
   color: #000000;
-  border-right: 1rem solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
 }
 .ad-general-table .login-option__check {
   margin-right: 0;
+  width: 20px;
+  height: 20px;
 }
 .ad-general-table .slick-dots-container {
-  width: 440rem;
+  width: 440px;
+  height: 40.45px;
 }
 .ad-general-table .page-slider .slick-dots {
-  top: 705rem;
-  height: 40.45rem;
+  top: 705px;
+  height: 40.45px;
 }
 .ad-general-table .page-slider .slick-dots li {
   background: #ffffff;
-  width: 36.63rem;
-  height: 40.45rem;
-
-  margin-right: 6.37rem;
+  width: 36.63px;
+  height: 40.45px;
+  height: 100%;
+  margin-right: 6.37px;
 }
 .ad-general-table .page-slider .dots-number {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 700;
-  font-size: 20.2268rem;
-  line-height: 29rem;
+  font-size: 20.2268px;
+  line-height: 29px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -169,25 +172,28 @@
 .ad-general-table .page-slider__list .slick-prev,
 .ad-general-table .page-slider__list .slick-next {
   background: #e5e7e8;
-  width: 36.63rem;
-  height: 40.45rem;
+  width: 36.63px;
+  height: 40.45px;
 
-  top: 725rem;
-  left: 480rem;
+  top: 725px;
+  left: 480px;
 }
 .ad-general-table .page-slider__list .slick-next {
-  left: calc(480rem + 510rem);
+  left: calc(480px + 510px);
 }
 .ad-general-table .page-slider__list .slick-first {
-  left: calc(480rem - 40rem);
+  left: calc(480px - 40px);
 }
 
 .ad-general-table .page-slider__list .slick-last {
-  left: calc(480rem + 510rem + 40rem);
+  left: calc(480px + 510px + 40px);
 }
 .ad-general-table .page-slider__list .slick-first:before,
 .ad-general-table .page-slider__list .slick-last:before,
 .ad-general-table .page-slider__list .slick-prev:before,
 .ad-general-table .page-slider__list .slick-next:before {
-  background-size: 36.63rem 40.45rem;
+  width: 36.63px;
+  height: 40.45px;
+
+  background-size: 36.63px 40.45px;
 }

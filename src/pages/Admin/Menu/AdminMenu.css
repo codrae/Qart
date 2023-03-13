@@ -1,33 +1,33 @@
 .admin-menu {
-  width: 250rem;
-  height: 1080rem;
-
+  width: 250px;
+  height: 1080px;
+  min-height: 100vh;
   background: #2b2e3f;
 }
 .admin-menu-icon {
   width: 100%;
-  height: 45rem;
+  height: 45px;
   background: url('../../../assets/logo_color.png') no-repeat center;
-  background-size: 120rem 45rem;
-  padding-top: 30rem;
-  padding-bottom: 30rem;
+  background-size: 120px 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .admin-menu-content {
   display: block;
   /* width: 100%; */
   box-sizing: border-box;
-  margin-left: 31rem;
-  border-left: 2rem solid #41455b;
+  margin-left: 31px;
+  border-left: 2px solid #41455b;
 }
 .admin-menu-item {
-  width: 176rem;
-  height: 40rem;
+  width: 176px;
+  height: 40px;
 
-  margin-left: 22rem;
+  margin-left: 22px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
+  font-size: 16px;
   line-height: 100%;
 
   color: #bdbdbd;
@@ -37,11 +37,11 @@
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 20rem;
+  padding-left: 20px;
 }
 .active-content {
   background: #3c8fff;
-  border-radius: 20rem;
+  border-radius: 20px;
   color: #ffffff;
 }
 .ad-m-col-item {
@@ -55,8 +55,8 @@
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 80rem;
-  padding: 0 22rem;
+  height: 80px;
+  padding: 0 22px;
 }
 .ad-m-col-tlt-container {
   display: flex;
@@ -64,33 +64,33 @@
   align-items: center;
 }
 .ad-m-col-tlt-icon {
-  width: 22rem;
-  height: 22rem;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 .ad-m-col-tlt-name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 18rem;
-  line-height: 18rem;
+  font-size: 18px;
+  line-height: 18px;
 
   color: #bdbdbd;
 
-  padding-left: 15rem;
+  padding-left: 15px;
 }
 .active-title {
   font-weight: 700;
   color: #3c8fff;
 }
 .ad-m-toggle-btn {
-  margin-left: 22rem;
-  width: 14rem;
+  margin-left: 22px;
+  width: 14px;
   height: 100%;
   background: url('../../../assets/admin-toggle.png') no-repeat center;
-  background-size: 11.15rem 6.55rem;
+  background-size: 11.15px 6.55px;
 }
 .ad-m-toggle-btn__close {
   background: url('../../../assets/admin-toggle-close.png') no-repeat center;
-  background-size: 11.15rem 6.55rem;
+  background-size: 11.15px 6.55px;
 }

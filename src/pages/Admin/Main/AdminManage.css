@@ -1,20 +1,20 @@
 .admin-manage {
-  width: 1417rem;
-  padding: 0 126rem;
+  width: 1417px;
+  padding: 0 126px;
   margin: 0;
 }
 .admin-manage .container {
   margin: 0;
 }
 .ad-manage-section-01 {
-  padding-top: 40rem;
+  padding-top: 40px;
 }
 .ad-manage-section-01--header {
   display: block;
   width: 100%;
-  height: 40rem;
+  height: 40px;
 
-  border-radius: 8rem;
+  border-radius: 8px;
   background: #2b2e3f;
   display: flex;
   flex-direction: row;
@@ -25,64 +25,64 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
 
   color: #ffffff;
 
-  padding-left: 28rem;
+  padding-left: 28px;
 }
 .ad-m-section-01-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 12rem;
+  padding-top: 12px;
 }
 .ad-m-s-01-content-item {
-  width: 459rem;
-  height: 234rem;
+  width: 459px;
+  height: 234px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
   box-sizing: border-box;
-  padding: 0 24rem;
-  padding-top: 30rem;
-  padding-bottom: 24rem;
+  padding: 0 24px;
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 .m-basic-info {
   text-align: center;
-  border-bottom: 1rem solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 .m-basic-info > h3 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 19rem;
+  font-size: 16px;
+  line-height: 19px;
 
   color: #222222;
 
-  padding-bottom: 8rem;
+  padding-bottom: 8px;
 }
 .m-basic-info > h2 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 24rem;
-  line-height: 28rem;
+  font-size: 24px;
+  line-height: 28px;
 
   color: #2f80ed;
 
-  padding-bottom: 24rem;
+  padding-bottom: 24px;
 }
 .m-more-info {
-  padding-top: 20rem;
+  padding-top: 20px;
   font-family: 'Roboto';
   font-style: normal;
 
-  font-size: 16rem;
-  line-height: 19rem;
+  font-size: 16px;
+  line-height: 19px;
 
   color: #222222;
 }
@@ -90,7 +90,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 12rem;
+  padding-bottom: 12px;
 }
 .m-more-info h3:last-child {
   padding-bottom: 0;
@@ -102,35 +102,35 @@
   font-weight: 700;
 }
 .ad-manage-section-03 {
-  padding-top: 40rem;
+  padding-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .ad-m-s-03-content {
-  width: 698rem;
+  width: 698px;
 }
 .ad-manage-section-01--header > .move-to {
   display: block;
-  width: 8.95rem;
-  height: 15.64rem;
+  width: 8.95px;
+  height: 15.64px;
   background: url('../../../assets/arrow_right.png') no-repeat center;
-  background-size: 8.95rem 15.64rem;
+  background-size: 8.95px 15.64px;
 
-  margin-right: 25.25rem;
+  margin-right: 25.25px;
 }
 .ad-m-s-03-item {
-  margin-top: 12rem;
-  padding: 0 28rem;
-  padding-top: 21rem;
-  padding-bottom: 24rem;
+  margin-top: 12px;
+  padding: 0 28px;
+  padding-top: 21px;
+  padding-bottom: 24px;
 
-  width: 698rem;
-  height: 204rem;
+  width: 698px;
+  height: 204px;
 
   background: #ffffff;
-  box-shadow: 4rem 4rem 10rem rgba(0, 0, 0, 0.15);
-  border-radius: 8rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
   box-sizing: border-box;
 }
 .ad-m-s-03-item h3 {
@@ -141,10 +141,10 @@
   font-family: 'Roboto';
   font-style: normal;
 
-  font-size: 16rem;
-  line-height: 19rem;
+  font-size: 16px;
+  line-height: 19px;
 
-  padding-bottom: 16rem;
+  padding-bottom: 16px;
 }
 .ad-m-s-03-item h3:last-child {
   padding-bottom: 0;

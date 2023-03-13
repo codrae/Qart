@@ -19,26 +19,24 @@ const AdminPlatformQ = () => {
 
   items.map((item, i) => {
     tableItem.push(
-      <Link>
-        <ul className="admin-table-item">
-          <li>
-            <label className="login-option">
-              <input
-                type="checkbox"
-                onChange={e => checkHandler(e.target.checked, i)}
-                checked={checkItems.indexOf(i) >= 0 ? true : false}
-              />
-              <span className="login-option__check" />
-            </label>
-          </li>
-          <li>{item.num}</li>
-          <li>
-            <img src={require('../../../' + item.info)}></img>
-          </li>
-          <li>{item.name}</li>
-          <li>{item.title}</li>
-        </ul>
-      </Link>
+      <ul className="admin-table-item">
+        <li>
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => checkHandler(e.target.checked, i)}
+              checked={checkItems.indexOf(i) >= 0 ? true : false}
+            />
+            <span className="login-option__check" />
+          </label>
+        </li>
+        <li>{item.num}</li>
+        <li>
+          <img src={require('../../../' + item.info)}></img>
+        </li>
+        <li>{item.name}</li>
+        <li>{item.title}</li>
+      </ul>
     )
   })
   // 개별선택

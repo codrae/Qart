@@ -1,8 +1,8 @@
 .admin-edit {
-  width: 1336rem;
+  width: 1336px;
 
-  padding-left: 124rem;
-  padding-right: 210rem;
+  padding-left: 124px;
+  padding-right: 210px;
 }
 
 .admin-edit-content-layer {
@@ -10,8 +10,8 @@
   flex-direction: row;
   justify-content: space-between;
 
-  padding-top: 90rem;
-  padding-bottom: 111rem;
+  padding-top: 90px;
+  padding-bottom: 111px;
 }
 .admin-edit-content {
   width: 50%;
@@ -26,66 +26,66 @@
   flex-wrap: wrap;
   width: 100%;
 
-  margin-bottom: 28rem;
+  margin-bottom: 28px;
 }
 .admin-edit-item h3 {
   display: block;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #333333;
-  width: 118rem;
+  width: 118px;
   height: inherit;
 }
 .admin-edit-item input {
   box-sizing: border-box;
 
-  width: 516rem;
-  height: 42rem;
+  width: 516px;
+  height: 42px;
 
-  border: 1rem solid #bdbdbd;
-  border-radius: 4rem;
-  padding-left: 20rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  padding-left: 20px;
 }
 .admin-edit-item > .has-2-input {
-  width: 516rem;
+  width: 516px;
 }
 .has-2-input > h3 {
   align-self: flex-start;
-  padding-top: 9rem;
+  padding-top: 9px;
 }
 .admin-edit-item > .has-2-input > input:first-child {
-  margin-bottom: 28rem;
+  margin-bottom: 28px;
 }
 .admin-edit-input-ps {
-  width: 72rem !important;
-  margin-right: 8rem;
+  width: 72px !important;
+  margin-right: 8px;
 }
 .admin-edit-input-p {
-  width: 160rem !important;
+  width: 160px !important;
 }
 .admin-edit-item > span {
   display: block;
-  padding: 0 9rem;
+  padding: 0 9px;
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 500;
-  font-size: 16rem;
-  line-height: 23rem;
+  font-size: 16px;
+  line-height: 23px;
 
   color: #000000;
 }
 .admin-edit-content-02 input {
-  width: 424rem;
+  width: 424px;
 }
 .admin-edit-input-e {
-  width: 198rem !important;
+  width: 198px !important;
 }
 .email-item > span {
-  padding: 0 6rem;
+  padding: 0 6px;
 }
 .admin-edit-button {
   display: flex;
@@ -93,19 +93,19 @@
   justify-content: flex-end;
 }
 .admin-edit-button > button {
-  width: 117rem;
-  height: 59rem;
+  width: 117px;
+  height: 59px;
   border-radius: 8px;
 
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20rem;
-  line-height: 27rem;
+  font-size: 20px;
+  line-height: 27px;
 
   background: #2f80ed;
   color: #ffffff;
-  margin-left: 12rem;
+  margin-left: 12px;
 }
 .admin-edit-button > button:first-child {
   background: none;

@@ -1,19 +1,19 @@
 .admin-artist-detail {
-  width: calc(1670rem - 55rem - 182rem);
-  padding-left: 55rem;
-  padding-right: 182rem;
+  width: calc(1670px - 55px - 182px);
+  padding-left: 55px;
+  padding-right: 182px;
 }
 .ad-artist-info {
   width: 100%;
-  padding: 36rem 0 36rem 43rem;
-  height: 217rem;
+  padding: 36px 0 36px 43px;
+  height: 217px;
 
   background: #ffffff;
-  box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
-  border-radius: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
   box-sizing: border-box;
-  margin-top: 44rem;
+  margin-top: 44px;
 
   display: flex;
   flex-direction: row;
@@ -22,15 +22,15 @@
 .ad-artist-info > img {
   box-sizing: border-box;
 
-  width: 145rem;
-  height: 145rem;
+  width: 145px;
+  height: 145px;
 
-  border: 1rem solid #bdbdbd;
+  border: 1px solid #bdbdbd;
   object-fit: contain;
-  margin-right: 12rem;
+  margin-right: 12px;
 }
 .ad-artist-info--item {
-  margin: 0 70rem;
+  margin: 0 70px;
 }
 
 .ad-artist-info--item > h2 {
@@ -40,9 +40,9 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16rem;
-  line-height: 19rem;
-  padding-bottom: 20rem;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 20px;
 
   text-align-last: left;
 }
@@ -56,36 +56,36 @@
   color: #333333;
 }
 .ad-artist-info--item:nth-child(2) {
-  width: 186rem;
+  width: 186px;
 }
 .ad-artist-info--item:nth-child(2) > h2 > span:first-child {
   display: block;
-  width: 127rem;
+  width: 127px;
 }
 .ad-artist-info--item:nth-child(3) {
-  width: 262rem;
+  width: 262px;
   margin: 0;
-  padding: 0 70rem;
-  border-left: 1rem solid #f2f2f2;
-  border-right: 1rem solid #f2f2f2;
+  padding: 0 70px;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
 }
 .ad-artist-info--item:nth-child(3) > h2 > span:first-child {
   display: block;
-  width: 127rem;
+  width: 127px;
 }
 
 .ad-artist-info--item:nth-child(4) {
-  width: 278rem;
+  width: 278px;
 }
 .ad-artist-info--item:nth-child(4) > h2 > span:first-child {
   display: block;
-  width: 185rem;
+  width: 185px;
 }
 .ad-artist-info--item .false-state {
   color: #eb5757 !important;
 }
 .ad-artist-history {
-  padding-top: 28rem;
+  padding-top: 28px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -94,27 +94,27 @@
 
 .ad-artist--header {
   width: 100%;
-  height: 40rem;
+  height: 40px;
   background: #2b2e3f;
-  border-radius: 8rem;
+  border-radius: 8px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
 
   color: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  padding-left: 28rem;
+  padding-left: 28px;
   box-sizing: border-box;
-  margin-bottom: 8rem;
+  margin-bottom: 8px;
 }
 .ad-artist-history-01 {
-  width: 683rem;
+  width: 683px;
 }
 .ad-artist-history--item {
   width: 100%;
@@ -122,25 +122,25 @@
 .ad-artist-history--item > article {
   width: 100%;
 
-  padding: 20rem 28rem;
+  padding: 20px 28px;
 
-  height: 106rem;
+  height: 106px;
 
   background: #ffffff;
-  box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
-  border-radius: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
   box-sizing: border-box;
 
-  margin-bottom: 28rem;
+  margin-bottom: 28px;
 }
 .ad-artist-history--item > article > p {
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 14rem;
+  font-size: 14px;
   line-height: 155.2%;
-  /* or 22rem */
+  /* or 22px */
 
   text-align: justify;
 
@@ -156,22 +156,22 @@
 .ad-artist-history--item > ul {
   width: 100%;
 
-  padding: 20rem 28rem;
+  padding: 20px 28px;
 
-  height: 140rem;
+  height: 140px;
 
   background: #ffffff;
-  box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
-  border-radius: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
   box-sizing: border-box;
 }
 .ad-artist-history--item > ul > li {
   font-family: 'Noto Sans';
   font-style: normal;
 
-  font-size: 14rem;
-  line-height: 19rem;
-  padding-bottom: 8rem;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 8px;
 }
 .ad-artist-history--item > ul > li:last-child {
   padding-bottom: 0;
@@ -183,23 +183,23 @@
 .ad-artist-history--item > ul > li > span:nth-child(2) {
   font-weight: 700;
   color: #222222;
-  padding: 0 11rem;
+  padding: 0 11px;
 }
 .ad-artist-history--item > ul > li > span:nth-child(3) {
   font-weight: 400;
   color: #333333;
 }
 .ad-artist-history-02 {
-  width: 730rem;
+  width: 730px;
 }
 .ad-artist-history-02 > ul {
   width: 100%;
-  padding: 20rem 28rem;
-  height: 322rem;
+  padding: 20px 28px;
+  height: 322px;
 
   background: #ffffff;
-  box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
-  border-radius: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
   box-sizing: border-box;
 }
@@ -207,13 +207,13 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 14rem;
-  line-height: 19rem;
+  font-size: 14px;
+  line-height: 19px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  padding-bottom: 16rem;
+  padding-bottom: 16px;
 }
 .ad-artist-history-02 > ul > li:last-child {
   padding-bottom: 0;
@@ -227,74 +227,74 @@
 .ad-artist-history-02 > ul > li > span:nth-child(2) {
   font-weight: 700;
   color: #222222;
-  padding-right: 8rem;
+  padding-right: 8px;
 }
 .ad-artist-history-02 > ul > li > span:nth-child(3) {
   font-weight: 400;
   color: #333333;
 }
 .ad-artist-work {
-  margin-top: 28rem;
+  margin-top: 28px;
 
   width: 100%;
-  height: 583rem;
+  height: 583px;
 
   background: #ffffff;
-  box-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
-  border-radius: 8rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
   overflow: scroll;
-  padding: 36rem;
-  padding-top: 11rem;
+  padding: 36px;
+  padding-top: 11px;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 52rem;
+  margin-bottom: 52px;
 }
 .ad-artist-work--item {
-  margin-top: 25rem;
-  width: 173rem;
-  margin-right: 24rem;
+  margin-top: 25px;
+  width: 173px;
+  margin-right: 24px;
 }
 .ad-artist-work--item:nth-child(7n) {
   margin-right: 0;
 }
 .ad-artist-work--item > img {
   width: 100%;
-  height: 173rem;
+  height: 173px;
   background: #f2f2f2;
   object-fit: contain;
 }
 .ad-artist-work--item > h3 {
-  padding-top: 12rem;
+  padding-top: 12px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 14rem;
-  line-height: 16rem;
+  font-size: 14px;
+  line-height: 16px;
 
   color: #000000;
 }
 .ad-artist-work--item > h2 {
-  padding-top: 4rem;
+  padding-top: 4px;
 
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 20rem;
-  line-height: 23rem;
+  font-size: 20px;
+  line-height: 23px;
 
   color: #333333;
 }
 .ad-artist-work--item > h4 {
-  padding-top: 4rem;
+  padding-top: 4px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 12rem;
-  line-height: 14rem;
+  font-size: 12px;
+  line-height: 14px;
 
   color: #bdbdbd;
 }

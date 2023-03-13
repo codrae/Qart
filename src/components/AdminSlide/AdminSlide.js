@@ -79,7 +79,7 @@ function AdminSlide(props) {
     setDotArr(numArr)
   }
   return (
-    <section className="container page-slider">
+    <section className="page-slider">
       <div className="page-slider__list">
         <button
           className="slick-first"
