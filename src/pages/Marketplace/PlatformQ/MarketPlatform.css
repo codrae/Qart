@@ -148,6 +148,7 @@
     margin-right: 20rem;
 
     padding-bottom: 24rem;
+    height: inherit;
   }
   .market-platform-slider .slider__item:nth-child(3) {
     margin-right: 20rem;
