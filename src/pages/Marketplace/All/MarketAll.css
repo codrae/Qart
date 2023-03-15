@@ -49,6 +49,7 @@
 .market-all .work-header__detail button {
   margin-right: 40rem;
 }
+
 .market-all-slider .art-d-header-container {
   height: inherit;
   padding-top: 36rem;
@@ -360,7 +361,14 @@
   }
 
   .market-all .work-header__detail button {
-    margin-right: 40rem;
+    margin-right: 0;
+  }
+  .market-all .work-header__detail li:nth-child(5) button {
+    width: 60rem;
+  }
+  .market-all .work-header__detail li:nth-child(6) button {
+    width: 80rem;
+    margin-right: 0;
   }
   .market-all-slider .art-d-header-container {
     height: inherit;

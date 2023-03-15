@@ -98,7 +98,14 @@ function ArtistWallet() {
               <h2>{pitem[i].title}</h2>
               {/* <h4>{pitem[i].buy}</h4> */}
               <h1>{pitem[i].price}</h1>
-              <button className="w-mb-state-pay">결제하기</button>
+              <Link
+                to={'/market/payment'}
+                state={{
+                  item: pitem[i],
+                }}
+              >
+                <button className="w-mb-state-pay">결제하기</button>
+              </Link>
             </div>
           </div>
         </div>
