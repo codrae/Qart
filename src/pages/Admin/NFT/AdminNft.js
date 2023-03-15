@@ -23,18 +23,18 @@ const AdminNft = () => {
 
   items.map((item, i) => {
     tableItem.push(
-      <Link to={'./edit'}>
-        <ul className="admin-table-item">
-          <li>
-            <label className="login-option">
-              <input
-                type="checkbox"
-                onChange={e => checkHandler(e.target.checked, i)}
-                checked={checkItems.indexOf(i) >= 0 ? true : false}
-              />
-              <span className="login-option__check" />
-            </label>
-          </li>
+      <ul className="admin-table-item">
+        <li>
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => checkHandler(e.target.checked, i)}
+              checked={checkItems.indexOf(i) >= 0 ? true : false}
+            />
+            <span className="login-option__check" />
+          </label>
+        </li>
+        <Link to={'./edit'}>
           <li>{item.num}</li>
           <li>
             <img src={require('../../../' + item.info)}></img>
@@ -52,8 +52,8 @@ const AdminNft = () => {
               <span></span>
             )}
           </li>
-        </ul>
-      </Link>
+        </Link>
+      </ul>
     )
   })
   // 개별선택

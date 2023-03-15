@@ -55,29 +55,33 @@
 .admin-banner-main .admin-table-item {
   height: 65px;
 }
+.admin-banner-main .admin-table-item a {
+  display: flex;
+  flex-direction: row;
+}
 .admin-banner-main .admin-table-header li:first-child,
 .admin-banner-main .admin-table-item li:first-child {
   width: 51px;
 }
 .admin-banner-main .admin-table-header li:nth-child(2),
-.admin-banner-main .admin-table-item li:nth-child(2) {
+.admin-banner-main .admin-table-item a li:nth-child(1) {
   width: 102px;
 }
 .admin-banner-main .admin-table-header li:nth-child(3),
-.admin-banner-main .admin-table-item li:nth-child(3) {
+.admin-banner-main .admin-table-item a li:nth-child(2) {
   width: 376px;
 }
 
 .admin-banner-main .admin-table-header li:nth-child(4),
-.admin-banner-main .admin-table-item li:nth-child(4) {
+.admin-banner-main .admin-table-item a li:nth-child(3) {
   width: 361px;
 }
 .admin-banner-main .admin-table-header li:nth-child(5),
-.admin-banner-main .admin-table-item li:nth-child(5) {
+.admin-banner-main .admin-table-item a li:nth-child(4) {
   width: 320px;
 }
 .admin-banner-main .admin-table-header li:nth-child(6),
-.admin-banner-main .admin-table-item li:nth-child(6) {
+.admin-banner-main .admin-table-item a li:nth-child(5) {
   width: 295px;
   border-right: none;
 }

@@ -23,18 +23,18 @@ const AdminGallery = () => {
 
   items.map((item, i) => {
     tableItem.push(
-      <Link to="./detail">
-        <ul className="admin-table-item">
-          <li>
-            <label className="login-option">
-              <input
-                type="checkbox"
-                onChange={e => checkHandler(e.target.checked, i)}
-                checked={checkItems.indexOf(i) >= 0 ? true : false}
-              />
-              <span className="login-option__check" />
-            </label>
-          </li>
+      <ul className="admin-table-item">
+        <li>
+          <label className="login-option">
+            <input
+              type="checkbox"
+              onChange={e => checkHandler(e.target.checked, i)}
+              checked={checkItems.indexOf(i) >= 0 ? true : false}
+            />
+            <span className="login-option__check" />
+          </label>
+        </li>
+        <Link to="./detail">
           <li>{item.num}</li>
           <li>{item.id}</li>
           <li>{item.name}</li>
@@ -42,8 +42,8 @@ const AdminGallery = () => {
           <li>{item.birth}</li>
           <li>{item.signDate}</li>
           <li>{item.lastConnet}</li>
-        </ul>
-      </Link>
+        </Link>
+      </ul>
     )
   })
   // 개별선택

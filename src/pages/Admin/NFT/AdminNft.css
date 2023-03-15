@@ -31,37 +31,41 @@
 .admin-nft .admin-table-item {
   height: 162px;
 }
+.admin-nft .admin-table-item a {
+  display: flex;
+  flex-direction: row;
+}
 .admin-nft .admin-table-header li:first-child,
 .admin-nft .admin-table-item li:first-child {
   width: 80px;
 }
 .admin-nft .admin-table-header li:nth-child(2),
-.admin-nft .admin-table-item li:nth-child(2) {
+.admin-nft .admin-table-item a li:nth-child(1) {
   width: 100px;
 }
 .admin-nft .admin-table-header li:nth-child(3),
-.admin-nft .admin-table-item li:nth-child(3) {
+.admin-nft .admin-table-item a li:nth-child(2) {
   width: 220px;
 }
 
 .admin-nft .admin-table-header li:nth-child(4),
-.admin-nft .admin-table-item li:nth-child(4) {
+.admin-nft .admin-table-item a li:nth-child(3) {
   width: 200px;
 }
 .admin-nft .admin-table-header li:nth-child(5),
-.admin-nft .admin-table-item li:nth-child(5) {
+.admin-nft .admin-table-item a li:nth-child(4) {
   width: 200px;
 }
 .admin-nft .admin-table-header li:nth-child(6),
-.admin-nft .admin-table-item li:nth-child(6) {
+.admin-nft .admin-table-item a li:nth-child(5) {
   width: 240px;
 }
 .admin-nft .admin-table-header li:nth-child(7),
-.admin-nft .admin-table-item li:nth-child(7) {
+.admin-nft .admin-table-item a li:nth-child(6) {
   width: 240px;
 }
 .admin-nft .admin-table-header li:nth-child(8),
-.admin-nft .admin-table-item li:nth-child(8) {
+.admin-nft .admin-table-item a li:nth-child(7) {
   width: 230px;
 }
 
@@ -72,7 +76,7 @@
   height: 1140px;
   padding-top: 0;
 }
-.admin-nft .admin-table-item li:nth-child(3) > img {
+.admin-nft .admin-table-item a li:nth-child(2) > img {
   width: 120px;
   height: 120px;
   border: 1px solid #bdbdbd;
