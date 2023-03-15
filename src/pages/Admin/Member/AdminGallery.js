@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import AdminSlide from '../../../components/AdminSlide/AdminSlide'
 import './AdminGeneral.css'
 
@@ -22,25 +23,27 @@ const AdminGallery = () => {
 
   items.map((item, i) => {
     tableItem.push(
-      <ul className="admin-table-item">
-        <li>
-          <label className="login-option">
-            <input
-              type="checkbox"
-              onChange={e => checkHandler(e.target.checked, i)}
-              checked={checkItems.indexOf(i) >= 0 ? true : false}
-            />
-            <span className="login-option__check" />
-          </label>
-        </li>
-        <li>{item.num}</li>
-        <li>{item.id}</li>
-        <li>{item.name}</li>
-        <li>{item.phone}</li>
-        <li>{item.birth}</li>
-        <li>{item.signDate}</li>
-        <li>{item.lastConnet}</li>
-      </ul>
+      <Link to="./detail">
+        <ul className="admin-table-item">
+          <li>
+            <label className="login-option">
+              <input
+                type="checkbox"
+                onChange={e => checkHandler(e.target.checked, i)}
+                checked={checkItems.indexOf(i) >= 0 ? true : false}
+              />
+              <span className="login-option__check" />
+            </label>
+          </li>
+          <li>{item.num}</li>
+          <li>{item.id}</li>
+          <li>{item.name}</li>
+          <li>{item.phone}</li>
+          <li>{item.birth}</li>
+          <li>{item.signDate}</li>
+          <li>{item.lastConnet}</li>
+        </ul>
+      </Link>
     )
   })
   // 개별선택

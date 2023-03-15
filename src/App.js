@@ -93,6 +93,7 @@ import AdminAuctionItem from './pages/Admin/Work/AdminAuctionItem'
 import AdminArtTok from './pages/Admin/Work/AdminArtTok'
 import AdminPlatformQ from './pages/Admin/Work/AdminPlatformQ'
 import AdminAuctionEdit from './pages/Admin/Work/AdminAuctionEdit'
+import AdminGalleryDetail from './pages/Admin/Member/AdminGalleryDetail'
 function App() {
   return (
     <BrowserRouter>
@@ -444,6 +445,14 @@ function App() {
           element={
             <AdminMain title={'회원관리 - 기관 회원'} bm={1} sm={2}>
               <AdminGallery />
+            </AdminMain>
+          }
+        ></Route>
+        <Route
+          path="/admin/member/gallery/detail"
+          element={
+            <AdminMain title={'기관 회원'} bm={1} sm={2}>
+              <AdminGalleryDetail />
             </AdminMain>
           }
         ></Route>

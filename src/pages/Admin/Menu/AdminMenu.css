@@ -1,7 +1,7 @@
 .admin-menu {
   width: 250px;
-  height: 1080px;
-  min-height: 100vh;
+  min-height: 1080px;
+  height: auto;
   background: #2b2e3f;
 }
 .admin-menu-icon {
