@@ -88,31 +88,38 @@
   width: 51px;
 }
 .admin-general .admin-table-header li:nth-child(2),
-.admin-general .admin-table-item a li:nth-child(1) {
+.admin-general .admin-table-item li:nth-child(2),
+.admin-artist .admin-table-item a li:nth-child(1) {
   width: 102px;
 }
 .admin-general .admin-table-header li:nth-child(3),
-.admin-general .admin-table-item a li:nth-child(2) {
+.admin-general .admin-table-item li:nth-child(3),
+.admin-artist .admin-table-item a li:nth-child(2) {
   width: 157px;
 }
 .admin-general .admin-table-header li:nth-child(4),
-.admin-general .admin-table-item a li:nth-child(3) {
+.admin-general .admin-table-item li:nth-child(4),
+.admin-artist .admin-table-item a li:nth-child(3) {
   width: 205px;
 }
 .admin-general .admin-table-header li:nth-child(5),
-.admin-general .admin-table-item a li:nth-child(4) {
+.admin-general .admin-table-item li:nth-child(5),
+.admin-artist .admin-table-item a li:nth-child(4) {
   width: 269px;
 }
 .admin-general .admin-table-header li:nth-child(6),
-.admin-general .admin-table-item a li:nth-child(5) {
+.admin-general .admin-table-item li:nth-child(6),
+.admin-artist .admin-table-item a li:nth-child(5) {
   width: 240px;
 }
 .admin-general .admin-table-header li:nth-child(7),
-.admin-general .admin-table-item a li:nth-child(6) {
+.admin-general .admin-table-item li:nth-child(7),
+.admin-artist .admin-table-item a li:nth-child(6) {
   width: 240px;
 }
 .admin-general .admin-table-header li:nth-child(8),
-.admin-general .admin-table-item a li:nth-child(7) {
+.admin-general .admin-table-item li:nth-child(8),
+.admin-artist .admin-table-item a li:nth-child(7) {
   width: 239px;
   border-right: none;
 }

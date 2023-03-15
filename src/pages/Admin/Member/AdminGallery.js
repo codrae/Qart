@@ -67,7 +67,7 @@ const AdminGallery = () => {
     }
   }
   return (
-    <div className="admin-general">
+    <div className="admin-general admin-artist">
       <section className="ad-general-button">
         <button>이용정지</button>
         <button>이용재개</button>
