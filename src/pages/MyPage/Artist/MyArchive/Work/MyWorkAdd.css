@@ -748,4 +748,88 @@
     padding-top: 14rem;
     padding-bottom: 20rem;
   }
+  .ma-edit-image-container h2 {
+    padding-top: 0;
+  }
+  .ma-edit-image {
+    height: inherit;
+    box-sizing: border-box;
+    border: none;
+  }
+  .ma-edit-image-02 {
+    height: inherit;
+
+    box-sizing: border-box;
+    border: none;
+  }
+  .ma-edit-image-02 .ma-img-tlt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .ma-img-tlt--sub {
+    display: inline;
+    padding-top: 0;
+    font-size: 10rem;
+    line-height: 14rem;
+    margin-left: 4rem;
+  }
+  .ma-edit-image-container {
+    width: 360rem;
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 24rem;
+    padding-top: 18rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container {
+    padding: 0 24rem;
+  }
+
+  .ma-edit-image-02 form,
+  .ma-edit-image form {
+    height: 121rem;
+  }
+  .ma-edit-image-02 .button,
+  .ma-edit-image .button {
+    height: 101rem;
+    margin-bottom: 0;
+  }
+
+  .image-button,
+  .ma-edit-image-02 .image-button {
+    width: 101rem;
+    height: 101rem;
+    margin-bottom: 0;
+    background-size: 20rem 20rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .edit-photo,
+  .ma-edit-image-container .edit-photo {
+    top: 40rem;
+    left: 113rem;
+
+    width: 16rem;
+    height: 16rem;
+
+    background: url('../../../../../assets/img_delete.png') no-repeat center;
+    background-size: contain;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .ma-img-show,
+  .ma-edit-image-container .ma-img-show {
+    top: 49rem;
+    left: 20rem;
+
+    width: 101rem;
+    height: 101rem;
+    background: #ffffff;
+    border: 1rem solid #bdbdbd;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .edit-photo {
+    top: 22rem;
+  }
+  .ma-edit-image-02 .ma-edit-image-container .ma-img-show {
+    top: 31rem;
+  }
 }
