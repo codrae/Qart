@@ -6,7 +6,7 @@
 .banner-slider,
 .banner .slick-list {
   width: 100%;
-  height: 100%;
+  height: 707rem;
 }
 .banner .slider__item {
   width: 1920rem !important;
@@ -168,7 +168,7 @@
   .banner-slider,
   .banner .slick-list {
     width: 100%;
-    height: 100%;
+    height: 202rem;
   }
   .banner .slider__item {
     width: 100vw !important;
