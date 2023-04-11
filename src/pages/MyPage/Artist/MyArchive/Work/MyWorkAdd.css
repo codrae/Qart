@@ -85,7 +85,7 @@
 #chooseFile-02 {
   visibility: hidden;
 }
-.image-button {
+.ma-edit-image .image-button {
   position: absolute;
   cursor: pointer;
 
@@ -798,7 +798,7 @@
     margin-bottom: 0;
   }
 
-  .image-button,
+  .ma-edit-image .image-button,
   .ma-edit-image-02 .image-button {
     width: 101rem;
     height: 101rem;
