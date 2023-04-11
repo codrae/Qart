@@ -57,6 +57,7 @@
 }
 .market-all-slider .slider__item {
   width: 400rem !important;
+  height: inherit;
   margin-right: 40rem;
   box-sizing: border-box;
   text-align: center;

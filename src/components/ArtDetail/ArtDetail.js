@@ -17,6 +17,8 @@ function ArtDetail(props) {
   const [rows, setRow] = useState(props.rows || 4)
   const [slidersPerRow, setSlidersPerRow] = useState(props.slidersPerRow || 3)
 
+  const [originRow, setOriginRow] = useState(rows)
+  const [originSlidersPerRow, setOriginSlidersPerRow] = useState(slidersPerRow)
   const {
     title_e,
     title_k,
@@ -26,7 +28,7 @@ function ArtDetail(props) {
     breakRows,
     breakSlidersPerRow,
   } = props.items ? props : location
-  console.log(breakRows, breakSlidersPerRow)
+  //console.log(props.rows, props.slidersPerRow)
   const TOTAL_PAGE = Math.round(items.length / (rows * slidersPerRow))
   const [dotArr, setDotArr] = useState(new Array(TOTAL_PAGE).fill(0))
   const sliderRef = useRef()
@@ -144,10 +146,13 @@ function ArtDetail(props) {
 
   // 리사이즈 이벤트를 감지하여 가로 길이에 따라 모바일 여부 결정
   const resizingHandler = () => {
+    if (window.innerWidth > 480) {
+      setRow(originRow)
+      setSlidersPerRow(originSlidersPerRow)
+    }
     if (window.innerWidth <= 480) {
       setRow(breakRows)
       setSlidersPerRow(breakSlidersPerRow)
-    } else {
     }
   }
   // 우선 맨 처음 480이하면 모바일 처리
@@ -156,6 +161,9 @@ function ArtDetail(props) {
     if (window.innerWidth <= 480) {
       setRow(breakRows)
       setSlidersPerRow(breakSlidersPerRow)
+    } else {
+      setRow(rows)
+      setSlidersPerRow(slidersPerRow)
     }
 
     window.addEventListener('resize', resizingHandler)
