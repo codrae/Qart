@@ -82,6 +82,17 @@
   top: 40rem;
   left: 368rem;
 }
+.g-profile-list input[type='date']::before {
+  content: attr(data-placeholder) !important;
+  width: 100%;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 35rem;
+  color: #222222;
+  box-sizing: border-box;
+}
 .g-profile-password {
   display: flex;
   flex-direction: row;
@@ -231,6 +242,13 @@
     background-size: contain;
     top: 40rem;
     left: 368rem;
+  }
+  .g-profile-list input[type='date']::before {
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 29rem;
+    color: #222222;
+    box-sizing: border-box;
   }
   .g-profile-password {
     display: flex;

@@ -135,9 +135,9 @@ function ArtistProfile() {
                 <li>
                   <h2>생년월일 (Birth Date)</h2>
                   <input
-                    type="text"
-                    className="a-profile-input"
-                    placeholder="YYYY.MM.DD"
+                    type="date"
+                    className="a-profile-input date-input"
+                    data-placeholder="YYYY.MM.DD"
                     disabled={edit}
                   ></input>
                 </li>

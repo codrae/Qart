@@ -98,7 +98,17 @@
 
   color: #222222;
 }
-
+.ap-edit-content li input[type='date']::before {
+  content: attr(data-placeholder) !important;
+  width: 100%;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24rem;
+  line-height: 35rem;
+  color: #222222;
+  box-sizing: border-box;
+}
 .ap-edit-content h2 {
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -627,7 +637,13 @@
 
     color: #222222;
   }
-
+  .ap-edit-content li input[type='date']::before {
+    font-weight: 500;
+    font-size: 14rem;
+    line-height: 29rem;
+    color: #222222;
+    box-sizing: border-box;
+  }
   .ap-edit-content h2 {
     font-size: 10rem;
     line-height: 14rem;
