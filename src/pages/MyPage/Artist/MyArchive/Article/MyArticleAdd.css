@@ -179,6 +179,21 @@
   color: #ffffff;
   margin-right: 0;
 }
+.ma-img-tlt-container {
+  display: flex;
+  height: 100%;
+}
+.ma-sub-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 100%;
+}
+.ma-edit-img-container{
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 480px) {
   .ma-article-add {
     height: 100%;
@@ -234,7 +249,6 @@
     color: #222222;
     margin-bottom: 12rem;
   }
-
   .ma-article-add-info li {
     display: flex;
     flex-direction: column;
