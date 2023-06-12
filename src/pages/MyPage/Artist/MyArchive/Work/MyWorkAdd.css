@@ -98,8 +98,11 @@
 }
 
 .ma-edit-image-container .edit-photo {
-  top: 37rem;
-  left: 745rem;
+  position: absolute;
+  right: -10rem;
+  top: -10rem;
+  /* top: 37rem;
+  left: 745rem; */
 
   width: 24rem;
   height: 24rem;
@@ -109,8 +112,8 @@
 }
 .ma-edit-image-container .ma-img-show {
   position: absolute;
-  top: 48rem;
-  left: 435rem;
+  /* top: 48rem;
+  left: 435rem; */
   width: 322rem;
   height: 322rem;
   background: #ffffff;
@@ -145,16 +148,17 @@
   background-size: 40rem 40rem;
 }
 .ma-edit-image-02 .ma-edit-image-container .ma-img-show {
-  position: absolute;
+  /* position: absolute;
   top: 48rem;
-  left: 436rem;
+  left: 436rem; */
   width: 161rem;
   height: 161rem;
   z-index: 1;
 }
 .ma-edit-image-02 .ma-edit-image-container .edit-photo {
-  top: 37rem;
-  left: 585rem;
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
   z-index: 2;
 }
 
@@ -169,6 +173,7 @@
 .ma-add-date-mb {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .ma-add-info input {
   width: 596rem;
@@ -313,6 +318,7 @@
 
 .ma-add-info-01,
 .ma-add-info-02 {
+  border-top: 1rem solid #e0e0e0;
   border-bottom: 1rem solid #e0e0e0;
 }
 .ma-add-info .container {
@@ -339,7 +345,7 @@
   width: 205rem;
 }
 .ma-add-info-01 .date-input {
-  width: 377rem !important;
+  /* width: 377rem !important; */
   font-size: 20rem;
   line-height: 29rem;
 }
@@ -441,6 +447,17 @@
   padding-bottom: 133rem;
   z-index: 0;
 }
+.ma-img-tlt-container {
+  display: flex;
+  height: 100%;
+}
+.ma-sub-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 550px;
+  height: 100%;
+}
+
 
 @media (max-width: 480px) {
   .ma-work-add {
