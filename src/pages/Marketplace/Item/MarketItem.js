@@ -1,205 +1,124 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import ArtDetailInfo from '../../../components/ArtDetailInfo/ArtDetailInfo'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import DetailInfo from '../../../components/DetailIfo/DetailInfo'
 import Footer from '../../../components/Footer/Footer'
 import Header from '../../../components/Header/Header'
-import HistoryInfo from '../../../components/HistoryInfo/HistoryInfo'
 import TopArrowSlider from '../../../components/TopArrowSlider/TopArrowSlider'
 import WorkHeader from '../../../components/WorkHeader/WorkHeader'
 import './MarketItem.css'
+import market from '../../../services/public/market/market'
+import { userImage, workMainImage, workSubImage } from '../../../services/imageRoute'
+import { artViewDate, artViewSize } from '../../../hook/utils/artdbView'
+import { shallowEqual, useSelector } from 'react-redux'
+import { artViewPrice } from '../../../hook/utils/artdbView'
+import { checkUseName } from '../../../hook/utils/checkUseName'
+import MarketHistoryInfo from '../../../components/MarketHistoryInfo/MarketHistoryInfo'
 
 function MarketItem() {
-  const item = useLocation().state.item
-  const detailItem = [
-    {
-      info: item.info,
-      height: '866rem',
-      detail:
-        '2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독 2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독',
-    },
-    {
-      info: item.info,
-      width: '1277rem',
-      height: '866rem',
-      detail:
-        '2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독 2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독',
-    },
-  ]
-  const infos = [
-    {
-      title: '국적',
-      content: '대한민국',
-    },
-    {
-      title: '출생연도',
-      content: '1990.10.20-',
-    },
-    {
-      title: '작가소개',
-      content:
-        '2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독 2021 대한민국 대중문화예술상 국무총리 표창, 2019 문화체육관광부 장관 표창 등을 수상하며 지금도 명실공히 국내 최정상 뮤지컬 음악감독',
-    },
-  ]
+  const navigate = useNavigate();
+  const { marketId } = useParams();
+  const { rowWorkTypeList } = useSelector(v => v.setting.work, shallowEqual)
+  const { lang } = useSelector(v => v.setting, shallowEqual)
+  const { login } = useSelector(v => v.auth, shallowEqual)
+  React.useEffect(() => { getData(marketId) }, [marketId])
 
-  const InfoItem = items => {
-    return Object.values(items).map((info, i) => {
-      return (
-        <li className="art-detail__item" key={i}>
-          <span className="art-detail__name">{info.title}</span>
-          <span className="art-detail__content">{info.content}</span>
-        </li>
-      )
-    })
+  const [data, setData] = React.useState(null);
+  const [work, setWork] = React.useState(null);
+  const [workType, setWorkType] = React.useState();
+  const [moreList, setMoreList] = React.useState([]);
+  const [artist, setArtist] = React.useState(null);
+  const [history, setHistory] = React.useState([]);
+  const [sale, setSale] = React.useState([]);
+  const [another, setAnother] = React.useState([]);
+
+  const getData = async (pk) => {
+    const res = await market.getDetail(pk)
+    setData(res)
   }
-  var historyItem = [
-    [
-      {
-        divItem: (
-          <section className="art-detail-section">
-            <img
-              className="art-detail__image"
-              src={require('../../../' + item.info)}
-            ></img>
 
-            <ul className="art-detail__list">
-              <li className="art-detail__item">{item.author}</li>
-              {InfoItem(infos)}
-            </ul>
-          </section>
-        ),
-      },
-    ],
-    [
+  const setAnotherItem = (items) => {
+    if (items.length === 0) {
+      return
+    }
+    let itemList = []
+    for (let i = 0; i < items.length; i++) {
+      itemList.push({
+        info: `${workMainImage}/${items[i].image}`,
+        author: items[i].title,
+        title: items[i].eng_TITLE,
+        link: `/market/${items[i].pk}`,
+      })
+    }
+    setAnother(itemList)
+  }
+
+  const setHistoryItem = (items) => {
+    if (items.length === 0) {
+      return
+    }
+    let item = []
+    for (let i = 0; i < items.length; i++) {
+      item.push({
+        period: `${items[i].start_DATE} ~ ${items[i].end_DATE}`,
+        category: items[i].type,
+        title: `${items[i].exhi_NAME}, ${items[i].place}`,
+      })
+    }
+    setHistory(item)
+  }
+
+  const setArtistItem = (items) => {
+    if (items === null) {
+      return
+    }
+
+    const date = () => {
+      if (items.user_TYPE === '1') {
+        return `${items.birth_SINCE === '' || items.birth_SINCE === null ?
+            '미상' : `${items.birth_SINCE}`}`
+      } else {
+        return items.birth_SINCE
+      }
+    }
+    const infos = [
       {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '단체전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '기타',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '아트페어',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-    ],
-    [
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '단체전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+        title: items.user_TYPE === '1' ? '국적' : '주소',
+        content: items.country,
       },
       {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+        title: items.user_TYPE === '1' ? '출생연도' : '설립일',
+        content: date(),
       },
       {
-        period: '0000.00.00 - 0000.00.00',
-        category: '기타',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
+        title: '소개',
+        content: items.introduce === 'null' ? '' : items.introduce,
       },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '아트페어',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-    ],
-    [
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '단체전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '기타',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '아트페어',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-    ],
-    [
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '단체전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '개인전',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '기타',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-      {
-        period: '0000.00.00 - 0000.00.00',
-        category: '아트페어',
-        title:
-          'Wow5 창립전(인사아트센터),한국현대회화100선전(마루아트센터), 서울',
-      },
-    ],
-  ]
-  var moreList = ['작가정보', '전시이력', '최근 거래', '참고', '관련 소식']
+    ]
+    const origin = {
+      artist: checkUseName(lang, items.use_NAME, items.name, items.eng_NAME, items.nickname, items.eng_NICKNAME),
+      image: `${userImage}/${items.image}`,
+      text: infos
+    }
+    setArtist(origin)
+  }
+
+  React.useEffect(() => {
+    if (data === null) {
+      return
+    }
+    // 작품
+    setWork(data.work)
+    const checkWorkType = rowWorkTypeList.filter(t => t.ko === data.work.work_TYPE)
+    // menu
+    setMoreList([data.work.user_TYPE === 1 ? '작가정보' : '기관정보', '전시이력', '최근 거래'])
+    setWorkType(checkWorkType.length === 0 ? [{ ko: data.work.work_TYPE, eng: data.work.work_TYPE }] : checkWorkType)
+    // 작가
+    setArtistItem(data.origin_artist)
+    // 히스토리
+    setHistoryItem(data.exhibition_history)
+    // 또다른 작품
+    setAnotherItem(data.another_work)
+  }, [data])
 
   var moreItem = []
   for (var i = 0; i < 9; i++) {
@@ -211,110 +130,142 @@ function MarketItem() {
       link: '/market/1',
     })
   }
+
+
+  const moveOrigin = () => {
+    if (work.user_TYPE === 1) {
+      navigate(`/artdb/artist/${work.user_ID}`)
+    } else {
+      navigate(`/artdb/venue/${work.user_ID}`)
+    }
+  }
+
+  const payment = () => {
+
+    if(!login){
+      alert('로그인이 필요한 서비스입니다.');
+      navigate('/login')
+      return
+    }
+
+    navigate('/market/payment', { state: {item: work} })
+  }
+
   return (
-    <section className="market-detail">
-      <Header active="0" colored="black" detail={true} />
-      <WorkHeader title_k={item.title}></WorkHeader>
-      <div className="container">
-        <div className="market-art">
-          <section className="market-art-image">
-            <img
-              className="market-image__image"
-              src={require('../../../' + item.info)}
-            ></img>
-            <div className="market-image__list">
-              <img
-                className="market-image__item"
-                src={require('../../../' + item.info)}
-              ></img>
-              <img
-                className="market-image__item"
-                src={require('../../../' + item.info)}
-              ></img>
-              <img
-                className="market-image__item"
-                src={require('../../../' + item.info)}
-              ></img>
-              <img
-                className="market-image__item"
-                src={require('../../../' + item.info)}
-              ></img>
-            </div>
-          </section>
-          <section className="market-art-info">
-            <Link className="market-info__gallery" to="#">
-              판매 갤러리명<span className="info__arrow"></span>
-            </Link>
-            <ul className="market-info__list">
-              <li>
-                <span>작품 번호</span>
-                <span>00000-0000-00000</span>
-              </li>
-              <li>
-                <span>장르</span>
-                <span>판화</span>
-              </li>
-              <li>
-                <span>에디션</span>
-                <span>Giclée print on Canvas</span>
-              </li>
-              <li>
-                <span>작품크기</span>
-                <span>70 X 70</span>
-              </li>
-              <li>
-                <span>재료</span>
-                <span>Giclée print on Canvas</span>
-              </li>
-              <li>
-                <span>제작 연도</span>
-                <span>2015</span>
-              </li>
-              <li>
-                <span>Q-CoA 유무</span>
-                <span>Q-CoA 등록</span>
-              </li>
-              <li>
-                <span>기타</span>
-                <span>
-                  2021 대한민국 대중문화예술상 국무총리 표창, 2019
-                  문화체육관광부 장관 표창
+      <section className="market-detail">
+        <Header active="0" colored="black" detail={true} />
+        {work !== null &&
+            <>
+              <WorkHeader
+                  title_k={lang === 'ko' ? work.title : work.eng_TITLE} //작가명
+                  title_e={lang === 'ko' ? work.artist : work.eng_ARTIST} // 작품명
+              />
+              <div className="container">
+                <div className="market-art">
+                  <section className="market-art-image">
+                    <img
+                        className="market-image__image"
+                        src={`${workMainImage}/${work.image}`}
+                        alt=''
+                    ></img>
+
+                  </section>
+
+                  <section className="market-art-info">
+                <span className="market-info__gallery" to="#" onClick={moveOrigin}>
+                  {checkUseName(lang, work.owner_USE_NAME, work.owner_KO_NAME, work.owner_ENG_NAME, work.owner_KO_NICK_NAME, work.owner_ENG_NICK_NAME)}
+                  <span className="info__arrow"></span>
                 </span>
-              </li>
-            </ul>
-            <div className="market-art-sell">
-              <p className="market-sell__price">
-                <span>판매가</span>
-                <span>000,000,000원</span>
-              </p>
-              <span className="market-sell__usd">000,000,00USD</span>
-              {/* <span className="market-sell__time">
-                남은 시간 00시간 00분 00초
-              </span> */}
-              <div className="market-sell__button">
-                <button>판매자 문의하기</button>
-                <Link
-                  to={'/market/payment'}
-                  state={{
-                    item: item,
-                  }}
-                >
-                  구입하기
-                </Link>
+                    <ul className="market-info__list">
+                      <li>
+                        <span>작품 번호</span>
+                        <span style={{ whiteSpace: 'nowrap' }}>{work.unique_KEY}</span>
+                      </li>
+                      <li>
+                        <span>장르</span>
+                        <span>{workType[0][`${lang}`]}</span>
+                      </li>
+                      <li>
+                        <span>에디션</span>
+                        <span>{work.edition_TOTAL === 0 ? '1/1' : `${work.edition}/${work.edition_TOTAL}`}</span>
+                      </li>
+                      <li>
+                        <span>작품 크기</span>
+                        <span>{artViewSize(work.size_X, work.size_Y, work.size_W, work.unit)}</span>
+                      </li>
+                      <li>
+                        <span>재료</span>
+                        <span>{work.material}</span>
+                      </li>
+                      <li>
+                        <span>제작 연도</span>
+                        <span>{artViewDate(work.start_CREATE, work.end_CREATE)}</span>
+                      </li>
+                    </ul>
+                    <div className='market-info__warn'>
+                      *큐아트에서 거래되는 모든 작품은 블록체인 기반 거래이력 인증서인 Q-CoA가 발급됩니다.
+                    </div>
+                    <div className="market-art-sell">
+                      <p className="market-sell__price">
+                        <span>판매가</span>
+                        <span>{artViewPrice(work.price_UNIT, work.price)}</span>
+                      </p>
+
+                      <div className='market-info__warn' style={{ color: '#2f80ed' }}>
+                        큐아트는 판매 수수료의 일부를 원작자에게 지급하여, 건강한 창작생태계를 지원합니다.
+                      </div>
+
+                      <div className="market-sell__button">
+                        <button style={{ display: 'none' }}>
+                          <span className="ir_pm">판매자 문의하기</span>
+                        </button>
+                        <button onClick={payment}>
+                          구매하기
+                        </button>
+                        {/* <Link
+                      to={'/market/payment'}
+                      state={{
+                        item: work,
+                      }}
+                    >
+                      구입하기
+                    </Link> */}
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div className="market-image__list">
+                  {
+                    work.sub_IMAGE.map(item => {
+                      return (
+                          <img
+                              key={item.image}
+                              className="market-image__item"
+                              src={`${workSubImage}/${item.image}`}
+                              alt=''
+                          />
+                      )
+                    })
+                  }
+                </div>
               </div>
-            </div>
-          </section>
-        </div>
-      </div>
-      <HistoryInfo
-        title={'기본 정보'}
-        historyItem={historyItem}
-        moreList={moreList}
-      />
-      <DetailInfo item={detailItem} />
-      <TopArrowSlider title={'작가의 다른 작품'} item={moreItem} />
-      <Footer />
-    </section>
+            </>
+        }
+
+        <MarketHistoryInfo
+            title={'기본 정보'}
+            artistItem={artist}
+            historyItem={history}
+            saleItem={sale}
+            moreList={moreList}
+        />
+
+        {work !== null &&
+            <DetailInfo item={work.detail_NOTE} />
+        }
+        <TopArrowSlider title={'작가의 다른 작품'} item={another} />
+        <Footer />
+      </section>
   )
 }
 export default MarketItem
