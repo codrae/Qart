@@ -11,7 +11,7 @@
 }
 .autcion-detail .market-image__image {
   width: 608rem;
-  height: 551rem;
+  height: 900rem;
 
   box-sizing: border-box;
   border: 1rem solid #e0e0e0;
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: auto;
 }
 .autcion-detail .market-image__item {
   width: 185rem;
@@ -33,7 +34,7 @@
 }
 .autcion-detail .market-art-info {
   width: 651rem;
-  height: 766rem;
+  height: 800rem;
 
   background: #fbfbfb;
   box-sizing: border-box;
